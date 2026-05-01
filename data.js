@@ -18,7 +18,7 @@ function getYearValue(yearStr) {
 // ==================== 博客年份导航数据 ====================
 const blogYearsData = {
     '94': [{name:'贾斯汀', url:'/go.htm?url=https://links.net/', rss:'https://links.net/feed'}, {name:' ', url:''}, {name:' ', url:''}, {name:' ', url:''}],
-    '00': [{name:'Luca', url:'/go.htm?url=https://wlj.me/', rss:'https://wlj.me/feed'}, {name:'卢昌海 ', url:'/go.htm?url=https://www.changhai.org/', rss:'https://www.changhai.org/feed'}, {name:' ', url:''}, {name:' ', url:''}],
+    '00': [{name:'Luca', url:'/go.htm?url=https://wlj.me/', rss:'https://wlj.me/index.xml'}, {name:'卢昌海 ', url:'/go.htm?url=https://www.changhai.org/', rss:'https://www.changhai.org/feed'}, {name:' ', url:''}, {name:' ', url:''}],
     '01': [{name:'nc-show', url:'/go.htm?url=https://nicrosoft.net/', rss:'https://nicrosoft.net/feed'}, {name:'阿江守候', url:'/go.htm?url=http://www.ajiang.net/', rss:'http://www.ajiang.net/feed'}, {name:'东评衿就', url:'/go.htm?url=https://dongjunke.cn/', rss:'https://dongjunke.cn/feed'}, {name:'老痛', url:'ttps://toonkam.com'}, {name:' ', url:''}],
     '02': [{name:'Paul Graham', url:'/go.htm?url=https://paulgraham.com/', rss:'https://paulgraham.com/feed'}, {name:'守望轩', url:'/go.htm?url=https://www.watch-life.net/', rss:'https://www.watch-life.net/feed'}, {name:' Wangjianshuo', url:'/go.htm?url=https://home.wangjianshuo.com/', rss:'https://home.wangjianshuo.com/feed'},  {name:' ', url:''}],
     '03': [{name:'张智勇', url:'/go.htm?url=https://www.zyzhang.com/', rss:'https://www.zyzhang.com/feed'},{name:'王建硕', url:'/go.htm?url=https://home.wangjianshuo.com/cn', rss:'https://home.wangjianshuo.com/feed'}, {name:' ', url:''}, {name:' ', url:''}, {name:' ', url:''}],
@@ -323,7 +323,7 @@ const rssFlatList = (function() {
     return groupedByYear;
 })();
 
-// 控制台输出确认
+// 控制台输出确认 
 console.log('📡 RSS文案合集已生成，共 ' + Object.keys(rssFlatList).reduce((sum, year) => sum + rssFlatList[year].length, 0) + ' 个 RSS 订阅源');
 
 
