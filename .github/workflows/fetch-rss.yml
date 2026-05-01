@@ -1,1 +1,33 @@
-# RSS 抓取工作流
+name: 抓取 RSS 最新文章
+
+on:
+  schedule:
+    - cron: '0 18 * * *'
+  workflow_dispatch:
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+      
+      - name: 安装 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: 安装依赖
+        run: npm install rss-parser
+        
+      - name: 运行抓取脚本
+        run: node fetch-latest-articles.js
+      
+      - name: 提交更新
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add latest-articles.js
+          git diff --quiet && git diff --staged --quiet || git commit -m "自动更新最新文章 $(date '+%Y-%m-%d %H:%M:%S')"
+          git push
