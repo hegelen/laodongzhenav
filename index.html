@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>劳动者独立技术博客志-独立技术博客大全|劳动者独立技术博客导航|论坛|工具|ai等分类导航</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            color: #333;
+        }
+        
+        /* 通知栏样式 */
+        .notice-bar {
+            background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);
+            color: white;
+            padding: 10px 25px;
+            font-size: 13px;
+            text-align: center;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .notice-bar p {
+            margin: 0;
+        }
+        
+        .notice-bar a {
+            color: #fff;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        
+        .notice-bar a:hover {
+            color: #fff3e0;
+        }
+        
+        .notice-close {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            padding: 0 8px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        
+        .notice-close:hover {
+            background: rgba(255,255,255,0.2);
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #1a2632 100%);
+            color: white;
+            padding: 15px 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .header-left {
+            flex: 1;
+        }
+        
+        /* 汉堡菜单按钮 - 移动端显示 */
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            padding: 5px 10px;
+            border-radius: 8px;
+            transition: background 0.2s;
+        }
+        
+        .menu-toggle:hover {
+            background: rgba(255,255,255,0.1);
+        }
+        
+        .header h1 {
+            font-size: 20px;
+            margin-bottom: 0;
+        }
+        
+        /* 完整描述 - 默认显示（桌面端） */
+        .desc-full {
+            font-size: 12px;
+            opacity: 0.8;
+            margin-top: 5px;
+        }
+        
+        /* 简短描述 - 默认隐藏（仅移动端显示） */
+        .desc-mobile {
+            display: none;
+            font-size: 11px;
+            opacity: 0.8;
+            margin-top: 4px;
+        }
+        
+        .main-layout {
+            display: flex;
+            max-width: 1400px;
+            margin: 20px auto;
+            gap: 20px;
+            padding: 0 20px;
+        }
+        
+        /* 左侧分类导航 - 桌面端 */
+        .sidebar {
+            width: 280px;
+            flex-shrink: 0;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            overflow: hidden;
+            position: sticky;
+            top: 90px;
+            height: fit-content;
+            max-height: calc(100vh - 100px);
+            overflow-y: auto;
+        }
+        
+        .sidebar-title {
+            background: #2c3e50;
+            color: white;
+            padding: 15px 20px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        .nav-category {
+            border-bottom: 1px solid #eee;
+        }
+        
+        .nav-category-header {
+            padding: 12px 20px;
+            cursor: pointer;
+            background: #fafafa;
+            font-weight: 500;
+            color: #2c3e50;
+            transition: all 0.2s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-category-header:hover {
+            background: #f0f0f0;
+        }
+        
+        .nav-category-header.active {
+            background: #e8f4fd;
+            color: #0066cc;
+            border-left: 3px solid #0066cc;
+        }
+        
+        /* 外部链接样式 */
+        .nav-category-link {
+            display: block;
+            padding: 12px 20px;
+            background: #fafafa;
+            font-weight: 500;
+            color: #2c3e50;
+            text-decoration: none;
+            transition: all 0.2s;
+            border-left: 3px solid transparent;
+        }
+        
+        .nav-category-link:hover {
+            background: #f0f0f0;
+            color: #0066cc;
+            border-left-color: #0066cc;
+        }
+        
+        /* 右侧内容区域 */
+        .content-area {
+            flex: 1;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            overflow: hidden;
+            min-height: 600px;
+        }
+        
+        .content-header {
+            background: #f8f9fa;
+            padding: 15px 25px;
+            border-bottom: 1px solid #e0e0e0;
+            font-size: 18px;
+            font-weight: bold;
+            color: #2c3e50;
+            position: sticky;
+            top: 0;
+            background: #f8f9fa;
+            z-index: 10;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .content-body {
+            padding: 20px 25px;
+            max-height: 70vh;
+            overflow-y: auto;
+        }
+        
+        /* 年份行样式 - 年份与链接同行 */
+        .year-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            padding: 12px 0;
+            border-bottom: 1px solid #f0f0f0;
+            transition: all 0.2s;
+        }
+        
+        .year-row:hover {
+            background: #fafbfc;
+        }
+        
+        .year-label {
+            font-weight: bold;
+            font-size: 16px;
+            color: #2c3e50;
+            background: #e8f0fe;
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-right: 20px;
+            min-width: 90px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+        
+        .links-container {
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px 20px;
+            line-height: 1.6;
+        }
+        
+        .links-container a {
+            color: #0066cc;
+            text-decoration: none;
+            font-size: 14px;
+            transition: all 0.2s;
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+        
+        .links-container a:hover {
+            color: #004999;
+            text-decoration: underline;
+            background: #f0f7ff;
+        }
+        
+        /* 红色提交链接 */
+        .submit-link-red {
+            color: #dc3545 !important;
+            font-weight: bold;
+        }
+        
+        .submit-link-red:hover {
+            color: #bb2d3b !important;
+            background: #fff0f0 !important;
+        }
+        
+        /* 统计信息 */
+        .stats-info {
+            padding: 15px 20px;
+            background: #f8f9fa;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #666;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        /* 滚动条 */
+        .content-body::-webkit-scrollbar,
+        .sidebar::-webkit-scrollbar {
+            width: 6px;
+        }
+        
+        .content-body::-webkit-scrollbar-track,
+        .sidebar::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 3px;
+        }
+        
+        .content-body::-webkit-scrollbar-thumb,
+        .sidebar::-webkit-scrollbar-thumb {
+            background: #ccc;
+            border-radius: 3px;
+        }
+        
+        /* 移动端侧滑菜单遮罩层 */
+        .menu-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 200;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .menu-overlay.active {
+            display: block;
+            opacity: 1;
+        }
+        
+        /* 移动端侧滑菜单 */
+        .mobile-sidebar {
+            position: fixed;
+            top: 0;
+            left: -280px;
+            width: 280px;
+            height: 100%;
+            background: white;
+            z-index: 201;
+            transition: left 0.3s ease;
+            box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+            overflow-y: auto;
+        }
+        
+        .mobile-sidebar.open {
+            left: 0;
+        }
+        
+        .mobile-sidebar .sidebar-title {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .close-menu {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            padding: 0 8px;
+        }
+        
+        /* 桌面端样式 - 默认 */
+        @media (min-width: 769px) {
+            .mobile-sidebar, .menu-overlay, .close-menu {
+                display: none !important;
+            }
+        }
+        
+        /* 移动端样式 */
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+            
+            .header h1 {
+                font-size: 18px;
+            }
+            
+            /* 移动端：隐藏完整描述，显示简短描述 */
+            .desc-full {
+                display: none;
+            }
+            
+            .desc-mobile {
+                display: block;
+            }
+            
+            .main-layout {
+                padding: 10px;
+                margin: 10px auto;
+                gap: 0;
+            }
+            
+            /* 桌面端侧边栏隐藏 */
+            .sidebar {
+                display: none;
+            }
+            
+            .content-area {
+                width: 100%;
+                min-height: auto;
+            }
+            
+            .content-body {
+                max-height: none;
+                padding: 15px;
+            }
+            
+            .content-header {
+                padding: 12px 15px;
+                font-size: 16px;
+            }
+            
+            .year-row {
+                flex-direction: column;
+                gap: 8px;
+                padding: 10px 0;
+            }
+            
+            .year-label {
+                align-self: flex-start;
+                font-size: 14px;
+                min-width: 70px;
+                padding: 3px 10px;
+            }
+            
+            .links-container {
+                gap: 8px 12px;
+            }
+            
+            .links-container a {
+                font-size: 13px;
+                padding: 4px 8px;
+            }
+            
+            .stats-info {
+                padding: 10px 15px;
+                font-size: 11px;
+            }
+            
+            .footer {
+                padding: 15px;
+                font-size: 10px;
+            }
+            
+            .back-to-top {
+                width: 38px;
+                height: 38px;
+                font-size: 18px;
+                bottom: 20px;
+                right: 20px;
+            }
+            
+            /* 移动端通知栏调整 */
+            .notice-bar {
+                padding: 8px 35px 8px 15px;
+                font-size: 11px;
+            }
+            
+            /* 移动端外部链接样式 */
+            .nav-category-link {
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #999;
+            font-size: 12px;
+            border-top: 1px solid #e0e0e0;
+            margin-top: 20px;
+        }
+        
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #2c3e50;
+            color: white;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            z-index: 100;
+            font-size: 20px;
+        }
+        
+        .back-to-top.show {
+            opacity: 1;
+        }
+        
+        .back-to-top:hover {
+            background: #0066cc;
+        }
+    </style>
+</head>
+<body>
+    <!-- 通知栏 -->
+    <div class="notice-bar" id="notice-bar">
+        <p>原域名blog.kaifangzhe.com, dos.pw, blog.rmws.cn, blog.open.tw.cn, blog.JS.cn 已切换到 <a href="https://laodongzhe.cn" target="_blank">laodongzhe.cn</a></p>
+        <button class="notice-close" onclick="closeNotice()" aria-label="关闭通知">&times;</button>
+    </div>
+
+    <div class="header">
+        <button class="menu-toggle" id="menuToggle">☰</button>
+        <div class="header-left">
+            <h1>⚒ 劳动者独立技术博客志</h1>
+            <!-- 桌面版显示完整描述 -->
+            <p class="desc-full">劳动者独立技术博客志-收录全球1991年至今的独立技术博客及论坛、AI工具等资源导航 | 点击分类查看全部年份</p>
+            <!-- 手机版显示短描述 -->
+            <p class="desc-mobile">1991年至今 | 博客·论坛·AI工具 | 点击分类查看</p>
+        </div>
+    </div>
+    
+    <!-- 移动端遮罩层 -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+    
+    <!-- 移动端侧滑菜单 -->
+    <div class="mobile-sidebar" id="mobileSidebar">
+        <div class="sidebar-title">
+            📖 导航目录
+            <button class="close-menu" id="closeMenu">✕</button>
+        </div>
+        <div id="mobileNavContainer"></div>
+        <div class="stats-info">
+            <span>📊 共收录 1800+ 个站点</span>
+            <span>🔄 持续更新中</span>
+        </div>
+    </div>
+    
+    <div class="main-layout">
+        <!-- 桌面端左侧分类导航 -->
+        <div class="sidebar">
+            <div class="sidebar-title">📖 导航目录</div>
+            <div id="navContainer"></div>
+            <div class="stats-info">
+                <span>📊 共收录 1800+ 个站点</span>
+                <span>🔄 持续更新中</span>
+            </div>
+        </div>
+        
+        <div class="content-area">
+            <div class="content-header" id="currentCategory">
+                <span>📌 请从左侧选择分类</span>
+            </div>
+            <div class="content-body" id="contentBody">
+                <div style="text-align:center; padding:50px; color:#999;">
+                    点击左侧导航查看对应分类的博客列表
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>© laodongzhe.cn - 劳动者独立技术博客志-独立技术博客大全 |<a href="https://www.laodongzhe.cn/index.php?c=read&id=112&page=1&cache=refresh" target="_blank">网站提交</a>| 声明：网站上的服务均为第三方提供，请用户注意甄别服务质量</p>
+    </div>
+    
+    <div class="back-to-top" id="backToTop">↑</div>
+
+    <!-- 引入共享数据文件 -->
+    <script src="data.js"></script>
+
+    <script>
+        // 关闭通知栏函数
+        function closeNotice() {
+            const noticeBar = document.getElementById('notice-bar');
+            if (noticeBar) {
+                noticeBar.style.display = 'none';
+                localStorage.setItem('noticeClosed', 'true');
+            }
+        }
+        
+        // 检查之前是否关闭过通知栏
+        function checkNoticeClosed() {
+            const isClosed = localStorage.getItem('noticeClosed');
+            if (isClosed === 'true') {
+                const noticeBar = document.getElementById('notice-bar');
+                if (noticeBar) {
+                    noticeBar.style.display = 'none';
+                }
+            }
+        }
+        
+        // 5秒后自动关闭通知栏
+        setTimeout(function() {
+            const noticeBar = document.getElementById('notice-bar');
+            if (noticeBar && noticeBar.style.display !== 'none') {
+                noticeBar.style.display = 'none';
+                localStorage.setItem('noticeClosed', 'true');
+            }
+        }, 5000);
+        
+        // 年份转换函数
+        function convertToFullYear(yearStr) {
+            const year = parseInt(yearStr);
+            if (year >= 90 && year <= 99) return 1900 + year;
+            if (year >= 0 && year <= 26) return 2000 + year;
+            return year;
+        }
+        
+        function getYearValue(yearStr) {
+            return convertToFullYear(yearStr);
+        }
+        
+        let currentCategoryName = null;
+        
+        // 渲染左侧导航（桌面端）- 支持外部链接
+        function renderNavigation() {
+            const navContainer = document.getElementById('navContainer');
+            let html = '';
+            let firstCategory = null;
+            
+            for (const [catName, catData] of Object.entries(categories)) {
+                // 判断是否为外部链接
+                if (typeof catData === 'string' && catData.startsWith('http')) {
+                    html += `
+                        <div class="nav-category">
+                            <a href="${catData}" target="_blank" class="nav-category-link">
+                                <span>🔗 ${catName}</span>
+                            </a>
+                        </div>
+                    `;
+                } else {
+                    const isActive = !firstCategory;
+                    if (isActive) firstCategory = catName;
+                    
+                    html += `
+                        <div class="nav-category">
+                            <div class="nav-category-header ${isActive ? 'active' : ''}" data-category="${catName}">
+                                <span>${catName}</span>
+                            </div>
+                        </div>
+                    `;
+                }
+            }
+            
+            navContainer.innerHTML = html;
+            
+            // 绑定点击事件
+            document.querySelectorAll('#navContainer .nav-category-header').forEach(header => {
+                header.addEventListener('click', () => {
+                    const category = header.dataset.category;
+                    document.querySelectorAll('#navContainer .nav-category-header').forEach(h => h.classList.remove('active'));
+                    header.classList.add('active');
+                    loadCategoryContent(category);
+                });
+            });
+            
+            if (firstCategory) {
+                loadCategoryContent(firstCategory);
+            }
+        }
+        
+        // 渲染移动端导航 - 支持外部链接
+        function renderMobileNavigation() {
+            const navContainer = document.getElementById('mobileNavContainer');
+            if (!navContainer) return;
+            
+            let html = '';
+            let firstCategory = null;
+            
+            for (const [catName, catData] of Object.entries(categories)) {
+                if (typeof catData === 'string' && catData.startsWith('http')) {
+                    html += `
+                        <div class="nav-category">
+                            <a href="${catData}" target="_blank" class="nav-category-link">
+                                <span>🔗 ${catName}</span>
+                            </a>
+                        </div>
+                    `;
+                } else {
+                    const isActive = !firstCategory;
+                    if (isActive) firstCategory = catName;
+                    
+                    html += `
+                        <div class="nav-category">
+                            <div class="nav-category-header ${isActive ? 'active' : ''}" data-category-mobile="${catName}">
+                                <span>${catName}</span>
+                            </div>
+                        </div>
+                    `;
+                }
+            }
+            
+            navContainer.innerHTML = html;
+            
+            document.querySelectorAll('#mobileNavContainer .nav-category-header').forEach(header => {
+                header.addEventListener('click', () => {
+                    const category = header.dataset.categoryMobile;
+                    document.querySelectorAll('#mobileNavContainer .nav-category-header').forEach(h => h.classList.remove('active'));
+                    header.classList.add('active');
+                    loadCategoryContent(category);
+                    closeMobileMenu();
+                });
+            });
+        }
+        
+        // 加载分类内容
+        function loadCategoryContent(categoryName) {
+            currentCategoryName = categoryName;
+            const contentBody = document.getElementById('contentBody');
+            const currentCategory = document.getElementById('currentCategory');
+            currentCategory.innerHTML = `<span>📌 ${categoryName}</span>`;
+            
+            const catData = categories[categoryName];
+            if (!catData || Object.keys(catData).length === 0) {
+                contentBody.innerHTML = `<div style="text-align:center; padding:50px; color:#999;">暂无数据</div>`;
+                return;
+            }
+            
+            const years = Object.keys(catData).sort((a, b) => getYearValue(a) - getYearValue(b));
+            let totalCount = 0;
+            let html = '';
+            
+            years.forEach(year => {
+                const blogs = catData[year];
+                totalCount += blogs.length;
+                const fullYear = convertToFullYear(year);
+                
+                html += `
+                    <div class="year-row">
+                        <div class="year-label">${fullYear}年</div>
+                        <div class="links-container">
+                `;
+                
+                blogs.forEach(blog => {
+                    const isSubmit = blog.name.includes('提交') || blog.name === '独立' || blog.name === '技术' || 
+                                    blog.name === '博客' || blog.name === '个人' || blog.name === '随机' || 
+                                    blog.name === 'RSS' || blog.name === '域名' || blog.name === '工具' || 
+                                    blog.name === '学习' || blog.name === 'ai' || blog.name === '米表' ||
+                                    blog.name === '论坛' || blog.name === '主页' || blog.name === '程序';
+                    const colorClass = isSubmit ? 'submit-link-red' : '';
+                    html += `<a href="${blog.url}" target="_blank" class="${colorClass}">${blog.name}</a>`;
+                });
+                
+                html += `</div></div>`;
+            });
+            
+            html = `
+                <div style="margin-bottom: 20px; padding: 12px 16px; background: #e8f4fd; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+                    <div style="font-size: 14px;">📊 共 ${years.length} 个年份 · ${totalCount} 个站点</div>
+                    <div style="font-size: 13px; color: #666;">💡 提示：点击链接可直接访问</div>
+                </div>
+                ${html}
+            `;
+            
+            contentBody.innerHTML = html;
+        }
+        
+        // 移动端菜单控制
+        function openMobileMenu() {
+            document.getElementById('mobileSidebar').classList.add('open');
+            document.getElementById('menuOverlay').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeMobileMenu() {
+            document.getElementById('mobileSidebar').classList.remove('open');
+            document.getElementById('menuOverlay').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        
+        // 回到顶部
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            backToTop.classList.toggle('show', window.scrollY > 300);
+        });
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        
+        // 初始化
+        function init() {
+            checkNoticeClosed();
+            
+            if (typeof categories !== 'undefined') {
+                renderNavigation();
+                renderMobileNavigation();
+            } else {
+                window.addEventListener('load', function() {
+                    if (typeof categories !== 'undefined') {
+                        renderNavigation();
+                        renderMobileNavigation();
+                    } else {
+                        console.error('data.js 加载失败');
+                        document.getElementById('contentBody').innerHTML = '<div style="text-align:center; padding:50px; color:#999;">数据加载失败，请刷新页面重试</div>';
+                    }
+                });
+            }
+            
+            const menuToggle = document.getElementById('menuToggle');
+            const menuOverlay = document.getElementById('menuOverlay');
+            const closeMenu = document.getElementById('closeMenu');
+            
+            if (menuToggle) menuToggle.addEventListener('click', openMobileMenu);
+            if (menuOverlay) menuOverlay.addEventListener('click', closeMobileMenu);
+            if (closeMenu) closeMenu.addEventListener('click', closeMobileMenu);
+        }
+        
+        init();
+    </script>
+</body>
+</html>

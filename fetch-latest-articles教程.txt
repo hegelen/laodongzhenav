@@ -1,0 +1,11 @@
+方法一：使用 CMD 命令提示符（最简单）
+按 Win + R，输入 cmd，回车
+
+进入您的项目目录：
+
+bash
+cd /d D:\要运行文件夹地址
+运行 
+npm install rss-parser 
+再运行抓取脚本 
+node fetch-latest-articles.js
