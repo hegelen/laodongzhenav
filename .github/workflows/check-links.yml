@@ -30,7 +30,18 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+<<<<<<< HEAD
           git add -f dead_links.json      # -f 强制添加被忽略的文件
           git add -f latest-articles.js   # -f 强制添加被忽略的文件
           git diff --quiet && git diff --staged --quiet || git commit -m "自动更新"
           git push
+=======
+          # 添加死链报告
+          git add -f dead_links.json
+          # 提交（如果有改动）
+          git diff --quiet && git diff --staged --quiet || git commit -m "自动更新死链报告"
+          # 先拉取远程更新（不使用 rebase）
+          git pull origin master --no-rebase
+          # 推送
+          git push origin master
+>>>>>>> f38bb2c3c9cc73bc0ac3501a04c9573cd85c3ddd

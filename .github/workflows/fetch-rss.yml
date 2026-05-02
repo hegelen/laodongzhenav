@@ -1,10 +1,8 @@
 name: 抓取 RSS 最新文章
 
 on:
-  # 每天北京时间凌晨2点运行（UTC 时间18:00）
   schedule:
     - cron: '0 18 * * *'
-  # 手动触发
   workflow_dispatch:
 
 jobs:
@@ -30,7 +28,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add -f dead_links.json      # -f 强制添加被忽略的文件
-          git add -f latest-articles.js   # -f 强制添加被忽略的文件
-          git diff --quiet && git diff --staged --quiet || git commit -m "自动更新"
-          git push
+          git add -f latest-articles.js
+          git diff --quiet && git diff --staged --quiet || git commit -m "自动更新最新文章"
+          git pull origin master --no-rebase
+          git push origin master
