@@ -41,7 +41,7 @@ function groupByYear(blogs) {
 }
 
 async function main() {
-    const TARGET_TOTAL = 10;      // 总共抓取10篇
+    const TARGET_TOTAL = 60;      // 总共抓取10篇
     const MAX_PER_YEAR = 2;       // 每个年份最多抓取2篇
     
     console.log('🚀 开始抓取 RSS 文章...');
