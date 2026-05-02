@@ -8,6 +8,7 @@ on:
 jobs:
   fetch:
     runs-on: ubuntu-latest
+    timeout-minutes: 10  # 设置10分钟超时
     
     steps:
       - name: 检出代码
@@ -16,7 +17,7 @@ jobs:
       - name: 安装 Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '18'  # 改用稳定版
       
       - name: 安装依赖
         run: npm install rss-parser
