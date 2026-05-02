@@ -16,7 +16,7 @@ function getYearValue(yearStr) {
 }
 
 // ==================== 博客年份导航数据 ====================
-const blogYearsData = {
+const blogYearsData = {  
     '94': [{name:'贾斯汀', url:'/go.htm?url=https://links.net/', rss:'https://links.net/feed'}, {name:' ', url:''}, {name:' ', url:''}, {name:' ', url:''}],
     '00': [{name:'Luca', url:'/go.htm?url=https://wlj.me/', rss:'https://wlj.me/feed'}, {name:'卢昌海 ', url:'/go.htm?url=https://www.changhai.org/', rss:'https://www.changhai.org/feed'}, {name:' ', url:''}, {name:' ', url:''}],
     '01': [{name:'nc-show', url:'/go.htm?url=https://nicrosoft.net/', rss:'https://nicrosoft.net/feed'}, {name:'阿江守候', url:'/go.htm?url=http://www.ajiang.net/', rss:'http://www.ajiang.net/feed'}, {name:'东评衿就', url:'/go.htm?url=https://dongjunke.cn/', rss:'https://dongjunke.cn/atom.xml'}, {name:'老痛', url:'/go.htm?url=https://toonkam.com'}, {name:' ', url:''}],
