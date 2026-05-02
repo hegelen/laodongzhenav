@@ -1,39 +1,39 @@
 // ==================== latest-articles.js ====================
 // 自动生成，请勿手动修改
-// 抓取日期: 5/2/2026, 10:41:43 PM
+// 抓取日期: 5/2/2026, 11:36:38 PM
 // 共 49 篇文章，覆盖 25 个年份
 
 const latestArticlesByYear = {
   "10": [
-    {
-      "name": "the5fire",
-      "year": "10",
-      "title": "通过github actions部署aws lambda记录 - s3部署、ECR部署 以及固定出口IP",
-      "url": "https://www.the5fire.com/aws_lambda_s3_ecr_github_actions.html",
-      "date": "2024-06-26"
-    },
     {
       "name": "宇间草",
       "year": "10",
       "title": "“滨州医保”突然打不开",
       "url": "https://2days.org/182.html",
       "date": "2026-04-11"
+    },
+    {
+      "name": "雅余",
+      "year": "10",
+      "title": "动物朋友",
+      "url": "https://yayu.net/6218.html",
+      "date": "2026-04-30"
     }
   ],
   "11": [
-    {
-      "name": "耳朵的主人",
-      "year": "11",
-      "title": "行将四十，时常在夜里失眠，也许是睡不着，也许是不想睡。",
-      "url": "https://www.edzbe.com/radio/vol-75.html",
-      "date": "2026-03-20"
-    },
     {
       "name": "罗磊",
       "year": "11",
       "title": "开启我的「人生 AI」计划",
       "url": "https://luolei.org/life-ai",
       "date": "2026-03-10"
+    },
+    {
+      "name": "耳朵的主人",
+      "year": "11",
+      "title": "行将四十，时常在夜里失眠，也许是睡不着，也许是不想睡。",
+      "url": "https://www.edzbe.com/radio/vol-75.html",
+      "date": "2026-03-20"
     }
   ],
   "12": [
@@ -45,11 +45,11 @@ const latestArticlesByYear = {
       "date": "2026-04-14"
     },
     {
-      "name": "Tokin",
+      "name": "半日闲",
       "year": "12",
-      "title": "1Panel V1 升级 V2，以及命令注入漏洞 CVE-2025-54424 相关问题",
-      "url": "https://biji.io/2025/6053.html",
-      "date": "2025-08-07"
+      "title": "Typecho仿百度响应式主题Xaink",
+      "url": "https://www.xiaoa.me/archives/theme_xaink.html",
+      "date": "2026-02-06"
     }
   ],
   "13": [
@@ -61,68 +61,68 @@ const latestArticlesByYear = {
       "date": "2026-04-21"
     },
     {
-      "name": "Frank",
+      "name": "小z",
       "year": "13",
-      "title": "Understanding Systemd Timer: Troubleshooting `D-Bus connection terminated` Error",
-      "url": "https://nyan.im/p/systemd-dbus-connection-terminated-en",
-      "date": "2026-02-12"
+      "title": "5分钟拥有自己的“小龙虾”：PicoClaw Docker 部署教程",
+      "url": "https://blog.xiaoz.org/archives/22928",
+      "date": "2026-04-07"
     }
   ],
   "14": [
     {
-      "name": "运营不加班",
+      "name": "简单点",
       "year": "14",
-      "title": "LangGraph创建可控agent",
-      "url": "https://nops.icu/archives/239/",
-      "date": "2026-04-10"
+      "title": "斑马打印机ZD系列高级模式功能简介",
+      "url": "https://blog.caiwenhao.cn/jingyanfenxiang/2287.html",
+      "date": "2026-01-16"
     },
     {
-      "name": "ying",
+      "name": "松茸",
       "year": "14",
-      "title": "问汝平生功业-读《苏东坡新传》-4",
-      "url": "https://izualzhy.cn/sdpxz-reading-d",
-      "date": "2026-04-26"
+      "title": "猫咪QQ卸载记",
+      "url": "https://zrs.xyz/2128.html",
+      "date": "2026-04-03"
     }
   ],
   "15": [
-    {
-      "name": "泽泽社长",
-      "year": "15",
-      "title": "从MacbookAir换到MacbookPro",
-      "url": "https://blog.aihaonv.com/macbookair-to-macbookpro.html",
-      "date": "2026-04-28"
-    },
     {
       "name": "牧人池塘",
       "year": "15",
       "title": "MySQL5.7/8.0/8.4/9.6配置文件生成器v1.0",
       "url": "https://dbanote.com/MySQL/mysql_make_cnf.html",
       "date": "2026-03-16"
+    },
+    {
+      "name": "Luminous",
+      "year": "15",
+      "title": "【OpenWRT】查找定位校园网内异常的DHCP广播来源",
+      "url": "https://luotianyi.vc/9409.html",
+      "date": "2026-04-05"
     }
   ],
   "16": [
     {
-      "name": "小可",
+      "name": "ximi",
       "year": "16",
-      "title": "快速搭建&迁移S3 —— 手把手教你从MinIO迁移到Garage",
-      "url": "https://keke.su/posts/2026-01-25-new-1.html",
-      "date": "2026-01-25"
+      "title": "VoluMill自下而上开粗设置方法",
+      "url": "https://www.ximi.me/post-6039.html",
+      "date": "2025-09-11"
     },
     {
-      "name": "幻影",
+      "name": "若水斋",
       "year": "16",
-      "title": "OneBlog主题增加多表情包教程",
-      "url": "https://blog.52hyjs.com/post-1266.html",
-      "date": "2026-04-05"
+      "title": "《夏洛的网》读后感",
+      "url": "https://blog.werner.wiki/charlottes-web-book-report/",
+      "date": "2025-11-09"
     }
   ],
   "17": [
     {
-      "name": "马春杰杰",
+      "name": "沈唁志",
       "year": "17",
-      "title": "吐槽：记录一次站点被Meta爬虫刷掉400G流量的排查过程",
-      "url": "https://www.machunjie.com/web/2120.html",
-      "date": "2026-04-29"
+      "title": "使用 Trusted Publishing 提升 npm 包发布安全性",
+      "url": "https://qq52o.me/2862.html",
+      "date": "2026-04-21"
     },
     {
       "name": "染念",
@@ -134,91 +134,91 @@ const latestArticlesByYear = {
   ],
   "18": [
     {
+      "name": "阳",
+      "year": "18",
+      "title": "如果最便捷的获取自己的Telegram Id和电报群组Id",
+      "url": "https://yooer.me/846.html",
+      "date": "2025-10-02"
+    },
+    {
       "name": "枋柚梓的猫会发光",
       "year": "18",
       "title": "极空间 NAS：SSH 高阶玩法实践",
       "url": "https://inkss.cn/post/3af25609/",
       "date": "2025-09-11"
-    },
-    {
-      "name": "希仁之拥",
-      "year": "18",
-      "title": "【转载】谈谈不受欢迎的博客技术特征",
-      "url": "https://blog.keepchen.com/a/Talk-about-the-technical-features-of-unpopular-blogs.html",
-      "date": "2026-04-13"
     }
   ],
   "19": [
     {
-      "name": "启尚",
+      "name": "流情",
       "year": "19",
-      "title": "Python 中的单元素解包语法：[b] = a 原理与最佳实践",
-      "url": "https://blog.wuxhqi.com/python-%e4%b8%ad%e7%9a%84%e5%8d%95%e5%85%83%e7%b4%a0%e8%a7%a3%e5%8c%85%e8%af%ad%e6%b3%95%ef%bc%9ab-a-%e5%8e%9f%e7%90%86%e4%b8%8e%e6%9c%80%e4%bd%b3%e5%ae%9e%e8%b7%b5/",
-      "date": "2026-01-27"
+      "title": "欢迎来到流情的博客<span style='color:#007AFF'>[置顶]</span>",
+      "url": "https://liuqingwushui.top/archives/16/",
+      "date": "2024-09-30"
     },
     {
-      "name": "李锋镝",
+      "name": "herman",
       "year": "19",
-      "title": "踩坑60+次后，我终于搞懂 Claude Skill 怎么写才会真的触发",
-      "url": "https://www.lifengdi.com/ren-gong-zhi-neng/4698",
-      "date": "2026-04-27"
+      "title": "The commodification of travel",
+      "url": "https://herman.bearblog.dev/the-commodification-of-travel/",
+      "date": "2026-04-22"
     }
   ],
   "20": [
-    {
-      "name": "HEMING",
-      "year": "20",
-      "title": "购买了新域名 KUN.YUN",
-      "url": "https://heming.org/2241.html",
-      "date": "2026-03-08"
-    },
     {
       "name": "隔壁老刘",
       "year": "20",
       "title": "在Mac Mini M2上测试了一下Deepseek-r1:14b",
       "url": "https://www.lzhs.com/2025/309.html",
       "date": "2025-02-26"
+    },
+    {
+      "name": "天书vip",
+      "year": "20",
+      "title": "真正高效的收割机制，从不以恶的面目出现",
+      "url": "https://www.skybook.vip/inn/142",
+      "date": "2025-12-25"
     }
   ],
   "21": [
+    {
+      "name": "ovo",
+      "year": "21",
+      "title": "放空",
+      "url": "https://ovo.cc/archives/1436/",
+      "date": "2026-03-01"
+    },
     {
       "name": "辣条",
       "year": "21",
       "title": "一切恰到好处",
       "url": "https://www.latiao.org/2290.html",
       "date": "2026-03-03"
-    },
-    {
-      "name": "小威",
-      "year": "21",
-      "title": "Tencent EdgeOne 腾讯云CDN免费申请兑换计划申请指南",
-      "url": "https://www.xiaoweio.com/3133.html",
-      "date": "2025-06-20"
     }
   ],
   "22": [
     {
-      "name": "栋dong",
+      "name": "VeryJack",
       "year": "22",
-      "title": "校园大内网远程桌面连接方案",
-      "url": "https://itdong.me/school-network-rdp/",
-      "date": "2025-04-16"
+      "title": "是时候，走出象牙塔了",
+      "url": "https://veryjack.com/life/step_out_of_comfort_zone/",
+      "date": "2026-03-28"
     },
     {
-      "name": "zhecydn",
+      "name": "吃猫的鱼",
       "year": "22",
-      "title": "b站首页回到旧版+搜索页回到旧版",
-      "url": "https://blog.zhecydn.asia/archives/2278",
-      "date": "2026-04-06"
+      "title": "OpenClaw 不是更聪明的 AI，而是能长期跑起来的 AI",
+      "url": "https://www.fish9.cn/archives/476/",
+      "date": "2026-02-06"
     }
   ],
   "23": [
     {
-      "name": "宗宗酱",
+      "name": "火米",
       "year": "23",
-      "title": "全栈云盘劳动节开放注册！国内储存不限速可做影视库",
-      "url": "https://ygz.ink/archives/4781.html",
-      "date": "2026-05-02"
+      "title": "Mac 上如何快速切换音频输出设备",
+      "url": "https://huo.me/switchaudio-osx/",
+      "date": "2026-03-06"
     },
     {
       "name": "康丰",
@@ -230,27 +230,27 @@ const latestArticlesByYear = {
   ],
   "24": [
     {
-      "name": "三叔",
+      "name": "何权洪",
       "year": "24",
-      "title": "三叔工具箱",
-      "url": "https://www.sanshu.cn/arc/126.html",
-      "date": "2025-04-06"
+      "title": "礼毕",
+      "url": "https://www.hequanhong.cn/32.html",
+      "date": "2024-12-18"
     },
     {
-      "name": "阿伟",
+      "name": "ImQi1",
       "year": "24",
-      "title": "我掏空了情绪，还是不够真实",
-      "url": "https://awei.cc/57.html",
-      "date": "2026-01-21"
+      "title": "为了一个女孩，我哭了一整晚",
+      "url": "https://imqi1.com/content/note/1009",
+      "date": "2026-04-27"
     }
   ],
   "25": [
     {
-      "name": "左手平凡",
+      "name": "巴适小馨",
       "year": "25",
-      "title": "Linux shell脚本编写",
-      "url": "https://blog.perass.com/archives/885.html",
-      "date": "2026-04-16"
+      "title": "善待和尊重处在低谷期的奋进者",
+      "url": "https://p4z.cn/archives/98.html",
+      "date": "2026-04-27"
     },
     {
       "name": "心记",
@@ -258,79 +258,6 @@ const latestArticlesByYear = {
       "title": "自运营的博客之家论坛已上线",
       "url": "https://blog.moodlog.cn/archives/16/",
       "date": "2026-04-29"
-    }
-  ],
-  "09": [
-    {
-      "name": "木木木木木",
-      "year": "09",
-      "title": "二〇二六，你好",
-      "url": "https://immmmm.com/hi-2026/",
-      "date": "2026-01-25"
-    },
-    {
-      "name": "老卫",
-      "year": "09",
-      "title": "历时三年《鸿蒙系统（HarmonyOS）移动开发实战》简介",
-      "url": "https://waylau.com/about-harmonyos-short-video-book/",
-      "date": "2026-05-01"
-    }
-  ],
-  "05": [
-    {
-      "name": "王志勇",
-      "year": "05",
-      "title": "人生讨论(21)：“明白不”的心理机制",
-      "url": "http://www.auiou.com/relevant/00002148.jsp",
-      "date": "2026-05-02"
-    },
-    {
-      "name": "佐仔志",
-      "year": "05",
-      "title": "2025年我都买了什么–购物清单分享",
-      "url": "https://www.jinbo123.com/8286.html",
-      "date": "2026-01-19"
-    }
-  ],
-  "02": [
-    {
-      "name": "Wangjianshuo",
-      "year": "02",
-      "title": "DuduCam: Multi-Angle Magic Made Simple",
-      "url": "https://home.wangjianshuo.com/20250126_duducam-multi-angle-magic-made-simple.htm",
-      "date": "2025-01-26"
-    }
-  ],
-  "08": [
-    {
-      "name": "阿呆生活志",
-      "year": "08",
-      "title": "typecho迁移到wordpress程序的具体步骤",
-      "url": "https://qsir.cn/notes/272.html",
-      "date": "2026-04-13"
-    },
-    {
-      "name": "小气的神",
-      "year": "08",
-      "title": "度加 AI 入选第十四届 TOP100 Summit 优秀案例榜单",
-      "url": "https://mdong.org/2025/12/%e5%ba%a6%e5%8a%a0-ai-%e5%85%a5%e9%80%89%e7%ac%ac%e5%8d%81%e5%9b%9b%e5%b1%8a-top100-summit-%e4%bc%98%e7%a7%80%e6%a1%88%e4%be%8b%e6%a6%9c%e5%8d%95/?utm_source=rss&utm_medium=rss&utm_campaign=%25e5%25ba%25a6%25e5%258a%25a0-ai-%25e5%2585%25a5%25e9%2580%2589%25e7%25ac%25ac%25e5%258d%2581%25e5%259b%259b%25e5%25b1%258a-top100-summit-%25e4%25bc%2598%25e7%25a7%2580%25e6%25a1%2588%25e4%25be%258b%25e6%25a6%259c%25e5%258d%2595",
-      "date": "2025-12-01"
-    }
-  ],
-  "04": [
-    {
-      "name": "一片瓦",
-      "year": "04",
-      "title": "Google Chrome 142更新引发内网访问危机：原理、影响与全面解决方案",
-      "url": "https://www.ixsz.com/3194.html",
-      "date": "2026-04-11"
-    },
-    {
-      "name": "kaix.in",
-      "year": "04",
-      "title": "自深深处",
-      "url": "https://kaix.in/2026/0426/",
-      "date": "2026-04-26"
     }
   ],
   "01": [
@@ -349,49 +276,122 @@ const latestArticlesByYear = {
       "date": "2026-01-01"
     }
   ],
-  "06": [
-    {
-      "name": "eallion",
-      "year": "06",
-      "title": "春假清明自驾游",
-      "url": "https://www.eallion.com/qingming-road-trip-2026/",
-      "date": "2026-04-07"
-    },
-    {
-      "name": "bang",
-      "year": "06",
-      "title": "Agent 模型的思维链是什么",
-      "url": "https://blog.cnbang.net/uncategorized/4279/",
-      "date": "2026-01-12"
-    }
-  ],
   "07": [
     {
-      "name": "织梦岁月",
+      "name": "悠见",
       "year": "07",
-      "title": "2026年4月总结",
-      "url": "https://zhujianlin.com/archives/1879.html",
-      "date": "2026-04-30"
+      "title": "快进的故乡，慢行的生命",
+      "url": "https://yufm.com/662250.html",
+      "date": "2026-01-27"
     },
     {
-      "name": "龙天小筑",
+      "name": "FROYO",
       "year": "07",
-      "title": "Stable Diffusion Webui无显卡安装",
-      "url": "https://www.dragongod.net/2023/02/install-stable-diffusion-webui-without-gpu/?utm_source=rss&utm_medium=rss&utm_campaign=install-stable-diffusion-webui-without-gpu",
-      "date": "2023-02-28"
+      "title": "我们可能是最惨的一代人",
+      "url": "https://www.izhuyue.com/5820.html",
+      "date": "2026-01-14"
     }
   ],
   "03": [
+    {
+      "name": "王建硕",
+      "year": "03",
+      "title": "DuduCam: Multi-Angle Magic Made Simple",
+      "url": "https://home.wangjianshuo.com/20250126_duducam-multi-angle-magic-made-simple.htm",
+      "date": "2025-01-26"
+    },
     {
       "name": "张智勇",
       "year": "03",
       "title": "炒作口诀",
       "url": "https://zyzhang.com/%E7%82%92%E4%BD%9C%E5%8F%A3%E8%AF%80/",
       "date": "2026-01-12"
+    }
+  ],
+  "08": [
+    {
+      "name": "军",
+      "year": "08",
+      "title": "难得正版Windows又打骨折！白菜价",
+      "url": "https://me.xu19.com/windows11-big-discount/",
+      "date": "2026-05-01"
     },
     {
-      "name": "王建硕",
-      "year": "03",
+      "name": "阿呆生活志",
+      "year": "08",
+      "title": "typecho迁移到wordpress程序的具体步骤",
+      "url": "https://qsir.cn/notes/272.html",
+      "date": "2026-04-13"
+    }
+  ],
+  "04": [
+    {
+      "name": "孙老四",
+      "year": "04",
+      "title": "【XNUMX日】是什么意思？",
+      "url": "http://lao.si/199",
+      "date": "2022-03-21"
+    },
+    {
+      "name": "小陈故事",
+      "year": "04",
+      "title": "这段时间",
+      "url": "https://www.chener.net/archives/thisperiod/",
+      "date": "2026-04-12"
+    }
+  ],
+  "09": [
+    {
+      "name": "老卫",
+      "year": "09",
+      "title": "历时三年《鸿蒙系统（HarmonyOS）移动开发实战》简介",
+      "url": "https://waylau.com/about-harmonyos-short-video-book/",
+      "date": "2026-05-01"
+    },
+    {
+      "name": "老张",
+      "year": "09",
+      "title": "我只会瞎折腾！暨兰空图床上传图片失败解决方法！",
+      "url": "https://laozhang.org/archives/4056.html",
+      "date": "2026-04-28"
+    }
+  ],
+  "06": [
+    {
+      "name": "平顶山",
+      "year": "06",
+      "title": "俄罗斯四-再次体验2G网络",
+      "url": "https://pingdingshan.me/348.html",
+      "date": "2025-08-01"
+    },
+    {
+      "name": "黄杰敏",
+      "year": "06",
+      "title": "三月读书摘要｜祛魅的另一种形态不是拥有，而是求而不得。",
+      "url": "https://www.jiemin.com/archives/1807.html",
+      "date": "2026-03-25"
+    }
+  ],
+  "05": [
+    {
+      "name": "王志勇",
+      "year": "05",
+      "title": "人生讨论(21)：“明白不”的心理机制",
+      "url": "http://www.auiou.com/relevant/00002148.jsp",
+      "date": "2026-05-02"
+    },
+    {
+      "name": "大嘴狗狗",
+      "year": "05",
+      "title": "如何错峰使用 Google 的 Antigravity",
+      "url": "https://www.sirit.com.cn/archives/727/",
+      "date": "2026-03-17"
+    }
+  ],
+  "02": [
+    {
+      "name": "Wangjianshuo",
+      "year": "02",
       "title": "DuduCam: Multi-Angle Magic Made Simple",
       "url": "https://home.wangjianshuo.com/20250126_duducam-multi-angle-magic-made-simple.htm",
       "date": "2025-01-26"
