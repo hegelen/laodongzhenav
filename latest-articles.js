@@ -1,7 +1,7 @@
 // ==================== latest-articles.js ====================
 // 自动生成，请勿手动修改
-// 最后更新: 2026/5/1 15:18:43
-// 共收录 136 篇最新文章
+// 最后更新: 5/1/2026, 7:34:10 PM
+// 共收录 130 篇最新文章
 
 const latestArticlesByYear = {
   "2001": [
@@ -82,6 +82,14 @@ const latestArticlesByYear = {
       "url": "https://coolshell.cn/articles/22422.html",
       "date": "2023-05-08",
       "summary": "这两天技术圈里热议的一件事就是Amazon的流媒体平台Prime Video在2023年3月22日发布了一篇技术博客《规模化Prime Video的音视频监控服...\n Read More  Read More\n是微服务架构不香还是云不香？..."
+    },
+    {
+      "name": "孙老四",
+      "year": "04",
+      "title": "【XNUMX日】是什么意思？",
+      "url": "http://lao.si/199",
+      "date": "2022-03-21",
+      "summary": "我也不知道，很抱歉。\n百度搜索 XNUMX 会找到很多结果。点进去看，通常的情况都是外文网站通过“机器翻译”形成的中文站点。\n而 XNUMX 出现的位置，在原文中其实是一组数字，比如月份、日期、折扣……\n个人理解，用两个 X 夹着一个 NU..."
     }
   ],
   "2005": [
@@ -92,14 +100,6 @@ const latestArticlesByYear = {
       "url": "http://www.auiou.com/relevant/00002147.jsp",
       "date": "2026-04-29",
       "summary": "音乐是永恒的主题。前2篇其实都是在睡梦中写的，白天写不出这样深刻的内容。其中，第2篇的发布时间其实是05:03，后来我手动改成了06:03，为了不让读者觉得我不睡觉。其实，经常更新博客是会导致睡不着的，因为半夜醒来，就会想着博客某个话题怎么..."
-    },
-    {
-      "name": "尚磊",
-      "year": "05",
-      "title": "使用微信内的元宝AI助手高效保存和消化微信生态内容",
-      "url": "https://shanglei.net/2026/04/20/%e4%bd%bf%e7%94%a8%e5%be%ae%e4%bf%a1%e5%86%85%e7%9a%84%e5%85%83%e5%ae%9dai%e5%8a%a9%e6%89%8b%e9%ab%98%e6%95%88%e4%bf%9d%e5%ad%98%e5%92%8c%e6%b6%88%e5%8c%96%e5%be%ae%e4%bf%a1%e7%94%9f%e6%80%81%e5%86%85/",
-      "date": "2026-04-20",
-      "summary": "在微信中，使用“元宝”助手可以有效保存和提炼公众号或视频号的干货内容。操作简单：转发内容给“元宝”后，它会自动生成摘要，用户可进一步提问。这种方式不仅绕过了平台限制，还增强了用户的内容交互体验，非常适合快速回顾和记录重点。..."
     },
     {
       "name": "大嘴狗狗",
@@ -246,10 +246,10 @@ const latestArticlesByYear = {
     {
       "name": "军",
       "year": "08",
-      "title": "惊魂一刻！楼上着火了",
-      "url": "https://me.xu19.com/fire-fire-run/",
-      "date": "2026-04-25",
-      "summary": "我在楼上的窗户上看到楼下站了很多人，而且大家都是抬头往上看，大事不妙，肯定发生什么事了，但此时我没有想到是着火。 往 ......"
+      "title": "难得正版Windows又打骨折！白菜价",
+      "url": "https://me.xu19.com/windows11-big-discount/",
+      "date": "2026-05-01",
+      "summary": "一直以来对正版系统都是有渴望的，但是安装的最多还是盗版，当然这里面有很多的原因。 第一台电脑是Windows 95，那时候还不 ......"
     },
     {
       "name": "杜郎俊赏",
@@ -258,6 +258,14 @@ const latestArticlesByYear = {
       "url": "https://dujun.io/4a67621e-989a-5db6-a33b-a340ffe2a85b.html",
       "date": "2026-04-22",
       "summary": "前几天我妈给我打电话，不经意提到我爸去看牙，医生说嘴里长了东西，让他去做下检查。我以为是小事，没放在心上。到了第二天我再问起这件事，我妈竟然说要住院了。我很惊讶，不是做检查吗，怎么会要住院这么严重？结果我妈这才说医生是让做切片检查，要全身麻..."
+    },
+    {
+      "name": "阿呆生活志",
+      "year": "08",
+      "title": "typecho迁移到wordpress程序的具体步骤",
+      "url": "https://qsir.cn/notes/272.html",
+      "date": "2026-04-13",
+      "summary": "昨天测试了一下将typecho整站数据迁移到wordpress程序的整个过程。记录一下，以防不备之需。第一步1.下载ByeTyp插件：GitHub：https://github.com/sunx......"
     },
     {
       "name": "小气的神",
@@ -286,20 +294,20 @@ const latestArticlesByYear = {
   ],
   "2009": [
     {
+      "name": "老卫",
+      "year": "09",
+      "title": "历时三年《鸿蒙系统（HarmonyOS）移动开发实战》简介",
+      "url": "https://waylau.com/about-harmonyos-short-video-book/",
+      "date": "2026-05-01",
+      "summary": "近期拿到《鸿蒙系统（HarmonyOS）移动开发实战》样书，该书由人民邮电出版社出版。围绕如何从0开始构建一个完整的类似于“抖音”的短视频App来展开。\n本文希望与读者朋友们分享下这本书里面的大致内容。\n写作背景\n2023年，笔者应慕课网邀..."
+    },
+    {
       "name": "老张",
       "year": "09",
       "title": "我只会瞎折腾！暨兰空图床上传图片失败解决方法！",
       "url": "https://laozhang.org/archives/4056.html",
       "date": "2026-04-28",
       "summary": "我给自己定义“瞎折腾”应该很多次了！每次折腾完一件事之后，才会把整个折腾的过程撸一撸思路，这才会发现绕了太多太多的弯路而浪费了太多太多的时间。讲一讲这次我又是怎么样瞎折腾兰空图床上传失败的吧！ 应该是大前天，我写老张随笔里需要上传一张图片到..."
-    },
-    {
-      "name": "老卫",
-      "year": "09",
-      "title": "HarmonyOS 6.0升级至6.1改动点",
-      "url": "https://waylau.com/changes-from-harmony0s-6-0-to-6-1/",
-      "date": "2026-04-26",
-      "summary": "2026年4月20日，HarmonyOS 6.1.0 Release正式发布，同时，DevEco Studio 6.1.0 Release版本也同步发布，标志着以API 23为核心的HarmonyOS全套开发套件（含SDK及开发工具DevE..."
     },
     {
       "name": "谁见到过风？",
@@ -319,14 +327,6 @@ const latestArticlesByYear = {
     }
   ],
   "2010": [
-    {
-      "name": "雅余",
-      "year": "10",
-      "title": "动物朋友",
-      "url": "https://yayu.net/6218.html",
-      "date": "2026-04-30",
-      "summary": "萌宠乐园～ 和动物朋友亲密接触。 By 徕卡 D-LUX8..."
-    },
     {
       "name": "lilydjwg",
       "year": "10",
@@ -358,33 +358,9 @@ const latestArticlesByYear = {
       "url": "https://www.xj123.info/8414.html",
       "date": "2025-09-22",
       "summary": "工作的笔记本ThinkPad x1c 9th从上半年开始，莫名其妙的会突然断电重启，这次是彻底无法上电，无奈送 […]..."
-    },
-    {
-      "name": "the5fire",
-      "year": "10",
-      "title": "通过github actions部署aws lambda记录 - s3部署、ECR部署 以及固定出口IP",
-      "url": "https://www.the5fire.com/aws_lambda_s3_ecr_github_actions.html",
-      "date": "2024-06-26",
-      "summary": "背景\n一个每天只需要运行一次的策略（每天只需要去交易所拿一次行情数据，计算完成后输出结果），放到EC2里跑有点浪费资源，不如部署到aws lambda中。\n本篇内容主要记录在使用lambda时遇到的依赖资源过大的问题。\n下面主要分两部分来记..."
     }
   ],
   "2011": [
-    {
-      "name": "小癞子",
-      "year": "11",
-      "title": "剑桥街上偶遇桔猫: 英国的室外猫",
-      "url": "https://justyy.com/archives/71468",
-      "date": "2026-04-30",
-      "summary": "上周六去了剑桥市中心一家新开的面馆吃面（开业前两周半价，后两周打八折），总觉得不去薅一下羊毛就亏了一个亿。\r\n\r\n吃饱喝足往回走，在街上遇到一只橘猫，慢悠悠地朝我们走过来，特别淡定，一点也不怕人。前几年在剑桥Papworth小村（当时送孩子..."
-    },
-    {
-      "name": "老孙",
-      "year": "11",
-      "title": "又一款Typecho单栏主题Timellow",
-      "url": "https://www.imsun.org/archives/1783.html",
-      "date": "2026-04-27",
-      "summary": "简介\n老孙从刚开始研究主题到现在也移植了不少主题 \n这次真的是自己慢慢手搓出来的主题 纯原创\n主打的就是一个简洁无太多功能专注于写作本身(我本身不爱写作)\n预览\n\n开源地址\nhttps://github.com/jkjoy/typecho-..."
-    },
     {
       "name": "耳朵的主人",
       "year": "11",
@@ -480,14 +456,6 @@ const latestArticlesByYear = {
       "summary": "此为读《苏东坡新传》的笔记。\n从二月份开始，断断续续的开始读这本书，地铁上、人群中、闹市里、闲暇时、忙里偷闲时，读了二十多个小时。中间因为掺杂众多古文，晦涩难懂，几欲放弃。却又总因对苏东坡生平的好奇、作者真诚的文字，坚持下来。\n至此全部读完..."
     },
     {
-      "name": "缙哥哥",
-      "year": "14",
-      "title": "京东健康邀请3个新用户，轻松1分钱领取天晟体脂称",
-      "url": "https://www.dujin.org/23698.html",
-      "date": "2026-04-26",
-      "summary": "各大应用商店下载京东健康APP，登录好账号（可以微信或者京东一键登录）。 在首页找到减1斤领黄金的活动（在首页中间的滚动横幅，可以左右拖动）点进去，会出现让你邀请3个好友，你点邀请，复制你的口令。然后发送给自己，有多个微信的，或者手机号的，..."
-    },
-    {
       "name": "运营不加班",
       "year": "14",
       "title": "LangGraph创建可控agent",
@@ -566,9 +534,9 @@ const latestArticlesByYear = {
     {
       "name": "太隐",
       "year": "16",
-      "title": "隐说 NO.21  海瑞治不了腐败",
-      "url": "https://wangyurui.com/posts/yin-shuo-no-21-fu-bai-bu-neng-zhi-kao-hai-rui-la-eeeb2a84",
-      "date": "2026-04-27",
+      "title": "歧视不需要恶意",
+      "url": "https://wangyurui.com/posts/qi-shi-bu-xu-yao-e-yi-fc2cb16c",
+      "date": "2026-05-01",
       "summary": ""
     },
     {
@@ -618,14 +586,6 @@ const latestArticlesByYear = {
       "url": "https://www.ximi.me/post-6039.html",
       "date": "2025-09-11",
       "summary": ""
-    },
-    {
-      "name": "友人C",
-      "year": "16",
-      "title": "handsome —— 一款typecho主题",
-      "url": "https://www.ihewro.com/archives/489/",
-      "date": "2016-12-05",
-      "summary": "[scode type=\"green\"]本站是handsome主题唯一购买方式，其他任何途径、渠道均为非法倒卖主题。handsome主题已经获得国家认证软件著作权证书[/scode]主题介绍  ......"
     }
   ],
   "2017": [
@@ -660,14 +620,6 @@ const latestArticlesByYear = {
       "url": "https://qq52o.me/2862.html",
       "date": "2026-04-21",
       "summary": "在现代前端生态中，npm 包发布流程的安全性越来越重要。 传统的发布方式通常依赖长期有效的 npm token，一旦泄露，攻击者就可以直接发布恶意版本，带来严重的供应链风险。为了解决这一问题，npm 在 2025 年 7 月份推出了 Tru..."
-    },
-    {
-      "name": "AI柠檬",
-      "year": "17",
-      "title": "一天提交一万行代码：我与AI Coding的奇幻之旅",
-      "url": "https://blog.ailemon.net/2026/04/04/experence-for-1w-code-1day-by-ai-coding/?pk_campaign=feed&pk_kwd=experence-for-1w-code-1day-by-ai-coding&utm_source=rss&utm_medium=rss&utm_campaign=experence-for-1w-code-1day-by-ai-coding",
-      "date": "2026-04-03",
-      "summary": ""
     },
     {
       "name": "83小驿站",
@@ -738,6 +690,14 @@ const latestArticlesByYear = {
   ],
   "2019": [
     {
+      "name": "李锋镝",
+      "year": "19",
+      "title": "踩坑60+次后，我终于搞懂 Claude Skill 怎么写才会真的触发",
+      "url": "https://www.lifengdi.com/ren-gong-zhi-neng/4698",
+      "date": "2026-04-27",
+      "summary": "用 Claude 做开发、写文档、跑流程的人，大概率都碰过一件事： 精心写了一个 Skill，结果 Claude 全程看不见，叫破喉咙也不触发。 我前前后后改了几十版 Skill 描述，踩过无数坑，再结合这篇实测650次的经验，终于把触发逻..."
+    },
+    {
       "name": "herman",
       "year": "19",
       "title": "The commodification of travel",
@@ -771,14 +731,6 @@ const latestArticlesByYear = {
     }
   ],
   "2020": [
-    {
-      "name": "happyxiao",
-      "year": "20",
-      "title": "反向配重",
-      "url": "https://happyxiao.com/counter/",
-      "date": "2026-04-25",
-      "summary": "上周，弟弟参加了幼儿园时代最后一次春游。家长没有陪同，老师领着一班孩子，去海洋馆玩了半天。结束之后，我和他妈翻 […]..."
-    },
     {
       "name": "HEMING",
       "year": "20",
@@ -820,14 +772,6 @@ const latestArticlesByYear = {
       "url": "https://www.yveji.com/Prose/the-moonlight-of-taiyuan.html",
       "date": "2026-03-31",
       "summary": "和我在龙城的街头走一走 喔…  看柱子上的小狮子和月上树梢头  月上树梢头  羊肉蒸饺点了  醋和辣椒和匀  玉米䂦来上一碗，整完准备回去看看月亮呐，结果晚上下雨，给我冻滴  隔天上午云淡风清，......"
-    },
-    {
-      "name": "毒蛊",
-      "year": "21",
-      "title": "音乐搜索器-多站合一音乐源码改造记录",
-      "url": "https://blog.idg8.cn/915",
-      "date": "2026-03-18",
-      "summary": "音乐搜索器 v1.7.8 → v1.8.0：一次“暗黑模式 + 顶部布局 + 弹窗可读性”的前端改造记录本文按更新日志（2026.03.14 v1.7.8 / 2026.03.17 v1.7.9......"
     },
     {
       "name": "硅谷王川",
@@ -912,6 +856,14 @@ const latestArticlesByYear = {
       "summary": "记账的app有很多，但是我都扫码或者刷卡了。 现在卡越来越多了，我只想记录每个月要还多少饥荒。..."
     },
     {
+      "name": "远梦",
+      "year": "22",
+      "title": "可那些你以为的观众，其实根本没买票入场。",
+      "url": "https://blog.qoz.cc/2179/",
+      "date": "2025-07-25",
+      "summary": "“在没钱的时候，骑电动车出门就怕遇见熟人，怕丢面子。后来有钱了买了汽车，再骑电动车出门的时候，就不怕了。 记住 […]..."
+    },
+    {
       "name": "皓月星际",
       "year": "22",
       "title": "欢迎使用 Typecho",
@@ -932,10 +884,18 @@ const latestArticlesByYear = {
     {
       "name": "宗宗酱",
       "year": "23",
-      "title": "重庆管局备案太快了",
-      "url": "https://ygz.ink/archives/4746.html",
+      "title": "五一当特种兵累了",
+      "url": "https://ygz.ink/archives/4750.html",
       "date": "2026-05-01",
-      "summary": "我周二提交的备案，昨天周五就通过了！现在审核速度是真快啊😂！之前注销备案当天提交当天注销，这工作效率是真的高！ […]..."
+      "summary": "今天中午十二点带着朋友从磁器口逛到洪崖洞，我的天啦。全是人头。全是外地游客来打卡洪崖洞的夜景，整个朝天门还有千 […]..."
+    },
+    {
+      "name": "Siwei Li",
+      "year": "23",
+      "title": "长岭湖五一随拍",
+      "url": "https://siwei.li/chang-ling-hu-wu-yi-sui-pai/",
+      "date": "2026-05-01",
+      "summary": "光拍人了，没怎么拍景色😂..."
     },
     {
       "name": "无敌",
@@ -946,28 +906,12 @@ const latestArticlesByYear = {
       "summary": "魔兽世界-熊猫人之谜：从体验到理解的一段阶段性旅程 无敌的个人博客 tangwudi\n1 我的魔兽生涯 说起《魔兽世界》这个游戏，相信对很多70、80后的老登，中登玩家来说，都是一段很难被替代的记忆，我当然也不例外。不过这篇文章，并不是单纯..."
     },
     {
-      "name": "维奥洛",
-      "year": "23",
-      "title": "恍惚间，自己分不清用的 win11 还是 arch",
-      "url": "https://vioulo.com/archives/win11-or-arch.html",
-      "date": "2026-04-30",
-      "summary": "恍惚间，自己分不清用的 win11 还是 arch..."
-    },
-    {
       "name": "鹿泽",
       "year": "23",
       "title": "什么是页面SEO：小型企业网站简易指南",
       "url": "https://www.bailuze.com/24045.html",
       "date": "2026-04-30",
       "summary": "如果经营一家小型企业，网站应该像一个稳定可靠的销售人员一样运作。它应该帮助人们找到我们，了解我们的服务，并让他 […]..."
-    },
-    {
-      "name": "Siwei Li",
-      "year": "23",
-      "title": "哈医大春季随拍（2）",
-      "url": "https://siwei.li/ha-yi-da-chun/",
-      "date": "2026-04-29",
-      "summary": ""
     },
     {
       "name": "小野",
@@ -1002,12 +946,12 @@ const latestArticlesByYear = {
       "summary": "最近不少用户反馈 红米 K70 被强制更新到澎湃 OS 3.0 系统。即使关闭了自动下载和自动更新设置，一些小米手机仍在夜间自动完成系统升级。通过小红书、抖音、微博以及小米社区可以看到，类似情况并不仅限于红米 K70，K60、K80 以及部..."
     },
     {
-      "name": "本源归一",
+      "name": "康丰",
       "year": "23",
-      "title": "秋收冬藏：关于这四个月的碎屑与微光",
-      "url": "https://ww-fs.com/archives/115.html",
-      "date": "2025-12-18",
-      "summary": "自己一看,上次更新是9月多，现在又过去三个月了。完成了所有考试，暂时闲起来了。每天感觉一睁眼一闭眼，一天就过去了。结束考试刚开始课程还是挺多的，但是都要笔试考试，我认为还是不科学的。因为课程大多......"
+      "title": "提升自己最快的十种方式",
+      "url": "https://www.okang.top/archives/3388",
+      "date": "2026-01-12",
+      "summary": ""
     },
     {
       "name": "Shiina",
@@ -1058,6 +1002,14 @@ const latestArticlesByYear = {
       "url": "https://imqi1.com/content/note/1009",
       "date": "2026-04-27",
       "summary": "为了一个女孩，我哭了一整晚，到现在写这篇文章还在哭。\n\n我真的很爱她。\n\n我想和你们介绍一下我们的故事。\n\n我们在去年 11 月 17 号相识，通过我在小红书上发的一篇帖子相识。\n\n![小红书的帖子](https://cdn.imqi1.c..."
+    },
+    {
+      "name": "DandyAPI",
+      "year": "24",
+      "title": "随笔0415",
+      "url": "https://blog.dandyapi.com/%e9%9a%8f%e7%ac%940415/",
+      "date": "2026-04-15",
+      "summary": "感觉写解决问题的记录总结及分析，相比一个议题进行扩展更容易写。因为解决问题是实实在在发生的，从内心的迷茫到眼神 […]..."
     },
     {
       "name": "阿伟",
