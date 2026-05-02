@@ -1,10 +1,8 @@
 name: 检查死链
 
 on:
-  # 每周日凌晨2点运行
   schedule:
     - cron: '0 2 * * 0'
-  # 手动触发
   workflow_dispatch:
 
 jobs:
@@ -32,9 +30,9 @@ jobs:
           git config --local user.name "GitHub Action"
           # 添加死链报告
           git add -f dead_links.json
-          # 如果有改动，就提交
+          # 提交（如果有改动）
           git diff --quiet && git diff --staged --quiet || git commit -m "自动更新死链报告"
-          # 拉取远程更新
-          git pull --rebase origin master
+          # 先拉取远程更新（不使用 rebase）
+          git pull origin master --no-rebase
           # 推送
-          git push
+          git push origin master
