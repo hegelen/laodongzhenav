@@ -1,8 +1,6 @@
 name: 抓取 RSS 最新文章
 
 on:
-  schedule:
-    - cron: '0 18 * * *'
   workflow_dispatch:
 
 jobs:
@@ -11,22 +9,24 @@ jobs:
     timeout-minutes: 60
     
     steps:
-      - uses: actions/checkout@v4
+      - name: 检出代码
+        uses: actions/checkout@v4
       
-      - uses: actions/setup-node@v4
+      - name: 安装 Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: '20'
       
       - name: 安装依赖
-        run: npm install rss-parser --no-audit --no-fund
+        run: npm install rss-parser
       
-      - name: 抓取
+      - name: 抓取文章
         run: node fetch-latest-articles.js
       
-      - name: 提交更新
+      - name: 推送更新
         run: |
           git config user.email "action@github.com"
           git config user.name "GitHub Action"
           git add -f latest-articles.js
-          git commit -m "自动更新文章" || echo "没有新内容需要提交"
+          git commit -m "更新文章" || true
           git push origin master --force
