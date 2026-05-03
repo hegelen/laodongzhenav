@@ -8,7 +8,7 @@ on:
 jobs:
   fetch:
     runs-on: ubuntu-latest
-    timeout-minutes: 60      # 改成 60 分钟
+    timeout-minutes: 60
     
     steps:
       - uses: actions/checkout@v4
@@ -21,15 +21,12 @@ jobs:
         run: npm install rss-parser --no-audit --no-fund
       
       - name: 抓取
-        id: fetch
-        continue-on-error: false
         run: node fetch-latest-articles.js
       
       - name: 提交更新
-        if: always()           # 无论抓取是否成功，都执行提交
         run: |
           git config user.email "action@github.com"
           git config user.name "GitHub Action"
           git add -f latest-articles.js
-          git diff --staged --quiet || git commit -m "自动更新文章"
+          git commit -m "自动更新文章"
           git push origin master --force
