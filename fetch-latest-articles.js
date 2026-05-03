@@ -1,4 +1,4 @@
-// fetch-latest-articles.js - 超时直接跳过版
+// fetch-latest-articles.js - 只抓取最近7天的文章
 const fs = require('fs');
 const path = require('path');
 
@@ -7,6 +7,7 @@ async function loadRssParser() {
     return new module.default();
 }
 
+// 从 data.js 中提取所有博客（带 rss 字段和年份）
 function extractBlogsFromData(content) {
     const blogs = [];
     const yearPattern = /'(\d+)':\s*\[([\s\S]*?)\]/g;
@@ -29,47 +30,61 @@ function extractBlogsFromData(content) {
     return blogs;
 }
 
+// 检查文章是否在最近 N 天内
+function isWithinDays(pubDate, days) {
+    if (!pubDate) return false;
+    const articleDate = new Date(pubDate);
+    const now = new Date();
+    const diffDays = (now - articleDate) / (1000 * 60 * 60 * 24);
+    return diffDays <= days;
+}
+
 // 带超时的抓取函数
-async function fetchWithTimeout(blog, parser, timeoutMs = 5000) {
-    // 创建一个超时 Promise
+async function fetchWithTimeout(blog, parser, timeoutMs = 8000) {
     const timeoutPromise = new Promise((_, reject) => {
         setTimeout(() => reject(new Error('TIMEOUT')), timeoutMs);
     });
     
-    // 抓取 Promise
     const fetchPromise = parser.parseURL(blog.rssUrl).then(feed => {
         if (feed.items && feed.items.length > 0) {
-            const latest = feed.items[0];
-            return {
-                name: blog.name,
-                year: blog.year,
-                title: latest.title || '无标题',
-                url: latest.link || '',
-                date: latest.pubDate ? new Date(latest.pubDate).toISOString().split('T')[0] : ''
-            };
+            // 查找最近7天内的文章
+            for (const item of feed.items) {
+                const pubDate = item.pubDate || item.isoDate;
+                if (isWithinDays(pubDate, 7)) {
+                    return {
+                        name: blog.name,
+                        year: blog.year,
+                        title: item.title || '无标题',
+                        url: item.link || '',
+                        date: pubDate ? new Date(pubDate).toISOString().split('T')[0] : ''
+                    };
+                }
+            }
+            // 没有找到7天内的文章
+            return null;
         }
         return null;
     });
     
-    // 谁先完成就用谁的结果
     try {
         return await Promise.race([fetchPromise, timeoutPromise]);
     } catch (error) {
         if (error.message === 'TIMEOUT') {
-            console.log(`   ⏰ 超时，跳过`);
-            return null;
+            console.log(`   ⏰ 超时`);
+        } else {
+            console.log(`   ❌ 失败: ${error.message.substring(0, 30)}`);
         }
-        console.log(`   ❌ 失败: ${error.message}`);
         return null;
     }
 }
 
 async function main() {
-    const TARGET_TOTAL = 60;      // 目标 10 篇
+    const TARGET_TOTAL = 10;      // 目标 10 篇
     const MAX_PER_YEAR = 2;       // 每年最多 2 篇
-    const TIMEOUT_MS = 5000;      // 5 秒超时
+    const TIMEOUT_MS = 8000;      // 8 秒超时
     
     console.log('🚀 开始抓取 RSS 文章...');
+    console.log(`📅 只抓取最近 7 天内的文章`);
     console.log(`🎯 目标: ${TARGET_TOTAL} 篇，每个年份最多 ${MAX_PER_YEAR} 篇`);
     console.log(`⏰ 超时设置: ${TIMEOUT_MS / 1000} 秒\n`);
     
@@ -105,9 +120,9 @@ async function main() {
         if (article) {
             results.push(article);
             yearCount[blog.year] = (yearCount[blog.year] || 0) + 1;
-            console.log(` ✅ 第 ${results.length}/${TARGET_TOTAL} 篇`);
+            console.log(` ✅ 第 ${results.length}/${TARGET_TOTAL} 篇 (${article.date})`);
         } else if (article === null) {
-            // 超时或失败，已经打印过了
+            console.log(` ⏭️ 无7天内文章`);
         }
     }
     
@@ -124,7 +139,8 @@ async function main() {
     // 生成输出文件
     const output = `// ==================== latest-articles.js ====================
 // 抓取日期: ${new Date().toLocaleString()}
-// 共 ${results.length} 篇文章
+// 只抓取最近7天内的文章，共 ${results.length} 篇
+// 目标 ${TARGET_TOTAL} 篇，实际 ${results.length} 篇
 
 const latestArticlesByYear = ${JSON.stringify(groupedByYear, null, 2)};
 
@@ -137,7 +153,7 @@ if (typeof window !== 'undefined') {
     window.getSortedYears = getSortedYears;
 }
 
-console.log('✅ 加载完成，共 ' + Object.keys(latestArticlesByYear).reduce((sum, y) => sum + latestArticlesByYear[y].length, 0) + ' 篇文章');
+console.log('✅ 加载完成，共 ' + Object.keys(latestArticlesByYear).reduce((sum, y) => sum + latestArticlesByYear[y].length, 0) + ' 篇最近7天文章');
 `;
     
     fs.writeFileSync('latest-articles.js', output, 'utf8');
