@@ -155,6 +155,7 @@ const featuredNavData = {
 const toolNavData = {
     '97': [{name:'archive网站历史', url:'/go.htm?url=https://archive.org/'}],
     '07': [{name:'蛙蛙工具', url:'/go.htm?url=https://www.iamwawa.cn/'}],
+	  '08': [{name:'github', url:'/go.htm?url=https://github.com/'}],
     '13': [{name:'trustasia证书在线工具集', url:'/go.htm?url=https://www.trustasia.com/tools'}],
     '14': [{name:'创可贴', url:'/go.htm?url=https://www.chuangkit.com/'}],
     '16': [{name:'万能计算器', url:'/go.htm?url=https://www.omnicalculator.com/'}],
