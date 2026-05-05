@@ -1,32 +1,52 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 5/5/2026, 7:41:59 AM
+// 抓取日期: 5/5/2026, 8:12:41 PM
 // 只抓取最近7天内的文章，共 10 篇
 // 目标 10 篇，实际 10 篇
 
 const latestArticlesByYear = {
-  "2004": [
+  "2005": [
     {
-      "name": "kaix.in",
-      "year": "04",
-      "title": "桌面宠物",
-      "url": "https://kaix.in/2026/0504/",
-      "date": "2026-05-04"
+      "name": "王志勇",
+      "year": "05",
+      "title": "人生讨论(21)：“明白不”的心理机制",
+      "url": "http://www.auiou.com/relevant/00002148.jsp",
+      "date": "2026-05-02"
+    }
+  ],
+  "2008": [
+    {
+      "name": "军",
+      "year": "08",
+      "title": "难得正版Windows又打骨折！白菜价",
+      "url": "https://me.xu19.com/windows11-big-discount/",
+      "date": "2026-05-01"
     }
   ],
   "2009": [
-    {
-      "name": "老张",
-      "year": "09",
-      "title": "我只会瞎折腾！暨兰空图床上传图片失败解决方法！",
-      "url": "https://laozhang.org/archives/4056.html",
-      "date": "2026-04-28"
-    },
     {
       "name": "老卫",
       "year": "09",
       "title": "历时三年《鸿蒙系统（HarmonyOS）移动开发实战》简介",
       "url": "https://waylau.com/about-harmonyos-short-video-book/",
       "date": "2026-05-01"
+    }
+  ],
+  "2010": [
+    {
+      "name": "雅余",
+      "year": "10",
+      "title": "动物朋友",
+      "url": "https://yayu.net/6218.html",
+      "date": "2026-04-30"
+    }
+  ],
+  "2013": [
+    {
+      "name": "卡瓦邦噶",
+      "year": "13",
+      "title": "读《金阁寺》",
+      "url": "https://www.kawabangga.com/posts/7246",
+      "date": "2026-05-04"
     }
   ],
   "2015": [
@@ -38,6 +58,15 @@ const latestArticlesByYear = {
       "date": "2026-05-04"
     }
   ],
+  "2016": [
+    {
+      "name": "woodu",
+      "year": "16",
+      "title": "JVS时代的经典乘客——《太鼓之达人 6》",
+      "url": "https://woodu.me/jvsshidaidejingdiancheng/",
+      "date": "2026-05-02"
+    }
+  ],
   "2017": [
     {
       "name": "染念",
@@ -47,45 +76,20 @@ const latestArticlesByYear = {
       "date": "2026-04-28"
     }
   ],
-  "2021": [
-    {
-      "name": "诺依阁",
-      "year": "21",
-      "title": "openclaw命令行与搭建(2026.5.3版本)",
-      "url": "https://blog.nuoyis.net/posts/93b5.html",
-      "date": "2026-05-04"
-    }
-  ],
-  "2022": [
-    {
-      "name": "吃猫的鱼",
-      "year": "22",
-      "title": "鸿蒙安装 Google Play 应用：microG 方案实践",
-      "url": "https://www.fish9.cn/archives/477/",
-      "date": "2026-05-04"
-    },
-    {
-      "name": "倦意",
-      "year": "22",
-      "title": "用苹果 iOS 小火箭保护隐私IP（防泄露）",
-      "url": "https://jyblog.cn/5487/",
-      "date": "2026-05-04"
-    }
-  ],
   "2023": [
-    {
-      "name": "无敌",
-      "year": "23",
-      "title": "魔兽世界-熊猫人之谜：从体验到理解的一段阶段性旅程",
-      "url": "http://blog.tangwudi.com/technology/entertainment14204/",
-      "date": "2026-05-01"
-    },
     {
       "name": "Siwei Li",
       "year": "23",
       "title": "阿城湿地公园五一随拍",
       "url": "https://siwei.li/a-cheng-shi-di-gong-yuan-wu-yi-sui-pai/",
       "date": "2026-05-03"
+    },
+    {
+      "name": "鹿泽",
+      "year": "23",
+      "title": "从传统到AI驱动：SEO如何变化",
+      "url": "https://www.bailuze.com/24051.html",
+      "date": "2026-05-04"
     }
   ]
 };
