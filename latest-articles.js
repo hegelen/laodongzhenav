@@ -1,25 +1,16 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 5/3/2026, 12:37:34 PM
+// 抓取日期: 5/5/2026, 7:41:59 AM
 // 只抓取最近7天内的文章，共 10 篇
 // 目标 10 篇，实际 10 篇
 
 const latestArticlesByYear = {
-  "2005": [
+  "2004": [
     {
-      "name": "王志勇",
-      "year": "05",
-      "title": "人生讨论(21)：“明白不”的心理机制",
-      "url": "http://www.auiou.com/relevant/00002148.jsp",
-      "date": "2026-05-02"
-    }
-  ],
-  "2007": [
-    {
-      "name": "织梦岁月",
-      "year": "07",
-      "title": "2026年4月总结",
-      "url": "https://zhujianlin.com/archives/1879.html",
-      "date": "2026-04-30"
+      "name": "kaix.in",
+      "year": "04",
+      "title": "桌面宠物",
+      "url": "https://kaix.in/2026/0504/",
+      "date": "2026-05-04"
     }
   ],
   "2009": [
@@ -38,13 +29,13 @@ const latestArticlesByYear = {
       "date": "2026-05-01"
     }
   ],
-  "2016": [
+  "2015": [
     {
-      "name": "太隐",
-      "year": "16",
-      "title": "歧视不需要恶意",
-      "url": "https://wangyurui.com/posts/qi-shi-bu-xu-yao-e-yi-fc2cb16c",
-      "date": "2026-05-01"
+      "name": "东哥",
+      "year": "15",
+      "title": "从零搭建一套跨平台的icon图标库（四）- 资源预览",
+      "url": "https://blog.hudd.cn/1414.html",
+      "date": "2026-05-04"
     }
   ],
   "2017": [
@@ -56,40 +47,45 @@ const latestArticlesByYear = {
       "date": "2026-04-28"
     }
   ],
-  "2019": [
+  "2021": [
     {
-      "name": "李锋镝",
-      "year": "19",
-      "title": "踩坑60+次后，我终于搞懂 Claude Skill 怎么写才会真的触发",
-      "url": "https://www.lifengdi.com/ren-gong-zhi-neng/4698",
-      "date": "2026-04-27"
+      "name": "诺依阁",
+      "year": "21",
+      "title": "openclaw命令行与搭建(2026.5.3版本)",
+      "url": "https://blog.nuoyis.net/posts/93b5.html",
+      "date": "2026-05-04"
     }
   ],
   "2022": [
     {
+      "name": "吃猫的鱼",
+      "year": "22",
+      "title": "鸿蒙安装 Google Play 应用：microG 方案实践",
+      "url": "https://www.fish9.cn/archives/477/",
+      "date": "2026-05-04"
+    },
+    {
       "name": "倦意",
       "year": "22",
-      "title": "Juanyi Chat：现代化实时的聊天室，无需框架依赖，开箱即用。",
-      "url": "https://jyblog.cn/5465/",
-      "date": "2026-05-02"
+      "title": "用苹果 iOS 小火箭保护隐私IP（防泄露）",
+      "url": "https://jyblog.cn/5487/",
+      "date": "2026-05-04"
     }
   ],
   "2023": [
     {
-      "name": "鹿泽",
+      "name": "无敌",
       "year": "23",
-      "title": "在谷歌商家资料中选择并优化分类",
-      "url": "https://www.bailuze.com/24049.html",
-      "date": "2026-05-02"
-    }
-  ],
-  "2024": [
+      "title": "魔兽世界-熊猫人之谜：从体验到理解的一段阶段性旅程",
+      "url": "http://blog.tangwudi.com/technology/entertainment14204/",
+      "date": "2026-05-01"
+    },
     {
-      "name": "ImQi1",
-      "year": "24",
-      "title": "为了一个女孩，我哭了一整晚",
-      "url": "https://imqi1.com/content/note/1009",
-      "date": "2026-04-27"
+      "name": "Siwei Li",
+      "year": "23",
+      "title": "阿城湿地公园五一随拍",
+      "url": "https://siwei.li/a-cheng-shi-di-gong-yuan-wu-yi-sui-pai/",
+      "date": "2026-05-03"
     }
   ]
 };
