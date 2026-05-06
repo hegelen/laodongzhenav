@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 5/5/2026, 8:12:41 PM
+// 抓取日期: 5/6/2026, 8:30:00 PM
 // 只抓取最近7天内的文章，共 10 篇
 // 目标 10 篇，实际 10 篇
 
@@ -13,7 +13,23 @@ const latestArticlesByYear = {
       "date": "2026-05-02"
     }
   ],
+  "2006": [
+    {
+      "name": "joojen Zhou",
+      "year": "06",
+      "title": "把日子过好，是一件不容易的事情",
+      "url": "https://joojen.com/archives/8938.html",
+      "date": "2026-05-05"
+    }
+  ],
   "2008": [
+    {
+      "name": "杜郎俊赏",
+      "year": "08",
+      "title": "古苗寨万家灯火，黄果树瀑雨通天",
+      "url": "https://dujun.io/may-day-family-trip-to-guizhou.html",
+      "date": "2026-05-06"
+    },
     {
       "name": "军",
       "year": "08",
@@ -22,40 +38,38 @@ const latestArticlesByYear = {
       "date": "2026-05-01"
     }
   ],
-  "2009": [
-    {
-      "name": "老卫",
-      "year": "09",
-      "title": "历时三年《鸿蒙系统（HarmonyOS）移动开发实战》简介",
-      "url": "https://waylau.com/about-harmonyos-short-video-book/",
-      "date": "2026-05-01"
-    }
-  ],
   "2010": [
     {
-      "name": "雅余",
+      "name": "忆往事",
       "year": "10",
-      "title": "动物朋友",
-      "url": "https://yayu.net/6218.html",
-      "date": "2026-04-30"
+      "title": "补牙",
+      "url": "https://zhou.ge/2026-05-05.html",
+      "date": "2026-05-05"
     }
   ],
-  "2013": [
+  "2012": [
     {
-      "name": "卡瓦邦噶",
-      "year": "13",
-      "title": "读《金阁寺》",
-      "url": "https://www.kawabangga.com/posts/7246",
+      "name": "金马",
+      "year": "12",
+      "title": "用AI为自己创造实习机会",
+      "url": "https://lijinma.com/create-internship-opportunities-with-ai/",
       "date": "2026-05-04"
     }
   ],
   "2015": [
     {
+      "name": "Luminous",
+      "year": "15",
+      "title": "【frp】双端内网环境XTCP协议P2P打洞互通实践",
+      "url": "https://luotianyi.vc/9435.html",
+      "date": "2026-05-03"
+    },
+    {
       "name": "东哥",
       "year": "15",
-      "title": "从零搭建一套跨平台的icon图标库（四）- 资源预览",
-      "url": "https://blog.hudd.cn/1414.html",
-      "date": "2026-05-04"
+      "title": "typecho的handsome主题首页增加标签",
+      "url": "https://blog.hudd.cn/1415.html",
+      "date": "2026-05-06"
     }
   ],
   "2016": [
@@ -67,29 +81,13 @@ const latestArticlesByYear = {
       "date": "2026-05-02"
     }
   ],
-  "2017": [
-    {
-      "name": "染念",
-      "year": "17",
-      "title": "lens|打造最强的个人LLM聚合网关系统",
-      "url": "https://dyedd.cn/posts/lens_api",
-      "date": "2026-04-28"
-    }
-  ],
   "2023": [
     {
-      "name": "Siwei Li",
+      "name": "宗宗酱",
       "year": "23",
-      "title": "阿城湿地公园五一随拍",
-      "url": "https://siwei.li/a-cheng-shi-di-gong-yuan-wu-yi-sui-pai/",
-      "date": "2026-05-03"
-    },
-    {
-      "name": "鹿泽",
-      "year": "23",
-      "title": "从传统到AI驱动：SEO如何变化",
-      "url": "https://www.bailuze.com/24051.html",
-      "date": "2026-05-04"
+      "title": "手机充电口烧了",
+      "url": "https://ygz.ink/archives/4812.html",
+      "date": "2026-05-06"
     }
   ]
 };
