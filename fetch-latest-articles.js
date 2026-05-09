@@ -1,4 +1,4 @@
-// fetch-latest-articles.js - 只抓取最近7天的文章
+// fetch-latest-articles.js - 只抓取最近14天的文章
 const fs = require('fs');
 const path = require('path');
 
@@ -50,7 +50,7 @@ async function fetchWithTimeout(blog, parser, timeoutMs = 8000) {
             // 查找最近7天内的文章
             for (const item of feed.items) {
                 const pubDate = item.pubDate || item.isoDate;
-                if (isWithinDays(pubDate, 7)) {
+                if (isWithinDays(pubDate, 14)) {
                     return {
                         name: blog.name,
                         year: blog.year,
@@ -81,10 +81,10 @@ async function fetchWithTimeout(blog, parser, timeoutMs = 8000) {
 async function main() {
     const TARGET_TOTAL = 10;      // 目标 10 篇
     const MAX_PER_YEAR = 2;       // 每年最多 2 篇
-    const TIMEOUT_MS = 8000;      // 8 秒超时
+    const TIMEOUT_MS = 3000;      // 3 秒超时
     
     console.log('🚀 开始抓取 RSS 文章...');
-    console.log(`📅 只抓取最近 7 天内的文章`);
+    console.log(`📅 只抓取最近 14 天内的文章`);
     console.log(`🎯 目标: ${TARGET_TOTAL} 篇，每个年份最多 ${MAX_PER_YEAR} 篇`);
     console.log(`⏰ 超时设置: ${TIMEOUT_MS / 1000} 秒\n`);
     
