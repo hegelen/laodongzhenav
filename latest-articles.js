@@ -1,9 +1,18 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 5/9/2026, 5:13:09 AM
+// 抓取日期: 5/9/2026, 10:10:29 AM
 // 只抓取最近14天内的文章，共 10 篇
 // 目标 10 篇，实际 10 篇
 
 const latestArticlesByYear = {
+  "2000": [
+    {
+      "name": "Luca",
+      "year": "00",
+      "title": "嚯，昨晚这么好的睡眠质量啊",
+      "url": "https://wlj.me/notes/sp-note-20260509-082550/",
+      "date": "2026-05-09"
+    }
+  ],
   "2001": [
     {
       "name": "东评衿就",
@@ -13,15 +22,6 @@ const latestArticlesByYear = {
       "date": "2026-05-05"
     }
   ],
-  "2004": [
-    {
-      "name": "龙哥",
-      "year": "04",
-      "title": "用ipabc.de做了一个ip查询网站",
-      "url": "https://long.ge/18063.html",
-      "date": "2026-04-28"
-    }
-  ],
   "2009": [
     {
       "name": "多多",
@@ -29,65 +29,67 @@ const latestArticlesByYear = {
       "title": "wp的默认feed地址打不开处理办法",
       "url": "https://ddlog.cn/?p=471",
       "date": "2026-05-08"
-    },
-    {
-      "name": "老卫",
-      "year": "09",
-      "title": "历时三年《鸿蒙系统（HarmonyOS）移动开发实战》简介",
-      "url": "https://waylau.com/about-harmonyos-short-video-book/",
-      "date": "2026-05-01"
     }
   ],
-  "2010": [
+  "2014": [
     {
-      "name": "宇间草",
-      "year": "10",
-      "title": "一场与AI的对话：我如何逼问出“资本大于人命”的系统真相",
-      "url": "https://2days.org/19988.html",
-      "date": "2026-05-08"
+      "name": "ying",
+      "year": "14",
+      "title": "问汝平生功业-读《苏东坡新传》-4",
+      "url": "https://izualzhy.cn/sdpxz-reading-d",
+      "date": "2026-04-26"
     }
   ],
-  "2017": [
+  "2016": [
     {
-      "name": "染念",
-      "year": "17",
-      "title": "lens|打造最强的个人LLM聚合网关系统",
-      "url": "https://dyedd.cn/posts/lens_api",
-      "date": "2026-04-28"
+      "name": "幻影",
+      "year": "16",
+      "title": "硬装结束 夏天来了",
+      "url": "https://blog.52hyjs.com/post-1267.html",
+      "date": "2026-05-05"
     }
   ],
-  "2019": [
+  "2018": [
     {
-      "name": "李锋镝",
-      "year": "19",
-      "title": "踩坑60+次后，我终于搞懂 Claude Skill 怎么写才会真的触发",
-      "url": "https://www.lifengdi.com/ren-gong-zhi-neng/4698",
-      "date": "2026-04-27"
-    },
+      "name": "运维咖啡吧",
+      "year": "18",
+      "title": "我买基金从不亏钱",
+      "url": "https://blog.ops-coffee.com/r/fund-5-year-from-50-percent-loss-to-profit.html",
+      "date": "2026-05-07"
+    }
+  ],
+  "2022": [
     {
-      "name": "流情",
-      "year": "19",
-      "title": "通过openclaw装hermes，倒反天罡",
-      "url": "https://liuqingwushui.top/archives/155/",
-      "date": "2026-04-30"
+      "name": "倦意",
+      "year": "22",
+      "title": "Windsurf切号器分享",
+      "url": "https://jyblog.cn/5519/",
+      "date": "2026-05-09"
     }
   ],
   "2023": [
     {
-      "name": "无敌",
+      "name": "建站百科",
       "year": "23",
-      "title": "为博客加一层“语义索引”（上）：结构设计与构建流程",
-      "url": "http://blog.tangwudi.com/technology/homedatacenter14228/",
+      "title": "C-Servers 特别活动：纯IPv6套餐$3.45年付，更有4核8G AMD Ryzen 7 5700X套餐$3.99月付可选！",
+      "url": "https://www.jzbk.net/2967.html",
       "date": "2026-05-07"
     }
   ],
-  "2025": [
+  "2024": [
     {
-      "name": "落花雨记",
-      "year": "25",
-      "title": "牛马生活",
-      "url": "https://www.luohuayu.cn/68.html",
-      "date": "2026-05-08"
+      "name": "ImQi1",
+      "year": "24",
+      "title": "为了一个女孩，我哭了一整晚",
+      "url": "https://imqi1.com/content/note/1009",
+      "date": "2026-04-27"
+    },
+    {
+      "name": "无名",
+      "year": "24",
+      "title": "如何在树莓派 4B 上驱动一块 2.4 寸 SPI 屏幕",
+      "url": "https://wuminboke.site/uncategorized/how-to-setup-2-4-inch-spi-screen-on-rpi-4b/",
+      "date": "2026-04-27"
     }
   ]
 };
