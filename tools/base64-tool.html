@@ -5,39 +5,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>劳动者工具箱 - URL安全Base64编码解码</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         body {
-            background: #f0f2f5;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            padding: 24px 16px;
-            color: #1e293b;
+            background-color: #f5f5f5;
+            font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            color: #333;
         }
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
+        
+        /* 全局头部导航 - 与主站风格保持一致 */
+        .global-header {
+            background: linear-gradient(135deg, #2c3e50 0%, #1a2632 100%);
+            color: white;
+            padding: 15px 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            gap: 12px;
         }
-        /* 头部区域 */
-        .tool-header {
-            margin-bottom: 24px;
+        .global-header .logo-area {
+            flex: 1;
         }
-        .tool-header h1 {
-            font-size: 1.8rem;
-            font-weight: 600;
-            background: linear-gradient(135deg, #1e293b, #2d3a4f);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            margin-bottom: 8px;
+        .global-header h1 {
+            font-size: 20px;
+            margin-bottom: 0;
         }
-        .tool-header p {
-            color: #5b6e8c;
-            font-size: 0.9rem;
+        .global-header .desc-full {
+            font-size: 12px;
+            opacity: 0.8;
+            margin-top: 4px;
         }
-        /* 主工作区 */
-        .card {
+        .global-header a {
+            color: white;
+            text-decoration: none;
+            background: rgba(255,255,255,0.15);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            transition: all 0.2s;
+        }
+        .global-header a:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        
+        /* 主体布局 - 左右分栏 */
+        .main-layout {
+            display: flex;
+            max-width: 1400px;
+            margin: 20px auto;
+            gap: 20px;
+            padding: 0 20px;
+        }
+        
+        /* 左侧分类导航 */
+        .sidebar {
+            width: 280px;
+            flex-shrink: 0;
             background: white;
-            border-radius: 24px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            overflow: hidden;
+            position: sticky;
+            top: 90px;
+            height: fit-content;
+            max-height: calc(100vh - 100px);
+            overflow-y: auto;
+        }
+        .sidebar-title {
+            background: #2c3e50;
+            color: white;
+            padding: 15px 20px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .nav-category {
+            border-bottom: 1px solid #eee;
+        }
+        .nav-category-header {
+            padding: 12px 20px;
+            cursor: pointer;
+            background: #fafafa;
+            font-weight: 500;
+            color: #2c3e50;
+            transition: all 0.2s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-category-header:hover {
+            background: #f0f0f0;
+        }
+        .nav-category-header.active {
+            background: #e8f4fd;
+            color: #0066cc;
+            border-left: 3px solid #0066cc;
+        }
+        
+        /* 右侧内容区域 - 工具内页样式扩展 */
+        .content-area {
+            flex: 1;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            overflow: hidden;
+            min-height: 600px;
+        }
+        .content-header {
+            background: #f8f9fa;
+            padding: 15px 25px;
+            border-bottom: 1px solid #e0e0e0;
+            font-size: 18px;
+            font-weight: bold;
+            color: #2c3e50;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .tool-inner-container {
+            padding: 25px;
+        }
+        
+        /* ========== 以下为 Base64 工具专用样式 ========== */
+        .tool-card {
+            background: white;
+            border: 1px solid #e8e8e8;
+            border-radius: 12px;
             padding: 24px;
             margin-bottom: 24px;
             transition: all 0.2s ease;
@@ -49,14 +148,14 @@
             display: flex;
             align-items: center;
             gap: 8px;
-            border-left: 4px solid #3b82f6;
+            border-left: 4px solid #0066cc;
             padding-left: 16px;
         }
         textarea, input, select {
             width: 100%;
             padding: 12px 16px;
             border: 1px solid #e2e8f0;
-            border-radius: 16px;
+            border-radius: 12px;
             font-size: 0.9rem;
             font-family: 'SF Mono', 'Fira Code', monospace;
             transition: 0.2s;
@@ -64,8 +163,8 @@
         }
         textarea:focus, input:focus, select:focus {
             outline: none;
-            border-color: #3b82f6;
-            box-shadow: 0 0 0 3px rgba(59,130,246,0.1);
+            border-color: #0066cc;
+            box-shadow: 0 0 0 3px rgba(0,102,204,0.1);
         }
         textarea {
             min-height: 140px;
@@ -89,8 +188,8 @@
             transition: 0.2s;
         }
         .mode-item.active {
-            background: #3b82f6;
-            border-color: #3b82f6;
+            background: #0066cc;
+            border-color: #0066cc;
             color: white;
         }
         .mode-item.active .mode-desc {
@@ -121,12 +220,12 @@
             color: #1e293b;
         }
         .btn-primary {
-            background: #3b82f6;
+            background: #0066cc;
             color: white;
-            box-shadow: 0 2px 6px rgba(59,130,246,0.3);
+            box-shadow: 0 2px 6px rgba(0,102,204,0.3);
         }
         .btn-primary:hover {
-            background: #2563eb;
+            background: #004999;
             transform: translateY(-1px);
         }
         .btn-outline {
@@ -135,7 +234,7 @@
         }
         .result-area {
             background: #f8fafc;
-            border-radius: 20px;
+            border-radius: 16px;
             padding: 12px 16px;
             margin-top: 16px;
             word-break: break-all;
@@ -144,6 +243,7 @@
             border: 1px solid #e2e8f0;
             max-height: 180px;
             overflow-y: auto;
+            line-height: 1.5;
         }
         .tip {
             font-size: 0.75rem;
@@ -158,262 +258,383 @@
             grid-template-columns: 1fr 1fr;
             gap: 20px;
         }
-        @media (max-width: 680px) {
-            .grid-2 { grid-template-columns: 1fr; }
-            .card { padding: 18px; }
-        }
-        footer {
-            text-align: center;
-            font-size: 0.75rem;
-            color: #7c8ba0;
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #e2e8f0;
-        }
-        .badge {
+        .badge-light {
             background: #eef2ff;
-            color: #3b82f6;
-            padding: 2px 8px;
+            color: #0066cc;
+            padding: 4px 10px;
             border-radius: 20px;
             font-size: 0.7rem;
             font-weight: 500;
         }
+        
+        /* 底部 */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #999;
+            font-size: 12px;
+            border-top: 1px solid #e0e0e0;
+            margin-top: 0;
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #2c3e50;
+            color: white;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            z-index: 100;
+        }
+        .back-to-top.show { opacity: 1; }
+        .back-to-top:hover { background: #0066cc; }
+        
+        @media (max-width: 768px) {
+            .main-layout { flex-direction: column; }
+            .sidebar { width: 100%; position: static; max-height: none; }
+            .grid-2 { grid-template-columns: 1fr; }
+            .global-header .desc-full { display: none; }
+        }
     </style>
 </head>
 <body>
-<div class="container">
-    <div class="tool-header">
-        <h1>⚒ 劳动者工具箱</h1>
-        <p>简洁 · 专业 · 开源的在线工具集 · 首发工具：Base64 安全编码/解码</p>
+    <div class="global-header">
+        <div class="logo-area">
+            <h1>⚒ 劳动者工具箱</h1>
+            <div class="desc-full">开发者在线工具集 | 简洁 · 专业 · 开源</div>
+        </div>
+        <a href="https://laodongzhe.cn/tools/">← 返回工具箱首页</a>
     </div>
-
-    <!-- 核心工具卡片：URL安全Base64 -->
-    <div class="card">
-        <div class="card-title">
-            <span>🔐 URL安全Base64</span>
-            <span class="badge">支持 = → %3D 与 URL‑safe 格式</span>
+    
+    <div class="main-layout">
+        <!-- 左侧分类导航（与主页完全一致） -->
+        <div class="sidebar">
+            <div class="sidebar-title">📖 工具分类</div>
+            <div id="navContainer">
+                <div class="nav-category">
+                    <div class="nav-category-header" data-cat="🔤 编码与转换">
+                        <span>🔤 编码与转换</span>
+                    </div>
+                </div>
+                <div class="nav-category">
+                    <div class="nav-category-header" data-cat="🔐 加密与安全">
+                        <span>🔐 加密与安全</span>
+                    </div>
+                </div>
+                <div class="nav-category">
+                    <div class="nav-category-header" data-cat="📅 时间与日期">
+                        <span>📅 时间与日期</span>
+                    </div>
+                </div>
+                <div class="nav-category">
+                    <div class="nav-category-header" data-cat="📄 JSON与文本处理">
+                        <span>📄 JSON与文本处理</span>
+                    </div>
+                </div>
+                <div class="nav-category">
+                    <div class="nav-category-header" data-cat="🎨 代码美化">
+                        <span>🎨 代码美化</span>
+                    </div>
+                </div>
+                <div class="nav-category">
+                    <div class="nav-category-header" data-cat="🌐 网络与实用">
+                        <span>🌐 网络与实用</span>
+                    </div>
+                </div>
+                <div class="nav-category">
+                    <div class="nav-category-header" data-cat="⚙️ 全功能工具集">
+                        <span>⚙️ 全功能工具集</span>
+                    </div>
+                </div>
+            </div>
+            <div class="stats-info" style="padding: 15px 20px; background: #f8f9fa; border-top: 1px solid #e0e0e0; font-size: 12px; color: #666;">
+                <span>🔧 共收录 20+ 个工具</span>
+                <span>🔄 持续更新中</span>
+            </div>
         </div>
-        <div class="mode-selector" id="modeSelector">
-            <div class="mode-item active" data-mode="standard">
-                <div>
-                    <div class="mode-name">📦 标准Base64</div>
-                    <div class="mode-desc">末尾可能带 = ，适用于通用场景</div>
-                </div>
+        
+        <!-- 右侧工具内容区 -->
+        <div class="content-area">
+            <div class="content-header">
+                <span>📌 🔤 编码与转换 / Base64 编码/解码</span>
             </div>
-            <div class="mode-item" data-mode="urlsafe">
-                <div>
-                    <div class="mode-name">🌐 URL安全模式</div>
-                    <div class="mode-desc">将 + → - ， / → _ ，并去掉 =</div>
-                </div>
-            </div>
-            <div class="mode-item" data-mode="percent">
-                <div>
-                    <div class="mode-name">🔄 = 转 %3D</div>
-                    <div class="mode-desc">只将末尾的 = 变成 %3D，其他不变</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="grid-2">
-            <!-- 左侧编码区 -->
-            <div>
-                <div style="font-weight: 500; margin-bottom: 8px;">📝 原文</div>
-                <textarea id="inputText" placeholder="请输入文本或网址...
+            <div class="tool-inner-container">
+                <!-- Base64 工具卡片 -->
+                <div class="tool-card">
+                    <div class="card-title">
+                        <span>🔐 URL安全Base64</span>
+                        <span class="badge-light">支持 = → %3D 与 URL‑safe 格式</span>
+                    </div>
+                    
+                    <div class="mode-selector" id="modeSelector">
+                        <div class="mode-item active" data-mode="standard">
+                            <div>
+                                <div class="mode-name">📦 标准Base64</div>
+                                <div class="mode-desc">末尾可能带 = ，适用于通用场景</div>
+                            </div>
+                        </div>
+                        <div class="mode-item" data-mode="urlsafe">
+                            <div>
+                                <div class="mode-name">🌐 URL安全模式</div>
+                                <div class="mode-desc">将 + → - ， / → _ ，并去掉 =</div>
+                            </div>
+                        </div>
+                        <div class="mode-item" data-mode="percent">
+                            <div>
+                                <div class="mode-name">🔄 = 转 %3D</div>
+                                <div class="mode-desc">只将末尾的 = 变成 %3D，其他不变</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="grid-2">
+                        <div>
+                            <div style="font-weight: 500; margin-bottom: 8px;">📝 原文</div>
+                            <textarea id="inputText" placeholder="请输入文本或网址...
 例如：https://www.taobao.com/"></textarea>
-                <div class="button-group">
-                    <button class="btn btn-primary" id="encodeBtn">⬆ 编码 →</button>
-                    <button class="btn" id="clearInputBtn">清空</button>
+                            <div class="button-group">
+                                <button class="btn btn-primary" id="encodeBtn">⬆ 编码 →</button>
+                                <button class="btn" id="clearInputBtn">清空</button>
+                            </div>
+                            <div style="font-weight: 500; margin: 16px 0 8px;">🔐 Base64 结果</div>
+                            <div class="result-area" id="encodeResult">等待编码</div>
+                        </div>
+                        <div>
+                            <div style="font-weight: 500; margin-bottom: 8px;">🔧 Base64 字符串</div>
+                            <textarea id="decodeInput" placeholder="粘贴 Base64 编码内容..."></textarea>
+                            <div class="button-group">
+                                <button class="btn btn-primary" id="decodeBtn">⬇ 解码 ←</button>
+                                <button class="btn" id="clearDecodeBtn">清空</button>
+                            </div>
+                            <div style="font-weight: 500; margin: 16px 0 8px;">📄 解码结果</div>
+                            <div class="result-area" id="decodeResult">等待解码</div>
+                        </div>
+                    </div>
+                    <div class="tip">
+                        💡 提示：“= 转 %3D” 模式适用于 URL 参数传递；URL安全模式彻底替换 +/ 并去掉 =，符合 RFC 4648。
+                    </div>
                 </div>
-                <div style="font-weight: 500; margin: 16px 0 8px;">🔐 Base64 结果</div>
-                <div class="result-area" id="encodeResult">等待编码</div>
             </div>
-            <!-- 右侧解码区 -->
-            <div>
-                <div style="font-weight: 500; margin-bottom: 8px;">🔧 Base64 字符串</div>
-                <textarea id="decodeInput" placeholder="粘贴 Base64 编码内容..."></textarea>
-                <div class="button-group">
-                    <button class="btn btn-primary" id="decodeBtn">⬇ 解码 ←</button>
-                    <button class="btn" id="clearDecodeBtn">清空</button>
-                </div>
-                <div style="font-weight: 500; margin: 16px 0 8px;">📄 解码结果</div>
-                <div class="result-area" id="decodeResult">等待解码</div>
-            </div>
-        </div>
-        <div class="tip">
-            💡 提示：“= 转 %3D” 模式适用于 URL 参数传递；URL安全模式彻底替换 +/ 并去掉 =，符合 RFC 4648。
         </div>
     </div>
-
-    <!-- 预留其他工具卡片，样式风格一致，可后续扩展 -->
-    <div class="card">
-        <div class="card-title">🛠️ 即将推出的工具</div>
-        <div style="display: flex; flex-wrap: wrap; gap: 12px;">
-            <span class="badge" style="background:#eef2ff">时间戳转换</span>
-            <span class="badge" style="background:#eef2ff">URL 编码/解码</span>
-            <span class="badge" style="background:#eef2ff">JSON 格式化</span>
-            <span class="badge" style="background:#eef2ff">MD5 哈希</span>
-            <span class="badge" style="background:#eef2ff">正则测试</span>
-            <span class="badge" style="background:#eef2ff">IP 查询</span>
-        </div>
-        <div style="margin-top: 16px; font-size: 0.8rem; color:#4b5563">
-            — 劳动者系列工具持续更新，保持简洁、无跟踪 —
-        </div>
+    
+    <div class="footer">
+        <p>© laodongzhe.cn - 劳动者工具箱 | 纯前端工具，数据不离开浏览器 | 拒绝跟踪，拥抱开源</p>
     </div>
-    <footer>
-        © 劳动者工具箱 — 自由 · 开放 · 为劳动者而建 <br> 首个工具已实现 URL 安全 Base64 + = 转 %3D
-    </footer>
-</div>
+    <div class="back-to-top" id="backToTop">↑</div>
 
-<script>
-    // ---------- 三种模式的编码实现 ----------
-    function toStandardBase64(str) {
-        try {
-            return btoa(unescape(encodeURIComponent(str)));
-        } catch(e) {
-            return "编码错误：" + e.message;
+    <script>
+        // ==================== 左侧导航渲染与交互（与主页保持一致） ====================
+        // 工具数据 - 分类导航（与主页完全同步）
+        const toolsData = {
+            '🔤 编码与转换': [
+                { name: 'Base64 编码/解码', url: './base64-tool.html', desc: '支持标准Base64与URL安全Base64互转，带走安全无跟踪', tags: ['Base64', '编码转换'] },
+                { name: 'URL 编码/解码', url: '/go.htm?url=https://uutool.cn/urlencode/', desc: '将特殊符号转义为百分号形式，安全传递网址参数', tags: ['URL', '编码'] },
+                { name: 'Unicode 转换', url: '/go.htm?url=https://uutool.cn/unicode/', desc: '中文转Unicode编码/解码，支持多种显示方式', tags: ['Unicode', '编码'] },
+                { name: '进制转换', url: '/go.htm?url=https://uutool.cn/radix/', desc: '2/8/10/16进制任意互转，程序员必备', tags: ['进制', '转换'] },
+                { name: '颜色转换', url: '/go.htm?url=https://uutool.cn/color/', desc: 'RGB/HEX互转，支持色值预览与一键复制', tags: ['颜色', 'HEX', 'RGB'] }
+            ],
+            '🔐 加密与安全': [
+                { name: 'MD5 哈希', url: '/go.htm?url=https://uutool.cn/md5/', desc: '32位16进制哈希值生成，支持文本与文件', tags: ['MD5', '哈希'] },
+                { name: 'SHA 哈希', url: '/go.htm?url=https://uutool.cn/sha/', desc: 'SHA-1/256/512加密，支持多种输出格式', tags: ['SHA', '加密'] },
+                { name: 'HMAC 摘要', url: '/go.htm?url=https://uutool.cn/hmac/', desc: '带密钥的哈希消息认证码，确保数据完整性', tags: ['HMAC', '安全'] },
+                { name: '密码强度检测', url: '/go.htm?url=https://uutool.cn/password/', desc: '实时检测密码强度，提供安全建议', tags: ['密码', '安全'] }
+            ],
+            '📅 时间与日期': [
+                { name: 'Unix时间戳转换', url: '/go.htm?url=https://uutool.cn/timestamp/', desc: '时间戳与北京时间互转，实时滚动显示当前戳', tags: ['时间戳', 'Unix'] },
+                { name: '日期计算器', url: '/go.htm?url=https://uutool.cn/datecalc/', desc: '计算日期差、增加天数等，直观展示结果', tags: ['日期', '计算'] }
+            ],
+            '📄 JSON与文本处理': [
+                { name: 'JSON格式化', url: '/go.htm?url=https://uutool.cn/json/', desc: '一键美化压缩JSON，支持语法校验与折叠', tags: ['JSON', '格式化'] },
+                { name: 'JSON对比', url: '/go.htm?url=https://uutool.cn/jsondiff/', desc: '快速对比两个JSON差异，精准定位变更点', tags: ['JSON', '对比'] },
+                { name: '文本统计', url: '/go.htm?url=https://uutool.cn/textcount/', desc: '字符数、单词数、行数精确统计', tags: ['文本', '统计'] },
+                { name: '正则表达式测试', url: '/go.htm?url=https://regex101.com/', desc: '实时高亮匹配，支持多种语言引擎', tags: ['正则', '测试'] }
+            ],
+            '🎨 代码美化': [
+                { name: 'JavaScript 格式化', url: '/go.htm?url=https://uutool.cn/js-beautify/', desc: '格式化压缩混淆的JS代码，支持自定义缩进', tags: ['JS', '美化'] },
+                { name: 'SQL 格式化', url: '/go.htm?url=https://uutool.cn/sql/', desc: '混乱SQL一键美化，支持多种数据库风格', tags: ['SQL', '格式化'] },
+                { name: 'HTML 格式化', url: '/go.htm?url=https://uutool.cn/html/', desc: 'HTML代码美化压缩，支持自定义缩进', tags: ['HTML', '美化'] },
+                { name: 'CSS 格式化', url: '/go.htm?url=https://uutool.cn/css/', desc: 'CSS样式代码格式化，便于阅读和调试', tags: ['CSS', '美化'] }
+            ],
+            '🌐 网络与实用': [
+                { name: 'IP地址查询', url: '/go.htm?url=https://ipinfo.io/', desc: '归属地、运营商、ASN全方位解析', tags: ['IP', '归属地'] },
+                { name: '二维码生成', url: '/go.htm?url=https://see-tool.com/qr-code-generator', desc: '自定义尺寸/颜色，隐私安全，浏览器本地生成', tags: ['二维码', '生成'] },
+                { name: '哈希生成器', url: '/go.htm?url=https://uutool.cn/hash/', desc: 'MD5/SHA1/SHA256/Base64/CRC32等全支持', tags: ['哈希', '加密'] },
+                { name: 'UUID/ULID 生成', url: '/go.htm?url=https://uutool.cn/uuid/', desc: '批量生成唯一标识符，支持版本选择', tags: ['UUID', '生成器'] }
+            ],
+            '⚙️ 全功能工具集': [
+                { name: 'IT-Tools (80+工具)', url: '/go.htm?url=https://it-tools.tech/', desc: '开源开发者工具箱，JSON/Base64/哈希/正则等覆盖', tags: ['聚合', '开源'] },
+                { name: 'CyberChef 网络厨具', url: '/go.htm?url=https://gchq.github.io/CyberChef/', desc: '强大的编解码、加解密工具，英国GCHQ出品', tags: ['聚合', '编解码'] },
+                { name: 'MKLab 在线工具', url: '/go.htm?url=https://mkweb.cc/', desc: '加解密/图片压缩/文本处理一站式', tags: ['聚合', '工具箱'] }
+            ]
+        };
+        
+        function renderNav() {
+            const navContainer = document.getElementById('navContainer');
+            let html = '';
+            let firstCategory = null;
+            for (const catName in toolsData) {
+                if (!firstCategory) firstCategory = catName;
+                html += `<div class="nav-category">
+                    <div class="nav-category-header" data-cat="${catName}">
+                        <span>${catName}</span>
+                    </div>
+                </div>`;
+            }
+            navContainer.innerHTML = html;
+            
+            // 添加点击事件
+            document.querySelectorAll('.nav-category-header').forEach(header => {
+                header.addEventListener('click', () => {
+                    const category = header.dataset.cat;
+                    // 跳转到工具首页并带上分类参数（或直接跳转）
+                    window.location.href = `./?cat=${encodeURIComponent(category)}`;
+                });
+            });
         }
-    }
-    function fromStandardBase64(base64Str) {
-        try {
-            return decodeURIComponent(escape(atob(base64Str)));
-        } catch(e) {
-            return "解码错误：无效的 Base64 字符串";
+        
+        // ==================== Base64 工具核心逻辑 ====================
+        let currentMode = 'standard';  // standard / urlsafe / percent
+        
+        function toStandardBase64(str) {
+            try {
+                return btoa(unescape(encodeURIComponent(str)));
+            } catch(e) {
+                return "编码错误：" + e.message;
+            }
         }
-    }
-
-    // URL安全模式（RFC 4648）
-    function toUrlSafeBase64(str) {
-        let standard = toStandardBase64(str);
-        if (standard.startsWith("编码错误")) return standard;
-        return standard.replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
-    }
-    function fromUrlSafeBase64(urlsafeStr) {
-        try {
-            let base64 = urlsafeStr.replace(/-/g, '+').replace(/_/g, '/');
-            while (base64.length % 4) base64 += '=';
-            return fromStandardBase64(base64);
-        } catch(e) {
-            return "解码错误：URL安全格式不正确";
+        function fromStandardBase64(base64Str) {
+            try {
+                return decodeURIComponent(escape(atob(base64Str)));
+            } catch(e) {
+                return "解码错误：无效的 Base64 字符串";
+            }
         }
-    }
-
-    // “等号转 %3D”模式 – 只把末尾的 = 变成 %3D，保留 + / 不变
-    function toPercentEqBase64(str) {
-        let standard = toStandardBase64(str);
-        if (standard.startsWith("编码错误")) return standard;
-        // 将末尾连续的 = 替换为 %3D （有几个替换几个）
-        return standard.replace(/=+$/, function(match) {
-            return match.replace(/=/g, '%3D');
+        
+        function toUrlSafeBase64(str) {
+            let standard = toStandardBase64(str);
+            if (standard.startsWith("编码错误")) return standard;
+            return standard.replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+        }
+        function fromUrlSafeBase64(urlsafeStr) {
+            try {
+                let base64 = urlsafeStr.replace(/-/g, '+').replace(/_/g, '/');
+                while (base64.length % 4) base64 += '=';
+                return fromStandardBase64(base64);
+            } catch(e) {
+                return "解码错误：URL安全格式不正确";
+            }
+        }
+        
+        function toPercentEqBase64(str) {
+            let standard = toStandardBase64(str);
+            if (standard.startsWith("编码错误")) return standard;
+            return standard.replace(/=+$/, function(match) {
+                return match.replace(/=/g, '%3D');
+            });
+        }
+        function fromPercentEqBase64(percentStr) {
+            try {
+                let base64 = percentStr.replace(/%3D/g, '=');
+                return fromStandardBase64(base64);
+            } catch(e) {
+                return "解码错误：含有非 %3D 的异常字符";
+            }
+        }
+        
+        const modeItems = document.querySelectorAll('.mode-item');
+        const inputText = document.getElementById('inputText');
+        const encodeResultDiv = document.getElementById('encodeResult');
+        const decodeInput = document.getElementById('decodeInput');
+        const decodeResultDiv = document.getElementById('decodeResult');
+        
+        function updateMode(activeMode) {
+            currentMode = activeMode;
+            modeItems.forEach(item => {
+                const mode = item.getAttribute('data-mode');
+                if (mode === activeMode) item.classList.add('active');
+                else item.classList.remove('active');
+            });
+            if (inputText.value.trim() !== '') performEncode();
+            if (decodeInput.value.trim() !== '') performDecode();
+        }
+        
+        function performEncode() {
+            const raw = inputText.value;
+            if (raw === "") {
+                encodeResultDiv.innerText = "等待输入...";
+                return;
+            }
+            let result = "";
+            if (currentMode === 'standard') result = toStandardBase64(raw);
+            else if (currentMode === 'urlsafe') result = toUrlSafeBase64(raw);
+            else result = toPercentEqBase64(raw);
+            encodeResultDiv.innerText = result;
+        }
+        
+        function performDecode() {
+            const encoded = decodeInput.value.trim();
+            if (encoded === "") {
+                decodeResultDiv.innerText = "等待输入 Base64 字符串...";
+                return;
+            }
+            let result = "";
+            if (currentMode === 'standard') result = fromStandardBase64(encoded);
+            else if (currentMode === 'urlsafe') result = fromUrlSafeBase64(encoded);
+            else result = fromPercentEqBase64(encoded);
+            decodeResultDiv.innerText = result;
+        }
+        
+        document.getElementById('clearInputBtn').addEventListener('click', () => {
+            inputText.value = '';
+            encodeResultDiv.innerText = '等待编码';
         });
-    }
-    function fromPercentEqBase64(percentStr) {
-        try {
-            // 先将 %3D 还原为 =
-            let base64 = percentStr.replace(/%3D/g, '=');
-            return fromStandardBase64(base64);
-        } catch(e) {
-            return "解码错误：含有非 %3D 的异常字符";
-        }
-    }
-
-    // 当前激活模式
-    let currentMode = 'standard';  // standard / urlsafe / percent
-
-    // 获取DOM元素
-    const modeItems = document.querySelectorAll('.mode-item');
-    const inputText = document.getElementById('inputText');
-    const encodeResultDiv = document.getElementById('encodeResult');
-    const decodeInput = document.getElementById('decodeInput');
-    const decodeResultDiv = document.getElementById('decodeResult');
-
-    function updateMode(activeMode) {
-        currentMode = activeMode;
+        document.getElementById('clearDecodeBtn').addEventListener('click', () => {
+            decodeInput.value = '';
+            decodeResultDiv.innerText = '等待解码';
+        });
+        document.getElementById('encodeBtn').addEventListener('click', performEncode);
+        document.getElementById('decodeBtn').addEventListener('click', performDecode);
+        
+        inputText.addEventListener('input', () => {
+            if (inputText.value !== "") performEncode();
+            else encodeResultDiv.innerText = "等待输入...";
+        });
+        decodeInput.addEventListener('input', () => {
+            if (decodeInput.value !== "") performDecode();
+            else decodeResultDiv.innerText = "等待解码...";
+        });
+        
         modeItems.forEach(item => {
-            const mode = item.getAttribute('data-mode');
-            if (mode === activeMode) item.classList.add('active');
-            else item.classList.remove('active');
+            item.addEventListener('click', () => {
+                const mode = item.getAttribute('data-mode');
+                updateMode(mode);
+            });
         });
-        // 主动重新编码左侧内容（如果左侧有内容）
-        if (inputText.value.trim() !== '') {
+        
+        window.addEventListener('load', () => {
+            inputText.value = "https://www.taobao.com/";
             performEncode();
-        }
-        // 右侧如果有内容也尝试按新模式解码
-        if (decodeInput.value.trim() !== '') {
+            decodeInput.value = "aHR0cHM6Ly93d3cudGFvYmFvLmNvbS8";
             performDecode();
-        }
-    }
-
-    function performEncode() {
-        const raw = inputText.value;
-        if (raw === "") {
-            encodeResultDiv.innerText = "等待输入...";
-            return;
-        }
-        let result = "";
-        if (currentMode === 'standard') {
-            result = toStandardBase64(raw);
-        } else if (currentMode === 'urlsafe') {
-            result = toUrlSafeBase64(raw);
-        } else {
-            result = toPercentEqBase64(raw);
-        }
-        encodeResultDiv.innerText = result;
-    }
-
-    function performDecode() {
-        const encoded = decodeInput.value.trim();
-        if (encoded === "") {
-            decodeResultDiv.innerText = "等待输入 Base64 字符串...";
-            return;
-        }
-        let result = "";
-        if (currentMode === 'standard') {
-            result = fromStandardBase64(encoded);
-        } else if (currentMode === 'urlsafe') {
-            result = fromUrlSafeBase64(encoded);
-        } else {
-            result = fromPercentEqBase64(encoded);
-        }
-        decodeResultDiv.innerText = result;
-    }
-
-    // 清空输入框并重置显示
-    document.getElementById('clearInputBtn').addEventListener('click', () => {
-        inputText.value = '';
-        encodeResultDiv.innerText = '等待编码';
-    });
-    document.getElementById('clearDecodeBtn').addEventListener('click', () => {
-        decodeInput.value = '';
-        decodeResultDiv.innerText = '等待解码';
-    });
-    document.getElementById('encodeBtn').addEventListener('click', performEncode);
-    document.getElementById('decodeBtn').addEventListener('click', performDecode);
-
-    // 监听左侧输入框实时效果（懒得点按钮也可）
-    inputText.addEventListener('input', () => {
-        if (inputText.value !== "") performEncode();
-        else encodeResultDiv.innerText = "等待输入...";
-    });
-    decodeInput.addEventListener('input', () => {
-        if (decodeInput.value !== "") performDecode();
-        else decodeResultDiv.innerText = "等待解码...";
-    });
-
-    // 模式切换
-    modeItems.forEach(item => {
-        item.addEventListener('click', () => {
-            const mode = item.getAttribute('data-mode');
-            updateMode(mode);
         });
-    });
-
-    // 示例默认显示一段内容方便体验
-    window.addEventListener('load', () => {
-        inputText.value = "https://www.taobao.com/";
-        performEncode();
-        decodeInput.value = "aHR0cHM6Ly93d3cudGFvYmFvLmNvbS8";
-        performDecode();
-    });
-</script>
+        
+        // 回到顶部
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            backToTop.classList.toggle('show', window.scrollY > 300);
+        });
+        backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+        
+        renderNav();
+    </script>
 </body>
 </html>
