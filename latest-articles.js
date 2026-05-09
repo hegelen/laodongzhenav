@@ -1,78 +1,78 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 5/9/2026, 5:04:12 AM
+// 抓取日期: 5/9/2026, 5:13:09 AM
 // 只抓取最近14天内的文章，共 10 篇
 // 目标 10 篇，实际 10 篇
 
 const latestArticlesByYear = {
-  "2008": [
+  "2001": [
     {
-      "name": "军",
-      "year": "08",
-      "title": "难得正版Windows又打骨折！白菜价",
-      "url": "https://me.xu19.com/windows11-big-discount/",
-      "date": "2026-05-01"
+      "name": "东评衿就",
+      "year": "01",
+      "title": "我的独立博客，终于有了一个像样的后台",
+      "url": "https://dongjunke.cn/posts/2026/05/05/50369.html",
+      "date": "2026-05-05"
+    }
+  ],
+  "2004": [
+    {
+      "name": "龙哥",
+      "year": "04",
+      "title": "用ipabc.de做了一个ip查询网站",
+      "url": "https://long.ge/18063.html",
+      "date": "2026-04-28"
     }
   ],
   "2009": [
     {
-      "name": "老张",
+      "name": "多多",
       "year": "09",
-      "title": "我只会瞎折腾！暨兰空图床上传图片失败解决方法！",
-      "url": "https://laozhang.org/archives/4056.html",
-      "date": "2026-04-28"
+      "title": "wp的默认feed地址打不开处理办法",
+      "url": "https://ddlog.cn/?p=471",
+      "date": "2026-05-08"
+    },
+    {
+      "name": "老卫",
+      "year": "09",
+      "title": "历时三年《鸿蒙系统（HarmonyOS）移动开发实战》简介",
+      "url": "https://waylau.com/about-harmonyos-short-video-book/",
+      "date": "2026-05-01"
     }
   ],
   "2010": [
     {
-      "name": "忆往事",
+      "name": "宇间草",
       "year": "10",
-      "title": "补牙",
-      "url": "https://zhou.ge/2026-05-05.html",
-      "date": "2026-05-05"
-    }
-  ],
-  "2016": [
-    {
-      "name": "小可",
-      "year": "16",
-      "title": "Codex 订阅一物多用：通过 CPA 代理输出 OpenAI 标准接口",
-      "url": "https://keke.su/posts/2026-05-08-new-1.html",
+      "title": "一场与AI的对话：我如何逼问出“资本大于人命”的系统真相",
+      "url": "https://2days.org/19988.html",
       "date": "2026-05-08"
     }
   ],
   "2017": [
     {
-      "name": "马春杰杰",
+      "name": "染念",
       "year": "17",
-      "title": "吐槽：记录一次站点被Meta爬虫刷掉400G流量的排查过程",
-      "url": "https://www.machunjie.com/web/2120.html",
-      "date": "2026-04-29"
+      "title": "lens|打造最强的个人LLM聚合网关系统",
+      "url": "https://dyedd.cn/posts/lens_api",
+      "date": "2026-04-28"
     }
   ],
-  "2018": [
+  "2019": [
     {
-      "name": "枋柚梓的猫会发光",
-      "year": "18",
-      "title": "从 1Password 迁移到 Bitwarden：一次涨价引发的“搬家”",
-      "url": "https://inkss.cn/post/5a013cf6/",
-      "date": "2026-05-08"
+      "name": "李锋镝",
+      "year": "19",
+      "title": "踩坑60+次后，我终于搞懂 Claude Skill 怎么写才会真的触发",
+      "url": "https://www.lifengdi.com/ren-gong-zhi-neng/4698",
+      "date": "2026-04-27"
     },
     {
-      "name": "运维咖啡吧",
-      "year": "18",
-      "title": "我买基金从不亏钱",
-      "url": "https://blog.ops-coffee.com/r/fund-5-year-from-50-percent-loss-to-profit.html",
-      "date": "2026-05-07"
+      "name": "流情",
+      "year": "19",
+      "title": "通过openclaw装hermes，倒反天罡",
+      "url": "https://liuqingwushui.top/archives/155/",
+      "date": "2026-04-30"
     }
   ],
   "2023": [
-    {
-      "name": "Siwei Li",
-      "year": "23",
-      "title": "赫尔米勒embody",
-      "url": "https://siwei.li/he-er-mi-le-embody/",
-      "date": "2026-05-08"
-    },
     {
       "name": "无敌",
       "year": "23",
@@ -81,13 +81,13 @@ const latestArticlesByYear = {
       "date": "2026-05-07"
     }
   ],
-  "2024": [
+  "2025": [
     {
-      "name": "ImQi1",
-      "year": "24",
-      "title": "为了一个女孩，我哭了一整晚",
-      "url": "https://imqi1.com/content/note/1009",
-      "date": "2026-04-27"
+      "name": "落花雨记",
+      "year": "25",
+      "title": "牛马生活",
+      "url": "https://www.luohuayu.cn/68.html",
+      "date": "2026-05-08"
     }
   ]
 };
