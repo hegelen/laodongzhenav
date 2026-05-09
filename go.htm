@@ -2,106 +2,41 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>· ·····</title>
-    <style>
-        body {
-            text-align: center;
-            padding: 50px;
-            font-family: system-ui, sans-serif;
-            background: #f5f5f5;
-        }
-        .card {
-            background: white;
-            max-width: 480px;
-            margin: 0 auto;
-            padding: 30px;
-            border-radius: 24px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-        .spinner {
-            margin: 20px auto;
-            width: 32px;
-            height: 32px;
-            border: 3px solid #e2e8f0;
-            border-top-color: #3b82f6;
-            border-radius: 50%;
-            animation: spin 0.8s linear infinite;
-        }
-        @keyframes spin {
-            to { transform: rotate(360deg); }
-        }
-        .info {
-            font-size: 14px;
-            color: #6c757d;
-            margin-top: 20px;
-            word-break: break-all;
-        }
-        .error {
-            color: #dc2626;
-            background: #fef2f2;
-            padding: 12px;
-            border-radius: 16px;
-        }
-    </style>
+    <title>.....</title>
 </head>
 <body>
-<div class="card">
-    <h3>······</h3>
-    <p>………</p>
-    <div class="spinner"></div>
-    <div class="info" id="debugInfo"></div>
-</div>
-
 <script>
     (function() {
-        // ---------- 1. 获取参数 ----------
         const urlParams = new URLSearchParams(window.location.search);
         let encodedParam = urlParams.get('url');
 
-        function showDebug(msg, isError = false) {
-            const debugDiv = document.getElementById('debugInfo');
-            if (debugDiv) {
-                debugDiv.innerHTML = msg;
-                if (isError) debugDiv.style.color = '#dc2626';
-            }
-        }
-
         if (!encodedParam) {
-            document.body.innerHTML = '<div class="card"><h3>❌ 无效的跳转链接</h3><p>缺少 url 参数，请返回重试。</p></div>';
+            document.body.innerHTML = '<h3>无效的跳转链接</h3><p>请返回重试。</p>';
             return;
         }
 
-        // ---------- 2. 归一化：将 %3D 还原为 = ----------
+        // 归一化：将 %3D 还原为 =
         let base64Str = encodedParam.replace(/%3D/gi, '=');
 
-        // ---------- 3. 检测是不是 Base64 编码（粗略特征）----------
+        // 判断是否像 Base64
         function isLikelyBase64(str) {
-            // Base64 字符集：A-Z a-z 0-9 + / = （以及 URL-safe 的 - _）
-            const base64Pattern = /^[A-Za-z0-9+/=\-_]+$/;
-            // 长度通常是 4 的倍数（URL-safe 去掉了 = 可能不是，但先放宽）
-            return base64Pattern.test(str);
+            return /^[A-Za-z0-9+/=\-_]+$/.test(str);
         }
 
-        // ---------- 4. URL-safe Base64 还原为标准 Base64 ----------
+        // URL-safe Base64 还原为标准 Base64
         function urlSafeToStandardBase64(str) {
-            // 把 - 变 + ，_ 变 /
             let standard = str.replace(/-/g, '+').replace(/_/g, '/');
-            // 补齐末尾的 =
-            while (standard.length % 4) {
-                standard += '=';
-            }
+            while (standard.length % 4) standard += '=';
             return standard;
         }
 
-        // ---------- 5. 解码 Base64（支持 UTF-8）---------
+        // 解码 Base64（支持 UTF-8）
         function decodeBase64(base64Str) {
             try {
-                // 先处理 URL-safe 格式
                 let standardBase64 = base64Str;
                 if (base64Str.includes('-') || base64Str.includes('_')) {
                     standardBase64 = urlSafeToStandardBase64(base64Str);
                 }
-                // 标准 Base64 解码（支持中文/UTF-8）
                 const binary = atob(standardBase64);
                 const bytes = new Uint8Array(binary.length);
                 for (let i = 0; i < binary.length; i++) {
@@ -109,50 +44,35 @@
                 }
                 return new TextDecoder('utf-8').decode(bytes);
             } catch (e) {
-                console.warn('Base64 解码失败', e);
                 return null;
             }
         }
 
-        // ---------- 6. 最终目标 URL 解析 ----------
         let finalUrl = null;
 
-        // 情况 A：如果参数看起来像 Base64，尝试解码
+        // 如果是 Base64，尝试解码
         if (isLikelyBase64(encodedParam)) {
             const decoded = decodeBase64(encodedParam);
             if (decoded && (decoded.startsWith('http://') || decoded.startsWith('https://'))) {
                 finalUrl = decoded;
-                showDebug(`🔓 检测到 Base64 编码，已解码为：<br>${finalUrl}`);
             } else if (decoded) {
-                // 解码后不是标准网址，但可能是普通文本（备用）
                 finalUrl = decoded;
-                showDebug(`📄 解码结果：${finalUrl}<br>（非 http 链接，将原文显示）`);
-            } else {
-                // 解码失败：当作原始 URL 处理
-                finalUrl = encodedParam;
-                showDebug(`⚠️ Base64 解码失败，作为普通链接处理`);
             }
-        } else {
-            // 情况 B：不是 Base64，当作原始 URL
-            finalUrl = encodedParam;
-            showDebug(`🌐 作为普通链接跳转`);
         }
 
-        // 安全性校验：只允许 http / https 协议
-        if (finalUrl && !finalUrl.startsWith('http://') && !finalUrl.startsWith('https://')) {
-            document.body.innerHTML = `<div class="card"><h3>⚠️ 不支持的链接协议</h3><p>仅允许 http 或 https 链接。</p><p>原始参数：${encodedParam}</p></div>`;
-            return;
-        }
-
+        // 如果解码失败或不是 Base64，直接使用原参数
         if (!finalUrl) {
-            document.body.innerHTML = '<div class="card"><h3>❌ 无法解析目标地址</h3><p>请检查链接参数。</p></div>';
+            finalUrl = encodedParam;
+        }
+
+        // 安全校验：只允许 http/https
+        if (!finalUrl.startsWith('http://') && !finalUrl.startsWith('https://')) {
+            document.body.innerHTML = '<h3>不支持的链接协议</h3><p>仅允许 http 或 https 链接。</p>';
             return;
         }
 
-        // 延迟 0.2 秒跳转，避免 debug 信息来不及显示（可选）
-        setTimeout(() => {
-            window.location.href = finalUrl;
-        }, 200);
+        // 直接跳转（无延迟、无任何页面显示）
+        window.location.href = finalUrl;
     })();
 </script>
 </body>
