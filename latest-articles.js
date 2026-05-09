@@ -1,18 +1,9 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 5/7/2026, 8:20:53 PM
-// 只抓取最近7天内的文章，共 10 篇
+// 抓取日期: 5/9/2026, 5:04:12 AM
+// 只抓取最近14天内的文章，共 10 篇
 // 目标 10 篇，实际 10 篇
 
 const latestArticlesByYear = {
-  "2004": [
-    {
-      "name": "kaix.in",
-      "year": "04",
-      "title": "桌面宠物",
-      "url": "https://kaix.in/2026/0504/",
-      "date": "2026-05-04"
-    }
-  ],
   "2008": [
     {
       "name": "军",
@@ -22,72 +13,81 @@ const latestArticlesByYear = {
       "date": "2026-05-01"
     }
   ],
-  "2013": [
+  "2009": [
     {
-      "name": "卡瓦邦噶",
-      "year": "13",
-      "title": "读《金阁寺》",
-      "url": "https://www.kawabangga.com/posts/7246",
-      "date": "2026-05-04"
+      "name": "老张",
+      "year": "09",
+      "title": "我只会瞎折腾！暨兰空图床上传图片失败解决方法！",
+      "url": "https://laozhang.org/archives/4056.html",
+      "date": "2026-04-28"
     }
   ],
-  "2015": [
+  "2010": [
     {
-      "name": "Luminous",
-      "year": "15",
-      "title": "【frp】双端内网环境XTCP协议P2P打洞互通实践",
-      "url": "https://luotianyi.vc/9435.html",
-      "date": "2026-05-03"
+      "name": "忆往事",
+      "year": "10",
+      "title": "补牙",
+      "url": "https://zhou.ge/2026-05-05.html",
+      "date": "2026-05-05"
     }
   ],
   "2016": [
     {
-      "name": "太隐",
+      "name": "小可",
       "year": "16",
-      "title": "隐说 NO.22 小人多了，坏人就会兴风作浪",
-      "url": "https://wangyurui.com/posts/yin-shuo-no-22-xiao-ren-duo-liao-pi-ren-jiu-hui-99146411",
-      "date": "2026-05-04"
-    },
-    {
-      "name": "woodu",
-      "year": "16",
-      "title": "JVS时代的经典乘客——《太鼓之达人 6》",
-      "url": "https://woodu.me/jvsshidaidejingdiancheng/",
-      "date": "2026-05-02"
+      "title": "Codex 订阅一物多用：通过 CPA 代理输出 OpenAI 标准接口",
+      "url": "https://keke.su/posts/2026-05-08-new-1.html",
+      "date": "2026-05-08"
     }
   ],
   "2017": [
     {
-      "name": "科学空间",
+      "name": "马春杰杰",
       "year": "17",
-      "title": "如何更科学地估计矩阵的谱范数？",
-      "url": "https://kexue.fm/archives/11736",
-      "date": "2026-05-04"
+      "title": "吐槽：记录一次站点被Meta爬虫刷掉400G流量的排查过程",
+      "url": "https://www.machunjie.com/web/2120.html",
+      "date": "2026-04-29"
     }
   ],
-  "2021": [
+  "2018": [
     {
-      "name": "诺依阁",
-      "year": "21",
-      "title": "openclaw命令行与搭建(2026.5.3版本)",
-      "url": "https://blog.nuoyis.net/posts/93b5.html",
-      "date": "2026-05-04"
+      "name": "枋柚梓的猫会发光",
+      "year": "18",
+      "title": "从 1Password 迁移到 Bitwarden：一次涨价引发的“搬家”",
+      "url": "https://inkss.cn/post/5a013cf6/",
+      "date": "2026-05-08"
+    },
+    {
+      "name": "运维咖啡吧",
+      "year": "18",
+      "title": "我买基金从不亏钱",
+      "url": "https://blog.ops-coffee.com/r/fund-5-year-from-50-percent-loss-to-profit.html",
+      "date": "2026-05-07"
     }
   ],
   "2023": [
     {
-      "name": "小野",
+      "name": "Siwei Li",
       "year": "23",
-      "title": "狐蒂云疑似准备跑路：低价云服务器的水有多深",
-      "url": "https://lb5.net/253.html",
-      "date": "2026-05-06"
+      "title": "赫尔米勒embody",
+      "url": "https://siwei.li/he-er-mi-le-embody/",
+      "date": "2026-05-08"
     },
     {
-      "name": "鹿泽",
+      "name": "无敌",
       "year": "23",
-      "title": "Robots.txt与SEO：2026年需要了解的事项",
-      "url": "https://www.bailuze.com/24057.html",
+      "title": "为博客加一层“语义索引”（上）：结构设计与构建流程",
+      "url": "http://blog.tangwudi.com/technology/homedatacenter14228/",
       "date": "2026-05-07"
+    }
+  ],
+  "2024": [
+    {
+      "name": "ImQi1",
+      "year": "24",
+      "title": "为了一个女孩，我哭了一整晚",
+      "url": "https://imqi1.com/content/note/1009",
+      "date": "2026-04-27"
     }
   ]
 };
@@ -101,4 +101,4 @@ if (typeof window !== 'undefined') {
     window.getSortedYears = getSortedYears;
 }
 
-console.log('✅ 加载完成，共 ' + Object.keys(latestArticlesByYear).reduce((sum, y) => sum + latestArticlesByYear[y].length, 0) + ' 篇最近7天文章');
+console.log('✅ 加载完成，共 ' + Object.keys(latestArticlesByYear).reduce((sum, y) => sum + latestArticlesByYear[y].length, 0) + ' 篇最近14天文章');
