@@ -2,35 +2,73 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>.....</title>
+    <title>劳动者传送门</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f5f7fb;
+            font-family: system-ui, -apple-system, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .portal {
+            text-align: center;
+        }
+        .icon {
+            font-size: 64px;
+            animation: blink 0.8s ease-in-out 2;
+        }
+        .text {
+            margin-top: 16px;
+            font-size: 14px;
+            color: #5b6e8c;
+            animation: fadeInOut 1.2s ease forwards;
+        }
+        @keyframes blink {
+            0% { opacity: 0.3; transform: scale(0.95); }
+            50% { opacity: 1; transform: scale(1.05); text-shadow: 0 0 6px rgba(59,130,246,0.5); }
+            100% { opacity: 0.6; transform: scale(1); }
+        }
+        @keyframes fadeInOut {
+            0% { opacity: 0; }
+            30% { opacity: 1; }
+            80% { opacity: 1; }
+            100% { opacity: 0; visibility: hidden; }
+        }
+    </style>
 </head>
 <body>
+<div class="portal">
+    <div class="icon">🚪✨</div>
+    <div class="text">劳动者传送门 · 正在安全跳转</div>
+</div>
+
 <script>
     (function() {
         const urlParams = new URLSearchParams(window.location.search);
         let encodedParam = urlParams.get('url');
 
         if (!encodedParam) {
-            document.body.innerHTML = '<h3>无效的跳转链接</h3><p>请返回重试。</p>';
+            document.body.innerHTML = '<div style="text-align:center;margin-top:50px;"><h3>无效的跳转链接</h3><p>缺少 url 参数</p></div>';
             return;
         }
 
-        // 归一化：将 %3D 还原为 =
+        // 归一化：%3D → =
         let base64Str = encodedParam.replace(/%3D/gi, '=');
 
-        // 判断是否像 Base64
         function isLikelyBase64(str) {
             return /^[A-Za-z0-9+/=\-_]+$/.test(str);
         }
 
-        // URL-safe Base64 还原为标准 Base64
         function urlSafeToStandardBase64(str) {
             let standard = str.replace(/-/g, '+').replace(/_/g, '/');
             while (standard.length % 4) standard += '=';
             return standard;
         }
 
-        // 解码 Base64（支持 UTF-8）
         function decodeBase64(base64Str) {
             try {
                 let standardBase64 = base64Str;
@@ -50,7 +88,6 @@
 
         let finalUrl = null;
 
-        // 如果是 Base64，尝试解码
         if (isLikelyBase64(encodedParam)) {
             const decoded = decodeBase64(encodedParam);
             if (decoded && (decoded.startsWith('http://') || decoded.startsWith('https://'))) {
@@ -60,19 +97,19 @@
             }
         }
 
-        // 如果解码失败或不是 Base64，直接使用原参数
         if (!finalUrl) {
             finalUrl = encodedParam;
         }
 
-        // 安全校验：只允许 http/https
         if (!finalUrl.startsWith('http://') && !finalUrl.startsWith('https://')) {
-            document.body.innerHTML = '<h3>不支持的链接协议</h3><p>仅允许 http 或 https 链接。</p>';
+            document.body.innerHTML = '<div style="text-align:center;margin-top:50px;"><h3>不支持的链接协议</h3><p>仅允许 http 或 https 链接。</p></div>';
             return;
         }
 
-        // 直接跳转（无延迟、无任何页面显示）
-        window.location.href = finalUrl;
+        // 动画持续约 0.9 秒（两次闪烁 + 文字渐隐），然后跳转
+        setTimeout(() => {
+            window.location.href = finalUrl;
+        }, 900);
     })();
 </script>
 </body>
