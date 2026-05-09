@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>劳动者工具箱 - 开发者在线工具导航</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            color: #333;
+        }
+        
+        /* 全局头部导航 - 与主站风格保持一致 */
+        .global-header {
+            background: linear-gradient(135deg, #2c3e50 0%, #1a2632 100%);
+            color: white;
+            padding: 15px 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .global-header .logo-area {
+            flex: 1;
+        }
+        .global-header h1 {
+            font-size: 20px;
+            margin-bottom: 0;
+        }
+        .global-header .desc-full {
+            font-size: 12px;
+            opacity: 0.8;
+            margin-top: 4px;
+        }
+        .global-header a {
+            color: white;
+            text-decoration: none;
+            background: rgba(255,255,255,0.15);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            transition: all 0.2s;
+        }
+        .global-header a:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        
+        /* 主体布局 - 左右分栏 */
+        .main-layout {
+            display: flex;
+            max-width: 1400px;
+            margin: 20px auto;
+            gap: 20px;
+            padding: 0 20px;
+        }
+        
+        /* 左侧分类导航 */
+        .sidebar {
+            width: 280px;
+            flex-shrink: 0;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            overflow: hidden;
+            position: sticky;
+            top: 90px;
+            height: fit-content;
+            max-height: calc(100vh - 100px);
+            overflow-y: auto;
+        }
+        .sidebar-title {
+            background: #2c3e50;
+            color: white;
+            padding: 15px 20px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .nav-category {
+            border-bottom: 1px solid #eee;
+        }
+        .nav-category-header {
+            padding: 12px 20px;
+            cursor: pointer;
+            background: #fafafa;
+            font-weight: 500;
+            color: #2c3e50;
+            transition: all 0.2s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-category-header:hover {
+            background: #f0f0f0;
+        }
+        .nav-category-header.active {
+            background: #e8f4fd;
+            color: #0066cc;
+            border-left: 3px solid #0066cc;
+        }
+        
+        /* 右侧内容区域 */
+        .content-area {
+            flex: 1;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            overflow: hidden;
+            min-height: 600px;
+        }
+        .content-header {
+            background: #f8f9fa;
+            padding: 15px 25px;
+            border-bottom: 1px solid #e0e0e0;
+            font-size: 18px;
+            font-weight: bold;
+            color: #2c3e50;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .tools-grid {
+            padding: 25px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 20px;
+        }
+        .tool-card {
+            background: white;
+            border: 1px solid #e8e8e8;
+            border-radius: 12px;
+            padding: 18px 20px;
+            transition: all 0.2s;
+            text-decoration: none;
+            display: block;
+        }
+        .tool-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            border-color: #0066cc;
+        }
+        .tool-card h3 {
+            color: #2c3e50;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+        .tool-card p {
+            color: #666;
+            font-size: 13px;
+            line-height: 1.5;
+            margin-bottom: 12px;
+        }
+        .tool-tag {
+            display: inline-block;
+            background: #e8f0fe;
+            color: #0066cc;
+            font-size: 11px;
+            padding: 3px 8px;
+            border-radius: 12px;
+        }
+        .empty-state {
+            text-align: center;
+            padding: 50px;
+            color: #999;
+        }
+        
+        /* 底部 */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #999;
+            font-size: 12px;
+            border-top: 1px solid #e0e0e0;
+            margin-top: 0;
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #2c3e50;
+            color: white;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            z-index: 100;
+        }
+        .back-to-top.show { opacity: 1; }
+        .back-to-top:hover { background: #0066cc; }
+        
+        @media (max-width: 768px) {
+            .main-layout { flex-direction: column; }
+            .sidebar { width: 100%; position: static; max-height: none; }
+            .tools-grid { grid-template-columns: 1fr; }
+            .global-header .desc-full { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="global-header">
+        <div class="logo-area">
+            <h1>⚒ 劳动者工具箱</h1>
+            <div class="desc-full">开发者在线工具集 | 简洁 · 专业 · 开源</div>
+        </div>
+        <a href="https://laodongzhe.cn">← 返回首页</a>
+    </div>
+    
+    <div class="main-layout">
+        <div class="sidebar">
+            <div class="sidebar-title">📖 工具分类</div>
+            <div id="navContainer"></div>
+            <div class="stats-info" style="padding: 15px 20px; background: #f8f9fa; border-top: 1px solid #e0e0e0; font-size: 12px; color: #666;">
+                <span>🔧 共收录 20+ 个工具</span>
+                <span>🔄 持续更新中</span>
+            </div>
+        </div>
+        
+        <div class="content-area">
+            <div class="content-header" id="currentCategory">📌 请从左侧选择分类</div>
+            <div class="content-body" id="toolsContainer">
+                <div class="empty-state">⚙️ 点击左侧分类查看对应工具列表</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>© laodongzhe.cn - 劳动者工具箱 | 纯前端工具，数据不离开浏览器 | 拒绝跟踪，拥抱开源</p>
+    </div>
+    <div class="back-to-top" id="backToTop">↑</div>
+
+    <script>
+        // 工具数据 - 分类导航
+        const toolsData = {
+            // ① 编码与转换
+            '🔤 编码与转换': [
+                { name: 'Base64 编码/解码', url: './base64-tool.html', desc: '支持标准Base64与URL安全Base64互转，带走安全无跟踪', tags: ['Base64', '编码转换'] },
+                { name: 'URL 编码/解码', url: '/go.htm?url=https://uutool.cn/urlencode/', desc: '将特殊符号转义为百分号形式，安全传递网址参数', tags: ['URL', '编码'] },
+                { name: 'Unicode 转换', url: '/go.htm?url=https://uutool.cn/unicode/', desc: '中文转Unicode编码\u002F解码，支持多种显示方式', tags: ['Unicode', '编码'] },
+                { name: '进制转换', url: '/go.htm?url=https://uutool.cn/radix/', desc: '2/8/10/16进制任意互转，程序员必备', tags: ['进制', '转换'] },
+                { name: '颜色转换', url: '/go.htm?url=https://uutool.cn/color/', desc: 'RGB/HEX互转，支持色值预览与一键复制', tags: ['颜色', 'HEX', 'RGB'] }
+            ],
+            // ② 加密与安全
+            '🔐 加密与安全': [
+                { name: 'MD5 哈希', url: '/go.htm?url=https://uutool.cn/md5/', desc: '32位16进制哈希值生成，支持文本与文件', tags: ['MD5', '哈希'] },
+                { name: 'SHA 哈希', url: '/go.htm?url=https://uutool.cn/sha/', desc: 'SHA-1/256/512加密，支持多种输出格式', tags: ['SHA', '加密'] },
+                { name: 'HMAC 摘要', url: '/go.htm?url=https://uutool.cn/hmac/', desc: '带密钥的哈希消息认证码，确保数据完整性', tags: ['HMAC', '安全'] },
+                { name: '密码强度检测', url: '/go.htm?url=https://uutool.cn/password/', desc: '实时检测密码强度，提供安全建议', tags: ['密码', '安全'] }
+            ],
+            // ③ 时间与日期
+            '📅 时间与日期': [
+                { name: 'Unix时间戳转换', url: '/go.htm?url=https://uutool.cn/timestamp/', desc: '时间戳与北京时间互转，实时滚动显示当前戳', tags: ['时间戳', 'Unix'] },
+                { name: '日期计算器', url: '/go.htm?url=https://uutool.cn/datecalc/', desc: '计算日期差、增加天数等，直观展示结果', tags: ['日期', '计算'] }
+            ],
+            // ④ JSON与文本处理
+            '📄 JSON与文本处理': [
+                { name: 'JSON格式化', url: '/go.htm?url=https://uutool.cn/json/', desc: '一键美化压缩JSON，支持语法校验与折叠', tags: ['JSON', '格式化'] },
+                { name: 'JSON对比', url: '/go.htm?url=https://uutool.cn/jsondiff/', desc: '快速对比两个JSON差异，精准定位变更点', tags: ['JSON', '对比'] },
+                { name: '文本统计', url: '/go.htm?url=https://uutool.cn/textcount/', desc: '字符数、单词数、行数精确统计', tags: ['文本', '统计'] },
+                { name: '正则表达式测试', url: '/go.htm?url=https://regex101.com/', desc: '实时高亮匹配，支持多种语言引擎', tags: ['正则', '测试'] }
+            ],
+            // ⑤ 代码格式化与美化
+            '🎨 代码美化': [
+                { name: 'JavaScript 格式化', url: '/go.htm?url=https://uutool.cn/js-beautify/', desc: '格式化压缩混淆的JS代码，支持自定义缩进', tags: ['JS', '美化'] },
+                { name: 'SQL 格式化', url: '/go.htm?url=https://uutool.cn/sql/', desc: '混乱SQL一键美化，支持多种数据库风格', tags: ['SQL', '格式化'] },
+                { name: 'HTML 格式化', url: '/go.htm?url=https://uutool.cn/html/', desc: 'HTML代码美化压缩，支持自定义缩进', tags: ['HTML', '美化'] },
+                { name: 'CSS 格式化', url: '/go.htm?url=https://uutool.cn/css/', desc: 'CSS样式代码格式化，便于阅读和调试', tags: ['CSS', '美化'] }
+            ],
+            // ⑥ 网络与实用工具
+            '🌐 网络与实用': [
+                { name: 'IP地址查询', url: '/go.htm?url=https://ipinfo.io/', desc: '归属地、运营商、ASN全方位解析', tags: ['IP', '归属地'] },
+                { name: '二维码生成', url: '/go.htm?url=https://see-tool.com/qr-code-generator', desc: '自定义尺寸/颜色，隐私安全，浏览器本地生成', tags: ['二维码', '生成'] },
+                { name: '哈希生成器', url: '/go.htm?url=https://uutool.cn/hash/', desc: 'MD5/SHA1/SHA256/Base64/CRC32等全支持', tags: ['哈希', '加密'] },
+                { name: 'UUID/ULID 生成', url: '/go.htm?url=https://uutool.cn/uuid/', desc: '批量生成唯一标识符，支持版本选择', tags: ['UUID', '生成器'] }
+            ],
+            // ⑦ 全功能工具集(聚合)
+            '⚙️ 全功能工具集': [
+                { name: 'IT-Tools (80+工具)', url: '/go.htm?url=https://it-tools.tech/', desc: '开源开发者工具箱，JSON/Base64/哈希/正则等覆盖', tags: ['聚合', '开源'] },
+                { name: 'CyberChef 网络厨具', url: '/go.htm?url=https://gchq.github.io/CyberChef/', desc: '强大的编解码、加解密工具，英国GCHQ出品', tags: ['聚合', '编解码'] },
+                { name: 'MKLab 在线工具', url: '/go.htm?url=https://mkweb.cc/', desc: '加解密/图片压缩/文本处理一站式', tags: ['聚合', '工具箱'] }
+            ]
+        };
+        
+        // 渲染左侧分类导航
+        function renderNav() {
+            const navContainer = document.getElementById('navContainer');
+            let html = '';
+            let firstCategory = null;
+            for (const catName in toolsData) {
+                if (!firstCategory) firstCategory = catName;
+                html += `<div class="nav-category">
+                    <div class="nav-category-header" data-cat="${catName}">
+                        <span>${catName}</span>
+                    </div>
+                </div>`;
+            }
+            navContainer.innerHTML = html;
+            
+            // 添加点击事件
+            document.querySelectorAll('.nav-category-header').forEach(header => {
+                header.addEventListener('click', () => {
+                    const category = header.dataset.cat;
+                    loadToolsByCategory(category);
+                    document.querySelectorAll('.nav-category-header').forEach(h => h.classList.remove('active'));
+                    header.classList.add('active');
+                });
+            });
+            if (firstCategory) loadToolsByCategory(firstCategory);
+        }
+        
+        // 加载右侧工具列表
+        function loadToolsByCategory(category) {
+            const container = document.getElementById('toolsContainer');
+            const header = document.getElementById('currentCategory');
+            const tools = toolsData[category];
+            if (!tools || tools.length === 0) {
+                container.innerHTML = '<div class="empty-state">暂无工具，敬请期待</div>';
+                header.innerHTML = `📌 ${category}`;
+                return;
+            }
+            header.innerHTML = `📌 ${category}`;
+            let html = `<div class="tools-grid">`;
+            tools.forEach(tool => {
+                html += `<a href="${tool.url}" target="_blank" class="tool-card">
+                    <h3>🔧 ${tool.name}</h3>
+                    <p>${tool.desc}</p>
+                    <div class="tool-tag">${tool.tags.join(' · ')}</div>
+                </a>`;
+            });
+            html += `</div>`;
+            container.innerHTML = html;
+        }
+        
+        // 回到顶部
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            backToTop.classList.toggle('show', window.scrollY > 300);
+        });
+        backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+        
+        renderNav();
+    </script>
+</body>
+</html>
