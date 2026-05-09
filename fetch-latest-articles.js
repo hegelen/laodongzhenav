@@ -1,4 +1,4 @@
-// fetch-latest-articles.js - 只抓取最近14天的文章
+// fetch-latest-articles.js - 只抓取最近14天的文章，超时5秒
 const fs = require('fs');
 const path = require('path');
 
@@ -39,18 +39,18 @@ function isWithinDays(pubDate, days) {
     return diffDays <= days;
 }
 
-// 带超时的抓取函数
-async function fetchWithTimeout(blog, parser, timeoutMs = 8000) {
+// 带超时的抓取函数（超时5秒）
+async function fetchWithTimeout(blog, parser, timeoutMs = 5000) {
     const timeoutPromise = new Promise((_, reject) => {
         setTimeout(() => reject(new Error('TIMEOUT')), timeoutMs);
     });
     
     const fetchPromise = parser.parseURL(blog.rssUrl).then(feed => {
         if (feed.items && feed.items.length > 0) {
-            // 查找最近7天内的文章
+            // 查找最近14天内的文章
             for (const item of feed.items) {
                 const pubDate = item.pubDate || item.isoDate;
-                if (isWithinDays(pubDate, 14)) {
+                if (isWithinDays(pubDate, 14)) {   // 7 改成 14
                     return {
                         name: blog.name,
                         year: blog.year,
@@ -60,7 +60,7 @@ async function fetchWithTimeout(blog, parser, timeoutMs = 8000) {
                     };
                 }
             }
-            // 没有找到7天内的文章
+            // 没有找到14天内的文章
             return null;
         }
         return null;
@@ -81,7 +81,7 @@ async function fetchWithTimeout(blog, parser, timeoutMs = 8000) {
 async function main() {
     const TARGET_TOTAL = 10;      // 目标 10 篇
     const MAX_PER_YEAR = 2;       // 每年最多 2 篇
-    const TIMEOUT_MS = 3000;      // 3 秒超时
+    const TIMEOUT_MS = 5000;      // 5 秒超时
     
     console.log('🚀 开始抓取 RSS 文章...');
     console.log(`📅 只抓取最近 14 天内的文章`);
@@ -95,6 +95,7 @@ async function main() {
     
     if (allBlogs.length === 0) {
         console.log('❌ 没有找到带 rss 字段的博客！');
+        process.exit(1);
         return;
     }
     
@@ -110,7 +111,10 @@ async function main() {
     }
     
     for (const blog of shuffled) {
-        if (results.length >= TARGET_TOTAL) break;
+        if (results.length >= TARGET_TOTAL) {
+            console.log(`\n🎯 已达到目标 ${TARGET_TOTAL} 篇，停止抓取。`);
+            break;
+        }
         if (yearCount[blog.year] >= MAX_PER_YEAR) continue;
         
         process.stdout.write(`📡 ${blog.name} (${blog.year}年) ... `);
@@ -122,7 +126,7 @@ async function main() {
             yearCount[blog.year] = (yearCount[blog.year] || 0) + 1;
             console.log(` ✅ 第 ${results.length}/${TARGET_TOTAL} 篇 (${article.date})`);
         } else if (article === null) {
-            console.log(` ⏭️ 无7天内文章`);
+            console.log(` ⏭️ 无14天内文章`);
         }
     }
     
@@ -139,7 +143,7 @@ async function main() {
     // 生成输出文件
     const output = `// ==================== latest-articles.js ====================
 // 抓取日期: ${new Date().toLocaleString()}
-// 只抓取最近7天内的文章，共 ${results.length} 篇
+// 只抓取最近14天内的文章，共 ${results.length} 篇
 // 目标 ${TARGET_TOTAL} 篇，实际 ${results.length} 篇
 
 const latestArticlesByYear = ${JSON.stringify(groupedByYear, null, 2)};
@@ -153,7 +157,7 @@ if (typeof window !== 'undefined') {
     window.getSortedYears = getSortedYears;
 }
 
-console.log('✅ 加载完成，共 ' + Object.keys(latestArticlesByYear).reduce((sum, y) => sum + latestArticlesByYear[y].length, 0) + ' 篇最近7天文章');
+console.log('✅ 加载完成，共 ' + Object.keys(latestArticlesByYear).reduce((sum, y) => sum + latestArticlesByYear[y].length, 0) + ' 篇最近14天文章');
 `;
     
     fs.writeFileSync('latest-articles.js', output, 'utf8');
@@ -161,6 +165,9 @@ console.log('✅ 加载完成，共 ' + Object.keys(latestArticlesByYear).reduce
     console.log(`\n📊 抓取完成！`);
     console.log(`   ✅ 成功: ${results.length} 篇`);
     console.log(`   📁 已生成: latest-articles.js`);
+    
+    // 任务成功完成，强制退出
+    process.exit(0);
 }
 
 main().catch(console.error);
