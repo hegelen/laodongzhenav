@@ -167,7 +167,8 @@ const toolNavData = {
     '22': [{name:'迅捷Markdown', url:'/go.htm?url=https://markdown.liuchengtu.com/'}, {name:'imathtool公式编辑器', url:'/go.htm?url=https://www.imathtool.com/'}, {name:'屏幕录制', url:'/go.htm?url=https://utils.fun/screen-record'}],
     '23': [{name:'okmiku', url:'/go.htm?url=https://okmiku.com/'}, {name:'TextIn Tools免费OCR工具', url:'/go.htm?url=https://tools.textin.com/'}, {name:'myfreemp3', url:'/go.htm?url=https://www.myfreemp3.com.cn/'}],
     '24': [{name:'iping', url:'/go.htm?url=https://www.iping.cc/'}],
-    '25': [{name:'base64', url:'/go.htm?url=https://www.base64.sh/zh-Hans/'}, {name:'二𫈉转换', url:'/go.htm?url=https://ejz.is-an.org/'}, {name:'30万财务', url:'/go.htm?url=https://300000.cn/'}, {name:'apples ai工具推荐', url:'/go.htm?url=https://apples.cn/'}]
+    '25': [{name:'base64', url:'/go.htm?url=https://www.base64.sh/zh-Hans/'}, {name:'二𫈉转换', url:'/go.htm?url=https://ejz.is-an.org/'}, {name:'30万财务', url:'/go.htm?url=https://300000.cn/'}, {name:'apples ai工具推荐', url:'/go.htm?url=https://apples.cn/'}],
+	 '26': [{name:'base64-URL‑safe ', url:'/go.htm?url=https://laodongzhe.cn/tools/base64-tool.html'}]
 };
 
 // ==================== 工具箱导航数据 ====================
@@ -182,7 +183,8 @@ const toolboxData = {
     '22': [{name:'工具哇', url:'/go.htm?url=https://toolwa.com/'}, {name:'p2hp程序员工具', url:'/go.htm?url=https://tool.p2hp.com/'}],
     '23': [{name:'精准云工具', url:'/go.htm?url=https://tool.caoniang.com/'}, {name:'千图工具', url:'/go.htm?url=https://1000tool.com/'}, {name:'okmiku', url:'/go.htm?url=https://okmiku.com/'}],
     '24': [{name:'46啦工具', url:'/go.htm?url=https://www.46.la/'}, {name:'V3在线工具', url:'/go.htm?url=http://www.v3ol.com/'}, {name:'AI图片变清晰等处理', url:'/go.htm?url=https://imgupscaler.ai/zh/photo-enhancer/'},{name:'', url:'/go.htm?url= '},{name:'', url:'/go.htm?url='},{name:'', url:'/go.htm?url= '}],
-    '25': [{name:'魔方工具', url:'/go.htm?url=https://www.mofangtool.com/'}, {name:'tcp-mk工具箱', url:'/go.htm?url=https://tcp.mk/'}]
+    '25': [{name:'魔方工具', url:'/go.htm?url=https://www.mofangtool.com/'}, {name:'tcp-mk工具箱', url:'/go.htm?url=https://tcp.mk/'}],
+	 '26': [{name:'劳动者工具箱', url:'/go.htm?url=https://laodongzhe.cn/tools/'}]
 };
 
 // ==================== whois导航数据 ====================
