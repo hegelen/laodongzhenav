@@ -1,68 +1,70 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 5/9/2026, 7:59:36 PM
+// 抓取日期: 5/10/2026, 8:01:06 PM
 // 只抓取最近14天内的文章，共 10 篇
 // 目标 10 篇，实际 10 篇
 
 const latestArticlesByYear = {
-  "2007": [
+  "2009": [
     {
-      "name": "织梦岁月",
-      "year": "07",
-      "title": "2026年4月总结",
-      "url": "https://zhujianlin.com/archives/1879.html",
+      "name": "多多",
+      "year": "09",
+      "title": "wp的默认feed地址打不开处理办法",
+      "url": "https://ddlog.cn/?p=471",
+      "date": "2026-05-08"
+    }
+  ],
+  "2010": [
+    {
+      "name": "雅余",
+      "year": "10",
+      "title": "动物朋友",
+      "url": "https://yayu.net/6218.html",
       "date": "2026-04-30"
     }
   ],
-  "2008": [
+  "2013": [
     {
-      "name": "杜郎俊赏",
-      "year": "08",
-      "title": "古苗寨万家灯火，黄果树瀑雨通天",
-      "url": "https://dujun.io/may-day-family-trip-to-guizhou.html",
-      "date": "2026-05-06"
+      "name": "卡瓦邦噶",
+      "year": "13",
+      "title": "读《金阁寺》",
+      "url": "https://www.kawabangga.com/posts/7246",
+      "date": "2026-05-04"
     }
   ],
-  "2009": [
+  "2014": [
     {
-      "name": "老张",
-      "year": "09",
-      "title": "我只会瞎折腾！暨兰空图床上传图片失败解决方法！",
-      "url": "https://laozhang.org/archives/4056.html",
-      "date": "2026-04-28"
+      "name": "ying",
+      "year": "14",
+      "title": "《GPT 图解》笔记：N-Gram、NPLM、LSTM",
+      "url": "https://izualzhy.cn/llm-diagrammatize-ngram-nplm-lstm",
+      "date": "2026-05-10"
     }
   ],
-  "2017": [
+  "2016": [
     {
-      "name": "染念",
-      "year": "17",
-      "title": "lens|打造最强的个人LLM聚合网关系统",
-      "url": "https://dyedd.cn/posts/lens_api",
-      "date": "2026-04-28"
-    },
-    {
-      "name": "科学空间",
-      "year": "17",
-      "title": "直接以FID为Loss：从梯度计算到流式训练",
-      "url": "https://kexue.fm/archives/11738",
-      "date": "2026-05-08"
+      "name": "woodu",
+      "year": "16",
+      "title": "JVS时代的经典乘客——《太鼓之达人 6》",
+      "url": "https://woodu.me/jvsshidaidejingdiancheng/",
+      "date": "2026-05-02"
     }
   ],
   "2018": [
     {
-      "name": "枋柚梓的猫会发光",
+      "name": "希仁之拥",
       "year": "18",
-      "title": "从 1Password 迁移到 Bitwarden：一次涨价引发的“搬家”",
-      "url": "https://inkss.cn/post/5a013cf6/",
-      "date": "2026-05-08"
+      "title": "Ubuntu 26.04 Desktop使用体验",
+      "url": "https://blog.keepchen.com/a/Ubuntu-26.04-Desktop-User-Experience.html",
+      "date": "2026-05-10"
     }
   ],
-  "2019": [
+  "2021": [
     {
-      "name": "流情",
-      "year": "19",
-      "title": "通过openclaw装hermes，倒反天罡",
-      "url": "https://liuqingwushui.top/archives/155/",
-      "date": "2026-04-30"
+      "name": "诺依阁",
+      "year": "21",
+      "title": "openclaw命令行与搭建(2026.5.3版本)",
+      "url": "https://blog.nuoyis.net/posts/93b5.html",
+      "date": "2026-05-04"
     }
   ],
   "2022": [
@@ -81,15 +83,13 @@ const latestArticlesByYear = {
       "title": "通用的 AI IDE 账号管理工具 Cockpit-Tools",
       "url": "https://www.sanshu.cn/arc/262.html",
       "date": "2026-05-07"
-    }
-  ],
-  "2025": [
+    },
     {
-      "name": "巴适小馨",
-      "year": "25",
-      "title": "善待和尊重处在低谷期的奋进者",
-      "url": "https://p4z.cn/archives/98.html",
-      "date": "2026-04-27"
+      "name": "ImQi1",
+      "year": "24",
+      "title": "跨越了两千公里，只为见到你",
+      "url": "https://imqi1.com/content/note/1010",
+      "date": "2026-05-10"
     }
   ]
 };
