@@ -1,79 +1,77 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 5/10/2026, 8:01:06 PM
+// 抓取日期: 5/11/2026, 8:50:25 PM
 // 只抓取最近14天内的文章，共 10 篇
 // 目标 10 篇，实际 10 篇
 
 const latestArticlesByYear = {
+  "2000": [
+    {
+      "name": "Luca",
+      "year": "00",
+      "title": "Bigme设计太丑墨水屏手机失望",
+      "url": "https://wlj.me/notes/sp-note-20260511-112709/",
+      "date": "2026-05-11"
+    }
+  ],
+  "2008": [
+    {
+      "name": "杜郎俊赏",
+      "year": "08",
+      "title": "古苗寨万家灯火，黄果树瀑雨通天",
+      "url": "https://dujun.io/may-day-family-trip-to-guizhou.html",
+      "date": "2026-05-06"
+    },
+    {
+      "name": "军",
+      "year": "08",
+      "title": "来自BlogsClub的礼物",
+      "url": "https://me.xu19.com/blogsclub-coin/",
+      "date": "2026-05-10"
+    }
+  ],
   "2009": [
     {
-      "name": "多多",
+      "name": "老张",
       "year": "09",
-      "title": "wp的默认feed地址打不开处理办法",
-      "url": "https://ddlog.cn/?p=471",
-      "date": "2026-05-08"
-    }
-  ],
-  "2010": [
-    {
-      "name": "雅余",
-      "year": "10",
-      "title": "动物朋友",
-      "url": "https://yayu.net/6218.html",
-      "date": "2026-04-30"
-    }
-  ],
-  "2013": [
-    {
-      "name": "卡瓦邦噶",
-      "year": "13",
-      "title": "读《金阁寺》",
-      "url": "https://www.kawabangga.com/posts/7246",
-      "date": "2026-05-04"
-    }
-  ],
-  "2014": [
-    {
-      "name": "ying",
-      "year": "14",
-      "title": "《GPT 图解》笔记：N-Gram、NPLM、LSTM",
-      "url": "https://izualzhy.cn/llm-diagrammatize-ngram-nplm-lstm",
-      "date": "2026-05-10"
+      "title": "我只会瞎折腾！暨兰空图床上传图片失败解决方法！",
+      "url": "https://laozhang.org/archives/4056.html",
+      "date": "2026-04-28"
     }
   ],
   "2016": [
     {
-      "name": "woodu",
+      "name": "小可",
       "year": "16",
-      "title": "JVS时代的经典乘客——《太鼓之达人 6》",
-      "url": "https://woodu.me/jvsshidaidejingdiancheng/",
-      "date": "2026-05-02"
+      "title": "Codex 订阅一物多用：通过 CPA 代理输出 OpenAI 标准接口",
+      "url": "https://keke.su/posts/2026-05-08-new-1.html",
+      "date": "2026-05-08"
+    }
+  ],
+  "2017": [
+    {
+      "name": "科学空间",
+      "year": "17",
+      "title": "直接以FID为Loss：从梯度计算到流式训练",
+      "url": "https://kexue.fm/archives/11738",
+      "date": "2026-05-08"
     }
   ],
   "2018": [
     {
-      "name": "希仁之拥",
+      "name": "运维咖啡吧",
       "year": "18",
-      "title": "Ubuntu 26.04 Desktop使用体验",
-      "url": "https://blog.keepchen.com/a/Ubuntu-26.04-Desktop-User-Experience.html",
-      "date": "2026-05-10"
+      "title": "我买基金从不亏钱",
+      "url": "https://blog.ops-coffee.com/r/fund-5-year-from-50-percent-loss-to-profit.html",
+      "date": "2026-05-07"
     }
   ],
-  "2021": [
+  "2023": [
     {
-      "name": "诺依阁",
-      "year": "21",
-      "title": "openclaw命令行与搭建(2026.5.3版本)",
-      "url": "https://blog.nuoyis.net/posts/93b5.html",
-      "date": "2026-05-04"
-    }
-  ],
-  "2022": [
-    {
-      "name": "倦意",
-      "year": "22",
-      "title": "Windsurf切号器分享",
-      "url": "https://jyblog.cn/5519/",
-      "date": "2026-05-09"
+      "name": "小野",
+      "year": "23",
+      "title": "狐蒂云疑似准备跑路：低价云服务器的水有多深",
+      "url": "https://lb5.net/253.html",
+      "date": "2026-05-06"
     }
   ],
   "2024": [
@@ -83,13 +81,15 @@ const latestArticlesByYear = {
       "title": "通用的 AI IDE 账号管理工具 Cockpit-Tools",
       "url": "https://www.sanshu.cn/arc/262.html",
       "date": "2026-05-07"
-    },
+    }
+  ],
+  "2025": [
     {
-      "name": "ImQi1",
-      "year": "24",
-      "title": "跨越了两千公里，只为见到你",
-      "url": "https://imqi1.com/content/note/1010",
-      "date": "2026-05-10"
+      "name": "礼印外盒",
+      "year": "25",
+      "title": "爱于细碎烟火，悟爱的本真爱",
+      "url": "https://liyinwaihe.com/399.html",
+      "date": "2026-05-09"
     }
   ]
 };
