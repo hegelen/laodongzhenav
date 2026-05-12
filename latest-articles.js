@@ -1,68 +1,61 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 5/11/2026, 8:50:25 PM
+// 抓取日期: 5/12/2026, 8:44:16 PM
 // 只抓取最近14天内的文章，共 10 篇
 // 目标 10 篇，实际 10 篇
 
 const latestArticlesByYear = {
-  "2000": [
+  "2004": [
     {
-      "name": "Luca",
-      "year": "00",
-      "title": "Bigme设计太丑墨水屏手机失望",
-      "url": "https://wlj.me/notes/sp-note-20260511-112709/",
-      "date": "2026-05-11"
+      "name": "kaix.in",
+      "year": "04",
+      "title": "散装药",
+      "url": "https://kaix.in/2026/0508/",
+      "date": "2026-05-08"
     }
   ],
-  "2008": [
+  "2006": [
     {
-      "name": "杜郎俊赏",
-      "year": "08",
-      "title": "古苗寨万家灯火，黄果树瀑雨通天",
-      "url": "https://dujun.io/may-day-family-trip-to-guizhou.html",
-      "date": "2026-05-06"
-    },
-    {
-      "name": "军",
-      "year": "08",
-      "title": "来自BlogsClub的礼物",
-      "url": "https://me.xu19.com/blogsclub-coin/",
-      "date": "2026-05-10"
+      "name": "joojen Zhou",
+      "year": "06",
+      "title": "Obsidian 成为我文字输入主力工具",
+      "url": "https://joojen.com/archives/8958.html",
+      "date": "2026-05-12"
     }
   ],
   "2009": [
     {
-      "name": "老张",
+      "name": "老卫",
       "year": "09",
-      "title": "我只会瞎折腾！暨兰空图床上传图片失败解决方法！",
-      "url": "https://laozhang.org/archives/4056.html",
-      "date": "2026-04-28"
+      "title": "历时三年《鸿蒙系统（HarmonyOS）移动开发实战》简介",
+      "url": "https://waylau.com/about-harmonyos-short-video-book/",
+      "date": "2026-05-01"
     }
   ],
   "2016": [
     {
-      "name": "小可",
+      "name": "幻影",
       "year": "16",
-      "title": "Codex 订阅一物多用：通过 CPA 代理输出 OpenAI 标准接口",
-      "url": "https://keke.su/posts/2026-05-08-new-1.html",
-      "date": "2026-05-08"
-    }
-  ],
-  "2017": [
-    {
-      "name": "科学空间",
-      "year": "17",
-      "title": "直接以FID为Loss：从梯度计算到流式训练",
-      "url": "https://kexue.fm/archives/11738",
-      "date": "2026-05-08"
+      "title": "洗衣机复活记",
+      "url": "https://blog.52hyjs.com/post-1269.html",
+      "date": "2026-05-11"
     }
   ],
   "2018": [
     {
-      "name": "运维咖啡吧",
+      "name": "希仁之拥",
       "year": "18",
-      "title": "我买基金从不亏钱",
-      "url": "https://blog.ops-coffee.com/r/fund-5-year-from-50-percent-loss-to-profit.html",
-      "date": "2026-05-07"
+      "title": "Ubuntu 26.04 Desktop使用体验",
+      "url": "https://blog.keepchen.com/a/Ubuntu-26.04-Desktop-User-Experience.html",
+      "date": "2026-05-10"
+    }
+  ],
+  "2022": [
+    {
+      "name": "倦意",
+      "year": "22",
+      "title": "当白嫖党的渠道都被封以后，天才程序员已陨落。",
+      "url": "https://jyblog.cn/5552/",
+      "date": "2026-05-12"
     }
   ],
   "2023": [
@@ -72,15 +65,22 @@ const latestArticlesByYear = {
       "title": "狐蒂云疑似准备跑路：低价云服务器的水有多深",
       "url": "https://lb5.net/253.html",
       "date": "2026-05-06"
+    },
+    {
+      "name": "宗宗酱",
+      "year": "23",
+      "title": "马上2026世界杯来了，买体彩不？",
+      "url": "https://ygz.ink/archives/4884.html",
+      "date": "2026-05-12"
     }
   ],
   "2024": [
     {
-      "name": "三叔",
+      "name": "ImQi1",
       "year": "24",
-      "title": "通用的 AI IDE 账号管理工具 Cockpit-Tools",
-      "url": "https://www.sanshu.cn/arc/262.html",
-      "date": "2026-05-07"
+      "title": "跨越了两千公里，只为见到你",
+      "url": "https://imqi1.com/content/note/1010",
+      "date": "2026-05-10"
     }
   ],
   "2025": [
