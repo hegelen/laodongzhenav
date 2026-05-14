@@ -1,18 +1,9 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 5/13/2026, 8:49:19 PM
+// 抓取日期: 5/14/2026, 8:39:36 PM
 // 只抓取最近14天内的文章，共 10 篇
 // 目标 10 篇，实际 10 篇
 
 const latestArticlesByYear = {
-  "2004": [
-    {
-      "name": "kaix.in",
-      "year": "04",
-      "title": "散装药",
-      "url": "https://kaix.in/2026/0508/",
-      "date": "2026-05-08"
-    }
-  ],
   "2006": [
     {
       "name": "joojen Zhou",
@@ -22,13 +13,22 @@ const latestArticlesByYear = {
       "date": "2026-05-12"
     }
   ],
+  "2007": [
+    {
+      "name": "织梦岁月",
+      "year": "07",
+      "title": "股票已经连续5天一字跌停",
+      "url": "https://zhujianlin.com/archives/1893.html",
+      "date": "2026-05-11"
+    }
+  ],
   "2010": [
     {
-      "name": "忆往事",
+      "name": "lilydjwg",
       "year": "10",
-      "title": "补牙",
-      "url": "https://zhou.ge/2026-05-05.html",
-      "date": "2026-05-05"
+      "title": "\n        自定义系统默认中文字体\n      ",
+      "url": "https://blog.lilydjwg.me/posts/217026.html",
+      "date": "2026-05-11"
     }
   ],
   "2011": [
@@ -40,22 +40,40 @@ const latestArticlesByYear = {
       "date": "2026-05-11"
     }
   ],
-  "2018": [
+  "2014": [
     {
-      "name": "希仁之拥",
-      "year": "18",
-      "title": "Ubuntu 26.04 Desktop使用体验",
-      "url": "https://blog.keepchen.com/a/Ubuntu-26.04-Desktop-User-Experience.html",
-      "date": "2026-05-10"
+      "name": "松茸",
+      "year": "14",
+      "title": "千万莫单广电卡进江苏",
+      "url": "https://zrs.xyz/2131.html",
+      "date": "2026-05-12"
     }
   ],
-  "2019": [
+  "2015": [
     {
-      "name": "流情",
-      "year": "19",
-      "title": "5.10 母亲节亦是加班日",
-      "url": "https://liuqingwushui.top/archives/156/",
-      "date": "2026-05-10"
+      "name": "满心",
+      "year": "15",
+      "title": "周天记正式更换主题Riven",
+      "url": "https://zhoutian.com/369.html",
+      "date": "2026-05-09"
+    }
+  ],
+  "2018": [
+    {
+      "name": "运维咖啡吧",
+      "year": "18",
+      "title": "我买基金从不亏钱",
+      "url": "https://blog.ops-coffee.com/r/fund-5-year-from-50-percent-loss-to-profit.html",
+      "date": "2026-05-07"
+    }
+  ],
+  "2021": [
+    {
+      "name": "yveji",
+      "year": "21",
+      "title": "2026世界杯代餐：chambishi copper mine",
+      "url": "https://www.yveji.com/Cultural/chambishi-copper-mine.html",
+      "date": "2026-05-13"
     }
   ],
   "2022": [
@@ -69,27 +87,11 @@ const latestArticlesByYear = {
   ],
   "2023": [
     {
-      "name": "Siwei Li",
+      "name": "无敌",
       "year": "23",
-      "title": "赫尔米勒embody",
-      "url": "https://siwei.li/he-er-mi-le-embody/",
-      "date": "2026-05-08"
-    },
-    {
-      "name": "宗宗酱",
-      "year": "23",
-      "title": "真他妈缺德东西",
-      "url": "https://ygz.ink/archives/4893.html",
-      "date": "2026-05-13"
-    }
-  ],
-  "2025": [
-    {
-      "name": "落花雨记",
-      "year": "25",
-      "title": "牛马生活",
-      "url": "https://www.luohuayu.cn/68.html",
-      "date": "2026-05-08"
+      "title": "为博客加一层“语义索引”（一）：结构设计与构建流程",
+      "url": "http://blog.tangwudi.com/technology/homedatacenter14228/",
+      "date": "2026-05-07"
     }
   ]
 };
