@@ -1,9 +1,27 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 5/14/2026, 8:39:36 PM
+// 抓取日期: 5/15/2026, 8:19:30 PM
 // 只抓取最近14天内的文章，共 10 篇
 // 目标 10 篇，实际 10 篇
 
 const latestArticlesByYear = {
+  "2001": [
+    {
+      "name": "东评衿就",
+      "year": "01",
+      "title": "高铁上花三小时，我部署了全自动SSL证书同步脚本",
+      "url": "https://dongjunke.cn/posts/2026/05/10/48163.html",
+      "date": "2026-05-10"
+    }
+  ],
+  "2004": [
+    {
+      "name": "kaix.in",
+      "year": "04",
+      "title": "散装药",
+      "url": "https://kaix.in/2026/0508/",
+      "date": "2026-05-08"
+    }
+  ],
   "2006": [
     {
       "name": "joojen Zhou",
@@ -22,76 +40,58 @@ const latestArticlesByYear = {
       "date": "2026-05-11"
     }
   ],
-  "2010": [
+  "2008": [
     {
-      "name": "lilydjwg",
-      "year": "10",
-      "title": "\n        自定义系统默认中文字体\n      ",
-      "url": "https://blog.lilydjwg.me/posts/217026.html",
-      "date": "2026-05-11"
+      "name": "杜郎俊赏",
+      "year": "08",
+      "title": "古苗寨万家灯火，黄果树瀑雨通天",
+      "url": "https://dujun.io/may-day-family-trip-to-guizhou.html",
+      "date": "2026-05-06"
     }
   ],
-  "2011": [
+  "2009": [
     {
-      "name": "耳朵的主人",
-      "year": "11",
-      "title": "妈祖诞辰1066周年｜善坛妈祖庙祭典",
-      "url": "https://www.edzbe.com/book/diary/20260509.html",
-      "date": "2026-05-11"
+      "name": "多多",
+      "year": "09",
+      "title": "wp的默认feed地址打不开处理办法",
+      "url": "https://ddlog.cn/?p=471",
+      "date": "2026-05-08"
     }
   ],
-  "2014": [
+  "2012": [
     {
-      "name": "松茸",
-      "year": "14",
-      "title": "千万莫单广电卡进江苏",
-      "url": "https://zrs.xyz/2131.html",
+      "name": "王鑫",
+      "year": "12",
+      "title": "AI写小说基本思路探讨",
+      "url": "https://wonse.info/ai-write-novel.html",
       "date": "2026-05-12"
     }
   ],
-  "2015": [
+  "2016": [
     {
-      "name": "满心",
-      "year": "15",
-      "title": "周天记正式更换主题Riven",
-      "url": "https://zhoutian.com/369.html",
-      "date": "2026-05-09"
+      "name": "幻影",
+      "year": "16",
+      "title": "凡人修仙靠逆天，剑来护心靠齐先生｜那一句 “莫让他输在情字” 看哭多少人",
+      "url": "https://blog.52hyjs.com/post-1271.html",
+      "date": "2026-05-15"
     }
   ],
-  "2018": [
+  "2017": [
     {
-      "name": "运维咖啡吧",
-      "year": "18",
-      "title": "我买基金从不亏钱",
-      "url": "https://blog.ops-coffee.com/r/fund-5-year-from-50-percent-loss-to-profit.html",
-      "date": "2026-05-07"
+      "name": "科学空间",
+      "year": "17",
+      "title": "DeepSeek V4的tid2eid是怎么来的？",
+      "url": "https://kexue.fm/archives/11750",
+      "date": "2026-05-15"
     }
   ],
-  "2021": [
+  "2019": [
     {
-      "name": "yveji",
-      "year": "21",
-      "title": "2026世界杯代餐：chambishi copper mine",
-      "url": "https://www.yveji.com/Cultural/chambishi-copper-mine.html",
-      "date": "2026-05-13"
-    }
-  ],
-  "2022": [
-    {
-      "name": "倦意",
-      "year": "22",
-      "title": "当白嫖党的渠道都被封以后，天才程序员已陨落。",
-      "url": "https://jyblog.cn/5552/",
-      "date": "2026-05-12"
-    }
-  ],
-  "2023": [
-    {
-      "name": "无敌",
-      "year": "23",
-      "title": "为博客加一层“语义索引”（一）：结构设计与构建流程",
-      "url": "http://blog.tangwudi.com/technology/homedatacenter14228/",
-      "date": "2026-05-07"
+      "name": "流情",
+      "year": "19",
+      "title": "5.10 母亲节亦是加班日",
+      "url": "https://liuqingwushui.top/archives/156/",
+      "date": "2026-05-10"
     }
   ]
 };
