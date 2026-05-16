@@ -222,6 +222,7 @@ const aiData = {
 const pediadata = {
 	'01': [{name:'wikipedia', url:'/go.htm?url=aHR0cHM6Ly93d3cud2lraXBlZGlhLm9yZy8%3D'}],
 	'05': [{name:'快懂百科', url:'/go.htm?url=https://www.baike.com/'}],
+	'05': [{name:'百度百科', url:'/go.htm?url=https://baike.baidu.com/'}],
     '10': [{name:'发音字典', url:'/go.htm?url=https://www.voicedic.com/'}],
     '13': [{name:'wikihow', url:'/go.htm?url=https://zh.wikihow.com/'}],
     '15': [{name:'观沧海', url:'/go.htm?url=https://www.ageeye.cn/'}],
