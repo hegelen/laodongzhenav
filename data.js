@@ -85,7 +85,6 @@ const forumData = {
 // ==================== 博客大全导航数据 ====================
 const blogNavData = {
     '06': [{name:'博客志', url:'/go.htm?url=http://www.jetli.com.cn/'}],
-    '08': [{name:'优秀博客集锦', url:'/go.htm?url=https://woodwhales.cn/2018/12/22/002/'}],
     '09': [{name:'卢松松博客大全', url:'/go.htm?url=https://daohang.lusongsong.com/'}],
     '14': [{name:'rssblog', url:'/go.htm?url=https://rssblog.imcbc.cn/member/'}, {name:'feedspot-bloggers', url:'/go.htm?url=https://bloggers.feedspot.com/'}],
     '16': [{name:'个站商店', url:'/go.htm?url=https://storeweb.cn/'}],
@@ -227,7 +226,8 @@ const pediadata = {
 const SearchEngineData = {
     '00': [{name:'百度', url:'/go.htm?url=https://www.baidu.com/'}],
     '09': [{name:'bing', url:'/go.htm?url=https://www.bing.com/'}],
-    '18': [{name:'kaqi', url:'/go.htm?url=https://kagi.com/'}]
+    '18': [{name:'kaqi', url:'/go.htm?url=https://kagi.com/'}],
+	'20': [{name:'百度开发者搜索', url:'/go.htm?url=https://kaifa.baidu.com/'}]
 };
 
 // ==================== RSS工具数据 ====================
