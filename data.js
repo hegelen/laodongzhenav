@@ -148,7 +148,7 @@ const featuredNavData = {
     '25': [{name:'猫步求职导航', url:'/go.htm?url=https://nav.maobucv.com/'},  {name:'图标西西', url:'/go.htm?url=https://icon.cc/'}]
 };
 
-// ==================== 工具导航数据 ====================
+// ==================== 工具导航数据, {name:'', url:'/go.htm?url='}   ====================
 const toolNavData = {
     '97': [{name:'archive网站历史', url:'/go.htm?url=aHR0cHM6Ly9hcmNoaXZlLm9yZy8%3D'}],
     '07': [{name:'蛙蛙工具', url:'/go.htm?url=https://www.iamwawa.cn/'}],
@@ -158,7 +158,7 @@ const toolNavData = {
     '16': [{name:'万能计算器', url:'/go.htm?url=https://www.omnicalculator.com/'}],
     '17': [{name:'奶牛快传', url:'/go.htm?url=https://cowtransfer.com/'}, {name:'孟坤工具', url:'/go.htm?url=https://tool.mkblog.cn/'}],
     '18': [{name:'airportal空投快传', url:'/go.htm?url=https://www.airportal.cn/'}, {name:'remove抠图', url:'/go.htm?url=https://www.remove.bg/zh'}],
-    '19': [{name:'docsmall', url:'/go.htm?url=https://docsmall.com/'}, {name:'效率工具', url:'/go.htm?url=https://blog.luckly-mjw.cn/tool-show/index.html'}, {name:'m3u8视频提取', url:'/go.htm?url=http://blog.luckly-mjw.cn/tool-show/m3u8-downloader/index.html'}, {name:'橘子seo网站历史等', url:'/go.htm?url=https://seo.juziseo.com/'}],
+    '19': [{name:'docsmall', url:'/go.htm?url=https://docsmall.com/'}, {name:'效率工具', url:'/go.htm?url=https://blog.luckly-mjw.cn/tool-show/index.html'}, {name:'m3u8视频提取', url:'/go.htm?url=http://blog.luckly-mjw.cn/tool-show/m3u8-downloader/index.html'}, {name:'橘子seo网站历史等', url:'/go.htm?url=https://seo.juziseo.com/'}, {name:'emojiall', url:'/go.htm?url=https://www.emojiall.com/'}  ],
     '20': [{name:'白描', url:'/go.htm?url=https://web.baimiaoapp.com/'}],
     '21': [{name:'美图秀秀在线版', url:'/go.htm?url=https://pc.meitu.com/toolbox'}],
     '22': [{name:'迅捷Markdown', url:'/go.htm?url=https://markdown.liuchengtu.com/'}, {name:'imathtool公式编辑器', url:'/go.htm?url=https://www.imathtool.com/'}, {name:'屏幕录制', url:'/go.htm?url=https://utils.fun/screen-record'}],
