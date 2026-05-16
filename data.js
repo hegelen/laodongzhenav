@@ -87,7 +87,7 @@ const blogNavData = {
     '06': [{name:'博客志', url:'/go.htm?url=http://www.jetli.com.cn/'}],
     '08': [{name:'优秀博客集锦', url:'/go.htm?url=https://woodwhales.cn/2018/12/22/002/'}],
     '09': [{name:'卢松松博客大全', url:'/go.htm?url=https://daohang.lusongsong.com/'}],
-    '14': [{name:'rssblog', url:'/go.htm?url=https://rssblog.imcbc.cn/member/'}, {name:'feedspot-bloggers', url:'/go.htm?url=https://bloggers.feedspot.com/', {name:'', url:'/go.htm?url=', {name:'', url:'/go.htm?url='],
+    '14': [{name:'rssblog', url:'/go.htm?url=https://rssblog.imcbc.cn/member/'}, {name:'feedspot-bloggers', url:'/go.htm?url=https://bloggers.feedspot.com/'}],
     '16': [{name:'个站商店', url:'/go.htm?url=https://storeweb.cn/'}],
     '17': [{name:'十年之约', url:'/go.htm?url=https://www.foreverblog.cn/'}],
     '20': [{name:'BlogFinder', url:'/go.htm?url=https://bf.zzxworld.com/s'}, {name:'博客大全', url:'/go.htm?url=https://boke.wangzhidaquan.com/'}, {name:'站长笔记博客大全', url:'/go.htm?url=https://www.080210.com/link/'}],
