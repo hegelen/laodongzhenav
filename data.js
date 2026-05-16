@@ -103,7 +103,7 @@ const randomBlogData = {
     '23': [{name:'博客路随机博客', url:'/go.htm?url=https://boke.lu/sj/'}],
     '24': [{name:'blogsclub空间穿梭', url:'/go.htm?url=https://www.blogsclub.org/go'}],
     '25': [{name:'晓梦羊博客集友谊之桥', url:'/go.htm?url=https://bloginc.cn/go.html'}, {name:'独立博客传送门', url:'/go.htm?url=https://webteleporter.top/'}, {name:'揪蝉', url:'/go.htm?url=https://www.jiuchan.org/'}, {name:'漫游', url:'/go.htm?url=https://blogger.toocool.cc/manyou'}],
-	'26': [{name:'走访-劳动者随机博客', url:'/go.htm?url=https://laodongzhe.cn/goto.htm'}],
+	'26': [{name:'走访-劳动者随机博客', url:'https://laodongzhe.cn/goto.htm'}],
 };
 
 // ==================== 博客程序数据 ====================
