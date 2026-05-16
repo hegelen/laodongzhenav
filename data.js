@@ -184,7 +184,7 @@ const toolboxData = {
 	 '26': [{name:'劳动者工具箱', url:'/go.htm?url=https://laodongzhe.cn/tools/'}]
 };
 
-// ==================== whois导航数据 ====================
+// ==================== whois导航数据 , {name:'', url:'/go.htm?url='}   ====================
 const whoisData = {
     '23': [{name:'who.cx', url:'/go.htm?url=https://who.cx/'}],
     '25': [{name:'w.is whois', url:'/go.htm?url=https://w.is/'}],
@@ -214,7 +214,7 @@ const paidBlogData = {
 };
 // ==================== ai人工智能 ====================
 const aiData = {
-    '23': [{name:'豆包', url:'/go.htm?url=https://www.doubao.com/'}]
+    '23': [{name:'deepseek', url:'/go.htm?url=www.deepseek.com'},{name:'豆包', url:'/go.htm?url=https://www.doubao.com/'}]
 };
 
 // ==================== 百科大全导航 ====================
