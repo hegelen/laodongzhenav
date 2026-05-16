@@ -212,6 +212,10 @@ const officialblogdata = {
 const paidBlogData = {
     '20': [{name:'happyxiao', url:'/go.htm?url=https://happyxiao.com/'}]
 };
+// ==================== ai人工智能 ====================
+const aiData = {
+    '23': [{name:'豆包', url:'/go.htm?url=https://www.doubao.com/'}]
+};
 
 // ==================== 百科大全导航 ====================
 const pediadata = {
@@ -347,7 +351,8 @@ const categories = {
     '💻 独立博客程序': blogProgramData,
     '📖 学习导航大全': studyNavData,
     '📚︎ 独立百科大全': pediadata,
-    '🤖 AI导航大全': aiNavData,
+	'🤖 AI人工智能': aiData,
+    '🛰 AI导航大全': aiNavData,
     '⭐ 特色网址导航': featuredNavData,
     '🛠️ 独立工具导航': toolNavData,
     '🧰 工具箱导航': toolboxData,
