@@ -230,7 +230,7 @@ const pediadata = {
 // ==================== 搜索引擎大全导航 , {name:'', url:'/go.htm?url='}   ====================
 const SearchEngineData = {
 	 '98': [{name:'谷歌', url:'/go.htm?url=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8%3D'}],
-    '00': [{name:'百度', url:'/go.htm?url=https://www.baidu.com/'}],
+    '00': [{name:'百度', url:'/go.htm?url=https://www.baidu.com/'}, {name:'谷歌高级搜索', url:'/go.htm?url=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9hZHZhbmNlZF9zZWFyY2g%3D'}],
     '09': [{name:'bing', url:'/go.htm?url=https://www.bing.com/'}],
     '18': [{name:'kaqi', url:'/go.htm?url=https://kagi.com/'}],
 	'20': [{name:'百度开发者搜索', url:'/go.htm?url=https://kaifa.baidu.com/'}]
