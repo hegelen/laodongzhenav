@@ -1,97 +1,95 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 5/15/2026, 8:19:30 PM
+// 抓取日期: 5/16/2026, 8:33:59 AM
 // 只抓取最近14天内的文章，共 10 篇
 // 目标 10 篇，实际 10 篇
 
 const latestArticlesByYear = {
-  "2001": [
+  "2010": [
     {
-      "name": "东评衿就",
-      "year": "01",
-      "title": "高铁上花三小时，我部署了全自动SSL证书同步脚本",
-      "url": "https://dongjunke.cn/posts/2026/05/10/48163.html",
-      "date": "2026-05-10"
-    }
-  ],
-  "2004": [
-    {
-      "name": "kaix.in",
-      "year": "04",
-      "title": "散装药",
-      "url": "https://kaix.in/2026/0508/",
-      "date": "2026-05-08"
-    }
-  ],
-  "2006": [
-    {
-      "name": "joojen Zhou",
-      "year": "06",
-      "title": "Obsidian 成为我文字输入主力工具",
-      "url": "https://joojen.com/archives/8958.html",
-      "date": "2026-05-12"
-    }
-  ],
-  "2007": [
-    {
-      "name": "织梦岁月",
-      "year": "07",
-      "title": "股票已经连续5天一字跌停",
-      "url": "https://zhujianlin.com/archives/1893.html",
+      "name": "宇间草",
+      "year": "10",
+      "title": "修个设备还得“以命换命”？这锅老子不背了",
+      "url": "https://2days.org/20108.html",
       "date": "2026-05-11"
     }
   ],
-  "2008": [
+  "2013": [
     {
-      "name": "杜郎俊赏",
-      "year": "08",
-      "title": "古苗寨万家灯火，黄果树瀑雨通天",
-      "url": "https://dujun.io/may-day-family-trip-to-guizhou.html",
-      "date": "2026-05-06"
+      "name": "卡瓦邦噶",
+      "year": "13",
+      "title": "读《金阁寺》",
+      "url": "https://www.kawabangga.com/posts/7246",
+      "date": "2026-05-04"
     }
   ],
-  "2009": [
+  "2014": [
     {
-      "name": "多多",
-      "year": "09",
-      "title": "wp的默认feed地址打不开处理办法",
-      "url": "https://ddlog.cn/?p=471",
+      "name": "ying",
+      "year": "14",
+      "title": "《GPT 图解》笔记：N-Gram、NPLM、LSTM",
+      "url": "https://izualzhy.cn/llm-diagrammatize-ngram-nplm-lstm",
+      "date": "2026-05-10"
+    }
+  ],
+  "2015": [
+    {
+      "name": "Luminous",
+      "year": "15",
+      "title": "【frp】双端内网环境XTCP协议P2P打洞互通实践",
+      "url": "https://luotianyi.vc/9435.html",
+      "date": "2026-05-03"
+    }
+  ],
+  "2018": [
+    {
+      "name": "枋柚梓的猫会发光",
+      "year": "18",
+      "title": "从 1Password 迁移到 Bitwarden：一次涨价引发的“搬家”",
+      "url": "https://inkss.cn/post/5a013cf6/",
       "date": "2026-05-08"
-    }
-  ],
-  "2012": [
-    {
-      "name": "王鑫",
-      "year": "12",
-      "title": "AI写小说基本思路探讨",
-      "url": "https://wonse.info/ai-write-novel.html",
-      "date": "2026-05-12"
-    }
-  ],
-  "2016": [
-    {
-      "name": "幻影",
-      "year": "16",
-      "title": "凡人修仙靠逆天，剑来护心靠齐先生｜那一句 “莫让他输在情字” 看哭多少人",
-      "url": "https://blog.52hyjs.com/post-1271.html",
-      "date": "2026-05-15"
-    }
-  ],
-  "2017": [
-    {
-      "name": "科学空间",
-      "year": "17",
-      "title": "DeepSeek V4的tid2eid是怎么来的？",
-      "url": "https://kexue.fm/archives/11750",
-      "date": "2026-05-15"
     }
   ],
   "2019": [
     {
-      "name": "流情",
+      "name": "李锋镝",
       "year": "19",
-      "title": "5.10 母亲节亦是加班日",
-      "url": "https://liuqingwushui.top/archives/156/",
-      "date": "2026-05-10"
+      "title": "SchedulingConfigurer详解",
+      "url": "https://www.lifengdi.com/hou-duan/4701",
+      "date": "2026-05-15"
+    }
+  ],
+  "2022": [
+    {
+      "name": "倦意",
+      "year": "22",
+      "title": "当白嫖党的渠道都被封以后，天才程序员已陨落。",
+      "url": "https://jyblog.cn/5552/",
+      "date": "2026-05-12"
+    }
+  ],
+  "2023": [
+    {
+      "name": "宗宗酱",
+      "year": "23",
+      "title": "发现宝藏！「好站网」",
+      "url": "https://ygz.ink/archives/4915.html",
+      "date": "2026-05-15"
+    },
+    {
+      "name": "鹿泽",
+      "year": "23",
+      "title": "JPG图片格式是什么意思？",
+      "url": "https://www.bailuze.com/24074.html",
+      "date": "2026-05-16"
+    }
+  ],
+  "2024": [
+    {
+      "name": "三叔",
+      "year": "24",
+      "title": "通用的 AI IDE 账号管理工具 Cockpit-Tools",
+      "url": "https://www.sanshu.cn/arc/262.html",
+      "date": "2026-05-07"
     }
   ]
 };
