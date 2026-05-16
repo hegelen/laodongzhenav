@@ -203,7 +203,8 @@ const emailData = {
 
 // ==================== 官方博客导航 , {name:'', url:'/go.htm?url='} ====================
 const officialblogdata = {
-	'16': [{name:'谷歌官方博客', url:'/go.htm?url=aHR0cHM6Ly9ibG9nLmdvb2dsZS8%3D'}]
+	'13': [{name:'美团技术团队', url:'/go.htm?url=https://tech.meituan.com/'}],
+	'16': [{name:'谷歌官方博客', url:'/go.htm?url=aHR0cHM6Ly9ibG9nLmdvb2dsZS8%3D'}],
     '22': [{name:'kaqi官方博客', url:'/go.htm?url=https://blog.kagi.com/'}]
 };
 
