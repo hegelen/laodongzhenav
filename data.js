@@ -80,13 +80,13 @@ const forumData = {
     '26': [{name:'摸鱼论坛', url:'/go.htm?url=https://mylt.net/'}, {name:'discoke', url:'/go.htm?url=https://www.discoke.com/'}, {name:'mjjzz', url:'/go.htm?url=https://www.mjjzz.com/'}, {name:'博客之家论坛', url:'/go.htm?url=https://52blog.cn/'}, {name:'侠客岛', url:'/go.htm?url=https://bbs.hk0.cc/'}, {name:'虚拟资源爱好者的乌托邦', url:'/go.htm?url=https://zzoo.im/'}, {name:'', url:'/go.htm?url='}, {name:'', url:'/go.htm?url='}, {name:'', url:'/go.htm?url='}, {name:'', url:'/go.htm?url='}]
 };
 
-// ==================== 博客大全导航数据 ====================
+// ==================== 博客大全导航数据  , {name:'', url:'/go.htm?url='}  ====================
 const blogNavData = {
     '06': [{name:'博客志', url:'/go.htm?url=http://www.jetli.com.cn/'}],
     '09': [{name:'卢松松博客大全', url:'/go.htm?url=https://daohang.lusongsong.com/'}],
     '14': [{name:'rssblog', url:'/go.htm?url=https://rssblog.imcbc.cn/member/'}, {name:'feedspot-bloggers', url:'/go.htm?url=https://bloggers.feedspot.com/'}],
     '16': [{name:'个站商店', url:'/go.htm?url=https://storeweb.cn/'}],
-    '17': [{name:'十年之约', url:'/go.htm?url=https://www.foreverblog.cn/'}],
+    '17': [{name:'十年之约', url:'/go.htm?url=https://www.foreverblog.cn/'}, {name:'jekyll wiki', url:'/go.htm?url=https://github.com/jekyll/jekyll/wiki/Sites'} ],
     '20': [{name:'BlogFinder', url:'/go.htm?url=https://bf.zzxworld.com/s'}, {name:'博客大全', url:'/go.htm?url=https://boke.wangzhidaquan.com/'}, {name:'站长笔记博客大全', url:'/go.htm?url=https://www.080210.com/link/'}],
     '21': [{name:'博客圈', url:'/go.htm?url=https://bokequan.cn/boke'}, {name:'Ye Olde Blogroll', url:'/go.htm?url=https://blogroll.org/'}],
     '22': [{name:'集博栈', url:'/go.htm?url=https://www.zhblogs.net/'}],
