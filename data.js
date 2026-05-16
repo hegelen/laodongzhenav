@@ -243,14 +243,15 @@ const rssData = {
 
 // ==================== 学习导航数据 ====================
 const studyNavData = {
-    '06': [{name:'X', url:'/go.htm?url=https://www.X.COM/'}],
+    '93': [{name:'马克思主义文库', url:'/go.htm?url=aHR0cHM6Ly93d3cubWFyeGlzdHMub3JnLw%3D%3D'}],
+	'06': [{name:'X', url:'/go.htm?url=https://www.X.COM/'}],
     '09': [{name:'微博', url:'/go.htm?url=https://www.WEIBO.COM'}],
     '11': [{name:'知乎', url:'/go.htm?url=https://www.zhihu.com/'}],
     '15': [{name:'微信读书', url:'/go.htm?url=https://weread.qq.com/'}],
     '25': [{name:'劳动者技术部落', url:'/go.htm?url=http://www.laodongzhe.cn'}]
 };
 
-// ==================== 域名注册网站数据 ====================
+// ==================== 域名注册网站数据  , {name:'', url:'/go.htm?url='}  ====================
 const domainRegData = {
     '99': [{name:'阿里云万网', url:'/go.htm?url=https://www.net.cn/'}, {name:'中资源', url:'/go.htm?url=https://www.zzy.com/'}, {name:'新网', url:'/go.htm?url=https://www.xinnet.com/'}, {name:'godaddy', url:'/go.htm?url=http://www.godaddy.com/'}],
     '00': [{name:'namecheap', url:'/go.htm?url=https://www.namecheap.com/'}],
