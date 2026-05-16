@@ -15,7 +15,7 @@ function getYearValue(yearStr) {
     return convertToFullYear(yearStr);
 }
 
-// ==================== 博客年份导航数据 , {name:'', url:'/go.htm?url=', rss:''}, {name:' ', url:'', rss:''}, {name:' ', url:''}, {name:' ', url:''}====================
+// ==================== 博客年份导航数据 , {name:'', url:'/go.htm?url=', rss:''}====================
 const blogYearsData = {  
     '94': [{name:'贾斯汀', url:'/go.htm?url=https://links.net/', rss:'https://links.net/feed'}, {name:' ', url:''}, {name:' ', url:''}, {name:' ', url:''}],
     '00': [{name:'Luca', url:'/go.htm?url=https://wlj.me/', rss:'https://wlj.me/index.xml'}, {name:'卢昌海 ', url:'/go.htm?url=https://www.changhai.org/', rss:'https://www.changhai.org/feed'}, {name:' ', url:''}, {name:' ', url:''}],
@@ -47,10 +47,8 @@ const blogYearsData = {
     '26': [{name:'华立', url:'/go.htm?url=https://www.renhuali.cn/', rss:'https://www.renhuali.cn/feed'}, {name:'悦已', url:'/go.htm?url=https://yueji.org/', rss:'https://yueji.org/feed'}, {name:'', url:''}]
 };
 
-// 论坛数据、博客大全等其余部分保持不变（没有修改，直接粘贴原来的）
-// ... 由于篇幅限制，后面的 forumData 等大量数据与原文件相同，您需要复制粘贴原文件的后半部分
 
-// ==================== 论坛数据 ====================
+// ==================== 论坛数据 , {name:'', url:'/go.htm?url='} ====================
 const forumData = {
     '91': [{name:'中国惠多网', url:'/go.htm?url=https://www.cfido.com/'}],
     '95': [{name:'水木社区', url:'/go.htm?url=https://www.newsmth.net/'}],
@@ -65,7 +63,7 @@ const forumData = {
     '08': [{name:'hostloc', url:'/go.htm?url=https://hostloc.com/'}, {name:'吾爱破解', url:'/go.htm?url=https://www.52pojie.cn/index.php'}],
     '09': [{name:'北邮人论坛', url:'/go.htm?url=https://bbs.byr.cn/'}, {name:'Ruby中文社区', url:'/go.htm?url=https://ruby-china.org/'}],
     '10': [{name:'v2ex', url:'/go.htm?url=https://www.v2ex.com/'}],
-    '11': [{name:'王牌技术员联盟', url:'/go.htm?url=https://wangpai.2345.cn/'}, {name:'cnodejs', url:'/go.htm?url=https://cnodejs.org/'}],
+    '11': [{name:'王牌技术员联盟', url:'/go.htm?url=https://wangpai.2345.cn/'}, {name:'cnodejs', url:'/go.htm?url=https://cnodejs.org/'}, {name:'思否', url:'/go.htm?url=https://segmentfault.com/'}],
     '12': [{name:'顶渲论坛', url:'/go.htm?url=https://www.toprender.com/forum.php'}, {name:'UG爱好者', url:'/go.htm?url=https://www.ugsnx.com/forum.php'}, {name:' ', url:''}, {name:' ', url:''}, {name:' ', url:''}],
     '13': [{name:'虫部落', url:'/go.htm?url=https://www.chongbuluo.com/'}],
     '14': [{name:'过早客', url:'/go.htm?url=https://www.guozaoke.com/'}, {name:'learnku', url:'/go.htm?url=https://learnku.com/'}],
