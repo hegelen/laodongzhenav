@@ -221,8 +221,9 @@ const pediadata = {
     '18': [{name:'全历史', url:'/go.htm?url=https://www.allhistory.com/'}]
 };
 
-// ==================== 搜索引擎大全导航 ====================
+// ==================== 搜索引擎大全导航 , {name:'', url:'/go.htm?url='}   ====================
 const SearchEngineData = {
+	 '98': [{name:'谷歌', url:'/go.htm?url=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8%3D'}],
     '00': [{name:'百度', url:'/go.htm?url=https://www.baidu.com/'}],
     '09': [{name:'bing', url:'/go.htm?url=https://www.bing.com/'}],
     '18': [{name:'kaqi', url:'/go.htm?url=https://kagi.com/'}],
