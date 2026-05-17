@@ -1,15 +1,24 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 5/16/2026, 8:04:50 PM
+// 抓取日期: 5/17/2026, 2:07:20 AM
 // 只抓取最近14天内的文章，共 10 篇
 // 目标 10 篇，实际 10 篇
 
 const latestArticlesByYear = {
-  "2005": [
+  "2004": [
     {
-      "name": "王志勇",
-      "year": "05",
-      "title": "推荐2026年度的新型特级网红",
-      "url": "http://www.auiou.com/relevant/00002152.jsp",
+      "name": "kaix.in",
+      "year": "04",
+      "title": "散装药",
+      "url": "https://kaix.in/2026/0508/",
+      "date": "2026-05-08"
+    }
+  ],
+  "2006": [
+    {
+      "name": "joojen Zhou",
+      "year": "06",
+      "title": "Obsidian 成为我文字输入主力工具",
+      "url": "https://joojen.com/archives/8958.html",
       "date": "2026-05-12"
     }
   ],
@@ -22,29 +31,22 @@ const latestArticlesByYear = {
       "date": "2026-05-11"
     }
   ],
-  "2008": [
+  "2016": [
     {
-      "name": "杜郎俊赏",
-      "year": "08",
-      "title": "弃猫",
-      "url": "https://dujun.io/018fd448-defe-5530-adea-a1cf4d5f42f2.html",
-      "date": "2026-05-16"
-    },
-    {
-      "name": "军",
-      "year": "08",
-      "title": "蜘蛛一天爬我一万次",
-      "url": "https://me.xu19.com/spider-crawls-10000-times-a-day/",
-      "date": "2026-05-16"
+      "name": "幻影",
+      "year": "16",
+      "title": "凡人修仙靠逆天，剑来护心靠齐先生｜那一句 “莫让他输在情字” 看哭多少人",
+      "url": "https://blog.52hyjs.com/post-1271.html",
+      "date": "2026-05-15"
     }
   ],
-  "2011": [
+  "2017": [
     {
-      "name": "Verne",
-      "year": "11",
-      "title": "Claude Code /goal：让 AI 自主持续工作直到达成目标的新命令",
-      "url": "https://blog.einverne.info/post/2026/05/claude-code-goal-command.html",
-      "date": "2026-05-13"
+      "name": "zj",
+      "year": "17",
+      "title": "五一·北京游",
+      "url": "http://www.zjhuiwan.cn/info/20260506/5210122503078339.html",
+      "date": "2026-05-06"
     }
   ],
   "2018": [
@@ -54,39 +56,37 @@ const latestArticlesByYear = {
       "title": "从 1Password 迁移到 Bitwarden：一次涨价引发的“搬家”",
       "url": "https://inkss.cn/post/5a013cf6/",
       "date": "2026-05-08"
-    }
-  ],
-  "2020": [
-    {
-      "name": "HEMING",
-      "year": "20",
-      "title": "最近卖掉的域名",
-      "url": "https://heming.org/2460.html",
-      "date": "2026-05-16"
-    }
-  ],
-  "2023": [
-    {
-      "name": "无敌",
-      "year": "23",
-      "title": "为博客加一层“语义索引”（二）：JSON 结构与生成脚本的实现",
-      "url": "http://blog.tangwudi.com/technology/homedatacenter14244/",
-      "date": "2026-05-15"
     },
     {
-      "name": "小野",
-      "year": "23",
-      "title": "狐蒂云疑似准备跑路：低价云服务器的水有多深",
-      "url": "https://lb5.net/253.html",
-      "date": "2026-05-06"
+      "name": "运维咖啡吧",
+      "year": "18",
+      "title": "我买基金从不亏钱",
+      "url": "https://blog.ops-coffee.com/r/fund-5-year-from-50-percent-loss-to-profit.html",
+      "date": "2026-05-07"
     }
   ],
-  "2025": [
+  "2024": [
     {
-      "name": "礼印外盒",
-      "year": "25",
-      "title": "爱于细碎烟火，悟爱的本真爱",
-      "url": "https://liyinwaihe.com/399.html",
+      "name": "ImQi1",
+      "year": "24",
+      "title": "来成都看大熊猫",
+      "url": "https://imqi1.com/content/shot/1011",
+      "date": "2026-05-15"
+    }
+  ],
+  "2026": [
+    {
+      "name": "麦子的思绪",
+      "year": "26",
+      "title": "麦子的思绪(一）",
+      "url": "https://mzdsx.com/2026/05/17/%e9%ba%a6%e5%ad%90%e7%9a%84%e6%80%9d%e7%bb%aa/",
+      "date": "2026-05-16"
+    },
+    {
+      "name": "一万先生",
+      "year": "26",
+      "title": "土耳其区ID充值gpt plus全流程(apple礼品卡)",
+      "url": "/feed/6",
       "date": "2026-05-09"
     }
   ]
