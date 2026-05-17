@@ -1,9 +1,18 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 5/17/2026, 11:50:44 AM
+// 抓取日期: 5/17/2026, 8:07:04 PM
 // 只抓取最近14天内的文章，共 10 篇
 // 目标 10 篇，实际 10 篇
 
 const latestArticlesByYear = {
+  "2000": [
+    {
+      "name": "Luca",
+      "year": "00",
+      "title": "学会heel lock系鞋带防脚趾摩擦",
+      "url": "https://wlj.me/notes/sp-note-20260513-214113/",
+      "date": "2026-05-13"
+    }
+  ],
   "2002": [
     {
       "name": "seth",
@@ -15,6 +24,13 @@ const latestArticlesByYear = {
   ],
   "2004": [
     {
+      "name": "kaix.in",
+      "year": "04",
+      "title": "散装药",
+      "url": "https://kaix.in/2026/0508/",
+      "date": "2026-05-08"
+    },
+    {
       "name": "小陈故事",
       "year": "04",
       "title": "努力做个不扫兴的父母",
@@ -22,75 +38,55 @@ const latestArticlesByYear = {
       "date": "2026-05-11"
     }
   ],
-  "2006": [
+  "2005": [
     {
-      "name": "joojen Zhou",
-      "year": "06",
-      "title": "日子过得太粘稠",
-      "url": "https://joojen.com/archives/8972.html",
-      "date": "2026-05-17"
-    }
-  ],
-  "2007": [
-    {
-      "name": "织梦岁月",
-      "year": "07",
-      "title": "股票已经连续5天一字跌停",
-      "url": "https://zhujianlin.com/archives/1893.html",
-      "date": "2026-05-11"
-    }
-  ],
-  "2012": [
-    {
-      "name": "王鑫",
-      "year": "12",
-      "title": "AI写小说基本思路探讨",
-      "url": "https://wonse.info/ai-write-novel.html",
+      "name": "王志勇",
+      "year": "05",
+      "title": "推荐2026年度的新型特级网红",
+      "url": "http://www.auiou.com/relevant/00002152.jsp",
       "date": "2026-05-12"
     }
   ],
-  "2017": [
+  "2013": [
     {
-      "name": "科学空间",
-      "year": "17",
-      "title": "DeepSeek V4的tid2eid是怎么来的？",
-      "url": "https://kexue.fm/archives/11750",
-      "date": "2026-05-15"
+      "name": "小z",
+      "year": "13",
+      "title": "Cloudflare Workers项目部署和wrangler命令使用",
+      "url": "https://blog.xiaoz.org/archives/22985",
+      "date": "2026-05-17"
     }
   ],
-  "2022": [
+  "2018": [
     {
-      "name": "吃猫的鱼",
-      "year": "22",
-      "title": "鸿蒙安装 Google Play 应用：microG 方案实践",
-      "url": "https://www.fish9.cn/archives/477/",
-      "date": "2026-05-04"
+      "name": "运维咖啡吧",
+      "year": "18",
+      "title": "遂昌｜躲避人潮的五一自驾Day1 - 盲盒",
+      "url": "https://blog.ops-coffee.com/r/city-china-zhejiang-lishui-suichang-01.html",
+      "date": "2026-05-17"
+    }
+  ],
+  "2019": [
+    {
+      "name": "流情",
+      "year": "19",
+      "title": "5.10 母亲节亦是加班日",
+      "url": "https://liuqingwushui.top/archives/156/",
+      "date": "2026-05-10"
     }
   ],
   "2023": [
     {
-      "name": "无敌",
+      "name": "建站百科",
       "year": "23",
-      "title": "为博客加一层“语义索引”（二）：JSON 结构与生成脚本的实现",
-      "url": "http://blog.tangwudi.com/technology/homedatacenter14244/",
-      "date": "2026-05-15"
-    }
-  ],
-  "2024": [
+      "title": "野草云yecaoyun：2026年5月最新最全香港VPS促销活动，118元年付起三网延迟超低50ms，流媒体解锁ChatGPT, Gemini, Claude, GitHub Copilot, Meta AI, Grok 等主流AI！",
+      "url": "https://www.jzbk.net/3003.html",
+      "date": "2026-05-17"
+    },
     {
-      "name": "ImQi1",
-      "year": "24",
-      "title": "来成都看大熊猫",
-      "url": "https://imqi1.com/content/shot/1011",
-      "date": "2026-05-15"
-    }
-  ],
-  "2026": [
-    {
-      "name": "麦子的思绪",
-      "year": "26",
-      "title": "麦子的思绪(一）",
-      "url": "https://mzdsx.com/2026/05/17/%e9%ba%a6%e5%ad%90%e7%9a%84%e6%80%9d%e7%bb%aa/",
+      "name": "鹿泽",
+      "year": "23",
+      "title": "JPG图片格式是什么意思？",
+      "url": "https://www.bailuze.com/24074.html",
       "date": "2026-05-16"
     }
   ]
