@@ -250,7 +250,10 @@
 <div class="back-to-top" id="backToTop">↑</div>
 
 <!-- 引入数据 -->
-<script src="latest-articles.js"></script>
+<script>
+    const timestamp = new Date().getTime();
+    document.write('<script src="latest-articles.js?v=' + timestamp + '"><\/script>');
+</script>
 
 <script>
     function renderArticles() {
