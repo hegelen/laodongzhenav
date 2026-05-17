@@ -1,43 +1,50 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 5/16/2026, 8:33:59 AM
+// 抓取日期: 5/16/2026, 8:04:50 PM
 // 只抓取最近14天内的文章，共 10 篇
 // 目标 10 篇，实际 10 篇
 
 const latestArticlesByYear = {
-  "2010": [
+  "2005": [
     {
-      "name": "宇间草",
-      "year": "10",
-      "title": "修个设备还得“以命换命”？这锅老子不背了",
-      "url": "https://2days.org/20108.html",
+      "name": "王志勇",
+      "year": "05",
+      "title": "推荐2026年度的新型特级网红",
+      "url": "http://www.auiou.com/relevant/00002152.jsp",
+      "date": "2026-05-12"
+    }
+  ],
+  "2007": [
+    {
+      "name": "织梦岁月",
+      "year": "07",
+      "title": "股票已经连续5天一字跌停",
+      "url": "https://zhujianlin.com/archives/1893.html",
       "date": "2026-05-11"
     }
   ],
-  "2013": [
+  "2008": [
     {
-      "name": "卡瓦邦噶",
-      "year": "13",
-      "title": "读《金阁寺》",
-      "url": "https://www.kawabangga.com/posts/7246",
-      "date": "2026-05-04"
+      "name": "杜郎俊赏",
+      "year": "08",
+      "title": "弃猫",
+      "url": "https://dujun.io/018fd448-defe-5530-adea-a1cf4d5f42f2.html",
+      "date": "2026-05-16"
+    },
+    {
+      "name": "军",
+      "year": "08",
+      "title": "蜘蛛一天爬我一万次",
+      "url": "https://me.xu19.com/spider-crawls-10000-times-a-day/",
+      "date": "2026-05-16"
     }
   ],
-  "2014": [
+  "2011": [
     {
-      "name": "ying",
-      "year": "14",
-      "title": "《GPT 图解》笔记：N-Gram、NPLM、LSTM",
-      "url": "https://izualzhy.cn/llm-diagrammatize-ngram-nplm-lstm",
-      "date": "2026-05-10"
-    }
-  ],
-  "2015": [
-    {
-      "name": "Luminous",
-      "year": "15",
-      "title": "【frp】双端内网环境XTCP协议P2P打洞互通实践",
-      "url": "https://luotianyi.vc/9435.html",
-      "date": "2026-05-03"
+      "name": "Verne",
+      "year": "11",
+      "title": "Claude Code /goal：让 AI 自主持续工作直到达成目标的新命令",
+      "url": "https://blog.einverne.info/post/2026/05/claude-code-goal-command.html",
+      "date": "2026-05-13"
     }
   ],
   "2018": [
@@ -49,47 +56,38 @@ const latestArticlesByYear = {
       "date": "2026-05-08"
     }
   ],
-  "2019": [
+  "2020": [
     {
-      "name": "李锋镝",
-      "year": "19",
-      "title": "SchedulingConfigurer详解",
-      "url": "https://www.lifengdi.com/hou-duan/4701",
-      "date": "2026-05-15"
-    }
-  ],
-  "2022": [
-    {
-      "name": "倦意",
-      "year": "22",
-      "title": "当白嫖党的渠道都被封以后，天才程序员已陨落。",
-      "url": "https://jyblog.cn/5552/",
-      "date": "2026-05-12"
+      "name": "HEMING",
+      "year": "20",
+      "title": "最近卖掉的域名",
+      "url": "https://heming.org/2460.html",
+      "date": "2026-05-16"
     }
   ],
   "2023": [
     {
-      "name": "宗宗酱",
+      "name": "无敌",
       "year": "23",
-      "title": "发现宝藏！「好站网」",
-      "url": "https://ygz.ink/archives/4915.html",
+      "title": "为博客加一层“语义索引”（二）：JSON 结构与生成脚本的实现",
+      "url": "http://blog.tangwudi.com/technology/homedatacenter14244/",
       "date": "2026-05-15"
     },
     {
-      "name": "鹿泽",
+      "name": "小野",
       "year": "23",
-      "title": "JPG图片格式是什么意思？",
-      "url": "https://www.bailuze.com/24074.html",
-      "date": "2026-05-16"
+      "title": "狐蒂云疑似准备跑路：低价云服务器的水有多深",
+      "url": "https://lb5.net/253.html",
+      "date": "2026-05-06"
     }
   ],
-  "2024": [
+  "2025": [
     {
-      "name": "三叔",
-      "year": "24",
-      "title": "通用的 AI IDE 账号管理工具 Cockpit-Tools",
-      "url": "https://www.sanshu.cn/arc/262.html",
-      "date": "2026-05-07"
+      "name": "礼印外盒",
+      "year": "25",
+      "title": "爱于细碎烟火，悟爱的本真爱",
+      "url": "https://liyinwaihe.com/399.html",
+      "date": "2026-05-09"
     }
   ]
 };
