@@ -1,93 +1,95 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 5/16/2026, 8:04:50 PM
+// 抓取日期: 5/17/2026, 6:54:08 AM
 // 只抓取最近14天内的文章，共 10 篇
 // 目标 10 篇，实际 10 篇
 
 const latestArticlesByYear = {
-  "2005": [
+  "2004": [
     {
-      "name": "王志勇",
-      "year": "05",
-      "title": "推荐2026年度的新型特级网红",
-      "url": "http://www.auiou.com/relevant/00002152.jsp",
-      "date": "2026-05-12"
-    }
-  ],
-  "2007": [
-    {
-      "name": "织梦岁月",
-      "year": "07",
-      "title": "股票已经连续5天一字跌停",
-      "url": "https://zhujianlin.com/archives/1893.html",
+      "name": "一片瓦",
+      "year": "04",
+      "title": "国产银河麒麟系统添加仿宋GB2312、Times New Roman等行政字体遇到问题解决方案（附字体下载链接）",
+      "url": "https://www.ixsz.com/3221.html",
       "date": "2026-05-11"
     }
   ],
-  "2008": [
+  "2009": [
     {
-      "name": "杜郎俊赏",
-      "year": "08",
-      "title": "弃猫",
-      "url": "https://dujun.io/018fd448-defe-5530-adea-a1cf4d5f42f2.html",
-      "date": "2026-05-16"
-    },
-    {
-      "name": "军",
-      "year": "08",
-      "title": "蜘蛛一天爬我一万次",
-      "url": "https://me.xu19.com/spider-crawls-10000-times-a-day/",
+      "name": "多多",
+      "year": "09",
+      "title": "使用 RSS.app，RSS 生成服务",
+      "url": "https://ddlog.cn/?p=473",
       "date": "2026-05-16"
     }
   ],
-  "2011": [
+  "2015": [
     {
-      "name": "Verne",
-      "year": "11",
-      "title": "Claude Code /goal：让 AI 自主持续工作直到达成目标的新命令",
-      "url": "https://blog.einverne.info/post/2026/05/claude-code-goal-command.html",
-      "date": "2026-05-13"
+      "name": "Luminous",
+      "year": "15",
+      "title": "【frp】双端内网环境XTCP协议P2P打洞互通实践",
+      "url": "https://luotianyi.vc/9435.html",
+      "date": "2026-05-03"
+    }
+  ],
+  "2017": [
+    {
+      "name": "zj",
+      "year": "17",
+      "title": "五一·北京游",
+      "url": "http://www.zjhuiwan.cn/info/20260506/5210122503078339.html",
+      "date": "2026-05-06"
     }
   ],
   "2018": [
     {
-      "name": "枋柚梓的猫会发光",
+      "name": "运维咖啡吧",
       "year": "18",
-      "title": "从 1Password 迁移到 Bitwarden：一次涨价引发的“搬家”",
-      "url": "https://inkss.cn/post/5a013cf6/",
-      "date": "2026-05-08"
+      "title": "我买基金从不亏钱",
+      "url": "https://blog.ops-coffee.com/r/fund-5-year-from-50-percent-loss-to-profit.html",
+      "date": "2026-05-07"
     }
   ],
-  "2020": [
+  "2019": [
     {
-      "name": "HEMING",
-      "year": "20",
-      "title": "最近卖掉的域名",
-      "url": "https://heming.org/2460.html",
+      "name": "李锋镝",
+      "year": "19",
+      "title": "SchedulingConfigurer详解",
+      "url": "https://www.lifengdi.com/hou-duan/4701",
+      "date": "2026-05-15"
+    }
+  ],
+  "2021": [
+    {
+      "name": "yveji",
+      "year": "21",
+      "title": "2026世界杯代餐：chambishi copper mine",
+      "url": "https://www.yveji.com/Cultural/chambishi-copper-mine.html",
+      "date": "2026-05-13"
+    }
+  ],
+  "2022": [
+    {
+      "name": "倦意",
+      "year": "22",
+      "title": "最近生活不太如意",
+      "url": "https://jyblog.cn/5576/",
       "date": "2026-05-16"
     }
   ],
   "2023": [
     {
-      "name": "无敌",
+      "name": "火米",
       "year": "23",
-      "title": "为博客加一层“语义索引”（二）：JSON 结构与生成脚本的实现",
-      "url": "http://blog.tangwudi.com/technology/homedatacenter14244/",
-      "date": "2026-05-15"
+      "title": "让 Codex 控制 Chrome，微调了博客侧边栏",
+      "url": "https://huo.me/codex-control-chrome/",
+      "date": "2026-05-16"
     },
     {
-      "name": "小野",
+      "name": "宗宗酱",
       "year": "23",
-      "title": "狐蒂云疑似准备跑路：低价云服务器的水有多深",
-      "url": "https://lb5.net/253.html",
-      "date": "2026-05-06"
-    }
-  ],
-  "2025": [
-    {
-      "name": "礼印外盒",
-      "year": "25",
-      "title": "爱于细碎烟火，悟爱的本真爱",
-      "url": "https://liyinwaihe.com/399.html",
-      "date": "2026-05-09"
+      "title": "抖音520的消费卷有点心动",
+      "url": "https://ygz.ink/archives/4958.html",
+      "date": "2026-05-17"
     }
   ]
 };
