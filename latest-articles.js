@@ -1,43 +1,34 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 5/17/2026, 2:07:20 AM
+// 抓取日期: 5/17/2026, 6:54:08 AM
 // 只抓取最近14天内的文章，共 10 篇
 // 目标 10 篇，实际 10 篇
 
 const latestArticlesByYear = {
   "2004": [
     {
-      "name": "kaix.in",
+      "name": "一片瓦",
       "year": "04",
-      "title": "散装药",
-      "url": "https://kaix.in/2026/0508/",
-      "date": "2026-05-08"
-    }
-  ],
-  "2006": [
-    {
-      "name": "joojen Zhou",
-      "year": "06",
-      "title": "Obsidian 成为我文字输入主力工具",
-      "url": "https://joojen.com/archives/8958.html",
-      "date": "2026-05-12"
-    }
-  ],
-  "2007": [
-    {
-      "name": "织梦岁月",
-      "year": "07",
-      "title": "股票已经连续5天一字跌停",
-      "url": "https://zhujianlin.com/archives/1893.html",
+      "title": "国产银河麒麟系统添加仿宋GB2312、Times New Roman等行政字体遇到问题解决方案（附字体下载链接）",
+      "url": "https://www.ixsz.com/3221.html",
       "date": "2026-05-11"
     }
   ],
-  "2016": [
+  "2009": [
     {
-      "name": "幻影",
-      "year": "16",
-      "title": "凡人修仙靠逆天，剑来护心靠齐先生｜那一句 “莫让他输在情字” 看哭多少人",
-      "url": "https://blog.52hyjs.com/post-1271.html",
-      "date": "2026-05-15"
+      "name": "多多",
+      "year": "09",
+      "title": "使用 RSS.app，RSS 生成服务",
+      "url": "https://ddlog.cn/?p=473",
+      "date": "2026-05-16"
+    }
+  ],
+  "2015": [
+    {
+      "name": "Luminous",
+      "year": "15",
+      "title": "【frp】双端内网环境XTCP协议P2P打洞互通实践",
+      "url": "https://luotianyi.vc/9435.html",
+      "date": "2026-05-03"
     }
   ],
   "2017": [
@@ -51,13 +42,6 @@ const latestArticlesByYear = {
   ],
   "2018": [
     {
-      "name": "枋柚梓的猫会发光",
-      "year": "18",
-      "title": "从 1Password 迁移到 Bitwarden：一次涨价引发的“搬家”",
-      "url": "https://inkss.cn/post/5a013cf6/",
-      "date": "2026-05-08"
-    },
-    {
       "name": "运维咖啡吧",
       "year": "18",
       "title": "我买基金从不亏钱",
@@ -65,29 +49,47 @@ const latestArticlesByYear = {
       "date": "2026-05-07"
     }
   ],
-  "2024": [
+  "2019": [
     {
-      "name": "ImQi1",
-      "year": "24",
-      "title": "来成都看大熊猫",
-      "url": "https://imqi1.com/content/shot/1011",
+      "name": "李锋镝",
+      "year": "19",
+      "title": "SchedulingConfigurer详解",
+      "url": "https://www.lifengdi.com/hou-duan/4701",
       "date": "2026-05-15"
     }
   ],
-  "2026": [
+  "2021": [
     {
-      "name": "麦子的思绪",
-      "year": "26",
-      "title": "麦子的思绪(一）",
-      "url": "https://mzdsx.com/2026/05/17/%e9%ba%a6%e5%ad%90%e7%9a%84%e6%80%9d%e7%bb%aa/",
+      "name": "yveji",
+      "year": "21",
+      "title": "2026世界杯代餐：chambishi copper mine",
+      "url": "https://www.yveji.com/Cultural/chambishi-copper-mine.html",
+      "date": "2026-05-13"
+    }
+  ],
+  "2022": [
+    {
+      "name": "倦意",
+      "year": "22",
+      "title": "最近生活不太如意",
+      "url": "https://jyblog.cn/5576/",
+      "date": "2026-05-16"
+    }
+  ],
+  "2023": [
+    {
+      "name": "火米",
+      "year": "23",
+      "title": "让 Codex 控制 Chrome，微调了博客侧边栏",
+      "url": "https://huo.me/codex-control-chrome/",
       "date": "2026-05-16"
     },
     {
-      "name": "一万先生",
-      "year": "26",
-      "title": "土耳其区ID充值gpt plus全流程(apple礼品卡)",
-      "url": "/feed/6",
-      "date": "2026-05-09"
+      "name": "宗宗酱",
+      "year": "23",
+      "title": "抖音520的消费卷有点心动",
+      "url": "https://ygz.ink/archives/4958.html",
+      "date": "2026-05-17"
     }
   ]
 };
