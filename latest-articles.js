@@ -1,25 +1,16 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 5/17/2026, 8:07:04 PM
+// 抓取日期: 5/18/2026, 8:28:47 PM
 // 只抓取最近14天内的文章，共 10 篇
 // 目标 10 篇，实际 10 篇
 
 const latestArticlesByYear = {
-  "2000": [
-    {
-      "name": "Luca",
-      "year": "00",
-      "title": "学会heel lock系鞋带防脚趾摩擦",
-      "url": "https://wlj.me/notes/sp-note-20260513-214113/",
-      "date": "2026-05-13"
-    }
-  ],
   "2002": [
     {
       "name": "seth",
       "year": "02",
-      "title": "Perfect or better?",
-      "url": "https://seths.blog/2026/05/perfect-or-better/",
-      "date": "2026-05-17"
+      "title": "All right and none the same",
+      "url": "https://seths.blog/2026/05/all-right-and-none-the-same/",
+      "date": "2026-05-18"
     }
   ],
   "2004": [
@@ -29,65 +20,76 @@ const latestArticlesByYear = {
       "title": "散装药",
       "url": "https://kaix.in/2026/0508/",
       "date": "2026-05-08"
+    }
+  ],
+  "2007": [
+    {
+      "name": "FROYO",
+      "year": "07",
+      "title": "凌晨奇遇｜坠入一场沉浸式幻梦",
+      "url": "https://www.izhuyue.com/5821.html",
+      "date": "2026-05-18"
+    }
+  ],
+  "2011": [
+    {
+      "name": "Verne",
+      "year": "11",
+      "title": "Claude Code /goal：让 AI 自主持续工作直到达成目标的新命令",
+      "url": "https://blog.einverne.info/post/2026/05/claude-code-goal-command.html",
+      "date": "2026-05-13"
     },
     {
-      "name": "小陈故事",
-      "year": "04",
-      "title": "努力做个不扫兴的父母",
-      "url": "https://www.chener.net/archives/spoilthefun/",
+      "name": "耳朵的主人",
+      "year": "11",
+      "title": "妈祖诞辰1066周年｜善坛妈祖庙祭典",
+      "url": "https://www.edzbe.com/book/diary/20260509.html",
       "date": "2026-05-11"
     }
   ],
-  "2005": [
+  "2016": [
     {
-      "name": "王志勇",
-      "year": "05",
-      "title": "推荐2026年度的新型特级网红",
-      "url": "http://www.auiou.com/relevant/00002152.jsp",
-      "date": "2026-05-12"
-    }
-  ],
-  "2013": [
-    {
-      "name": "小z",
-      "year": "13",
-      "title": "Cloudflare Workers项目部署和wrangler命令使用",
-      "url": "https://blog.xiaoz.org/archives/22985",
-      "date": "2026-05-17"
+      "name": "小可",
+      "year": "16",
+      "title": "Codex 订阅一物多用：通过 CPA 代理输出 OpenAI 标准接口",
+      "url": "https://keke.su/posts/2026-05-08-new-1.html",
+      "date": "2026-05-08"
     }
   ],
   "2018": [
     {
-      "name": "运维咖啡吧",
+      "name": "枋柚梓的猫会发光",
       "year": "18",
-      "title": "遂昌｜躲避人潮的五一自驾Day1 - 盲盒",
-      "url": "https://blog.ops-coffee.com/r/city-china-zhejiang-lishui-suichang-01.html",
-      "date": "2026-05-17"
-    }
-  ],
-  "2019": [
-    {
-      "name": "流情",
-      "year": "19",
-      "title": "5.10 母亲节亦是加班日",
-      "url": "https://liuqingwushui.top/archives/156/",
-      "date": "2026-05-10"
+      "title": "从 1Password 迁移到 Bitwarden：一次涨价引发的“搬家”",
+      "url": "https://inkss.cn/post/5a013cf6/",
+      "date": "2026-05-08"
     }
   ],
   "2023": [
     {
-      "name": "建站百科",
+      "name": "无敌",
       "year": "23",
-      "title": "野草云yecaoyun：2026年5月最新最全香港VPS促销活动，118元年付起三网延迟超低50ms，流媒体解锁ChatGPT, Gemini, Claude, GitHub Copilot, Meta AI, Grok 等主流AI！",
-      "url": "https://www.jzbk.net/3003.html",
-      "date": "2026-05-17"
-    },
+      "title": "为博客加一层“语义索引”（二）：JSON 结构与生成脚本的实现",
+      "url": "http://blog.tangwudi.com/technology/homedatacenter14244/",
+      "date": "2026-05-15"
+    }
+  ],
+  "2025": [
     {
-      "name": "鹿泽",
-      "year": "23",
-      "title": "JPG图片格式是什么意思？",
-      "url": "https://www.bailuze.com/24074.html",
-      "date": "2026-05-16"
+      "name": "礼印外盒",
+      "year": "25",
+      "title": "爱于细碎烟火，悟爱的本真爱",
+      "url": "https://liyinwaihe.com/399.html",
+      "date": "2026-05-09"
+    }
+  ],
+  "2026": [
+    {
+      "name": "一万先生",
+      "year": "26",
+      "title": "土耳其区ID充值gpt plus全流程(apple礼品卡)",
+      "url": "/feed/6",
+      "date": "2026-05-09"
     }
   ]
 };
