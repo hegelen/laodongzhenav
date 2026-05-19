@@ -1,95 +1,95 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 5/18/2026, 8:28:47 PM
+// 抓取日期: 5/19/2026, 8:47:53 PM
 // 只抓取最近14天内的文章，共 10 篇
 // 目标 10 篇，实际 10 篇
 
 const latestArticlesByYear = {
-  "2002": [
+  "2005": [
     {
-      "name": "seth",
-      "year": "02",
-      "title": "All right and none the same",
-      "url": "https://seths.blog/2026/05/all-right-and-none-the-same/",
-      "date": "2026-05-18"
-    }
-  ],
-  "2004": [
-    {
-      "name": "kaix.in",
-      "year": "04",
-      "title": "散装药",
-      "url": "https://kaix.in/2026/0508/",
-      "date": "2026-05-08"
+      "name": "王志勇",
+      "year": "05",
+      "title": "推荐2026年度的新型特级网红",
+      "url": "http://www.auiou.com/relevant/00002152.jsp",
+      "date": "2026-05-12"
     }
   ],
   "2007": [
     {
-      "name": "FROYO",
+      "name": "织梦岁月",
       "year": "07",
-      "title": "凌晨奇遇｜坠入一场沉浸式幻梦",
-      "url": "https://www.izhuyue.com/5821.html",
-      "date": "2026-05-18"
+      "title": "股票已经连续5天一字跌停",
+      "url": "https://zhujianlin.com/archives/1893.html",
+      "date": "2026-05-11"
+    }
+  ],
+  "2009": [
+    {
+      "name": "老张",
+      "year": "09",
+      "title": "[推广]酷鸭数据 · 520情人节特别活动机来啦！",
+      "url": "https://laozhang.org/archives/4060.html",
+      "date": "2026-05-19"
+    }
+  ],
+  "2010": [
+    {
+      "name": "宇间草",
+      "year": "10",
+      "title": "修个设备还得“以命换命”？这锅老子不背了",
+      "url": "https://2days.org/20108.html",
+      "date": "2026-05-11"
     }
   ],
   "2011": [
     {
       "name": "Verne",
       "year": "11",
-      "title": "Claude Code /goal：让 AI 自主持续工作直到达成目标的新命令",
-      "url": "https://blog.einverne.info/post/2026/05/claude-code-goal-command.html",
-      "date": "2026-05-13"
-    },
-    {
-      "name": "耳朵的主人",
-      "year": "11",
-      "title": "妈祖诞辰1066周年｜善坛妈祖庙祭典",
-      "url": "https://www.edzbe.com/book/diary/20260509.html",
-      "date": "2026-05-11"
-    }
-  ],
-  "2016": [
-    {
-      "name": "小可",
-      "year": "16",
-      "title": "Codex 订阅一物多用：通过 CPA 代理输出 OpenAI 标准接口",
-      "url": "https://keke.su/posts/2026-05-08-new-1.html",
-      "date": "2026-05-08"
+      "title": "试遍所有 Navidrome 客户端，我最终选择了 Narjo",
+      "url": "https://blog.einverne.info/post/2026/05/narjo-music-player-review.html",
+      "date": "2026-05-19"
     }
   ],
   "2018": [
     {
-      "name": "枋柚梓的猫会发光",
+      "name": "运维咖啡吧",
       "year": "18",
-      "title": "从 1Password 迁移到 Bitwarden：一次涨价引发的“搬家”",
-      "url": "https://inkss.cn/post/5a013cf6/",
-      "date": "2026-05-08"
+      "title": "遂昌｜躲避人潮的五一自驾Day3 - 杜鹃",
+      "url": "https://blog.ops-coffee.com/r/city-china-zhejiang-lishui-suichang-03.html",
+      "date": "2026-05-19"
+    }
+  ],
+  "2019": [
+    {
+      "name": "流情",
+      "year": "19",
+      "title": "第一次参加冠军调酒节",
+      "url": "https://liuqingwushui.top/archives/157/",
+      "date": "2026-05-18"
+    }
+  ],
+  "2021": [
+    {
+      "name": "yveji",
+      "year": "21",
+      "title": "2026世界杯代餐：chambishi copper mine",
+      "url": "https://www.yveji.com/Cultural/chambishi-copper-mine.html",
+      "date": "2026-05-13"
     }
   ],
   "2023": [
     {
-      "name": "无敌",
+      "name": "Shiina",
       "year": "23",
-      "title": "为博客加一层“语义索引”（二）：JSON 结构与生成脚本的实现",
-      "url": "http://blog.tangwudi.com/technology/homedatacenter14244/",
-      "date": "2026-05-15"
-    }
-  ],
-  "2025": [
+      "title": "Dell Latitude 7410 Chromebook / Drallion 刷 Windows：CoolStar 安装、Search / Globe 键修复与自动旋转排查",
+      "url": "https://blog.shiina.fun/2026/05/17/dell-latitude-7410-chromebook-drallion-%e5%88%b7-windows%ef%bc%9acoolstar-%e5%ae%89%e8%a3%85%e3%80%81search-globe-%e9%94%ae%e4%bf%ae%e5%a4%8d%e4%b8%8e%e8%87%aa%e5%8a%a8%e6%97%8b%e8%bd%ac%e6%8e%92/",
+      "date": "2026-05-16"
+    },
     {
-      "name": "礼印外盒",
-      "year": "25",
-      "title": "爱于细碎烟火，悟爱的本真爱",
-      "url": "https://liyinwaihe.com/399.html",
-      "date": "2026-05-09"
-    }
-  ],
-  "2026": [
-    {
-      "name": "一万先生",
-      "year": "26",
-      "title": "土耳其区ID充值gpt plus全流程(apple礼品卡)",
-      "url": "/feed/6",
-      "date": "2026-05-09"
+      "name": "火米",
+      "year": "23",
+      "title": "Token 不够用的话，试试 RTK 吧",
+      "url": "https://huo.me/rtk/",
+      "date": "2026-05-19"
     }
   ]
 };
