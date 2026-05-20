@@ -1,61 +1,70 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 5/17/2026, 6:54:08 AM
+// 抓取日期: 5/19/2026, 8:47:53 PM
 // 只抓取最近14天内的文章，共 10 篇
 // 目标 10 篇，实际 10 篇
 
 const latestArticlesByYear = {
-  "2004": [
+  "2005": [
     {
-      "name": "一片瓦",
-      "year": "04",
-      "title": "国产银河麒麟系统添加仿宋GB2312、Times New Roman等行政字体遇到问题解决方案（附字体下载链接）",
-      "url": "https://www.ixsz.com/3221.html",
+      "name": "王志勇",
+      "year": "05",
+      "title": "推荐2026年度的新型特级网红",
+      "url": "http://www.auiou.com/relevant/00002152.jsp",
+      "date": "2026-05-12"
+    }
+  ],
+  "2007": [
+    {
+      "name": "织梦岁月",
+      "year": "07",
+      "title": "股票已经连续5天一字跌停",
+      "url": "https://zhujianlin.com/archives/1893.html",
       "date": "2026-05-11"
     }
   ],
   "2009": [
     {
-      "name": "多多",
+      "name": "老张",
       "year": "09",
-      "title": "使用 RSS.app，RSS 生成服务",
-      "url": "https://ddlog.cn/?p=473",
-      "date": "2026-05-16"
+      "title": "[推广]酷鸭数据 · 520情人节特别活动机来啦！",
+      "url": "https://laozhang.org/archives/4060.html",
+      "date": "2026-05-19"
     }
   ],
-  "2015": [
+  "2010": [
     {
-      "name": "Luminous",
-      "year": "15",
-      "title": "【frp】双端内网环境XTCP协议P2P打洞互通实践",
-      "url": "https://luotianyi.vc/9435.html",
-      "date": "2026-05-03"
+      "name": "宇间草",
+      "year": "10",
+      "title": "修个设备还得“以命换命”？这锅老子不背了",
+      "url": "https://2days.org/20108.html",
+      "date": "2026-05-11"
     }
   ],
-  "2017": [
+  "2011": [
     {
-      "name": "zj",
-      "year": "17",
-      "title": "五一·北京游",
-      "url": "http://www.zjhuiwan.cn/info/20260506/5210122503078339.html",
-      "date": "2026-05-06"
+      "name": "Verne",
+      "year": "11",
+      "title": "试遍所有 Navidrome 客户端，我最终选择了 Narjo",
+      "url": "https://blog.einverne.info/post/2026/05/narjo-music-player-review.html",
+      "date": "2026-05-19"
     }
   ],
   "2018": [
     {
       "name": "运维咖啡吧",
       "year": "18",
-      "title": "我买基金从不亏钱",
-      "url": "https://blog.ops-coffee.com/r/fund-5-year-from-50-percent-loss-to-profit.html",
-      "date": "2026-05-07"
+      "title": "遂昌｜躲避人潮的五一自驾Day3 - 杜鹃",
+      "url": "https://blog.ops-coffee.com/r/city-china-zhejiang-lishui-suichang-03.html",
+      "date": "2026-05-19"
     }
   ],
   "2019": [
     {
-      "name": "李锋镝",
+      "name": "流情",
       "year": "19",
-      "title": "SchedulingConfigurer详解",
-      "url": "https://www.lifengdi.com/hou-duan/4701",
-      "date": "2026-05-15"
+      "title": "第一次参加冠军调酒节",
+      "url": "https://liuqingwushui.top/archives/157/",
+      "date": "2026-05-18"
     }
   ],
   "2021": [
@@ -67,29 +76,20 @@ const latestArticlesByYear = {
       "date": "2026-05-13"
     }
   ],
-  "2022": [
-    {
-      "name": "倦意",
-      "year": "22",
-      "title": "最近生活不太如意",
-      "url": "https://jyblog.cn/5576/",
-      "date": "2026-05-16"
-    }
-  ],
   "2023": [
     {
-      "name": "火米",
+      "name": "Shiina",
       "year": "23",
-      "title": "让 Codex 控制 Chrome，微调了博客侧边栏",
-      "url": "https://huo.me/codex-control-chrome/",
+      "title": "Dell Latitude 7410 Chromebook / Drallion 刷 Windows：CoolStar 安装、Search / Globe 键修复与自动旋转排查",
+      "url": "https://blog.shiina.fun/2026/05/17/dell-latitude-7410-chromebook-drallion-%e5%88%b7-windows%ef%bc%9acoolstar-%e5%ae%89%e8%a3%85%e3%80%81search-globe-%e9%94%ae%e4%bf%ae%e5%a4%8d%e4%b8%8e%e8%87%aa%e5%8a%a8%e6%97%8b%e8%bd%ac%e6%8e%92/",
       "date": "2026-05-16"
     },
     {
-      "name": "宗宗酱",
+      "name": "火米",
       "year": "23",
-      "title": "抖音520的消费卷有点心动",
-      "url": "https://ygz.ink/archives/4958.html",
-      "date": "2026-05-17"
+      "title": "Token 不够用的话，试试 RTK 吧",
+      "url": "https://huo.me/rtk/",
+      "date": "2026-05-19"
     }
   ]
 };
