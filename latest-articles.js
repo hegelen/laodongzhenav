@@ -1,25 +1,25 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 5/19/2026, 8:47:53 PM
+// 抓取日期: 5/20/2026, 9:01:08 PM
 // 只抓取最近14天内的文章，共 10 篇
 // 目标 10 篇，实际 10 篇
 
 const latestArticlesByYear = {
-  "2005": [
+  "2003": [
     {
-      "name": "王志勇",
-      "year": "05",
-      "title": "推荐2026年度的新型特级网红",
-      "url": "http://www.auiou.com/relevant/00002152.jsp",
-      "date": "2026-05-12"
+      "name": "阮一峰",
+      "year": "03",
+      "title": "科技爱好者周刊（第 396 期）：互联网通信的替代方案",
+      "url": "http://www.ruanyifeng.com/blog/2026/05/weekly-issue-396.html",
+      "date": "2026-05-15"
     }
   ],
-  "2007": [
+  "2008": [
     {
-      "name": "织梦岁月",
-      "year": "07",
-      "title": "股票已经连续5天一字跌停",
-      "url": "https://zhujianlin.com/archives/1893.html",
-      "date": "2026-05-11"
+      "name": "有氧呼吸",
+      "year": "08",
+      "title": "年纪大了，开始怀念……",
+      "url": "https://www.oxy.one/2026/05/blog-post.html",
+      "date": "2026-05-18"
     }
   ],
   "2009": [
@@ -29,15 +29,13 @@ const latestArticlesByYear = {
       "title": "[推广]酷鸭数据 · 520情人节特别活动机来啦！",
       "url": "https://laozhang.org/archives/4060.html",
       "date": "2026-05-19"
-    }
-  ],
-  "2010": [
+    },
     {
-      "name": "宇间草",
-      "year": "10",
-      "title": "修个设备还得“以命换命”？这锅老子不背了",
-      "url": "https://2days.org/20108.html",
-      "date": "2026-05-11"
+      "name": "老刘",
+      "year": "09",
+      "title": "临期面包和失信时代",
+      "url": "https://www.iliu.org/expired-bread-and-era-of-broken-trust.html",
+      "date": "2026-05-20"
     }
   ],
   "2011": [
@@ -49,47 +47,47 @@ const latestArticlesByYear = {
       "date": "2026-05-19"
     }
   ],
-  "2018": [
+  "2014": [
     {
-      "name": "运维咖啡吧",
-      "year": "18",
-      "title": "遂昌｜躲避人潮的五一自驾Day3 - 杜鹃",
-      "url": "https://blog.ops-coffee.com/r/city-china-zhejiang-lishui-suichang-03.html",
-      "date": "2026-05-19"
+      "name": "ying",
+      "year": "14",
+      "title": "《GPT 图解》笔记：N-Gram、NPLM、LSTM",
+      "url": "https://izualzhy.cn/llm-diagrammatize-ngram-nplm-lstm",
+      "date": "2026-05-10"
+    }
+  ],
+  "2016": [
+    {
+      "name": "太隐",
+      "year": "16",
+      "title": "好人未必是好统治者",
+      "url": "https://wangyurui.com/posts/hao-ren-wei-bi-shi-hao-tong-zhi-zhe-ac7d10f0",
+      "date": "2026-05-20"
+    },
+    {
+      "name": "幻影",
+      "year": "16",
+      "title": "凡人修仙靠逆天，剑来护心靠齐先生｜那一句 “莫让他输在情字” 看哭多少人",
+      "url": "https://blog.52hyjs.com/post-1271.html",
+      "date": "2026-05-15"
     }
   ],
   "2019": [
     {
-      "name": "流情",
+      "name": "风记星辰",
       "year": "19",
-      "title": "第一次参加冠军调酒节",
-      "url": "https://liuqingwushui.top/archives/157/",
-      "date": "2026-05-18"
-    }
-  ],
-  "2021": [
-    {
-      "name": "yveji",
-      "year": "21",
-      "title": "2026世界杯代餐：chambishi copper mine",
-      "url": "https://www.yveji.com/Cultural/chambishi-copper-mine.html",
-      "date": "2026-05-13"
+      "title": "风记得的音乐：《行将近》—— Soon to Leave",
+      "url": "https://www.thyuu.com/82442/",
+      "date": "2026-05-09"
     }
   ],
   "2023": [
     {
-      "name": "Shiina",
+      "name": "鹿泽",
       "year": "23",
-      "title": "Dell Latitude 7410 Chromebook / Drallion 刷 Windows：CoolStar 安装、Search / Globe 键修复与自动旋转排查",
-      "url": "https://blog.shiina.fun/2026/05/17/dell-latitude-7410-chromebook-drallion-%e5%88%b7-windows%ef%bc%9acoolstar-%e5%ae%89%e8%a3%85%e3%80%81search-globe-%e9%94%ae%e4%bf%ae%e5%a4%8d%e4%b8%8e%e8%87%aa%e5%8a%a8%e6%97%8b%e8%bd%ac%e6%8e%92/",
-      "date": "2026-05-16"
-    },
-    {
-      "name": "火米",
-      "year": "23",
-      "title": "Token 不够用的话，试试 RTK 吧",
-      "url": "https://huo.me/rtk/",
-      "date": "2026-05-19"
+      "title": "传统SEO与AISEO的关键区别及内容未来适应性",
+      "url": "https://www.bailuze.com/24082.html",
+      "date": "2026-05-20"
     }
   ]
 };
