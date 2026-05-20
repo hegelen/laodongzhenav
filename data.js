@@ -17,7 +17,8 @@ function getYearValue(yearStr) {
 
 // ==================== 博客年份导航数据 , {name:'', url:'/go.htm?url=', rss:''}  ====================
 const blogYearsData = {  
-    '94': [{name:'贾斯汀', url:'/go.htm?url=https://links.net/', rss:'https://links.net/feed'}, {name:' ', url:''}, {name:' ', url:''}, {name:' ', url:''}],
+    '94': [{name:'贾斯汀', url:'/go.htm?url=https://links.net/', rss:'https://links.net/feed'}],
+	 '99': [{name:'秘密花园', url:'/go.htm?url=http://www.yini.org/', rss:'http://www.yini.org/feed'}],
     '00': [{name:'Luca', url:'/go.htm?url=https://wlj.me/', rss:'https://wlj.me/index.xml'}, {name:'卢昌海 ', url:'/go.htm?url=https://www.changhai.org/', rss:'https://www.changhai.org/feed'}, {name:' ', url:''}, {name:' ', url:''}],
     '01': [{name:'nc-show', url:'/go.htm?url=https://nicrosoft.net/', rss:'https://nicrosoft.net/feed'}, {name:'阿江守候', url:'/go.htm?url=http://www.ajiang.net/', rss:'http://www.ajiang.net/feed'}, {name:'东评衿就', url:'/go.htm?url=https://dongjunke.cn/', rss:'https://dongjunke.cn/atom.xml'}, {name:'老痛', url:'/go.htm?url=https://toonkam.com' , rss:'https://toonkam.com/feed'}, {name:' ', url:''}],
     '02': [{name:'Paul Graham', url:'/go.htm?url=https://paulgraham.com/', rss:'https://paulgraham.com/feed'}, {name:'守望轩', url:'/go.htm?url=https://www.watch-life.net/', rss:'https://www.watch-life.net/feed'}, {name:' Wangjianshuo', url:'/go.htm?url=https://home.wangjianshuo.com/', rss:'https://home.wangjianshuo.com/feed'},  {name:'seth', url:'/go.htm?url=https://seths.blog/', rss:'https://seths.blog/feed/'}],
