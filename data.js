@@ -127,7 +127,7 @@ const aiNavData = {
     '26': [{name:'AI收录网', url:'/go.htm?url=https://www.aislw.com/'}]
 };
 
-// ==================== 特色网址导航数据 ====================
+// ==================== 特色网址导航数据    , {name:'', url:'/go.htm?url='}     ====================
 const featuredNavData = {
     '06': [{name:'香港網IM123', url:'/go.htm?url=https://im123.com/'}, {name:'world68世界各国网址大全', url:'/go.htm?url=https://www.world68.com/'}],
     '08': [{name:'开源软件分类导航', url:'/go.htm?url=https://www.oschina.net/project/tags'}],
@@ -146,7 +146,7 @@ const featuredNavData = {
     '21': [{name:'drugx药研导航', url:'/go.htm?url=https://drugx.cn/'}, {name:'cns学术导航', url:'/go.htm?url=https://cnspub.com/'}, {name:'CXY521程序员导航', url:'/go.htm?url=http://cxy521.com/'}, {name:'果壳任意门', url:'/go.htm?url=https://gate.guohere.com/'}, {name:'程序员盒子', url:'/go.htm?url=https://www.coderutil.com/'}, {name:'办公人导航', url:'/go.htm?url=https://www.bgrdh.com/'}, {name:'甲方叭叭设计导航', url:'/go.htm?url=https://jiafangbb.com/'}],
     '22': [{name:'法律时代·导航', url:'/go.htm?url=https://yesen.cn/'}],
     '23': [{name:'影视宝藏导航', url:'/go.htm?url=https://tv.baozangdh.com/'}, {name:'OSLAW', url:'/go.htm?url=https://www.oslaw.cn/site-nav'}],
-    '24': [{name:'二次元宝藏导航', url:'/go.htm?url=https://acg.baozangdh.com/'}, {name:'资源帝VR导航', url:'/go.htm?url=https://vr.ziyuandi.cn/'}, {name:'mjj网址导航', url:'/go.htm?url=http://www.mjj.vip/'}, {name:' ', url:''}, {name:' ', url:''}, {name:' ', url:''}, {name:' ', url:''}],
+    '24': [{name:'二次元宝藏导航', url:'/go.htm?url=https://acg.baozangdh.com/'}, {name:'资源帝VR导航', url:'/go.htm?url=https://vr.ziyuandi.cn/'}, {name:'mjj网址导航', url:'/go.htm?url=http://www.mjj.vip/'} , {name:'卡卡罗特导航', url:'/go.htm?url=https://blog.share888.top/nav/'}  ],
     '25': [{name:'猫步求职导航', url:'/go.htm?url=https://nav.maobucv.com/'},  {name:'图标西西', url:'/go.htm?url=https://icon.cc/'}]
 };
 
