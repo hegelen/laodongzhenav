@@ -56,19 +56,40 @@
 
 <script src="data.js"></script>
 <script>
+    // 解析真实 URL：去掉 /go.htm?url= 前缀
+    function getRealUrl(blogUrl) {
+        if (!blogUrl) return '';
+        // 如果已经是 http 开头，直接返回
+        if (blogUrl.startsWith('http://') || blogUrl.startsWith('https://')) {
+            return blogUrl;
+        }
+        // 如果是 /go.htm?url= 格式，提取真实地址
+        if (blogUrl.startsWith('/go.htm?url=')) {
+            var realUrl = blogUrl.replace('/go.htm?url=', '');
+            // 解码 URL 编码（如果有）
+            try {
+                realUrl = decodeURIComponent(realUrl);
+            } catch(e) {}
+            return realUrl;
+        }
+        // 其他情况，直接返回原链接
+        return blogUrl;
+    }
+
     if (typeof allBlogs !== 'undefined' && allBlogs.length > 0) {
         var randomIndex = Math.floor(Math.random() * allBlogs.length);
         var selectedBlog = allBlogs[randomIndex];
+        var realUrl = getRealUrl(selectedBlog.url);
         
-        document.getElementById('blogName').innerHTML = '选中：' + selectedBlog.name;
+        document.getElementById('blogName').innerHTML = '选中：' + selectedBlog.name + '（即将跳转）';
         
         setTimeout(function() {
-            window.location.href = selectedBlog.url;
+            window.location.href = realUrl;
         }, 1000);
         
         document.getElementById('manualLink').onclick = function(e) {
             e.preventDefault();
-            window.location.href = selectedBlog.url;
+            window.location.href = realUrl;
         };
     } else {
         document.body.innerHTML = '<div class="container"><h2>暂无博客数据</h2><p>请检查 data.js 文件是否正确加载。</p></div>';
