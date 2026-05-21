@@ -244,7 +244,8 @@ const SearchEngineData = {
     '09': [{name:'bing', url:'/go.htm?url=https://www.bing.com/'}],
 	 '12': [{name:'360搜索', url:'/go.htm?url=https://www.so.com/'}],
     '18': [{name:'kaqi', url:'/go.htm?url=https://kagi.com/'}],
-	'20': [{name:'百度开发者搜索', url:'/go.htm?url=https://kaifa.baidu.com/'}]
+	'20': [{name:'百度开发者搜索', url:'/go.htm?url=https://kaifa.baidu.com/'}],
+	'24': [{name:'丑搜', url:'/go.htm?url=https://search.save-web.org/'}]
 };
 
 // ==================== RSS工具数据 ====================
