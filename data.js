@@ -60,6 +60,7 @@ const forumData = {
     '02': [{name:'nga', url:'/go.htm?url=https://bbs.nga.cn/'}, {name:'理想论坛', url:'/go.htm?url=https://www.55188.com/'}],
     '03': [{name:'鳥哥的Linux私房菜', url:'/go.htm?url=https://phorum.vbird.org/index.php'}, {name:'NamePros', url:'/go.htm?url=https://www.namepros.com/'}, {name:' ', url:''}, {name:' ', url:''}],
     '04': [{name:'其乐', url:'/go.htm?url=https://keylol.com/'}, {name:'虎扑', url:'/go.htm?url=https://bbs.hupu.com/'}, {name:'海川化工', url:'/go.htm?url=https://bbs.hcbbs.com/'}],
+	'05': [{name:'reddit', url:'/go.htm?url=aHR0cHM6Ly93d3cucmVkZGl0LmNvbS8%3D'}],
     '06': [{name:'迅维', url:'/go.htm?url=https://www.chinafix.com/forum.php'}, {name:'飞卢', url:'/go.htm?url=https://bbs.faloo.com/'}, {name:'煎蛋', url:'/go.htm?url=https://jandan.net/bbs'}, {name:'绝客', url:'/go.htm?url=https://jkmrp.com/'}],
     '07': [{name:'chiphell', url:'/go.htm?url=https://www.chiphell.com/forum.php'}, {name:'矿石收音机', url:'/go.htm?url=http://www.crystalradio.cn/forum.php'}],
     '08': [{name:'hostloc', url:'/go.htm?url=https://hostloc.com/'}, {name:'吾爱破解', url:'/go.htm?url=https://www.52pojie.cn/index.php'}],
