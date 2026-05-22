@@ -1,40 +1,40 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 5/21/2026, 8:53:11 PM
+// 抓取日期: 5/22/2026, 9:42:34 AM
 // 只抓取最近14天内的文章，共 10 篇
 // 目标 10 篇，实际 10 篇
 
 const latestArticlesByYear = {
-  "2004": [
+  "2005": [
     {
-      "name": "一片瓦",
-      "year": "04",
-      "title": "国产银河麒麟系统添加仿宋GB2312、Times New Roman等行政字体遇到问题解决方案（附字体下载链接）",
-      "url": "https://www.ixsz.com/3221.html",
-      "date": "2026-05-11"
+      "name": "云风",
+      "year": "05",
+      "title": "一个简单的缺氧地热模块",
+      "url": "https://blog.codingnow.com/2026/05/oni_geotherm.html",
+      "date": "2026-05-16"
+    }
+  ],
+  "2008": [
+    {
+      "name": "军",
+      "year": "08",
+      "title": "大家一定要经常检查",
+      "url": "https://me.xu19.com/keep-checking-blog-external-links/",
+      "date": "2026-05-20"
     },
     {
-      "name": "龙哥",
-      "year": "04",
-      "title": "从抢注stupidea.com谈谈抢注域名技巧",
-      "url": "https://long.ge/18065.html",
-      "date": "2026-05-18"
+      "name": "Wandai",
+      "year": "08",
+      "title": "复习模拟电路",
+      "url": "https://twd2.me/archives/20844",
+      "date": "2026-05-17"
     }
   ],
-  "2010": [
+  "2013": [
     {
-      "name": "宇间草",
-      "year": "10",
-      "title": "修个设备还得“以命换命”？这锅老子不背了",
-      "url": "https://2days.org/20108.html",
-      "date": "2026-05-11"
-    }
-  ],
-  "2015": [
-    {
-      "name": "泽泽社长",
-      "year": "15",
-      "title": "当你准备弃用注销一个手机号时有多复杂",
-      "url": "https://blog.aihaonv.com/phone-number.html",
+      "name": "WEB骇客",
+      "year": "13",
+      "title": "问题解决：在 Android 上的 Ubuntu chroot 环境中运行 apt-get update 失败",
+      "url": "https://www.webhek.com/post/apt-get-update-fails-on-chroot-ubuntu-on-android/",
       "date": "2026-05-20"
     }
   ],
@@ -47,46 +47,46 @@ const latestArticlesByYear = {
       "date": "2026-05-21"
     }
   ],
-  "2020": [
+  "2021": [
     {
-      "name": "HEMING",
-      "year": "20",
-      "title": "最近卖掉的域名",
-      "url": "https://heming.org/2460.html",
-      "date": "2026-05-16"
-    },
-    {
-      "name": "Z次元",
-      "year": "20",
-      "title": "Claude Code接入第三方Api（Deepseek）",
-      "url": "https://blog.ahzoo.cn/p/72d250f/",
-      "date": "2026-05-10"
-    }
-  ],
-  "2022": [
-    {
-      "name": "倦意",
-      "year": "22",
-      "title": "在线去水印助手  — 自动填充地址到在线去水印中的浏览器扩展",
-      "url": "https://jyblog.cn/5596/",
-      "date": "2026-05-19"
+      "name": "阿锋的小宇宙",
+      "year": "21",
+      "title": "时隔两年再次献血，左胳膊400毫升",
+      "url": "https://feng.pub/0520269606.html",
+      "date": "2026-05-22"
     }
   ],
   "2023": [
     {
-      "name": "Siwei Li",
+      "name": "小野",
       "year": "23",
-      "title": "赫尔米勒embody",
-      "url": "https://siwei.li/he-er-mi-le-embody/",
-      "date": "2026-05-08"
+      "title": "CTF:最好的语言解密过程",
+      "url": "https://lb5.net/254.html",
+      "date": "2026-05-19"
+    },
+    {
+      "name": "火米",
+      "year": "23",
+      "title": "点评一下小米 Mimo 模型",
+      "url": "https://huo.me/mimo/",
+      "date": "2026-05-22"
     }
   ],
-  "2025": [
+  "2024": [
     {
-      "name": "礼印外盒",
-      "year": "25",
-      "title": "爱于细碎烟火，悟爱的本真爱",
-      "url": "https://liyinwaihe.com/399.html",
+      "name": "ImQi1",
+      "year": "24",
+      "title": "来成都看大熊猫",
+      "url": "https://imqi1.com/content/shot/1011",
+      "date": "2026-05-15"
+    }
+  ],
+  "2026": [
+    {
+      "name": "一万先生",
+      "year": "26",
+      "title": "土耳其区ID充值gpt plus全流程(apple礼品卡)",
+      "url": "/feed/6",
       "date": "2026-05-09"
     }
   ]
