@@ -1,93 +1,93 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 5/20/2026, 9:01:08 PM
+// 抓取日期: 5/21/2026, 8:53:11 PM
 // 只抓取最近14天内的文章，共 10 篇
 // 目标 10 篇，实际 10 篇
 
 const latestArticlesByYear = {
-  "2003": [
+  "2004": [
     {
-      "name": "阮一峰",
-      "year": "03",
-      "title": "科技爱好者周刊（第 396 期）：互联网通信的替代方案",
-      "url": "http://www.ruanyifeng.com/blog/2026/05/weekly-issue-396.html",
-      "date": "2026-05-15"
-    }
-  ],
-  "2008": [
+      "name": "一片瓦",
+      "year": "04",
+      "title": "国产银河麒麟系统添加仿宋GB2312、Times New Roman等行政字体遇到问题解决方案（附字体下载链接）",
+      "url": "https://www.ixsz.com/3221.html",
+      "date": "2026-05-11"
+    },
     {
-      "name": "有氧呼吸",
-      "year": "08",
-      "title": "年纪大了，开始怀念……",
-      "url": "https://www.oxy.one/2026/05/blog-post.html",
+      "name": "龙哥",
+      "year": "04",
+      "title": "从抢注stupidea.com谈谈抢注域名技巧",
+      "url": "https://long.ge/18065.html",
       "date": "2026-05-18"
     }
   ],
-  "2009": [
+  "2010": [
     {
-      "name": "老张",
-      "year": "09",
-      "title": "[推广]酷鸭数据 · 520情人节特别活动机来啦！",
-      "url": "https://laozhang.org/archives/4060.html",
-      "date": "2026-05-19"
-    },
+      "name": "宇间草",
+      "year": "10",
+      "title": "修个设备还得“以命换命”？这锅老子不背了",
+      "url": "https://2days.org/20108.html",
+      "date": "2026-05-11"
+    }
+  ],
+  "2015": [
     {
-      "name": "老刘",
-      "year": "09",
-      "title": "临期面包和失信时代",
-      "url": "https://www.iliu.org/expired-bread-and-era-of-broken-trust.html",
+      "name": "泽泽社长",
+      "year": "15",
+      "title": "当你准备弃用注销一个手机号时有多复杂",
+      "url": "https://blog.aihaonv.com/phone-number.html",
       "date": "2026-05-20"
     }
   ],
-  "2011": [
+  "2017": [
     {
-      "name": "Verne",
-      "year": "11",
-      "title": "试遍所有 Navidrome 客户端，我最终选择了 Narjo",
-      "url": "https://blog.einverne.info/post/2026/05/narjo-music-player-review.html",
-      "date": "2026-05-19"
+      "name": "串串狗小刊",
+      "year": "17",
+      "title": "openAI 团队告诉你，怎么把 Codex 用到极致！",
+      "url": "https://www.ccgxk.com/codeother/754.html",
+      "date": "2026-05-21"
     }
   ],
-  "2014": [
+  "2020": [
     {
-      "name": "ying",
-      "year": "14",
-      "title": "《GPT 图解》笔记：N-Gram、NPLM、LSTM",
-      "url": "https://izualzhy.cn/llm-diagrammatize-ngram-nplm-lstm",
+      "name": "HEMING",
+      "year": "20",
+      "title": "最近卖掉的域名",
+      "url": "https://heming.org/2460.html",
+      "date": "2026-05-16"
+    },
+    {
+      "name": "Z次元",
+      "year": "20",
+      "title": "Claude Code接入第三方Api（Deepseek）",
+      "url": "https://blog.ahzoo.cn/p/72d250f/",
       "date": "2026-05-10"
     }
   ],
-  "2016": [
+  "2022": [
     {
-      "name": "太隐",
-      "year": "16",
-      "title": "好人未必是好统治者",
-      "url": "https://wangyurui.com/posts/hao-ren-wei-bi-shi-hao-tong-zhi-zhe-ac7d10f0",
-      "date": "2026-05-20"
-    },
-    {
-      "name": "幻影",
-      "year": "16",
-      "title": "凡人修仙靠逆天，剑来护心靠齐先生｜那一句 “莫让他输在情字” 看哭多少人",
-      "url": "https://blog.52hyjs.com/post-1271.html",
-      "date": "2026-05-15"
-    }
-  ],
-  "2019": [
-    {
-      "name": "风记星辰",
-      "year": "19",
-      "title": "风记得的音乐：《行将近》—— Soon to Leave",
-      "url": "https://www.thyuu.com/82442/",
-      "date": "2026-05-09"
+      "name": "倦意",
+      "year": "22",
+      "title": "在线去水印助手  — 自动填充地址到在线去水印中的浏览器扩展",
+      "url": "https://jyblog.cn/5596/",
+      "date": "2026-05-19"
     }
   ],
   "2023": [
     {
-      "name": "鹿泽",
+      "name": "Siwei Li",
       "year": "23",
-      "title": "传统SEO与AISEO的关键区别及内容未来适应性",
-      "url": "https://www.bailuze.com/24082.html",
-      "date": "2026-05-20"
+      "title": "赫尔米勒embody",
+      "url": "https://siwei.li/he-er-mi-le-embody/",
+      "date": "2026-05-08"
+    }
+  ],
+  "2025": [
+    {
+      "name": "礼印外盒",
+      "year": "25",
+      "title": "爱于细碎烟火，悟爱的本真爱",
+      "url": "https://liyinwaihe.com/399.html",
+      "date": "2026-05-09"
     }
   ]
 };
