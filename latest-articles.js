@@ -1,84 +1,84 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 5/22/2026, 3:03:02 PM
+// 抓取日期: 5/22/2026, 8:45:04 PM
 // 只抓取最近14天内的文章，共 10 篇
 // 目标 10 篇，实际 10 篇
 
 const latestArticlesByYear = {
-  "2005": [
+  "2001": [
     {
-      "name": "云风",
-      "year": "05",
-      "title": "一个简单的缺氧地热模块",
-      "url": "https://blog.codingnow.com/2026/05/oni_geotherm.html",
-      "date": "2026-05-16"
+      "name": "东评衿就",
+      "year": "01",
+      "title": "我们免费写的字，平台拿去卖给了谁",
+      "url": "https://dongjunke.cn/posts/2026/05/20/48180.html",
+      "date": "2026-05-20"
     }
   ],
-  "2011": [
+  "2004": [
     {
-      "name": "Verne",
-      "year": "11",
-      "title": "试遍所有 Navidrome 客户端，我最终选择了 Narjo",
-      "url": "https://blog.einverne.info/post/2026/05/narjo-music-player-review.html",
-      "date": "2026-05-19"
-    }
-  ],
-  "2014": [
-    {
-      "name": "松茸",
-      "year": "14",
-      "title": "小狼毫输入法的配置记录",
-      "url": "https://zrs.xyz/2132.html",
-      "date": "2026-05-22"
+      "name": "小陈故事",
+      "year": "04",
+      "title": "努力做个不扫兴的父母",
+      "url": "https://www.chener.net/archives/spoilthefun/",
+      "date": "2026-05-11"
     },
     {
-      "name": "ying",
-      "year": "14",
-      "title": "《GPT 图解》笔记：N-Gram、NPLM、LSTM",
-      "url": "https://izualzhy.cn/llm-diagrammatize-ngram-nplm-lstm",
-      "date": "2026-05-10"
+      "name": "一片瓦",
+      "year": "04",
+      "title": "国产银河麒麟系统添加仿宋GB2312、Times New Roman等行政字体遇到问题解决方案（附字体下载链接）",
+      "url": "https://www.ixsz.com/3221.html",
+      "date": "2026-05-11"
     }
   ],
-  "2018": [
+  "2007": [
     {
-      "name": "希仁之拥",
-      "year": "18",
-      "title": "Ubuntu 26.04 Desktop使用体验",
-      "url": "https://blog.keepchen.com/a/Ubuntu-26.04-Desktop-User-Experience.html",
-      "date": "2026-05-10"
+      "name": "FROYO",
+      "year": "07",
+      "title": "凌晨奇遇｜坠入一场沉浸式幻梦",
+      "url": "https://www.izhuyue.com/5821.html",
+      "date": "2026-05-18"
+    }
+  ],
+  "2008": [
+    {
+      "name": "军",
+      "year": "08",
+      "title": "大家一定要经常检查",
+      "url": "https://me.xu19.com/keep-checking-blog-external-links/",
+      "date": "2026-05-20"
+    }
+  ],
+  "2010": [
+    {
+      "name": "宇间草",
+      "year": "10",
+      "title": "修个设备还得“以命换命”？这锅老子不背了",
+      "url": "https://2days.org/20108.html",
+      "date": "2026-05-11"
+    }
+  ],
+  "2019": [
+    {
+      "name": "Allen Hua",
+      "year": "19",
+      "title": "给 caesium-image-compressor 图片压缩程序构建了 Linux AppImage v2.8.5 最新版",
+      "url": "https://hellodk.cn/post/1220",
+      "date": "2026-05-21"
+    },
+    {
+      "name": "Zeruns",
+      "year": "19",
+      "title": "雨云 浙江绍兴BGP 100G高防VPS，2核4G 100兆 仅需77元/月",
+      "url": "https://blog.zeruns.com/archives/943.html",
+      "date": "2026-05-22"
     }
   ],
   "2021": [
     {
-      "name": "邹江",
+      "name": "Dayu",
       "year": "21",
-      "title": "十几年后，我的菜又熟了",
-      "url": "https://www.zoujiang.com/1049.html",
-      "date": "2026-05-21"
-    }
-  ],
-  "2022": [
-    {
-      "name": "晴雀堂",
-      "year": "22",
-      "title": "【虾塔完结篇】希腊决战 x 几维鸟",
-      "url": "https://blog.verynb.net/posts/47267.html",
-      "date": "2026-05-09"
-    }
-  ],
-  "2023": [
-    {
-      "name": "康丰",
-      "year": "23",
-      "title": "把所有人都当成你的npc",
-      "url": "https://www.okang.top/archives/3401",
-      "date": "2026-05-17"
-    },
-    {
-      "name": "Shiina",
-      "year": "23",
-      "title": "Dell Latitude 7410 Chromebook / Drallion 刷 Windows：CoolStar 安装、Search / Globe 键修复与自动旋转排查",
-      "url": "https://blog.shiina.fun/2026/05/17/dell-latitude-7410-chromebook-drallion-%e5%88%b7-windows%ef%bc%9acoolstar-%e5%ae%89%e8%a3%85%e3%80%81search-globe-%e9%94%ae%e4%bf%ae%e5%a4%8d%e4%b8%8e%e8%87%aa%e5%8a%a8%e6%97%8b%e8%bd%ac%e6%8e%92/",
-      "date": "2026-05-16"
+      "title": "第一次做游戏插件-激战2国际服中文转换 #Guild wars 2",
+      "url": "https://anotherdayu.com/guildwars2-chinese/",
+      "date": "2026-05-18"
     }
   ],
   "2025": [
