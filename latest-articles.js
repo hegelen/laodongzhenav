@@ -1,26 +1,10 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 5/22/2026, 8:45:04 PM
+// 抓取日期: 5/23/2026, 8:08:56 PM
 // 只抓取最近14天内的文章，共 10 篇
 // 目标 10 篇，实际 10 篇
 
 const latestArticlesByYear = {
-  "2001": [
-    {
-      "name": "东评衿就",
-      "year": "01",
-      "title": "我们免费写的字，平台拿去卖给了谁",
-      "url": "https://dongjunke.cn/posts/2026/05/20/48180.html",
-      "date": "2026-05-20"
-    }
-  ],
   "2004": [
-    {
-      "name": "小陈故事",
-      "year": "04",
-      "title": "努力做个不扫兴的父母",
-      "url": "https://www.chener.net/archives/spoilthefun/",
-      "date": "2026-05-11"
-    },
     {
       "name": "一片瓦",
       "year": "04",
@@ -29,65 +13,83 @@ const latestArticlesByYear = {
       "date": "2026-05-11"
     }
   ],
-  "2007": [
+  "2006": [
     {
-      "name": "FROYO",
-      "year": "07",
-      "title": "凌晨奇遇｜坠入一场沉浸式幻梦",
-      "url": "https://www.izhuyue.com/5821.html",
-      "date": "2026-05-18"
+      "name": "joojen Zhou",
+      "year": "06",
+      "title": "为什么必须戒短视频",
+      "url": "https://joojen.com/archives/8986.html",
+      "date": "2026-05-23"
     }
   ],
-  "2008": [
+  "2009": [
     {
-      "name": "军",
-      "year": "08",
-      "title": "大家一定要经常检查",
-      "url": "https://me.xu19.com/keep-checking-blog-external-links/",
+      "name": "多多",
+      "year": "09",
+      "title": "使用 RSS.app，RSS 生成服务",
+      "url": "https://ddlog.cn/?p=473",
+      "date": "2026-05-16"
+    }
+  ],
+  "2013": [
+    {
+      "name": "WEB骇客",
+      "year": "13",
+      "title": "问题解决：在 Android 上的 Ubuntu chroot 环境中运行 apt-get update 失败",
+      "url": "https://www.webhek.com/post/apt-get-update-fails-on-chroot-ubuntu-on-android/",
       "date": "2026-05-20"
     }
   ],
-  "2010": [
+  "2014": [
     {
-      "name": "宇间草",
-      "year": "10",
-      "title": "修个设备还得“以命换命”？这锅老子不背了",
-      "url": "https://2days.org/20108.html",
-      "date": "2026-05-11"
+      "name": "ying",
+      "year": "14",
+      "title": "思多乱其志，行者多披靡-读《被讨厌的勇气》",
+      "url": "https://izualzhy.cn/bei-tao-yan-de-yong-qi-reading",
+      "date": "2026-05-23"
     }
   ],
-  "2019": [
+  "2015": [
     {
-      "name": "Allen Hua",
-      "year": "19",
-      "title": "给 caesium-image-compressor 图片压缩程序构建了 Linux AppImage v2.8.5 最新版",
-      "url": "https://hellodk.cn/post/1220",
+      "name": "Guyskk",
+      "year": "15",
+      "title": "把大模型当成晶体管：从阻抗匹配到集成运放的思维实验",
+      "url": "https://blog.guyskk.com/notes/llm-integrated-amplifier-design",
+      "date": "2026-05-19"
+    }
+  ],
+  "2018": [
+    {
+      "name": "希仁之拥",
+      "year": "18",
+      "title": "Ubuntu 26.04 Desktop使用体验",
+      "url": "https://blog.keepchen.com/a/Ubuntu-26.04-Desktop-User-Experience.html",
+      "date": "2026-05-10"
+    }
+  ],
+  "2020": [
+    {
+      "name": "Battle Le",
+      "year": "20",
+      "title": "舟山骑车游",
+      "url": "https://battlele.com/zhoushan-trip/",
+      "date": "2026-05-20"
+    }
+  ],
+  "2023": [
+    {
+      "name": "宗宗酱",
+      "year": "23",
+      "title": "更新到WordPress7.0感觉有点卡",
+      "url": "https://ygz.ink/archives/5002.html",
       "date": "2026-05-21"
     },
     {
-      "name": "Zeruns",
-      "year": "19",
-      "title": "雨云 浙江绍兴BGP 100G高防VPS，2核4G 100兆 仅需77元/月",
-      "url": "https://blog.zeruns.com/archives/943.html",
-      "date": "2026-05-22"
-    }
-  ],
-  "2021": [
-    {
-      "name": "Dayu",
-      "year": "21",
-      "title": "第一次做游戏插件-激战2国际服中文转换 #Guild wars 2",
-      "url": "https://anotherdayu.com/guildwars2-chinese/",
-      "date": "2026-05-18"
-    }
-  ],
-  "2025": [
-    {
-      "name": "礼印外盒",
-      "year": "25",
-      "title": "爱于细碎烟火，悟爱的本真爱",
-      "url": "https://liyinwaihe.com/399.html",
-      "date": "2026-05-09"
+      "name": "按钮与磁带",
+      "year": "23",
+      "title": "暹罗没有春天",
+      "url": "https://jefftay.com/movies/dear-you",
+      "date": "2026-05-16"
     }
   ]
 };
