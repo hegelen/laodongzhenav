@@ -1,34 +1,43 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 5/23/2026, 8:08:56 PM
+// 抓取日期: 5/24/2026, 8:10:26 PM
 // 只抓取最近14天内的文章，共 10 篇
 // 目标 10 篇，实际 10 篇
 
 const latestArticlesByYear = {
-  "2004": [
+  "2008": [
     {
-      "name": "一片瓦",
-      "year": "04",
-      "title": "国产银河麒麟系统添加仿宋GB2312、Times New Roman等行政字体遇到问题解决方案（附字体下载链接）",
-      "url": "https://www.ixsz.com/3221.html",
-      "date": "2026-05-11"
-    }
-  ],
-  "2006": [
-    {
-      "name": "joojen Zhou",
-      "year": "06",
-      "title": "为什么必须戒短视频",
-      "url": "https://joojen.com/archives/8986.html",
-      "date": "2026-05-23"
+      "name": "有氧呼吸",
+      "year": "08",
+      "title": "年纪大了，开始怀念……",
+      "url": "https://www.oxy.one/2026/05/blog-post.html",
+      "date": "2026-05-18"
     }
   ],
   "2009": [
     {
       "name": "多多",
       "year": "09",
-      "title": "使用 RSS.app，RSS 生成服务",
-      "url": "https://ddlog.cn/?p=473",
-      "date": "2026-05-16"
+      "title": "博客程序默认feed地址大全",
+      "url": "https://ddlog.cn/?p=481",
+      "date": "2026-05-24"
+    }
+  ],
+  "2011": [
+    {
+      "name": "前端小武",
+      "year": "11",
+      "title": "AI 时代的初思考",
+      "url": "https://xuexb.com/post/ai-think.html",
+      "date": "2026-05-17"
+    }
+  ],
+  "2012": [
+    {
+      "name": "郭晓力",
+      "year": "12",
+      "title": "前言",
+      "url": "https://guoxiaoli.com/post/662.html",
+      "date": "2026-05-20"
     }
   ],
   "2013": [
@@ -40,56 +49,47 @@ const latestArticlesByYear = {
       "date": "2026-05-20"
     }
   ],
-  "2014": [
-    {
-      "name": "ying",
-      "year": "14",
-      "title": "思多乱其志，行者多披靡-读《被讨厌的勇气》",
-      "url": "https://izualzhy.cn/bei-tao-yan-de-yong-qi-reading",
-      "date": "2026-05-23"
-    }
-  ],
-  "2015": [
-    {
-      "name": "Guyskk",
-      "year": "15",
-      "title": "把大模型当成晶体管：从阻抗匹配到集成运放的思维实验",
-      "url": "https://blog.guyskk.com/notes/llm-integrated-amplifier-design",
-      "date": "2026-05-19"
-    }
-  ],
   "2018": [
     {
-      "name": "希仁之拥",
+      "name": "运维咖啡吧",
       "year": "18",
-      "title": "Ubuntu 26.04 Desktop使用体验",
-      "url": "https://blog.keepchen.com/a/Ubuntu-26.04-Desktop-User-Experience.html",
-      "date": "2026-05-10"
+      "title": "遂昌｜躲避人潮的五一自驾Day5 - 独山",
+      "url": "https://blog.ops-coffee.com/r/city-china-zhejiang-lishui-suichang-05.html",
+      "date": "2026-05-21"
     }
   ],
   "2020": [
     {
-      "name": "Battle Le",
+      "name": "优世界",
       "year": "20",
-      "title": "舟山骑车游",
-      "url": "https://battlele.com/zhoushan-trip/",
-      "date": "2026-05-20"
+      "title": "OpenWrt 路由器改纯 AP 模式记录（Cudy TR3000 + 中兴 F50）",
+      "url": "https://usj.cc/202605231938.html",
+      "date": "2026-05-23"
+    },
+    {
+      "name": "yihong0618",
+      "year": "20",
+      "title": "不要自动化你的情感链接",
+      "url": "https://blog.yihong0618.me/issue-343/",
+      "date": "2026-05-15"
     }
   ],
   "2023": [
     {
-      "name": "宗宗酱",
+      "name": "无敌",
       "year": "23",
-      "title": "更新到WordPress7.0感觉有点卡",
-      "url": "https://ygz.ink/archives/5002.html",
-      "date": "2026-05-21"
-    },
+      "title": "多数人都无视了人生中的变量",
+      "url": "http://blog.tangwudi.com/shuoshuo/%E5%A4%9A%E6%95%B0%E4%BA%BA%E9%83%BD%E6%97%A0%E8%A7%86%E4%BA%86%E4%BA%BA%E7%94%9F%E4%B8%AD%E7%9A%84%E5%8F%98%E9%87%8F/",
+      "date": "2026-05-23"
+    }
+  ],
+  "2025": [
     {
-      "name": "按钮与磁带",
-      "year": "23",
-      "title": "暹罗没有春天",
-      "url": "https://jefftay.com/movies/dear-you",
-      "date": "2026-05-16"
+      "name": "落花雨记",
+      "year": "25",
+      "title": "给糯米做绝育",
+      "url": "https://www.luohuayu.cn/69.html",
+      "date": "2026-05-23"
     }
   ]
 };
