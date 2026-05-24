@@ -130,7 +130,7 @@ const aiNavData = {
 
 // ==================== 特色网址导航数据    , {name:'', url:'/go.htm?url='}     ====================
 const featuredNavData = {
-    '00': [{name:'5566精彩网址', url:'/go.htm?url=https://5566.org/'}],
+    '00': [{name:'5566精彩网址', url:'/go.htm?url=https://5566.org/'}], 
 	'06': [{name:'香港網IM123', url:'/go.htm?url=https://im123.com/'}, {name:'world68世界各国网址大全', url:'/go.htm?url=https://www.world68.com/'}],
     '08': [{name:'开源软件分类导航', url:'/go.htm?url=https://www.oschina.net/project/tags'}],
     '09': [{name:'海外导航', url:'/go.htm?url=https://www.hhlink.com/'}, {name:'有趣网址之家', url:'/go.htm?url=https://youquhome.com/'}, {name:'凤凰网财经导航', url:'/go.htm?url=https://finance.ifeng.com/partners.shtml'}],
