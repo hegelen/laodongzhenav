@@ -797,5 +797,126 @@
         start();
     })();
 </script>
+<div id="footer-seo" style="position: absolute; left: -9999px; top: -9999px; width: 1px; height: 1px; overflow: hidden;">
+    laodongzhe.cn 提供<strong>益智休闲</strong>小游戏。
+</div>
+<div id="footer-info">
+    2026 laodongzhe.cn 运营方:<a href="https://laodongzhe.cn" target="_blank" style="color: inherit; text-decoration: none;text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: rgba(130, 130, 130, 0.4);">劳动者导航</a>.  
+    <span onclick="toggleAboutDrawer()" style="cursor: pointer; text-decoration: underline; text-underline-offset: 4px; text-decoration-color: rgba(130, 130, 130, 0.4); display: inline-flex; align-items: center; gap: 4px; vertical-align: middle;">
+        <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="margin-top: -1px;">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+        </svg>
+        关于本站
+    </span>
+    <span onclick="toggleSponsorDrawer()" style="cursor: pointer; text-decoration: underline; text-underline-offset: 4px; text-decoration-color: rgba(130, 130, 130, 0.4); display: inline-flex; align-items: center; gap: 4px; vertical-align: middle; margin-left: 10px;">
+        <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="margin-top: -1px;">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+        </svg>
+        赞助榜
+    </span>
+</div>
+
+<!-- 关于本站抽屉 -->
+<div id="about-drawer-overlay" onclick="toggleAboutDrawer()"></div>
+<div id="about-drawer">
+    <div class="about-header">
+        <span class="about-title">关于本站</span>
+        <div class="about-close" onclick="toggleAboutDrawer()">
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </div>
+    </div>
+    <div class="about-content">
+        <p>laodongzhe.cn <strong>益智休闲</strong>小游戏。</p>
+        <p>我们致力于为劳动者服务。</p>
+        <p>UI 源码基于 <a href="https://2.048.org" target="_blank" style="color: inherit; text-decoration: underline;">2.048.org</a>。</p>
+        <p>本小游戏内置在 <a href="https://laodongzhe.cn" target="_blank" style="color: inherit; text-decoration: underline;">劳动者导航</a> 中，欢迎前往体验。
+        <p style="margin-top: 20px; font-size: 13px; opacity: 0.8; display: flex; align-items: center; gap: 8px;">
+            当前版本: v1.0.1
+            <span onclick="toggleFeedbackModal()" style="cursor: pointer; text-decoration: underline; display: inline-flex; align-items: center; gap: 4px; color: #666; margin-left: 10px;">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z"/>
+                    <path d="M21 16v2a4 4 0 0 1-4 4h-5"/>
+                </svg>
+                反馈意见
+            </span>
+        </p>
+    </div>
+</div>
+
+<script>
+function toggleAboutDrawer() {
+    var overlay = document.getElementById('about-drawer-overlay');
+    var drawer = document.getElementById('about-drawer');
+    if (drawer.classList.contains('show')) {
+        drawer.classList.remove('show');
+        overlay.style.opacity = '0';
+        setTimeout(function() {
+            overlay.classList.remove('show');
+        }, 300);
+    } else {
+        overlay.classList.add('show');
+        overlay.offsetWidth; // 触发重绘
+        overlay.style.opacity = '1';
+        drawer.classList.add('show');
+    }
+}
+</script>
+
+<!-- 赞助榜抽屉 -->
+<div id="sponsor-drawer-overlay" onclick="toggleSponsorDrawer()"></div>
+<div id="sponsor-drawer">
+    <div class="about-header">
+        <span class="about-title">赞助与打赏</span>
+        <div class="about-close" onclick="toggleSponsorDrawer()">
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </div>
+    </div>
+    <div class="about-content" style="max-height: 70vh; overflow-y: auto; overflow-x: hidden;">
+        <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 20px;">
+            <div style="flex: 1 1 250px; background: rgba(0,0,0,0.03); padding: 15px 20px; border-radius: 12px; border: 1px solid #f0f0f0;">
+                <p style="margin-bottom: 12px; font-weight: 600; color: #333; display: flex; align-items: center; gap: 6px;">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #6c47ff;"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                    日常运行开销
+                </p>
+                <ul style="margin-bottom: 0; color: #666; font-size: 13px; line-height: 1.8;">
+                    <li>服务器主节点运行在eopages</li>
+                     <li>laodongzhe.cn 域名注册成本 30 元</li>
+                    <li>每年域名续费 30+ 元</li>
+                </ul>
+            </div>
+            
+            <div style="flex: 1 1 200px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: rgba(0,0,0,0.03); padding: 15px; border-radius: 12px; border: 1px solid #f0f0f0;">
+                <img src="/static/image/wx.png" alt="赞赏收款码" style="width: 140px; height: 140px; object-fit: contain; border-radius: 8px; border: 1px solid #eaeaea; box-shadow: 0 4px 12px rgba(0,0,0,0.05);" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\\\'http://www.w3.org/2000/svg\\\' width=\\\'140\\\' height=\\\'140\\\'%3E%3Crect width=\\\'140\\\' height=\\\'140\\\' fill=\\\'#f5f5f5\\\'/%3E%3Ctext x=\\\'70\\\' y=\\\'65\\\' font-family=\\\'Arial\\\' font-size=\\\'12\\\' fill=\\\'#aaa\\\' text-anchor=\\\'middle\\\' dominant-baseline=\\\'middle\\\'%3E上传二维码%3C/text%3E%3Ctext x=\\\'70\\\' y=\\\'85\\\' font-family=\\\'Arial\\\' font-size=\\\'12\\\' fill=\\\'#aaa\\\' text-anchor=\\\'middle\\\' dominant-baseline=\\\'middle\\\'%3E至 image.png%3C/text%3E%3C/svg%3E';">
+                <p style="font-size: 11px; color: #888; margin-top: 12px; text-align: center; line-height: 1.4;">微信扫码，赞赏时可留下昵称<br>及网址便于我们展示~</p>
+            </div>
+        </div>
+        
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin: 20px 0 10px; border-bottom: 1px solid #eee; padding-bottom: 5px;">
+            <h3 style="font-size: 15px; margin: 0;">致谢名单</h3>
+            <span style="font-size: 13px; color: #666;">累计打赏：<span style="color: #2da44e; font-weight: bold; font-size: 15px;">¥ <span id="total-sponsor-amount">0.00</span></span></span>
+        </div>
+        <style>
+            @media (max-width: 578px) {
+                .sponsor-url-display { display: none !important; }
+            }
+        </style>
+        <table style="width: 100%; border-collapse: collapse; font-size: 13px;">
+            <thead>
+                <tr style="border-bottom: 1px solid #eee; color: #888;">
+                    <th style="padding: 8px 0; text-align: left;">名字</th>
+                    <th style="padding: 8px 0; text-align: left;">时间</th>
+                    <th style="padding: 8px 0; text-align: right;">金额</th>
+                </tr>
+            </thead>
+            <tbody id="sponsor-list-body">
+                <tr><td colspan="3" style="text-align:center; padding: 10px; color:#aaa;">加载中...</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
 </body>
 </html>
