@@ -219,6 +219,11 @@ const officialblogdata = {
 const paidBlogData = {
     '20': [{name:'happyxiao', url:'/go.htm?url=https://happyxiao.com/'}]
 };
+
+// ==================== 游戏导航 ====================
+const gameData = {
+    '26': [{name:'2048', url:'/go.htm?url=https://laodongzhe.cn/games/2048.html'}]
+};
 // ==================== ai人工智能 ====================
 const aiData = {
     '23': [{name:'deepseek', url:'/go.htm?url=www.deepseek.com'},{name:'豆包', url:'/go.htm?url=https://www.doubao.com/'}, {name:'千问', url:'/go.htm?url=https://www.qianwen.com/'}],
@@ -358,6 +363,7 @@ const categories = {
 	' RSS最新文章': 'https://laodongzhe.cn/rss.html',  // ←  添加外部链接
     '💬 独立论坛导航': forumData,
     '✉️ 邮箱服务大全': emailData,
+	'🛝 独立休闲游戏':gameData,
     '📚 博客大全导航': blogNavData,
     '🎲 随机访问博客': randomBlogData,
     '☑️ 官方博客导航': officialblogdata,
