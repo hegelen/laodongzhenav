@@ -106,7 +106,7 @@ const blogNavData = {
     '14': [{name:'rssblog', url:'/go.htm?url=https://rssblog.imcbc.cn/member/'}, {name:'feedspot-bloggers', url:'/go.htm?url=https://bloggers.feedspot.com/'}],
     '16': [{name:'个站商店', url:'/go.htm?url=https://storeweb.cn/'}],
     '17': [{name:'十年之约', url:'/go.htm?url=https://www.foreverblog.cn/'}, {name:'jekyll wiki', url:'/go.htm?url=https://github.com/jekyll/jekyll/wiki/Sites'} ],
-    '20': [{name:'BlogFinder', url:'/go.htm?url=https://bf.zzxworld.com/s'}, {name:'博客大全', url:'/go.htm?url=https://boke.wangzhidaquan.com/'}, {name:'站长笔记博客大全', url:'/go.htm?url=https://www.080210.com/link/'}],
+    '20': [{name:'BlogFinder', url:'/go.htm?url=https://bf.zzxworld.com/s'}, {name:'博客大全', url:'/go.htm?url=https://boke.wangzhidaquan.com/'}, {name:'站长笔记博客大全', url:'/go.htm?url=https://www.080210.com/link/'} , {name:'ʕ•ᴥ•ʔ熊', url:'/go.htm?url=https://bearblog.dev/discover/'}    ],
     '21': [{name:'博客圈', url:'/go.htm?url=https://bokequan.cn/boke'}, {name:'Ye Olde Blogroll', url:'/go.htm?url=https://blogroll.org/'} , {name:'翻一会', url:'/go.htm?url=https://fanyihui.net/'}],
     '22': [{name:'集博栈', url:'/go.htm?url=https://www.zhblogs.net/'}, {name:'中文博客琅琊榜', url:'/go.htm?url=https://github.com/qianguyihao/blog-list/'}],
     '23': [{name:'博友圈', url:'/go.htm?url=https://www.boyouquan.com/blogs'}, {name:'博客录', url:'/go.htm?url=https://boke.lu/'}, {name:'笔墨迹', url:'/go.htm?url=https://blogscn.fun/'}],
