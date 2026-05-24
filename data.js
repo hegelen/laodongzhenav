@@ -86,6 +86,7 @@ const forumData = {
 // ==================== 博客大全导航数据  , {name:'', url:'/go.htm?url='}  ====================
 const blogNavData = {
     '06': [{name:'博客志-网址打不开', url:'/go.htm?url=http://www.jetli.com.cn/'}],
+	'09': [{name:'松松博客大全', url:'/go.htm?url=https://daohang.lusongsong.com/webdir.html'}],
     '14': [{name:'rssblog', url:'/go.htm?url=https://rssblog.imcbc.cn/member/'}, {name:'feedspot-bloggers', url:'/go.htm?url=https://bloggers.feedspot.com/'}],
     '16': [{name:'个站商店', url:'/go.htm?url=https://storeweb.cn/'}],
     '17': [{name:'十年之约', url:'/go.htm?url=https://www.foreverblog.cn/'}, {name:'jekyll wiki', url:'/go.htm?url=https://github.com/jekyll/jekyll/wiki/Sites'} ],
