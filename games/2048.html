@@ -918,5 +918,394 @@ function toggleAboutDrawer() {
         </table>
     </div>
 </div>
+<!-- 抽奖抽屉 -->
+<div id="lottery-drawer-overlay" onclick="toggleLotteryDrawer()"></div>
+<div id="lottery-drawer">
+    <div class="about-header">
+        <span class="about-title">抽取大佬论坛注册码</span>
+        <div class="about-close" onclick="toggleLotteryDrawer()">
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </div>
+    </div>
+    <div class="about-content" style="text-align: center; padding-top: 30px;">
+        <style>
+            #draw-lottery-btn {
+                background: linear-gradient(135deg, #FF416C 0%, #FF4B2B 100%);
+                color: #fff;
+                border: none;
+                padding: 14px 36px;
+                border-radius: 50px;
+                font-size: 16px;
+                font-weight: 600;
+                cursor: pointer;
+                transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+                box-shadow: 0 8px 20px rgba(255, 75, 43, 0.3);
+                letter-spacing: 1px;
+                position: relative;
+                overflow: hidden;
+                outline: none;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                white-space: nowrap;
+                min-width: 140px;
+            }
+            #draw-lottery-btn:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 12px 24px rgba(255, 75, 43, 0.4);
+            }
+            #draw-lottery-btn:active {
+                transform: translateY(1px);
+                box-shadow: 0 4px 10px rgba(255, 75, 43, 0.3);
+            }
+            #draw-lottery-btn:disabled {
+                background: #ccc;
+                box-shadow: none;
+                cursor: not-allowed;
+                transform: none;
+            }
+        </style>
+        <div id="lottery-status-msg" style="margin-bottom: 25px; font-size: 16px; color: #333; font-weight: 500;">试试手气，抽取大佬论坛注册码！</div>
+        <button id="draw-lottery-btn" onclick="doDrawLottery()">开始抽奖</button>
+        
+        <div style="margin-top: 40px; text-align: left; background: rgba(0,0,0,0.03); padding: 15px 20px; border-radius: 12px; border: 1px solid #f0f0f0;">
+            <p style="margin-bottom: 8px; font-weight: 600; color: #333; font-size: 14px;">活动说明</p>
+            <ul style="margin-bottom: 0; color: #666; font-size: 13px; line-height: 1.8; padding-left: 20px;">
+                <li>禁止利用非法手段参与活动。</li>
+                <li>本站拥有活动的最终解释权。</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+function toggleSponsorDrawer() {
+    var overlay = document.getElementById('sponsor-drawer-overlay');
+    var drawer = document.getElementById('sponsor-drawer');
+    if (drawer.classList.contains('show')) {
+        drawer.classList.remove('show');
+        overlay.style.opacity = '0';
+        setTimeout(function() { overlay.classList.remove('show'); }, 300);
+    } else {
+        overlay.classList.add('show');
+        overlay.offsetWidth;
+        overlay.style.opacity = '1';
+        drawer.classList.add('show');
+        fetchSponsorData();
+    }
+}
+
+function fetchSponsorData() {
+    fetch('/admin/admin_api.php?action=list_sponsors')
+        .then(function(res) { return res.json(); })
+        .then(function(json) {
+            var tbody = document.getElementById('sponsor-list-body');
+            if (json.success && json.data) {
+                if (json.data.length === 0) {
+                    tbody.innerHTML = '<tr><td colspan="3" style="text-align:center; padding: 10px; color:#aaa;">暂无数据</td></tr>';
+                    document.getElementById('total-sponsor-amount').textContent = '0.00';
+                    return;
+                }
+                var html = '';
+                var totalAmount = 0;
+                json.data.forEach(function(item) {
+                    totalAmount += parseFloat(item.amount || 0);
+                    var nameHtml = String(item.name || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+                    if (item.url) {
+                        var cleanUrl = item.url.replace(/^https?:\/\//i, '').replace(/\/$/, '');
+                        var cleanUrlHtml = String(cleanUrl).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+                        nameHtml = '<a href="' + item.url.replace(/"/g, '&quot;') + '" target="_blank" style="color: #6c47ff; text-decoration: none;">' + nameHtml + '</a>' +
+                                   '<span class="sponsor-url-display" style="color: #999; font-size: 11px; margin-left: 6px;">' + cleanUrlHtml + '</span>';
+                    }
+                    var date = item.time ? item.time.split(' ')[0] : '';
+                    html += '<tr style="border-bottom: 1px dashed #f0f0f0;">';
+                    html += '<td style="padding: 8px 0; color: #333;">' + nameHtml + '</td>';
+                    html += '<td style="padding: 8px 0; color: #999;">' + date + '</td>';
+                    html += '<td style="padding: 8px 0; text-align: right; color: #2da44e; font-weight: bold;">¥ ' + item.amount + '</td>';
+                    html += '</tr>';
+                });
+                tbody.innerHTML = html;
+                document.getElementById('total-sponsor-amount').textContent = totalAmount.toFixed(2);
+            } else {
+                tbody.innerHTML = '<tr><td colspan="3" style="text-align:center; padding: 10px; color:#aaa;">加载失败</td></tr>';
+            }
+        })
+        .catch(function(e) {
+            document.getElementById('sponsor-list-body').innerHTML = '<tr><td colspan="3" style="text-align:center; padding: 10px; color:#aaa;">网络错误</td></tr>';
+        });
+}
+
+function generateUUID() {
+    var d = new Date().getTime();
+    var d2 = ((typeof performance !== 'undefined') && performance.now && (performance.now()*1000)) || 0;
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+        var r = Math.random() * 16;
+        if(d > 0){
+            r = (d + r)%16 | 0;
+            d = Math.floor(d/16);
+        } else {
+            r = (d2 + r)%16 | 0;
+            d2 = Math.floor(d2/16);
+        }
+        return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
+    });
+}
+
+function getDeviceId() {
+    let deviceId = localStorage.getItem('huis_device_id');
+    if (!deviceId) {
+        deviceId = generateUUID();
+        localStorage.setItem('huis_device_id', deviceId);
+    }
+    return deviceId;
+}
+
+let hasCheckedLotteryStatus = false;
+
+function toggleLotteryDrawer() {
+    var overlay = document.getElementById('lottery-drawer-overlay');
+    var drawer = document.getElementById('lottery-drawer');
+    if (drawer.classList.contains('show')) {
+        drawer.classList.remove('show');
+        overlay.style.opacity = '0';
+        setTimeout(function() { overlay.classList.remove('show'); }, 300);
+    } else {
+        overlay.classList.add('show');
+        overlay.offsetWidth; // reflow
+        overlay.style.opacity = '1';
+        drawer.classList.add('show');
+        checkLocalLotteryState();
+    }
+}
+
+function checkLocalLotteryState() {
+    const today = new Date().toISOString().split('T')[0];
+    const wonCode = localStorage.getItem('huis_lottery_won_code');
+    const lastDrawDate = localStorage.getItem('huis_lottery_last_draw_date');
+    const msgEl = document.getElementById('lottery-status-msg');
+    const btnEl = document.getElementById('draw-lottery-btn');
+    
+    if (wonCode) {
+        msgEl.innerHTML = getWonCodeHtml(wonCode);
+        btnEl.style.display = 'none';
+        return;
+    } else if (lastDrawDate === today) {
+        msgEl.innerHTML = '<span style="color: #666;">您今天已经抽过奖啦，明天再来试试吧！</span>';
+        btnEl.style.display = 'none';
+        return;
+    }
+    
+    if (hasCheckedLotteryStatus) {
+        return;
+    }
+    
+    btnEl.style.display = 'inline-flex';
+    btnEl.disabled = true;
+    btnEl.innerHTML = '<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" style="animation: lottery-spin 1s linear infinite; vertical-align: -4px; margin-right: 6px;"><circle cx="12" cy="12" r="10" stroke-dasharray="31.4" stroke-dashoffset="10" stroke-linecap="round"></circle></svg>状态检测中...';
+    
+    if (!document.getElementById('lottery-spin-style')) {
+        const style = document.createElement('style');
+        style.id = 'lottery-spin-style';
+        style.textContent = '@keyframes lottery-spin { 100% { transform: rotate(360deg); } }';
+        document.head.appendChild(style);
+    }
+    
+    const deviceId = getDeviceId();
+    const formData = new URLSearchParams();
+    formData.append('action', 'check_lottery_status');
+    formData.append('device_id', deviceId);
+    
+    fetch('/api.php', { method: 'POST', body: formData })
+        .then(res => res.json())
+        .then(json => {
+            if (json.success) {
+                if (!json.enabled) {
+                    btnEl.disabled = true;
+                    btnEl.textContent = '活动未开启';
+                    msgEl.innerHTML = '抽取大佬论坛注册码！';
+                } else if (!json.available) {
+                    if (json.has_won) {
+                        if (json.code) localStorage.setItem('huis_lottery_won_code', json.code);
+                        msgEl.innerHTML = getWonCodeHtml(json.code || '');
+                        btnEl.style.display = 'none';
+                    } else if (json.has_drawn_today) {
+                        msgEl.innerHTML = '<span style="color: #666;">您今天已经抽过奖啦，明天再来试试吧！</span>';
+                        btnEl.style.display = 'none';
+                    } else {
+                        btnEl.disabled = true;
+                        btnEl.textContent = '今日已抽完';
+                        msgEl.innerHTML = '今日的注册码已被全部抽空，请明天再来吧！';
+                    }
+                } else {
+                    msgEl.innerHTML = '试试手气，抽取大佬论坛注册码！';
+                    btnEl.disabled = false;
+                    btnEl.textContent = '开始抽奖';
+                }
+            } else {
+                btnEl.disabled = false;
+                btnEl.textContent = '开始抽奖';
+            }
+            hasCheckedLotteryStatus = true;
+        })
+        .catch(e => {
+            btnEl.disabled = false;
+            btnEl.textContent = '开始抽奖';
+            hasCheckedLotteryStatus = true;
+        });
+}
+
+function fireConfetti() {
+    if (!window.confetti) {
+        var script = document.createElement('script');
+        script.src = '/static/js/confetti.min.js';
+        script.onload = function() {
+            triggerConfettiAnimation();
+        };
+        document.head.appendChild(script);
+    } else {
+        triggerConfettiAnimation();
+    }
+}
+
+function triggerConfettiAnimation() {
+    var duration = 2000;
+    var end = Date.now() + duration;
+
+    (function frame() {
+        confetti({
+            particleCount: 2,
+            angle: 60,
+            spread: 55,
+            origin: { x: 0, y: 0.8 },
+            colors: ['#26ccff', '#a25afd', '#ff5e7e', '#88ff5a', '#fcff42', '#ffa62d', '#ff36ff'],
+            zIndex: 10005
+        });
+        confetti({
+            particleCount: 2,
+            angle: 120,
+            spread: 55,
+            origin: { x: 1, y: 0.8 },
+            colors: ['#26ccff', '#a25afd', '#ff5e7e', '#88ff5a', '#fcff42', '#ffa62d', '#ff36ff'],
+            zIndex: 10005
+        });
+
+        if (Date.now() < end) {
+            requestAnimationFrame(frame);
+        }
+    }());
+}
+
+function doDrawLottery() {
+    const btnEl = document.getElementById('draw-lottery-btn');
+    const msgEl = document.getElementById('lottery-status-msg');
+    
+    btnEl.disabled = true;
+    btnEl.innerHTML = '<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" style="animation: lottery-spin 1s linear infinite; vertical-align: -4px; margin-right: 6px;"><circle cx="12" cy="12" r="10" stroke-dasharray="31.4" stroke-dashoffset="10" stroke-linecap="round"></circle></svg>正在开启礼盒...';
+    
+    if (!document.getElementById('lottery-spin-style')) {
+        const style = document.createElement('style');
+        style.id = 'lottery-spin-style';
+        style.textContent = '@keyframes lottery-spin { 100% { transform: rotate(360deg); } }';
+        document.head.appendChild(style);
+    }
+    
+    const deviceId = getDeviceId();
+    const formData = new URLSearchParams();
+    formData.append('action', 'draw_lottery');
+    formData.append('device_id', deviceId);
+    
+    fetch('/api.php', { method: 'POST', body: formData })
+        .then(res => res.json())
+        .then(json => {
+            setTimeout(() => {
+                if (json.success) {
+                    localStorage.setItem('huis_lottery_won_code', json.code);
+                    msgEl.innerHTML = getWonCodeHtml(json.code);
+                    btnEl.style.display = 'none';
+                    fireConfetti();
+                } else {
+                    if (json.message.indexOf('中过奖') === -1 && json.message.indexOf('暂未开启') === -1) {
+                        localStorage.setItem('huis_lottery_last_draw_date', new Date().toISOString().split('T')[0]);
+                    }
+                    let prefix = '';
+                    if (json.message.indexOf('抱歉') !== -1) {
+                        prefix = '<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-5px; margin-right:4px;"><circle cx="12" cy="12" r="10"></circle><path d="M16 16s-1.5-2-4-2-4 2-4 2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>';
+                    }
+                    msgEl.innerHTML = '<span style="color: #e53e3e;">' + prefix + json.message + '</span>';
+                    if (json.message.indexOf('暂未开启') !== -1) {
+                        btnEl.disabled = false;
+                        btnEl.textContent = '开始抽奖';
+                    } else {
+                        btnEl.style.display = 'none';
+                    }
+                }
+            }, 1500);
+        })
+        .catch(err => {
+            setTimeout(() => {
+                msgEl.innerHTML = '<span style="color: #e53e3e;">网络错误，请稍后再试</span>';
+                btnEl.disabled = false;
+                btnEl.textContent = '重新抽奖';
+            }, 1500);
+        });
+}
+
+function getWonCodeHtml(code) {
+    if (!code) return '';
+    return '<span style="color: #2da44e; font-weight: bold;">恭喜您，您抽中的注册码是 <span style="background: #e6f4ea; padding: 2px 8px; border-radius: 6px; cursor: pointer; border: 1px dashed #b7e1cd; color: #333; transition: all 0.2s; display: inline-block; margin: 0 4px;" onclick="copyLotteryCode(this, \'' + code + '\')" title="点击复制">' + code + ' <svg viewBox="0 0 24 24" width="12" height="12" stroke="currentColor" stroke-width="2" fill="none" style="vertical-align:-1px; margin-left:2px;"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></span>，请在3天内使用。</span>';
+}
+
+function copyLotteryCode(el, code) {
+    if (!code) return;
+    if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(code).then(() => {
+            showToast('已复制注册码');
+        });
+    } else {
+        let textArea = document.createElement("textarea");
+        textArea.value = code;
+        textArea.style.position = "fixed";
+        textArea.style.left = "-999999px";
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
+        try { document.execCommand('copy'); showToast('已复制注册码'); } catch (err) {}
+        textArea.remove();
+    }
+}
+
+function showToast(message) {
+    let toast = document.createElement('div');
+    toast.textContent = message;
+    toast.style.position = 'fixed';
+    toast.style.top = '50%';
+    toast.style.left = '50%';
+    toast.style.transform = 'translate(-50%, -50%)';
+    toast.style.backgroundColor = 'rgba(0, 0, 0, 0.75)';
+    toast.style.color = '#fff';
+    toast.style.padding = '12px 24px';
+    toast.style.borderRadius = '8px';
+    toast.style.fontSize = '15px';
+    toast.style.zIndex = '100000';
+    toast.style.pointerEvents = 'none';
+    toast.style.transition = 'opacity 0.3s ease';
+    toast.style.opacity = '0';
+    toast.style.letterSpacing = '1px';
+    document.body.appendChild(toast);
+    
+    // reflow
+    toast.offsetHeight;
+    toast.style.opacity = '1';
+    
+    setTimeout(() => {
+        toast.style.opacity = '0';
+        setTimeout(() => {
+            if (toast.parentNode) {
+                toast.parentNode.removeChild(toast);
+            }
+        }, 300);
+    }, 1500);
+}
+</script>
 </body>
 </html>
