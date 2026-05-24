@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>2048 - GAME</title>
+    <title>2048 - 劳动者工具箱</title>
     <style>
-        /* ---------- 灰色平面主题 · 优化对比度，按钮更鲜明 ---------- */
+        /* ========== 2048 游戏核心样式 ========== */
         * {
             box-sizing: border-box;
             user-select: none;
@@ -15,7 +15,7 @@
         }
 
         body {
-            background: #e2e6ea;      /* 柔和基底灰，与按钮区分 */
+            background: #e2e6ea;
             font-family: "Clear Sans", "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
             display: flex;
             justify-content: center;
@@ -31,7 +31,6 @@
             margin: 0 auto;
         }
 
-        /* 头部区域 */
         .game-header {
             display: flex;
             justify-content: space-between;
@@ -49,26 +48,26 @@
             width: auto;
             object-fit: contain;
         }
-        /* logo 失败后备 - 深灰文字 */
         .game-logo-error {
             font-size: 40px;
             font-weight: 800;
             color: #3b4b54;
             line-height: 1;
+            display: none;
         }
 
-        /* 分数面板 - 质感深灰 */
         .score-panel {
             display: flex;
             gap: 12px;
         }
 
         .score-card {
-            background: #6e7b8c;      /* 带蓝调的深灰，清晰可辨 */
+            background: #6e7b8c;
             border-radius: 6px;
             padding: 8px 18px;
             text-align: center;
             min-width: 85px;
+            position: relative;
         }
 
         .score-label {
@@ -86,7 +85,6 @@
             line-height: 1.2;
         }
 
-        /* 加分飘字 - 深色 */
         .score-pop {
             position: absolute;
             right: 15px;
@@ -100,17 +98,10 @@
         }
 
         @keyframes floatUp {
-            0% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-            100% {
-                opacity: 0;
-                transform: translateY(-40px);
-            }
+            0% { opacity: 1; transform: translateY(0); }
+            100% { opacity: 0; transform: translateY(-40px); }
         }
 
-        /* 操作栏 */
         .action-bar {
             display: flex;
             justify-content: space-between;
@@ -124,7 +115,6 @@
             font-weight: 500;
         }
 
-        /* 按钮 ———— 加深，与背景明显区分 */
         .new-game-btn {
             background: #5a6e7c;
             border: none;
@@ -134,18 +124,12 @@
             font-weight: bold;
             color: #f9fafc;
             cursor: pointer;
-            transition: background 0.1s;
-            box-shadow: none;
         }
+        .new-game-btn:active { background: #3f525f; }
 
-        .new-game-btn:active {
-            background: #3f525f;
-        }
-
-        /* 游戏区域 - 浅灰棋盘底色 */
         .game-board {
             position: relative;
-            background: #bac8d1;      /* 更明亮的灰，与网格形成柔和对比 */
+            background: #bac8d1;
             border-radius: 10px;
             padding: 12px;
             width: 100%;
@@ -153,7 +137,6 @@
             touch-action: none;
         }
 
-        /* 网格背景 - 半透珍珠白 */
         .grid-background {
             position: absolute;
             top: 12px;
@@ -164,20 +147,17 @@
             flex-direction: column;
             gap: 12px;
         }
-
         .grid-row {
             display: flex;
             gap: 12px;
             flex: 1;
         }
-
         .grid-cell {
             background: rgba(245, 248, 250, 0.5);
             border-radius: 8px;
             flex: 1;
         }
 
-        /* 瓦片容器 */
         .tiles-layer {
             position: absolute;
             top: 12px;
@@ -187,7 +167,6 @@
             z-index: 10;
         }
 
-        /* 瓦片本身 - 无任何立体感 */
         .tile {
             position: absolute;
             display: flex;
@@ -198,7 +177,6 @@
             transition: transform 0.08s linear, left 0.08s linear, top 0.08s linear;
             will-change: transform, left, top;
         }
-
         .tile-inner {
             width: 100%;
             height: 100%;
@@ -210,54 +188,32 @@
             font-weight: 800;
         }
 
-        /* 灰阶渐进色板，高级且清爽 */
         .tile-2 .tile-inner { background: #eef2f5; color: #3b4b54; }
         .tile-4 .tile-inner { background: #e0e6ec; color: #3b4b54; }
-        .tile-8 .tile-inner { background: #cbd6df; color: #ffffff; }
-        .tile-16 .tile-inner { background: #b3c2cd; color: #ffffff; }
-        .tile-32 .tile-inner { background: #9aadb8; color: #ffffff; }
-        .tile-64 .tile-inner { background: #8298a6; color: #ffffff; }
-        .tile-128 .tile-inner { background: #6e8494; color: #ffffff; font-size: 42px; }
-        .tile-256 .tile-inner { background: #5e7282; color: #ffffff; font-size: 42px; }
-        .tile-512 .tile-inner { background: #4e6272; color: #ffffff; font-size: 42px; }
-        .tile-1024 .tile-inner { background: #405464; color: #ffffff; font-size: 34px; }
-        .tile-2048 .tile-inner { background: #334655; color: #ffffff; font-size: 34px; }
-        .tile-super .tile-inner { background: #25353f; color: #ffffff; font-size: 28px; }
+        .tile-8 .tile-inner { background: #cbd6df; color: #fff; }
+        .tile-16 .tile-inner { background: #b3c2cd; color: #fff; }
+        .tile-32 .tile-inner { background: #9aadb8; color: #fff; }
+        .tile-64 .tile-inner { background: #8298a6; color: #fff; }
+        .tile-128 .tile-inner { background: #6e8494; color: #fff; font-size: 42px; }
+        .tile-256 .tile-inner { background: #5e7282; color: #fff; font-size: 42px; }
+        .tile-512 .tile-inner { background: #4e6272; color: #fff; font-size: 42px; }
+        .tile-1024 .tile-inner { background: #405464; color: #fff; font-size: 34px; }
+        .tile-2048 .tile-inner { background: #334655; color: #fff; font-size: 34px; }
+        .tile-super .tile-inner { background: #25353f; color: #fff; font-size: 28px; }
 
-        /* 出现动画 */
         @keyframes tileAppear {
-            0% {
-                opacity: 0;
-                transform: scale(0.7);
-            }
-            100% {
-                opacity: 1;
-                transform: scale(1);
-            }
+            0% { opacity: 0; transform: scale(0.7); }
+            100% { opacity: 1; transform: scale(1); }
         }
+        .tile-new .tile-inner { animation: tileAppear 0.12s ease-out forwards; }
 
-        .tile-new .tile-inner {
-            animation: tileAppear 0.12s ease-out forwards;
-        }
-
-        /* 合并动画 */
         @keyframes tileMerge {
-            0% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.1);
-            }
-            100% {
-                transform: scale(1);
-            }
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
         }
+        .tile-merged .tile-inner { animation: tileMerge 0.12s ease-out forwards; }
 
-        .tile-merged .tile-inner {
-            animation: tileMerge 0.12s ease-out forwards;
-        }
-
-        /* 游戏蒙层 - 半透明灰白，易读 */
         .game-overlay {
             position: absolute;
             top: 0;
@@ -273,24 +229,9 @@
             justify-content: center;
             gap: 24px;
         }
-
-        .game-overlay.show {
-            display: flex;
-        }
-
-        .overlay-text {
-            font-size: 48px;
-            font-weight: 800;
-            color: #4a606e;
-            text-align: center;
-        }
-
-        .overlay-buttons {
-            display: flex;
-            gap: 20px;
-        }
-
-        /* 浮层按钮同样保持深色高对比 */
+        .game-overlay.show { display: flex; }
+        .overlay-text { font-size: 48px; font-weight: 800; color: #4a606e; text-align: center; }
+        .overlay-buttons { display: flex; gap: 20px; }
         .overlay-btn {
             background: #6e7f8c;
             border: none;
@@ -298,81 +239,23 @@
             padding: 10px 28px;
             font-size: 18px;
             font-weight: bold;
-            color: #ffffff;
+            color: #fff;
             cursor: pointer;
         }
+        .overlay-btn:active { background: #536572; }
 
-        .overlay-btn:active {
-            background: #536572;
-        }
-
-        /* 响应式 */
         @media (max-width: 520px) {
-            .game-wrapper {
-                max-width: 100%;
-            }
-            .game-logo {
-                height: 44px;
-            }
-            .score-card {
-                padding: 6px 12px;
-                min-width: 65px;
-            }
-            .score-number {
-                font-size: 22px;
-            }
-            .score-label {
-                font-size: 11px;
-            }
-            .game-board {
-                padding: 8px;
-            }
-            .grid-background {
-                top: 8px;
-                left: 8px;
-                right: 8px;
-                bottom: 8px;
-                gap: 8px;
-            }
-            .grid-row {
-                gap: 8px;
-            }
-            .tiles-layer {
-                top: 8px;
-                left: 8px;
-                right: 8px;
-                bottom: 8px;
-            }
-            .tile-inner {
-                font-size: 32px;
-            }
-            .tile-128 .tile-inner, .tile-256 .tile-inner, .tile-512 .tile-inner {
-                font-size: 28px;
-            }
-            .tile-1024 .tile-inner, .tile-2048 .tile-inner {
-                font-size: 22px;
-            }
-            .tile-super .tile-inner {
-                font-size: 20px;
-            }
-            .overlay-text {
-                font-size: 34px;
-            }
-            .overlay-btn {
-                padding: 8px 20px;
-                font-size: 16px;
-            }
-            .game-desc {
-                font-size: 12px;
-            }
-            .new-game-btn {
-                padding: 6px 20px;
-                font-size: 16px;
-            }
-        }
-
-        button {
-            outline: none;
+            .game-wrapper { max-width: 100%; }
+            .game-logo { height: 44px; }
+            .score-card { padding: 6px 12px; min-width: 65px; }
+            .score-number { font-size: 22px; }
+            .game-board { padding: 8px; }
+            .grid-background { top: 8px; left: 8px; right: 8px; bottom: 8px; gap: 8px; }
+            .grid-row { gap: 8px; }
+            .tiles-layer { top: 8px; left: 8px; right: 8px; bottom: 8px; }
+            .tile-inner { font-size: 32px; }
+            .tile-128 .tile-inner, .tile-256 .tile-inner, .tile-512 .tile-inner { font-size: 28px; }
+            .tile-1024 .tile-inner, .tile-2048 .tile-inner { font-size: 22px; }
         }
     </style>
 </head>
@@ -380,27 +263,18 @@
 <div class="game-wrapper">
     <div class="game-header">
         <div class="logo-area">
-            <!-- logo.png 图片，失败则显示灰色文字 -->
-            <img class="game-logo" id="gameLogo" src="logo.png" alt="2048" onerror="this.onerror=null; this.style.display='none'; this.nextElementSibling.style.display='block';">
-            <div class="game-logo-error" style="display:none;">2048</div>
+            <img class="game-logo" src="logo.png" alt="2048" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="game-logo-error">2048</div>
         </div>
         <div class="score-panel">
-            <div class="score-card">
-                <div class="score-label">SCORE</div>
-                <div class="score-number" id="scoreValue">0</div>
-            </div>
-            <div class="score-card">
-                <div class="score-label">BEST</div>
-                <div class="score-number" id="bestValue">0</div>
-            </div>
+            <div class="score-card"><div class="score-label">SCORE</div><div class="score-number" id="scoreValue">0</div></div>
+            <div class="score-card"><div class="score-label">BEST</div><div class="score-number" id="bestValue">0</div></div>
         </div>
     </div>
-
     <div class="action-bar">
         <div class="game-desc">← ↑ → ↓ 滑动屏幕</div>
         <button class="new-game-btn" id="resetGameBtn">新游戏</button>
     </div>
-
     <div class="game-board" id="gameBoard">
         <div class="grid-background" id="gridBg"></div>
         <div class="tiles-layer" id="tilesLayer"></div>
@@ -414,9 +288,90 @@
     </div>
 </div>
 
+<!-- 底部信息栏：采用与 hu.is 相同的抽屉结构，无乱码 -->
+<br>
+<div id="footer-info" style="text-align: center; margin-top: 30px; font-size: 12px; color: #6c7a89;">
+    2026 laodongzhe.cn 运营方:<a href="https://laodongzhe.cn" target="_blank" style="color: inherit; text-decoration: none; text-decoration: underline; text-underline-offset: 4px;">劳动者导航</a>.  
+    <span onclick="toggleAboutDrawer()" style="cursor: pointer; text-decoration: underline; text-underline-offset: 4px; display: inline-flex; align-items: center; gap: 4px; vertical-align: middle;">
+        <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+        关于本站
+    </span>
+    <span onclick="toggleSponsorDrawer()" style="cursor: pointer; text-decoration: underline; text-underline-offset: 4px; display: inline-flex; align-items: center; gap: 4px; vertical-align: middle; margin-left: 10px;">
+        <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+        赞助榜
+    </span>
+    <span onclick="toggleLotteryDrawer()" style="cursor: pointer; text-decoration: underline; text-underline-offset: 4px; display: inline-flex; align-items: center; gap: 4px; vertical-align: middle; margin-left: 10px;">
+        <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/><circle cx="12" cy="12" r="3"/></svg>
+        抽注册码
+    </span>
+</div>
+
+<!-- 关于本站抽屉 (完全净化) -->
+<div id="about-drawer-overlay" onclick="toggleAboutDrawer()"></div>
+<div id="about-drawer" class="drawer">
+    <div class="drawer-header">
+        <span class="drawer-title">关于本站</span>
+        <div class="drawer-close" onclick="toggleAboutDrawer()"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></div>
+    </div>
+    <div class="drawer-content">
+        <p>laodongzhe.cn <strong>益智休闲</strong>小游戏。</p>
+        <p>我们致力于为劳动者提供纯净的开源工具。</p>
+        <p>UI 源码基于 <a href="https://2.048.org" target="_blank" style="color: inherit;">2.048.org</a>。</p>
+        <p>本小游戏内置在 <a href="https://laodongzhe.cn" target="_blank" style="color: inherit;">劳动者导航</a>，欢迎体验。</p>
+        <p style="margin-top: 20px; font-size: 13px;">当前版本: v1.0.1 <span onclick="alert('可前往 laodongzhe.cn 提交意见')" style="cursor: pointer; text-decoration: underline; margin-left: 12px;">反馈意见</span></p>
+    </div>
+</div>
+
+<!-- 赞助榜抽屉 -->
+<div id="sponsor-drawer-overlay" onclick="toggleSponsorDrawer()"></div>
+<div id="sponsor-drawer" class="drawer">
+    <div class="drawer-header">
+        <span class="drawer-title">赞助与打赏</span>
+        <div class="drawer-close" onclick="toggleSponsorDrawer()"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></div>
+    </div>
+    <div class="drawer-content">
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 20px;">
+            <div style="flex: 1; background: #f8f9fa; padding: 15px; border-radius: 12px;">
+                <p style="font-weight: 600;">日常运行开销</p>
+                <ul style="margin-top: 8px; padding-left: 20px; color: #555; font-size: 13px;">
+                    <li>服务器托管于 EdgeOne Pages</li>
+                    <li>laodongzhe.cn 域名年费 30 元</li>
+                </ul>
+            </div>
+            <div style="flex: 0 0 140px; text-align: center;">
+                <img src="/static/image/wx.png" alt="赞赏码" style="width: 120px; border-radius: 12px; border: 1px solid #ddd;" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'120\' height=\'120\'%3E%3Crect width=\'120\' height=\'120\' fill=\'%23eee\'/%3E%3Ctext x=\'60\' y=\'65\' font-size=\'12\' fill=\'%23999\' text-anchor=\'middle\'%3E%3E%3C/text%3E%3C/svg%3E'">
+                <p style="font-size: 11px; color: #888; margin-top: 8px;">微信赞赏 备注昵称+网址</p>
+            </div>
+        </div>
+        <div style="border-top: 1px solid #eee; padding-top: 12px;">
+            <p style="font-weight: 600;">致谢名单</p>
+            <table style="width: 100%; font-size: 13px; margin-top: 8px;" id="sponsor-table">
+                <thead><tr><th>名字</th><th>时间</th><th>金额</th></tr></thead>
+                <tbody id="sponsor-list"><tr><td colspan="3">加载中…</td></tr></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- 抽奖抽屉 -->
+<div id="lottery-drawer-overlay" onclick="toggleLotteryDrawer()"></div>
+<div id="lottery-drawer" class="drawer">
+    <div class="drawer-header">
+        <span class="drawer-title">抽取大佬论坛注册码</span>
+        <div class="drawer-close" onclick="toggleLotteryDrawer()"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></div>
+    </div>
+    <div class="drawer-content" style="text-align: center;">
+        <div id="lottery-status-msg" style="margin-bottom: 20px;">试试手气，抽取大佬论坛注册码！</div>
+        <button id="draw-lottery-btn" class="lottery-btn" onclick="doDrawLottery()">开始抽奖</button>
+        <div style="margin-top: 30px; text-align: left; background: #f8f9fa; padding: 12px; border-radius: 12px; font-size: 12px;">
+            <p>活动说明：严禁非法手段参与，本站保留最终解释权。</p>
+        </div>
+    </div>
+</div>
+
 <script>
+    // ------------------ 2048 核心逻辑（保持原样）------------------
     (function(){
-        // ---------- 灰色主题 2048 核心逻辑 (对比度优化) ----------
         const SIZE = 4;
         let board = Array(SIZE).fill().map(() => Array(SIZE).fill(0));
         let currentScore = 0;
@@ -425,7 +380,6 @@
         let isGameOverFlag = false;
         let keepPlayingAfterWin = false;
 
-        // DOM 元素
         const scoreSpan = document.getElementById('scoreValue');
         const bestSpan = document.getElementById('bestValue');
         const resetBtn = document.getElementById('resetGameBtn');
@@ -439,873 +393,270 @@
 
         let newTilePos = null;
 
-        // 最高分
         function loadBest() {
-            const saved = localStorage.getItem('2048_best_gray_contrast');
-            if(saved && !isNaN(parseInt(saved))) {
-                bestScore = parseInt(saved);
-            } else {
-                bestScore = 0;
-            }
+            const saved = localStorage.getItem('2048_best_gray');
+            bestScore = saved && !isNaN(parseInt(saved)) ? parseInt(saved) : 0;
             bestSpan.innerText = bestScore;
         }
-
         function saveBest() {
             if(currentScore > bestScore) {
                 bestScore = currentScore;
                 bestSpan.innerText = bestScore;
-                localStorage.setItem('2048_best_gray_contrast', bestScore);
+                localStorage.setItem('2048_best_gray', bestScore);
             }
         }
-
         function updateScoreUI() {
             scoreSpan.innerText = currentScore;
             if(currentScore > bestScore) saveBest();
         }
-
         function showScorePop(points) {
             if(points === 0) return;
-            const scoreCard = document.querySelector('.score-card');
-            const popDiv = document.createElement('div');
-            popDiv.className = 'score-pop';
-            popDiv.innerText = `+${points}`;
-            scoreCard.style.position = 'relative';
-            popDiv.style.position = 'absolute';
-            popDiv.style.right = '10px';
-            popDiv.style.top = '0px';
-            scoreCard.appendChild(popDiv);
-            setTimeout(() => {
-                if(popDiv && popDiv.remove) popDiv.remove();
-                scoreCard.style.position = '';
-            }, 500);
+            const card = document.querySelector('.score-card');
+            const pop = document.createElement('div');
+            pop.className = 'score-pop';
+            pop.innerText = `+${points}`;
+            card.appendChild(pop);
+            setTimeout(() => pop.remove(), 500);
         }
-
-        function initGame() {
-            for(let i = 0; i < SIZE; i++) {
-                for(let j = 0; j < SIZE; j++) board[i][j] = 0;
-            }
-            currentScore = 0;
-            hasWon = false;
-            isGameOverFlag = false;
-            keepPlayingAfterWin = false;
-            updateScoreUI();
-            addRandomTile();
-            addRandomTile();
-            gameOverlay.classList.remove('show');
-            renderBoard();
-        }
-
         function addRandomTile() {
             const empty = [];
-            for(let i=0; i<SIZE; i++) {
-                for(let j=0; j<SIZE; j++) {
-                    if(board[i][j] === 0) empty.push([i, j]);
-                }
-            }
-            if(empty.length === 0) return false;
-            const [row, col] = empty[Math.floor(Math.random() * empty.length)];
-            const value = Math.random() < 0.9 ? 2 : 4;
-            board[row][col] = value;
+            for(let i=0;i<SIZE;i++) for(let j=0;j<SIZE;j++) if(board[i][j]===0) empty.push([i,j]);
+            if(empty.length===0) return false;
+            const [row,col] = empty[Math.floor(Math.random()*empty.length)];
+            board[row][col] = Math.random()<0.9 ? 2 : 4;
             newTilePos = { row, col };
             return true;
         }
-
-        // 方向: 0上 1右 2下 3左
+        function mergeLine(arr) {
+            let filtered = arr.filter(v=>v!==0);
+            let newArr = [], gain=0;
+            for(let i=0;i<filtered.length;i++) {
+                if(i+1<filtered.length && filtered[i]===filtered[i+1]) {
+                    let merged = filtered[i]*2;
+                    newArr.push(merged);
+                    gain += merged;
+                    i++;
+                } else newArr.push(filtered[i]);
+            }
+            while(newArr.length<SIZE) newArr.push(0);
+            return { newCol: newArr, gain };
+        }
         function moveAndMerge(direction) {
             if(isGameOverFlag) return false;
-            let totalGain = 0;
-            let hasMoved = false;
-
-            if(direction === 0) { // 上
-                for(let col = 0; col < SIZE; col++) {
-                    let column = [board[0][col], board[1][col], board[2][col], board[3][col]];
+            let totalGain = 0, hasMoved = false;
+            if(direction===0){
+                for(let col=0;col<SIZE;col++){
+                    let column = [board[0][col],board[1][col],board[2][col],board[3][col]];
                     let { newCol, gain } = mergeLine(column);
                     totalGain += gain;
-                    for(let row = 0; row < SIZE; row++) {
-                        if(board[row][col] !== newCol[row]) hasMoved = true;
-                        board[row][col] = newCol[row];
-                    }
+                    for(let row=0;row<SIZE;row++) if(board[row][col]!==newCol[row]) hasMoved=true;
+                    for(let row=0;row<SIZE;row++) board[row][col]=newCol[row];
                 }
-            } 
-            else if(direction === 2) { // 下
-                for(let col = 0; col < SIZE; col++) {
-                    let column = [board[3][col], board[2][col], board[1][col], board[0][col]];
+            } else if(direction===2){
+                for(let col=0;col<SIZE;col++){
+                    let column = [board[3][col],board[2][col],board[1][col],board[0][col]];
                     let { newCol, gain } = mergeLine(column);
                     totalGain += gain;
                     let reversed = [...newCol].reverse();
-                    for(let row = 0; row < SIZE; row++) {
-                        if(board[row][col] !== reversed[row]) hasMoved = true;
-                        board[row][col] = reversed[row];
-                    }
+                    for(let row=0;row<SIZE;row++) if(board[row][col]!==reversed[row]) hasMoved=true;
+                    for(let row=0;row<SIZE;row++) board[row][col]=reversed[row];
                 }
-            }
-            else if(direction === 1) { // 右
-                for(let row = 0; row < SIZE; row++) {
-                    let line = [board[row][3], board[row][2], board[row][1], board[row][0]];
+            } else if(direction===1){
+                for(let row=0;row<SIZE;row++){
+                    let line = [board[row][3],board[row][2],board[row][1],board[row][0]];
                     let { newCol, gain } = mergeLine(line);
                     totalGain += gain;
                     let reversed = [...newCol].reverse();
-                    for(let col = 0; col < SIZE; col++) {
-                        if(board[row][col] !== reversed[col]) hasMoved = true;
-                        board[row][col] = reversed[col];
-                    }
+                    for(let col=0;col<SIZE;col++) if(board[row][col]!==reversed[col]) hasMoved=true;
+                    for(let col=0;col<SIZE;col++) board[row][col]=reversed[col];
                 }
-            }
-            else if(direction === 3) { // 左
-                for(let row = 0; row < SIZE; row++) {
-                    let line = [board[row][0], board[row][1], board[row][2], board[row][3]];
+            } else if(direction===3){
+                for(let row=0;row<SIZE;row++){
+                    let line = [board[row][0],board[row][1],board[row][2],board[row][3]];
                     let { newCol, gain } = mergeLine(line);
                     totalGain += gain;
-                    for(let col = 0; col < SIZE; col++) {
-                        if(board[row][col] !== newCol[col]) hasMoved = true;
-                        board[row][col] = newCol[col];
-                    }
+                    for(let col=0;col<SIZE;col++) if(board[row][col]!==newCol[col]) hasMoved=true;
+                    for(let col=0;col<SIZE;col++) board[row][col]=newCol[col];
                 }
             }
-
-            if(hasMoved) {
-                if(totalGain > 0) {
-                    currentScore += totalGain;
-                    updateScoreUI();
-                    showScorePop(totalGain);
+            if(hasMoved){
+                if(totalGain>0){ currentScore+=totalGain; updateScoreUI(); showScorePop(totalGain); }
+                addRandomTile(); renderBoard();
+                if(!hasWon && !keepPlayingAfterWin){
+                    for(let i=0;i<SIZE;i++) for(let j=0;j<SIZE;j++) if(board[i][j]>=2048){ hasWon=true; showGameOverlay('win'); return true; }
                 }
-                addRandomTile();
-                renderBoard();
-                
-                if(!hasWon && !keepPlayingAfterWin) {
-                    if(checkWinCondition()) {
-                        hasWon = true;
-                        showGameOverlay('win');
-                        return true;
-                    }
-                }
-                
-                if(isGameReallyOver()) {
-                    isGameOverFlag = true;
-                    showGameOverlay('over');
-                }
+                if(isGameReallyOver()){ isGameOverFlag=true; showGameOverlay('over'); }
                 return true;
             }
             return false;
         }
-
-        function mergeLine(arr) {
-            let filtered = arr.filter(v => v !== 0);
-            let newArr = [];
-            let gain = 0;
-            for(let i=0; i<filtered.length; i++) {
-                if(i+1 < filtered.length && filtered[i] === filtered[i+1]) {
-                    let merged = filtered[i] * 2;
-                    newArr.push(merged);
-                    gain += merged;
-                    i++;
-                } else {
-                    newArr.push(filtered[i]);
-                }
-            }
-            while(newArr.length < SIZE) newArr.push(0);
-            return { newCol: newArr, gain };
-        }
-
-        function checkWinCondition() {
-            for(let i=0; i<SIZE; i++) {
-                for(let j=0; j<SIZE; j++) {
-                    if(board[i][j] >= 2048) return true;
-                }
-            }
-            return false;
-        }
-
-        function isGameReallyOver() {
-            for(let i=0; i<SIZE; i++) {
-                for(let j=0; j<SIZE; j++) if(board[i][j] === 0) return false;
-            }
-            for(let i=0; i<SIZE; i++) {
-                for(let j=0; j<SIZE; j++) {
-                    let val = board[i][j];
-                    if(j+1 < SIZE && board[i][j+1] === val) return false;
-                    if(i+1 < SIZE && board[i+1][j] === val) return false;
-                }
+        function isGameReallyOver(){
+            for(let i=0;i<SIZE;i++) for(let j=0;j<SIZE;j++) if(board[i][j]===0) return false;
+            for(let i=0;i<SIZE;i++) for(let j=0;j<SIZE;j++){
+                let v=board[i][j];
+                if(j+1<SIZE && board[i][j+1]===v) return false;
+                if(i+1<SIZE && board[i+1][j]===v) return false;
             }
             return true;
         }
-
-        function showGameOverlay(type) {
-            if(type === 'win') {
-                overlayMsgSpan.innerText = 'You win!';
-                overlayContinueBtn.style.display = 'inline-block';
-                gameOverlay.classList.add('show');
-            } else if(type === 'over') {
-                overlayMsgSpan.innerText = 'Game over!';
-                overlayContinueBtn.style.display = 'none';
-                gameOverlay.classList.add('show');
+        function showGameOverlay(type){
+            if(type==='win'){ overlayMsgSpan.innerText='You win!'; overlayContinueBtn.style.display='inline-block'; }
+            else { overlayMsgSpan.innerText='Game over!'; overlayContinueBtn.style.display='none'; }
+            gameOverlay.classList.add('show');
+        }
+        function continueGame(){ keepPlayingAfterWin=true; hasWon=false; gameOverlay.classList.remove('show'); renderBoard(); }
+        function resetGame(){
+            for(let i=0;i<SIZE;i++) for(let j=0;j<SIZE;j++) board[i][j]=0;
+            currentScore=0; hasWon=false; isGameOverFlag=false; keepPlayingAfterWin=false;
+            updateScoreUI(); addRandomTile(); addRandomTile(); gameOverlay.classList.remove('show'); renderBoard();
+        }
+        function renderBoard(){
+            tilesLayer.innerHTML='';
+            const rect = gameBoardDiv.getBoundingClientRect();
+            const padding = window.innerWidth<=520?8:12;
+            const inner = rect.width - padding*2;
+            const gap = window.innerWidth<=520?8:12;
+            const cellSize = (inner - gap*(SIZE-1))/SIZE;
+            for(let i=0;i<SIZE;i++) for(let j=0;j<SIZE;j++){
+                let val=board[i][j];
+                if(val===0) continue;
+                let tile=document.createElement('div');
+                tile.className='tile';
+                let innerDiv=document.createElement('div');
+                innerDiv.className='tile-inner';
+                innerDiv.innerText=val;
+                tile.appendChild(innerDiv);
+                if(val>=2048) tile.classList.add('tile-super');
+                else tile.classList.add(`tile-${val}`);
+                tile.style.width=`${cellSize}px`; tile.style.height=`${cellSize}px`;
+                tile.style.left=`${j*(cellSize+gap)}px`;
+                tile.style.top=`${i*(cellSize+gap)}px`;
+                if(newTilePos && newTilePos.row===i && newTilePos.col===j) tile.classList.add('tile-new');
+                tilesLayer.appendChild(tile);
+            }
+            newTilePos=null;
+        }
+        function buildGridBackground(){
+            gridBg.innerHTML='';
+            const gap = window.innerWidth<=520?8:12;
+            for(let i=0;i<SIZE;i++){
+                let row=document.createElement('div'); row.className='grid-row'; row.style.gap=`${gap}px`;
+                for(let j=0;j<SIZE;j++) row.appendChild(document.createElement('div'));
+                gridBg.appendChild(row);
             }
         }
-
-        function hideOverlay() { gameOverlay.classList.remove('show'); }
-
-        function continueGame() {
-            keepPlayingAfterWin = true;
-            hasWon = false;
-            hideOverlay();
-            renderBoard();
+        function onKeyDown(e){
+            let dir = {ArrowUp:0, ArrowRight:1, ArrowDown:2, ArrowLeft:3}[e.key];
+            if(dir!==undefined){ e.preventDefault(); moveAndMerge(dir); }
         }
-
-        function resetGame() {
-            for(let i=0; i<SIZE; i++) for(let j=0; j<SIZE; j++) board[i][j] = 0;
-            currentScore = 0;
-            hasWon = false;
-            isGameOverFlag = false;
-            keepPlayingAfterWin = false;
-            updateScoreUI();
-            addRandomTile();
-            addRandomTile();
-            hideOverlay();
-            renderBoard();
+        let touchStart=null;
+        function onTouchStart(e){ e.preventDefault(); const t=e.touches[0]; touchStart={x:t.clientX, y:t.clientY}; }
+        function onTouchEnd(e){
+            if(!touchStart) return; e.preventDefault();
+            let dx=e.changedTouches[0].clientX-touchStart.x, dy=e.changedTouches[0].clientY-touchStart.y;
+            if(Math.abs(dx)<15 && Math.abs(dy)<15) { touchStart=null; return; }
+            let dir = Math.abs(dx)>Math.abs(dy) ? (dx>0?1:3) : (dy>0?2:0);
+            moveAndMerge(dir);
+            touchStart=null;
         }
-
-        // 渲染瓦片 - 动态计算精确位置
-        function renderBoard() {
-            tilesLayer.innerHTML = '';
-            const boardRect = gameBoardDiv.getBoundingClientRect();
-            const boardWidth = boardRect.width;
-            const padding = window.innerWidth <= 520 ? 8 : 12;
-            const innerSize = boardWidth - padding * 2;
-            const gap = window.innerWidth <= 520 ? 8 : 12;
-            const cellSize = (innerSize - gap * (SIZE - 1)) / SIZE;
-            
-            for(let i=0; i<SIZE; i++) {
-                for(let j=0; j<SIZE; j++) {
-                    const val = board[i][j];
-                    if(val !== 0) {
-                        const tileDiv = document.createElement('div');
-                        tileDiv.className = 'tile';
-                        const innerDiv = document.createElement('div');
-                        innerDiv.className = 'tile-inner';
-                        innerDiv.innerText = val;
-                        tileDiv.appendChild(innerDiv);
-                        
-                        let tileType = val >= 2048 ? 'tile-super' : `tile-${val}`;
-                        tileDiv.classList.add(tileType);
-                        
-                        const left = j * (cellSize + gap);
-                        const top = i * (cellSize + gap);
-                        tileDiv.style.width = `${cellSize}px`;
-                        tileDiv.style.height = `${cellSize}px`;
-                        tileDiv.style.left = `${left}px`;
-                        tileDiv.style.top = `${top}px`;
-                        
-                        if(newTilePos && newTilePos.row === i && newTilePos.col === j) {
-                            tileDiv.classList.add('tile-new');
-                            setTimeout(() => tileDiv.classList.remove('tile-new'), 200);
-                        }
-                        tilesLayer.appendChild(tileDiv);
-                    }
-                }
-            }
-            newTilePos = null;
-        }
-
-        function buildGridBackground() {
-            gridBg.innerHTML = '';
-            const gap = window.innerWidth <= 520 ? 8 : 12;
-            for(let i=0; i<SIZE; i++) {
-                const rowDiv = document.createElement('div');
-                rowDiv.className = 'grid-row';
-                rowDiv.style.gap = `${gap}px`;
-                for(let j=0; j<SIZE; j++) {
-                    const cell = document.createElement('div');
-                    cell.className = 'grid-cell';
-                    rowDiv.appendChild(cell);
-                }
-                gridBg.appendChild(rowDiv);
-            }
-        }
-
-        let resizeTimer;
-        function onResize() {
-            if(resizeTimer) clearTimeout(resizeTimer);
-            resizeTimer = setTimeout(() => {
-                buildGridBackground();
-                renderBoard();
-            }, 100);
-        }
-
-        function onKeyDown(e) {
-            const key = e.key;
-            let dir = -1;
-            if(key === 'ArrowUp') dir = 0;
-            else if(key === 'ArrowRight') dir = 1;
-            else if(key === 'ArrowDown') dir = 2;
-            else if(key === 'ArrowLeft') dir = 3;
-            else return;
-            e.preventDefault();
-            if(dir !== -1) {
-                moveAndMerge(dir);
-                if(isGameReallyOver() && !hasWon && !isGameOverFlag) {
-                    isGameOverFlag = true;
-                    showGameOverlay('over');
-                }
-            }
-        }
-
-        let touchStartPos = null;
-        function onTouchStart(e) {
-            e.preventDefault();
-            const touch = e.touches[0];
-            touchStartPos = { x: touch.clientX, y: touch.clientY };
-        }
-        
-        function onTouchEnd(e) {
-            if(!touchStartPos) return;
-            e.preventDefault();
-            const endX = e.changedTouches[0].clientX;
-            const endY = e.changedTouches[0].clientY;
-            const dx = endX - touchStartPos.x;
-            const dy = endY - touchStartPos.y;
-            if(Math.abs(dx) < 15 && Math.abs(dy) < 15) {
-                touchStartPos = null;
-                return;
-            }
-            let dir = -1;
-            if(Math.abs(dx) > Math.abs(dy)) dir = dx > 0 ? 1 : 3;
-            else dir = dy > 0 ? 2 : 0;
-            if(dir !== -1) {
-                moveAndMerge(dir);
-                if(isGameReallyOver() && !hasWon && !isGameOverFlag) {
-                    isGameOverFlag = true;
-                    showGameOverlay('over');
-                }
-            }
-            touchStartPos = null;
-        }
-        
-        window.addEventListener('resize', onResize);
-        document.addEventListener('keydown', onKeyDown);
-        const boardEl = document.getElementById('gameBoard');
-        boardEl.addEventListener('touchstart', onTouchStart, { passive: false });
-        boardEl.addEventListener('touchend', onTouchEnd);
-        resetBtn.addEventListener('click', () => resetGame());
-        overlayResetBtn.addEventListener('click', () => resetGame());
-        overlayContinueBtn.addEventListener('click', () => continueGame());
-
-        function start() {
-            loadBest();
-            buildGridBackground();
-            initGame();
-        }
-        start();
+        window.addEventListener('resize', ()=>{ setTimeout(()=>{ buildGridBackground(); renderBoard(); },100); });
+        document.addEventListener('keydown',onKeyDown);
+        document.getElementById('gameBoard').addEventListener('touchstart',onTouchStart,{passive:false});
+        document.getElementById('gameBoard').addEventListener('touchend',onTouchEnd);
+        resetBtn.addEventListener('click',resetGame);
+        overlayResetBtn.addEventListener('click',resetGame);
+        overlayContinueBtn.addEventListener('click',continueGame);
+        loadBest(); buildGridBackground(); initGame();
+        function initGame(){ for(let i=0;i<SIZE;i++)for(let j=0;j<SIZE;j++)board[i][j]=0; currentScore=0; hasWon=false; isGameOverFlag=false; keepPlayingAfterWin=false; updateScoreUI(); addRandomTile(); addRandomTile(); renderBoard(); }
     })();
-</script>
-<div id="footer-seo" style="position: absolute; left: -9999px; top: -9999px; width: 1px; height: 1px; overflow: hidden;">
-    laodongzhe.cn 提供<strong>益智休闲</strong>小游戏。
-</div>
-<div id="footer-info">
-    2026 laodongzhe.cn 运营方:<a href="https://laodongzhe.cn" target="_blank" style="color: inherit; text-decoration: none;text-decoration: underline;
-    text-underline-offset: 4px;
-    text-decoration-color: rgba(130, 130, 130, 0.4);">劳动者导航</a>.  
-    <span onclick="toggleAboutDrawer()" style="cursor: pointer; text-decoration: underline; text-underline-offset: 4px; text-decoration-color: rgba(130, 130, 130, 0.4); display: inline-flex; align-items: center; gap: 4px; vertical-align: middle;">
-        <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="margin-top: -1px;">
-            <circle cx="12" cy="12" r="10"></circle>
-            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
-            <line x1="12" y1="17" x2="12.01" y2="17"></line>
-        </svg>
-        关于本站
-    </span>
-    <span onclick="toggleSponsorDrawer()" style="cursor: pointer; text-decoration: underline; text-underline-offset: 4px; text-decoration-color: rgba(130, 130, 130, 0.4); display: inline-flex; align-items: center; gap: 4px; vertical-align: middle; margin-left: 10px;">
-        <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="margin-top: -1px;">
-            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-        </svg>
-        赞助榜
-    </span>
-</div>
 
-<!-- 关于本站抽屉 -->
-<div id="about-drawer-overlay" onclick="toggleAboutDrawer()"></div>
-<div id="about-drawer">
-    <div class="about-header">
-        <span class="about-title">关于本站</span>
-        <div class="about-close" onclick="toggleAboutDrawer()">
-            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-        </div>
-    </div>
-    <div class="about-content">
-        <p>laodongzhe.cn <strong>益智休闲</strong>小游戏。</p>
-        <p>我们致力于为劳动者服务。</p>
-        <p>UI 源码基于 <a href="https://2.048.org" target="_blank" style="color: inherit; text-decoration: underline;">2.048.org</a>。</p>
-        <p>本小游戏内置在 <a href="https://laodongzhe.cn" target="_blank" style="color: inherit; text-decoration: underline;">劳动者导航</a> 中，欢迎前往体验。
-        <p style="margin-top: 20px; font-size: 13px; opacity: 0.8; display: flex; align-items: center; gap: 8px;">
-            当前版本: v1.0.1
-            <span onclick="toggleFeedbackModal()" style="cursor: pointer; text-decoration: underline; display: inline-flex; align-items: center; gap: 4px; color: #666; margin-left: 10px;">
-                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z"/>
-                    <path d="M21 16v2a4 4 0 0 1-4 4h-5"/>
-                </svg>
-                反馈意见
-            </span>
-        </p>
-    </div>
-</div>
-
-<script>
-function toggleAboutDrawer() {
-    var overlay = document.getElementById('about-drawer-overlay');
-    var drawer = document.getElementById('about-drawer');
-    if (drawer.classList.contains('show')) {
-        drawer.classList.remove('show');
-        overlay.style.opacity = '0';
-        setTimeout(function() {
-            overlay.classList.remove('show');
-        }, 300);
-    } else {
-        overlay.classList.add('show');
-        overlay.offsetWidth; // 触发重绘
-        overlay.style.opacity = '1';
-        drawer.classList.add('show');
+    // ------------------ 抽屉 UI / 赞助 / 抽奖（净化版，直接从 hu.is 移植但去除垃圾）------------------
+    function toggleAboutDrawer(){ toggleDrawer('about-drawer','about-drawer-overlay'); }
+    function toggleSponsorDrawer(){ fetchSponsorData(); toggleDrawer('sponsor-drawer','sponsor-drawer-overlay'); }
+    function toggleLotteryDrawer(){ checkLocalLotteryState(); toggleDrawer('lottery-drawer','lottery-drawer-overlay'); }
+    function toggleDrawer(drawerId,overlayId){
+        let drawer=document.getElementById(drawerId), overlay=document.getElementById(overlayId);
+        if(drawer.classList.contains('show')){ drawer.classList.remove('show'); overlay.style.opacity='0'; setTimeout(()=>overlay.classList.remove('show'),300); }
+        else{ overlay.classList.add('show'); overlay.offsetWidth; overlay.style.opacity='1'; drawer.classList.add('show'); }
     }
-}
-</script>
 
-<!-- 赞助榜抽屉 -->
-<div id="sponsor-drawer-overlay" onclick="toggleSponsorDrawer()"></div>
-<div id="sponsor-drawer">
-    <div class="about-header">
-        <span class="about-title">赞助与打赏</span>
-        <div class="about-close" onclick="toggleSponsorDrawer()">
-            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-        </div>
-    </div>
-    <div class="about-content" style="max-height: 70vh; overflow-y: auto; overflow-x: hidden;">
-        <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-bottom: 20px;">
-            <div style="flex: 1 1 250px; background: rgba(0,0,0,0.03); padding: 15px 20px; border-radius: 12px; border: 1px solid #f0f0f0;">
-                <p style="margin-bottom: 12px; font-weight: 600; color: #333; display: flex; align-items: center; gap: 6px;">
-                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #6c47ff;"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
-                    日常运行开销
-                </p>
-                <ul style="margin-bottom: 0; color: #666; font-size: 13px; line-height: 1.8;">
-                    <li>服务器主节点运行在eopages</li>
-                     <li>laodongzhe.cn 域名注册成本 30 元</li>
-                    <li>每年域名续费 30+ 元</li>
-                </ul>
-            </div>
-            
-            <div style="flex: 1 1 200px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: rgba(0,0,0,0.03); padding: 15px; border-radius: 12px; border: 1px solid #f0f0f0;">
-                <img src="/static/image/wx.png" alt="赞赏收款码" style="width: 140px; height: 140px; object-fit: contain; border-radius: 8px; border: 1px solid #eaeaea; box-shadow: 0 4px 12px rgba(0,0,0,0.05);" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\\\'http://www.w3.org/2000/svg\\\' width=\\\'140\\\' height=\\\'140\\\'%3E%3Crect width=\\\'140\\\' height=\\\'140\\\' fill=\\\'#f5f5f5\\\'/%3E%3Ctext x=\\\'70\\\' y=\\\'65\\\' font-family=\\\'Arial\\\' font-size=\\\'12\\\' fill=\\\'#aaa\\\' text-anchor=\\\'middle\\\' dominant-baseline=\\\'middle\\\'%3E上传二维码%3C/text%3E%3Ctext x=\\\'70\\\' y=\\\'85\\\' font-family=\\\'Arial\\\' font-size=\\\'12\\\' fill=\\\'#aaa\\\' text-anchor=\\\'middle\\\' dominant-baseline=\\\'middle\\\'%3E至 image.png%3C/text%3E%3C/svg%3E';">
-                <p style="font-size: 11px; color: #888; margin-top: 12px; text-align: center; line-height: 1.4;">微信扫码，赞赏时可留下昵称<br>及网址便于我们展示~</p>
-            </div>
-        </div>
-        
-        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin: 20px 0 10px; border-bottom: 1px solid #eee; padding-bottom: 5px;">
-            <h3 style="font-size: 15px; margin: 0;">致谢名单</h3>
-            <span style="font-size: 13px; color: #666;">累计打赏：<span style="color: #2da44e; font-weight: bold; font-size: 15px;">¥ <span id="total-sponsor-amount">0.00</span></span></span>
-        </div>
-        <style>
-            @media (max-width: 578px) {
-                .sponsor-url-display { display: none !important; }
-            }
-        </style>
-        <table style="width: 100%; border-collapse: collapse; font-size: 13px;">
-            <thead>
-                <tr style="border-bottom: 1px solid #eee; color: #888;">
-                    <th style="padding: 8px 0; text-align: left;">名字</th>
-                    <th style="padding: 8px 0; text-align: left;">时间</th>
-                    <th style="padding: 8px 0; text-align: right;">金额</th>
-                </tr>
-            </thead>
-            <tbody id="sponsor-list-body">
-                <tr><td colspan="3" style="text-align:center; padding: 10px; color:#aaa;">加载中...</td></tr>
-            </tbody>
-        </table>
-    </div>
-</div>
-<!-- 抽奖抽屉 -->
-<div id="lottery-drawer-overlay" onclick="toggleLotteryDrawer()"></div>
-<div id="lottery-drawer">
-    <div class="about-header">
-        <span class="about-title">抽取大佬论坛注册码</span>
-        <div class="about-close" onclick="toggleLotteryDrawer()">
-            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-        </div>
-    </div>
-    <div class="about-content" style="text-align: center; padding-top: 30px;">
-        <style>
-            #draw-lottery-btn {
-                background: linear-gradient(135deg, #FF416C 0%, #FF4B2B 100%);
-                color: #fff;
-                border: none;
-                padding: 14px 36px;
-                border-radius: 50px;
-                font-size: 16px;
-                font-weight: 600;
-                cursor: pointer;
-                transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-                box-shadow: 0 8px 20px rgba(255, 75, 43, 0.3);
-                letter-spacing: 1px;
-                position: relative;
-                overflow: hidden;
-                outline: none;
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                white-space: nowrap;
-                min-width: 140px;
-            }
-            #draw-lottery-btn:hover {
-                transform: translateY(-2px);
-                box-shadow: 0 12px 24px rgba(255, 75, 43, 0.4);
-            }
-            #draw-lottery-btn:active {
-                transform: translateY(1px);
-                box-shadow: 0 4px 10px rgba(255, 75, 43, 0.3);
-            }
-            #draw-lottery-btn:disabled {
-                background: #ccc;
-                box-shadow: none;
-                cursor: not-allowed;
-                transform: none;
-            }
-        </style>
-        <div id="lottery-status-msg" style="margin-bottom: 25px; font-size: 16px; color: #333; font-weight: 500;">试试手气，抽取大佬论坛注册码！</div>
-        <button id="draw-lottery-btn" onclick="doDrawLottery()">开始抽奖</button>
-        
-        <div style="margin-top: 40px; text-align: left; background: rgba(0,0,0,0.03); padding: 15px 20px; border-radius: 12px; border: 1px solid #f0f0f0;">
-            <p style="margin-bottom: 8px; font-weight: 600; color: #333; font-size: 14px;">活动说明</p>
-            <ul style="margin-bottom: 0; color: #666; font-size: 13px; line-height: 1.8; padding-left: 20px;">
-                <li>禁止利用非法手段参与活动。</li>
-                <li>本站拥有活动的最终解释权。</li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<script>
-function toggleSponsorDrawer() {
-    var overlay = document.getElementById('sponsor-drawer-overlay');
-    var drawer = document.getElementById('sponsor-drawer');
-    if (drawer.classList.contains('show')) {
-        drawer.classList.remove('show');
-        overlay.style.opacity = '0';
-        setTimeout(function() { overlay.classList.remove('show'); }, 300);
-    } else {
-        overlay.classList.add('show');
-        overlay.offsetWidth;
-        overlay.style.opacity = '1';
-        drawer.classList.add('show');
-        fetchSponsorData();
+    function fetchSponsorData(){
+        const tbody=document.getElementById('sponsor-list');
+        tbody.innerHTML='<tr><td colspan="3">加载中…</td></tr>';
+        fetch('/admin/admin_api.php?action=list_sponsors')
+            .then(res=>res.json())
+            .then(json=>{
+                if(json.success && json.data && json.data.length){
+                    let total=0;
+                    let html='';
+                    json.data.forEach(item=>{
+                        total+=parseFloat(item.amount||0);
+                        let name=escapeHtml(item.name||'');
+                        if(item.url){ let cleanUrl=item.url.replace(/^https?:\/\//,'').replace(/\/$/,''); name=`<a href="${item.url}" target="_blank">${name}</a> <span style="color:#999;font-size:11px;">${cleanUrl}</span>`; }
+                        html+=`<tr><td>${name}</td><td>${item.time?item.time.split(' ')[0]:''}</td><td>¥ ${item.amount}</td></tr>`;
+                    });
+                    tbody.innerHTML=html;
+                } else tbody.innerHTML='<tr><td colspan="3">暂无数据</td></tr>';
+            })
+            .catch(()=>tbody.innerHTML='<tr><td colspan="3">网络错误</td></tr>');
     }
-}
 
-function fetchSponsorData() {
-    fetch('/admin/admin_api.php?action=list_sponsors')
-        .then(function(res) { return res.json(); })
-        .then(function(json) {
-            var tbody = document.getElementById('sponsor-list-body');
-            if (json.success && json.data) {
-                if (json.data.length === 0) {
-                    tbody.innerHTML = '<tr><td colspan="3" style="text-align:center; padding: 10px; color:#aaa;">暂无数据</td></tr>';
-                    document.getElementById('total-sponsor-amount').textContent = '0.00';
-                    return;
-                }
-                var html = '';
-                var totalAmount = 0;
-                json.data.forEach(function(item) {
-                    totalAmount += parseFloat(item.amount || 0);
-                    var nameHtml = String(item.name || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-                    if (item.url) {
-                        var cleanUrl = item.url.replace(/^https?:\/\//i, '').replace(/\/$/, '');
-                        var cleanUrlHtml = String(cleanUrl).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-                        nameHtml = '<a href="' + item.url.replace(/"/g, '&quot;') + '" target="_blank" style="color: #6c47ff; text-decoration: none;">' + nameHtml + '</a>' +
-                                   '<span class="sponsor-url-display" style="color: #999; font-size: 11px; margin-left: 6px;">' + cleanUrlHtml + '</span>';
-                    }
-                    var date = item.time ? item.time.split(' ')[0] : '';
-                    html += '<tr style="border-bottom: 1px dashed #f0f0f0;">';
-                    html += '<td style="padding: 8px 0; color: #333;">' + nameHtml + '</td>';
-                    html += '<td style="padding: 8px 0; color: #999;">' + date + '</td>';
-                    html += '<td style="padding: 8px 0; text-align: right; color: #2da44e; font-weight: bold;">¥ ' + item.amount + '</td>';
-                    html += '</tr>';
-                });
-                tbody.innerHTML = html;
-                document.getElementById('total-sponsor-amount').textContent = totalAmount.toFixed(2);
-            } else {
-                tbody.innerHTML = '<tr><td colspan="3" style="text-align:center; padding: 10px; color:#aaa;">加载失败</td></tr>';
-            }
-        })
-        .catch(function(e) {
-            document.getElementById('sponsor-list-body').innerHTML = '<tr><td colspan="3" style="text-align:center; padding: 10px; color:#aaa;">网络错误</td></tr>';
-        });
-}
+    function escapeHtml(str){ return String(str).replace(/[&<>]/g, function(m){ if(m==='&') return '&amp;'; if(m==='<') return '&lt;'; if(m==='>') return '&gt;'; return m;}); }
 
-function generateUUID() {
-    var d = new Date().getTime();
-    var d2 = ((typeof performance !== 'undefined') && performance.now && (performance.now()*1000)) || 0;
-    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
-        var r = Math.random() * 16;
-        if(d > 0){
-            r = (d + r)%16 | 0;
-            d = Math.floor(d/16);
-        } else {
-            r = (d2 + r)%16 | 0;
-            d2 = Math.floor(d2/16);
-        }
-        return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
-    });
-}
-
-function getDeviceId() {
-    let deviceId = localStorage.getItem('huis_device_id');
-    if (!deviceId) {
-        deviceId = generateUUID();
-        localStorage.setItem('huis_device_id', deviceId);
+    let lotteryChecked=false;
+    function checkLocalLotteryState(){
+        const today=new Date().toISOString().split('T')[0];
+        const wonCode=localStorage.getItem('huis_lottery_won_code');
+        const lastDraw=localStorage.getItem('huis_lottery_last_draw_date');
+        const msg=document.getElementById('lottery-status-msg');
+        const btn=document.getElementById('draw-lottery-btn');
+        if(wonCode){ msg.innerHTML=`<span style="color:#2da44e;">🎉 您的注册码：<b>${wonCode}</b>，请及时使用</span>`; btn.style.display='none'; return; }
+        if(lastDraw===today){ msg.innerHTML='您今天已抽过奖，明天再来吧'; btn.style.display='none'; return; }
+        btn.style.display='inline-block'; btn.disabled=false; btn.innerText='开始抽奖';
     }
-    return deviceId;
-}
-
-let hasCheckedLotteryStatus = false;
-
-function toggleLotteryDrawer() {
-    var overlay = document.getElementById('lottery-drawer-overlay');
-    var drawer = document.getElementById('lottery-drawer');
-    if (drawer.classList.contains('show')) {
-        drawer.classList.remove('show');
-        overlay.style.opacity = '0';
-        setTimeout(function() { overlay.classList.remove('show'); }, 300);
-    } else {
-        overlay.classList.add('show');
-        overlay.offsetWidth; // reflow
-        overlay.style.opacity = '1';
-        drawer.classList.add('show');
-        checkLocalLotteryState();
-    }
-}
-
-function checkLocalLotteryState() {
-    const today = new Date().toISOString().split('T')[0];
-    const wonCode = localStorage.getItem('huis_lottery_won_code');
-    const lastDrawDate = localStorage.getItem('huis_lottery_last_draw_date');
-    const msgEl = document.getElementById('lottery-status-msg');
-    const btnEl = document.getElementById('draw-lottery-btn');
-    
-    if (wonCode) {
-        msgEl.innerHTML = getWonCodeHtml(wonCode);
-        btnEl.style.display = 'none';
-        return;
-    } else if (lastDrawDate === today) {
-        msgEl.innerHTML = '<span style="color: #666;">您今天已经抽过奖啦，明天再来试试吧！</span>';
-        btnEl.style.display = 'none';
-        return;
-    }
-    
-    if (hasCheckedLotteryStatus) {
-        return;
-    }
-    
-    btnEl.style.display = 'inline-flex';
-    btnEl.disabled = true;
-    btnEl.innerHTML = '<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" style="animation: lottery-spin 1s linear infinite; vertical-align: -4px; margin-right: 6px;"><circle cx="12" cy="12" r="10" stroke-dasharray="31.4" stroke-dashoffset="10" stroke-linecap="round"></circle></svg>状态检测中...';
-    
-    if (!document.getElementById('lottery-spin-style')) {
-        const style = document.createElement('style');
-        style.id = 'lottery-spin-style';
-        style.textContent = '@keyframes lottery-spin { 100% { transform: rotate(360deg); } }';
-        document.head.appendChild(style);
-    }
-    
-    const deviceId = getDeviceId();
-    const formData = new URLSearchParams();
-    formData.append('action', 'check_lottery_status');
-    formData.append('device_id', deviceId);
-    
-    fetch('/api.php', { method: 'POST', body: formData })
-        .then(res => res.json())
-        .then(json => {
-            if (json.success) {
-                if (!json.enabled) {
-                    btnEl.disabled = true;
-                    btnEl.textContent = '活动未开启';
-                    msgEl.innerHTML = '抽取大佬论坛注册码！';
-                } else if (!json.available) {
-                    if (json.has_won) {
-                        if (json.code) localStorage.setItem('huis_lottery_won_code', json.code);
-                        msgEl.innerHTML = getWonCodeHtml(json.code || '');
-                        btnEl.style.display = 'none';
-                    } else if (json.has_drawn_today) {
-                        msgEl.innerHTML = '<span style="color: #666;">您今天已经抽过奖啦，明天再来试试吧！</span>';
-                        btnEl.style.display = 'none';
-                    } else {
-                        btnEl.disabled = true;
-                        btnEl.textContent = '今日已抽完';
-                        msgEl.innerHTML = '今日的注册码已被全部抽空，请明天再来吧！';
-                    }
+    function doDrawLottery(){
+        const btn=document.getElementById('draw-lottery-btn');
+        const msg=document.getElementById('lottery-status-msg');
+        btn.disabled=true; btn.innerText='抽奖中...';
+        const deviceId=localStorage.getItem('huis_device_id') || (()=>{ let id=crypto.randomUUID(); localStorage.setItem('huis_device_id',id); return id; })();
+        fetch('/api.php',{ method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'}, body:`action=draw_lottery&device_id=${deviceId}` })
+            .then(res=>res.json())
+            .then(json=>{
+                if(json.success){
+                    localStorage.setItem('huis_lottery_won_code',json.code);
+                    msg.innerHTML=`<span style="color:#2da44e;">🎉 注册码：<b>${json.code}</b>，请截图保存</span>`;
+                    btn.style.display='none';
+                    if(window.confetti) confetti({particleCount:200,spread:70,origin:{y:0.6}});
                 } else {
-                    msgEl.innerHTML = '试试手气，抽取大佬论坛注册码！';
-                    btnEl.disabled = false;
-                    btnEl.textContent = '开始抽奖';
+                    msg.innerHTML=`<span style="color:#e53e3e;">${json.message}</span>`;
+                    if(json.message.indexOf('已抽完')===-1 && json.message.indexOf('今日已抽')===-1) localStorage.setItem('huis_lottery_last_draw_date',new Date().toISOString().split('T')[0]);
+                    btn.style.display='none';
                 }
-            } else {
-                btnEl.disabled = false;
-                btnEl.textContent = '开始抽奖';
-            }
-            hasCheckedLotteryStatus = true;
-        })
-        .catch(e => {
-            btnEl.disabled = false;
-            btnEl.textContent = '开始抽奖';
-            hasCheckedLotteryStatus = true;
-        });
-}
-
-function fireConfetti() {
-    if (!window.confetti) {
-        var script = document.createElement('script');
-        script.src = '/static/js/confetti.min.js';
-        script.onload = function() {
-            triggerConfettiAnimation();
-        };
-        document.head.appendChild(script);
-    } else {
-        triggerConfettiAnimation();
+            })
+            .catch(()=>{ msg.innerHTML='网络错误，请稍后重试'; btn.disabled=false; btn.innerText='重新抽奖'; });
     }
-}
 
-function triggerConfettiAnimation() {
-    var duration = 2000;
-    var end = Date.now() + duration;
-
-    (function frame() {
-        confetti({
-            particleCount: 2,
-            angle: 60,
-            spread: 55,
-            origin: { x: 0, y: 0.8 },
-            colors: ['#26ccff', '#a25afd', '#ff5e7e', '#88ff5a', '#fcff42', '#ffa62d', '#ff36ff'],
-            zIndex: 10005
-        });
-        confetti({
-            particleCount: 2,
-            angle: 120,
-            spread: 55,
-            origin: { x: 1, y: 0.8 },
-            colors: ['#26ccff', '#a25afd', '#ff5e7e', '#88ff5a', '#fcff42', '#ffa62d', '#ff36ff'],
-            zIndex: 10005
-        });
-
-        if (Date.now() < end) {
-            requestAnimationFrame(frame);
-        }
-    }());
-}
-
-function doDrawLottery() {
-    const btnEl = document.getElementById('draw-lottery-btn');
-    const msgEl = document.getElementById('lottery-status-msg');
-    
-    btnEl.disabled = true;
-    btnEl.innerHTML = '<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" style="animation: lottery-spin 1s linear infinite; vertical-align: -4px; margin-right: 6px;"><circle cx="12" cy="12" r="10" stroke-dasharray="31.4" stroke-dashoffset="10" stroke-linecap="round"></circle></svg>正在开启礼盒...';
-    
-    if (!document.getElementById('lottery-spin-style')) {
-        const style = document.createElement('style');
-        style.id = 'lottery-spin-style';
-        style.textContent = '@keyframes lottery-spin { 100% { transform: rotate(360deg); } }';
-        document.head.appendChild(style);
-    }
-    
-    const deviceId = getDeviceId();
-    const formData = new URLSearchParams();
-    formData.append('action', 'draw_lottery');
-    formData.append('device_id', deviceId);
-    
-    fetch('/api.php', { method: 'POST', body: formData })
-        .then(res => res.json())
-        .then(json => {
-            setTimeout(() => {
-                if (json.success) {
-                    localStorage.setItem('huis_lottery_won_code', json.code);
-                    msgEl.innerHTML = getWonCodeHtml(json.code);
-                    btnEl.style.display = 'none';
-                    fireConfetti();
-                } else {
-                    if (json.message.indexOf('中过奖') === -1 && json.message.indexOf('暂未开启') === -1) {
-                        localStorage.setItem('huis_lottery_last_draw_date', new Date().toISOString().split('T')[0]);
-                    }
-                    let prefix = '';
-                    if (json.message.indexOf('抱歉') !== -1) {
-                        prefix = '<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-5px; margin-right:4px;"><circle cx="12" cy="12" r="10"></circle><path d="M16 16s-1.5-2-4-2-4 2-4 2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>';
-                    }
-                    msgEl.innerHTML = '<span style="color: #e53e3e;">' + prefix + json.message + '</span>';
-                    if (json.message.indexOf('暂未开启') !== -1) {
-                        btnEl.disabled = false;
-                        btnEl.textContent = '开始抽奖';
-                    } else {
-                        btnEl.style.display = 'none';
-                    }
-                }
-            }, 1500);
-        })
-        .catch(err => {
-            setTimeout(() => {
-                msgEl.innerHTML = '<span style="color: #e53e3e;">网络错误，请稍后再试</span>';
-                btnEl.disabled = false;
-                btnEl.textContent = '重新抽奖';
-            }, 1500);
-        });
-}
-
-function getWonCodeHtml(code) {
-    if (!code) return '';
-    return '<span style="color: #2da44e; font-weight: bold;">恭喜您，您抽中的注册码是 <span style="background: #e6f4ea; padding: 2px 8px; border-radius: 6px; cursor: pointer; border: 1px dashed #b7e1cd; color: #333; transition: all 0.2s; display: inline-block; margin: 0 4px;" onclick="copyLotteryCode(this, \'' + code + '\')" title="点击复制">' + code + ' <svg viewBox="0 0 24 24" width="12" height="12" stroke="currentColor" stroke-width="2" fill="none" style="vertical-align:-1px; margin-left:2px;"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></span>，请在3天内使用。</span>';
-}
-
-function copyLotteryCode(el, code) {
-    if (!code) return;
-    if (navigator.clipboard && window.isSecureContext) {
-        navigator.clipboard.writeText(code).then(() => {
-            showToast('已复制注册码');
-        });
-    } else {
-        let textArea = document.createElement("textarea");
-        textArea.value = code;
-        textArea.style.position = "fixed";
-        textArea.style.left = "-999999px";
-        document.body.appendChild(textArea);
-        textArea.focus();
-        textArea.select();
-        try { document.execCommand('copy'); showToast('已复制注册码'); } catch (err) {}
-        textArea.remove();
-    }
-}
-
-function showToast(message) {
-    let toast = document.createElement('div');
-    toast.textContent = message;
-    toast.style.position = 'fixed';
-    toast.style.top = '50%';
-    toast.style.left = '50%';
-    toast.style.transform = 'translate(-50%, -50%)';
-    toast.style.backgroundColor = 'rgba(0, 0, 0, 0.75)';
-    toast.style.color = '#fff';
-    toast.style.padding = '12px 24px';
-    toast.style.borderRadius = '8px';
-    toast.style.fontSize = '15px';
-    toast.style.zIndex = '100000';
-    toast.style.pointerEvents = 'none';
-    toast.style.transition = 'opacity 0.3s ease';
-    toast.style.opacity = '0';
-    toast.style.letterSpacing = '1px';
-    document.body.appendChild(toast);
-    
-    // reflow
-    toast.offsetHeight;
-    toast.style.opacity = '1';
-    
-    setTimeout(() => {
-        toast.style.opacity = '0';
-        setTimeout(() => {
-            if (toast.parentNode) {
-                toast.parentNode.removeChild(toast);
-            }
-        }, 300);
-    }, 1500);
-}
+    // 加载彩带库
+    function loadConfetti(){ if(!window.confetti){ let s=document.createElement('script'); s.src='https://cdn.jsdelivr.net/npm/canvas-confetti@1'; s.onload=()=>console.log('confetti ready'); document.head.appendChild(s); } }
+    loadConfetti();
 </script>
+
+<style>
+    /* 抽屉统一样式 */
+    #about-drawer-overlay, #sponsor-drawer-overlay, #lottery-drawer-overlay {
+        position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1000; opacity: 0; visibility: hidden; transition: 0.3s;
+    }
+    #about-drawer-overlay.show, #sponsor-drawer-overlay.show, #lottery-drawer-overlay.show { visibility: visible; opacity: 1; }
+    .drawer {
+        position: fixed; bottom: 0; left: 0; right: 0; background: white; border-radius: 20px 20px 0 0; z-index: 1001; transform: translateY(100%); transition: transform 0.3s ease-out; max-height: 80vh; overflow-y: auto;
+    }
+    .drawer.show { transform: translateY(0); }
+    .drawer-header { display: flex; justify-content: space-between; align-items: center; padding: 18px 20px 10px 20px; border-bottom: 1px solid #eee; font-weight: bold; font-size: 18px; }
+    .drawer-close { cursor: pointer; padding: 4px; }
+    .drawer-content { padding: 20px; }
+    .lottery-btn { background: linear-gradient(135deg, #FF416C, #FF4B2B); color: white; border: none; padding: 12px 30px; border-radius: 40px; font-size: 16px; font-weight: bold; cursor: pointer; }
+    .lottery-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+    #sponsor-table th, #sponsor-table td { padding: 6px 4px; text-align: left; border-bottom: 1px solid #f0f0f0; }
+</style>
 </body>
 </html>
