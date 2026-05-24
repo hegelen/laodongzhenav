@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>2048 - 劳动者游戏箱</title>
+    <title>2048 - 劳动者休闲游戏</title>
     <style>
         /* ========== 2048 游戏核心样式 ========== */
         * {
@@ -23,6 +23,7 @@
             min-height: 100vh;
             margin: 0;
             padding: 20px;
+            flex-direction: column;
         }
 
         .game-wrapper {
@@ -257,6 +258,77 @@
             .tile-128 .tile-inner, .tile-256 .tile-inner, .tile-512 .tile-inner { font-size: 28px; }
             .tile-1024 .tile-inner, .tile-2048 .tile-inner { font-size: 22px; }
         }
+        
+        /* 底部信息栏样式 */
+        .footer-info {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 12px;
+            color: #6c7a89;
+        }
+        .footer-info a {
+            color: inherit;
+            text-decoration: none;
+        }
+        .footer-info .link {
+            cursor: pointer;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            vertical-align: middle;
+        }
+        
+        /* 关于本站抽屉 */
+        #about-drawer-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.3s;
+        }
+        #about-drawer-overlay.show {
+            visibility: visible;
+            opacity: 1;
+        }
+        .about-drawer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            border-radius: 20px 20px 0 0;
+            z-index: 1001;
+            transform: translateY(100%);
+            transition: transform 0.3s ease-out;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+        .about-drawer.show {
+            transform: translateY(0);
+        }
+        .drawer-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 20px 10px 20px;
+            border-bottom: 1px solid #eee;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .drawer-close {
+            cursor: pointer;
+            padding: 4px;
+        }
+        .drawer-content {
+            padding: 20px;
+        }
     </style>
 </head>
 <body>
@@ -288,88 +360,42 @@
     </div>
 </div>
 
-<!-- 底部信息栏：采用与 hu.is 相同的抽屉结构，无乱码 -->
-<div id="footer-info" style="text-align: center; margin-top: 30px; font-size: 12px; color: #6c7a89;">
-    2026 laodongzhe.cn 运营方:<a href="https://laodongzhe.cn" target="_blank" style="color: inherit; text-decoration: none; text-decoration: underline; text-underline-offset: 4px;">劳动者导航</a>.  
-    <span onclick="toggleAboutDrawer()" style="cursor: pointer; text-decoration: underline; text-underline-offset: 4px; display: inline-flex; align-items: center; gap: 4px; vertical-align: middle;">
-        <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+<!-- 底部信息栏：只保留运营方和关于本站 -->
+<div class="footer-info">
+    2026 laodongzhe.cn 运营方:<a href="https://laodongzhe.cn" target="_blank">劳动者导航</a>.  
+    <span class="link" onclick="toggleAboutDrawer()">
+        <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+        </svg>
         关于本站
-    </span>
-    <span onclick="toggleSponsorDrawer()" style="cursor: pointer; text-decoration: underline; text-underline-offset: 4px; display: inline-flex; align-items: center; gap: 4px; vertical-align: middle; margin-left: 10px;">
-        <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
-        赞助榜
-    </span>
-    <span onclick="toggleLotteryDrawer()" style="cursor: pointer; text-decoration: underline; text-underline-offset: 4px; display: inline-flex; align-items: center; gap: 4px; vertical-align: middle; margin-left: 10px;">
-        <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/><circle cx="12" cy="12" r="3"/></svg>
-        抽注册码
     </span>
 </div>
 
-<!-- 关于本站抽屉 (完全净化) -->
+<!-- 关于本站抽屉 -->
 <div id="about-drawer-overlay" onclick="toggleAboutDrawer()"></div>
-<div id="about-drawer" class="drawer">
+<div id="about-drawer" class="about-drawer">
     <div class="drawer-header">
         <span class="drawer-title">关于本站</span>
-        <div class="drawer-close" onclick="toggleAboutDrawer()"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></div>
+        <div class="drawer-close" onclick="toggleAboutDrawer()">
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </div>
     </div>
     <div class="drawer-content">
         <p>laodongzhe.cn <strong>益智休闲</strong>小游戏。</p>
-        <p>我们致力于为劳动者提供纯净的开源工具。</p>
-        <p>UI 源码基于 <a href="https://2.048.org" target="_blank" style="color: inherit;">2.048.org</a>。</p>
+        <p>我们致力于为劳动者提供纯净的益智休闲游戏。</p>
+        <p>游戏源码基于 <a href="https://2.048.org" target="_blank" style="color: inherit;">2.048.org</a>。</p>
         <p>本小游戏内置在 <a href="https://laodongzhe.cn" target="_blank" style="color: inherit;">劳动者导航</a>，欢迎体验。</p>
-        <p style="margin-top: 20px; font-size: 13px;">当前版本: v1.0.1 <span onclick="alert('可前往 laodongzhe.cn 提交意见')" style="cursor: pointer; text-decoration: underline; margin-left: 12px;">反馈意见</span></p>
-    </div>
-</div>
-
-<!-- 赞助榜抽屉 -->
-<div id="sponsor-drawer-overlay" onclick="toggleSponsorDrawer()"></div>
-<div id="sponsor-drawer" class="drawer">
-    <div class="drawer-header">
-        <span class="drawer-title">赞助与打赏</span>
-        <div class="drawer-close" onclick="toggleSponsorDrawer()"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></div>
-    </div>
-    <div class="drawer-content">
-        <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 20px;">
-            <div style="flex: 1; background: #f8f9fa; padding: 15px; border-radius: 12px;">
-                <p style="font-weight: 600;">日常运行开销</p>
-                <ul style="margin-top: 8px; padding-left: 20px; color: #555; font-size: 13px;">
-                    <li>服务器托管于 EdgeOne Pages</li>
-                    <li>laodongzhe.cn 域名年费 30 元</li>
-                </ul>
-            </div>
-            <div style="flex: 0 0 140px; text-align: center;">
-                <img src="/static/image/wx.png" alt="赞赏码" style="width: 120px; border-radius: 12px; border: 1px solid #ddd;" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'120\' height=\'120\'%3E%3Crect width=\'120\' height=\'120\' fill=\'%23eee\'/%3E%3Ctext x=\'60\' y=\'65\' font-size=\'12\' fill=\'%23999\' text-anchor=\'middle\'%3E%3E%3C/text%3E%3C/svg%3E'">
-                <p style="font-size: 11px; color: #888; margin-top: 8px;">微信赞赏 备注昵称+网址</p>
-            </div>
-        </div>
-        <div style="border-top: 1px solid #eee; padding-top: 12px;">
-            <p style="font-weight: 600;">致谢名单</p>
-            <table style="width: 100%; font-size: 13px; margin-top: 8px;" id="sponsor-table">
-                <thead><tr><th>名字</th><th>时间</th><th>金额</th></tr></thead>
-                <tbody id="sponsor-list"><tr><td colspan="3">加载中…</td></tr></tbody>
-            </table>
-        </div>
-    </div>
-</div>
-
-<!-- 抽奖抽屉 -->
-<div id="lottery-drawer-overlay" onclick="toggleLotteryDrawer()"></div>
-<div id="lottery-drawer" class="drawer">
-    <div class="drawer-header">
-        <span class="drawer-title">抽取大佬论坛注册码</span>
-        <div class="drawer-close" onclick="toggleLotteryDrawer()"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></div>
-    </div>
-    <div class="drawer-content" style="text-align: center;">
-        <div id="lottery-status-msg" style="margin-bottom: 20px;">试试手气，抽取大佬论坛注册码！</div>
-        <button id="draw-lottery-btn" class="lottery-btn" onclick="doDrawLottery()">开始抽奖</button>
-        <div style="margin-top: 30px; text-align: left; background: #f8f9fa; padding: 12px; border-radius: 12px; font-size: 12px;">
-            <p>活动说明：严禁非法手段参与，本站保留最终解释权。</p>
-        </div>
+        <p style="margin-top: 20px; font-size: 13px;">当前版本: v1.0.1 <span onclick="alert('可前往 www.laodongzhe.cn 提交意见')" style="cursor: pointer; text-decoration: underline; margin-left: 12px;">反馈意见</span></p>
     </div>
 </div>
 
 <script>
-    // ------------------ 2048 核心逻辑（保持原样）------------------
+    // ------------------ 2048 核心逻辑 ------------------
     (function(){
         const SIZE = 4;
         let board = Array(SIZE).fill().map(() => Array(SIZE).fill(0));
@@ -569,93 +595,20 @@
         function initGame(){ for(let i=0;i<SIZE;i++)for(let j=0;j<SIZE;j++)board[i][j]=0; currentScore=0; hasWon=false; isGameOverFlag=false; keepPlayingAfterWin=false; updateScoreUI(); addRandomTile(); addRandomTile(); renderBoard(); }
     })();
 
-    // ------------------ 抽屉 UI / 赞助 / 抽奖（净化版，直接从 hu.is 移植但去除垃圾）------------------
-    function toggleAboutDrawer(){ toggleDrawer('about-drawer','about-drawer-overlay'); }
-    function toggleSponsorDrawer(){ fetchSponsorData(); toggleDrawer('sponsor-drawer','sponsor-drawer-overlay'); }
-    function toggleLotteryDrawer(){ checkLocalLotteryState(); toggleDrawer('lottery-drawer','lottery-drawer-overlay'); }
-    function toggleDrawer(drawerId,overlayId){
-        let drawer=document.getElementById(drawerId), overlay=document.getElementById(overlayId);
-        if(drawer.classList.contains('show')){ drawer.classList.remove('show'); overlay.style.opacity='0'; setTimeout(()=>overlay.classList.remove('show'),300); }
-        else{ overlay.classList.add('show'); overlay.offsetWidth; overlay.style.opacity='1'; drawer.classList.add('show'); }
+    // 关于本站抽屉控制
+    function toggleAboutDrawer() {
+        var overlay = document.getElementById('about-drawer-overlay');
+        var drawer = document.getElementById('about-drawer');
+        if (drawer.classList.contains('show')) {
+            drawer.classList.remove('show');
+            overlay.style.opacity = '0';
+            setTimeout(function() { overlay.classList.remove('show'); }, 300);
+        } else {
+            overlay.classList.add('show');
+            overlay.style.opacity = '1';
+            drawer.classList.add('show');
+        }
     }
-
-    function fetchSponsorData(){
-        const tbody=document.getElementById('sponsor-list');
-        tbody.innerHTML='<tr><td colspan="3">加载中…</td></tr>';
-        fetch('/admin/admin_api.php?action=list_sponsors')
-            .then(res=>res.json())
-            .then(json=>{
-                if(json.success && json.data && json.data.length){
-                    let total=0;
-                    let html='';
-                    json.data.forEach(item=>{
-                        total+=parseFloat(item.amount||0);
-                        let name=escapeHtml(item.name||'');
-                        if(item.url){ let cleanUrl=item.url.replace(/^https?:\/\//,'').replace(/\/$/,''); name=`<a href="${item.url}" target="_blank">${name}</a> <span style="color:#999;font-size:11px;">${cleanUrl}</span>`; }
-                        html+=`<tr><td>${name}</td><td>${item.time?item.time.split(' ')[0]:''}</td><td>¥ ${item.amount}</td></tr>`;
-                    });
-                    tbody.innerHTML=html;
-                } else tbody.innerHTML='<tr><td colspan="3">暂无数据</td></tr>';
-            })
-            .catch(()=>tbody.innerHTML='<tr><td colspan="3">网络错误</td></tr>');
-    }
-
-    function escapeHtml(str){ return String(str).replace(/[&<>]/g, function(m){ if(m==='&') return '&amp;'; if(m==='<') return '&lt;'; if(m==='>') return '&gt;'; return m;}); }
-
-    let lotteryChecked=false;
-    function checkLocalLotteryState(){
-        const today=new Date().toISOString().split('T')[0];
-        const wonCode=localStorage.getItem('huis_lottery_won_code');
-        const lastDraw=localStorage.getItem('huis_lottery_last_draw_date');
-        const msg=document.getElementById('lottery-status-msg');
-        const btn=document.getElementById('draw-lottery-btn');
-        if(wonCode){ msg.innerHTML=`<span style="color:#2da44e;">🎉 您的注册码：<b>${wonCode}</b>，请及时使用</span>`; btn.style.display='none'; return; }
-        if(lastDraw===today){ msg.innerHTML='您今天已抽过奖，明天再来吧'; btn.style.display='none'; return; }
-        btn.style.display='inline-block'; btn.disabled=false; btn.innerText='开始抽奖';
-    }
-    function doDrawLottery(){
-        const btn=document.getElementById('draw-lottery-btn');
-        const msg=document.getElementById('lottery-status-msg');
-        btn.disabled=true; btn.innerText='抽奖中...';
-        const deviceId=localStorage.getItem('huis_device_id') || (()=>{ let id=crypto.randomUUID(); localStorage.setItem('huis_device_id',id); return id; })();
-        fetch('/api.php',{ method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'}, body:`action=draw_lottery&device_id=${deviceId}` })
-            .then(res=>res.json())
-            .then(json=>{
-                if(json.success){
-                    localStorage.setItem('huis_lottery_won_code',json.code);
-                    msg.innerHTML=`<span style="color:#2da44e;">🎉 注册码：<b>${json.code}</b>，请截图保存</span>`;
-                    btn.style.display='none';
-                    if(window.confetti) confetti({particleCount:200,spread:70,origin:{y:0.6}});
-                } else {
-                    msg.innerHTML=`<span style="color:#e53e3e;">${json.message}</span>`;
-                    if(json.message.indexOf('已抽完')===-1 && json.message.indexOf('今日已抽')===-1) localStorage.setItem('huis_lottery_last_draw_date',new Date().toISOString().split('T')[0]);
-                    btn.style.display='none';
-                }
-            })
-            .catch(()=>{ msg.innerHTML='网络错误，请稍后重试'; btn.disabled=false; btn.innerText='重新抽奖'; });
-    }
-
-    // 加载彩带库
-    function loadConfetti(){ if(!window.confetti){ let s=document.createElement('script'); s.src='https://cdn.jsdelivr.net/npm/canvas-confetti@1'; s.onload=()=>console.log('confetti ready'); document.head.appendChild(s); } }
-    loadConfetti();
 </script>
-
-<style>
-    /* 抽屉统一样式 */
-    #about-drawer-overlay, #sponsor-drawer-overlay, #lottery-drawer-overlay {
-        position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1000; opacity: 0; visibility: hidden; transition: 0.3s;
-    }
-    #about-drawer-overlay.show, #sponsor-drawer-overlay.show, #lottery-drawer-overlay.show { visibility: visible; opacity: 1; }
-    .drawer {
-        position: fixed; bottom: 0; left: 0; right: 0; background: white; border-radius: 20px 20px 0 0; z-index: 1001; transform: translateY(100%); transition: transform 0.3s ease-out; max-height: 80vh; overflow-y: auto;
-    }
-    .drawer.show { transform: translateY(0); }
-    .drawer-header { display: flex; justify-content: space-between; align-items: center; padding: 18px 20px 10px 20px; border-bottom: 1px solid #eee; font-weight: bold; font-size: 18px; }
-    .drawer-close { cursor: pointer; padding: 4px; }
-    .drawer-content { padding: 20px; }
-    .lottery-btn { background: linear-gradient(135deg, #FF416C, #FF4B2B); color: white; border: none; padding: 12px 30px; border-radius: 40px; font-size: 16px; font-weight: bold; cursor: pointer; }
-    .lottery-btn:disabled { opacity: 0.6; cursor: not-allowed; }
-    #sponsor-table th, #sponsor-table td { padding: 6px 4px; text-align: left; border-bottom: 1px solid #f0f0f0; }
-</style>
 </body>
 </html>
