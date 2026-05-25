@@ -19,6 +19,8 @@ function getYearValue(yearStr) {
 const blogYearsData = {  
     '94': [{name:'贾斯汀', url:'/go.htm?url=https://links.net/', rss:'https://links.net/feed'}],
 					// ==================== 复制方便    , {name:'', url:'/go.htm?url=', rss:''}     ====================
+					'98': [{name:'peterme', url:'/go.htm?url=http://www.peterme.com/', rss:'http://feeds.feedburner.com/Peterme'}],
+					// ==================== 复制方便    , {name:'', url:'/go.htm?url=', rss:''}     ====================
 
 	'99': [{name:'秘密花园', url:'/go.htm?url=http://www.yini.org/', rss:'http://www.yini.org/feed'}],
    				// ==================== 复制方便    , {name:'', url:'/go.htm?url=', rss:''}     ====================
