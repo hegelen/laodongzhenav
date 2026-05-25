@@ -145,7 +145,7 @@ const blogNavData = {
     '14': [{name:'rssblog', url:'/go.htm?url=https://rssblog.imcbc.cn/member/'}, {name:'feedspot-bloggers', url:'/go.htm?url=https://bloggers.feedspot.com/'}],
     '16': [{name:'个站商店', url:'/go.htm?url=https://storeweb.cn/'}],
     '17': [{name:'十年之约', url:'/go.htm?url=https://www.foreverblog.cn/'}, {name:'jekyll wiki', url:'/go.htm?url=https://github.com/jekyll/jekyll/wiki/Sites'} ],
-    '20': [{name:'BlogFinder', url:'/go.htm?url=https://bf.zzxworld.com/s'}, {name:'站长笔记博客大全', url:'/go.htm?url=https://www.080210.com/link/'} , {name:'ʕ•ᴥ•ʔ熊', url:'/go.htm?url=https://bearblog.dev/discover/'}    ],
+    '20': [{name:'BlogFinder', url:'/go.htm?url=https://bf.zzxworld.com/s'},{name:'ʕ•ᴥ•ʔ熊', url:'/go.htm?url=https://bearblog.dev/discover/'}    ],
   	// ==================== 复制方便    , {name:'', url:'/go.htm?url='}   ====================
 
   '21': [{name:'博客圈', url:'/go.htm?url=https://bokequan.cn/boke'}, {name:'Ye Olde Blogroll', url:'/go.htm?url=https://blogroll.org/'} , {name:'翻一会', url:'/go.htm?url=https://fanyihui.net/'}],
