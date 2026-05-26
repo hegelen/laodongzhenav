@@ -2,384 +2,488 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, viewport-fit=cover">
-    <title>筋斗云·随机时空跃迁 | 劳动者导航</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>筋斗云·大圣降临 | 随机传送门</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            user-select: none; /* 让整体视觉更干净，避免拖动时选中文字 */
+            user-select: none;
         }
 
         body {
-            min-height: 100vh;
-            background: radial-gradient(ellipse at 20% 30%, #0a0f1e, #03060c);
-            font-family: 'Segoe UI', 'PingFang SC', Roboto, 'Helvetica Neue', sans-serif;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            /* 优雅的云纹背景叠加，增加神话感 */
-            background-image: radial-gradient(circle at 10% 20%, rgba(255, 215, 150, 0.05) 2%, transparent 2.5%),
-                              radial-gradient(circle at 90% 70%, rgba(210, 180, 140, 0.04) 1.8%, transparent 2.2%);
-            background-size: 48px 48px, 60px 60px;
+            overflow: hidden;
+            background: #020617;
+            font-family: 'Segoe UI', 'PingFang SC', 'YouYuan', 'Courier New', monospace;
         }
 
-        /* 主容器 — 半透明磨砂玻璃效果 */
-        .portal-container {
-            max-width: 620px;
+        /* 全屏容器 */
+        .fullscreen {
+            position: fixed;
+            top: 0;
+            left: 0;
             width: 100%;
-            background: rgba(12, 20, 30, 0.65);
+            height: 100%;
+            z-index: 1;
+        }
+
+        /* 动态星空背景 (粒子系统) */
+        #starsCanvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+            background: radial-gradient(ellipse at 30% 40%, #0b1120, #030712);
+            z-index: 0;
+        }
+
+        /* 主内容区 — 置中，半透磨砂 */
+        .portal {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            max-width: 680px;
+            background: rgba(0, 0, 0, 0.65);
             backdrop-filter: blur(16px);
-            border-radius: 64px;
-            border: 1px solid rgba(255, 215, 150, 0.25);
-            box-shadow: 0 25px 45px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 215, 150, 0.1) inset, 0 0 32px rgba(255, 200, 100, 0.1);
-            padding: 32px 28px 42px;
-            transition: all 0.3s ease;
+            border-radius: 88px;
+            border: 1px solid rgba(255, 215, 0, 0.4);
+            box-shadow: 0 30px 50px rgba(0, 0, 0, 0.6), 0 0 0 2px rgba(255, 200, 50, 0.2) inset;
+            padding: 32px 28px 48px;
             text-align: center;
+            z-index: 2;
+            transition: transform 0.3s ease;
         }
 
-        /* 筋斗云 SVG 动画 (模拟腾云感) */
-        .cloud-icon {
-            width: 96px;
-            height: 96px;
-            margin: 0 auto 16px;
-            filter: drop-shadow(0 8px 20px rgba(255, 200, 100, 0.3));
-            animation: floatCloud 3s ease-in-out infinite;
+        /* 动态金箍棒光晕 */
+        @keyframes glowPulse {
+            0% { text-shadow: 0 0 2px #FFB347, 0 0 4px #FFA500; }
+            100% { text-shadow: 0 0 10px #FFD966, 0 0 20px #FF8C00; }
         }
 
-        @keyframes floatCloud {
-            0% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-8px) rotate(2deg); }
-            100% { transform: translateY(0px) rotate(0deg); }
-        }
-
-        /* 主标题 — 侠气 + 能量感 */
         .title {
-            font-size: 2.9rem;
-            font-weight: 800;
-            letter-spacing: 8px;
-            background: linear-gradient(135deg, #FFE6B0, #D4AF37, #FFD966);
+            font-size: 4rem;
+            font-weight: 900;
+            letter-spacing: 12px;
+            background: linear-gradient(135deg, #FFE6B0, #FFB347, #FFD966);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
-            text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
             margin-bottom: 12px;
-            font-family: 'Segoe UI', 'PingFang SC', 'Trebuchet MS', sans-serif;
+            animation: glowPulse 1.8s infinite alternate;
+            font-family: 'Segoe UI', 'PingFang SC', 'STHeiti', monospace;
         }
 
         .sub {
-            color: #C0B9A8;
-            font-size: 0.85rem;
+            color: #E4C580;
+            font-size: 0.8rem;
             letter-spacing: 2px;
-            word-break: keep-all;
-            border-bottom: 1px dashed rgba(210, 180, 140, 0.5);
+            border-top: 1px dashed rgba(255, 200, 100, 0.5);
+            border-bottom: 1px dashed rgba(255, 200, 100, 0.5);
             display: inline-block;
-            padding-bottom: 6px;
+            padding: 6px 20px;
             margin-bottom: 28px;
-            backdrop-filter: blur(4px);
+            backdrop-filter: blur(8px);
         }
 
-        /* 坐标 & 名字区域 — 赛博修仙风格 */
-        .target-zone {
-            background: rgba(0, 0, 0, 0.45);
-            border-radius: 48px;
-            padding: 22px 16px;
-            margin: 12px 0 24px;
-            border: 1px solid rgba(255, 215, 150, 0.4);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+        /* canvas 动画区：孙悟空翻跟斗 */
+        .monkey-canvas {
+            width: 180px;
+            height: 180px;
+            margin: 0 auto 20px;
+            position: relative;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 100px;
+            box-shadow: 0 0 20px rgba(255, 200, 0, 0.3);
+        }
+        canvas#wukongCanvas {
+            width: 100%;
+            height: 100%;
+            display: block;
+            border-radius: 50%;
         }
 
-        .target-label {
-            font-size: 0.7rem;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            color: #DCB572;
-            font-weight: 400;
-            margin-bottom: 12px;
-        }
-
-        .blog-name {
-            font-size: 2rem;
-            font-weight: 700;
-            color: #FFEDC9;
-            text-shadow: 0 0 8px #FFB347, 0 2px 4px black;
-            letter-spacing: 1px;
-            word-break: break-word;
-            background: linear-gradient(135deg, #FFF2E0, #FFE0B5);
+        .target-name {
+            font-size: 1.9rem;
+            font-weight: 800;
+            color: #FFECC7;
+            background: linear-gradient(135deg, #FFE5B4, #FFCC80);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
-            text-shadow: none;
-            font-weight: 800;
+            text-shadow: 0 2px 5px black;
+            padding: 8px 12px;
+            word-break: break-word;
         }
 
-        /* 跳转倒计时 + 科幻进度条 */
-        .countdown-area {
-            margin: 32px 0 24px;
-        }
-
-        .countdown-text {
-            font-size: 0.85rem;
-            color: #cfc5b0;
-            letter-spacing: 2px;
-            margin-bottom: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-        }
-
-        .countdown-number {
-            font-family: monospace;
-            font-size: 1.4rem;
-            font-weight: bold;
-            background: #00000066;
-            padding: 2px 12px;
-            border-radius: 40px;
-            color: #FFD966;
-            backdrop-filter: blur(4px);
-        }
-
-        /* 动态能量条 (跃迁充能) */
-        .jump-bar {
-            width: 80%;
-            margin: 10px auto 0;
-            height: 4px;
-            background: rgba(255, 215, 150, 0.2);
-            border-radius: 10px;
+        .energy-ring {
+            margin: 30px auto 16px;
+            width: 260px;
+            height: 8px;
+            background: rgba(255, 215, 0, 0.2);
+            border-radius: 20px;
             overflow: hidden;
         }
 
-        .jump-fill {
+        .energy-fill {
             width: 0%;
             height: 100%;
-            background: linear-gradient(90deg, #FBBF24, #FFD966, #F59E0B);
-            border-radius: 10px;
-            transition: width 0.05s linear;
-            box-shadow: 0 0 6px #FFB347;
+            background: linear-gradient(90deg, #FFD966, #FF8C00, #FF4500);
+            border-radius: 20px;
+            box-shadow: 0 0 12px #FFA500;
+            transition: width 0.04s linear;
         }
 
-        /* 手动触发链接 — 星环风格 */
-        .manual-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: rgba(20, 28, 38, 0.7);
+        .counter {
+            font-family: monospace;
+            font-size: 2.2rem;
+            font-weight: bold;
+            background: rgba(0, 0, 0, 0.6);
+            display: inline-block;
+            padding: 6px 22px;
+            border-radius: 60px;
+            color: #FFE0A3;
+            letter-spacing: 4px;
             backdrop-filter: blur(8px);
-            padding: 8px 20px;
-            border-radius: 40px;
-            border: 1px solid rgba(210, 180, 140, 0.6);
-            color: #FDE8C5;
+            border: 1px solid #FFD966;
+            margin-top: 8px;
+        }
+
+        .manual-trigger {
+            margin-top: 28px;
+            display: inline-block;
+            background: rgba(0, 0, 0, 0.7);
+            border: 1px solid #FFBF69;
+            border-radius: 60px;
+            padding: 10px 28px;
+            color: #FFDFA5;
             text-decoration: none;
-            font-size: 0.8rem;
-            font-weight: 500;
-            margin-top: 16px;
+            font-weight: 600;
+            backdrop-filter: blur(8px);
             transition: 0.2s;
         }
 
-        .manual-link:hover {
-            background: rgba(210, 180, 140, 0.2);
-            border-color: #FFD966;
-            color: #FFE4A0;
-            box-shadow: 0 0 8px rgba(255, 200, 100, 0.4);
+        .manual-trigger:hover {
+            background: rgba(255, 180, 60, 0.2);
+            border-color: #FFA500;
+            color: #FFF0C0;
+            box-shadow: 0 0 18px rgba(255, 160, 0, 0.5);
         }
 
-        /* 右下角趣味小标志 */
-        .myth-badge {
-            position: fixed;
-            bottom: 18px;
-            right: 22px;
+        .footer-tip {
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            color: #7A6A4A;
             font-size: 11px;
-            background: rgba(0, 0, 0, 0.5);
-            backdrop-filter: blur(10px);
-            padding: 5px 12px;
-            border-radius: 60px;
-            color: #AD9F7B;
-            letter-spacing: 1px;
-            pointer-events: none;
-            z-index: 99;
+            z-index: 2;
             font-family: monospace;
+            background: rgba(0,0,0,0.3);
+            width: fit-content;
+            margin: 0 auto;
+            padding: 4px 14px;
+            border-radius: 50px;
+            backdrop-filter: blur(5px);
         }
 
-        /* 手机适应性 */
-        @media (max-width: 580px) {
-            .portal-container { padding: 24px 18px; border-radius: 48px; }
-            .title { font-size: 2rem; letter-spacing: 4px; }
-            .blog-name { font-size: 1.5rem; }
-            .target-zone { padding: 16px 12px; }
-        }
-
-        /* 简单的闪烁光晕 */
-        @keyframes gentlePulse {
-            0% { opacity: 0.6; text-shadow: 0 0 2px #FFB347; }
-            100% { opacity: 1; text-shadow: 0 0 8px #FFD966; }
-        }
-        .target-label {
-            animation: gentlePulse 2s infinite alternate;
-        }
-
-        /* 筋斗云 svg 内嵌替代网络资源 */
-        .cloud-svg {
-            width: 100%;
-            height: 100%;
+        @media (max-width: 560px) {
+            .title { font-size: 2.4rem; letter-spacing: 4px; }
+            .target-name { font-size: 1.4rem; }
+            .monkey-canvas { width: 130px; height: 130px; }
+            .portal { padding: 24px 18px; border-radius: 60px; }
         }
     </style>
 </head>
 <body>
 
-<div class="portal-container" id="portalRoot">
-    <!-- 筋斗云 SVG (纯内嵌，无惧失效) -->
-    <div class="cloud-icon">
-        <svg class="cloud-svg" viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M78.5 32.5C78.5 16.5 65.5 4 50 4C36.5 4 25 13.5 22 28C12.5 29.5 4 39 4 50C4 62 13 71.5 24 71.5H76C86.5 71.5 94 63.5 94 52C94 41 86.5 33 78.5 32.5Z" fill="#FEF9E6" stroke="#E4C580" stroke-width="1.8"/>
-            <path d="M50 16C65 16 76 27 76 42C76 44 75.5 46 74.5 48C82 49 88 56 88 64C88 72 82 78 74 78H26C17 78 10 71 10 62C10 53 16.5 46 24 44.5C24 30 35 16 50 16Z" fill="#FFF7E8" fill-opacity="0.8"/>
-            <circle cx="44" cy="44" r="4" fill="#F5CB5C"/>
-            <circle cx="56" cy="44" r="4" fill="#F5CB5C"/>
-            <path d="M47 54C48 57 52 57 53 54" stroke="#D4A017" stroke-width="2" stroke-linecap="round"/>
-        </svg>
-    </div>
+<div class="fullscreen">
+    <canvas id="starsCanvas"></canvas>
+</div>
 
+<div class="portal">
     <div class="title">筋 斗 云</div>
     <div class="sub">✦ 齐天大圣 · 一念十万八千博 ✦</div>
 
-    <div class="target-zone">
-        <div class="target-label">⚡ 当前目标坐标 ⚡</div>
-        <div class="blog-name" id="blogNameDisplay">—— 锁定中 ——</div>
+    <div class="monkey-canvas">
+        <canvas id="wukongCanvas" width="200" height="200"></canvas>
     </div>
 
-    <div class="countdown-area">
-        <div class="countdown-text">
-            <span>☁️ 时空跃迁准备</span>
-            <span class="countdown-number" id="countdownNumber">3</span>
-            <span>⚡ 筋斗待发 ⚡</span>
-        </div>
-        <div class="jump-bar">
-            <div class="jump-fill" id="jumpFillBar"></div>
-        </div>
+    <div class="target-name" id="targetBlogName">—— 锁定坐标 ——</div>
+
+    <div class="energy-ring">
+        <div class="energy-fill" id="energyFill"></div>
+    </div>
+    <div>
+        <span class="counter" id="countdownNumber">3</span>
     </div>
 
     <div>
-        <a href="#" id="manualLinkBtn" class="manual-link">
-            🚀 紧急腾云 &nbsp;→→
-        </a>
+        <a href="#" id="manualJump" class="manual-trigger">🚀 紧急腾云 🚀</a>
     </div>
 </div>
-<div class="myth-badge">🌸 筋斗云·随机传送 | 一个筋斗，十万八千“博”</div>
+<div class="footer-tip">☁️ 一个筋斗，十万八千里 ☁️</div>
 
 <script src="data.js"></script>
 <script>
     // ------------------------------
-    // 筋斗云·超级跃迁 (神话&科技糅合版)
+    // 1. 动态星空粒子 (全屏酷炫)
     // ------------------------------
-    
-    // 提取真实URL (去除 /go.htm?url= 前缀，与之前逻辑兼容)
+    const starCanvas = document.getElementById('starsCanvas');
+    const ctxStar = starCanvas.getContext('2d');
+    let stars = [];
+    function initStars() {
+        starCanvas.width = window.innerWidth;
+        starCanvas.height = window.innerHeight;
+        const starCount = 300;
+        for (let i = 0; i < starCount; i++) {
+            stars.push({
+                x: Math.random() * starCanvas.width,
+                y: Math.random() * starCanvas.height,
+                radius: Math.random() * 2 + 1,
+                alpha: Math.random() * 0.7 + 0.3,
+                speed: 0.05 + Math.random() * 0.1,
+            });
+        }
+    }
+    function drawStars() {
+        if (!ctxStar) return;
+        ctxStar.clearRect(0, 0, starCanvas.width, starCanvas.height);
+        ctxStar.fillStyle = '#FFFFFF';
+        for (let s of stars) {
+            ctxStar.globalAlpha = s.alpha;
+            ctxStar.beginPath();
+            ctxStar.arc(s.x, s.y, s.radius, 0, Math.PI * 2);
+            ctxStar.fill();
+            // 微微闪烁
+            s.alpha += (Math.random() - 0.5) * 0.02;
+            s.alpha = Math.min(0.9, Math.max(0.2, s.alpha));
+        }
+        requestAnimationFrame(drawStars);
+    }
+    window.addEventListener('resize', () => {
+        starCanvas.width = window.innerWidth;
+        starCanvas.height = window.innerHeight;
+        stars = [];
+        initStars();
+    });
+    initStars();
+    drawStars();
+
+    // -----------------------------------
+    // 2. 孙悟空翻跟斗动画 (Canvas 关键帧：模拟轮廓翻转)
+    // -----------------------------------
+    const wCanvas = document.getElementById('wukongCanvas');
+    const wCtx = wCanvas.getContext('2d');
+    let frame = 0;
+    const totalFrames = 16;  // 翻跟斗一圈 16帧
+    let animationId = null;
+
+    function drawWukong(angleRad) {
+        wCtx.clearRect(0, 0, wCanvas.width, wCanvas.height);
+        const cx = wCanvas.width / 2;
+        const cy = wCanvas.height / 2;
+        // 绘制筋斗云光晕
+        wCtx.save();
+        wCtx.shadowBlur = 12;
+        wCtx.shadowColor = "#FFA500";
+        // 根据角度旋转整个画布 (翻滚效果)
+        wCtx.translate(cx, cy);
+        wCtx.rotate(angleRad);
+        wCtx.translate(-cx, -cy);
+        
+        // 画灵动的筋斗云底座 (环形)
+        wCtx.beginPath();
+        wCtx.ellipse(cx, cy+6, 32, 18, 0, 0, Math.PI*2);
+        wCtx.fillStyle = "#FEEBC8";
+        wCtx.fill();
+        wCtx.shadowBlur = 8;
+        wCtx.beginPath();
+        wCtx.ellipse(cx-5, cy-4, 16, 14, 0, 0, Math.PI*2);
+        wCtx.fillStyle = "#FFF2DF";
+        wCtx.fill();
+        wCtx.beginPath();
+        wCtx.ellipse(cx+8, cy-6, 14, 12, 0, 0, Math.PI*2);
+        wCtx.fill();
+
+        // 画孙悟空 (简化版，但能看出猴子特征)
+        wCtx.fillStyle = "#E7B347";
+        wCtx.beginPath();
+        wCtx.ellipse(cx-2, cy-8, 12, 14, 0, 0, Math.PI*2);
+        wCtx.fill(); // 头部
+        wCtx.fillStyle = "#C88C2A";
+        wCtx.beginPath();
+        wCtx.ellipse(cx, cy-4, 8, 6, 0, 0, Math.PI*2);
+        wCtx.fill(); // 嘴部毛
+        
+        // 金箍圈
+        wCtx.beginPath();
+        wCtx.arc(cx-2, cy-14, 5, 0, Math.PI*2);
+        wCtx.strokeStyle = "#FFD966";
+        wCtx.lineWidth = 2;
+        wCtx.stroke();
+        
+        // 眼睛
+        wCtx.fillStyle = "#FFFFFF";
+        wCtx.beginPath();
+        wCtx.arc(cx-7, cy-12, 2, 0, Math.PI*2);
+        wCtx.fill();
+        wCtx.beginPath();
+        wCtx.arc(cx+3, cy-12, 2, 0, Math.PI*2);
+        wCtx.fill();
+        wCtx.fillStyle = "#000";
+        wCtx.beginPath();
+        wCtx.arc(cx-6.5, cy-12, 0.9, 0, Math.PI*2);
+        wCtx.fill();
+        wCtx.beginPath();
+        wCtx.arc(cx+3.5, cy-12, 0.9, 0, Math.PI*2);
+        wCtx.fill();
+        
+        // 身体及红巾
+        wCtx.fillStyle = "#D97C15";
+        wCtx.fillRect(cx-8, cy-2, 16, 18);
+        wCtx.fillStyle = "#E34234";
+        wCtx.fillRect(cx-5, cy+8, 10, 5);
+        wCtx.restore();
+        
+        // 额外加一个旋转的光圈 (就是筋斗云特效)
+        wCtx.save();
+        wCtx.shadowBlur = 8;
+        wCtx.beginPath();
+        wCtx.ellipse(cx, cy+2, 42, 26, angleRad*0.5, 0, Math.PI*2);
+        wCtx.fillStyle = "rgba(255, 180, 40, 0.2)";
+        wCtx.fill();
+        wCtx.restore();
+    }
+
+    function animateFlip() {
+        if (animationId) cancelAnimationFrame(animationId);
+        let start = null;
+        const duration = 600;  // 完整翻跟斗周期 0.6秒
+        function step(timestamp) {
+            if (!start) start = timestamp;
+            const elapsed = timestamp - start;
+            const progress = Math.min(1, elapsed / duration);
+            const angle = progress * Math.PI * 2;  // 完整一圈
+            drawWukong(angle);
+            if (progress < 1) {
+                animationId = requestAnimationFrame(step);
+            } else {
+                // 重置角度，继续下一次循环
+                animateFlip();
+            }
+        }
+        animationId = requestAnimationFrame(step);
+    }
+    animateFlip(); // 一直翻跟斗，永不停歇！
+
+    // ------------------------------
+    // 3. 随机跳转逻辑 (全屏跃迁)
+    // ------------------------------
     function getRealUrl(blogUrl) {
         if (!blogUrl) return '';
-        if (blogUrl.startsWith('http://') || blogUrl.startsWith('https://')) {
-            return blogUrl;
-        }
+        if (blogUrl.startsWith('http://') || blogUrl.startsWith('https://')) return blogUrl;
         if (blogUrl.startsWith('/go.htm?url=')) {
             let real = blogUrl.replace('/go.htm?url=', '');
-            try {
-                real = decodeURIComponent(real);
-            } catch(e) {}
+            try { real = decodeURIComponent(real); } catch(e) {}
             return real;
         }
         return blogUrl;
     }
-
-    // 主流程
-    function startJinDouYun() {
-        const blogNameSpan = document.getElementById('blogNameDisplay');
-        const manualLink = document.getElementById('manualLinkBtn');
-        const countdownSpan = document.getElementById('countdownNumber');
-        const fillBar = document.getElementById('jumpFillBar');
-        
-        // 防御: 如果 allBlogs 不存在则显示错误
-        if (typeof allBlogs === 'undefined' || !allBlogs || allBlogs.length === 0) {
-            blogNameSpan.innerText = '❌ 筋斗云暂无法探路';
-            if (manualLink) manualLink.style.opacity = '0.5';
-            return;
-        }
-        
-        // 随机抽取博客 (保留种子以维持丰富度)
-        let randomIndex = Math.floor(Math.random() * allBlogs.length);
-        let selectedBlog = allBlogs[randomIndex];
-        let targetUrl = getRealUrl(selectedBlog.url);
-        let targetName = selectedBlog.name || '无名仙人';
-        
-        // 展示抽取的目标
-        blogNameSpan.innerText = targetName;
-        
-        // 进度条与倒计时联动 (2.5秒内优雅充能)
-        let duration = 2500;       // 2.5秒充满  (更从容)
-        let interval = 50;         // 50ms刷新一次
-        let steps = duration / interval;   // 50步
-        let currentStep = 0;
-        let countdownValue = 3;      // 初始倒计时文字显示3秒
-        let lastUpdateTime = Date.now();
-        
-        // 更新时间显示 (3 -> 2 -> 1 -> 跃迁)
-        function updateDisplay(progress) {
-            // progress 0..1
-            let remainPercent = (1 - progress) * 100;
-            let secondsLeft = Math.ceil((duration * (1 - progress)) / 1000);
-            if (secondsLeft < 0) secondsLeft = 0;
-            // 倒计时数字从3开始向0递减
-            let displayNumber = Math.min(3, Math.max(0, Math.ceil(secondsLeft)));
-            if (displayNumber !== countdownValue) {
-                countdownValue = displayNumber;
-                if (countdownSpan) countdownSpan.innerText = countdownValue;
-            }
-            // 进度条宽度
-            if (fillBar) fillBar.style.width = (progress * 100) + '%';
-        }
-        
-        // 开始计时器
+    
+    let targetUrl = '';
+    let targetName = '';
+    let countdownInterval = null;
+    let energyInterval = null;
+    let jumpScheduled = false;
+    
+    const energyFill = document.getElementById('energyFill');
+    const countdownSpan = document.getElementById('countdownNumber');
+    const targetSpan = document.getElementById('targetBlogName');
+    const manualBtn = document.getElementById('manualJump');
+    
+    function startJumpTimer(destinationUrl) {
+        if (countdownInterval) clearInterval(countdownInterval);
+        if (energyInterval) clearInterval(energyInterval);
+        let remaining = 3;   // 倒计时3秒
+        countdownSpan.innerText = remaining;
         let startTime = performance.now();
-        let timer = setInterval(() => {
-            let now = performance.now();
-            let elapsed = now - startTime;
-            let progress = Math.min(1, elapsed / duration);
-            updateDisplay(progress);
-            
-            if (progress >= 1.0) {
-                clearInterval(timer);
-                // 跃迁!
-                window.location.href = targetUrl;
-            }
-        }, interval);
+        const totalDuration = 3000; // 3秒充能
         
-        // 手动立即跃迁 (紧急腾云)
-        if (manualLink) {
-            // 移除原有监听重新绑定
-            let newLink = manualLink.cloneNode(true);
-            manualLink.parentNode.replaceChild(newLink, manualLink);
-            newLink.addEventListener('click', function(e) {
-                e.preventDefault();
-                if (timer) clearInterval(timer);
-                window.location.href = targetUrl;
-            });
-        }
-        
-        // 额外增加防意外: 如果某个极端情况下计时器未触发, 保险(6秒后强制跳转)
-        setTimeout(() => {
-            if (timer) {
-                clearInterval(timer);
-                if (window.location.href.indexOf('goto.htm') !== -1) {
-                    window.location.href = targetUrl;
+        function updateEnergy() {
+            let elapsed = performance.now() - startTime;
+            let percent = Math.min(1, elapsed / totalDuration);
+            energyFill.style.width = (percent * 100) + '%';
+            let newCount = Math.max(0, 3 - Math.floor(elapsed / 1000));
+            if (newCount !== parseInt(countdownSpan.innerText)) {
+                countdownSpan.innerText = newCount;
+                // 倒计时1时给个闪烁
+                if (newCount === 1) {
+                    document.body.style.backgroundColor = "#FFE4B5";
+                    setTimeout(() => document.body.style.backgroundColor = "", 200);
                 }
             }
-        }, duration + 800);
+            if (percent >= 1.0) {
+                clearInterval(energyInterval);
+                clearInterval(countdownInterval);
+                if (!jumpScheduled) {
+                    jumpScheduled = true;
+                    // 加个视觉闪光
+                    const flash = document.createElement('div');
+                    flash.style.position = 'fixed'; flash.style.top=0; flash.style.left=0; flash.style.width='100%'; flash.style.height='100%';
+                    flash.style.backgroundColor = '#FFF8E7'; flash.style.opacity = '0.7'; flash.style.pointerEvents = 'none'; flash.style.zIndex = '9999';
+                    document.body.appendChild(flash);
+                    setTimeout(() => { window.location.href = destinationUrl; }, 150);
+                }
+            }
+        }
+        energyInterval = setInterval(updateEnergy, 30);
+        // 同时每200ms刷新一次显示, 但updateEnergy已包含
+        updateEnergy();
     }
     
-    // 确保数据加载完毕后再启动 (因为有 data.js 异步? 但一般是同步, 直接调用)
+    function selectRandomBlog() {
+        if (typeof allBlogs === 'undefined' || !allBlogs.length) {
+            targetSpan.innerText = '❌ 筋斗云迷失时空';
+            return false;
+        }
+        const randomIndex = Math.floor(Math.random() * allBlogs.length);
+        const blog = allBlogs[randomIndex];
+        targetName = blog.name || '无名仙栈';
+        targetUrl = getRealUrl(blog.url);
+        targetSpan.innerText = targetName;
+        return true;
+    }
+    
+    function initJump() {
+        if (!selectRandomBlog()) return;
+        jumpScheduled = false;
+        if (countdownInterval) clearInterval(countdownInterval);
+        if (energyInterval) clearInterval(energyInterval);
+        energyFill.style.width = '0%';
+        countdownSpan.innerText = '3';
+        startJumpTimer(targetUrl);
+        
+        // 紧急手动跳转
+        manualBtn.onclick = (e) => {
+            e.preventDefault();
+            if (countdownInterval) clearInterval(countdownInterval);
+            if (energyInterval) clearInterval(energyInterval);
+            // 直接跃迁
+            window.location.href = targetUrl;
+        };
+    }
+    
+    // 当 data.js 准备好后启动
     if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', startJinDouYun);
+        document.addEventListener('DOMContentLoaded', initJump);
     } else {
-        startJinDouYun();
+        initJump();
     }
 </script>
 </body>
