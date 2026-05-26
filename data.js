@@ -217,10 +217,10 @@ const featuredNavData = {
     '23': [{name:'影视宝藏导航', url:'/go.htm?url=https://tv.baozangdh.com/'}, {name:'OSLAW', url:'/go.htm?url=https://www.oslaw.cn/site-nav'}],
     '24': [{name:'二次元宝藏导航', url:'/go.htm?url=https://acg.baozangdh.com/'}, {name:'资源帝VR导航', url:'/go.htm?url=https://vr.ziyuandi.cn/'}, {name:'mjj网址导航', url:'/go.htm?url=http://www.mjj.vip/'} , {name:'卡卡罗特导航', url:'/go.htm?url=https://blog.share888.top/nav/'}  ],
     '25': [{name:'猫步求职导航', url:'/go.htm?url=https://nav.maobucv.com/'},  {name:'图标西西', url:'/go.htm?url=https://icon.cc/'}],
-	'26': [{name:'松松导航', url:'/go.htm?url=https://daohang.lusongsong.com/'}],
+	'26': [{name:'松松导航', url:'/go.htm?url=https://daohang.lusongsong.com/'} , {name:'联名导航网', url:'/go.htm?url=http://unionname.cn/'} ],
 };
 
-// ==================== 工具导航数据    , {name:'', url:'/go.htm?url='}   ====================
+// ==================== 工具导航数据    , {name:'', url:'/go.htm?url='}    ====================
 const toolNavData = {
     '97': [{name:'archive网站历史', url:'/go.htm?url=aHR0cHM6Ly9hcmNoaXZlLm9yZy8%3D'}],
     '07': [{name:'蛙蛙工具', url:'/go.htm?url=https://www.iamwawa.cn/'}],
