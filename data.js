@@ -288,7 +288,7 @@ const paidBlogData = {
     '20': [{name:'happyxiao', url:'/go.htm?url=https://happyxiao.com/'}]
 };
 
-// ==================== 游戏导航 ====================
+// ==================== 游戏导航 ==================== 
 const gameData = {
     '26': [{name:'2048', url:'https://laodongzhe.cn/games/2048.html'}, {name:'', url:'/games/wuziqi.html'}]
 };
