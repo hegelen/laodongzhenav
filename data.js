@@ -133,7 +133,7 @@ const forumData = {
     '21': [{name:'obsidian', url:'/go.htm?url=https://forum-zh.obsidian.md/'}, {name:'2号站长网', url:'/go.htm?url=https://www.zz2zz.com/circle/'}],
     '22': [{name:'个站论坛', url:'/go.htm?url=https://storeweb.cn/forum'}, {name:'nodeseek', url:'/go.htm?url=https://www.nodeseek.com/'}, {name:'云盘135论坛', url:'/go.htm?url=http://www.yunpan135.com/'}],
     '23': [{name:'nodeloc', url:'/go.htm?url=https://www.nodeloc.com/'}, {name:'linux do', url:'/go.htm?url=https://linux.do/'}, {name:'hifiti', url:'/go.htm?url=https://hifiti.com/'}],
-    '24': [{name:'科技LION社区', url:'/go.htm?url=https://bbs.kejilion.pro/'}, {name:'编程导航', url:'/go.htm?url=https://www.codefather.cn/'}, {name:'邮箱论坛', url:'/go.htm?url=https://bbs.emailhouse.cn/'}],
+    '24': [{name:'科技LION社区', url:'/go.htm?url=https://bbs.kejilion.pro/'}, {name:'编程导航社区', url:'/go.htm?url=https://www.codefather.cn/'}, {name:'邮箱论坛', url:'/go.htm?url=https://bbs.emailhouse.cn/'}],
     '25': [ {name:'博客录论坛', url:'/go.htm?url=https://boke.lu/forums'}, {name:'涵云社区', url:'/go.htm?url=https://www.vhany.top/'}, {name:'劳动者论坛', url:'/go.htm?url=https://www.laodongzhe.cn'},{name:'2libra', url:'/go.htm?url=https://2libra.com/'}],
     '26': [{name:'摸鱼论坛', url:'/go.htm?url=https://mylt.net/'}, {name:'discoke', url:'/go.htm?url=https://www.discoke.com/'}, {name:'mjjzz', url:'/go.htm?url=https://www.mjjzz.com/'}, {name:'博客之家论坛', url:'/go.htm?url=https://52blog.cn/'}, {name:'侠客岛', url:'/go.htm?url=https://bbs.hk0.cc/'}, {name:'虚拟资源爱好者的乌托邦', url:'/go.htm?url=https://zzoo.im/'}, {name:'blog.do', url:'/go.htm?url=https://bbs.blog.do/'}, {name:'jiza', url:'/go.htm?url=https://jiza.net'} ]
 };
