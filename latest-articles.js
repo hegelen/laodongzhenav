@@ -1,53 +1,10 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 5/26/2026, 2:30:38 PM
+// 抓取日期: 5/26/2026, 9:01:45 PM
 // 只抓取最近14天内的文章，共 10 篇
 // 目标 10 篇，实际 10 篇
 
 const latestArticlesByYear = {
-  "2000": [
-    {
-      "name": "Luca",
-      "year": "00",
-      "title": "新加坡良治课程",
-      "url": "https://wlj.me/notes/sp-note-20260526-091908/",
-      "date": "2026-05-26"
-    }
-  ],
-  "2002": [
-    {
-      "name": "seth",
-      "year": "02",
-      "title": "Predictions, prescriptions and systems change",
-      "url": "https://seths.blog/2026/05/predictions-prescriptions-and-systems-change/",
-      "date": "2026-05-26"
-    }
-  ],
-  "2007": [
-    {
-      "name": "织梦岁月",
-      "year": "07",
-      "title": "差点遇到中信信用卡换卡“隐形升级”",
-      "url": "https://zhujianlin.com/archives/1993.html",
-      "date": "2026-05-26"
-    }
-  ],
-  "2014": [
-    {
-      "name": "卡片创作实验室",
-      "year": "14",
-      "title": "《柴静博客文集》：433篇文章，支持在线阅读",
-      "url": "https://cnfeat.com/posts/2026/05/26/chaijingbook/",
-      "date": "2026-05-25"
-    }
-  ],
   "2015": [
-    {
-      "name": "WordPress 知识宝库",
-      "year": "15",
-      "title": "클라우드웨이즈 Site Manager로 워드프레스 관리 효율 높이기",
-      "url": "https://www.thewordcracker.com/basic/%ed%81%b4%eb%9d%bc%ec%9a%b0%eb%93%9c%ec%9b%a8%ec%9d%b4%ec%a6%88-site-manager-%ec%9b%8c%eb%93%9c%ed%94%84%eb%a0%88%ec%8a%a4-%ea%b4%80%eb%a6%ac/",
-      "date": "2026-05-25"
-    },
     {
       "name": "满心",
       "year": "15",
@@ -56,12 +13,53 @@ const latestArticlesByYear = {
       "date": "2026-05-26"
     }
   ],
+  "2019": [
+    {
+      "name": "Zeruns",
+      "year": "19",
+      "title": "【开源】纯真IP库在线查询系统 - IP地理位置查询、本机IP查询、域名解析",
+      "url": "https://blog.zeruns.com/archives/944.html",
+      "date": "2026-05-26"
+    }
+  ],
+  "2021": [
+    {
+      "name": "记录生活",
+      "year": "21",
+      "title": "听劝！博客背景持续优化，缓解视觉疲劳",
+      "url": "https://9sb.net/archives/listen-to-advice-continuous-optimization-of-blog-background-to-alleviate-visual-fatigue.html",
+      "date": "2026-05-26"
+    }
+  ],
+  "2022": [
+    {
+      "name": "倦意",
+      "year": "22",
+      "title": "EdgeOne 日志分析软件 v2.0",
+      "url": "https://jyblog.cn/5651/",
+      "date": "2026-05-26"
+    }
+  ],
   "2023": [
     {
-      "name": "按钮与磁带",
+      "name": "鹿泽",
       "year": "23",
-      "title": "黑袍纠察队",
-      "url": "https://jefftay.com/the-boys",
+      "title": "电子商务SEO如何成为企业的正确选择",
+      "url": "https://www.bailuze.com/24093.html",
+      "date": "2026-05-26"
+    },
+    {
+      "name": "建站百科",
+      "year": "23",
+      "title": "投稿#华纳云618云端大促，香港cn2云服务器198元/年，美国cn2云4H8G15M永久988元/年",
+      "url": "https://www.jzbk.net/3044.html",
+      "date": "2026-05-26"
+    },
+    {
+      "name": "宗宗酱",
+      "year": "23",
+      "title": "第三次兑换天猫超市卡了",
+      "url": "https://ygz.ink/archives/5036.html",
       "date": "2026-05-26"
     },
     {
@@ -83,10 +81,10 @@ const latestArticlesByYear = {
   ],
   "2026": [
     {
-      "name": "华立",
+      "name": "麦子的思绪",
       "year": "26",
-      "title": "可循环值守和多人录制的直播录制软件",
-      "url": "https://www.renhuali.cn/journal/cmpm35e18000ech81lyrekcfd",
+      "title": "冠军奖杯很重，但孩子的膝盖更贵：别让校园篮球透支少年未来",
+      "url": "https://mzdsx.com/2026/05/27/%e5%86%a0%e5%86%9b%e5%a5%96%e6%9d%af%e5%be%88%e9%87%8d%ef%bc%8c%e4%bd%86%e5%ad%a9%e5%ad%90%e7%9a%84%e8%86%9d%e7%9b%96%e6%9b%b4%e8%b4%b5%ef%bc%9a%e5%88%ab%e8%ae%a9%e6%a0%a1%e5%9b%ad%e7%af%ae%e7%90%83/",
       "date": "2026-05-26"
     }
   ]
