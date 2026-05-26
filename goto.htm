@@ -1,98 +1,385 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>筋斗云-劳动者独立网站大全随机博客传送门</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, viewport-fit=cover">
+    <title>筋斗云·随机时空跃迁 | 劳动者导航</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            user-select: none; /* 让整体视觉更干净，避免拖动时选中文字 */
+        }
+
         body {
+            min-height: 100vh;
+            background: radial-gradient(ellipse at 20% 30%, #0a0f1e, #03060c);
+            font-family: 'Segoe UI', 'PingFang SC', Roboto, 'Helvetica Neue', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            /* 优雅的云纹背景叠加，增加神话感 */
+            background-image: radial-gradient(circle at 10% 20%, rgba(255, 215, 150, 0.05) 2%, transparent 2.5%),
+                              radial-gradient(circle at 90% 70%, rgba(210, 180, 140, 0.04) 1.8%, transparent 2.2%);
+            background-size: 48px 48px, 60px 60px;
+        }
+
+        /* 主容器 — 半透明磨砂玻璃效果 */
+        .portal-container {
+            max-width: 620px;
+            width: 100%;
+            background: rgba(12, 20, 30, 0.65);
+            backdrop-filter: blur(16px);
+            border-radius: 64px;
+            border: 1px solid rgba(255, 215, 150, 0.25);
+            box-shadow: 0 25px 45px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 215, 150, 0.1) inset, 0 0 32px rgba(255, 200, 100, 0.1);
+            padding: 32px 28px 42px;
+            transition: all 0.3s ease;
             text-align: center;
-            padding: 50px;
-            font-family: system-ui, sans-serif;
-            background: #f5f5f5;
         }
-        .container {
-            background: white;
-            border-radius: 16px;
-            padding: 30px;
-            max-width: 500px;
-            margin: 0 auto;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+        /* 筋斗云 SVG 动画 (模拟腾云感) */
+        .cloud-icon {
+            width: 96px;
+            height: 96px;
+            margin: 0 auto 16px;
+            filter: drop-shadow(0 8px 20px rgba(255, 200, 100, 0.3));
+            animation: floatCloud 3s ease-in-out infinite;
         }
-        .spinner {
-            margin: 20px auto;
-            width: 40px;
-            height: 40px;
-            border: 4px solid #f3f3f3;
-            border-top: 4px solid #0066cc;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
+
+        @keyframes floatCloud {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-8px) rotate(2deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
         }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+
+        /* 主标题 — 侠气 + 能量感 */
+        .title {
+            font-size: 2.9rem;
+            font-weight: 800;
+            letter-spacing: 8px;
+            background: linear-gradient(135deg, #FFE6B0, #D4AF37, #FFD966);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+            margin-bottom: 12px;
+            font-family: 'Segoe UI', 'PingFang SC', 'Trebuchet MS', sans-serif;
         }
-        .info {
-            font-size: 14px;
-            color: #666;
-            margin-top: 20px;
+
+        .sub {
+            color: #C0B9A8;
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            word-break: keep-all;
+            border-bottom: 1px dashed rgba(210, 180, 140, 0.5);
+            display: inline-block;
+            padding-bottom: 6px;
+            margin-bottom: 28px;
+            backdrop-filter: blur(4px);
         }
+
+        /* 坐标 & 名字区域 — 赛博修仙风格 */
+        .target-zone {
+            background: rgba(0, 0, 0, 0.45);
+            border-radius: 48px;
+            padding: 22px 16px;
+            margin: 12px 0 24px;
+            border: 1px solid rgba(255, 215, 150, 0.4);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+        }
+
+        .target-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #DCB572;
+            font-weight: 400;
+            margin-bottom: 12px;
+        }
+
+        .blog-name {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #FFEDC9;
+            text-shadow: 0 0 8px #FFB347, 0 2px 4px black;
+            letter-spacing: 1px;
+            word-break: break-word;
+            background: linear-gradient(135deg, #FFF2E0, #FFE0B5);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: none;
+            font-weight: 800;
+        }
+
+        /* 跳转倒计时 + 科幻进度条 */
+        .countdown-area {
+            margin: 32px 0 24px;
+        }
+
+        .countdown-text {
+            font-size: 0.85rem;
+            color: #cfc5b0;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .countdown-number {
+            font-family: monospace;
+            font-size: 1.4rem;
+            font-weight: bold;
+            background: #00000066;
+            padding: 2px 12px;
+            border-radius: 40px;
+            color: #FFD966;
+            backdrop-filter: blur(4px);
+        }
+
+        /* 动态能量条 (跃迁充能) */
+        .jump-bar {
+            width: 80%;
+            margin: 10px auto 0;
+            height: 4px;
+            background: rgba(255, 215, 150, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .jump-fill {
+            width: 0%;
+            height: 100%;
+            background: linear-gradient(90deg, #FBBF24, #FFD966, #F59E0B);
+            border-radius: 10px;
+            transition: width 0.05s linear;
+            box-shadow: 0 0 6px #FFB347;
+        }
+
+        /* 手动触发链接 — 星环风格 */
         .manual-link {
-            color: #0066cc;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(20, 28, 38, 0.7);
+            backdrop-filter: blur(8px);
+            padding: 8px 20px;
+            border-radius: 40px;
+            border: 1px solid rgba(210, 180, 140, 0.6);
+            color: #FDE8C5;
             text-decoration: none;
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-top: 16px;
+            transition: 0.2s;
+        }
+
+        .manual-link:hover {
+            background: rgba(210, 180, 140, 0.2);
+            border-color: #FFD966;
+            color: #FFE4A0;
+            box-shadow: 0 0 8px rgba(255, 200, 100, 0.4);
+        }
+
+        /* 右下角趣味小标志 */
+        .myth-badge {
+            position: fixed;
+            bottom: 18px;
+            right: 22px;
+            font-size: 11px;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            padding: 5px 12px;
+            border-radius: 60px;
+            color: #AD9F7B;
+            letter-spacing: 1px;
+            pointer-events: none;
+            z-index: 99;
+            font-family: monospace;
+        }
+
+        /* 手机适应性 */
+        @media (max-width: 580px) {
+            .portal-container { padding: 24px 18px; border-radius: 48px; }
+            .title { font-size: 2rem; letter-spacing: 4px; }
+            .blog-name { font-size: 1.5rem; }
+            .target-zone { padding: 16px 12px; }
+        }
+
+        /* 简单的闪烁光晕 */
+        @keyframes gentlePulse {
+            0% { opacity: 0.6; text-shadow: 0 0 2px #FFB347; }
+            100% { opacity: 1; text-shadow: 0 0 8px #FFD966; }
+        }
+        .target-label {
+            animation: gentlePulse 2s infinite alternate;
+        }
+
+        /* 筋斗云 svg 内嵌替代网络资源 */
+        .cloud-svg {
+            width: 100%;
+            height: 100%;
         }
     </style>
 </head>
 <body>
-<div class="container">
-    <h2>筋斗云-劳动者导航 随机博客传送门</h2>
-    <p>一个筋斗，十万八千“博”！正在为你随机跳转一个优质博客...</p>
-    <div class="spinner"></div>
-    <div class="info">
-        <span id="blogName"></span><br>
-        如果长时间未跳转，请<a href="#" id="manualLink" class="manual-link">点击这里</a>
+
+<div class="portal-container" id="portalRoot">
+    <!-- 筋斗云 SVG (纯内嵌，无惧失效) -->
+    <div class="cloud-icon">
+        <svg class="cloud-svg" viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M78.5 32.5C78.5 16.5 65.5 4 50 4C36.5 4 25 13.5 22 28C12.5 29.5 4 39 4 50C4 62 13 71.5 24 71.5H76C86.5 71.5 94 63.5 94 52C94 41 86.5 33 78.5 32.5Z" fill="#FEF9E6" stroke="#E4C580" stroke-width="1.8"/>
+            <path d="M50 16C65 16 76 27 76 42C76 44 75.5 46 74.5 48C82 49 88 56 88 64C88 72 82 78 74 78H26C17 78 10 71 10 62C10 53 16.5 46 24 44.5C24 30 35 16 50 16Z" fill="#FFF7E8" fill-opacity="0.8"/>
+            <circle cx="44" cy="44" r="4" fill="#F5CB5C"/>
+            <circle cx="56" cy="44" r="4" fill="#F5CB5C"/>
+            <path d="M47 54C48 57 52 57 53 54" stroke="#D4A017" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+    </div>
+
+    <div class="title">筋 斗 云</div>
+    <div class="sub">✦ 齐天大圣 · 一念十万八千博 ✦</div>
+
+    <div class="target-zone">
+        <div class="target-label">⚡ 当前目标坐标 ⚡</div>
+        <div class="blog-name" id="blogNameDisplay">—— 锁定中 ——</div>
+    </div>
+
+    <div class="countdown-area">
+        <div class="countdown-text">
+            <span>☁️ 时空跃迁准备</span>
+            <span class="countdown-number" id="countdownNumber">3</span>
+            <span>⚡ 筋斗待发 ⚡</span>
+        </div>
+        <div class="jump-bar">
+            <div class="jump-fill" id="jumpFillBar"></div>
+        </div>
+    </div>
+
+    <div>
+        <a href="#" id="manualLinkBtn" class="manual-link">
+            🚀 紧急腾云 &nbsp;→→
+        </a>
     </div>
 </div>
+<div class="myth-badge">🌸 筋斗云·随机传送 | 一个筋斗，十万八千“博”</div>
 
 <script src="data.js"></script>
 <script>
-    // 解析真实 URL：去掉 /go.htm?url= 前缀
+    // ------------------------------
+    // 筋斗云·超级跃迁 (神话&科技糅合版)
+    // ------------------------------
+    
+    // 提取真实URL (去除 /go.htm?url= 前缀，与之前逻辑兼容)
     function getRealUrl(blogUrl) {
         if (!blogUrl) return '';
-        // 如果已经是 http 开头，直接返回
         if (blogUrl.startsWith('http://') || blogUrl.startsWith('https://')) {
             return blogUrl;
         }
-        // 如果是 /go.htm?url= 格式，提取真实地址
         if (blogUrl.startsWith('/go.htm?url=')) {
-            var realUrl = blogUrl.replace('/go.htm?url=', '');
-            // 解码 URL 编码（如果有）
+            let real = blogUrl.replace('/go.htm?url=', '');
             try {
-                realUrl = decodeURIComponent(realUrl);
+                real = decodeURIComponent(real);
             } catch(e) {}
-            return realUrl;
+            return real;
         }
-        // 其他情况，直接返回原链接
         return blogUrl;
     }
 
-    if (typeof allBlogs !== 'undefined' && allBlogs.length > 0) {
-        var randomIndex = Math.floor(Math.random() * allBlogs.length);
-        var selectedBlog = allBlogs[randomIndex];
-        var realUrl = getRealUrl(selectedBlog.url);
+    // 主流程
+    function startJinDouYun() {
+        const blogNameSpan = document.getElementById('blogNameDisplay');
+        const manualLink = document.getElementById('manualLinkBtn');
+        const countdownSpan = document.getElementById('countdownNumber');
+        const fillBar = document.getElementById('jumpFillBar');
         
-        document.getElementById('blogName').innerHTML = '选中：' + selectedBlog.name + '（即将跳转）';
+        // 防御: 如果 allBlogs 不存在则显示错误
+        if (typeof allBlogs === 'undefined' || !allBlogs || allBlogs.length === 0) {
+            blogNameSpan.innerText = '❌ 筋斗云暂无法探路';
+            if (manualLink) manualLink.style.opacity = '0.5';
+            return;
+        }
         
-        setTimeout(function() {
-            window.location.href = realUrl;
-        }, 1000);
+        // 随机抽取博客 (保留种子以维持丰富度)
+        let randomIndex = Math.floor(Math.random() * allBlogs.length);
+        let selectedBlog = allBlogs[randomIndex];
+        let targetUrl = getRealUrl(selectedBlog.url);
+        let targetName = selectedBlog.name || '无名仙人';
         
-        document.getElementById('manualLink').onclick = function(e) {
-            e.preventDefault();
-            window.location.href = realUrl;
-        };
+        // 展示抽取的目标
+        blogNameSpan.innerText = targetName;
+        
+        // 进度条与倒计时联动 (2.5秒内优雅充能)
+        let duration = 2500;       // 2.5秒充满  (更从容)
+        let interval = 50;         // 50ms刷新一次
+        let steps = duration / interval;   // 50步
+        let currentStep = 0;
+        let countdownValue = 3;      // 初始倒计时文字显示3秒
+        let lastUpdateTime = Date.now();
+        
+        // 更新时间显示 (3 -> 2 -> 1 -> 跃迁)
+        function updateDisplay(progress) {
+            // progress 0..1
+            let remainPercent = (1 - progress) * 100;
+            let secondsLeft = Math.ceil((duration * (1 - progress)) / 1000);
+            if (secondsLeft < 0) secondsLeft = 0;
+            // 倒计时数字从3开始向0递减
+            let displayNumber = Math.min(3, Math.max(0, Math.ceil(secondsLeft)));
+            if (displayNumber !== countdownValue) {
+                countdownValue = displayNumber;
+                if (countdownSpan) countdownSpan.innerText = countdownValue;
+            }
+            // 进度条宽度
+            if (fillBar) fillBar.style.width = (progress * 100) + '%';
+        }
+        
+        // 开始计时器
+        let startTime = performance.now();
+        let timer = setInterval(() => {
+            let now = performance.now();
+            let elapsed = now - startTime;
+            let progress = Math.min(1, elapsed / duration);
+            updateDisplay(progress);
+            
+            if (progress >= 1.0) {
+                clearInterval(timer);
+                // 跃迁!
+                window.location.href = targetUrl;
+            }
+        }, interval);
+        
+        // 手动立即跃迁 (紧急腾云)
+        if (manualLink) {
+            // 移除原有监听重新绑定
+            let newLink = manualLink.cloneNode(true);
+            manualLink.parentNode.replaceChild(newLink, manualLink);
+            newLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                if (timer) clearInterval(timer);
+                window.location.href = targetUrl;
+            });
+        }
+        
+        // 额外增加防意外: 如果某个极端情况下计时器未触发, 保险(6秒后强制跳转)
+        setTimeout(() => {
+            if (timer) {
+                clearInterval(timer);
+                if (window.location.href.indexOf('goto.htm') !== -1) {
+                    window.location.href = targetUrl;
+                }
+            }
+        }, duration + 800);
+    }
+    
+    // 确保数据加载完毕后再启动 (因为有 data.js 异步? 但一般是同步, 直接调用)
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', startJinDouYun);
     } else {
-        document.body.innerHTML = '<div class="container"><h2>暂无博客数据</h2><p>请检查 data.js 文件是否正确加载。</p></div>';
+        startJinDouYun();
     }
 </script>
 </body>
