@@ -290,7 +290,7 @@ const paidBlogData = {
 
 // ==================== 游戏导航 ====================
 const gameData = {
-    '26': [{name:'2048', url:'/go.htm?url=https://laodongzhe.cn/games/2048.html'}]
+    '26': [{name:'2048', url:'https://laodongzhe.cn/games/2048.html'}]
 };
 // ==================== ai人工智能 ====================
 const aiData = {
