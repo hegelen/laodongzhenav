@@ -1,45 +1,9 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 5/24/2026, 8:10:26 PM
+// 抓取日期: 5/25/2026, 8:24:22 PM
 // 只抓取最近14天内的文章，共 10 篇
 // 目标 10 篇，实际 10 篇
 
 const latestArticlesByYear = {
-  "2008": [
-    {
-      "name": "有氧呼吸",
-      "year": "08",
-      "title": "年纪大了，开始怀念……",
-      "url": "https://www.oxy.one/2026/05/blog-post.html",
-      "date": "2026-05-18"
-    }
-  ],
-  "2009": [
-    {
-      "name": "多多",
-      "year": "09",
-      "title": "博客程序默认feed地址大全",
-      "url": "https://ddlog.cn/?p=481",
-      "date": "2026-05-24"
-    }
-  ],
-  "2011": [
-    {
-      "name": "前端小武",
-      "year": "11",
-      "title": "AI 时代的初思考",
-      "url": "https://xuexb.com/post/ai-think.html",
-      "date": "2026-05-17"
-    }
-  ],
-  "2012": [
-    {
-      "name": "郭晓力",
-      "year": "12",
-      "title": "前言",
-      "url": "https://guoxiaoli.com/post/662.html",
-      "date": "2026-05-20"
-    }
-  ],
   "2013": [
     {
       "name": "WEB骇客",
@@ -49,22 +13,38 @@ const latestArticlesByYear = {
       "date": "2026-05-20"
     }
   ],
-  "2018": [
+  "2014": [
     {
-      "name": "运维咖啡吧",
-      "year": "18",
-      "title": "遂昌｜躲避人潮的五一自驾Day5 - 独山",
-      "url": "https://blog.ops-coffee.com/r/city-china-zhejiang-lishui-suichang-05.html",
-      "date": "2026-05-21"
+      "name": "卡片创作实验室",
+      "year": "14",
+      "title": "《日课一问》：每日三省，破局人生",
+      "url": "https://cnfeat.com/posts/2026/05/19/%E6%97%A5%E8%AF%BE%E4%B8%80%E9%97%AE%E6%AF%8F%E6%97%A5%E4%B8%89%E7%9C%81%E7%A0%B4%E5%B1%80%E4%BA%BA%E7%94%9F/",
+      "date": "2026-05-18"
+    },
+    {
+      "name": "ying",
+      "year": "14",
+      "title": "《GPT 图解》笔记：Seq2Seq及点积注意力",
+      "url": "https://izualzhy.cn/llm-diagrammatize-seq2seq-attention",
+      "date": "2026-05-24"
+    }
+  ],
+  "2019": [
+    {
+      "name": "浪浪山下那个村",
+      "year": "19",
+      "title": "PuaSE： 简单的全局编排 Agent",
+      "url": "https://www.zeekling.cn/articles/2026/05/16/1778937519379.html",
+      "date": "2026-05-17"
     }
   ],
   "2020": [
     {
-      "name": "优世界",
+      "name": "Z次元",
       "year": "20",
-      "title": "OpenWrt 路由器改纯 AP 模式记录（Cudy TR3000 + 中兴 F50）",
-      "url": "https://usj.cc/202605231938.html",
-      "date": "2026-05-23"
+      "title": "如何写出好的Agent Skill",
+      "url": "https://blog.ahzoo.cn/p/7382919/",
+      "date": "2026-05-24"
     },
     {
       "name": "yihong0618",
@@ -74,22 +54,38 @@ const latestArticlesByYear = {
       "date": "2026-05-15"
     }
   ],
-  "2023": [
+  "2021": [
     {
-      "name": "无敌",
-      "year": "23",
-      "title": "多数人都无视了人生中的变量",
-      "url": "http://blog.tangwudi.com/shuoshuo/%E5%A4%9A%E6%95%B0%E4%BA%BA%E9%83%BD%E6%97%A0%E8%A7%86%E4%BA%86%E4%BA%BA%E7%94%9F%E4%B8%AD%E7%9A%84%E5%8F%98%E9%87%8F/",
-      "date": "2026-05-23"
+      "name": "喵喵小站・博客志",
+      "year": "21",
+      "title": "喵喵游记——金陵旧都",
+      "url": "https://www.mmbkz.cn/7f76fe96.html",
+      "date": "2026-05-12"
     }
   ],
-  "2025": [
+  "2022": [
     {
-      "name": "落花雨记",
-      "year": "25",
-      "title": "给糯米做绝育",
-      "url": "https://www.luohuayu.cn/69.html",
-      "date": "2026-05-23"
+      "name": "倦意",
+      "year": "22",
+      "title": "关于我自己写了一套论坛系统 — 倦意论坛内测上线",
+      "url": "https://jyblog.cn/5637/",
+      "date": "2026-05-24"
+    }
+  ],
+  "2023": [
+    {
+      "name": "小野",
+      "year": "23",
+      "title": "CTF:最好的语言解密过程",
+      "url": "https://lb5.net/254.html",
+      "date": "2026-05-19"
+    },
+    {
+      "name": "鹿泽",
+      "year": "23",
+      "title": "Python编程语言在SEO优化中的优势与用途",
+      "url": "https://www.bailuze.com/24090.html",
+      "date": "2026-05-25"
     }
   ]
 };
