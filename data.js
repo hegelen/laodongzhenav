@@ -277,6 +277,7 @@ const emailData = {
 const officialblogdata = {
 	'07': [{name:'阿里巴巴国际站设计', url:'/go.htm?url=https://www.aliued.com/'}],
 	'10': [{name:'cloudflare博客', url:'/go.htm?url=https://blog.cloudflare.com/'}],
+	'11': [{name:'腾讯全端', url:'/go.htm?url=http://www.alloyteam.com/'}],
 	'13': [{name:'美团技术团队', url:'/go.htm?url=https://tech.meituan.com/'}, {name:'有道技术博客', url:'/go.htm?url=https://techblog.youdao.com/'} ],
 	'14': [{name:'阿里淘系技术', url:'/go.htm?url=https://blog.csdn.net/Taobaojishu'}],
 	'16': [{name:'谷歌官方博客', url:'/go.htm?url=aHR0cHM6Ly9ibG9nLmdvb2dsZS8%3D'} , {name:'华为云开发者联盟', url:'/go.htm?url=https://blog.csdn.net/devcloud'}   , {name:'京东用户体验设计部 凹凸实验室', url:'/go.htm?url=https://aotu.io/'} ],
