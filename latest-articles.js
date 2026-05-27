@@ -1,15 +1,42 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 5/26/2026, 9:01:45 PM
+// 抓取日期: 5/27/2026, 8:23:26 AM
 // 只抓取最近14天内的文章，共 10 篇
 // 目标 10 篇，实际 10 篇
 
 const latestArticlesByYear = {
+  "2009": [
+    {
+      "name": "多多",
+      "year": "09",
+      "title": "访问网页返回567是什么意思",
+      "url": "https://ddlog.cn/?p=500",
+      "date": "2026-05-26"
+    }
+  ],
+  "2013": [
+    {
+      "name": "林羽凡",
+      "year": "13",
+      "title": "记录一个笔记智能体的开发经过（1）",
+      "url": "https://www.linyufan.com/post/5828",
+      "date": "2026-05-27"
+    }
+  ],
   "2015": [
     {
       "name": "满心",
       "year": "15",
-      "title": "一款简约易用的防御插件SafeMange",
-      "url": "https://zhoutian.com/375.html",
+      "title": "Typecho-Riven主题正式发售啦！！！",
+      "url": "https://zhoutian.com/374.html",
+      "date": "2026-05-27"
+    }
+  ],
+  "2017": [
+    {
+      "name": "串串狗小刊",
+      "year": "17",
+      "title": "分享几个 独立站 SEO 外链 建设的小经验",
+      "url": "https://www.ccgxk.com/codeother/759.html",
       "date": "2026-05-26"
     }
   ],
@@ -22,52 +49,20 @@ const latestArticlesByYear = {
       "date": "2026-05-26"
     }
   ],
-  "2021": [
-    {
-      "name": "记录生活",
-      "year": "21",
-      "title": "听劝！博客背景持续优化，缓解视觉疲劳",
-      "url": "https://9sb.net/archives/listen-to-advice-continuous-optimization-of-blog-background-to-alleviate-visual-fatigue.html",
-      "date": "2026-05-26"
-    }
-  ],
-  "2022": [
-    {
-      "name": "倦意",
-      "year": "22",
-      "title": "EdgeOne 日志分析软件 v2.0",
-      "url": "https://jyblog.cn/5651/",
-      "date": "2026-05-26"
-    }
-  ],
   "2023": [
-    {
-      "name": "鹿泽",
-      "year": "23",
-      "title": "电子商务SEO如何成为企业的正确选择",
-      "url": "https://www.bailuze.com/24093.html",
-      "date": "2026-05-26"
-    },
-    {
-      "name": "建站百科",
-      "year": "23",
-      "title": "投稿#华纳云618云端大促，香港cn2云服务器198元/年，美国cn2云4H8G15M永久988元/年",
-      "url": "https://www.jzbk.net/3044.html",
-      "date": "2026-05-26"
-    },
-    {
-      "name": "宗宗酱",
-      "year": "23",
-      "title": "第三次兑换天猫超市卡了",
-      "url": "https://ygz.ink/archives/5036.html",
-      "date": "2026-05-26"
-    },
     {
       "name": "火米",
       "year": "23",
       "title": "WorkFlowy + Bear web = 浏览器黄金组合",
       "url": "https://huo.me/bear/",
       "date": "2026-05-26"
+    },
+    {
+      "name": "鹿泽",
+      "year": "23",
+      "title": "2026年值得关注的SEO趋势：变化",
+      "url": "https://www.bailuze.com/24095.html",
+      "date": "2026-05-27"
     }
   ],
   "2024": [
@@ -86,6 +81,13 @@ const latestArticlesByYear = {
       "title": "冠军奖杯很重，但孩子的膝盖更贵：别让校园篮球透支少年未来",
       "url": "https://mzdsx.com/2026/05/27/%e5%86%a0%e5%86%9b%e5%a5%96%e6%9d%af%e5%be%88%e9%87%8d%ef%bc%8c%e4%bd%86%e5%ad%a9%e5%ad%90%e7%9a%84%e8%86%9d%e7%9b%96%e6%9b%b4%e8%b4%b5%ef%bc%9a%e5%88%ab%e8%ae%a9%e6%a0%a1%e5%9b%ad%e7%af%ae%e7%90%83/",
       "date": "2026-05-26"
+    },
+    {
+      "name": "华立",
+      "year": "26",
+      "title": "Windows下自动备份MYSQL脚本",
+      "url": "https://www.renhuali.cn/journal/cmpnh2b8s0020chfxq01n4sia",
+      "date": "2026-05-27"
     }
   ]
 };
