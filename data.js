@@ -279,7 +279,7 @@ const officialblogdata = {
 	'10': [{name:'cloudflare博客', url:'/go.htm?url=https://blog.cloudflare.com/'}],
 	'13': [{name:'美团技术团队', url:'/go.htm?url=https://tech.meituan.com/'}, {name:'有道技术博客', url:'/go.htm?url=https://techblog.youdao.com/'} ],
 	'14': [{name:'阿里淘系技术', url:'/go.htm?url=https://blog.csdn.net/Taobaojishu'}],
-	'16': [{name:'谷歌官方博客', url:'/go.htm?url=aHR0cHM6Ly9ibG9nLmdvb2dsZS8%3D'} , {name:'华为云开发者联盟', url:'/go.htm?url=https://blog.csdn.net/devcloud'} ],
+	'16': [{name:'谷歌官方博客', url:'/go.htm?url=aHR0cHM6Ly9ibG9nLmdvb2dsZS8%3D'} , {name:'华为云开发者联盟', url:'/go.htm?url=https://blog.csdn.net/devcloud'}   , {name:'京东用户体验设计部 凹凸实验室', url:'/go.htm?url=https://aotu.io/'} ],
 	'17': [{name:'字节跳动技术团队', url:'/go.htm?url=https://blog.csdn.net/ByteDanceTech'}   , {name:'腾讯技术工程', url:'/go.htm?url=https://blog.csdn.net/Tencent_TEG'}   ],
 	'18': [{name:'小米信息部技术团队', url:'/go.htm?url=https://xiaomi-info.github.io/'}],
 	'19': [{name:'滴滴技术', url:'/go.htm?url=https://blog.csdn.net/DiDi_Tech'} , {name:'IBM开发者博客', url:'/go.htm?url=https://developer.ibm.com/blogs/'}  , {name:'百度fex', url:'/go.htm?url=https://fex-team.github.io/'}  ],
