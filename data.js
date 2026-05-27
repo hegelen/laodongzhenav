@@ -340,7 +340,7 @@ const rssData = {
 const studyNavData = {
     '93': [{name:'马克思主义文库', url:'/go.htm?url=aHR0cHM6Ly93d3cubWFyeGlzdHMub3JnLw%3D%3D'}],
 	'06': [{name:'X', url:'/go.htm?url=https://www.X.COM/'}],
-    '09': [{name:'微博', url:'/go.htm?url=https://www.WEIBO.COM'}],
+    '09': [{name:'微博', url:'/go.htm?url=https://www.WEIBO.COM'}, {name:'quora', url:'/go.htm?url=aHR0cHM6Ly93d3cucXVvcmEuY29tLw%3D%3D'}],
     '11': [{name:'知乎', url:'/go.htm?url=https://www.zhihu.com/'}],
     '15': [{name:'微信读书', url:'/go.htm?url=https://weread.qq.com/'}],
     '25': [{name:'劳动者技术部落', url:'/go.htm?url=http://www.laodongzhe.cn'}]
