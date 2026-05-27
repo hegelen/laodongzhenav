@@ -288,6 +288,11 @@ const paidBlogData = {
     '20': [{name:'happyxiao', url:'/go.htm?url=https://happyxiao.com/'}]
 };
 
+// ==================== 教程文档导航 ====================
+const guidedata = {
+    '15': [{name:'菜鸟教程', url:'/go.htm?url=https://www.runoob.com/'}]
+};
+
 // ==================== 游戏导航 ==================== 
 const gameData = {
     '26': [{name:'2048', url:'https://laodongzhe.cn/games/2048.html'}, {name:'五子棋', url:'/games/wuziqi.html'}]
@@ -429,6 +434,7 @@ const categories = {
     '👤 技术博客导航': blogYearsData,
     // '📡 RSS文案合集': rssFlatList, 取消这一项了 下面的rss才是   // ← 现在 rssFlatList 已经定义好了
 	' RSS最新文章': 'https://laodongzhe.cn/rss.html',  // ←  添加外部链接
+	'🗁技术教程文档:guidedata，
     '💬 独立论坛导航': forumData,
     '✉️ 邮箱服务大全': emailData,
 	'🛝 独立休闲游戏':gameData,
