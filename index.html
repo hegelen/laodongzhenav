@@ -552,35 +552,7 @@
         display: none;
     }
 }
-  <!-- 下面为临时测试260528 -->
-  .test-tip {
-    position: relative;
-    display: inline-block;
-    background: #eee;
-    padding: 10px;
-    margin: 20px;
-}
 
-.test-tip::before {
-    content: "测试成功";
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    background: black;
-    color: white;
-    padding: 4px 8px;
-    border-radius: 4px;
-    font-size: 12px;
-    white-space: nowrap;
-    opacity: 0;
-    transition: opacity 0.2s;
-    pointer-events: none;
-}
-
-.test-tip:hover::before {
-    opacity: 1;
-}
     </style>
 </head>
 <body>
@@ -643,7 +615,7 @@
     <div class="footer">
         <p>© laodongzhe.cn - 劳动者独立技术博客志-独立技术博客大全 |<a href="https://www.laodongzhe.cn/index.php?c=read&id=112&page=1&cache=refresh" data-tip="Hello World" target="_blank">网站提交</a>| 声明：网站上的服务均为第三方提供，请用户注意甄别服务质量</p>
     </div>
-  <!-- 临时测试的数据 --> <span class="test-tip">悬停我</span> 
+
     <div class="back-to-top" id="backToTop">↑</div>
 
     <!-- 引入共享数据文件 -->
