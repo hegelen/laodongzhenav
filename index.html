@@ -791,7 +791,7 @@
                                     blog.name === '论坛' || blog.name === '主页' || blog.name === '程序';
                     const colorClass = isSubmit ? 'submit-link-red' : '';
 					// 关键修改：添加 data-tip 属性
-                    html += `<a href="${blog.url}" target="_blank" class="${colorClass}"> data-tip="${blog.desc || blog.url}"> ${blog.name}</a>`;
+                    html += `<a href="${blog.url}" target="_blank" class="${colorClass}">  ${blog.desc ? `data-tip="${blog.desc}"` : ''}> ${blog.name}</a>`;
                 });
                 
                 html += `</div></div>`;
