@@ -129,7 +129,7 @@ const forumData = {
     '17': [{name:'4414', url:'/go.htm?url=https://www.4414.cn/'}],
     '18': [{name:'0xffff', url:'/go.htm?url=https://0xffff.one/'}  , {name:'腾讯开发者社区', url:'/go.htm?url=https://cloud.tencent.com/developer'}  ],
     '19': [{name:'代码厨房社区', url:'/go.htm?url=https://codekitchen.community/'}, {name:'w2solo独立开发者社区', url:'/go.htm?url=https://w2solo.com/'}],
-    '20': [{name:'大佬', url:'https://www.dalao.net/'}, {name:'Mergeek产品爱好者社区', url:'/go.htm?url=https://www.mergeek.com/'}],
+    '20': [{name:'大佬论坛', title="中文站长论坛，域名玩家论坛",url:'https://www.dalao.net/'}, {name:'Mergeek产品爱好者社区', url:'/go.htm?url=https://www.mergeek.com/'}],
     '21': [{name:'obsidian', url:'/go.htm?url=https://forum-zh.obsidian.md/'}, {name:'2号站长网', url:'/go.htm?url=https://www.zz2zz.com/circle/'}],
     '22': [{name:'个站论坛', url:'/go.htm?url=https://storeweb.cn/forum'}, {name:'nodeseek', url:'/go.htm?url=https://www.nodeseek.com/'}, {name:'云盘135论坛', url:'/go.htm?url=http://www.yunpan135.com/'}],
     '23': [{name:'nodeloc', url:'/go.htm?url=https://www.nodeloc.com/'}, {name:'linux do', url:'/go.htm?url=https://linux.do/'}, {name:'hifiti', url:'/go.htm?url=https://hifiti.com/'}],
@@ -281,10 +281,10 @@ const officialblogdata = {
 	'13': [{name:'美团技术团队', url:'/go.htm?url=https://tech.meituan.com/'}, {name:'有道技术博客', url:'/go.htm?url=https://techblog.youdao.com/'} ],
 	'14': [{name:'阿里淘系技术', url:'/go.htm?url=https://blog.csdn.net/Taobaojishu'}      , {name:'Elastic 中国社区博客', url:'/go.htm?url=https://elasticstack.blog.csdn.net/'}            ],
 	'16': [{name:'谷歌官方博客', url:'/go.htm?url=aHR0cHM6Ly9ibG9nLmdvb2dsZS8%3D'} , {name:'华为云开发者联盟', url:'/go.htm?url=https://blog.csdn.net/devcloud'}   , {name:'京东用户体验设计部 凹凸实验室', url:'/go.htm?url=https://aotu.io/'} ],
-	'17': [{name:'字节跳动技术团队', url:'/go.htm?url=https://blog.csdn.net/ByteDanceTech'}   , {name:'腾讯技术工程', url:'/go.htm?url=https://blog.csdn.net/Tencent_TEG'}  , {name:'谷歌开发者', url:'/go.htm?url=https://blog.csdn.net/googledevs'}   , {name:'闲鱼技术', url:'/go.htm?url=https://blog.csdn.net/weixin_38912070'}    ],
+	'17': [{name:'字节跳动技术团队', url:'/go.htm?url=https://blog.csdn.net/ByteDanceTech'}   , {name:'腾讯技术工程', url:'/go.htm?url=https://blog.csdn.net/Tencent_TEG'}  , {name:'谷歌开发者', url:'/go.htm?url=https://blog.csdn.net/googledevs'}   , {name:'闲鱼技术', url:'/go.htm?url=https://blog.csdn.net/weixin_38912070'}  , {name:'饿了么大前端', url:'/go.htm?url=https://www.zhihu.com/people/elemefe'}     ],
 	'18': [{name:'小米信息部技术团队', url:'/go.htm?url=https://xiaomi-info.github.io/'}  , {name:'tensorflow博客', url:'/go.htm?url=https://blog.tensorflow.org/'}     ],
 	'19': [{name:'滴滴技术', url:'/go.htm?url=https://blog.csdn.net/DiDi_Tech'} , {name:'IBM开发者博客', url:'/go.htm?url=https://developer.ibm.com/blogs/'}  , {name:'百度fex', url:'/go.htm?url=https://fex-team.github.io/'}  ],
-		'21': [{name:'cloudflare中文博客', url:'/go.htm?url=https://blog.cloudflare.com/zh-cn/'}],
+	'21': [{name:'cloudflare中文博客', url:'/go.htm?url=https://blog.cloudflare.com/zh-cn/'}     , {name:'HarmonyOS SDK', url:'/go.htm?url=https://blog.csdn.net/HUAWEI_HMSCore'}   ],
 
     '22': [{name:'kaqi官方博客', url:'/go.htm?url=https://blog.kagi.com/'}],
 	 '23': [{name:'MDN博客', url:'/go.htm?url=https://developer.mozilla.org/en-US/blog/'}]
