@@ -129,7 +129,7 @@ const forumData = {
     '17': [{name:'4414', url:'/go.htm?url=https://www.4414.cn/'}],
     '18': [{name:'0xffff', url:'/go.htm?url=https://0xffff.one/'}  , {name:'腾讯开发者社区', url:'/go.htm?url=https://cloud.tencent.com/developer'}  ],
     '19': [{name:'代码厨房社区', url:'/go.htm?url=https://codekitchen.community/'}, {name:'w2solo独立开发者社区', url:'/go.htm?url=https://w2solo.com/'}],
-    '20': [{name:'大佬论坛', title="中文站长论坛，域名玩家论坛",url:'https://www.dalao.net/'}, {name:'Mergeek产品爱好者社区', url:'/go.htm?url=https://www.mergeek.com/'}],
+    '20': [{name:'大佬论坛',url:'https://www.dalao.net/', desc: '中文站长论坛，域名玩家论坛'}, {name:'Mergeek产品爱好者社区', url:'/go.htm?url=https://www.mergeek.com/'}],
     '21': [{name:'obsidian', url:'/go.htm?url=https://forum-zh.obsidian.md/'}, {name:'2号站长网', url:'/go.htm?url=https://www.zz2zz.com/circle/'}],
     '22': [{name:'个站论坛', url:'/go.htm?url=https://storeweb.cn/forum'}, {name:'nodeseek', url:'/go.htm?url=https://www.nodeseek.com/'}, {name:'云盘135论坛', url:'/go.htm?url=http://www.yunpan135.com/'}],
     '23': [{name:'nodeloc', url:'/go.htm?url=https://www.nodeloc.com/'}, {name:'linux do', url:'/go.htm?url=https://linux.do/'}, {name:'hifiti', url:'/go.htm?url=https://hifiti.com/'}],
