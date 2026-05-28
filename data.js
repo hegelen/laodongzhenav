@@ -283,7 +283,7 @@ const officialblogdata = {
 	'16': [{name:'谷歌官方博客', url:'/go.htm?url=aHR0cHM6Ly9ibG9nLmdvb2dsZS8%3D'} , {name:'华为云开发者联盟', url:'/go.htm?url=https://blog.csdn.net/devcloud'}   , {name:'京东用户体验设计部 凹凸实验室', url:'/go.htm?url=https://aotu.io/'} ],
 	'17': [{name:'字节跳动技术团队', url:'/go.htm?url=https://blog.csdn.net/ByteDanceTech'}   , {name:'腾讯技术工程', url:'/go.htm?url=https://blog.csdn.net/Tencent_TEG'}  , {name:'谷歌开发者', url:'/go.htm?url=https://blog.csdn.net/googledevs'}   , {name:'闲鱼技术', url:'/go.htm?url=https://blog.csdn.net/weixin_38912070'}  , {name:'饿了么大前端', url:'/go.htm?url=https://www.zhihu.com/people/elemefe'}     ],
 	'18': [{name:'小米信息部技术团队', url:'/go.htm?url=https://xiaomi-info.github.io/'}  , {name:'tensorflow博客', url:'/go.htm?url=https://blog.tensorflow.org/'}     ],
-	'19': [{name:'滴滴技术', url:'/go.htm?url=https://blog.csdn.net/DiDi_Tech'} , {name:'IBM开发者博客', url:'/go.htm?url=https://developer.ibm.com/blogs/'}  , {name:'百度fex', url:'/go.htm?url=https://fex-team.github.io/'}  ],
+	'19': [{name:'滴滴技术', url:'/go.htm?url=https://blog.csdn.net/DiDi_Tech'} , {name:'IBM开发者博客', url:'/go.htm?url=https://developer.ibm.com/blogs/'}  , {name:'百度fex', url:'/go.htm?url=https://fex-team.github.io/'}  , {name:'Microsoft开发者博客', url:'/go.htm?url=https://devblogs.microsoft.com/'}    ],
 	'21': [{name:'cloudflare中文博客', url:'/go.htm?url=https://blog.cloudflare.com/zh-cn/'}     , {name:'HarmonyOS SDK', url:'/go.htm?url=https://blog.csdn.net/HUAWEI_HMSCore'}   ],
 
     '22': [{name:'kaqi官方博客', url:'/go.htm?url=https://blog.kagi.com/'}],
