@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>劳动者独立技术博客志-独立技术博客大全|劳动者独立技术博客导航|论坛|工具|ai等分类导航</title>
     <style>
+
         * {
             margin: 0;
             padding: 0;
@@ -516,6 +517,41 @@
         .back-to-top:hover {
             background: #0066cc;
         }
+		
+		[data-tip] {
+    position: relative;
+    cursor: help;
+}
+ <!-- 新增data-tip 20260528 -->
+[data-tip]::before {
+    content: attr(data-tip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+    padding: 6px 12px;
+    background: #1a2632;
+    color: #fff;
+    font-size: 12px;
+    white-space: nowrap;
+    border-radius: 8px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+[data-tip]:hover::before {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    [data-tip]::before {
+        display: none;
+    }
+}
     </style>
 </head>
 <body>
@@ -754,7 +790,8 @@
                                     blog.name === '学习' || blog.name === 'ai' || blog.name === '米表' ||
                                     blog.name === '论坛' || blog.name === '主页' || blog.name === '程序';
                     const colorClass = isSubmit ? 'submit-link-red' : '';
-                    html += `<a href="${blog.url}" target="_blank" class="${colorClass}">${blog.name}</a>`;
+					// 关键修改：添加 data-tip 属性
+                    html += `<a href="${blog.url}" target="_blank" class="${colorClass}"> data-tip="${blog.desc || blog.url}"> ${blog.name}</a>`;
                 });
                 
                 html += `</div></div>`;
