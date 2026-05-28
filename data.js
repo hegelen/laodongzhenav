@@ -119,7 +119,7 @@ const forumData = {
     '06': [{name:'迅维', url:'/go.htm?url=https://www.chinafix.com/forum.php'}, {name:'飞卢', url:'/go.htm?url=https://bbs.faloo.com/'}, {name:'煎蛋', url:'/go.htm?url=https://jandan.net/bbs'}, {name:'绝客', url:'/go.htm?url=https://jkmrp.com/'}],
     '07': [{name:'chiphell', url:'/go.htm?url=https://www.chiphell.com/forum.php'}, {name:'矿石收音机', url:'/go.htm?url=http://www.crystalradio.cn/forum.php'}],
     '08': [{name:'hostloc', url:'/go.htm?url=https://hostloc.com/'}, {name:'吾爱破解', url:'/go.htm?url=https://www.52pojie.cn/index.php'}],
-    '09': [{name:'北邮人论坛', url:'/go.htm?url=https://bbs.byr.cn/'}, {name:'Ruby中文社区', url:'/go.htm?url=https://ruby-china.org/'}],
+    '09': [{name:'北邮人论坛', url:'/go.htm?url=https://bbs.byr.cn/'}, {name:'Ruby中文社区', url:'/go.htm?url=https://ruby-china.org/'}, {name:'w3ctech前端技术社区', url:'/go.htm?url=https://w3ctech.com/'} ],
     '10': [{name:'v2ex', url:'/go.htm?url=https://www.v2ex.com/'}],
     '11': [{name:'王牌技术员联盟', url:'/go.htm?url=https://wangpai.2345.cn/'}, {name:'cnodejs', url:'/go.htm?url=https://cnodejs.org/'}, {name:'思否', url:'/go.htm?url=https://segmentfault.com/'}],
     '12': [{name:'顶渲论坛', url:'/go.htm?url=https://www.toprender.com/forum.php'}, {name:'UG爱好者', url:'/go.htm?url=https://www.ugsnx.com/forum.php'}, {name:' ', url:''}, {name:' ', url:''}, {name:' ', url:''}],
@@ -299,7 +299,8 @@ const paidBlogData = {
 const guidedata = {
     '04': [{name:'MDN Web Docs', url:'/go.htm?url=https://developer.mozilla.org/'}],
 	'06': [{name:'w3school', url:'/go.htm?url=https://www.w3school.com.cn/'}],
-	 '15': [{name:'菜鸟教程', url:'/go.htm?url=https://www.runoob.com/'}]
+	 '15': [{name:'菜鸟教程', url:'/go.htm?url=https://www.runoob.com/'}],
+	 '18': [{name:'印记中文-前端', url:'/go.htm?url=https://www.docschina.org/'}]
 };
 
 // ==================== 游戏导航 ==================== 
