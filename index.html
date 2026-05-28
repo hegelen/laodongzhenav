@@ -861,6 +861,32 @@
         }
         
         init();
+		// 手动添加 Tooltip（兼容性最好）
+document.querySelectorAll('.links-container a[data-tip]').forEach(el => {
+    let tip = null;
+    el.addEventListener('mouseenter', (e) => {
+        tip = document.createElement('div');
+        tip.textContent = el.getAttribute('data-tip');
+        tip.style.cssText = `
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-bottom: 8px;
+            padding: 6px 12px;
+            background: #1a2632;
+            color: #fff;
+            font-size: 12px;
+            white-space: nowrap;
+            border-radius: 8px;
+            z-index: 10000;
+            pointer-events: none;
+        `;
+        el.style.position = 'relative';
+        el.appendChild(tip);
+    });
+    el.addEventListener('mouseleave', () => tip && tip.remove());
+});
     </script>
 </body>
 </html>
