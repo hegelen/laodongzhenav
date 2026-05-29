@@ -864,7 +864,7 @@
         
         init();
 // ========== 高级 Tooltip：无原生冲突，跟随鼠标 20260529==========
-// ========== 通用 Tooltip（优化版 + 调试信息）==========
+// 通用 Tooltip（事件委托 + 跟随鼠标）
 (function() {
     let tipDiv = null;
 
@@ -888,24 +888,20 @@
             transition: opacity 0.15s;
         `;
         document.body.appendChild(tipDiv);
-        console.log('✅ Tooltip 容器已创建');
         return tipDiv;
     }
 
-    // 监听鼠标移入
     document.addEventListener('mouseenter', (e) => {
         let target = e.target.closest('[data-tip]');
         if (!target) return;
-        
         let tipText = target.getAttribute('data-tip');
         if (!tipText) return;
-        
-        console.log('🎯 触发 tooltip，内容：', tipText);  // 调试日志
         
         let tip = createTip();
         tip.textContent = tipText;
         tip.style.opacity = '1';
         
+        // 跟随鼠标移动
         const moveHandler = (moveEvent) => {
             let x = moveEvent.clientX + 15;
             let y = moveEvent.clientY + 15;
@@ -918,22 +914,8 @@
         target.addEventListener('mouseleave', () => {
             tip.style.opacity = '0';
             document.removeEventListener('mousemove', moveHandler);
-            console.log('👋 隐藏 tooltip');
         }, { once: true });
     });
-
-    // 测试：页面加载后 2 秒，强制显示一个测试气泡（验证代码是否工作）
-    setTimeout(() => {
-        if (!tipDiv) createTip();
-        tipDiv.textContent = '✅ 气泡系统正常工作';
-        tipDiv.style.opacity = '1';
-        tipDiv.style.left = '50px';
-        tipDiv.style.top = '50px';
-        console.log('🧪 测试气泡已显示，2秒后自动隐藏');
-        setTimeout(() => {
-            tipDiv.style.opacity = '0';
-        }, 2000);
-    }, 2000);
 })();
     </script>
 </body>
