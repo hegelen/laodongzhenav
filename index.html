@@ -864,83 +864,76 @@
         
         init();
 // ========== 高级 Tooltip：无原生冲突，跟随鼠标 20260529==========
+// ========== 通用 Tooltip（优化版 + 调试信息）==========
 (function() {
     let tipDiv = null;
-    let activeHandler = null;
 
     function createTip() {
         if (tipDiv) return tipDiv;
         tipDiv = document.createElement('div');
-        tipDiv.id = 'custom-tooltip';
+        tipDiv.id = 'dynamic-tooltip';
         tipDiv.style.cssText = `
             position: fixed;
-            padding: 6px 14px;
-            background: #1e293b;
-            color: #f1f5f9;
-            font-size: 0.85rem;
-            font-weight: 500;
-            border-radius: 30px;
+            padding: 6px 12px;
+            background: #1a2632;
+            color: #fff;
+            font-size: 12px;
+            border-radius: 8px;
             white-space: nowrap;
             z-index: 10000;
             pointer-events: none;
             font-family: system-ui, sans-serif;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-            backdrop-filter: blur(4px);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
             opacity: 0;
-            transition: opacity 0.12s ease;
-            border: 1px solid #475569;
+            transition: opacity 0.15s;
         `;
         document.body.appendChild(tipDiv);
+        console.log('✅ Tooltip 容器已创建');
         return tipDiv;
     }
 
-    // 全局监听鼠标移入（事件委托）
+    // 监听鼠标移入
     document.addEventListener('mouseenter', (e) => {
-        // 查找带有 data-tip 的元素
         let target = e.target.closest('[data-tip]');
         if (!target) return;
-
-        // 防止原生 title 弹出来（如果元素有 title 属性，临时移除）
-        let originalTitle = null;
-        if (target.hasAttribute('title')) {
-            originalTitle = target.getAttribute('title');
-            target.removeAttribute('title');
-        }
-
+        
         let tipText = target.getAttribute('data-tip');
         if (!tipText) return;
-
+        
+        console.log('🎯 触发 tooltip，内容：', tipText);  // 调试日志
+        
         let tip = createTip();
         tip.textContent = tipText;
         tip.style.opacity = '1';
-
-        // 跟随鼠标移动
+        
         const moveHandler = (moveEvent) => {
-            let x = moveEvent.clientX + 16;
-            let y = moveEvent.clientY + 20;
-            // 防止超出右边界
-            if (x + tip.offsetWidth > window.innerWidth) {
-                x = moveEvent.clientX - tip.offsetWidth - 8;
-            }
-            // 防止超出下边界
-            if (y + tip.offsetHeight > window.innerHeight) {
-                y = moveEvent.clientY - tip.offsetHeight - 8;
-            }
+            let x = moveEvent.clientX + 15;
+            let y = moveEvent.clientY + 15;
             tip.style.left = x + 'px';
             tip.style.top = y + 'px';
         };
+        
         document.addEventListener('mousemove', moveHandler);
-
-        // 鼠标离开时彻底清理
+        
         target.addEventListener('mouseleave', () => {
             tip.style.opacity = '0';
             document.removeEventListener('mousemove', moveHandler);
-            // 恢复原来的 title（如果有，但一般我们不用 title，这里留作兼容）
-            if (originalTitle !== null) {
-                target.setAttribute('title', originalTitle);
-            }
+            console.log('👋 隐藏 tooltip');
         }, { once: true });
     });
+
+    // 测试：页面加载后 2 秒，强制显示一个测试气泡（验证代码是否工作）
+    setTimeout(() => {
+        if (!tipDiv) createTip();
+        tipDiv.textContent = '✅ 气泡系统正常工作';
+        tipDiv.style.opacity = '1';
+        tipDiv.style.left = '50px';
+        tipDiv.style.top = '50px';
+        console.log('🧪 测试气泡已显示，2秒后自动隐藏');
+        setTimeout(() => {
+            tipDiv.style.opacity = '0';
+        }, 2000);
+    }, 2000);
 })();
     </script>
 </body>
