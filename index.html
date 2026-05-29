@@ -889,6 +889,10 @@ document.querySelectorAll('.links-container a[data-tip]').forEach(el => {
     });
     el.addEventListener('mouseleave', () => tip && tip.remove());
 });
+// 测试20260529
+.test-tip[data-tip]::before {
+    content: attr(data-tip);
+}
     </script>
 </body>
 </html>
