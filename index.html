@@ -973,6 +973,14 @@ if (document.readyState === 'loading') {
     // 如果你的内容是动态加载的，在加载完成后调用 initNoQuestionMark()
     window.initNoQuestionMark = initNoQuestionMark;
 })();
+function loadCategory(category) {
+    // ... 你原来的加载逻辑 ...
+    
+    // 加载完成后，重新把新出现的 <a> 转成 <span>
+    if (window.initNoQuestionMark) {
+        window.initNoQuestionMark();
+    }
+}
     </script>
 </body>
 </html>
