@@ -25,7 +25,7 @@ const blogYearsData = {
 	'99': [{name:'秘密花园', url:'/go.htm?url=http://www.yini.org/', rss:'http://www.yini.org/feed'}],
    				// ==================== 复制方便    , {name:'', url:'/go.htm?url=', rss:''}     ====================
 
-   '00': [{name:'Luca', url:'/go.htm?url=https://wlj.me/', rss:'https://wlj.me/index.xml'}, {name:'卢昌海 ', url:'/go.htm?url=https://www.changhai.org/', rss:'https://www.changhai.org/feed'}, {name:' ', url:''}, {name:' ', url:''}],
+   '00': [{name:'Luca', url:'/go.htm?url=https://wlj.me/', rss:'https://wlj.me/index.xml'}, {name:'卢昌海 ', url:'/go.htm?url=https://www.changhai.org/', rss:'https://www.changhai.org/feed'},  {name:'阳志平', url:'/go.htm?url=https://yangzhiping.com/', rss:'https://yangzhiping.com/feed/'}  ],
    				// ==================== 复制方便    , {name:'', url:'/go.htm?url=', rss:''}     ====================
 
    '01': [{name:'nc-show', url:'/go.htm?url=https://nicrosoft.net/', rss:'https://nicrosoft.net/feed'}, {name:'阿江守候', url:'/go.htm?url=http://www.ajiang.net/', rss:'http://www.ajiang.net/feed'}, {name:'东评衿就', url:'/go.htm?url=https://dongjunke.cn/', rss:'https://dongjunke.cn/atom.xml'}, {name:'老痛', url:'/go.htm?url=https://toonkam.com' , rss:'https://toonkam.com/feed'}, {name:' ', url:''}],
