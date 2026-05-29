@@ -287,7 +287,8 @@ const officialblogdata = {
 	'21': [{name:'cloudflare中文博客', url:'/go.htm?url=https://blog.cloudflare.com/zh-cn/'}     , {name:'HarmonyOS SDK', url:'/go.htm?url=https://blog.csdn.net/HUAWEI_HMSCore'}   ],
 
     '22': [{name:'kaqi官方博客', url:'/go.htm?url=https://blog.kagi.com/'}],
-	 '23': [{name:'MDN博客', url:'/go.htm?url=https://developer.mozilla.org/en-US/blog/'}]
+	 '23': [{name:'MDN博客', url:'/go.htm?url=https://developer.mozilla.org/en-US/blog/'}],
+	  '26': [{name:'slax博客', url:'/go.htm?url=https://slax.com/zh-Hans/blog/'}]
 };
 
 // ==================== 付费博客导航    , {name:'', url:'/go.htm?url='}     ====================
