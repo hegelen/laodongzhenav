@@ -923,6 +923,56 @@ if (document.readyState === 'loading') {
 } else {
     addTooltips();
 }
+
+// ========== 彻底消灭 ? 的完整方案 ==========
+(function() {
+    // 1. 把页面中所有的 <a> 链接（特定区域内的）替换成 <span>
+    function replaceLinksWithSpans(containerSelector = '.links-container') {
+        document.querySelectorAll(`${containerSelector} a`).forEach(a => {
+            const span = document.createElement('span');
+            span.textContent = a.textContent;
+            span.className = 'fake-link';
+            // 复制所有需要的属性
+            span.setAttribute('data-url', a.href);
+            if (a.getAttribute('data-tip')) {
+                span.setAttribute('data-tip', a.getAttribute('data-tip'));
+            }
+            span.style.cssText = 'cursor:pointer; color:#2563eb; text-decoration:underline;';
+            a.parentNode.replaceChild(span, a);
+        });
+    }
+    
+    // 2. 绑定点击跳转
+    function bindFakeLinks() {
+        document.querySelectorAll('.fake-link').forEach(el => {
+            if (el.hasAttribute('data-bound')) return;
+            el.setAttribute('data-bound', 'true');
+            el.addEventListener('click', (e) => {
+                e.preventDefault();
+                const url = el.getAttribute('data-url');
+                if (url && url !== '#' && url !== '') {
+                    window.open(url, '_blank');
+                }
+            });
+        });
+    }
+    
+    // 3. 初始化（页面加载和动态内容更新后都要调用）
+    function initNoQuestionMark() {
+        replaceLinksWithSpans();
+        bindFakeLinks();
+    }
+    
+    // 页面加载时执行
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initNoQuestionMark);
+    } else {
+        initNoQuestionMark();
+    }
+    
+    // 如果你的内容是动态加载的，在加载完成后调用 initNoQuestionMark()
+    window.initNoQuestionMark = initNoQuestionMark;
+})();
     </script>
 </body>
 </html>
