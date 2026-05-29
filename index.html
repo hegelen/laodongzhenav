@@ -981,6 +981,23 @@ function loadCategory(category) {
         window.initNoQuestionMark();
     }
 }
+// 绑定伪装链接的点击事件
+function bindFakeLinks() {
+    document.querySelectorAll('.fake-link').forEach(el => {
+        if (el.hasAttribute('data-bound')) return;
+        el.setAttribute('data-bound', 'true');
+        el.addEventListener('click', (e) => {
+            e.preventDefault();
+            const url = el.getAttribute('data-url');
+            if (url && url !== '#' && url !== '') {
+                window.open(url, '_blank');
+            }
+        });
+    });
+}
+
+// 每次渲染完新内容后调用
+bindFakeLinks();
     </script>
 </body>
 </html>
