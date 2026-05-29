@@ -863,88 +863,85 @@
         }
         
         init();
-		// 手动添加 Tooltip（兼容性最好）
-document.querySelectorAll('.links-container a[data-tip]').forEach(el => {
-    let tip = null;
-    el.addEventListener('mouseenter', (e) => {
-        tip = document.createElement('div');
-        tip.textContent = el.getAttribute('data-tip');
-        tip.style.cssText = `
-            position: absolute;
-            bottom: 100%;
-            left: 50%;
-            transform: translateX(-50%);
-            margin-bottom: 8px;
-            padding: 6px 12px;
-            background: #1a2632;
-            color: #fff;
-            font-size: 12px;
+// ========== 高级 Tooltip：无原生冲突，跟随鼠标 20260529==========
+(function() {
+    let tipDiv = null;
+    let activeHandler = null;
+
+    function createTip() {
+        if (tipDiv) return tipDiv;
+        tipDiv = document.createElement('div');
+        tipDiv.id = 'custom-tooltip';
+        tipDiv.style.cssText = `
+            position: fixed;
+            padding: 6px 14px;
+            background: #1e293b;
+            color: #f1f5f9;
+            font-size: 0.85rem;
+            font-weight: 500;
+            border-radius: 30px;
             white-space: nowrap;
-            border-radius: 8px;
             z-index: 10000;
             pointer-events: none;
+            font-family: system-ui, sans-serif;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            backdrop-filter: blur(4px);
+            opacity: 0;
+            transition: opacity 0.12s ease;
+            border: 1px solid #475569;
         `;
-        el.style.position = 'relative';
-        el.appendChild(tip);
-    });
-    el.addEventListener('mouseleave', () => tip && tip.remove());
-});
-// 20260529新加jss 手动添加 Tooltip（兼容性最好，绕开 CSS attr 问题）
-function addTooltips() {
-    document.querySelectorAll('.links-container a[data-tip]').forEach(el => {
-        // 避免重复绑定
-        if (el.hasAttribute('data-tip-handled')) return;
-        el.setAttribute('data-tip-handled', 'true');
-        
-        let tip = null;
-        
-        el.addEventListener('mouseenter', () => {
-            const tipText = el.getAttribute('data-tip');
-            if (!tipText) return;
-            
-            tip = document.createElement('div');
-            tip.textContent = tipText;
-            tip.style.cssText = `
-                position: fixed;
-                bottom: 20px;
-                left: 50%;
-                transform: translateX(-50%);
-                padding: 8px 16px;
-                background: #1a2632;
-                color: #fff;
-                font-size: 13px;
-                border-radius: 8px;
-                z-index: 10000;
-                pointer-events: none;
-                white-space: nowrap;
-                box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-                font-family: system-ui, sans-serif;
-            `;
-            document.body.appendChild(tip);
-        });
-        
-        el.addEventListener('mouseleave', () => {
-            if (tip) {
-                tip.remove();
-                tip = null;
+        document.body.appendChild(tipDiv);
+        return tipDiv;
+    }
+
+    // 全局监听鼠标移入（事件委托）
+    document.addEventListener('mouseenter', (e) => {
+        // 查找带有 data-tip 的元素
+        let target = e.target.closest('[data-tip]');
+        if (!target) return;
+
+        // 防止原生 title 弹出来（如果元素有 title 属性，临时移除）
+        let originalTitle = null;
+        if (target.hasAttribute('title')) {
+            originalTitle = target.getAttribute('title');
+            target.removeAttribute('title');
+        }
+
+        let tipText = target.getAttribute('data-tip');
+        if (!tipText) return;
+
+        let tip = createTip();
+        tip.textContent = tipText;
+        tip.style.opacity = '1';
+
+        // 跟随鼠标移动
+        const moveHandler = (moveEvent) => {
+            let x = moveEvent.clientX + 16;
+            let y = moveEvent.clientY + 20;
+            // 防止超出右边界
+            if (x + tip.offsetWidth > window.innerWidth) {
+                x = moveEvent.clientX - tip.offsetWidth - 8;
             }
-        });
+            // 防止超出下边界
+            if (y + tip.offsetHeight > window.innerHeight) {
+                y = moveEvent.clientY - tip.offsetHeight - 8;
+            }
+            tip.style.left = x + 'px';
+            tip.style.top = y + 'px';
+        };
+        document.addEventListener('mousemove', moveHandler);
+
+        // 鼠标离开时彻底清理
+        target.addEventListener('mouseleave', () => {
+            tip.style.opacity = '0';
+            document.removeEventListener('mousemove', moveHandler);
+            // 恢复原来的 title（如果有，但一般我们不用 title，这里留作兼容）
+            if (originalTitle !== null) {
+                target.setAttribute('title', originalTitle);
+            }
+        }, { once: true });
     });
-}
-
-// 每次加载分类内容后重新绑定
-const originalLoadCategoryContent = loadCategoryContent;
-loadCategoryContent = function(categoryName) {
-    originalLoadCategoryContent(categoryName);
-    setTimeout(addTooltips, 100);
-};
-
-// 页面加载时也执行一次
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', addTooltips);
-} else {
-    addTooltips();
-}
+})();
     </script>
 </body>
 </html>
