@@ -1,40 +1,31 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 5/29/2026, 11:26:01 AM
+// 抓取日期: 5/29/2026, 9:13:01 PM
 // 只抓取最近14天内的文章，共 10 篇
 // 目标 10 篇，实际 10 篇
 
 const latestArticlesByYear = {
-  "2000": [
+  "2002": [
     {
-      "name": "Luca",
-      "year": "00",
-      "title": "本地优先才有真正的快",
-      "url": "https://wlj.me/notes/sp-note-20260528-220355/",
-      "date": "2026-05-28"
-    }
-  ],
-  "2008": [
-    {
-      "name": "生活的左上角",
-      "year": "08",
-      "title": "观《给阿嬷的情书》有感：只为情义",
-      "url": "https://bwskyer.com/dear-you-review-love-and-trust.html",
-      "date": "2026-05-28"
+      "name": "seth",
+      "year": "02",
+      "title": "“Because you’re the cheapest”",
+      "url": "https://seths.blog/2026/05/because-youre-the-cheapest/",
+      "date": "2026-05-29"
     }
   ],
   "2009": [
+    {
+      "name": "异数",
+      "year": "09",
+      "title": "随笔 || 2026年建筑师考试小结",
+      "url": "https://www.yishu.pro/217.html",
+      "date": "2026-05-29"
+    },
     {
       "name": "张鑫旭",
       "year": "09",
       "title": "新特性速递：focus()行为新增focusVisible控制",
       "url": "https://www.zhangxinxu.com/wordpress/2026/05/js-focus-focusvisible/",
-      "date": "2026-05-29"
-    },
-    {
-      "name": "多多",
-      "year": "09",
-      "title": "腾讯eo pages 网站访问显示404",
-      "url": "https://ddlog.cn/?p=510",
       "date": "2026-05-29"
     }
   ],
@@ -51,15 +42,8 @@ const latestArticlesByYear = {
     {
       "name": "串串狗小刊",
       "year": "17",
-      "title": "讲一下谷歌 SEO 常用的 8 个工具",
-      "url": "https://www.ccgxk.com/codeother/761.html",
-      "date": "2026-05-28"
-    },
-    {
-      "name": "科学空间",
-      "year": "17",
-      "title": "矩阵参数的奇异值熵越高越好吗？",
-      "url": "https://kexue.fm/archives/11767",
+      "title": "时代在轮回，2026 年做网站又开始流行起来",
+      "url": "https://www.ccgxk.com/codeother/762.html",
       "date": "2026-05-29"
     }
   ],
@@ -70,14 +54,28 @@ const latestArticlesByYear = {
       "title": "codebase-memory-mcp 极简完整使用指南",
       "url": "https://www.lifengdi.com/ren-gong-zhi-neng/4716",
       "date": "2026-05-29"
+    },
+    {
+      "name": "新世界的大门",
+      "year": "19",
+      "title": "2026-05-28 / 我就在这里稳稳的接住你",
+      "url": "https://blog.xinshijiededa.men/daily/38/",
+      "date": "2026-05-29"
     }
   ],
   "2023": [
     {
       "name": "宗宗酱",
       "year": "23",
-      "title": "摄影与光",
-      "url": "https://ygz.ink/archives/5066.html",
+      "title": "放假了按摩放松下",
+      "url": "https://ygz.ink/archives/5071.html",
+      "date": "2026-05-29"
+    },
+    {
+      "name": "鹿泽",
+      "year": "23",
+      "title": "推荐适合站长使用的免费&付费好用的seo优化工具",
+      "url": "https://www.bailuze.com/24099.html",
       "date": "2026-05-29"
     }
   ],
