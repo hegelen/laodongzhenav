@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 5/29/2026, 8:44:39 AM
+// 抓取日期: 5/29/2026, 11:26:01 AM
 // 只抓取最近14天内的文章，共 10 篇
 // 目标 10 篇，实际 10 篇
 
@@ -13,13 +13,13 @@ const latestArticlesByYear = {
       "date": "2026-05-28"
     }
   ],
-  "2002": [
+  "2008": [
     {
-      "name": "seth",
-      "year": "02",
-      "title": "“Because you’re the cheapest”",
-      "url": "https://seths.blog/2026/05/because-youre-the-cheapest/",
-      "date": "2026-05-29"
+      "name": "生活的左上角",
+      "year": "08",
+      "title": "观《给阿嬷的情书》有感：只为情义",
+      "url": "https://bwskyer.com/dear-you-review-love-and-trust.html",
+      "date": "2026-05-28"
     }
   ],
   "2009": [
@@ -38,25 +38,23 @@ const latestArticlesByYear = {
       "date": "2026-05-29"
     }
   ],
-  "2010": [
+  "2013": [
     {
-      "name": "麦麦同学",
-      "year": "10",
-      "title": "Typecho1.3.0修订版来了，非官网的",
-      "url": "https://www.mmtx.net/1166.html",
-      "date": "2026-05-28"
-    }
-  ],
-  "2014": [
-    {
-      "name": "松茸",
-      "year": "14",
-      "title": "小狼毫输入法五笔输入的微硬伤",
-      "url": "https://zrs.xyz/2133.html",
-      "date": "2026-05-28"
+      "name": "小z",
+      "year": "13",
+      "title": "基于 Cloudflare Workers 的轻量级 SMTP 发信网关：ZSend",
+      "url": "https://blog.xiaoz.org/archives/23001",
+      "date": "2026-05-29"
     }
   ],
   "2017": [
+    {
+      "name": "串串狗小刊",
+      "year": "17",
+      "title": "讲一下谷歌 SEO 常用的 8 个工具",
+      "url": "https://www.ccgxk.com/codeother/761.html",
+      "date": "2026-05-28"
+    },
     {
       "name": "科学空间",
       "year": "17",
@@ -74,12 +72,12 @@ const latestArticlesByYear = {
       "date": "2026-05-29"
     }
   ],
-  "2021": [
+  "2023": [
     {
-      "name": "DAIDAIFU",
-      "year": "21",
-      "title": "我都已经想退休了😄",
-      "url": "https://www.ddf.im/index.php/2026/05/29/1254.html",
+      "name": "宗宗酱",
+      "year": "23",
+      "title": "摄影与光",
+      "url": "https://ygz.ink/archives/5066.html",
       "date": "2026-05-29"
     }
   ],
