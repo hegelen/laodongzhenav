@@ -751,7 +751,7 @@
             blogs.forEach(blog => {
                 const tipText = blog.desc || blog.name;
                 // 使用 span，不用 a，彻底消灭 ?
-                html += `<span class="fake-link" data-url="${blog.url}" data-tip="${tipText.replace(/"/g, '&quot;')}" style="cursor:pointer; color:#0066cc; text-decoration:underline;">${blog.name}</span>`;
+                html += `<span class="fake-link" data-url="${blog.url}" data-tip="${tipText.replace(/"/g, '&quot;')}" style="cursor:pointer; color:#0066cc; ">${blog.name}</span>`;
             });
             
             html += `</div></div>`;
