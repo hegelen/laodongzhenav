@@ -594,6 +594,21 @@
     <script src="data.js"></script>
 
     <script>
+	// 绑定伪装链接的点击跳转202605291440添加
+function bindFakeLinks() {
+    document.querySelectorAll('.fake-link').forEach(el => {
+        if (el.hasAttribute('data-bound')) return;
+        el.setAttribute('data-bound', 'true');
+        el.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            const url = el.getAttribute('data-url');
+            if (url && url !== '#' && url !== '' && url !== 'javascript:void(0)') {
+                window.open(url, '_blank');
+            }
+        });
+    });
+}
         // 关闭通知栏函数
         function closeNotice() {
             const noticeBar = document.getElementById('notice-bar');
@@ -728,60 +743,57 @@
             });
         }
         
-        // 加载分类内容
-        function loadCategoryContent(categoryName) {
-            currentCategoryName = categoryName;
-            const contentBody = document.getElementById('contentBody');
-            const currentCategory = document.getElementById('currentCategory');
-            currentCategory.innerHTML = `<span>📌 ${categoryName}</span>`;
-            
-            const catData = categories[categoryName];
-            if (!catData || Object.keys(catData).length === 0) {
-                contentBody.innerHTML = `<div style="text-align:center; padding:50px; color:#999;">暂无数据</div>`;
-                return;
-            }
-            
-            const years = Object.keys(catData).sort((a, b) => getYearValue(a) - getYearValue(b));
-            let totalCount = 0;
-            let html = '';
-            
-            years.forEach(year => {
-                const blogs = catData[year];
-                totalCount += blogs.length;
-                const fullYear = convertToFullYear(year);
-                
-                html += `
-                    <div class="year-row">
-                        <div class="year-label">${fullYear}年</div>
-                        <div class="links-container">
-                `;
-                
-                blogs.forEach(blog => {
-                    const isSubmit = blog.name.includes('提交') || blog.name === '独立' || blog.name === '技术' || 
-                                    blog.name === '博客' || blog.name === '个人' || blog.name === '随机' || 
-                                    blog.name === 'RSS' || blog.name === '域名' || blog.name === '工具' || 
-                                    blog.name === '学习' || blog.name === 'ai' || blog.name === '米表' ||
-                                    blog.name === '论坛' || blog.name === '主页' || blog.name === '程序';
-                    const colorClass = isSubmit ? 'submit-link-red' : '';
-					// 关键修改：添加 data-tip 属性
-					  // 直接在这里定义 tipAttr，根据 blog.desc 决定
-    const tipAttr = blog.desc ? `data-tip="${blog.desc.replace(/"/g, '&quot;')}"` : '';
-                    html += `<a href="${blog.url}" target="_blank" class="${colorClass}" ${tipAttr}> ${blog.name}</a>`;
-                });
-                
-                html += `</div></div>`;
-            });
-            
-            html = `
-                <div style="margin-bottom: 20px; padding: 12px 16px; background: #e8f4fd; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
-                    <div style="font-size: 14px;">📊 共 ${years.length} 个年份 · ${totalCount} 个站点</div>
-                    <div style="font-size: 13px; color: #666;">💡 提示：点击链接可直接访问</div>
-                </div>
-                ${html}
-            `;
-            
-            contentBody.innerHTML = html;
-        }
+// 加载分类内容
+function loadCategoryContent(categoryName) {
+    currentCategoryName = categoryName;
+    const contentBody = document.getElementById('contentBody');
+    const currentCategory = document.getElementById('currentCategory');
+    currentCategory.innerHTML = `<span>📌 ${categoryName}</span>`;
+    
+    const catData = categories[categoryName];
+    if (!catData || Object.keys(catData).length === 0) {
+        contentBody.innerHTML = `<div style="text-align:center; padding:50px; color:#999;">暂无数据</div>`;
+        return;
+    }
+    
+    const years = Object.keys(catData).sort((a, b) => getYearValue(a) - getYearValue(b));
+    let totalCount = 0;
+    let html = '';
+    
+    years.forEach(year => {
+        const blogs = catData[year];
+        totalCount += blogs.length;
+        const fullYear = convertToFullYear(year);
+        
+        html += `
+            <div class="year-row">
+                <div class="year-label">${fullYear}年</div>
+                <div class="links-container">
+        `;
+        
+        blogs.forEach(blog => {
+            const tipText = blog.desc || blog.name;
+            // 关键修改：使用 <span> 而不是 <a>，彻底消灭 ?
+            html += `<span class="fake-link" data-url="${blog.url}" data-tip="${tipText.replace(/"/g, '&quot;')}" style="cursor:pointer; color:#0066cc; text-decoration:underline;">${blog.name}</span>`;
+        });
+        
+        html += `</div></div>`;
+    });
+    
+    html = `
+        <div style="margin-bottom: 20px; padding: 12px 16px; background: #e8f4fd; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+            <div style="font-size: 14px;">📊 共 ${years.length} 个年份 · ${totalCount} 个站点</div>
+            <div style="font-size: 13px; color: #666;">💡 提示：点击链接可直接访问</div>
+        </div>
+        ${html}
+    `;
+    
+    contentBody.innerHTML = html;
+    
+    // 加载完成后绑定点击事件和 Tooltip
+    bindFakeLinks();
+    addTooltips();
+}
         
         // 移动端菜单控制
         function openMobileMenu() {
@@ -881,12 +893,7 @@ function addTooltips() {
     });
 }
 
-// 每次加载分类内容后重新绑定
-const originalLoadCategoryContent = loadCategoryContent;
-loadCategoryContent = function(categoryName) {
-    originalLoadCategoryContent(categoryName);
-    setTimeout(addTooltips, 100);
-};
+
 
 // 页面加载时也执行一次
 if (document.readyState === 'loading') {
