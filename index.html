@@ -863,7 +863,6 @@
         }
         
         init();
-// ========== 高级 Tooltip：无原生冲突，跟随鼠标 20260529==========
 // 通用 Tooltip（事件委托 + 跟随鼠标）
 (function() {
     let tipDiv = null;
@@ -901,12 +900,11 @@
         tip.textContent = tipText;
         tip.style.opacity = '1';
         
-        // 跟随鼠标移动
-        const moveHandler = (moveEvent) => {
-            let x = moveEvent.clientX + 15;
-            let y = moveEvent.clientY + 15;
-            tip.style.left = x + 'px';
-            tip.style.top = y + 'px';
+       // 获取元素位置，固定在元素上方
+const rect = target.getBoundingClientRect();
+tip.style.left = rect.left + rect.width / 2 + 'px';
+tip.style.top = rect.top - 30 + 'px';
+tip.style.transform = 'translateX(-50%)';
         };
         
         document.addEventListener('mousemove', moveHandler);
