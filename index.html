@@ -795,7 +795,7 @@
 					// 关键修改：添加 data-tip 属性
 					  // 直接在这里定义 tipAttr，根据 blog.desc 决定
     const tipAttr = blog.desc ? `data-tip="${blog.desc.replace(/"/g, '&quot;')}"` : '';
-                    html += `<a href="${blog.url}" target="_blank" class="${colorClass}" ${tipAttr}> ${blog.name}</a>`;
+                   html += `<span class="fake-link" data-url="${item.url}" data-tip="${item.desc}" style="cursor:pointer; color:#0366d6; text-decoration:underline;">${item.name}</span>`;
                 });
                 
                 html += `</div></div>`;
