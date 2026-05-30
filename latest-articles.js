@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 5/29/2026, 9:13:01 PM
+// 抓取日期: 5/30/2026, 3:57:25 AM
 // 只抓取最近14天内的文章，共 10 篇
 // 目标 10 篇，实际 10 篇
 
@@ -13,6 +13,24 @@ const latestArticlesByYear = {
       "date": "2026-05-29"
     }
   ],
+  "2003": [
+    {
+      "name": "愆伏",
+      "year": "03",
+      "title": "菜场到底是靠谁活下来的",
+      "url": "https://www.tortorse.com/archives/wet-market-weekend-observation/",
+      "date": "2026-05-30"
+    }
+  ],
+  "2004": [
+    {
+      "name": "我的天",
+      "year": "04",
+      "title": "工作日早上打的卡",
+      "url": "http://www.xlanda.net/posts/22228",
+      "date": "2026-05-30"
+    }
+  ],
   "2009": [
     {
       "name": "异数",
@@ -22,19 +40,19 @@ const latestArticlesByYear = {
       "date": "2026-05-29"
     },
     {
-      "name": "张鑫旭",
+      "name": "多多",
       "year": "09",
-      "title": "新特性速递：focus()行为新增focusVisible控制",
-      "url": "https://www.zhangxinxu.com/wordpress/2026/05/js-focus-focusvisible/",
+      "title": "腾讯eo pages 网站访问显示404",
+      "url": "https://ddlog.cn/?p=510",
       "date": "2026-05-29"
     }
   ],
-  "2013": [
+  "2015": [
     {
-      "name": "小z",
-      "year": "13",
-      "title": "基于 Cloudflare Workers 的轻量级 SMTP 发信网关：ZSend",
-      "url": "https://blog.xiaoz.org/archives/23001",
+      "name": "WordPress 知识宝库",
+      "year": "15",
+      "title": "워드프레스 목차 플러그인 목차가 표시되지 않는 문제 해결 방법",
+      "url": "https://www.thewordcracker.com/basic/%ec%9b%8c%eb%93%9c%ed%94%84%eb%a0%88%ec%8a%a4-%eb%aa%a9%ec%b0%a8-%eb%af%b8%ed%91%9c%ec%8b%9c-%eb%ac%b8%ec%a0%9c/",
       "date": "2026-05-29"
     }
   ],
@@ -47,20 +65,22 @@ const latestArticlesByYear = {
       "date": "2026-05-29"
     }
   ],
-  "2019": [
+  "2020": [
     {
-      "name": "李锋镝",
-      "year": "19",
-      "title": "codebase-memory-mcp 极简完整使用指南",
-      "url": "https://www.lifengdi.com/ren-gong-zhi-neng/4716",
+      "name": "初然忆",
+      "year": "20",
+      "title": "浅谈EVE欧服的加速器设置",
+      "url": "https://www.imcry.vip/post/2026-5-29-1905/",
       "date": "2026-05-29"
-    },
+    }
+  ],
+  "2021": [
     {
-      "name": "新世界的大门",
-      "year": "19",
-      "title": "2026-05-28 / 我就在这里稳稳的接住你",
-      "url": "https://blog.xinshijiededa.men/daily/38/",
-      "date": "2026-05-29"
+      "name": "记录生活",
+      "year": "21",
+      "title": "手痒没忍住，把家里的珍珠柏给剪了",
+      "url": "https://9sb.net/archives/unable-to-resist-itching-i-cut-the-pearl-cypress-at-hom.html",
+      "date": "2026-05-30"
     }
   ],
   "2023": [
@@ -69,22 +89,6 @@ const latestArticlesByYear = {
       "year": "23",
       "title": "放假了按摩放松下",
       "url": "https://ygz.ink/archives/5071.html",
-      "date": "2026-05-29"
-    },
-    {
-      "name": "鹿泽",
-      "year": "23",
-      "title": "推荐适合站长使用的免费&付费好用的seo优化工具",
-      "url": "https://www.bailuze.com/24099.html",
-      "date": "2026-05-29"
-    }
-  ],
-  "2026": [
-    {
-      "name": "麦子的思绪",
-      "year": "26",
-      "title": "我们的青春，叫免费蛮荒：80后亲历的2000–2010互联网盗版黄金十年",
-      "url": "https://mzdsx.com/2026/05/29/%e6%88%91%e4%bb%ac%e7%9a%84%e9%9d%92%e6%98%a5%ef%bc%8c%e5%8f%ab%e5%85%8d%e8%b4%b9%e8%9b%ae%e8%8d%92%ef%bc%9a80%e5%90%8e%e4%ba%b2%e5%8e%86%e7%9a%842000-2010%e4%ba%92%e8%81%94%e7%bd%91%e7%9b%97/",
       "date": "2026-05-29"
     }
   ]
