@@ -375,14 +375,14 @@ const domainRegData = {
     '25': [{name:'宝塔', url:'/go.htm?url=https://www.bt.cn/new/domain-register.html'}]
 };
 
-// ==================== 域名工具导航数据 ====================
+// ==================== 域名工具导航数据 , {name:'', url:'/go.htm?url='}     ====================
 const domainToolData = {
     '15': [{name:'tld-list域名比价', url:'/go.htm?url=https://zh-hans.tld-list.com/'}],
     '17': [{name:'玩米历史米价查询', url:'/go.htm?url=http://www.wanmi.cc/'}],
     '20': [{name:'哪煮米', url:'/go.htm?url=https://www.nazhumi.com/'}],
     '21': [{name:'可备域名后缀查询', url:'/go.htm?url=https://domain.miit.gov.cn/chinayu.jsp'}, {name:' ', url:''}, {name:' ', url:''}, {name:' ', url:''}, {name:' ', url:''}, {name:' ', url:''}],
     '23': [{name:'who.cx', url:'/go.htm?url=https://who.cx/'}, {name:' ', url:''}, {name:' ', url:''}, {name:' ', url:''}, {name:' ', url:''}, {name:' ', url:''}],
-    '25': [{name:'w.is whois', url:'/go.htm?url=https://w.is/'}],
+    '25': [{name:'w.is whois', url:'/go.htm?url=https://w.is/'} , {name:'米情局', url:'/go.htm?url=https://miqingju.com/'}   ],
     '26': [{name:'hu.is', url:'/go.htm?url=https://hu.is/'},{name:'sanpin域管家', url:'/go.htm?url=https://sanpin.ltd'}, {name:' ', url:''}, {name:' ', url:''}, {name:' ', url:''}, {name:' ', url:''}, {name:' ', url:''}]
 };
 
