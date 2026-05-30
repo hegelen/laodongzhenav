@@ -443,7 +443,7 @@ console.log('📡 RSS文案合集已生成，共 ' + Object.keys(rssFlatList).re
 
 // ==================== 所有分类定义（供 index.html 使用） ====================
 const categories = {
-    '👤 技术博客导航': blogYearsData,
+    '👤 技术综合博客': blogYearsData,
     // '📡 RSS文案合集': rssFlatList, 取消这一项了 下面的rss才是   // ← 现在 rssFlatList 已经定义好了
 	' RSS最新文章': 'https://laodongzhe.cn/rss.html',  // ←  添加外部链接
 	'🗁 技术教程文档': guidedata,
