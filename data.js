@@ -243,7 +243,7 @@ const toolNavData = {
 // ==================== 工具箱导航数据 ====================
 const toolboxData = {
     '06': [{name:'chinaz站长工具', url:'/go.htm?url=https://tool.chinaz.com/'}],
-    '07': [{name:'蛙蛙工具', url:'/go.htm?url=https://www.iamwawa.cn/'}, {name:'脚本之家在线工具', url:'/go.htm?url=https://tools.jb51.net/'}],
+    '07': [{name:'蛙蛙工具', url:'/go.htm?url=https://www.iamwawa.cn/'}, {name:'脚本之家在线工具', url:'/go.htm?url=https://tools.jb51.net/'}, {name:'百度统计', url:'/go.htm?url=https://tongji.baidu.com/'} ],
     '12': [{name:'tool lu在线工具', url:'/go.htm?url=https://tool.lu/'}],
     '13': [{name:'oschina工具', url:'/go.htm?url=https://tool.oschina.net/'}, {name:'trustasia证书在线工具集', url:'/go.htm?url=https://www.trustasia.com/tools'}],
     '15': [{name:'爱资料工具', url:'/go.htm?url=https://www.toolnb.com/'}],
