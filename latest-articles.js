@@ -1,33 +1,24 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 5/30/2026, 3:57:25 AM
+// 抓取日期: 5/30/2026, 11:03:43 AM
 // 只抓取最近14天内的文章，共 10 篇
 // 目标 10 篇，实际 10 篇
 
 const latestArticlesByYear = {
+  "2001": [
+    {
+      "name": "东评衿就",
+      "year": "01",
+      "title": "耿同学被限流之后，我开源了他的打假思维",
+      "url": "https://dongjunke.cn/posts/2026/05/30/47945.html",
+      "date": "2026-05-29"
+    }
+  ],
   "2002": [
     {
       "name": "seth",
       "year": "02",
-      "title": "“Because you’re the cheapest”",
-      "url": "https://seths.blog/2026/05/because-youre-the-cheapest/",
-      "date": "2026-05-29"
-    }
-  ],
-  "2003": [
-    {
-      "name": "愆伏",
-      "year": "03",
-      "title": "菜场到底是靠谁活下来的",
-      "url": "https://www.tortorse.com/archives/wet-market-weekend-observation/",
-      "date": "2026-05-30"
-    }
-  ],
-  "2004": [
-    {
-      "name": "我的天",
-      "year": "04",
-      "title": "工作日早上打的卡",
-      "url": "http://www.xlanda.net/posts/22228",
+      "title": "Doing your job vs doing your work",
+      "url": "https://seths.blog/2026/05/doing-your-job-vs-doing-your-work/",
       "date": "2026-05-30"
     }
   ],
@@ -38,30 +29,14 @@ const latestArticlesByYear = {
       "title": "随笔 || 2026年建筑师考试小结",
       "url": "https://www.yishu.pro/217.html",
       "date": "2026-05-29"
-    },
-    {
-      "name": "多多",
-      "year": "09",
-      "title": "腾讯eo pages 网站访问显示404",
-      "url": "https://ddlog.cn/?p=510",
-      "date": "2026-05-29"
     }
   ],
-  "2015": [
+  "2019": [
     {
-      "name": "WordPress 知识宝库",
-      "year": "15",
-      "title": "워드프레스 목차 플러그인 목차가 표시되지 않는 문제 해결 방법",
-      "url": "https://www.thewordcracker.com/basic/%ec%9b%8c%eb%93%9c%ed%94%84%eb%a0%88%ec%8a%a4-%eb%aa%a9%ec%b0%a8-%eb%af%b8%ed%91%9c%ec%8b%9c-%eb%ac%b8%ec%a0%9c/",
-      "date": "2026-05-29"
-    }
-  ],
-  "2017": [
-    {
-      "name": "串串狗小刊",
-      "year": "17",
-      "title": "时代在轮回，2026 年做网站又开始流行起来",
-      "url": "https://www.ccgxk.com/codeother/762.html",
+      "name": "新世界的大门",
+      "year": "19",
+      "title": "2026-05-28 / 我就在这里稳稳的接住你",
+      "url": "https://blog.xinshijiededa.men/daily/38/",
       "date": "2026-05-29"
     }
   ],
@@ -83,13 +58,38 @@ const latestArticlesByYear = {
       "date": "2026-05-30"
     }
   ],
+  "2022": [
+    {
+      "name": "倦意",
+      "year": "22",
+      "title": "EdgeOne 实时日志接收器",
+      "url": "https://jyblog.cn/5674/",
+      "date": "2026-05-30"
+    }
+  ],
   "2023": [
+    {
+      "name": "鹿泽",
+      "year": "23",
+      "title": "2026年SEO策略：电子商务与B2B完整指南",
+      "url": "https://www.bailuze.com/24101.html",
+      "date": "2026-05-30"
+    },
     {
       "name": "宗宗酱",
       "year": "23",
       "title": "放假了按摩放松下",
       "url": "https://ygz.ink/archives/5071.html",
       "date": "2026-05-29"
+    }
+  ],
+  "2026": [
+    {
+      "name": "华立",
+      "year": "26",
+      "title": "分享一个中文小黑怪诞正文配图生成 Skill",
+      "url": "https://www.renhuali.cn/journal/cmprnwa260006chs4p7v2nbnq",
+      "date": "2026-05-30"
     }
   ]
 };
