@@ -315,7 +315,7 @@ const gameData = {
 const aiData = {
     '23': [{name:'deepseek', url:'/go.htm?url=www.deepseek.com'},{name:'豆包', url:'/go.htm?url=https://www.doubao.com/'}, {name:'千问', url:'/go.htm?url=https://www.qianwen.com/'}],
 	'24': [{name:'纳米ai', url:'/go.htm?url=http://www.n.cn'}]，
-	'25': [{name:'小米mimo', url:'/go.htm?url=https://aistudio.xiaomimimo.com/#/'}]
+	'25': [{name:'小米mimo', url:'/go.htm?url=https://aistudio.xiaomimimo.com/'}]
 };
 
 // ==================== 百科大全导航 ====================
