@@ -111,7 +111,7 @@ const forumData = {
     '95': [{name:'水木社区', url:'/go.htm?url=https://www.newsmth.net/'}],
     '99': [{name:'仪器社区', url:'/go.htm?url=https://bbs.instrument.com.cn/'}],
     '00': [{name:'免费吧', url:'/go.htm?url=https://www.free8.net/forum.php'}, {name:'蜂鸟摄影论坛', url:'/go.htm?url=https://bbs.fengniao.com/'}, {name:'色影无忌摄影论坛', url:'/go.htm?url=https://forum.xitek.com/'}, {name:'凯迪猫眼社区', url:'/go.htm?url=https://www.9kd.com/community'}, {name:'看雪论坛', url:'/go.htm?url=https://bbs.kanxue.com/'}],
-    '01': [{name:'落伍者', url:'/go.htm?url=https://www.im286.net/'}, {name:'小木虫', url:'/go.htm?url=https://muchong.com/bbs/'}, {name:'金光论坛', url:'/go.htm?url=https://jglt.net/'}, {name:'福步外贸论坛', url:'/go.htm?url=https://bbs.fobshanghai.com/'}, {name:'无忧启动', url:'/go.htm?url=https://wuyou.net/'}, {name:' ', url:''}, {name:' ', url:''}, {name:' ', url:''}, {name:' ', url:''}],
+    '01': [{name:'落伍者', url:'/go.htm?url=https://www.im286.net/'}, {name:'小木虫', url:'/go.htm?url=https://muchong.com/bbs/'}, {name:'金光论坛', url:'/go.htm?url=https://jglt.net/'}, {name:'福步外贸论坛', url:'/go.htm?url=https://bbs.fobshanghai.com/'}, {name:'无忧启动', url:'/go.htm?url=https://wuyou.net/'} , {name:'ifixit维修社区', url:'/go.htm?url=https://ifixit.com/'}],
     '02': [{name:'nga', url:'/go.htm?url=https://bbs.nga.cn/'}, {name:'理想论坛', url:'/go.htm?url=https://www.55188.com/'}],
     '03': [{name:'鳥哥的Linux私房菜', url:'/go.htm?url=https://phorum.vbird.org/index.php'}, {name:'NamePros', url:'/go.htm?url=https://www.namepros.com/'}, {name:' ', url:''}, {name:' ', url:''}],
     '04': [{name:'其乐', url:'/go.htm?url=https://keylol.com/'}, {name:'虎扑', url:'/go.htm?url=https://bbs.hupu.com/'}, {name:'海川化工', url:'/go.htm?url=https://bbs.hcbbs.com/'}],
@@ -311,9 +311,9 @@ const guidedata = {
 
 // ==================== 游戏导航 ==================== 
 const gameData = {
-    '26': [{name:'2048', url:'https://laodongzhe.cn/games/2048.html'}, {name:'五子棋', url:'/games/wuziqi.html'}]
+    '26': [{name:'2048', url:'https://laodongzhe.cn/games/2048.html'}, {name:'五子棋', url:'/games/wuziqi.html'}, {name:'中国象棋', url:'/games/xiangqi.html'}]
 };
-// ==================== ai人工智能 ====================
+// ==================== ai人工智能     , {name:'', url:'/go.htm?url='} ====================
 const aiData = {
     '23': [{name:'deepseek', url:'/go.htm?url=www.deepseek.com'},{name:'豆包', url:'/go.htm?url=https://www.doubao.com/'}, {name:'千问', url:'/go.htm?url=https://www.qianwen.com/'}],
 	'24': [{name:'纳米ai', url:'/go.htm?url=http://www.n.cn'}],
@@ -322,7 +322,7 @@ const aiData = {
 
 // ==================== 百科大全导航 ====================
 const pediadata = {
-	'01': [{name:'wikipedia', url:'/go.htm?url=aHR0cHM6Ly93d3cud2lraXBlZGlhLm9yZy8%3D'}],
+	'01': [{name:'wikipedia', url:'/go.htm?url=aHR0cHM6Ly93d3cud2lraXBlZGlhLm9yZy8%3D'}, {name:'ifixit维修百科', url:'/go.htm?url=https://ifixit.com/'}  ],
 	'05': [{name:'快懂百科', url:'/go.htm?url=https://www.baike.com/'}],
 	'05': [{name:'百度百科', url:'/go.htm?url=https://baike.baidu.com/'}],
     '10': [{name:'发音字典', url:'/go.htm?url=https://www.voicedic.com/'}],
