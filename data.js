@@ -222,7 +222,7 @@ const featuredNavData = {
 
 // ==================== 工具导航数据    , {name:'', url:'/go.htm?url='}    ====================
 const toolNavData = {
-    '97': [{name:'archive网站历史', url:'/go.htm?url=aHR0cHM6Ly9hcmNoaXZlLm9yZy8%3D'}],
+   
     '07': [{name:'蛙蛙工具', url:'/go.htm?url=https://www.iamwawa.cn/'}],
 	  '08': [{name:'github', url:'/go.htm?url=https://github.com/'}],
     '13': [{name:'trustasia证书在线工具集', url:'/go.htm?url=https://www.trustasia.com/tools'}],
@@ -321,7 +321,7 @@ const aiData = {
 
 // ==================== 百科大全导航 ====================
 const pediadata = {
-	'01': [{name:'wikipedia', url:'/go.htm?url=aHR0cHM6Ly93d3cud2lraXBlZGlhLm9yZy8%3D'}, {name:'ifixit维修百科', url:'/go.htm?url=https://ifixit.com/'}  ],
+	'01': [ {name:'ifixit维修百科', url:'/go.htm?url=https://ifixit.com/'}  ],
 	'05': [{name:'快懂百科', url:'/go.htm?url=https://www.baike.com/'}],
 	'05': [{name:'百度百科', url:'/go.htm?url=https://baike.baidu.com/'}],
     '10': [{name:'发音字典', url:'/go.htm?url=https://www.voicedic.com/'}],
@@ -350,9 +350,8 @@ const rssData = {
 
 // ==================== 学习导航数据 ====================
 const studyNavData = {
-    '93': [{name:'马克思主义文库', url:'/go.htm?url=aHR0cHM6Ly93d3cubWFyeGlzdHMub3JnLw%3D%3D'}],
-	'06': [{name:'X', url:'/go.htm?url=https://www.X.COM/'}],
-    '09': [{name:'微博', url:'/go.htm?url=https://www.WEIBO.COM'}, {name:'quora', url:'/go.htm?url=aHR0cHM6Ly93d3cucXVvcmEuY29tLw%3D%3D'}],
+    
+    '09': [{name:'微博', url:'/go.htm?url=https://www.WEIBO.COM'}],
     '11': [{name:'知乎', url:'/go.htm?url=https://www.zhihu.com/'}],
     '15': [{name:'微信读书', url:'/go.htm?url=https://weread.qq.com/'}],
     '25': [{name:'劳动者技术部落', url:'/go.htm?url=http://www.laodongzhe.cn'}]
