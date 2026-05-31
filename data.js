@@ -268,7 +268,7 @@ const emailData = {
     '97': [{name:'163邮箱', url:'/go.htm?url=https://mail.163.com/'}],
     '02': [{name:'qq邮箱', url:'/go.htm?url=https://mail.qq.com/'}],
     '03': [{name:'126邮箱', url:'/go.htm?url=https://mail.126.com/'}],
-    '04': [{name:'gmail', url:'/go.htm?url=http://gmail.com/'}],
+   
     '07': [{name:'yeah邮箱', url:'/go.htm?url=https://mail.yeah.net/'}],
     '10': [{name:'腾讯企业邮', url:'/go.htm?url=https://exmail.qq.com/login'}]
 };
