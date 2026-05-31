@@ -275,7 +275,7 @@ const emailData = {
 
 // ==================== 官方博客导航   , {name:'', url:'/go.htm?url='} ====================
 const officialblogdata = {
-	'06': [{name:'谷歌研究官方博客', url:'/go.htm?url=aHR0cHM6Ly9yZXNlYXJjaC5nb29nbGUvYmxvZy8%3D'}],
+	'06': [{name:'谷歌研究官方博客', url:'/go.htm?url=aHR0cHM6Ly9yZXNlYXJjaC5nb29nbGUvYmxvZy8%3D'} ],
 	'07': [{name:'阿里巴巴国际站设计', url:'/go.htm?url=https://www.aliued.com/'}],
 	'10': [{name:'cloudflare博客', url:'/go.htm?url=https://blog.cloudflare.com/'}],
 	'11': [{name:'腾讯全端', url:'/go.htm?url=http://www.alloyteam.com/'}],
