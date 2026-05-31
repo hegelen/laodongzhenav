@@ -327,7 +327,7 @@ const pediadata = {
 	'05': [{name:'百度百科', url:'/go.htm?url=https://baike.baidu.com/'}],
     '10': [{name:'发音字典', url:'/go.htm?url=https://www.voicedic.com/'}],
     '13': [{name:'wikihow', url:'/go.htm?url=https://zh.wikihow.com/'}],
-    '15': [{name:'观沧海', url:'/go.htm?url=https://www.ageeye.cn/'}],
+    '15': [{name:'观沧海', url:'/go.htm?url=https://www.ageeye.cn/'}   , {name:'灰机wiki', url:'/go.htm?url=https://www.huijiwiki.com/'}                 ],
     '16': [{name:'纪妖', url:'/go.htm?url=https://www.cbaigui.com/'}],
     '18': [{name:'全历史', url:'/go.htm?url=https://www.allhistory.com/'}]
 };
