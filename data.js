@@ -290,7 +290,7 @@ const officialblogdata = {
 
     '22': [{name:'kaqi官方博客', url:'/go.htm?url=https://blog.kagi.com/'}],
 	 '23': [{name:'MDN博客', url:'/go.htm?url=https://developer.mozilla.org/en-US/blog/'}],
-	 '25': [{name:'小米mimo博客', url:'/go.htm?url=https://mimo.xiaomi.com/zh/blog/'}],
+	 '25': [{name:'小米mimo博客', url:'/go.htm?url=https://mimo.xiaomi.com/zh/index#blog'}],
 	  '26': [{name:'slax博客', url:'/go.htm?url=https://slax.com/zh-Hans/blog/'}]
 };
 
@@ -314,7 +314,7 @@ const gameData = {
 // ==================== ai人工智能 ====================
 const aiData = {
     '23': [{name:'deepseek', url:'/go.htm?url=www.deepseek.com'},{name:'豆包', url:'/go.htm?url=https://www.doubao.com/'}, {name:'千问', url:'/go.htm?url=https://www.qianwen.com/'}],
-	'24': [{name:'纳米ai', url:'/go.htm?url=http://www.n.cn'}]，
+	'24': [{name:'纳米ai', url:'/go.htm?url=http://www.n.cn'}],
 	'25': [{name:'小米mimo', url:'/go.htm?url=https://aistudio.xiaomimimo.com/'}]
 };
 
