@@ -290,7 +290,7 @@ const officialblogdata = {
 
     '22': [{name:'kaqi官方博客', url:'/go.htm?url=https://blog.kagi.com/'}],
 	 '23': [{name:'MDN博客', url:'/go.htm?url=https://developer.mozilla.org/en-US/blog/'}],
-	 '25': [{name:'小米mimo博客', url:'/go.htm?url=https://mimo.xiaomi.com/zh/index#blog'}],
+	 '25': [{name:'小米mimo博客', url:'/go.htm?url=https://mimo.xiaomi.com/zh/blog/'}],
 	  '26': [{name:'slax博客', url:'/go.htm?url=https://slax.com/zh-Hans/blog/'}]
 };
 
