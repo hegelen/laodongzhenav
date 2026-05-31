@@ -275,15 +275,14 @@ const emailData = {
 
 // ==================== 官方博客导航   , {name:'', url:'/go.htm?url='} ====================
 const officialblogdata = {
-	'06': [{name:'谷歌研究官方博客', url:'/go.htm?url=aHR0cHM6Ly9yZXNlYXJjaC5nb29nbGUvYmxvZy8%3D'} ],
 	'07': [{name:'阿里巴巴国际站设计', url:'/go.htm?url=https://www.aliued.com/'}],
 	'10': [{name:'cloudflare博客', url:'/go.htm?url=https://blog.cloudflare.com/'}],
 	'11': [{name:'腾讯全端', url:'/go.htm?url=http://www.alloyteam.com/'}],
 	'13': [{name:'美团技术团队', url:'/go.htm?url=https://tech.meituan.com/'}, {name:'有道技术博客', url:'/go.htm?url=https://techblog.youdao.com/'} ],
 	'14': [{name:'阿里淘系技术', url:'/go.htm?url=https://blog.csdn.net/Taobaojishu'}      , {name:'Elastic 中国社区博客', url:'/go.htm?url=https://elasticstack.blog.csdn.net/'}     , {name:'亚马逊AWS博客', url:'/go.htm?url=https://aws.amazon.com/blogs/aws/'}         ],
 	'15': [{name:'有赞技术团队', url:'/go.htm?url=https://tech.youzan.com/'}],
-	'16': [{name:'谷歌官方博客', url:'/go.htm?url=aHR0cHM6Ly9ibG9nLmdvb2dsZS8%3D'} , {name:'华为云开发者联盟', url:'/go.htm?url=https://blog.csdn.net/devcloud'}   , {name:'京东用户体验设计部 凹凸实验室', url:'/go.htm?url=https://aotu.io/'} ],
-	'17': [{name:'字节跳动技术团队', url:'/go.htm?url=https://blog.csdn.net/ByteDanceTech'}   , {name:'腾讯技术工程', url:'/go.htm?url=https://blog.csdn.net/Tencent_TEG'}  , {name:'谷歌开发者', url:'/go.htm?url=https://blog.csdn.net/googledevs'}   , {name:'闲鱼技术', url:'/go.htm?url=https://blog.csdn.net/weixin_38912070'}  , {name:'饿了么大前端', url:'/go.htm?url=https://www.zhihu.com/people/elemefe'}   , {name:'uber blog', url:'/go.htm?url=https://www.uber.com/blog/'}    ],
+	'16': [ {name:'华为云开发者联盟', url:'/go.htm?url=https://blog.csdn.net/devcloud'}   , {name:'京东用户体验设计部 凹凸实验室', url:'/go.htm?url=https://aotu.io/'} ],
+	'17': [{name:'字节跳动技术团队', url:'/go.htm?url=https://blog.csdn.net/ByteDanceTech'}   , {name:'腾讯技术工程', url:'/go.htm?url=https://blog.csdn.net/Tencent_TEG'}  , {name:'闲鱼技术', url:'/go.htm?url=https://blog.csdn.net/weixin_38912070'}  , {name:'饿了么大前端', url:'/go.htm?url=https://www.zhihu.com/people/elemefe'}   , {name:'uber blog', url:'/go.htm?url=https://www.uber.com/blog/'}    ],
 	'18': [{name:'小米信息部技术团队', url:'/go.htm?url=https://xiaomi-info.github.io/'}  , {name:'tensorflow博客', url:'/go.htm?url=https://blog.tensorflow.org/'}     ],
 	'19': [{name:'滴滴技术', url:'/go.htm?url=https://blog.csdn.net/DiDi_Tech'} , {name:'IBM开发者博客', url:'/go.htm?url=https://developer.ibm.com/blogs/'}  , {name:'百度fex', url:'/go.htm?url=https://fex-team.github.io/'}  , {name:'Microsoft开发者博客', url:'/go.htm?url=https://devblogs.microsoft.com/'}    ],
 	'21': [{name:'cloudflare中文博客', url:'/go.htm?url=https://blog.cloudflare.com/zh-cn/'}     , {name:'HarmonyOS SDK', url:'/go.htm?url=https://blog.csdn.net/HUAWEI_HMSCore'}   ],
@@ -334,8 +333,7 @@ const pediadata = {
 
 // ==================== 搜索引擎大全导航 , {name:'', url:'/go.htm?url='}   ====================
 const SearchEngineData = {
-	 '98': [{name:'谷歌', url:'/go.htm?url=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8%3D'}],
-    '00': [{name:'百度', url:'/go.htm?url=https://www.baidu.com/'}, {name:'谷歌高级搜索', url:'/go.htm?url=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS9hZHZhbmNlZF9zZWFyY2g%3D'}],
+	    '00': [{name:'百度', url:'/go.htm?url=https://www.baidu.com/'}],
 	'03': [{name:'百度高级搜索', url:'/go.htm?url=https://www.baidu.com/gaoji/advanced.html'}],
 	'07': [{name:'搜狗高级搜搜', url:'/go.htm?url=https://www.sogou.com/advanced/advanced.html'}],
     '09': [{name:'bing', url:'/go.htm?url=https://www.bing.com/'}],
