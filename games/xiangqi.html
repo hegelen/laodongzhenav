@@ -92,9 +92,9 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
 <div id="sMenu" class="scr on">
 <div class="gt"><h1>中国象棋</h1><p>人机对弈 · 好友联机</p></div>
 <div class="mg">
-<div class="mc" onclick="S('sAI')"><div class="mc-i">♜</div><div><div class="mc-t">人机对弈</div><div class="mc-d">与 AI 切磋，四级难度可选</div></div></div>
-<div class="mc" onclick="S('sCr')"><div class="mc-i">⚔</div><div><div class="mc-t">创建房间</div><div class="mc-d">邀请好友在线对弈，支持密码和观战</div></div></div>
-<div class="mc" onclick="S('sJo')"><div class="mc-i">🔗</div><div><div class="mc-t">加入房间</div><div class="mc-d">输入房间号加入或观战</div></div></div>
+<div class="mc" id="btnAI"><div class="mc-i">♜</div><div><div class="mc-t">人机对弈</div><div class="mc-d">与 AI 切磋，四级难度可选</div></div></div>
+<div class="mc" id="btnCr"><div class="mc-i">⚔</div><div><div class="mc-t">创建房间</div><div class="mc-d">邀请好友在线对弈，支持密码和观战</div></div></div>
+<div class="mc" id="btnJo"><div class="mc-i">🔗</div><div><div class="mc-t">加入房间</div><div class="mc-d">输入房间号加入或观战</div></div></div>
 </div>
 <div id="nSt" style="text-align:center;font-size:.78rem;margin-top:12px"></div>
 </div>
@@ -102,23 +102,23 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
 <div id="sAI" class="scr">
 <div class="pnl"><h2>选择难度</h2>
 <div class="ls" id="aiL"><button class="lb" data-l="beginner">初级</button><button class="lb on" data-l="intermediate">中级</button><button class="lb" data-l="advanced">高级</button><button class="lb" data-l="master">大师</button></div>
-<div class="bts"><button class="btn btn-pri" onclick="startAI()">开始对弈</button><button class="btn btn-back" onclick="S('sMenu')">返回</button></div>
+<div class="bts"><button class="btn btn-pri" id="btnStartAI">开始对弈</button><button class="btn btn-back" id="btnAIBack">返回</button></div>
 </div></div>
 
 <div id="sCr" class="scr">
 <div class="pnl"><h2>创建房间</h2>
 <div class="ig"><label>房间密码（留空则无需密码）</label><input id="inCP" type="text" placeholder="可选，设置后需密码加入"></div>
-<div class="bts"><button class="btn btn-pri" onclick="doCr()">创建房间</button><button class="btn btn-back" onclick="S('sMenu')">返回</button></div>
+<div class="bts"><button class="btn btn-pri" id="btnDoCr">创建房间</button><button class="btn btn-back" id="btnCrBack">返回</button></div>
 </div></div>
 
 <div id="sWt" class="scr">
 <div class="pnl"><h2>房间已创建</h2>
 <div class="rdc"><div class="lbl">房间号</div><div class="code" id="dC">------</div></div>
 <div id="dPw" class="msg msg-inf" style="display:none"></div>
-<div class="il-w"><div class="il-u" id="dL"></div><button class="il-c" id="cpBtn" onclick="cpLnk()">复制链接</button></div>
+<div class="il-w"><div class="il-u" id="dL"></div><button class="il-c" id="cpBtn">复制链接</button></div>
 <div class="wait"><p class="dt" id="wMsg">等待对手加入</p></div>
 <div id="wInf" class="msg msg-ok" style="display:none"></div>
-<div class="bts"><button class="btn btn-back" onclick="canRm()">取消房间</button></div>
+<div class="bts"><button class="btn btn-back" id="btnWtBack">取消房间</button></div>
 </div></div>
 
 <div id="sJo" class="scr">
@@ -126,33 +126,45 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
 <div class="ig"><label>房间号</label><input id="inJC" type="text" placeholder="请输入 6 位房间号" maxlength="6" autocomplete="off"></div>
 <div class="ig"><label>房间密码（如有）</label><input id="inJP" type="text" placeholder="无密码可留空"></div>
 <div id="jErr" class="msg msg-err" style="display:none"></div>
-<div class="bts"><button class="btn btn-pri" onclick="doJo(false)">加入游戏</button><button class="btn" onclick="doJo(true)">观 战</button><button class="btn btn-back" onclick="S('sMenu')">返回</button></div>
+<div class="bts"><button class="btn btn-pri" id="btnDoJo">加入游戏</button><button class="btn" id="btnDoSp">观 战</button><button class="btn btn-back" id="btnJoBack">返回</button></div>
 </div></div>
 
 <div id="sGm" class="scr">
 <div class="gh"><span class="gh-m" id="gM">-</span><span class="gh-p" id="gP">-</span><div class="gh-r"><span class="gh-bdg" id="gSp" style="display:none">👁 <span id="sC">0</span></span><span class="gh-dot grn" id="gDt"></span></div></div>
 <div class="sb"><div id="st" class="st rt">红方走棋</div></div>
 <div class="bc"><canvas id="cv"></canvas></div>
-<div class="ctrls"><button class="btn btn-sm" id="uB" onclick="doUd()" disabled>悔 棋</button><button class="btn btn-sm" id="bB" onclick="doBk()">返回大厅</button></div>
+<div class="ctrls"><button class="btn btn-sm" id="uB" disabled>悔 棋</button><button class="btn btn-sm" id="bB">返回大厅</button></div>
 </div>
 
-<div class="ft"><p>本小游戏内置在 <a href="https://laodongzhe.cn">劳动者导航</a>，欢迎体验</p><p>我们致力于为劳动者提供纯净的益智休闲游戏</p><p class="gi">v3.1 · Minimax + Alpha-Beta · PeerJS P2P</p></div>
+<div class="ft"><p>本小游戏内置在 <a href="https://laodongzhe.cn">劳动者导航</a>，欢迎体验</p><p>我们致力于为劳动者提供纯净的益智休闲游戏</p><p class="gi">v3.2 · Minimax + Alpha-Beta · PeerJS P2P</p></div>
 </div>
 <div id="ov" class="ov hd"><div class="spn"></div><p id="oM">连接中...</p></div>
 
 <script src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js"></script>
 <script>
-(function(){
-'use strict';
+/* =========================================================
+   中国象棋 v3.2 - 无IIFE包装，所有函数全局可达
+   ========================================================= */
 
-/* ===== CONSTANTS ===== */
 var COLS=9,ROWS=10,PD=40,CL=50;
-var cv=document.getElementById('cv'),X=cv.getContext('2d');
-var PN={K:'帅',A:'仕',B:'相',N:'马',R:'车',C:'炮',P:'兵',k:'将',a:'士',b:'象',n:'马',r:'车',c:'砲',p:'卒'};
-var INIT=[['r','n','b','a','k','a','b','n','r'],[0,0,0,0,0,0,0,0,0],[0,'c',0,0,0,0,0,'c',0],['p',0,'p',0,'p',0,'p',0,'p'],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],['P',0,'P',0,'P',0,'P',0,'P'],[0,'C',0,0,0,0,0,'C',0],[0,0,0,0,0,0,0,0,0],['R','N','B','A','K','A','B','N','R']];
-var LVL={beginner:{d:1,n:600},intermediate:{d:2,n:200},advanced:{d:3,n:40},master:{d:4,n:0}};
+var cv=document.getElementById('cv');
+var X=cv.getContext('2d');
+
+var PN={K:'帅',A:'仕',B:'相',N:'马',R:'车',C:'炮',P:'兵',
+        k:'将',a:'士',b:'象',n:'马',r:'车',c:'砲',p:'卒'};
+
+var INIT=[['r','n','b','a','k','a','b','n','r'],
+  [0,0,0,0,0,0,0,0,0],[0,'c',0,0,0,0,0,'c',0],
+  ['p',0,'p',0,'p',0,'p',0,'p'],[0,0,0,0,0,0,0,0,0],
+  [0,0,0,0,0,0,0,0,0],['P',0,'P',0,'P',0,'P',0,'P'],
+  [0,'C',0,0,0,0,0,'C',0],[0,0,0,0,0,0,0,0,0],
+  ['R','N','B','A','K','A','B','N','R']];
+
+var LVL={beginner:{d:1,n:600},intermediate:{d:2,n:200},
+         advanced:{d:3,n:40},master:{d:4,n:0}};
 var LBL={beginner:'初级',intermediate:'中级',advanced:'高级',master:'大师'};
 var MAT={k:10000,a:120,b:120,n:270,r:600,c:285,p:30};
+
 var Pp=[[0,0,0,0,0,0,0,0,0],[90,100,110,120,120,120,110,100,90],[90,100,110,120,120,120,110,100,90],[60,80,100,110,120,110,100,80,60],[40,60,80,100,100,100,80,60,40],[10,20,40,60,80,60,40,20,10],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0]];
 var Pn=[[0,0,0,0,0,0,0,0,0],[0,0,4,8,8,8,4,0,0],[0,4,12,16,20,16,12,4,0],[4,12,20,28,32,28,20,12,4],[4,12,24,30,36,30,24,12,4],[4,12,24,30,36,30,24,12,4],[4,12,20,28,32,28,20,12,4],[0,4,12,16,20,16,12,4,0],[0,0,4,8,8,8,4,0,0],[0,0,0,0,0,0,0,0,0]];
 var Pr=[[10,10,10,14,16,14,10,10,10],[14,20,20,26,30,26,20,20,14],[10,16,16,22,26,22,16,16,10],[8,12,14,18,22,18,14,12,8],[4,8,10,14,18,14,10,8,4],[4,8,10,14,18,14,10,8,4],[0,4,6,10,14,10,6,4,0],[0,0,4,8,12,8,4,0,0],[0,0,4,8,12,8,4,0,0],[0,0,0,4,8,4,0,0,0]];
@@ -167,76 +179,304 @@ var peer=null,rCode='',rPwd='',pConn=null,sConn=[],sCnt=0,sLock=false;
 
 /* ===== HELPERS ===== */
 function gc(p){return p.charCodeAt(0)<97?'red':'black';}
-function initG(){bd=INIT.map(function(r){return r.map(function(v){return v||null;});});sel=null;cur='red';over=false;mhist=[];aiT=false;ailm=null;sLock=false;}
+function deepCopy(o){return JSON.parse(JSON.stringify(o));}
+
+function initG(){
+  bd=INIT.map(function(r){return r.map(function(v){return v||null;});});
+  sel=null;cur='red';over=false;mhist=[];aiT=false;ailm=null;sLock=false;
+}
 
 function resz(){
-  var w=document.querySelector('.bc').clientWidth,mw=Math.min(w-8,520);
+  var w=document.querySelector('.bc').clientWidth;
+  var mw=Math.min(w-8,520);
   CL=Math.floor((mw-PD*2)/8);if(CL<28)CL=28;
   cv.width=CL*8+PD*2;cv.height=CL*9+PD*2;
-  cv.style.width=cv.width+'px';cv.style.height=cv.height+'px';render();
+  cv.style.width=cv.width+'px';cv.style.height=cv.height+'px';
+  render();
 }
+
 function tp(c,r){return{x:PD+c*CL,y:PD+r*CL};}
+
 function fp(px,py){
   var c=Math.round((px-PD)/CL),r=Math.round((py-PD)/CL);
   if(c<0||c>=COLS||r<0||r>=ROWS)return null;
-  var p=tp(c,r);if(Math.hypot(px-p.x,py-p.y)>CL*.45)return null;
+  var p=tp(c,r);
+  if(Math.hypot(px-p.x,py-p.y)>CL*.45)return null;
   return{c:c,r:r};
 }
+
 function canMv(){
   if(gMode==='spectator'||sLock)return false;
   if(gMode==='ai')return cur==='red'&&!over&&!aiT;
   return cur===myCol&&!over;
 }
 
+/* ===== SCREEN NAV ===== */
+function showScr(id){
+  var screens=document.querySelectorAll('.scr');
+  for(var i=0;i<screens.length;i++)screens[i].classList.remove('on');
+  document.getElementById(id).classList.add('on');
+  if(id==='sMenu')netDis();
+}
+
 /* ===== RENDERING ===== */
 function render(){
-  X.clearRect(0,0,cv.width,cv.height);drawBoard();
-  if(ailm){var a1=tp(ailm.fc,ailm.fr),a2=tp(ailm.tc,ailm.tr);X.save();X.fillStyle='rgba(255,200,50,.13)';X.fillRect(a1.x-CL/2,a1.y-CL/2,CL,CL);X.fillRect(a2.x-CL/2,a2.y-CL/2,CL,CL);X.restore();}
-  if(sel&&canMv()){var hv=gvm(sel.c,sel.r);for(var i=0;i<hv.length;i++){var p=tp(hv[i][0],hv[i][1]);if(bd[hv[i][1]][hv[i][0]]){X.save();X.strokeStyle='rgba(200,50,30,.55)';X.lineWidth=2;X.setLineDash([4,4]);X.beginPath();X.arc(p.x,p.y,CL*.43,0,Math.PI*2);X.stroke();X.restore();}else{X.save();X.fillStyle='rgba(180,40,30,.4)';X.beginPath();X.arc(p.x,p.y,CL*.11,0,Math.PI*2);X.fill();X.restore();}}}
-  for(var r=0;r<ROWS;r++)for(var c=0;c<COLS;c++){if(!bd[r][c])continue;drPc(bd[r][c],c,r,sel&&sel.c===c&&sel.r===r);}
+  X.clearRect(0,0,cv.width,cv.height);
+  drawBoard();
+  if(ailm){
+    var a1=tp(ailm.fc,ailm.fr),a2=tp(ailm.tc,ailm.tr);
+    X.save();X.fillStyle='rgba(255,200,50,.13)';
+    X.fillRect(a1.x-CL/2,a1.y-CL/2,CL,CL);
+    X.fillRect(a2.x-CL/2,a2.y-CL/2,CL,CL);X.restore();
+  }
+  if(sel&&canMv()){
+    var hv=gvm(sel.c,sel.r);
+    for(var i=0;i<hv.length;i++){
+      var p=tp(hv[i][0],hv[i][1]);
+      if(bd[hv[i][1]][hv[i][0]]){
+        X.save();X.strokeStyle='rgba(200,50,30,.55)';X.lineWidth=2;X.setLineDash([4,4]);
+        X.beginPath();X.arc(p.x,p.y,CL*.43,0,Math.PI*2);X.stroke();X.restore();
+      }else{
+        X.save();X.fillStyle='rgba(180,40,30,.4)';
+        X.beginPath();X.arc(p.x,p.y,CL*.11,0,Math.PI*2);X.fill();X.restore();
+      }
+    }
+  }
+  for(var r=0;r<ROWS;r++)for(var c=0;c<COLS;c++){
+    if(!bd[r][c])continue;
+    drPc(bd[r][c],c,r,sel&&sel.c===c&&sel.r===r);
+  }
 }
 
 function drawBoard(){
-  var W=cv.width,H=cv.height,bg=X.createLinearGradient(0,0,W,H);
-  bg.addColorStop(0,'#d4b07a');bg.addColorStop(.3,'#c9a06a');bg.addColorStop(.5,'#d4b480');bg.addColorStop(.7,'#c49a60');bg.addColorStop(1,'#bfa070');
+  var W=cv.width,H=cv.height;
+  var bg=X.createLinearGradient(0,0,W,H);
+  bg.addColorStop(0,'#d4b07a');bg.addColorStop(.3,'#c9a06a');
+  bg.addColorStop(.5,'#d4b480');bg.addColorStop(.7,'#c49a60');bg.addColorStop(1,'#bfa070');
   X.fillStyle=bg;X.fillRect(0,0,W,H);
-  X.save();X.globalAlpha=.03;for(var i=0;i<H;i+=4){X.strokeStyle=i%8===0?'#000':'#fff';X.lineWidth=.5;X.beginPath();X.moveTo(0,i);X.lineTo(W,i);X.stroke();}X.restore();
-  var ip=PD-10;X.strokeStyle='#6b4226';X.lineWidth=2;X.strokeRect(ip,ip,W-ip*2,H-ip*2);
+
+  X.save();X.globalAlpha=.03;
+  for(var i=0;i<H;i+=4){X.strokeStyle=i%8===0?'#000':'#fff';X.lineWidth=.5;X.beginPath();X.moveTo(0,i);X.lineTo(W,i);X.stroke();}
+  X.restore();
+
+  var ip=PD-10;
+  X.strokeStyle='#6b4226';X.lineWidth=2;X.strokeRect(ip,ip,W-ip*2,H-ip*2);
   X.strokeStyle='#8b5e3c';X.lineWidth=1;X.strokeRect(ip+3,ip+3,W-ip*2-6,H-ip*2-6);
+
   X.strokeStyle='#5a3a1a';X.lineWidth=1.2;
   for(var r=0;r<ROWS;r++){var y=PD+r*CL;X.beginPath();X.moveTo(PD,y);X.lineTo(PD+8*CL,y);X.stroke();}
-  for(var c=0;c<COLS;c++){if(c===0||c===8){X.beginPath();X.moveTo(PD+c*CL,PD);X.lineTo(PD+c*CL,PD+9*CL);X.stroke();}else{X.beginPath();X.moveTo(PD+c*CL,PD);X.lineTo(PD+c*CL,PD+4*CL);X.stroke();X.beginPath();X.moveTo(PD+c*CL,PD+5*CL);X.lineTo(PD+c*CL,PD+9*CL);X.stroke();}}
-  [[3,0,5,2],[5,0,3,2],[3,7,5,9],[5,7,3,9]].forEach(function(d){var p1=tp(d[0],d[1]),p2=tp(d[2],d[3]);X.beginPath();X.moveTo(p1.x,p1.y);X.lineTo(p2.x,p2.y);X.stroke();});
-  [[1,2],[7,2],[0,3],[2,3],[4,3],[6,3],[8,3],[0,6],[2,6],[4,6],[6,6],[8,6],[1,7],[7,7]].forEach(function(m){drMk(m[0],m[1]);});
-  var ry1=PD+4*CL,ry2=PD+5*CL,rm=(ry1+ry2)/2;X.save();var rg=X.createLinearGradient(PD,ry1,PD,ry2);rg.addColorStop(0,'rgba(212,176,122,.5)');rg.addColorStop(.5,'rgba(212,180,128,.3)');rg.addColorStop(1,'rgba(212,176,122,.5)');X.fillStyle=rg;X.fillRect(PD+1,ry1,8*CL-2,CL);X.restore();
-  X.fillStyle='#5a3a1a';X.textAlign='center';X.textBaseline='middle';X.font='bold '+Math.max(14,CL*.36)+"px 'Ma Shan Zheng','Noto Serif SC',serif";
-  X.save();X.translate(PD+2*CL,rm);X.fillText('楚 河',0,0);X.restore();X.save();X.translate(PD+6*CL,rm);X.fillText('汉 界',0,0);X.restore();
+  for(var c=0;c<COLS;c++){
+    if(c===0||c===8){X.beginPath();X.moveTo(PD+c*CL,PD);X.lineTo(PD+c*CL,PD+9*CL);X.stroke();}
+    else{X.beginPath();X.moveTo(PD+c*CL,PD);X.lineTo(PD+c*CL,PD+4*CL);X.stroke();
+         X.beginPath();X.moveTo(PD+c*CL,PD+5*CL);X.lineTo(PD+c*CL,PD+9*CL);X.stroke();}
+  }
+  var da=[[3,0,5,2],[5,0,3,2],[3,7,5,9],[5,7,3,9]];
+  for(i=0;i<da.length;i++){var d=da[i],p1=tp(d[0],d[1]),p2=tp(d[2],d[3]);X.beginPath();X.moveTo(p1.x,p1.y);X.lineTo(p2.x,p2.y);X.stroke();}
+  var mk=[[1,2],[7,2],[0,3],[2,3],[4,3],[6,3],[8,3],[0,6],[2,6],[4,6],[6,6],[8,6],[1,7],[7,7]];
+  for(i=0;i<mk.length;i++)drMk(mk[i][0],mk[i][1]);
+
+  var ry1=PD+4*CL,ry2=PD+5*CL,rm=(ry1+ry2)/2;
+  X.save();var rg=X.createLinearGradient(PD,ry1,PD,ry2);
+  rg.addColorStop(0,'rgba(212,176,122,.5)');rg.addColorStop(.5,'rgba(212,180,128,.3)');rg.addColorStop(1,'rgba(212,176,122,.5)');
+  X.fillStyle=rg;X.fillRect(PD+1,ry1,8*CL-2,CL);X.restore();
+  X.fillStyle='#5a3a1a';X.textAlign='center';X.textBaseline='middle';
+  X.font='bold '+Math.max(14,CL*.36)+"px 'Ma Shan Zheng','Noto Serif SC',serif";
+  X.save();X.translate(PD+2*CL,rm);X.fillText('楚 河',0,0);X.restore();
+  X.save();X.translate(PD+6*CL,rm);X.fillText('汉 界',0,0);X.restore();
 }
-function drMk(col,row){var p=tp(col,row),x=p.x,y=p.y,gap=CL*.09,len=CL*.18,d=[];if(col>0){d.push([-1,-1]);d.push([-1,1]);}if(col<8){d.push([1,-1]);d.push([1,1]);}X.strokeStyle='#5a3a1a';X.lineWidth=1;for(var i=0;i<d.length;i++){var dx=d[i][0],dy=d[i][1],sx=x+dx*gap,sy=y+dy*gap;X.beginPath();X.moveTo(sx,sy+dy*len);X.lineTo(sx,sy+dy*CL*.08);X.lineTo(sx+dx*len,sy+dy*CL*.08);X.stroke();X.beginPath();X.moveTo(sx+dx*len,sy+dy*CL*.08);X.lineTo(sx+dx*len,sy);X.stroke();}}
-function drPc(pc,col,row,sel){var p=tp(col,row),x=p.x,y=p.y,rd=CL*.42,isR=gc(pc)==='red',ch=PN[pc];X.save();X.shadowColor='rgba(0,0,0,.4)';X.shadowBlur=5;X.shadowOffsetX=2;X.shadowOffsetY=2;var og=X.createRadialGradient(x-rd*.2,y-rd*.2,rd*.1,x,y,rd);og.addColorStop(0,'#f5ead5');og.addColorStop(.6,'#e8d5b0');og.addColorStop(1,'#c4a06a');X.fillStyle=og;X.beginPath();X.arc(x,y,rd,0,Math.PI*2);X.fill();X.shadowColor='transparent';X.strokeStyle=isR?'rgba(180,40,30,.6)':'rgba(30,30,30,.5)';X.lineWidth=1.5;X.beginPath();X.arc(x,y,rd*.78,0,Math.PI*2);X.stroke();X.strokeStyle='rgba(100,60,20,.35)';X.lineWidth=1;X.beginPath();X.arc(x,y,rd,0,Math.PI*2);X.stroke();X.fillStyle=isR?'#b52818':'#1a1a1a';X.textAlign='center';X.textBaseline='middle';X.font='bold '+Math.max(14,CL*.46)+"px 'Ma Shan Zheng','Noto Serif SC',serif";X.fillText(ch,x,y+1);if(sel){X.strokeStyle='#d4a017';X.lineWidth=2.5;X.shadowColor='rgba(212,160,23,.5)';X.shadowBlur=10;X.beginPath();X.arc(x,y,rd+2,0,Math.PI*2);X.stroke();}X.restore();}
+
+function drMk(col,row){
+  var p=tp(col,row),x=p.x,y=p.y,gap=CL*.09,len=CL*.18,d=[];
+  if(col>0){d.push([-1,-1]);d.push([-1,1]);}if(col<8){d.push([1,-1]);d.push([1,1]);}
+  X.strokeStyle='#5a3a1a';X.lineWidth=1;
+  for(var i=0;i<d.length;i++){
+    var dx=d[i][0],dy=d[i][1],sx=x+dx*gap,sy=y+dy*gap;
+    X.beginPath();X.moveTo(sx,sy+dy*len);X.lineTo(sx,sy+dy*CL*.08);X.lineTo(sx+dx*len,sy+dy*CL*.08);X.stroke();
+    X.beginPath();X.moveTo(sx+dx*len,sy+dy*CL*.08);X.lineTo(sx+dx*len,sy);X.stroke();
+  }
+}
+
+function drPc(pc,col,row,isSelected){
+  var p=tp(col,row),x=p.x,y=p.y,rd=CL*.42;
+  var isR=gc(pc)==='red',ch=PN[pc];
+  X.save();
+  X.shadowColor='rgba(0,0,0,.4)';X.shadowBlur=5;X.shadowOffsetX=2;X.shadowOffsetY=2;
+  var og=X.createRadialGradient(x-rd*.2,y-rd*.2,rd*.1,x,y,rd);
+  og.addColorStop(0,'#f5ead5');og.addColorStop(.6,'#e8d5b0');og.addColorStop(1,'#c4a06a');
+  X.fillStyle=og;X.beginPath();X.arc(x,y,rd,0,Math.PI*2);X.fill();
+  X.shadowColor='transparent';
+  X.strokeStyle=isR?'rgba(180,40,30,.6)':'rgba(30,30,30,.5)';X.lineWidth=1.5;
+  X.beginPath();X.arc(x,y,rd*.78,0,Math.PI*2);X.stroke();
+  X.strokeStyle='rgba(100,60,20,.35)';X.lineWidth=1;
+  X.beginPath();X.arc(x,y,rd,0,Math.PI*2);X.stroke();
+  X.fillStyle=isR?'#b52818':'#1a1a1a';
+  X.textAlign='center';X.textBaseline='middle';
+  X.font='bold '+Math.max(14,CL*.46)+"px 'Ma Shan Zheng','Noto Serif SC',serif";
+  X.fillText(ch,x,y+1);
+  if(isSelected){X.strokeStyle='#d4a017';X.lineWidth=2.5;X.shadowColor='rgba(212,160,23,.5)';X.shadowBlur=10;X.beginPath();X.arc(x,y,rd+2,0,Math.PI*2);X.stroke();}
+  X.restore();
+}
 
 /* ===== MOVE RULES ===== */
-function grm(c,r){var p=bd[r][c];if(!p)return[];var col=gc(p),t=p.toLowerCase(),m=[];function ta(nc,nr){if(nc<0||nc>=COLS||nr<0||nr>=ROWS)return false;if(bd[nr][nc]&&gc(bd[nr][nc])===col)return false;m.push([nc,nr]);return!bd[nr][nc];}function sl(dc,dr){var nc=c+dc,nr=r+dr;while(nc>=0&&nc<COLS&&nr>=0&&nr<ROWS){if(bd[nr][nc]){if(gc(bd[nr][nc])!==col)m.push([nc,nr]);break;}m.push([nc,nr]);nc+=dc;nr+=dr;}}
-if(t==='k'){var mn=col==='red'?7:0,mx=col==='red'?9:2;[[-1,0],[1,0],[0,-1],[0,1]].forEach(function(d){var nc=c+d[0],nr=r+d[1];if(nc>=3&&nc<=5&&nr>=mn&&nr<=mx&&(!bd[nr][nc]||gc(bd[nr][nc])!==col))m.push([nc,nr]);});var dr=col==='red'?-1:1,rr=r+dr;while(rr>=0&&rr<ROWS){if(bd[rr][c]){if(bd[rr][c].toLowerCase()==='k')m.push([c,rr]);break;}rr+=dr;}}
-else if(t==='a'){var mna=col==='red'?7:0,mxa=col==='red'?9:2;[[-1,-1],[-1,1],[1,-1],[1,1]].forEach(function(d){var nc=c+d[0],nr=r+d[1];if(nc>=3&&nc<=5&&nr>=mna&&nr<=mxa&&(!bd[nr][nc]||gc(bd[nr][nc])!==col))m.push([nc,nr]);});}
-else if(t==='b'){[[-2,-2],[-2,2],[2,-2],[2,2]].forEach(function(d){var nc=c+d[0],nr=r+d[1];if(nc<0||nc>=COLS||nr<0||nr>=ROWS)return;if(col==='red'&&nr<5)return;if(col==='black'&&nr>4)return;if(bd[r+d[1]/2][c+d[0]/2])return;if(!bd[nr][nc]||gc(bd[nr][nc])!==col)m.push([nc,nr]);});}
-else if(t==='n'){[[-1,-2,0,-1],[1,-2,0,-1],[-2,-1,-1,0],[2,-1,1,0],[-2,1,-1,0],[2,1,1,0],[-1,2,0,1],[1,2,0,1]].forEach(function(d){var nc=c+d[0],nr=r+d[1];if(nc<0||nc>=COLS||nr<0||nr>=ROWS)return;if(bd[r+d[3]][c+d[2]])return;if(!bd[nr][nc]||gc(bd[nr][nc])!==col)m.push([nc,nr]);});}
-else if(t==='r'){sl(-1,0);sl(1,0);sl(0,-1);sl(0,1);}
-else if(t==='c'){[[-1,0],[1,0],[0,-1],[0,1]].forEach(function(d){var nc=c+d[0],nr=r+d[1],jmp=false;while(nc>=0&&nc<COLS&&nr>=0&&nr<ROWS){if(!jmp){if(bd[nr][nc])jmp=true;else m.push([nc,nr]);}else{if(bd[nr][nc]){if(gc(bd[nr][nc])!==col)m.push([nc,nr]);break;}}nc+=d[0];nr+=d[1];}});}
-else if(t==='p'){if(col==='red'){ta(c,r-1);if(r<=4){ta(c-1,r);ta(c+1,r);}}else{ta(c,r+1);if(r>=5){ta(c-1,r);ta(c+1,r);}}}
-return m;}
+function grm(c,r){
+  var p=bd[r][c];if(!p)return[];
+  var col=gc(p),t=p.toLowerCase(),m=[];
+  function ta(nc,nr){
+    if(nc<0||nc>=COLS||nr<0||nr>=ROWS)return false;
+    if(bd[nr][nc]&&gc(bd[nr][nc])===col)return false;
+    m.push([nc,nr]);return!bd[nr][nc];
+  }
+  function sl(dc,dr){
+    var nc=c+dc,nr=r+dr;
+    while(nc>=0&&nc<COLS&&nr>=0&&nr<ROWS){
+      if(bd[nr][nc]){if(gc(bd[nr][nc])!==col)m.push([nc,nr]);break;}
+      m.push([nc,nr]);nc+=dc;nr+=dr;
+    }
+  }
+  if(t==='k'){
+    var mn=col==='red'?7:0,mx=col==='red'?9:2;
+    [[-1,0],[1,0],[0,-1],[0,1]].forEach(function(d){
+      var nc=c+d[0],nr=r+d[1];
+      if(nc>=3&&nc<=5&&nr>=mn&&nr<=mx&&(!bd[nr][nc]||gc(bd[nr][nc])!==col))m.push([nc,nr]);
+    });
+    var dir=col==='red'?-1:1,rr=r+dir;
+    while(rr>=0&&rr<ROWS){if(bd[rr][c]){if(bd[rr][c].toLowerCase()==='k')m.push([c,rr]);break;}rr+=dir;}
+  }else if(t==='a'){
+    var mna=col==='red'?7:0,mxa=col==='red'?9:2;
+    [[-1,-1],[-1,1],[1,-1],[1,1]].forEach(function(d){
+      var nc=c+d[0],nr=r+d[1];
+      if(nc>=3&&nc<=5&&nr>=mna&&nr<=mxa&&(!bd[nr][nc]||gc(bd[nr][nc])!==col))m.push([nc,nr]);
+    });
+  }else if(t==='b'){
+    [[-2,-2],[-2,2],[2,-2],[2,2]].forEach(function(d){
+      var nc=c+d[0],nr=r+d[1];
+      if(nc<0||nc>=COLS||nr<0||nr>=ROWS)return;
+      if(col==='red'&&nr<5)return;if(col==='black'&&nr>4)return;
+      if(bd[r+d[1]/2][c+d[0]/2])return;
+      if(!bd[nr][nc]||gc(bd[nr][nc])!==col)m.push([nc,nr]);
+    });
+  }else if(t==='n'){
+    [[-1,-2,0,-1],[1,-2,0,-1],[-2,-1,-1,0],[2,-1,1,0],[-2,1,-1,0],[2,1,1,0],[-1,2,0,1],[1,2,0,1]].forEach(function(d){
+      var nc=c+d[0],nr=r+d[1];
+      if(nc<0||nc>=COLS||nr<0||nr>=ROWS)return;
+      if(bd[r+d[3]][c+d[2]])return;
+      if(!bd[nr][nc]||gc(bd[nr][nc])!==col)m.push([nc,nr]);
+    });
+  }else if(t==='r'){sl(-1,0);sl(1,0);sl(0,-1);sl(0,1);}
+  else if(t==='c'){
+    [[-1,0],[1,0],[0,-1],[0,1]].forEach(function(d){
+      var nc=c+d[0],nr=r+d[1],jmp=false;
+      while(nc>=0&&nc<COLS&&nr>=0&&nr<ROWS){
+        if(!jmp){if(bd[nr][nc])jmp=true;else m.push([nc,nr]);}
+        else{if(bd[nr][nc]){if(gc(bd[nr][nc])!==col)m.push([nc,nr]);break;}}
+        nc+=d[0];nr+=d[1];
+      }
+    });
+  }else if(t==='p'){
+    if(col==='red'){ta(c,r-1);if(r<=4){ta(c-1,r);ta(c+1,r);}}
+    else{ta(c,r+1);if(r>=5){ta(c-1,r);ta(c+1,r);}}
+  }
+  return m;
+}
 
 function fk(col){var k=col==='red'?'K':'k';for(var r=0;r<ROWS;r++)for(var c=0;c<COLS;c++)if(bd[r][c]===k)return{c:c,r:r};return null;}
-function chk(col){var kg=fk(col);if(!kg)return true;var en=col==='red'?'black':'red';for(var r=0;r<ROWS;r++)for(var c=0;c<COLS;c++){if(bd[r][c]&&gc(bd[r][c])===en){var mv=grm(c,r);for(var i=0;i<mv.length;i++)if(mv[i][0]===kg.c&&mv[i][1]===kg.r)return true;}}return false;}
-function gvm(c,r){var p=bd[r][c];if(!p)return[];var col=gc(p),raw=grm(c,r),res=[];for(var i=0;i<raw.length;i++){var mc=raw[i][0],mr=raw[i][1],cap=bd[mr][mc];bd[mr][mc]=p;bd[r][c]=null;if(!chk(col))res.push([mc,mr]);bd[r][c]=p;bd[mr][mc]=cap;}return res;}
-function hasLeg(col){for(var r=0;r<ROWS;r++)for(var c=0;c<COLS;c++)if(bd[r][c]&&gc(bd[r][c])===col&&gvm(c,r).length)return true;return false;}
+
+function chk(col){
+  var kg=fk(col);if(!kg)return true;
+  var en=col==='red'?'black':'red';
+  for(var r=0;r<ROWS;r++)for(var c=0;c<COLS;c++){
+    if(bd[r][c]&&gc(bd[r][c])===en){
+      var mv=grm(c,r);
+      for(var i=0;i<mv.length;i++)if(mv[i][0]===kg.c&&mv[i][1]===kg.r)return true;
+    }
+  }
+  return false;
+}
+
+function gvm(c,r){
+  var p=bd[r][c];if(!p)return[];
+  var col=gc(p),raw=grm(c,r),res=[];
+  for(var i=0;i<raw.length;i++){
+    var mc=raw[i][0],mr=raw[i][1],cap=bd[mr][mc];
+    bd[mr][mc]=p;bd[r][c]=null;
+    if(!chk(col))res.push([mc,mr]);
+    bd[r][c]=p;bd[mr][mc]=cap;
+  }
+  return res;
+}
+
+function hasLeg(col){
+  for(var r=0;r<ROWS;r++)for(var c=0;c<COLS;c++)
+    if(bd[r][c]&&gc(bd[r][c])===col&&gvm(c,r).length)return true;
+  return false;
+}
 
 /* ===== AI ENGINE ===== */
-function evl(){var s=0;for(var r=0;r<ROWS;r++)for(var c=0;c<COLS;c++){var p=bd[r][c];if(!p)continue;var t=p.toLowerCase(),isR=gc(p)==='red';var v=MAT[t]||0;if(PST[t])v+=PST[t][isR?r:9-r][c];s+=isR?v:-v;}return s;}
-function genM(col){var mv=[];for(var r=0;r<ROWS;r++)for(var c=0;c<COLS;c++){if(!bd[r][c]||gc(bd[r][c])!==col)continue;var tg=grm(c,r);for(var i=0;i<tg.length;i++)mv.push({fc:c,fr:r,tc:tg[i][0],tr:tg[i][1],pc:bd[r][c],cap:bd[tg[i][1]][tg[i][0]]});}return mv;}
-function srtM(mv){return mv.sort(function(a,b){return(b.cap?MAT[b.cap.toLowerCase()]*10:0)-(a.cap?MAT[a.cap.toLowerCase()]*10:0);});}
-function mmx(d,a,b,mx){if(d===0)return evl();var col=mx?'red':'black',mv=srtM(genM(col)),best=mx?-9e7:9e7,hasL=false;for(var i=0;i<mv.length;i++){var m=mv[i],oc=bd[m.fr][m.fc],tc=bd[m.tr][m.tc];bd[m.fr][m.fc]=null;bd[m.tr][m.tc]=m.pc;if(chk(col)){bd[m.fr][m.fc]=oc;bd[m.tr][m.tc]=tc;continue;}hasL=true;var sc=mmx(d-1,a,b,!mx);bd[m.fr][m.fc]=oc;bd[m.tr][m.tc]=tc;if(mx){if(sc>best)best=sc;if(sc>a)a=sc;}else{if(sc<best)best=sc;if(sc<b)b=sc;}if(b<=a)break;}if(!hasL)return chk(col)?(mx?-999999+sd*100-d*10:999999-sd*100+d*10):0;return best;}
-function findBest(){var cfg=LVL[aiLv];sd=cfg.d;var noise=cfg.n,mv=srtM(genM('black')),legal=[];for(var i=0;i<mv.length;i++){var m=mv[i];bd[m.fr][m.fc]=null;bd[m.tr][m.tc]=m.pc;if(!chk('black'))legal.push(m);bd[m.fr][m.fc]=m.pc;bd[m.tr][m.tc]=m.cap;}if(!legal.length)return null;var best=legal[0],bsc=9e7;for(i=0;i<legal.length;i++){m=legal[i];bd[m.fr][m.fc]=null;bd[m.tr][m.tc]=m.pc;var sc=mmx(sd-1,-999999,999999,true);bd[m.fr][m.fc]=m.pc;bd[m.tr][m.tc]=m.cap;sc+=(Math.random()-.5)*noise;if(sc<bsc){bsc=sc;best=m;}}return best;}
+function evl(){
+  var s=0;
+  for(var r=0;r<ROWS;r++)for(var c=0;c<COLS;c++){
+    var p=bd[r][c];if(!p)continue;
+    var t=p.toLowerCase(),isR=gc(p)==='red';
+    var v=MAT[t]||0;if(PST[t])v+=PST[t][isR?r:9-r][c];
+    s+=isR?v:-v;
+  }
+  return s;
+}
+
+function genM(col){
+  var mv=[];
+  for(var r=0;r<ROWS;r++)for(var c=0;c<COLS;c++){
+    if(!bd[r][c]||gc(bd[r][c])!==col)continue;
+    var tg=grm(c,r);
+    for(var i=0;i<tg.length;i++)
+      mv.push({fc:c,fr:r,tc:tg[i][0],tr:tg[i][1],pc:bd[r][c],cap:bd[tg[i][1]][tg[i][0]]});
+  }
+  return mv;
+}
+
+function srtM(mv){
+  return mv.sort(function(a,b){
+    return(b.cap?MAT[b.cap.toLowerCase()]*10:0)-(a.cap?MAT[a.cap.toLowerCase()]*10:0);
+  });
+}
+
+function mmx(d,a,b,mx){
+  if(d===0)return evl();
+  var col=mx?'red':'black',mv=srtM(genM(col)),best=mx?-9e7:9e7,hasL=false;
+  for(var i=0;i<mv.length;i++){
+    var m=mv[i],oc=bd[m.fr][m.fc],tc=bd[m.tr][m.tc];
+    bd[m.fr][m.fc]=null;bd[m.tr][m.tc]=m.pc;
+    if(chk(col)){bd[m.fr][m.fc]=oc;bd[m.tr][m.tc]=tc;continue;}
+    hasL=true;
+    var sc=mmx(d-1,a,b,!mx);
+    bd[m.fr][m.fc]=oc;bd[m.tr][m.tc]=tc;
+    if(mx){if(sc>best)best=sc;if(sc>a)a=sc;}
+    else{if(sc<best)best=sc;if(sc<b)b=sc;}
+    if(b<=a)break;
+  }
+  if(!hasL)return chk(col)?(mx?-999999+sd*100-d*10:999999-sd*100+d*10):0;
+  return best;
+}
+
+function findBest(){
+  var cfg=LVL[aiLv];sd=cfg.d;var noise=cfg.n;
+  var mv=srtM(genM('black')),legal=[];
+  for(var i=0;i<mv.length;i++){
+    var m=mv[i];bd[m.fr][m.fc]=null;bd[m.tr][m.tc]=m.pc;
+    if(!chk('black'))legal.push(m);
+    bd[m.fr][m.fc]=m.pc;bd[m.tr][m.tc]=m.cap;
+  }
+  if(!legal.length)return null;
+  var best=legal[0],bsc=9e7;
+  for(i=0;i<legal.length;i++){
+    m=legal[i];bd[m.fr][m.fc]=null;bd[m.tr][m.tc]=m.pc;
+    var sc=mmx(sd-1,-999999,999999,true);
+    bd[m.fr][m.fc]=m.pc;bd[m.tr][m.tc]=m.cap;
+    sc+=(Math.random()-.5)*noise;
+    if(sc<bsc){bsc=sc;best=m;}
+  }
+  return best;
+}
 
 /* ===== NETWORK ===== */
 function genCode(){var ch='ABCDEFGHJKMNPQRSTUVWXYZ23456789',s='';for(var i=0;i<6;i++)s+=ch[Math.floor(Math.random()*ch.length)];return s;}
@@ -244,25 +484,28 @@ function getLnk(){return window.location.href.split('?')[0]+'?room='+rCode;}
 function netOk(){return typeof Peer!=='undefined';}
 
 function netCr(pwd){
-  rPwd=pwd||'';rCode=genCode();showOv('正在创建房间...');
+  rPwd=pwd||'';rCode=genCode();
+  showOv('正在创建房间...');
   var att=0;
   function tryC(){
-    att++;if(att>6){hideOv();msg('wInf','创建失败，请重试','err');return;}
+    att++;if(att>6){hideOv();showMsg('wInf','创建失败，请重试','err');return;}
     if(peer)try{peer.destroy();}catch(e){}
     peer=new Peer('cjk_'+rCode);
     var to=setTimeout(function(){try{peer.destroy();}catch(e){}rCode=genCode();tryC();},8000);
     peer.on('open',function(){clearTimeout(to);hideOv();onRC();});
     peer.on('connection',onInc);
-    peer.on('error',function(e){clearTimeout(to);if(e.type==='unavailable-id'){rCode=genCode();tryC();}else{hideOv();msg('wInf','错误: '+e.type,'err');}});
+    peer.on('error',function(e){clearTimeout(to);if(e.type==='unavailable-id'){rCode=genCode();tryC();}else{hideOv();showMsg('wInf','错误: '+e.type,'err');}});
   }
   tryC();
 }
 
 function onRC(){
-  S('sWt');
+  showScr('sWt');
   document.getElementById('dC').textContent=rCode;
   document.getElementById('dL').textContent=getLnk();
-  if(rPwd){var pd=document.getElementById('dPw');pd.textContent='房间密码: '+rPwd;pd.style.display='block';}else document.getElementById('dPw').style.display='none';
+  var dp=document.getElementById('dPw');
+  if(rPwd){dp.textContent='房间密码: '+rPwd;dp.style.display='block';}
+  else dp.style.display='none';
   document.getElementById('wMsg').textContent='等待对手加入';
   document.getElementById('wInf').style.display='none';
 }
@@ -274,7 +517,9 @@ function onInc(conn){
       if(pConn){conn.send({t:'no',msg:'房间已满'});return;}
       if(rPwd&&data.pwd!==rPwd){conn.send({t:'no',msg:'密码错误'});return;}
       pConn=conn;myCol='red';
-      conn.send({t:'ok',color:'black'});setupPC(conn);startOG();
+      conn.send({t:'ok',color:'black'});
+      setupPC(conn);
+      startOG();
     }else{
       sConn.push(conn);sCnt++;upSp();
       conn.send({t:'ok',role:'s'});
@@ -286,7 +531,12 @@ function onInc(conn){
 
 function setupPC(conn){
   conn.on('close',function(){pConn=null;if(!over){over=true;uSt('对手已断开','go');}});
-  conn.on('data',function(d){if(d.t==='mv'&&!over){if(d.fc===-1){over=true;uSt(d.w==='red'?'红方胜！':'黑方胜！','go');render();return;}if(cur!==myCol)onRM(d.fc,d.fr,d.tc,d.tr);}});
+  conn.on('data',function(d){
+    if(d.t==='mv'&&!over){
+      if(d.fc===-1){over=true;uSt(d.w==='red'?'红方胜！':'黑方胜！','go');render();return;}
+      if(cur!==myCol)onRM(d.fc,d.fr,d.tc,d.tr);
+    }
+  });
 }
 
 function netJo(code,pwd,asSpec){
@@ -304,35 +554,62 @@ function netJo(code,pwd,asSpec){
         if(data.color){
           pConn=conn;myCol=data.color;gMode='online-guest';
           conn.on('close',function(){pConn=null;if(!over){over=true;uSt('对手已断开','go');}});
-          conn.on('data',function(d){if(d.t==='mv'&&!over){if(d.fc===-1){over=true;uSt(d.w==='red'?'红方胜！':'黑方胜！','go');render();return;}if(cur!==myCol)onRM(d.fc,d.fr,d.tc,d.tr);}if(d.t==='sync')onSy(d);});
+          conn.on('data',function(d){
+            if(d.t==='mv'&&!over){
+              if(d.fc===-1){over=true;uSt(d.w==='red'?'红方胜！':'黑方胜！','go');render();return;}
+              if(cur!==myCol)onRM(d.fc,d.fr,d.tc,d.tr);
+            }
+            if(d.t==='sync')onSy(d);
+          });
           startOG();
         }else if(data.role==='s'){
           gMode='spectator';pConn=conn;myCol='';
           conn.on('close',function(){pConn=null;if(!over){over=true;uSt('房间已关闭','go');}});
-          conn.on('data',function(d){if(d.t==='mv'){if(d.fc===-1){over=true;uSt(d.w==='red'?'红方胜！':'黑方胜！','go');render();return;}onRM(d.fc,d.fr,d.tc,d.tr);}if(d.t==='sync')onSy(d);});
+          conn.on('data',function(d){
+            if(d.t==='mv'){if(d.fc===-1){over=true;uSt(d.w==='red'?'红方胜！':'黑方胜！','go');render();return;}onRM(d.fc,d.fr,d.tc,d.tr);}
+            if(d.t==='sync')onSy(d);
+          });
           startOG();
         }
       }else if(data.t==='no'){joErr(data.msg||'加入失败');try{conn.close();}catch(e){}}
     });
     conn.on('error',function(){clearTimeout(to);hideOv();joErr('连接失败');});
   });
-  peer.on('error',function(e){hideOv();if(e.type==='peer-unavailable')joErr('房间不存在或已关闭');else joErr('网络错误: '+e.type);});
+  peer.on('error',function(e){hideOv();joErr(e.type==='peer-unavailable'?'房间不存在或已关闭':'网络错误: '+e.type);});
 }
 
 function netSend(msg){if(pConn&&pConn.open)pConn.send(msg);}
-function netBrd(msg){if(pConn&&pConn.open)pConn.send(msg);sConn.forEach(function(c){if(c.open)c.send(msg);});}
-function netDis(){try{if(pConn){pConn.close();pConn=null);}}catch(e){}sConn.forEach(function(c){try{c.close();}catch(e){}});sConn=[];sCnt=0;if(peer){try{peer.destroy();}catch(e){}}peer=null;}
-function deepCopy(o){return JSON.parse(JSON.stringify(o));}
-function onSy(d){bd=d.bd;cur=d.cur;over=d.over||false;ailm=null;sel=null;render();uSt(over?'对局已结束':(cur===myCol?'轮到你走棋':'等待对手走棋'),over?'go':(cur==='red'?'rt':'bt'));}
+function netBrd(msg){if(pConn&&pConn.open)pConn.send(msg);for(var i=0;i<sConn.length;i++){if(sConn[i].open)sConn[i].send(msg);}}
+
+function netDis(){
+  try{if(pConn){pConn.close();pConn=null;}}catch(e){}
+  for(var i=0;i<sConn.length;i++){try{sConn[i].close();}catch(e){}}
+  sConn=[];sCnt=0;
+  if(peer){try{peer.destroy();}catch(e){}peer=null;}
+}
+
+function onSy(d){
+  bd=d.bd;cur=d.cur;over=d.over||false;ailm=null;sel=null;render();
+  uSt(over?'对局已结束':(cur===myCol?'轮到你走棋':'等待对手走棋'),
+      over?'go':(cur==='red'?'rt':'bt'));
+}
 
 /* ===== GAME FLOW ===== */
 function mkMv(fc,fr,tc,tr){
-  var cap=bd[tr][tc];mhist.push({fc:fc,fr:fr,tc:tc,tr:tr,pc:bd[fr][fc],cap:cap});
+  var cap=bd[tr][tc];
+  mhist.push({fc:fc,fr:fr,tc:tc,tr:tr,pc:bd[fr][fc],cap:cap});
   bd[tr][tc]=bd[fr][fc];bd[fr][fc]=null;sel=null;sLock=false;
   if(gMode==='ai')document.getElementById('uB').disabled=false;
-  if(cap&&(cap==='K'||cap==='k')){over=true;uSt(cap==='K'?'黑方胜！':'红方胜！','go');render();if(gMode!=='ai')netBrd({t:'mv',fc:-1,fr:0,tc:0,tr:0,w:cap==='K'?'black':'red'});return;}
-  cur=cur==='red'?'black':'red';var ic=chk(cur),hl=hasLeg(cur);
-  if(!hl){over=true;uSt((cur==='red'?'黑方':'红方')+'胜！','go');if(gMode!=='ai')netBrd({t:'mv',fc:-1,fr:0,tc:0,tr:0,w:cur==='red'?'black':'red'});}
+
+  if(cap&&(cap==='K'||cap==='k')){
+    over=true;uSt(cap==='K'?'黑方胜！':'红方胜！','go');render();
+    if(gMode!=='ai')netBrd({t:'mv',fc:-1,fr:0,tc:0,tr:0,w:cap==='K'?'black':'red'});
+    return;
+  }
+  cur=cur==='red'?'black':'red';
+  var ic=chk(cur),hl=hasLeg(cur);
+  if(!hl){over=true;uSt((cur==='red'?'黑方':'红方')+'胜！','go');
+    if(gMode!=='ai')netBrd({t:'mv',fc:-1,fr:0,tc:0,tr:0,w:cur==='red'?'black':'red'});}
   else if(ic)uSt((cur==='red'?'红方':'黑方')+'被将军！',cur==='red'?'rt':'bt');
   else if(gMode==='ai')uSt(cur==='red'?'红方走棋':'黑方走棋',cur==='red'?'rt':'bt');
   else uSt(cur===myCol?'轮到你走棋':'等待对手走棋',cur==='red'?'rt':'bt');
@@ -341,15 +618,31 @@ function mkMv(fc,fr,tc,tr){
 }
 
 function onRM(fc,fr,tc,tr){ailm={fc:fc,fr:fr,tc:tc,tr:tr};mkMv(fc,fr,tc,tr);}
-function aiGo(){aiT=true;cv.classList.add('off');uSt('AI 思考中...','tk');setTimeout(function(){var m=findBest();if(m){ailm={fc:m.fc,fr:m.fr,tc:m.tc,tr:m.tr};mkMv(m.fc,m.fr,m.tc,m.tr);}aiT=false;cv.classList.remove('off');},60);}
-function doUd(){if(gMode!=='ai'||mhist.length<2||aiT)return;for(var i=0;i<2;i++){var m=mhist.pop();bd[m.fr][m.fc]=m.pc;bd[m.tr][m.tc]=m.cap;}cur='red';over=false;sel=null;ailm=mhist.length>=2?(function(){var l=mhist[mhist.length-1];return{fc:l.fc,fr:l.fr,tc:l.tc,tr:l.tr};})():null;document.getElementById('uB').disabled=mhist.length<2;uSt('红方走棋','rt');render();}
+
+function aiGo(){
+  aiT=true;cv.classList.add('off');uSt('AI 思考中...','tk');
+  setTimeout(function(){
+    var m=findBest();
+    if(m){ailm={fc:m.fc,fr:m.fr,tc:m.tc,tr:m.tr};mkMv(m.fc,m.fr,m.tc,m.tr);}
+    aiT=false;cv.classList.remove('off');
+  },60);
+}
+
+function doUd(){
+  if(gMode!=='ai'||mhist.length<2||aiT)return;
+  for(var i=0;i<2;i++){var m=mhist.pop();bd[m.fr][m.fc]=m.pc;bd[m.tr][m.tc]=m.cap;}
+  cur='red';over=false;sel=null;
+  ailm=mhist.length>=2?(function(){var l=mhist[mhist.length-1];return{fc:l.fc,fr:l.fr,tc:l.tc,tr:l.tr};})():null;
+  document.getElementById('uB').disabled=mhist.length<2;
+  uSt('红方走棋','rt');render();
+}
 
 function startOG(){
   initG();document.getElementById('uB').style.display='none';
   document.getElementById('bB').textContent='退出房间';
   document.getElementById('gM').textContent=gMode==='spectator'?'观战模式':(gMode==='online-host'?'在线对弈 (房主)':'在线对弈');
   document.getElementById('gP').textContent=gMode==='spectator'?'红方 vs 黑方':(myCol==='red'?'你(红) vs 对手(黑)':'对手(红) vs 你(黑)');
-  document.getElementById('gDt').className='gh-dot grn';upSp();S('sGm');resz();
+  document.getElementById('gDt').className='gh-dot grn';upSp();showScr('sGm');resz();
   if(gMode==='spectator')uSt('观战中','sp');
   else if(myCol==='red')uSt('红方走棋 - 轮到你','rt');
   else uSt('黑方等待 - 对手先行','rt');
@@ -362,27 +655,37 @@ function startAI(){
   document.getElementById('bB').textContent='返回大厅';
   document.getElementById('gM').textContent='人机对弈 ('+LBL[aiLv]+')';
   document.getElementById('gP').textContent='红方: 你 vs 黑方: AI';
-  document.getElementById('gDt').className='gh-dot grn';document.getElementById('gSp').style.display='none';
-  S('sGm');resz();uSt('红方走棋','rt');
+  document.getElementById('gDt').className='gh-dot grn';
+  document.getElementById('gSp').style.display='none';
+  showScr('sGm');resz();uSt('红方走棋','rt');
 }
 
-/* ===== UI ===== */
-function S(id){document.querySelectorAll('.scr').forEach(function(s){s.classList.remove('on');});document.getElementById(id).classList.add('on');if(id==='sMenu')netDis();}
+/* ===== UI HELPERS ===== */
 function uSt(t,cl){var el=document.getElementById('st');el.textContent=t;el.className='st '+(cl||'');}
 function showOv(m){document.getElementById('oM').textContent=m;document.getElementById('ov').classList.remove('hd');}
 function hideOv(){document.getElementById('ov').classList.add('hd');}
-function msg(id,t,tp){var el=document.getElementById(id);el.textContent=t;el.className='msg msg-'+(tp||'inf');el.style.display='block';}
+function showMsg(id,t,tp){var el=document.getElementById(id);el.textContent=t;el.className='msg msg-'+(tp||'inf');el.style.display='block';}
 function joErr(t){var el=document.getElementById('jErr');el.textContent=t;el.style.display='block';}
-function upSp(){var el=document.getElementById('gSp');if(gMode==='spectator')el.style.display='none';else{el.style.display='';document.getElementById('sC').textContent=sCnt;}}
-function cpLnk(){var lnk=getLnk();if(navigator.clipboard)navigator.clipboard.writeText(lnk).then(cpOk).catch(function(){fcCp(lnk);});else fcCp(lnk);}
+function upSp(){var el=document.getElementById('gSp');if(gMode==='spectator'){el.style.display='none';}else{el.style.display='';document.getElementById('sC').textContent=sCnt;}}
+
+function cpLnk(){
+  var lnk=getLnk();
+  if(navigator.clipboard)navigator.clipboard.writeText(lnk).then(cpOk).catch(function(){fcCp(lnk);});
+  else fcCp(lnk);
+}
 function fcCp(t){var ta=document.createElement('textarea');ta.value=t;ta.style.cssText='position:fixed;opacity:0';document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta);cpOk();}
 function cpOk(){var b=document.getElementById('cpBtn');b.textContent='已复制';b.classList.add('ok');setTimeout(function(){b.textContent='复制链接';b.classList.remove('ok');},2000);}
-function canRm(){netDis();S('sMenu');}
-function doBk(){if(gMode==='ai'){S('sAI');return;}if(confirm('确定退出当前对局？')){netDis();S('sMenu');}}
+
+function doBk(){
+  if(gMode==='ai'){showScr('sAI');return;}
+  if(confirm('确定退出当前对局？')){netDis();showScr('sMenu');}
+}
 
 /* ===== INPUT ===== */
 function hClk(px,py){
-  if(!canMv())return;var pos=fp(px,py);if(!pos)return;var c=pos.c,r=pos.r;
+  if(!canMv())return;
+  var pos=fp(px,py);if(!pos)return;
+  var c=pos.c,r=pos.r;
   if(sel){
     if(sel.c===c&&sel.r===r){sel=null;render();return;}
     var hv=gvm(sel.c,sel.r),found=false;
@@ -395,22 +698,83 @@ function hClk(px,py){
     }
     if(bd[r][c]&&gc(bd[r][c])===myCol){sel={c:c,r:r};render();return;}
     sel=null;render();
-  }else{if(bd[r][c]&&gc(bd[r][c])===myCol){sel={c:c,r:r};render();}}
+  }else{
+    if(bd[r][c]&&gc(bd[r][c])===myCol){sel={c:c,r:r};render();}
+  }
 }
 
-cv.addEventListener('click',function(e){var rect=cv.getBoundingClientRect();hClk((e.clientX-rect.left)*cv.width/rect.width,(e.clientY-rect.top)*cv.height/rect.height);});
-cv.addEventListener('touchstart',function(e){e.preventDefault();var t=e.touches[0],rect=cv.getBoundingClientRect();hClk((t.clientX-rect.left)*cv.width/rect.width,(t.clientY-rect.top)*cv.height/rect.height);},{passive:false});
-document.getElementById('bB').addEventListener('click',doBk);
-document.getElementById('aiL').addEventListener('click',function(e){var btn=e.target.closest('.lb');if(!btn)return;aiLv=btn.dataset.l;document.querySelectorAll('#aiL .lb').forEach(function(b){b.classList.toggle('on',b.dataset.l===aiLv);});});
-function doCr(){var pwd=document.getElementById('inCP').value.trim();if(!netOk()){alert('网络库未加载，请刷新页面重试');return;}gMode='online-host';netCr(pwd);}
-function doJo(asSpec){var code=document.getElementById('inJC').value.trim().toUpperCase();var pwd=document.getElementById('inJP').value.trim();document.getElementById('jErr').style.display='none';if(!code||code.length<4){joErr('请输入正确的房间号');return;}gMode=asSpec?'spectator':'online-guest';netJo(code,pwd,asSpec);}
+/* ===== BIND ALL EVENTS ===== */
+cv.addEventListener('click',function(e){
+  var rect=cv.getBoundingClientRect();
+  hClk((e.clientX-rect.left)*cv.width/rect.width,(e.clientY-rect.top)*cv.height/rect.height);
+});
+cv.addEventListener('touchstart',function(e){
+  e.preventDefault();var t=e.touches[0],rect=cv.getBoundingClientRect();
+  hClk((t.clientX-rect.left)*cv.width/rect.width,(t.clientY-rect.top)*cv.height/rect.height);
+},{passive:false});
+
+/* Menu buttons */
+document.getElementById('btnAI').addEventListener('click',function(){showScr('sAI');});
+document.getElementById('btnCr').addEventListener('click',function(){showScr('sCr');});
+document.getElementById('btnJo').addEventListener('click',function(){showScr('sJo');});
+
+/* AI screen */
+document.getElementById('btnStartAI').addEventListener('click',function(){startAI();});
+document.getElementById('btnAIBack').addEventListener('click',function(){showScr('sMenu');});
+document.getElementById('aiL').addEventListener('click',function(e){
+  var btn=e.target.closest('.lb');if(!btn)return;
+  aiLv=btn.dataset.l;
+  var btns=document.querySelectorAll('#aiL .lb');
+  for(var i=0;i<btns.length;i++)btns[i].classList.toggle('on',btns[i].dataset.l===aiLv);
+});
+
+/* Create screen */
+document.getElementById('btnDoCr').addEventListener('click',function(){
+  var pwd=document.getElementById('inCP').value.trim();
+  if(!netOk()){alert('网络库未加载，请刷新页面重试');return;}
+  gMode='online-host';netCr(pwd);
+});
+document.getElementById('btnCrBack').addEventListener('click',function(){showScr('sMenu');});
+
+/* Wait screen */
+document.getElementById('cpBtn').addEventListener('click',function(){cpLnk();});
+document.getElementById('btnWtBack').addEventListener('click',function(){netDis();showScr('sMenu');});
+
+/* Join screen */
+document.getElementById('btnDoJo').addEventListener('click',function(){doJoin(false);});
+document.getElementById('btnDoSp').addEventListener('click',function(){doJoin(true);});
+document.getElementById('btnJoBack').addEventListener('click',function(){showScr('sMenu');});
+
+function doJoin(asSpec){
+  var code=document.getElementById('inJC').value.trim().toUpperCase();
+  var pwd=document.getElementById('inJP').value.trim();
+  document.getElementById('jErr').style.display='none';
+  if(!code||code.length<4){joErr('请输入正确的房间号');return;}
+  gMode=asSpec?'spectator':'online-guest';
+  netJo(code,pwd,asSpec);
+}
+
+/* Game screen */
+document.getElementById('uB').addEventListener('click',function(){doUd();});
+document.getElementById('bB').addEventListener('click',function(){doBk();});
 
 /* ===== INIT ===== */
-window.addEventListener('resize',resz);initG();resz();
-var pr=new URLSearchParams(window.location.search),rp=pr.get('room'),pp=pr.get('pwd');
-if(rp){S('sJo');document.getElementById('inJC').value=rp.toUpperCase();if(pp)document.getElementById('inJP').value=pp;}
-document.getElementById('nSt').innerHTML=netOk()?'<span style="color:#81c784;font-size:.78rem">✓ 多人联机就绪 (P2P)</span>':'<span style="color:#e57373;font-size:.78rem">⚠ 多人联机库加载中，刷新页面重试</span>';
-})();
+window.addEventListener('resize',resz);
+initG();resz();
+
+/* Check URL params */
+var pr=new URLSearchParams(window.location.search);
+var rp=pr.get('room'),pp=pr.get('pwd');
+if(rp){
+  showScr('sJo');
+  document.getElementById('inJC').value=rp.toUpperCase();
+  if(pp)document.getElementById('inJP').value=pp;
+}
+
+/* Net status */
+document.getElementById('nSt').innerHTML=netOk()
+  ?'<span style="color:#81c784;font-size:.78rem">✓ 多人联机就绪 (P2P)</span>'
+  :'<span style="color:#e57373;font-size:.78rem">⚠ 多人联机库加载中，刷新页面重试</span>';
 </script>
 </body>
 </html>
