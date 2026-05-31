@@ -225,6 +225,7 @@ const toolNavData = {
    
     '07': [{name:'蛙蛙工具', url:'https://www.iamwawa.cn/'}],
 	  '08': [{name:'github', url:'https://github.com/'}],
+	  '10': [{name:'imgbun文本转图片', url:'https://imgbun.com/'}],
     '13': [{name:'trustasia证书在线工具集', url:'https://www.trustasia.com/tools'}],
     '14': [{name:'创可贴', url:'https://www.chuangkit.com/'}],
     '16': [{name:'万能计算器', url:'https://www.omnicalculator.com/'}],
