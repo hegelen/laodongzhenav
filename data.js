@@ -267,8 +267,7 @@ const whoisData = {
 const emailData = {
     '97': [{name:'163邮箱', url:'/go.htm?url=https://mail.163.com/'}],
     '02': [{name:'qq邮箱', url:'/go.htm?url=https://mail.qq.com/'}],
-    '03': [{name:'126邮箱', url:'/go.htm?url=https://mail.126.com/'}],
-   
+    '03': [{name:'126邮箱', url:'/go.htm?url=https://mail.126.com/'}],   
     '07': [{name:'yeah邮箱', url:'/go.htm?url=https://mail.yeah.net/'}],
     '10': [{name:'腾讯企业邮', url:'/go.htm?url=https://exmail.qq.com/login'}]
 };
@@ -349,8 +348,7 @@ const rssData = {
 };
 
 // ==================== 学习导航数据 ====================
-const studyNavData = {
-    
+const studyNavData = {    
     '09': [{name:'微博', url:'/go.htm?url=https://www.WEIBO.COM'}],
     '11': [{name:'知乎', url:'/go.htm?url=https://www.zhihu.com/'}],
     '15': [{name:'微信读书', url:'/go.htm?url=https://weread.qq.com/'}],
