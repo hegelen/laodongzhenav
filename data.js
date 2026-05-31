@@ -305,7 +305,8 @@ const guidedata = {
 	'06': [{name:'w3school', url:'/go.htm?url=https://www.w3school.com.cn/'}],
 	 '15': [{name:'菜鸟教程', url:'/go.htm?url=https://www.runoob.com/'}],
 	 '16': [{name:'全国农技推广网', url:'/go.htm?url=https://www.natesc.org.cn/'}],
-	 '18': [{name:'印记中文-前端', url:'/go.htm?url=https://www.docschina.org/'}]
+	 '18': [{name:'印记中文-前端', url:'/go.htm?url=https://www.docschina.org/'}],
+	 '24': [{name:'一亩田农业技术', url:'/go.htm?url=https://www.ymt.com/argtech'}]
 };
 
 // ==================== 游戏导航 ==================== 
