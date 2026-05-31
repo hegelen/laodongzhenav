@@ -1,18 +1,9 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 5/30/2026, 11:03:43 AM
+// 抓取日期: 5/30/2026, 8:16:34 PM
 // 只抓取最近14天内的文章，共 10 篇
 // 目标 10 篇，实际 10 篇
 
 const latestArticlesByYear = {
-  "2001": [
-    {
-      "name": "东评衿就",
-      "year": "01",
-      "title": "耿同学被限流之后，我开源了他的打假思维",
-      "url": "https://dongjunke.cn/posts/2026/05/30/47945.html",
-      "date": "2026-05-29"
-    }
-  ],
   "2002": [
     {
       "name": "seth",
@@ -22,39 +13,57 @@ const latestArticlesByYear = {
       "date": "2026-05-30"
     }
   ],
-  "2009": [
+  "2003": [
     {
-      "name": "异数",
-      "year": "09",
-      "title": "随笔 || 2026年建筑师考试小结",
-      "url": "https://www.yishu.pro/217.html",
+      "name": "愆伏",
+      "year": "03",
+      "title": "菜场到底是靠谁活下来的",
+      "url": "https://www.tortorse.com/archives/wet-market-weekend-observation/",
+      "date": "2026-05-30"
+    }
+  ],
+  "2007": [
+    {
+      "name": "苏洋",
+      "year": "07",
+      "title": "Herald（鸦使）：把验证码和通知，送到该送的人手里",
+      "url": "https://soulteary.com/2026/05/30/herald-lightweight-otp-and-verification-code-delivery-service.html",
       "date": "2026-05-29"
     }
   ],
-  "2019": [
+  "2008": [
     {
-      "name": "新世界的大门",
-      "year": "19",
-      "title": "2026-05-28 / 我就在这里稳稳的接住你",
-      "url": "https://blog.xinshijiededa.men/daily/38/",
-      "date": "2026-05-29"
+      "name": "军",
+      "year": "08",
+      "title": "荔枝小年果然好品质",
+      "url": "https://me.xu19.com/lychee-yield-drops-but-quality-improves/",
+      "date": "2026-05-30"
     }
   ],
-  "2020": [
+  "2014": [
     {
-      "name": "初然忆",
-      "year": "20",
-      "title": "浅谈EVE欧服的加速器设置",
-      "url": "https://www.imcry.vip/post/2026-5-29-1905/",
-      "date": "2026-05-29"
+      "name": "ying",
+      "year": "14",
+      "title": "《GPT 图解》笔记：QKV、多头注意力及掩码",
+      "url": "https://izualzhy.cn/llm-diagrammatize-attention-qkv-multi-mask",
+      "date": "2026-05-30"
+    }
+  ],
+  "2017": [
+    {
+      "name": "arun",
+      "year": "17",
+      "title": "Why the Ferrari Luce looks like that",
+      "url": "https://arun.is/blog/ferrari-luce/",
+      "date": "2026-05-30"
     }
   ],
   "2021": [
     {
-      "name": "记录生活",
+      "name": "DevNow",
       "year": "21",
-      "title": "手痒没忍住，把家里的珍珠柏给剪了",
-      "url": "https://9sb.net/archives/unable-to-resist-itching-i-cut-the-pearl-cypress-at-hom.html",
+      "title": "Product Hunt 每日热榜 | 2026-05-30",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-05-30",
       "date": "2026-05-30"
     }
   ],
@@ -74,13 +83,6 @@ const latestArticlesByYear = {
       "title": "2026年SEO策略：电子商务与B2B完整指南",
       "url": "https://www.bailuze.com/24101.html",
       "date": "2026-05-30"
-    },
-    {
-      "name": "宗宗酱",
-      "year": "23",
-      "title": "放假了按摩放松下",
-      "url": "https://ygz.ink/archives/5071.html",
-      "date": "2026-05-29"
     }
   ],
   "2026": [
