@@ -891,5 +891,59 @@ var _hmt = _hmt || [];
     
     init();
 </script>
+
+<script>
+// 自动为外部链接添加提醒图标和提示
+(function() {
+    // 获取当前网站域名
+    var currentHost = window.location.hostname;
+    
+    // 获取页面上所有链接
+    var allLinks = document.querySelectorAll('a');
+    
+    for (var i = 0; i < allLinks.length; i++) {
+        var link = allLinks[i];
+        var href = link.getAttribute('href');
+        
+        // 判断是否为外部链接（不是本站域名，且以http开头）
+        if (href && (href.indexOf('http://') === 0 || href.indexOf('https://') === 0)) {
+            var linkHost = href.replace('https://', '').replace('http://', '').split('/')[0];
+            
+            // 如果不是当前站点的链接
+            if (linkHost !== currentHost) {
+                // 添加外部链接样式类
+                link.classList.add('external-link');
+                
+                // 设置悬停提示
+                link.setAttribute('title', '⚠️ 外部链接：你将离开本站，访问第三方网站。请自行判断内容安全。');
+                
+                // 可选：在链接后面加一个小图标
+                var iconSpan = document.createElement('span');
+                iconSpan.className = 'external-link-icon';
+                iconSpan.innerHTML = ' 🔗';
+                iconSpan.setAttribute('aria-label', '外部链接');
+                link.appendChild(iconSpan);
+            }
+        }
+    }
+})();
+</script>
+
+<style>
+/* 外部链接样式 - 可选 */
+.external-link {
+    /* 可以加一点样式区分，比如虚线下划线 */
+    /* text-decoration: underline dotted #999; */
+}
+.external-link-icon {
+    font-size: 0.9em;
+    opacity: 0.7;
+    display: inline-block;
+    margin-left: 2px;
+}
+.external-link:hover .external-link-icon {
+    opacity: 1;
+}
+</style>
 </body>
 </html>
