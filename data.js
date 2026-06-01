@@ -109,7 +109,7 @@ const blogYearsData = {
 const forumData = {
     '91': [{name:'中国惠多网', url:'https://www.cfido.com/'}],
     '95': [{name:'水木社区', url:'https://www.newsmth.net/'}],
-    '99': [{name:'仪器社区', url:'https://bbs.instrument.com.cn/'}],
+    '99': [{name:'仪器社区', url:'https://bbs.instrument.com.cn/'} , {name:'天涯', url:'https://tianya.net/'}],
     '00': [{name:'免费吧', url:'https://www.free8.net/forum.php'}, {name:'蜂鸟摄影论坛', url:'https://bbs.fengniao.com/'}, {name:'色影无忌摄影论坛', url:'https://forum.xitek.com/'}, {name:'凯迪猫眼社区', url:'https://www.9kd.com/community'}, {name:'看雪论坛', url:'https://bbs.kanxue.com/'}],
     '01': [{name:'落伍者', url:'https://www.im286.net/'}, {name:'小木虫', url:'https://muchong.com/bbs/'}, {name:'金光论坛', url:'https://jglt.net/'}, {name:'福步外贸论坛', url:'https://bbs.fobshanghai.com/'}, {name:'无忧启动', url:'https://wuyou.net/'} , {name:'ifixit维修社区', url:'https://ifixit.com/'}],
     '02': [{name:'nga', url:'https://bbs.nga.cn/'}, {name:'理想论坛', url:'https://www.55188.com/'}],
