@@ -1,95 +1,95 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 5/31/2026, 8:18:51 PM
+// 抓取日期: 6/2/2026, 3:50:24 AM
 // 只抓取最近14天内的文章，共 10 篇
 // 目标 10 篇，实际 10 篇
 
 const latestArticlesByYear = {
-  "2000": [
+  "2006": [
     {
-      "name": "Luca",
-      "year": "00",
-      "title": "花样年华留白如侦探",
-      "url": "https://wlj.me/notes/sp-note-20260531-193739/",
-      "date": "2026-05-31"
+      "name": "joojen Zhou",
+      "year": "06",
+      "title": "又到一年毕业季",
+      "url": "https://joojen.com/archives/9000.html",
+      "date": "2026-06-01"
     }
   ],
-  "2003": [
+  "2010": [
     {
-      "name": "愆伏",
-      "year": "03",
-      "title": "Codex 治好了我的博客不能被 VXNA 抓取的毛病",
-      "url": "https://www.tortorse.com/archives/vxna-rss-cloudflare-codex-debugging/",
-      "date": "2026-05-31"
+      "name": "忆往事",
+      "year": "10",
+      "title": "手机&amp;吃胎",
+      "url": "https://zhou.ge/2026-06-01.html",
+      "date": "2026-06-01"
     }
   ],
-  "2004": [
+  "2013": [
     {
-      "name": "我的天",
-      "year": "04",
-      "title": "适应初夏",
-      "url": "http://www.xlanda.net/posts/22230",
-      "date": "2026-05-31"
-    }
-  ],
-  "2009": [
-    {
-      "name": "多多",
-      "year": "09",
-      "title": "wp关闭评论办法",
-      "url": "https://ddlog.cn/?p=519",
-      "date": "2026-05-31"
-    },
-    {
-      "name": "老张",
-      "year": "09",
-      "title": "typecho兰空图床上传插件V2版",
-      "url": "https://laozhang.org/archives/4066.html",
-      "date": "2026-05-31"
-    }
-  ],
-  "2012": [
-    {
-      "name": "郭晓力",
-      "year": "12",
-      "title": "读书方言《第二天》-20260531",
-      "url": "https://guoxiaoli.com/post/663.html",
-      "date": "2026-05-31"
+      "name": "林羽凡",
+      "year": "13",
+      "title": "天涯社区回来了，今天流量太大了，时不时就500了",
+      "url": "https://www.linyufan.com/post/5833",
+      "date": "2026-06-01"
     }
   ],
   "2017": [
     {
-      "name": "串串狗小刊",
+      "name": "碎言",
       "year": "17",
-      "title": "AI 生成的代码太啰嗦",
-      "url": "https://www.ccgxk.com/emlog_dev/764.html",
-      "date": "2026-05-31"
+      "title": "人均一个博客聚合网站？",
+      "url": "https://www.suiyan.cc/blog/20260601201146",
+      "date": "2026-06-01"
     }
   ],
   "2019": [
     {
-      "name": "LJF.COM",
+      "name": "passo",
       "year": "19",
-      "title": "华杉讲透《大学中庸》--- 《中庸》",
-      "url": "https://ljf.com/2026/05/31/1544/",
-      "date": "2026-05-31"
+      "title": "Episode VIII of Phase One: Judging beautiful docs, AI fatigue, and tool slop",
+      "url": "https://passo.uno/episode-viii-phase-one-judging-beautiful-docs-ai-fatigue-tool-slop/",
+      "date": "2026-06-01"
+    }
+  ],
+  "2020": [
+    {
+      "name": "天书vip",
+      "year": "20",
+      "title": "十九世纪的法国到底啥是年金？",
+      "url": "https://www.skybook.vip/inn/143",
+      "date": "2026-06-01"
+    },
+    {
+      "name": "优世界",
+      "year": "20",
+      "title": "尝试接入 telegram 机器人",
+      "url": "https://usj.cc/202606021139.html",
+      "date": "2026-06-02"
+    }
+  ],
+  "2021": [
+    {
+      "name": "DevNow",
+      "year": "21",
+      "title": "Product Hunt 每日热榜 | 2026-06-01",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-06-01",
+      "date": "2026-06-01"
     }
   ],
   "2023": [
     {
-      "name": "宗宗酱",
+      "name": "鹿泽",
       "year": "23",
-      "title": "没有宗门庇护的凡人，能修到哪一层？",
-      "url": "https://ygz.ink/archives/5096.html",
-      "date": "2026-05-31"
+      "title": "什么是丰富内容，为什么它对网站排名很重要？",
+      "url": "https://www.bailuze.com/24108.html",
+      "date": "2026-06-02"
     }
   ],
-  "2026": [
+  "2024": [
     {
-      "name": "周阿源",
-      "year": "26",
-      "title": "六一拆盒｜女儿的星星人「一起白头」款",
-      "url": "https://zhouayuan.com/post/45.html",
-      "date": "2026-05-31"
+      "name": "Chongxi",
+      "year": "24",
+      "title": "我用过最好用的Android桌面(启动器)",
+      "url": "https://xice.cx/posts/niagaraLauncher/",
+      "date": "2026-06-01"
     }
   ]
 };
