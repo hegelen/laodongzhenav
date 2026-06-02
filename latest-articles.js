@@ -1,7 +1,7 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/2/2026, 4:53:08 AM
-// 只抓取最近14天内的文章，共 15 篇
-// 目标 15 篇，实际 15 篇
+// 抓取日期: 6/2/2026, 5:16:38 AM
+// 只抓取最近14天内的文章，共 20 篇
+// 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
   "2002": [
@@ -22,15 +22,6 @@ const latestArticlesByYear = {
       "date": "2026-06-02"
     }
   ],
-  "2005": [
-    {
-      "name": "Gea-Suan Lin",
-      "year": "05",
-      "title": "Coding agent 自己找到方法取得 root 權限改檔案",
-      "url": "https://blog.gslin.org/archives/2026/06/02/13054/coding-agent-%e8%87%aa%e5%b7%b1%e6%89%be%e5%88%b0%e6%96%b9%e6%b3%95%e5%8f%96%e5%be%97-root-%e6%ac%8a%e9%99%90%e6%94%b9%e6%aa%94%e6%a1%88/",
-      "date": "2026-06-02"
-    }
-  ],
   "2006": [
     {
       "name": "平顶山",
@@ -40,12 +31,21 @@ const latestArticlesByYear = {
       "date": "2026-06-01"
     }
   ],
-  "2007": [
+  "2009": [
     {
-      "name": "朱小呆",
-      "year": "07",
-      "title": "开启新的健身计划",
-      "url": "https://zhujay.com/talk/talk_detail.html?id=1233",
+      "name": "张鑫旭",
+      "year": "09",
+      "title": "CSS contrast-color()函数简介",
+      "url": "https://www.zhangxinxu.com/wordpress/2026/06/css-contrast-color/",
+      "date": "2026-06-01"
+    }
+  ],
+  "2010": [
+    {
+      "name": "麦麦同学",
+      "year": "10",
+      "title": "Typecho适合1.2的用户养老",
+      "url": "https://www.mmtx.net/1167.html",
       "date": "2026-06-01"
     }
   ],
@@ -58,7 +58,30 @@ const latestArticlesByYear = {
       "date": "2026-06-01"
     }
   ],
+  "2016": [
+    {
+      "name": "幻影",
+      "year": "16",
+      "title": "硬装结束，灯亮了，油烟机炸了",
+      "url": "https://blog.52hyjs.com/post-1272.html",
+      "date": "2026-06-02"
+    },
+    {
+      "name": "幻影",
+      "year": "16",
+      "title": "硬装结束，灯亮了，油烟机炸了",
+      "url": "https://blog.52hyjs.com/post-1272.html",
+      "date": "2026-06-02"
+    }
+  ],
   "2017": [
+    {
+      "name": "串串狗小刊",
+      "year": "17",
+      "title": "SEO 里的 schema 和 积沙成塔",
+      "url": "https://www.ccgxk.com/codeother/765.html",
+      "date": "2026-06-01"
+    },
     {
       "name": "碎言",
       "year": "17",
@@ -81,23 +104,9 @@ const latestArticlesByYear = {
       "title": "六一儿童乐",
       "url": "https://liuqingwushui.top/archives/160/",
       "date": "2026-06-02"
-    },
-    {
-      "name": "Zeruns",
-      "year": "19",
-      "title": "武汉-青岛 旅游记录和照片分享",
-      "url": "https://blog.zeruns.com/archives/946.html",
-      "date": "2026-06-01"
     }
   ],
   "2020": [
-    {
-      "name": "优世界",
-      "year": "20",
-      "title": "尝试接入 telegram 机器人",
-      "url": "https://usj.cc/202606021139.html",
-      "date": "2026-06-02"
-    },
     {
       "name": "天书vip",
       "year": "20",
@@ -106,11 +115,11 @@ const latestArticlesByYear = {
       "date": "2026-06-01"
     },
     {
-      "name": "初然忆",
+      "name": "优世界",
       "year": "20",
-      "title": "记一次HuGo无法部署到EdgeOne-Pages",
-      "url": "https://www.imcry.vip/post/2026-6-2-728/",
-      "date": "2026-06-01"
+      "title": "尝试接入 telegram 机器人",
+      "url": "https://usj.cc/202606021139.html",
+      "date": "2026-06-02"
     }
   ],
   "2021": [
@@ -122,13 +131,45 @@ const latestArticlesByYear = {
       "date": "2026-06-01"
     }
   ],
+  "2022": [
+    {
+      "name": "倦意",
+      "year": "22",
+      "title": "白嫖免费的大模型 AgnesAI 教程",
+      "url": "https://jyblog.cn/5688/",
+      "date": "2026-06-02"
+    }
+  ],
   "2023": [
+    {
+      "name": "鹿泽",
+      "year": "23",
+      "title": "为什么网站的内容需要重新更新？盘点一些成功的内容SEO优化策略",
+      "url": "https://www.bailuze.com/24111.html",
+      "date": "2026-06-02"
+    },
     {
       "name": "宗宗酱",
       "year": "23",
       "title": "主题巴巴又回归了？",
       "url": "https://ygz.ink/archives/5118.html",
       "date": "2026-06-02"
+    }
+  ],
+  "2024": [
+    {
+      "name": "团团生活志",
+      "year": "24",
+      "title": "711全职店务员离职心得",
+      "url": "https://t-t.live/archives/7MagsYkt",
+      "date": "2026-06-01"
+    },
+    {
+      "name": "Chongxi",
+      "year": "24",
+      "title": "我用过最好用的Android桌面(启动器)",
+      "url": "https://xice.cx/posts/niagaraLauncher/",
+      "date": "2026-06-01"
     }
   ]
 };
