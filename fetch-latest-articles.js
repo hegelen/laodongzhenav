@@ -79,7 +79,7 @@ async function fetchWithTimeout(blog, parser, timeoutMs = 5000) {
 }
 
 async function main() {
-    const TARGET_TOTAL = 15;      // 目标 10 篇
+    const TARGET_TOTAL = 20;      // 目标 10 篇
     const MAX_PER_YEAR = 10;       // 每年最多 2 篇
     const TIMEOUT_MS = 5000;      // 5 秒超时
     
