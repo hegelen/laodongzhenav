@@ -1,24 +1,51 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/2/2026, 3:50:24 AM
-// 只抓取最近14天内的文章，共 10 篇
-// 目标 10 篇，实际 10 篇
+// 抓取日期: 6/2/2026, 4:53:08 AM
+// 只抓取最近14天内的文章，共 15 篇
+// 目标 15 篇，实际 15 篇
 
 const latestArticlesByYear = {
-  "2006": [
+  "2002": [
     {
-      "name": "joojen Zhou",
-      "year": "06",
-      "title": "又到一年毕业季",
-      "url": "https://joojen.com/archives/9000.html",
+      "name": "seth",
+      "year": "02",
+      "title": "Rethinking famous college admissions",
+      "url": "https://seths.blog/2026/06/rethinking-famous-college-admissions/",
       "date": "2026-06-01"
     }
   ],
-  "2010": [
+  "2004": [
     {
-      "name": "忆往事",
-      "year": "10",
-      "title": "手机&amp;吃胎",
-      "url": "https://zhou.ge/2026-06-01.html",
+      "name": "我的天",
+      "year": "04",
+      "title": "大唐迷你电脑黑屏",
+      "url": "http://www.xlanda.net/posts/22234",
+      "date": "2026-06-02"
+    }
+  ],
+  "2005": [
+    {
+      "name": "Gea-Suan Lin",
+      "year": "05",
+      "title": "Coding agent 自己找到方法取得 root 權限改檔案",
+      "url": "https://blog.gslin.org/archives/2026/06/02/13054/coding-agent-%e8%87%aa%e5%b7%b1%e6%89%be%e5%88%b0%e6%96%b9%e6%b3%95%e5%8f%96%e5%be%97-root-%e6%ac%8a%e9%99%90%e6%94%b9%e6%aa%94%e6%a1%88/",
+      "date": "2026-06-02"
+    }
+  ],
+  "2006": [
+    {
+      "name": "平顶山",
+      "year": "06",
+      "title": "阿联酋-冰与火之歌",
+      "url": "https://pingdingshan.me/356.html",
+      "date": "2026-06-01"
+    }
+  ],
+  "2007": [
+    {
+      "name": "朱小呆",
+      "year": "07",
+      "title": "开启新的健身计划",
+      "url": "https://zhujay.com/talk/talk_detail.html?id=1233",
       "date": "2026-06-01"
     }
   ],
@@ -47,9 +74,30 @@ const latestArticlesByYear = {
       "title": "Episode VIII of Phase One: Judging beautiful docs, AI fatigue, and tool slop",
       "url": "https://passo.uno/episode-viii-phase-one-judging-beautiful-docs-ai-fatigue-tool-slop/",
       "date": "2026-06-01"
+    },
+    {
+      "name": "流情",
+      "year": "19",
+      "title": "六一儿童乐",
+      "url": "https://liuqingwushui.top/archives/160/",
+      "date": "2026-06-02"
+    },
+    {
+      "name": "Zeruns",
+      "year": "19",
+      "title": "武汉-青岛 旅游记录和照片分享",
+      "url": "https://blog.zeruns.com/archives/946.html",
+      "date": "2026-06-01"
     }
   ],
   "2020": [
+    {
+      "name": "优世界",
+      "year": "20",
+      "title": "尝试接入 telegram 机器人",
+      "url": "https://usj.cc/202606021139.html",
+      "date": "2026-06-02"
+    },
     {
       "name": "天书vip",
       "year": "20",
@@ -58,11 +106,11 @@ const latestArticlesByYear = {
       "date": "2026-06-01"
     },
     {
-      "name": "优世界",
+      "name": "初然忆",
       "year": "20",
-      "title": "尝试接入 telegram 机器人",
-      "url": "https://usj.cc/202606021139.html",
-      "date": "2026-06-02"
+      "title": "记一次HuGo无法部署到EdgeOne-Pages",
+      "url": "https://www.imcry.vip/post/2026-6-2-728/",
+      "date": "2026-06-01"
     }
   ],
   "2021": [
@@ -76,20 +124,11 @@ const latestArticlesByYear = {
   ],
   "2023": [
     {
-      "name": "鹿泽",
+      "name": "宗宗酱",
       "year": "23",
-      "title": "什么是丰富内容，为什么它对网站排名很重要？",
-      "url": "https://www.bailuze.com/24108.html",
+      "title": "主题巴巴又回归了？",
+      "url": "https://ygz.ink/archives/5118.html",
       "date": "2026-06-02"
-    }
-  ],
-  "2024": [
-    {
-      "name": "Chongxi",
-      "year": "24",
-      "title": "我用过最好用的Android桌面(启动器)",
-      "url": "https://xice.cx/posts/niagaraLauncher/",
-      "date": "2026-06-01"
     }
   ]
 };
