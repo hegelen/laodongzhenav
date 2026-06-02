@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/1/2026, 10:17:48 PM
+// 抓取日期: 6/2/2026, 3:50:24 AM
 // 只抓取最近14天内的文章，共 10 篇
 // 目标 10 篇，实际 10 篇
 
@@ -13,39 +13,30 @@ const latestArticlesByYear = {
       "date": "2026-06-01"
     }
   ],
-  "2008": [
-    {
-      "name": "四火的唠叨",
-      "year": "08",
-      "title": "笔记：在 Mac Mini 本地跑 LLM 大模型",
-      "url": "https://www.raychase.net/8180",
-      "date": "2026-06-01"
-    }
-  ],
-  "2009": [
-    {
-      "name": "张鑫旭",
-      "year": "09",
-      "title": "CSS contrast-color()函数简介",
-      "url": "https://www.zhangxinxu.com/wordpress/2026/06/css-contrast-color/",
-      "date": "2026-06-01"
-    }
-  ],
   "2010": [
     {
-      "name": "麦麦同学",
+      "name": "忆往事",
       "year": "10",
-      "title": "Typecho适合1.2的用户养老",
-      "url": "https://www.mmtx.net/1167.html",
+      "title": "手机&amp;吃胎",
+      "url": "https://zhou.ge/2026-06-01.html",
+      "date": "2026-06-01"
+    }
+  ],
+  "2013": [
+    {
+      "name": "林羽凡",
+      "year": "13",
+      "title": "天涯社区回来了，今天流量太大了，时不时就500了",
+      "url": "https://www.linyufan.com/post/5833",
       "date": "2026-06-01"
     }
   ],
   "2017": [
     {
-      "name": "串串狗小刊",
+      "name": "碎言",
       "year": "17",
-      "title": "SEO 里的 schema 和 积沙成塔",
-      "url": "https://www.ccgxk.com/codeother/765.html",
+      "title": "人均一个博客聚合网站？",
+      "url": "https://www.suiyan.cc/blog/20260601201146",
       "date": "2026-06-01"
     }
   ],
@@ -56,22 +47,22 @@ const latestArticlesByYear = {
       "title": "Episode VIII of Phase One: Judging beautiful docs, AI fatigue, and tool slop",
       "url": "https://passo.uno/episode-viii-phase-one-judging-beautiful-docs-ai-fatigue-tool-slop/",
       "date": "2026-06-01"
-    },
-    {
-      "name": "Zeruns",
-      "year": "19",
-      "title": "武汉-青岛 旅游记录和照片分享",
-      "url": "https://blog.zeruns.com/archives/946.html",
-      "date": "2026-06-01"
     }
   ],
   "2020": [
     {
+      "name": "天书vip",
+      "year": "20",
+      "title": "十九世纪的法国到底啥是年金？",
+      "url": "https://www.skybook.vip/inn/143",
+      "date": "2026-06-01"
+    },
+    {
       "name": "优世界",
       "year": "20",
-      "title": "尝试接入telegram机器人",
-      "url": "https://usj.cc/2026-06-01-%E5%B0%9D%E8%AF%95%E6%8E%A5%E5%85%A5-telegram-%E6%9C%BA%E5%99%A8%E4%BA%BA.html",
-      "date": "2026-06-01"
+      "title": "尝试接入 telegram 机器人",
+      "url": "https://usj.cc/202606021139.html",
+      "date": "2026-06-02"
     }
   ],
   "2021": [
@@ -83,12 +74,21 @@ const latestArticlesByYear = {
       "date": "2026-06-01"
     }
   ],
-  "2026": [
+  "2023": [
     {
-      "name": "周阿源",
-      "year": "26",
-      "title": "六一儿童节快乐｜我也是个孩子呀！",
-      "url": "https://zhouayuan.com/post/46.html",
+      "name": "鹿泽",
+      "year": "23",
+      "title": "什么是丰富内容，为什么它对网站排名很重要？",
+      "url": "https://www.bailuze.com/24108.html",
+      "date": "2026-06-02"
+    }
+  ],
+  "2024": [
+    {
+      "name": "Chongxi",
+      "year": "24",
+      "title": "我用过最好用的Android桌面(启动器)",
+      "url": "https://xice.cx/posts/niagaraLauncher/",
       "date": "2026-06-01"
     }
   ]
