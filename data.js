@@ -28,7 +28,7 @@ const blogYearsData = {
    '00': [{name:'Luca', url:'https://wlj.me/', rss:'https://wlj.me/index.xml'}, {name:'卢昌海 ', url:'https://www.changhai.org/', rss:'https://www.changhai.org/feed'},  {name:'阳志平', url:'https://yangzhiping.com/', rss:'https://yangzhiping.com/feed/'}  ],
    				// ==================== 复制方便    , {name:'', url:'', rss:''}     ====================
 
-   '01': [{name:'nc-show', url:'https://nicrosoft.net/', rss:'https://nicrosoft.net/feed'}, {name:'阿江守候', url:'http://www.ajiang.net/', rss:'http://www.ajiang.net/feed'}, {name:'东评衿就', url:'https://dongjunke.cn/', rss:'https://dongjunke.cn/atom.xml'}, {name:'老痛', url:'https://toonkam.com' , rss:'https://toonkam.com/feed'}, {name:' ', url:''}],
+   '01': [{name:'nc-show', url:'https://nicrosoft.net/blog/', rss:'https://nicrosoft.net/blog/feed/'}, {name:'阿江守候', url:'http://www.ajiang.net/', rss:'http://www.ajiang.net/feed'}, {name:'东评衿就', url:'https://dongjunke.cn/', rss:'https://dongjunke.cn/atom.xml'}, {name:'老痛', url:'https://toonkam.com' , rss:'https://toonkam.com/feed'}, {name:' ', url:''}],
    				// ==================== 复制方便    , {name:'', url:'', rss:''}     ====================
 
    '02': [{name:'Paul Graham', url:'https://paulgraham.com/', rss:'https://paulgraham.com/feed'}, {name:'守望轩', url:'https://www.watch-life.net/', rss:'https://www.watch-life.net/feed'}, {name:' Wangjianshuo', url:'https://home.wangjianshuo.com/', rss:'https://home.wangjianshuo.com/feed'},  {name:'seth', url:'https://seths.blog/', rss:'https://seths.blog/feed/'}  , {name:'不吐不快', url:'https://mianao.info/', rss:'https://mianao.info/atom.xml'}   ],
