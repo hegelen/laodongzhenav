@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/2/2026, 1:11:52 PM
+// 抓取日期: 6/2/2026, 9:58:31 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -38,31 +38,22 @@ const latestArticlesByYear = {
       "date": "2026-06-02"
     }
   ],
-  "2006": [
+  "2008": [
     {
-      "name": "平顶山",
-      "year": "06",
-      "title": "阿联酋-冰与火之歌",
-      "url": "https://pingdingshan.me/356.html",
-      "date": "2026-06-01"
+      "name": "杜郎俊赏",
+      "year": "08",
+      "title": "人造景观",
+      "url": "https://dujun.io/443d8414-31bb-55df-bf69-d548b38e7e07.html",
+      "date": "2026-06-02"
     }
   ],
   "2009": [
     {
-      "name": "张鑫旭",
+      "name": "老刘",
       "year": "09",
-      "title": "CSS contrast-color()函数简介",
-      "url": "https://www.zhangxinxu.com/wordpress/2026/06/css-contrast-color/",
-      "date": "2026-06-01"
-    }
-  ],
-  "2010": [
-    {
-      "name": "忆往事",
-      "year": "10",
-      "title": "手机&amp;吃胎",
-      "url": "https://zhou.ge/2026-06-01.html",
-      "date": "2026-06-01"
+      "title": "Ubuntu 26.04 用了一个月",
+      "url": "https://www.iliu.org/posts/ubuntu-26-04-one-month/",
+      "date": "2026-06-02"
     }
   ],
   "2011": [
@@ -83,6 +74,15 @@ const latestArticlesByYear = {
       "date": "2026-06-02"
     }
   ],
+  "2015": [
+    {
+      "name": "WordPress 知识宝库",
+      "year": "15",
+      "title": "클라우드웨이즈 워드프레스에 도메인 연결 방법 (2026 업데이트)",
+      "url": "https://www.thewordcracker.com/basic/%ed%81%b4%eb%9d%bc%ec%9a%b0%eb%93%9c%ec%9b%a8%ec%9d%b4%ec%a6%88-%ec%9b%8c%eb%93%9c%ed%94%84%eb%a0%88%ec%8a%a4%ec%97%90-%eb%8f%84%eb%a9%94%ec%9d%b8-%ec%97%b0%ea%b2%b0-%eb%b0%a9%eb%b2%95/",
+      "date": "2026-06-02"
+    }
+  ],
   "2016": [
     {
       "name": "幻影",
@@ -96,9 +96,9 @@ const latestArticlesByYear = {
     {
       "name": "串串狗小刊",
       "year": "17",
-      "title": "SEO 里的 schema 和 积沙成塔",
-      "url": "https://www.ccgxk.com/codeother/765.html",
-      "date": "2026-06-01"
+      "title": "SEO 之 HARO 四两拨千斤大法",
+      "url": "https://www.ccgxk.com/codeother/766.html",
+      "date": "2026-06-02"
     },
     {
       "name": "SimonAKing",
@@ -110,24 +110,17 @@ const latestArticlesByYear = {
   ],
   "2020": [
     {
-      "name": "資工小廢物 - JN",
+      "name": "优世界",
       "year": "20",
-      "title": "忘記報稅怎麼辦？不在戶藉地怎麼報稅？",
-      "url": "https://blog.giveanornot.com/forgot-to-pay-tax/",
+      "title": "尝试接入 telegram 机器人",
+      "url": "https://usj.cc/202606021139.html",
       "date": "2026-06-02"
     },
     {
       "name": "初然忆",
       "year": "20",
-      "title": "记一次HuGo无法部署到EdgeOne-Pages",
-      "url": "https://www.imcry.vip/post/2026-6-2-728/",
-      "date": "2026-06-01"
-    },
-    {
-      "name": "优世界",
-      "year": "20",
-      "title": "尝试接入 telegram 机器人",
-      "url": "https://usj.cc/202606021139.html",
+      "title": "鼠疫2：第一次连续开出三个红",
+      "url": "https://www.imcry.vip/post/2026-6-3-301/",
       "date": "2026-06-02"
     }
   ],
@@ -137,6 +130,13 @@ const latestArticlesByYear = {
       "year": "21",
       "title": "Product Hunt 每日热榜 | 2026-06-02",
       "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-06-02",
+      "date": "2026-06-02"
+    },
+    {
+      "name": "阿锋的小宇宙",
+      "year": "21",
+      "title": "二〇二六年五月总结：颓态总会过去吧",
+      "url": "https://feng.pub/0620269616.html",
       "date": "2026-06-02"
     }
   ],
@@ -151,26 +151,26 @@ const latestArticlesByYear = {
   ],
   "2023": [
     {
+      "name": "按钮与磁带",
+      "year": "23",
+      "title": "bearblog",
+      "url": "https://jefftay.com/blog-posts/bearblog/",
+      "date": "2026-06-02"
+    },
+    {
       "name": "宗宗酱",
       "year": "23",
       "title": "轻轨上偶遇也门小哥",
       "url": "https://ygz.ink/archives/5134.html",
       "date": "2026-06-02"
-    },
-    {
-      "name": "鹿泽",
-      "year": "23",
-      "title": "为什么网站的内容需要重新更新？盘点一些成功的内容SEO优化策略",
-      "url": "https://www.bailuze.com/24111.html",
-      "date": "2026-06-02"
     }
   ],
   "2026": [
     {
-      "name": "周阿源",
+      "name": "麦子的思绪",
       "year": "26",
-      "title": "恭喜发财｜从设计图到毛绒抱枕落地",
-      "url": "https://zhouayuan.com/post/47.html",
+      "title": "跑步！",
+      "url": "https://mzdsx.com/2026/06/02/%e8%b7%91%e6%ad%a5%ef%bc%81/",
       "date": "2026-06-02"
     }
   ]
