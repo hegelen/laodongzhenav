@@ -1,7 +1,7 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/3/2026, 2:05:48 AM
-// 只抓取最近14天内的文章，共 20 篇
-// 目标 20 篇，实际 20 篇
+// 抓取日期: 6/3/2026, 3:08:26 AM
+// 只抓取最近14天内的文章，共 26 篇
+// 目标 40 篇，实际 26 篇
 
 const latestArticlesByYear = {
   "2000": [
@@ -29,6 +29,13 @@ const latestArticlesByYear = {
       "title": "通勤方式",
       "url": "http://www.xlanda.net/posts/22237",
       "date": "2026-06-03"
+    },
+    {
+      "name": "kaix.in",
+      "year": "04",
+      "title": "2026.06.02 16:44",
+      "url": "https://kaix.in/2026/0602/",
+      "date": "2026-06-02"
     }
   ],
   "2007": [
@@ -40,19 +47,28 @@ const latestArticlesByYear = {
       "date": "2026-06-02"
     }
   ],
-  "2011": [
+  "2008": [
     {
-      "name": "Verne",
-      "year": "11",
-      "title": "Surfingkeys：比 Vimium 更强大的浏览器键盘控制扩展",
-      "url": "https://blog.einverne.info/post/2026/06/surfingkeys-chrome-extension.html",
+      "name": "杜郎俊赏",
+      "year": "08",
+      "title": "人造景观",
+      "url": "https://dujun.io/443d8414-31bb-55df-bf69-d548b38e7e07.html",
       "date": "2026-06-02"
-    },
+    }
+  ],
+  "2011": [
     {
       "name": "唐巧",
       "year": "11",
       "title": "我不小心开了 273 个 Agent",
       "url": "https://blog.devtang.com/2026/06/02/273-agents/",
+      "date": "2026-06-02"
+    },
+    {
+      "name": "Verne",
+      "year": "11",
+      "title": "Surfingkeys：比 Vimium 更强大的浏览器键盘控制扩展",
+      "url": "https://blog.einverne.info/post/2026/06/surfingkeys-chrome-extension.html",
       "date": "2026-06-02"
     }
   ],
@@ -62,6 +78,13 @@ const latestArticlesByYear = {
       "year": "13",
       "title": "FluxDown：一款界面精美、功能强大的现代下载工具，支持浏览器扩展",
       "url": "https://blog.xiaoz.org/archives/23026",
+      "date": "2026-06-02"
+    },
+    {
+      "name": "林羽凡",
+      "year": "13",
+      "title": "做个简单总结：今天完成了“林羽凡笔记”agent中的“webSearch”工具",
+      "url": "https://www.linyufan.com/post/5834",
       "date": "2026-06-02"
     }
   ],
@@ -80,6 +103,13 @@ const latestArticlesByYear = {
       "year": "17",
       "title": "AI 互动影游全球深度报告",
       "url": "https://simonaking.com/blog/ai-interactive-film-game-report/",
+      "date": "2026-06-02"
+    },
+    {
+      "name": "串串狗小刊",
+      "year": "17",
+      "title": "SEO 之 HARO 四两拨千斤大法",
+      "url": "https://www.ccgxk.com/codeother/766.html",
       "date": "2026-06-02"
     }
   ],
@@ -108,6 +138,13 @@ const latestArticlesByYear = {
   ],
   "2021": [
     {
+      "name": "阿锋的小宇宙",
+      "year": "21",
+      "title": "二〇二六年五月总结：颓态总会过去吧",
+      "url": "https://feng.pub/0620269616.html",
+      "date": "2026-06-02"
+    },
+    {
       "name": "DevNow",
       "year": "21",
       "title": "Product Hunt 每日热榜 | 2026-06-02",
@@ -115,10 +152,19 @@ const latestArticlesByYear = {
       "date": "2026-06-02"
     },
     {
-      "name": "阿锋的小宇宙",
+      "name": "记录生活",
       "year": "21",
-      "title": "二〇二六年五月总结：颓态总会过去吧",
-      "url": "https://feng.pub/0620269616.html",
+      "title": "到现在不知道怎么介绍自己",
+      "url": "https://9sb.net/archives/i-still-dont-know-how-to-introduce-myself.html",
+      "date": "2026-06-03"
+    }
+  ],
+  "2022": [
+    {
+      "name": "倦意",
+      "year": "22",
+      "title": "白嫖免费的大模型 AgnesAI 教程",
+      "url": "https://jyblog.cn/5688/",
       "date": "2026-06-02"
     }
   ],
@@ -131,21 +177,28 @@ const latestArticlesByYear = {
       "date": "2026-06-03"
     },
     {
-      "name": "宗宗酱",
-      "year": "23",
-      "title": "轻轨上偶遇也门小哥",
-      "url": "https://ygz.ink/archives/5134.html",
-      "date": "2026-06-02"
-    },
-    {
       "name": "按钮与磁带",
       "year": "23",
       "title": "bearblog",
       "url": "https://jefftay.com/blog-posts/bearblog/",
       "date": "2026-06-02"
+    },
+    {
+      "name": "宗宗酱",
+      "year": "23",
+      "title": "轻轨上偶遇也门小哥",
+      "url": "https://ygz.ink/archives/5134.html",
+      "date": "2026-06-02"
     }
   ],
   "2026": [
+    {
+      "name": "麦子的思绪",
+      "year": "26",
+      "title": "跑步！",
+      "url": "https://mzdsx.com/2026/06/02/%e8%b7%91%e6%ad%a5%ef%bc%81/",
+      "date": "2026-06-02"
+    },
     {
       "name": "周阿源",
       "year": "26",
@@ -159,13 +212,6 @@ const latestArticlesByYear = {
       "title": "打算重构墨迹博客（InkBlog）",
       "url": "https://www.renhuali.cn/journal/cmpxdw1ac000xchs4ybm9m416",
       "date": "2026-06-03"
-    },
-    {
-      "name": "麦子的思绪",
-      "year": "26",
-      "title": "跑步！",
-      "url": "https://mzdsx.com/2026/06/02/%e8%b7%91%e6%ad%a5%ef%bc%81/",
-      "date": "2026-06-02"
     }
   ]
 };
