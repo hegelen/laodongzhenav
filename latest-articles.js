@@ -1,9 +1,18 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/2/2026, 1:11:52 PM
+// 抓取日期: 6/3/2026, 2:05:48 AM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
+  "2000": [
+    {
+      "name": "Luca",
+      "year": "00",
+      "title": "五月看片新旧兼收",
+      "url": "https://wlj.me/notes/sp-note-20260603-080610/",
+      "date": "2026-06-03"
+    }
+  ],
   "2002": [
     {
       "name": "seth",
@@ -17,52 +26,18 @@ const latestArticlesByYear = {
     {
       "name": "我的天",
       "year": "04",
-      "title": "大唐迷你电脑黑屏",
-      "url": "http://www.xlanda.net/posts/22234",
+      "title": "通勤方式",
+      "url": "http://www.xlanda.net/posts/22237",
+      "date": "2026-06-03"
+    }
+  ],
+  "2007": [
+    {
+      "name": "织梦岁月",
+      "year": "07",
+      "title": "尝鲜，我以后还是不要尝鲜了",
+      "url": "https://zhujianlin.com/archives/1992.html",
       "date": "2026-06-02"
-    },
-    {
-      "name": "kaix.in",
-      "year": "04",
-      "title": "2026.06.02 16:44",
-      "url": "https://kaix.in/2026/0602/",
-      "date": "2026-06-02"
-    }
-  ],
-  "2005": [
-    {
-      "name": "Gea-Suan Lin",
-      "year": "05",
-      "title": "Coding agent 自己找到方法取得 root 權限改檔案",
-      "url": "https://blog.gslin.org/archives/2026/06/02/13054/coding-agent-%e8%87%aa%e5%b7%b1%e6%89%be%e5%88%b0%e6%96%b9%e6%b3%95%e5%8f%96%e5%be%97-root-%e6%ac%8a%e9%99%90%e6%94%b9%e6%aa%94%e6%a1%88/",
-      "date": "2026-06-02"
-    }
-  ],
-  "2006": [
-    {
-      "name": "平顶山",
-      "year": "06",
-      "title": "阿联酋-冰与火之歌",
-      "url": "https://pingdingshan.me/356.html",
-      "date": "2026-06-01"
-    }
-  ],
-  "2009": [
-    {
-      "name": "张鑫旭",
-      "year": "09",
-      "title": "CSS contrast-color()函数简介",
-      "url": "https://www.zhangxinxu.com/wordpress/2026/06/css-contrast-color/",
-      "date": "2026-06-01"
-    }
-  ],
-  "2010": [
-    {
-      "name": "忆往事",
-      "year": "10",
-      "title": "手机&amp;吃胎",
-      "url": "https://zhou.ge/2026-06-01.html",
-      "date": "2026-06-01"
     }
   ],
   "2011": [
@@ -71,6 +46,13 @@ const latestArticlesByYear = {
       "year": "11",
       "title": "Surfingkeys：比 Vimium 更强大的浏览器键盘控制扩展",
       "url": "https://blog.einverne.info/post/2026/06/surfingkeys-chrome-extension.html",
+      "date": "2026-06-02"
+    },
+    {
+      "name": "唐巧",
+      "year": "11",
+      "title": "我不小心开了 273 个 Agent",
+      "url": "https://blog.devtang.com/2026/06/02/273-agents/",
       "date": "2026-06-02"
     }
   ],
@@ -83,23 +65,16 @@ const latestArticlesByYear = {
       "date": "2026-06-02"
     }
   ],
-  "2016": [
+  "2015": [
     {
-      "name": "幻影",
-      "year": "16",
-      "title": "硬装结束，灯亮了，油烟机炸了",
-      "url": "https://blog.52hyjs.com/post-1272.html",
+      "name": "WordPress 知识宝库",
+      "year": "15",
+      "title": "클라우드웨이즈 워드프레스에 도메인 연결 방법 (2026 업데이트)",
+      "url": "https://www.thewordcracker.com/basic/%ed%81%b4%eb%9d%bc%ec%9a%b0%eb%93%9c%ec%9b%a8%ec%9d%b4%ec%a6%88-%ec%9b%8c%eb%93%9c%ed%94%84%eb%a0%88%ec%8a%a4%ec%97%90-%eb%8f%84%eb%a9%94%ec%9d%b8-%ec%97%b0%ea%b2%b0-%eb%b0%a9%eb%b2%95/",
       "date": "2026-06-02"
     }
   ],
   "2017": [
-    {
-      "name": "串串狗小刊",
-      "year": "17",
-      "title": "SEO 里的 schema 和 积沙成塔",
-      "url": "https://www.ccgxk.com/codeother/765.html",
-      "date": "2026-06-01"
-    },
     {
       "name": "SimonAKing",
       "year": "17",
@@ -110,24 +85,24 @@ const latestArticlesByYear = {
   ],
   "2020": [
     {
-      "name": "資工小廢物 - JN",
+      "name": "呆哥",
       "year": "20",
-      "title": "忘記報稅怎麼辦？不在戶藉地怎麼報稅？",
-      "url": "https://blog.giveanornot.com/forgot-to-pay-tax/",
+      "title": "@所有人，把你们邮箱自动回复关掉...",
+      "url": "https://www.dalao.net/thread-59226.htm",
       "date": "2026-06-02"
     },
     {
       "name": "初然忆",
       "year": "20",
-      "title": "记一次HuGo无法部署到EdgeOne-Pages",
-      "url": "https://www.imcry.vip/post/2026-6-2-728/",
-      "date": "2026-06-01"
+      "title": "鼠疫2：第一次连续开出三个红",
+      "url": "https://www.imcry.vip/post/2026-6-3-301/",
+      "date": "2026-06-02"
     },
     {
-      "name": "优世界",
+      "name": "資工小廢物 - JN",
       "year": "20",
-      "title": "尝试接入 telegram 机器人",
-      "url": "https://usj.cc/202606021139.html",
+      "title": "忘記報稅怎麼辦？不在戶藉地怎麼報稅？",
+      "url": "https://blog.giveanornot.com/forgot-to-pay-tax/",
       "date": "2026-06-02"
     }
   ],
@@ -138,18 +113,23 @@ const latestArticlesByYear = {
       "title": "Product Hunt 每日热榜 | 2026-06-02",
       "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-06-02",
       "date": "2026-06-02"
-    }
-  ],
-  "2022": [
+    },
     {
-      "name": "倦意",
-      "year": "22",
-      "title": "白嫖免费的大模型 AgnesAI 教程",
-      "url": "https://jyblog.cn/5688/",
+      "name": "阿锋的小宇宙",
+      "year": "21",
+      "title": "二〇二六年五月总结：颓态总会过去吧",
+      "url": "https://feng.pub/0620269616.html",
       "date": "2026-06-02"
     }
   ],
   "2023": [
+    {
+      "name": "鹿泽",
+      "year": "23",
+      "title": "让信息型SEO内容为搜索意图发挥作用",
+      "url": "https://www.bailuze.com/24115.html",
+      "date": "2026-06-03"
+    },
     {
       "name": "宗宗酱",
       "year": "23",
@@ -158,10 +138,10 @@ const latestArticlesByYear = {
       "date": "2026-06-02"
     },
     {
-      "name": "鹿泽",
+      "name": "按钮与磁带",
       "year": "23",
-      "title": "为什么网站的内容需要重新更新？盘点一些成功的内容SEO优化策略",
-      "url": "https://www.bailuze.com/24111.html",
+      "title": "bearblog",
+      "url": "https://jefftay.com/blog-posts/bearblog/",
       "date": "2026-06-02"
     }
   ],
@@ -171,6 +151,20 @@ const latestArticlesByYear = {
       "year": "26",
       "title": "恭喜发财｜从设计图到毛绒抱枕落地",
       "url": "https://zhouayuan.com/post/47.html",
+      "date": "2026-06-02"
+    },
+    {
+      "name": "华立",
+      "year": "26",
+      "title": "打算重构墨迹博客（InkBlog）",
+      "url": "https://www.renhuali.cn/journal/cmpxdw1ac000xchs4ybm9m416",
+      "date": "2026-06-03"
+    },
+    {
+      "name": "麦子的思绪",
+      "year": "26",
+      "title": "跑步！",
+      "url": "https://mzdsx.com/2026/06/02/%e8%b7%91%e6%ad%a5%ef%bc%81/",
       "date": "2026-06-02"
     }
   ]
