@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/3/2026, 3:28:53 AM
+// 抓取日期: 6/3/2026, 7:15:44 AM
 // 只抓取最近14天内的文章，共 40 篇
 // 目标 40 篇，实际 40 篇
 
@@ -54,13 +54,6 @@ const latestArticlesByYear = {
       "title": "阿联酋-冰与火之歌",
       "url": "https://pingdingshan.me/356.html",
       "date": "2026-06-01"
-    },
-    {
-      "name": "joojen Zhou",
-      "year": "06",
-      "title": "又到一年毕业季",
-      "url": "https://joojen.com/archives/9000.html",
-      "date": "2026-06-01"
     }
   ],
   "2007": [
@@ -70,45 +63,45 @@ const latestArticlesByYear = {
       "title": "开启新的健身计划",
       "url": "https://zhujay.com/talk/talk_detail.html?id=1233",
       "date": "2026-06-01"
+    },
+    {
+      "name": "织梦岁月",
+      "year": "07",
+      "title": "尝鲜，我以后还是不要尝鲜了",
+      "url": "https://zhujianlin.com/archives/1992.html",
+      "date": "2026-06-02"
     }
   ],
   "2008": [
     {
-      "name": "四火的唠叨",
+      "name": "杜郎俊赏",
       "year": "08",
-      "title": "笔记：在 Mac Mini 本地跑 LLM 大模型",
-      "url": "https://www.raychase.net/8180",
-      "date": "2026-06-01"
+      "title": "人造景观",
+      "url": "https://dujun.io/443d8414-31bb-55df-bf69-d548b38e7e07.html",
+      "date": "2026-06-02"
     }
   ],
   "2009": [
-    {
-      "name": "老刘",
-      "year": "09",
-      "title": "Ubuntu 26.04 用了一个月",
-      "url": "https://www.iliu.org/posts/ubuntu-26-04-one-month/",
-      "date": "2026-06-02"
-    },
     {
       "name": "张鑫旭",
       "year": "09",
       "title": "CSS contrast-color()函数简介",
       "url": "https://www.zhangxinxu.com/wordpress/2026/06/css-contrast-color/",
       "date": "2026-06-01"
+    },
+    {
+      "name": "老刘",
+      "year": "09",
+      "title": "Ubuntu 26.04 用了一个月",
+      "url": "https://www.iliu.org/posts/ubuntu-26-04-one-month/",
+      "date": "2026-06-02"
     }
   ],
   "2010": [
     {
-      "name": "麦麦同学",
-      "year": "10",
-      "title": "Typecho适合1.2的用户养老",
-      "url": "https://www.mmtx.net/1167.html",
-      "date": "2026-06-01"
-    },
-    {
       "name": "Jeray",
       "year": "10",
-      "title": "潭山日落-速记（正在编辑中。。。）",
+      "title": "潭山独行 - 日落翻车",
       "url": "https://hi.jeray.wang/L/217.html",
       "date": "2026-06-01"
     },
@@ -118,21 +111,28 @@ const latestArticlesByYear = {
       "title": "手机&amp;吃胎",
       "url": "https://zhou.ge/2026-06-01.html",
       "date": "2026-06-01"
+    },
+    {
+      "name": "麦麦同学",
+      "year": "10",
+      "title": "Typecho适合1.2的用户养老",
+      "url": "https://www.mmtx.net/1167.html",
+      "date": "2026-06-01"
     }
   ],
   "2011": [
-    {
-      "name": "唐巧",
-      "year": "11",
-      "title": "我不小心开了 273 个 Agent",
-      "url": "https://blog.devtang.com/2026/06/02/273-agents/",
-      "date": "2026-06-02"
-    },
     {
       "name": "Verne",
       "year": "11",
       "title": "Surfingkeys：比 Vimium 更强大的浏览器键盘控制扩展",
       "url": "https://blog.einverne.info/post/2026/06/surfingkeys-chrome-extension.html",
+      "date": "2026-06-02"
+    },
+    {
+      "name": "唐巧",
+      "year": "11",
+      "title": "我不小心开了 273 个 Agent",
+      "url": "https://blog.devtang.com/2026/06/02/273-agents/",
       "date": "2026-06-02"
     }
   ],
@@ -147,9 +147,9 @@ const latestArticlesByYear = {
     {
       "name": "小z",
       "year": "13",
-      "title": "FluxDown：一款界面精美、功能强大的现代下载工具，支持浏览器扩展",
-      "url": "https://blog.xiaoz.org/archives/23026",
-      "date": "2026-06-02"
+      "title": "OpenCode上手指南：我的AI编程方案",
+      "url": "https://blog.xiaoz.org/archives/23034",
+      "date": "2026-06-03"
     }
   ],
   "2015": [
@@ -172,13 +172,6 @@ const latestArticlesByYear = {
   ],
   "2017": [
     {
-      "name": "SimonAKing",
-      "year": "17",
-      "title": "AI 互动影游全球深度报告",
-      "url": "https://simonaking.com/blog/ai-interactive-film-game-report/",
-      "date": "2026-06-02"
-    },
-    {
       "name": "串串狗小刊",
       "year": "17",
       "title": "SEO 之 HARO 四两拨千斤大法",
@@ -191,6 +184,13 @@ const latestArticlesByYear = {
       "title": "人均一个博客聚合网站？",
       "url": "https://www.suiyan.cc/blog/20260601201146",
       "date": "2026-06-01"
+    },
+    {
+      "name": "SimonAKing",
+      "year": "17",
+      "title": "AI 互动影游全球深度报告",
+      "url": "https://simonaking.com/blog/ai-interactive-film-game-report/",
+      "date": "2026-06-02"
     }
   ],
   "2019": [
@@ -200,16 +200,16 @@ const latestArticlesByYear = {
       "title": "六一儿童乐",
       "url": "https://liuqingwushui.top/archives/160/",
       "date": "2026-06-02"
+    },
+    {
+      "name": "Zeruns",
+      "year": "19",
+      "title": "武汉-青岛 旅游记录和照片分享",
+      "url": "https://blog.zeruns.com/archives/946.html",
+      "date": "2026-06-01"
     }
   ],
   "2020": [
-    {
-      "name": "初然忆",
-      "year": "20",
-      "title": "鼠疫2：第一次连续开出三个红",
-      "url": "https://www.imcry.vip/post/2026-6-3-301/",
-      "date": "2026-06-02"
-    },
     {
       "name": "資工小廢物 - JN",
       "year": "20",
@@ -218,11 +218,18 @@ const latestArticlesByYear = {
       "date": "2026-06-02"
     },
     {
-      "name": "天书vip",
+      "name": "优世界",
       "year": "20",
-      "title": "十九世纪的法国到底啥是年金？",
-      "url": "https://www.skybook.vip/inn/143",
-      "date": "2026-06-01"
+      "title": "尝试接入 telegram 机器人",
+      "url": "https://usj.cc/202606021139.html",
+      "date": "2026-06-02"
+    },
+    {
+      "name": "初然忆",
+      "year": "20",
+      "title": "鼠疫2：第一次连续开出三个红",
+      "url": "https://www.imcry.vip/post/2026-6-3-301/",
+      "date": "2026-06-02"
     },
     {
       "name": "呆哥",
@@ -241,18 +248,18 @@ const latestArticlesByYear = {
       "date": "2026-06-02"
     },
     {
-      "name": "记录生活",
-      "year": "21",
-      "title": "到现在不知道怎么介绍自己",
-      "url": "https://9sb.net/archives/i-still-dont-know-how-to-introduce-myself.html",
-      "date": "2026-06-03"
-    },
-    {
       "name": "阿锋的小宇宙",
       "year": "21",
       "title": "二〇二六年五月总结：颓态总会过去吧",
       "url": "https://feng.pub/0620269616.html",
       "date": "2026-06-02"
+    },
+    {
+      "name": "记录生活",
+      "year": "21",
+      "title": "到现在不知道怎么介绍自己",
+      "url": "https://9sb.net/archives/i-still-dont-know-how-to-introduce-myself.html",
+      "date": "2026-06-03"
     }
   ],
   "2022": [
@@ -278,38 +285,31 @@ const latestArticlesByYear = {
       "title": "让信息型SEO内容为搜索意图发挥作用",
       "url": "https://www.bailuze.com/24115.html",
       "date": "2026-06-03"
-    },
-    {
-      "name": "宗宗酱",
-      "year": "23",
-      "title": "轻轨上偶遇也门小哥",
-      "url": "https://ygz.ink/archives/5134.html",
-      "date": "2026-06-02"
     }
   ],
   "2024": [
-    {
-      "name": "团团生活志",
-      "year": "24",
-      "title": "711全职店务员离职心得",
-      "url": "https://t-t.live/archives/7MagsYkt",
-      "date": "2026-06-01"
-    },
     {
       "name": "Chongxi",
       "year": "24",
       "title": "我用过最好用的Android桌面(启动器)",
       "url": "https://xice.cx/posts/niagaraLauncher/",
       "date": "2026-06-01"
+    },
+    {
+      "name": "团团生活志",
+      "year": "24",
+      "title": "711全职店务员离职心得",
+      "url": "https://t-t.live/archives/7MagsYkt",
+      "date": "2026-06-01"
     }
   ],
   "2026": [
     {
-      "name": "周阿源",
+      "name": "华立",
       "year": "26",
-      "title": "恭喜发财｜从设计图到毛绒抱枕落地",
-      "url": "https://zhouayuan.com/post/47.html",
-      "date": "2026-06-02"
+      "title": "打算重构墨迹博客（InkBlog）",
+      "url": "https://www.renhuali.cn/journal/cmpxdw1ac000xchs4ybm9m416",
+      "date": "2026-06-03"
     },
     {
       "name": "麦子的思绪",
@@ -319,11 +319,11 @@ const latestArticlesByYear = {
       "date": "2026-06-02"
     },
     {
-      "name": "华立",
+      "name": "周阿源",
       "year": "26",
-      "title": "打算重构墨迹博客（InkBlog）",
-      "url": "https://www.renhuali.cn/journal/cmpxdw1ac000xchs4ybm9m416",
-      "date": "2026-06-03"
+      "title": "恭喜发财｜从设计图到毛绒抱枕落地",
+      "url": "https://zhouayuan.com/post/47.html",
+      "date": "2026-06-02"
     }
   ]
 };
