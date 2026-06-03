@@ -50,7 +50,7 @@ async function fetchWithTimeout(blog, parser, timeoutMs = 5000) {
             // 查找最近14天内的文章
             for (const item of feed.items) {
                 const pubDate = item.pubDate || item.isoDate;
-                if (isWithinDays(pubDate, 1)) {   // 7 改成 14
+                if (isWithinDays(pubDate, 2)) {   // 7 改成 14
                     return {
                         name: blog.name,
                         year: blog.year,
