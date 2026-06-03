@@ -1,9 +1,18 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/2/2026, 9:58:31 PM
+// 抓取日期: 6/3/2026, 2:05:48 AM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
+  "2000": [
+    {
+      "name": "Luca",
+      "year": "00",
+      "title": "五月看片新旧兼收",
+      "url": "https://wlj.me/notes/sp-note-20260603-080610/",
+      "date": "2026-06-03"
+    }
+  ],
   "2002": [
     {
       "name": "seth",
@@ -17,42 +26,17 @@ const latestArticlesByYear = {
     {
       "name": "我的天",
       "year": "04",
-      "title": "大唐迷你电脑黑屏",
-      "url": "http://www.xlanda.net/posts/22234",
-      "date": "2026-06-02"
-    },
-    {
-      "name": "kaix.in",
-      "year": "04",
-      "title": "2026.06.02 16:44",
-      "url": "https://kaix.in/2026/0602/",
-      "date": "2026-06-02"
+      "title": "通勤方式",
+      "url": "http://www.xlanda.net/posts/22237",
+      "date": "2026-06-03"
     }
   ],
-  "2005": [
+  "2007": [
     {
-      "name": "Gea-Suan Lin",
-      "year": "05",
-      "title": "Coding agent 自己找到方法取得 root 權限改檔案",
-      "url": "https://blog.gslin.org/archives/2026/06/02/13054/coding-agent-%e8%87%aa%e5%b7%b1%e6%89%be%e5%88%b0%e6%96%b9%e6%b3%95%e5%8f%96%e5%be%97-root-%e6%ac%8a%e9%99%90%e6%94%b9%e6%aa%94%e6%a1%88/",
-      "date": "2026-06-02"
-    }
-  ],
-  "2008": [
-    {
-      "name": "杜郎俊赏",
-      "year": "08",
-      "title": "人造景观",
-      "url": "https://dujun.io/443d8414-31bb-55df-bf69-d548b38e7e07.html",
-      "date": "2026-06-02"
-    }
-  ],
-  "2009": [
-    {
-      "name": "老刘",
-      "year": "09",
-      "title": "Ubuntu 26.04 用了一个月",
-      "url": "https://www.iliu.org/posts/ubuntu-26-04-one-month/",
+      "name": "织梦岁月",
+      "year": "07",
+      "title": "尝鲜，我以后还是不要尝鲜了",
+      "url": "https://zhujianlin.com/archives/1992.html",
       "date": "2026-06-02"
     }
   ],
@@ -62,6 +46,13 @@ const latestArticlesByYear = {
       "year": "11",
       "title": "Surfingkeys：比 Vimium 更强大的浏览器键盘控制扩展",
       "url": "https://blog.einverne.info/post/2026/06/surfingkeys-chrome-extension.html",
+      "date": "2026-06-02"
+    },
+    {
+      "name": "唐巧",
+      "year": "11",
+      "title": "我不小心开了 273 个 Agent",
+      "url": "https://blog.devtang.com/2026/06/02/273-agents/",
       "date": "2026-06-02"
     }
   ],
@@ -83,23 +74,7 @@ const latestArticlesByYear = {
       "date": "2026-06-02"
     }
   ],
-  "2016": [
-    {
-      "name": "幻影",
-      "year": "16",
-      "title": "硬装结束，灯亮了，油烟机炸了",
-      "url": "https://blog.52hyjs.com/post-1272.html",
-      "date": "2026-06-02"
-    }
-  ],
   "2017": [
-    {
-      "name": "串串狗小刊",
-      "year": "17",
-      "title": "SEO 之 HARO 四两拨千斤大法",
-      "url": "https://www.ccgxk.com/codeother/766.html",
-      "date": "2026-06-02"
-    },
     {
       "name": "SimonAKing",
       "year": "17",
@@ -110,10 +85,10 @@ const latestArticlesByYear = {
   ],
   "2020": [
     {
-      "name": "优世界",
+      "name": "呆哥",
       "year": "20",
-      "title": "尝试接入 telegram 机器人",
-      "url": "https://usj.cc/202606021139.html",
+      "title": "@所有人，把你们邮箱自动回复关掉...",
+      "url": "https://www.dalao.net/thread-59226.htm",
       "date": "2026-06-02"
     },
     {
@@ -121,6 +96,13 @@ const latestArticlesByYear = {
       "year": "20",
       "title": "鼠疫2：第一次连续开出三个红",
       "url": "https://www.imcry.vip/post/2026-6-3-301/",
+      "date": "2026-06-02"
+    },
+    {
+      "name": "資工小廢物 - JN",
+      "year": "20",
+      "title": "忘記報稅怎麼辦？不在戶藉地怎麼報稅？",
+      "url": "https://blog.giveanornot.com/forgot-to-pay-tax/",
       "date": "2026-06-02"
     }
   ],
@@ -140,22 +122,13 @@ const latestArticlesByYear = {
       "date": "2026-06-02"
     }
   ],
-  "2022": [
-    {
-      "name": "倦意",
-      "year": "22",
-      "title": "白嫖免费的大模型 AgnesAI 教程",
-      "url": "https://jyblog.cn/5688/",
-      "date": "2026-06-02"
-    }
-  ],
   "2023": [
     {
-      "name": "按钮与磁带",
+      "name": "鹿泽",
       "year": "23",
-      "title": "bearblog",
-      "url": "https://jefftay.com/blog-posts/bearblog/",
-      "date": "2026-06-02"
+      "title": "让信息型SEO内容为搜索意图发挥作用",
+      "url": "https://www.bailuze.com/24115.html",
+      "date": "2026-06-03"
     },
     {
       "name": "宗宗酱",
@@ -163,9 +136,30 @@ const latestArticlesByYear = {
       "title": "轻轨上偶遇也门小哥",
       "url": "https://ygz.ink/archives/5134.html",
       "date": "2026-06-02"
+    },
+    {
+      "name": "按钮与磁带",
+      "year": "23",
+      "title": "bearblog",
+      "url": "https://jefftay.com/blog-posts/bearblog/",
+      "date": "2026-06-02"
     }
   ],
   "2026": [
+    {
+      "name": "周阿源",
+      "year": "26",
+      "title": "恭喜发财｜从设计图到毛绒抱枕落地",
+      "url": "https://zhouayuan.com/post/47.html",
+      "date": "2026-06-02"
+    },
+    {
+      "name": "华立",
+      "year": "26",
+      "title": "打算重构墨迹博客（InkBlog）",
+      "url": "https://www.renhuali.cn/journal/cmpxdw1ac000xchs4ybm9m416",
+      "date": "2026-06-03"
+    },
     {
       "name": "麦子的思绪",
       "year": "26",
