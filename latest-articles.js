@@ -1,93 +1,91 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/4/2026, 3:29:22 AM
+// 抓取日期: 6/4/2026, 9:04:04 PM
 // 只抓取最近14天内的文章，共 10 篇
 // 目标 10 篇，实际 10 篇
 
 const latestArticlesByYear = {
-  "2002": [
+  "2006": [
     {
-      "name": "seth",
-      "year": "02",
-      "title": "Professionals know how to talk about it",
-      "url": "https://seths.blog/2026/06/professionals-know-how-to-talk-about-it/",
-      "date": "2026-06-03"
+      "name": "黄杰敏",
+      "year": "06",
+      "title": "风吹一夏",
+      "url": "https://www.jiemin.com/archives/1826.html",
+      "date": "2026-06-04"
     }
   ],
-  "2007": [
+  "2012": [
     {
-      "name": "苏洋",
-      "year": "07",
-      "title": "Kakapo：使用 Wails v3、Go 和 Echo 构建一个本地翻译工作台",
-      "url": "https://soulteary.com/2026/06/03/kakapo-a-local-translation-workbench-built-with-wails-v3-go-and-echo.html",
-      "date": "2026-06-03"
-    },
-    {
-      "name": "织梦岁月",
-      "year": "07",
-      "title": "2026年5月总结",
-      "url": "https://zhujianlin.com/archives/2013.html",
-      "date": "2026-06-03"
-    }
-  ],
-  "2009": [
-    {
-      "name": "异数",
-      "year": "09",
-      "title": "软件 || 图集规范管理软件-文档管理器",
-      "url": "https://www.yishu.pro/218.html",
-      "date": "2026-06-03"
+      "name": "MacTalk-池建强的随想录",
+      "year": "12",
+      "title": "CatReader 上线：重启 RSS 阅读",
+      "url": "https://macshuo.com/?p=2050",
+      "date": "2026-06-04"
     }
   ],
   "2013": [
     {
       "name": "林羽凡",
       "year": "13",
-      "title": "做个简单总结：今天完成了“林羽凡笔记”鸿蒙Pad的界面优化",
-      "url": "https://www.linyufan.com/post/5835",
+      "title": "简单总结：接入了阿里云的“读光”OCR识别票据，鸿蒙app显示markdown内容",
+      "url": "https://www.linyufan.com/post/5838",
+      "date": "2026-06-04"
+    }
+  ],
+  "2016": [
+    {
+      "name": "太隐",
+      "year": "16",
+      "title": "道德使我痛苦",
+      "url": "https://wangyurui.com/posts/dao-de-shi-wo-tong-ku-928d6e2e",
+      "date": "2026-06-04"
+    },
+    {
+      "name": "ximi",
+      "year": "16",
+      "title": "一个轻量级本地网址收藏夹",
+      "url": "https://www.ximi.me/post-6040.html",
       "date": "2026-06-03"
     }
   ],
-  "2017": [
+  "2019": [
     {
-      "name": "串串狗小刊",
-      "year": "17",
-      "title": "SEO 之 UGC 不做落地页和 ADS 无效流量解决方法",
-      "url": "https://www.ccgxk.com/codeother/767.html",
-      "date": "2026-06-03"
-    },
-    {
-      "name": "碎言",
-      "year": "17",
-      "title": "如何选择趁手的兵器（大模型和配套的工具）",
-      "url": "https://www.suiyan.cc/blog/20260603200000",
-      "date": "2026-06-03"
+      "name": "新世界的大门",
+      "year": "19",
+      "title": "2026-05-30 / 土法 ansible",
+      "url": "https://blog.xinshijiededa.men/daily/39/",
+      "date": "2026-06-04"
     }
   ],
   "2020": [
     {
-      "name": "vinchent",
+      "name": "优世界",
       "year": "20",
-      "title": "记一次上台演出",
-      "url": "https://www.vinchent.xyz/ji-ci-shang-tai-yan-chu",
-      "date": "2026-06-03"
-    }
-  ],
-  "2023": [
+      "title": "用 Python 给博客字体瘦了一下身",
+      "url": "https://usj.cc/202606041003.html",
+      "date": "2026-06-04"
+    },
     {
-      "name": "Siwei Li",
-      "year": "23",
-      "title": "尝试用Codex开发微信小程序",
-      "url": "https://siwei.li/yong-codexkai-fa-wei-xin/",
-      "date": "2026-06-03"
+      "name": "呆哥",
+      "year": "20",
+      "title": "一个微信UI的双人打卡程序",
+      "url": "https://www.dalao.net/thread-59355.htm",
+      "date": "2026-06-04"
     }
   ],
   "2026": [
     {
-      "name": "麦子的思绪",
+      "name": "华立",
       "year": "26",
-      "title": "叹佬，叹世界！",
-      "url": "https://mzdsx.com/2026/06/03/%e5%8f%b9%e4%bd%ac%ef%bc%8c%e5%8f%b9%e4%b8%96%e7%95%8c%ef%bc%81/",
-      "date": "2026-06-03"
+      "title": "免费撸英伟达的 API key",
+      "url": "https://www.renhuali.cn/journal/cmpyqpt9s0009chn74loyyp5c",
+      "date": "2026-06-04"
+    },
+    {
+      "name": "周阿源",
+      "year": "26",
+      "title": "今日手绘｜元气小丫头",
+      "url": "https://zhouayuan.com/post/48.html",
+      "date": "2026-06-04"
     }
   ]
 };
