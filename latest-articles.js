@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/3/2026, 9:55:20 PM
+// 抓取日期: 6/4/2026, 3:29:22 AM
 // 只抓取最近14天内的文章，共 10 篇
 // 目标 10 篇，实际 10 篇
 
@@ -13,80 +13,80 @@ const latestArticlesByYear = {
       "date": "2026-06-03"
     }
   ],
-  "2004": [
+  "2007": [
     {
-      "name": "kaix.in",
-      "year": "04",
-      "title": "咬文嚼字",
-      "url": "https://kaix.in/2026/0603/",
-      "date": "2026-06-03"
-    }
-  ],
-  "2005": [
-    {
-      "name": "Gea-Suan Lin",
-      "year": "05",
-      "title": "走 RFC 2136 更新 DNS record 的 Dynamic DNS 服務",
-      "url": "https://blog.gslin.org/archives/2026/06/04/13057/%e8%b5%b0-rfc-2136-%e6%9b%b4%e6%96%b0-dns-record-%e7%9a%84-dynamic-dns-%e6%9c%8d%e5%8b%99/",
+      "name": "苏洋",
+      "year": "07",
+      "title": "Kakapo：使用 Wails v3、Go 和 Echo 构建一个本地翻译工作台",
+      "url": "https://soulteary.com/2026/06/03/kakapo-a-local-translation-workbench-built-with-wails-v3-go-and-echo.html",
       "date": "2026-06-03"
     },
     {
-      "name": "春田",
-      "year": "05",
-      "title": "１０７７．人生には岐路がある",
-      "url": "http://kaikeimura.way-nifty.com/blog/2026/06/post-0d00b8.html",
+      "name": "织梦岁月",
+      "year": "07",
+      "title": "2026年5月总结",
+      "url": "https://zhujianlin.com/archives/2013.html",
       "date": "2026-06-03"
     }
   ],
-  "2006": [
+  "2009": [
     {
-      "name": "随风沐虐",
-      "year": "06",
-      "title": "天涯社区恢复访问，你登录了吗？",
-      "url": "https://www.munue.com/799.html",
+      "name": "异数",
+      "year": "09",
+      "title": "软件 || 图集规范管理软件-文档管理器",
+      "url": "https://www.yishu.pro/218.html",
+      "date": "2026-06-03"
+    }
+  ],
+  "2013": [
+    {
+      "name": "林羽凡",
+      "year": "13",
+      "title": "做个简单总结：今天完成了“林羽凡笔记”鸿蒙Pad的界面优化",
+      "url": "https://www.linyufan.com/post/5835",
       "date": "2026-06-03"
     }
   ],
   "2017": [
-    {
-      "name": "碎言",
-      "year": "17",
-      "title": "如何选择趁手的兵器（大模型和配套的工具）",
-      "url": "https://www.suiyan.cc/blog/20260603200000",
-      "date": "2026-06-03"
-    },
     {
       "name": "串串狗小刊",
       "year": "17",
       "title": "SEO 之 UGC 不做落地页和 ADS 无效流量解决方法",
       "url": "https://www.ccgxk.com/codeother/767.html",
       "date": "2026-06-03"
+    },
+    {
+      "name": "碎言",
+      "year": "17",
+      "title": "如何选择趁手的兵器（大模型和配套的工具）",
+      "url": "https://www.suiyan.cc/blog/20260603200000",
+      "date": "2026-06-03"
     }
   ],
   "2020": [
     {
-      "name": "初然忆",
+      "name": "vinchent",
       "year": "20",
-      "title": "芜湖！收到好站网的赠品了",
-      "url": "https://www.imcry.vip/post/2026-6-3-2126/",
-      "date": "2026-06-03"
-    }
-  ],
-  "2021": [
-    {
-      "name": "DevNow",
-      "year": "21",
-      "title": "Product Hunt 每日热榜 | 2026-06-03",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-06-03",
+      "title": "记一次上台演出",
+      "url": "https://www.vinchent.xyz/ji-ci-shang-tai-yan-chu",
       "date": "2026-06-03"
     }
   ],
   "2023": [
     {
-      "name": "湘铭",
+      "name": "Siwei Li",
       "year": "23",
-      "title": "安家之后，岁岁清欢",
-      "url": "https://xiangming.site/1131.html",
+      "title": "尝试用Codex开发微信小程序",
+      "url": "https://siwei.li/yong-codexkai-fa-wei-xin/",
+      "date": "2026-06-03"
+    }
+  ],
+  "2026": [
+    {
+      "name": "麦子的思绪",
+      "year": "26",
+      "title": "叹佬，叹世界！",
+      "url": "https://mzdsx.com/2026/06/03/%e5%8f%b9%e4%bd%ac%ef%bc%8c%e5%8f%b9%e4%b8%96%e7%95%8c%ef%bc%81/",
       "date": "2026-06-03"
     }
   ]
