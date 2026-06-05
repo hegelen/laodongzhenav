@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/5/2026, 10:14:47 AM
+// 抓取日期: 6/5/2026, 10:26:38 AM
 // 只抓取最近14天内的文章，共 10 篇
 // 目标 10 篇，实际 10 篇
 
@@ -13,6 +13,24 @@ const latestArticlesByYear = {
       "date": "2026-06-04"
     }
   ],
+  "2002": [
+    {
+      "name": "seth",
+      "year": "02",
+      "title": "How to teach marketing",
+      "url": "https://seths.blog/2026/06/how-to-teach-marketing/",
+      "date": "2026-06-05"
+    }
+  ],
+  "2003": [
+    {
+      "name": "阮一峰",
+      "year": "03",
+      "title": "科技爱好者周刊（第 399 期）：中国 AI 大厂访问记",
+      "url": "http://www.ruanyifeng.com/blog/2026/06/weekly-issue-399.html",
+      "date": "2026-06-05"
+    }
+  ],
   "2004": [
     {
       "name": "我的天",
@@ -20,30 +38,32 @@ const latestArticlesByYear = {
       "title": "复杂的广电",
       "url": "http://www.xlanda.net/posts/22241",
       "date": "2026-06-05"
-    },
-    {
-      "name": "竹炉山房",
-      "year": "04",
-      "title": "雪崩时没有一片雪花是无辜的",
-      "url": "https://synyan.cn/t/62446",
-      "date": "2026-06-04"
     }
   ],
-  "2007": [
+  "2009": [
     {
-      "name": "朱小呆",
-      "year": "07",
-      "title": "BlogsClub月度拾光福利",
-      "url": "https://zhujay.com/talk/talk_detail.html?id=1237",
+      "name": "多多",
+      "year": "09",
+      "title": "github下载地址获取办法",
+      "url": "https://ddlog.cn/?p=534",
       "date": "2026-06-05"
     }
   ],
-  "2015": [
+  "2012": [
     {
-      "name": "elmagnifico",
-      "year": "15",
-      "title": "Skills进阶",
-      "url": "https://elmagnifico.tech/2026/06/05/Agent-Skills2/",
+      "name": "MacTalk-池建强的随想录",
+      "year": "12",
+      "title": "CatReader 上线：重启 RSS 阅读",
+      "url": "https://macshuo.com/?p=2050",
+      "date": "2026-06-04"
+    }
+  ],
+  "2017": [
+    {
+      "name": "SimonAKing",
+      "year": "17",
+      "title": "BYOA 是 vibe coding 产品的唯一出路",
+      "url": "https://simonaking.com/blog/byoa-vibe-coding/",
       "date": "2026-06-04"
     }
   ],
@@ -53,15 +73,6 @@ const latestArticlesByYear = {
       "year": "21",
       "title": "Product Hunt 每日热榜 | 2026-06-04",
       "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-06-04",
-      "date": "2026-06-04"
-    }
-  ],
-  "2023": [
-    {
-      "name": "按钮与磁带",
-      "year": "23",
-      "title": "bearblog",
-      "url": "https://jefftay.com/bearblog/",
       "date": "2026-06-04"
     }
   ],
@@ -78,13 +89,6 @@ const latestArticlesByYear = {
       "year": "26",
       "title": "\n      正向代理&反向代理？\n    ",
       "url": "https://blog.flechazo.icu/2026/06/04/%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86and%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/",
-      "date": "2026-06-04"
-    },
-    {
-      "name": "麦子的思绪",
-      "year": "26",
-      "title": "跑步刚回来",
-      "url": "https://mzdsx.com/2026/06/04/%e8%b7%91%e6%ad%a5%e5%88%9a%e5%9b%9e%e6%9d%a5/",
       "date": "2026-06-04"
     }
   ]
