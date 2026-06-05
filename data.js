@@ -128,7 +128,7 @@ const forumData = {
     '15': [{name:'超理', url:'https://chaoli.club/'}, {name:'什么值得买社区', url:'https://post.smzdm.com/'}],
     '16': [{name:'小众软件论坛', url:'https://meta.appinn.net/'}],
 	'17': [{name:'4414', url:'https://www.4414.cn/'}],
-    '18': [{name:'0xffff', url:'https://0xffff.one/'}  , {name:'腾讯开发者社区', url:'https://cloud.tencent.com/developer'}  ],
+    '18': [{name:'0xffff', url:'https://0xffff.one/'}  , {name:'腾讯开发者社区', url:'https://cloud.tencent.com/developer'} , {name:'wap0816y站长论坛', url:'http://wap.0816y.com/'}  ],
     '19': [{name:'代码厨房社区', url:'https://codekitchen.community/'}, {name:'w2solo独立开发者社区', url:'https://w2solo.com/'}],
     '20': [{name:'大佬论坛♈️',url:'https://www.dalao.net/', desc:'认证:大佬论坛daolao.net-域名站长论坛'}, {name:'Mergeek产品爱好者社区', url:'https://www.mergeek.com/'}],
     '21': [{name:'obsidian', url:'https://forum-zh.obsidian.md/'}, {name:'2号站长网', url:'https://www.zz2zz.com/circle/'}],
