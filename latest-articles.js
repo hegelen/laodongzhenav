@@ -1,16 +1,52 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/4/2026, 9:04:04 PM
+// 抓取日期: 6/5/2026, 10:26:38 AM
 // 只抓取最近14天内的文章，共 10 篇
 // 目标 10 篇，实际 10 篇
 
 const latestArticlesByYear = {
-  "2006": [
+  "2000": [
     {
-      "name": "黄杰敏",
-      "year": "06",
-      "title": "风吹一夏",
-      "url": "https://www.jiemin.com/archives/1826.html",
+      "name": "Luca",
+      "year": "00",
+      "title": "泳后池边吹风看书",
+      "url": "https://wlj.me/notes/sp-note-20260604-220452/",
       "date": "2026-06-04"
+    }
+  ],
+  "2002": [
+    {
+      "name": "seth",
+      "year": "02",
+      "title": "How to teach marketing",
+      "url": "https://seths.blog/2026/06/how-to-teach-marketing/",
+      "date": "2026-06-05"
+    }
+  ],
+  "2003": [
+    {
+      "name": "阮一峰",
+      "year": "03",
+      "title": "科技爱好者周刊（第 399 期）：中国 AI 大厂访问记",
+      "url": "http://www.ruanyifeng.com/blog/2026/06/weekly-issue-399.html",
+      "date": "2026-06-05"
+    }
+  ],
+  "2004": [
+    {
+      "name": "我的天",
+      "year": "04",
+      "title": "复杂的广电",
+      "url": "http://www.xlanda.net/posts/22241",
+      "date": "2026-06-05"
+    }
+  ],
+  "2009": [
+    {
+      "name": "多多",
+      "year": "09",
+      "title": "github下载地址获取办法",
+      "url": "https://ddlog.cn/?p=534",
+      "date": "2026-06-05"
     }
   ],
   "2012": [
@@ -22,69 +58,37 @@ const latestArticlesByYear = {
       "date": "2026-06-04"
     }
   ],
-  "2013": [
+  "2017": [
     {
-      "name": "林羽凡",
-      "year": "13",
-      "title": "简单总结：接入了阿里云的“读光”OCR识别票据，鸿蒙app显示markdown内容",
-      "url": "https://www.linyufan.com/post/5838",
+      "name": "SimonAKing",
+      "year": "17",
+      "title": "BYOA 是 vibe coding 产品的唯一出路",
+      "url": "https://simonaking.com/blog/byoa-vibe-coding/",
       "date": "2026-06-04"
     }
   ],
-  "2016": [
+  "2021": [
     {
-      "name": "太隐",
-      "year": "16",
-      "title": "道德使我痛苦",
-      "url": "https://wangyurui.com/posts/dao-de-shi-wo-tong-ku-928d6e2e",
-      "date": "2026-06-04"
-    },
-    {
-      "name": "ximi",
-      "year": "16",
-      "title": "一个轻量级本地网址收藏夹",
-      "url": "https://www.ximi.me/post-6040.html",
-      "date": "2026-06-03"
-    }
-  ],
-  "2019": [
-    {
-      "name": "新世界的大门",
-      "year": "19",
-      "title": "2026-05-30 / 土法 ansible",
-      "url": "https://blog.xinshijiededa.men/daily/39/",
-      "date": "2026-06-04"
-    }
-  ],
-  "2020": [
-    {
-      "name": "优世界",
-      "year": "20",
-      "title": "用 Python 给博客字体瘦了一下身",
-      "url": "https://usj.cc/202606041003.html",
-      "date": "2026-06-04"
-    },
-    {
-      "name": "呆哥",
-      "year": "20",
-      "title": "一个微信UI的双人打卡程序",
-      "url": "https://www.dalao.net/thread-59355.htm",
+      "name": "DevNow",
+      "year": "21",
+      "title": "Product Hunt 每日热榜 | 2026-06-04",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-06-04",
       "date": "2026-06-04"
     }
   ],
   "2026": [
     {
-      "name": "华立",
-      "year": "26",
-      "title": "免费撸英伟达的 API key",
-      "url": "https://www.renhuali.cn/journal/cmpyqpt9s0009chn74loyyp5c",
-      "date": "2026-06-04"
-    },
-    {
       "name": "周阿源",
       "year": "26",
       "title": "今日手绘｜元气小丫头",
       "url": "https://zhouayuan.com/post/48.html",
+      "date": "2026-06-04"
+    },
+    {
+      "name": "妄司逸",
+      "year": "26",
+      "title": "\n      正向代理&反向代理？\n    ",
+      "url": "https://blog.flechazo.icu/2026/06/04/%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86and%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/",
       "date": "2026-06-04"
     }
   ]
