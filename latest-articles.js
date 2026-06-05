@@ -1,90 +1,90 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/4/2026, 9:04:04 PM
+// 抓取日期: 6/5/2026, 10:14:47 AM
 // 只抓取最近14天内的文章，共 10 篇
 // 目标 10 篇，实际 10 篇
 
 const latestArticlesByYear = {
-  "2006": [
+  "2000": [
     {
-      "name": "黄杰敏",
-      "year": "06",
-      "title": "风吹一夏",
-      "url": "https://www.jiemin.com/archives/1826.html",
+      "name": "Luca",
+      "year": "00",
+      "title": "泳后池边吹风看书",
+      "url": "https://wlj.me/notes/sp-note-20260604-220452/",
       "date": "2026-06-04"
     }
   ],
-  "2012": [
+  "2004": [
     {
-      "name": "MacTalk-池建强的随想录",
-      "year": "12",
-      "title": "CatReader 上线：重启 RSS 阅读",
-      "url": "https://macshuo.com/?p=2050",
-      "date": "2026-06-04"
-    }
-  ],
-  "2013": [
-    {
-      "name": "林羽凡",
-      "year": "13",
-      "title": "简单总结：接入了阿里云的“读光”OCR识别票据，鸿蒙app显示markdown内容",
-      "url": "https://www.linyufan.com/post/5838",
-      "date": "2026-06-04"
-    }
-  ],
-  "2016": [
-    {
-      "name": "太隐",
-      "year": "16",
-      "title": "道德使我痛苦",
-      "url": "https://wangyurui.com/posts/dao-de-shi-wo-tong-ku-928d6e2e",
-      "date": "2026-06-04"
+      "name": "我的天",
+      "year": "04",
+      "title": "复杂的广电",
+      "url": "http://www.xlanda.net/posts/22241",
+      "date": "2026-06-05"
     },
     {
-      "name": "ximi",
-      "year": "16",
-      "title": "一个轻量级本地网址收藏夹",
-      "url": "https://www.ximi.me/post-6040.html",
-      "date": "2026-06-03"
-    }
-  ],
-  "2019": [
-    {
-      "name": "新世界的大门",
-      "year": "19",
-      "title": "2026-05-30 / 土法 ansible",
-      "url": "https://blog.xinshijiededa.men/daily/39/",
+      "name": "竹炉山房",
+      "year": "04",
+      "title": "雪崩时没有一片雪花是无辜的",
+      "url": "https://synyan.cn/t/62446",
       "date": "2026-06-04"
     }
   ],
-  "2020": [
+  "2007": [
     {
-      "name": "优世界",
-      "year": "20",
-      "title": "用 Python 给博客字体瘦了一下身",
-      "url": "https://usj.cc/202606041003.html",
+      "name": "朱小呆",
+      "year": "07",
+      "title": "BlogsClub月度拾光福利",
+      "url": "https://zhujay.com/talk/talk_detail.html?id=1237",
+      "date": "2026-06-05"
+    }
+  ],
+  "2015": [
+    {
+      "name": "elmagnifico",
+      "year": "15",
+      "title": "Skills进阶",
+      "url": "https://elmagnifico.tech/2026/06/05/Agent-Skills2/",
       "date": "2026-06-04"
-    },
+    }
+  ],
+  "2021": [
     {
-      "name": "呆哥",
-      "year": "20",
-      "title": "一个微信UI的双人打卡程序",
-      "url": "https://www.dalao.net/thread-59355.htm",
+      "name": "DevNow",
+      "year": "21",
+      "title": "Product Hunt 每日热榜 | 2026-06-04",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-06-04",
+      "date": "2026-06-04"
+    }
+  ],
+  "2023": [
+    {
+      "name": "按钮与磁带",
+      "year": "23",
+      "title": "bearblog",
+      "url": "https://jefftay.com/bearblog/",
       "date": "2026-06-04"
     }
   ],
   "2026": [
     {
-      "name": "华立",
-      "year": "26",
-      "title": "免费撸英伟达的 API key",
-      "url": "https://www.renhuali.cn/journal/cmpyqpt9s0009chn74loyyp5c",
-      "date": "2026-06-04"
-    },
-    {
       "name": "周阿源",
       "year": "26",
       "title": "今日手绘｜元气小丫头",
       "url": "https://zhouayuan.com/post/48.html",
+      "date": "2026-06-04"
+    },
+    {
+      "name": "妄司逸",
+      "year": "26",
+      "title": "\n      正向代理&反向代理？\n    ",
+      "url": "https://blog.flechazo.icu/2026/06/04/%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86and%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/",
+      "date": "2026-06-04"
+    },
+    {
+      "name": "麦子的思绪",
+      "year": "26",
+      "title": "跑步刚回来",
+      "url": "https://mzdsx.com/2026/06/04/%e8%b7%91%e6%ad%a5%e5%88%9a%e5%9b%9e%e6%9d%a5/",
       "date": "2026-06-04"
     }
   ]
