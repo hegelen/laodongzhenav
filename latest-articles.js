@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/5/2026, 8:59:09 PM
+// 抓取日期: 6/6/2026, 10:25:45 AM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -17,18 +17,9 @@ const latestArticlesByYear = {
     {
       "name": "seth",
       "year": "02",
-      "title": "How to teach marketing",
-      "url": "https://seths.blog/2026/06/how-to-teach-marketing/",
-      "date": "2026-06-05"
-    }
-  ],
-  "2003": [
-    {
-      "name": "阮一峰",
-      "year": "03",
-      "title": "科技爱好者周刊（第 399 期）：中国 AI 大厂访问记",
-      "url": "http://www.ruanyifeng.com/blog/2026/06/weekly-issue-399.html",
-      "date": "2026-06-05"
+      "title": "Real artists…",
+      "url": "https://seths.blog/2026/06/real-artists/",
+      "date": "2026-06-06"
     }
   ],
   "2004": [
@@ -42,18 +33,16 @@ const latestArticlesByYear = {
     {
       "name": "我的天",
       "year": "04",
-      "title": "复杂的广电",
-      "url": "http://www.xlanda.net/posts/22241",
-      "date": "2026-06-05"
-    }
-  ],
-  "2006": [
+      "title": "维修工具准备到位",
+      "url": "http://www.xlanda.net/posts/22243",
+      "date": "2026-06-06"
+    },
     {
-      "name": "joojen Zhou",
-      "year": "06",
-      "title": "房价又要起飞了？",
-      "url": "https://joojen.com/archives/9003.html",
-      "date": "2026-06-05"
+      "name": "龙哥",
+      "year": "04",
+      "title": "宝塔面板去除强制绑定宝塔官网账号",
+      "url": "https://long.ge/18068.html",
+      "date": "2026-06-06"
     }
   ],
   "2009": [
@@ -65,22 +54,31 @@ const latestArticlesByYear = {
       "date": "2026-06-05"
     }
   ],
+  "2010": [
+    {
+      "name": "忆往事",
+      "year": "10",
+      "title": "小黄狗",
+      "url": "https://zhou.ge/2026-06-06.html",
+      "date": "2026-06-06"
+    }
+  ],
   "2012": [
     {
-      "name": "把酒诗代码",
+      "name": "水拍石",
       "year": "12",
-      "title": "干煸藕丝",
-      "url": "https://102no.com/2026/06/05/gan-bian-ou-si/",
-      "date": "2026-06-05"
+      "title": "心慌",
+      "url": "https://www.leitao.cn/10266.html",
+      "date": "2026-06-06"
     }
   ],
   "2013": [
     {
       "name": "林羽凡",
       "year": "13",
-      "title": "简单总结：给“林羽凡笔记”Agent增加了“记账”相关功能，增加了发邮件",
-      "url": "https://www.linyufan.com/post/5839",
-      "date": "2026-06-05"
+      "title": "简单总结：接入了阿里云的“读光”OCR识别票据，鸿蒙app显示markdown内容",
+      "url": "https://www.linyufan.com/post/5838",
+      "date": "2026-06-06"
     }
   ],
   "2015": [
@@ -94,19 +92,31 @@ const latestArticlesByYear = {
   ],
   "2017": [
     {
+      "name": "zj",
+      "year": "17",
+      "title": "自己做饭",
+      "url": "http://www.zjhuiwan.cn/info/20260606/5212122510171204.html",
+      "date": "2026-06-06"
+    },
+    {
+      "name": "秋风于渭水",
+      "year": "17",
+      "title": "WordPress 又出上古Bug？你的 Feed 订阅源里面居然藏着一个博彩网站？！",
+      "url": "https://www.tjsky.net/tutorial/1633",
+      "date": "2026-06-06"
+    },
+    {
+      "name": "SimonAKing",
+      "year": "17",
+      "title": "全体进化：SkillOpt 赢麻了 与 营销号的狂欢",
+      "url": "https://simonaking.com/blog/skillopt-evolution/",
+      "date": "2026-06-06"
+    },
+    {
       "name": "串串狗小刊",
       "year": "17",
       "title": "关键词评估和 reddit、HN、product hurt 起号运营小妙招！",
       "url": "https://www.ccgxk.com/codeother/769.html",
-      "date": "2026-06-05"
-    }
-  ],
-  "2019": [
-    {
-      "name": "herman",
-      "year": "19",
-      "title": "The Giant's Cup",
-      "url": "https://herman.bearblog.dev/the-giants-cup/",
       "date": "2026-06-05"
     }
   ],
@@ -117,12 +127,14 @@ const latestArticlesByYear = {
       "title": "正確的廢話",
       "url": "https://blog.giveanornot.com/technically-correct-bullshit/",
       "date": "2026-06-05"
-    },
+    }
+  ],
+  "2021": [
     {
-      "name": "优世界",
-      "year": "20",
-      "title": "分享一个一直自用的博客评论自动填充脚本",
-      "url": "https://usj.cc/202606051411.html",
+      "name": "DevNow",
+      "year": "21",
+      "title": "Product Hunt 每日热榜 | 2026-06-05",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-06-05",
       "date": "2026-06-05"
     }
   ],
@@ -130,9 +142,9 @@ const latestArticlesByYear = {
     {
       "name": "鹿泽",
       "year": "23",
-      "title": "为什么SaaS公司开始转向专业SEO代理机构",
-      "url": "https://www.bailuze.com/24119.html",
-      "date": "2026-06-05"
+      "title": "AI搜索如何改变小型企业的本地SEO优化",
+      "url": "https://www.bailuze.com/24123.html",
+      "date": "2026-06-06"
     },
     {
       "name": "宗宗酱",
@@ -140,40 +152,22 @@ const latestArticlesByYear = {
       "title": "你的RSS订阅源有跳菠菜的风险",
       "url": "https://ygz.ink/archives/5167.html",
       "date": "2026-06-05"
-    },
-    {
-      "name": "火米",
-      "year": "23",
-      "title": "面对 ai 的语音输入，不需要精确",
-      "url": "https://huo.me/input/",
-      "date": "2026-06-05"
-    }
-  ],
-  "2024": [
-    {
-      "name": "团团生活志",
-      "year": "24",
-      "title": "iphone17ProMax和Macmini4初体验",
-      "url": "https://t-t.live/archives/WhZQ281H",
-      "date": "2026-06-05"
-    }
-  ],
-  "2025": [
-    {
-      "name": "青萍",
-      "year": "25",
-      "title": "用 Hermes 打造 LLM Wiki 知识库：Karpathy 方法实战指南",
-      "url": "https://blog.lusyoe.com/article/hermes-llm-wiki-guide",
-      "date": "2026-06-05"
     }
   ],
   "2026": [
     {
-      "name": "华立",
+      "name": "周阿源",
       "year": "26",
-      "title": "墨迹博客(InkBlog) v1.26.6.03 to v1.26.6.05 升级指南",
-      "url": "https://www.renhuali.cn/journal/cmq08m3c10001chn9yutw0lis",
-      "date": "2026-06-05"
+      "title": "六六顺遂，恰逢周六",
+      "url": "https://zhouayuan.com/post/49.html",
+      "date": "2026-06-06"
+    },
+    {
+      "name": "寻生纪",
+      "year": "26",
+      "title": "浙江有礼·台州有请",
+      "url": "https://www.iseeklife.com/archives/1494",
+      "date": "2026-06-06"
     }
   ]
 };
