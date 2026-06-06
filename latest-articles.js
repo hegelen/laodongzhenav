@@ -1,38 +1,40 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/6/2026, 1:58:47 PM
+// 抓取日期: 6/6/2026, 8:19:25 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
-  "2002": [
+  "2000": [
     {
-      "name": "seth",
-      "year": "02",
-      "title": "Real artists…",
-      "url": "https://seths.blog/2026/06/real-artists/",
+      "name": "Luca",
+      "year": "00",
+      "title": "鼓起勇气看全英话剧",
+      "url": "https://wlj.me/notes/sp-note-20260607-022714/",
       "date": "2026-06-06"
     }
   ],
   "2004": [
-    {
-      "name": "竹炉山房",
-      "year": "04",
-      "title": "跑路+1",
-      "url": "https://synyan.cn/t/62443",
-      "date": "2026-06-05"
-    },
     {
       "name": "龙哥",
       "year": "04",
       "title": "宝塔面板去除强制绑定宝塔官网账号",
       "url": "https://long.ge/18068.html",
       "date": "2026-06-06"
+    }
+  ],
+  "2008": [
+    {
+      "name": "杜郎俊赏",
+      "year": "08",
+      "title": "我不怀念天涯",
+      "url": "https://dujun.io/f6c2bff5-b5f7-57f6-a33b-6ac61f457ffb.html",
+      "date": "2026-06-06"
     },
     {
-      "name": "我的天",
-      "year": "04",
-      "title": "维修工具准备到位",
-      "url": "http://www.xlanda.net/posts/22243",
+      "name": "军",
+      "year": "08",
+      "title": "有点好奇宋朝的高考",
+      "url": "https://me.xu19.com/imperial-examination-in-the-song-dynasty/",
       "date": "2026-06-06"
     }
   ],
@@ -55,13 +57,6 @@ const latestArticlesByYear = {
     }
   ],
   "2012": [
-    {
-      "name": "水拍石",
-      "year": "12",
-      "title": "心慌",
-      "url": "https://www.leitao.cn/10266.html",
-      "date": "2026-06-06"
-    },
     {
       "name": "MacTalk-池建强的随想录",
       "year": "12",
@@ -90,10 +85,10 @@ const latestArticlesByYear = {
   ],
   "2017": [
     {
-      "name": "秋风于渭水",
+      "name": "SimonAKing",
       "year": "17",
-      "title": "WordPress 又出上古Bug？你的 Feed 订阅源里面居然藏着一个博彩网站？！",
-      "url": "https://www.tjsky.net/tutorial/1633",
+      "title": "全体进化：SkillOpt 赢麻了 与 营销号的狂欢",
+      "url": "https://simonaking.com/blog/skillopt-evolution/",
       "date": "2026-06-06"
     },
     {
@@ -104,10 +99,26 @@ const latestArticlesByYear = {
       "date": "2026-06-06"
     },
     {
-      "name": "SimonAKing",
+      "name": "串串狗小刊",
       "year": "17",
-      "title": "全体进化：SkillOpt 赢麻了 与 营销号的狂欢",
-      "url": "https://simonaking.com/blog/skillopt-evolution/",
+      "title": "三个最近做 SaaS 的 JS 小技巧",
+      "url": "https://www.ccgxk.com/front-end/770.html",
+      "date": "2026-06-06"
+    }
+  ],
+  "2019": [
+    {
+      "name": "浪浪山下那个村",
+      "year": "19",
+      "title": "NVIDIA-OpenCode-免费模型使用指南",
+      "url": "https://www.zeekling.cn/articles/2026/06/06/1780760812734.html",
+      "date": "2026-06-06"
+    },
+    {
+      "name": "沧海月明",
+      "year": "19",
+      "title": "AI 的焦虑",
+      "url": "https://www.inlighting.org/archives/ai-anxiety",
       "date": "2026-06-06"
     }
   ],
@@ -129,22 +140,20 @@ const latestArticlesByYear = {
       "date": "2026-06-06"
     }
   ],
-  "2023": [
-    {
-      "name": "鹿泽",
-      "year": "23",
-      "title": "AI搜索如何改变小型企业的本地SEO优化",
-      "url": "https://www.bailuze.com/24123.html",
-      "date": "2026-06-06"
-    }
-  ],
   "2024": [
+    {
+      "name": "Chongxi",
+      "year": "24",
+      "title": "母语级英语的本质，不是英语",
+      "url": "https://xice.cx/posts/English/",
+      "date": "2026-06-06"
+    },
     {
       "name": "团团生活志",
       "year": "24",
-      "title": "iphone17ProMax和Macmini4初体验",
-      "url": "https://t-t.live/archives/WhZQ281H",
-      "date": "2026-06-05"
+      "title": "各大AI使用感受",
+      "url": "https://t-t.live/archives/DoLWW2Jo",
+      "date": "2026-06-06"
     }
   ],
   "2025": [
@@ -157,13 +166,6 @@ const latestArticlesByYear = {
     }
   ],
   "2026": [
-    {
-      "name": "周阿源",
-      "year": "26",
-      "title": "六六顺遂，恰逢周六",
-      "url": "https://zhouayuan.com/post/49.html",
-      "date": "2026-06-06"
-    },
     {
       "name": "寻生纪",
       "year": "26",
