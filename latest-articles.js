@@ -1,18 +1,9 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/6/2026, 10:25:45 AM
+// 抓取日期: 6/6/2026, 1:58:47 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
-  "2000": [
-    {
-      "name": "Luca",
-      "year": "00",
-      "title": "长途飞行才想起来登网",
-      "url": "https://wlj.me/notes/sp-note-20260605-214143/",
-      "date": "2026-06-05"
-    }
-  ],
   "2002": [
     {
       "name": "seth",
@@ -31,27 +22,18 @@ const latestArticlesByYear = {
       "date": "2026-06-05"
     },
     {
-      "name": "我的天",
-      "year": "04",
-      "title": "维修工具准备到位",
-      "url": "http://www.xlanda.net/posts/22243",
-      "date": "2026-06-06"
-    },
-    {
       "name": "龙哥",
       "year": "04",
       "title": "宝塔面板去除强制绑定宝塔官网账号",
       "url": "https://long.ge/18068.html",
       "date": "2026-06-06"
-    }
-  ],
-  "2009": [
+    },
     {
-      "name": "多多",
-      "year": "09",
-      "title": "Git 无法连接到你本地 127.0.0.1:xxxx 这个地址处理办法",
-      "url": "https://ddlog.cn/?p=536",
-      "date": "2026-06-05"
+      "name": "我的天",
+      "year": "04",
+      "title": "维修工具准备到位",
+      "url": "http://www.xlanda.net/posts/22243",
+      "date": "2026-06-06"
     }
   ],
   "2010": [
@@ -63,12 +45,28 @@ const latestArticlesByYear = {
       "date": "2026-06-06"
     }
   ],
+  "2011": [
+    {
+      "name": "君子不器",
+      "year": "11",
+      "title": "2026年5月：不远行的假期，与一次告别",
+      "url": "https://www.colinjiang.com/archives/may-holiday-and-farewell.html",
+      "date": "2026-06-06"
+    }
+  ],
   "2012": [
     {
       "name": "水拍石",
       "year": "12",
       "title": "心慌",
       "url": "https://www.leitao.cn/10266.html",
+      "date": "2026-06-06"
+    },
+    {
+      "name": "MacTalk-池建强的随想录",
+      "year": "12",
+      "title": "谁说 ChatGTP 和 Codex 合体了？",
+      "url": "https://macshuo.com/?p=2063",
       "date": "2026-06-06"
     }
   ],
@@ -92,17 +90,17 @@ const latestArticlesByYear = {
   ],
   "2017": [
     {
-      "name": "zj",
-      "year": "17",
-      "title": "自己做饭",
-      "url": "http://www.zjhuiwan.cn/info/20260606/5212122510171204.html",
-      "date": "2026-06-06"
-    },
-    {
       "name": "秋风于渭水",
       "year": "17",
       "title": "WordPress 又出上古Bug？你的 Feed 订阅源里面居然藏着一个博彩网站？！",
       "url": "https://www.tjsky.net/tutorial/1633",
+      "date": "2026-06-06"
+    },
+    {
+      "name": "zj",
+      "year": "17",
+      "title": "自己做饭",
+      "url": "http://www.zjhuiwan.cn/info/20260606/5212122510171204.html",
       "date": "2026-06-06"
     },
     {
@@ -111,31 +109,24 @@ const latestArticlesByYear = {
       "title": "全体进化：SkillOpt 赢麻了 与 营销号的狂欢",
       "url": "https://simonaking.com/blog/skillopt-evolution/",
       "date": "2026-06-06"
-    },
-    {
-      "name": "串串狗小刊",
-      "year": "17",
-      "title": "关键词评估和 reddit、HN、product hurt 起号运营小妙招！",
-      "url": "https://www.ccgxk.com/codeother/769.html",
-      "date": "2026-06-05"
-    }
-  ],
-  "2020": [
-    {
-      "name": "資工小廢物 - JN",
-      "year": "20",
-      "title": "正確的廢話",
-      "url": "https://blog.giveanornot.com/technically-correct-bullshit/",
-      "date": "2026-06-05"
     }
   ],
   "2021": [
     {
       "name": "DevNow",
       "year": "21",
-      "title": "Product Hunt 每日热榜 | 2026-06-05",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-06-05",
-      "date": "2026-06-05"
+      "title": "Product Hunt 每日热榜 | 2026-06-06",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-06-06",
+      "date": "2026-06-06"
+    }
+  ],
+  "2022": [
+    {
+      "name": "晴雀堂",
+      "year": "22",
+      "title": "明天高考了",
+      "url": "https://blog.verynb.net/posts/8485.html",
+      "date": "2026-06-06"
     }
   ],
   "2023": [
@@ -145,13 +136,24 @@ const latestArticlesByYear = {
       "title": "AI搜索如何改变小型企业的本地SEO优化",
       "url": "https://www.bailuze.com/24123.html",
       "date": "2026-06-06"
-    },
+    }
+  ],
+  "2024": [
     {
-      "name": "宗宗酱",
-      "year": "23",
-      "title": "你的RSS订阅源有跳菠菜的风险",
-      "url": "https://ygz.ink/archives/5167.html",
+      "name": "团团生活志",
+      "year": "24",
+      "title": "iphone17ProMax和Macmini4初体验",
+      "url": "https://t-t.live/archives/WhZQ281H",
       "date": "2026-06-05"
+    }
+  ],
+  "2025": [
+    {
+      "name": "青萍",
+      "year": "25",
+      "title": "2026精选5款热门AI配音软件",
+      "url": "https://blog.lusyoe.com/article/2026-top-5-ai-voice-tools",
+      "date": "2026-06-06"
     }
   ],
   "2026": [
