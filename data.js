@@ -142,7 +142,7 @@ const forumData = {
 // ==================== 博客大全导航数据  , {name:'', url:''}  ====================
 const blogNavData = {
     '06': [{name:'博客志-网址打不开', url:'http://www.jetli.com.cn/'}],
-	'09': [{name:'松松博客大全', url:'https://daohang.lusongsong.com/webdir.html'}],
+	'09': [{name:'松松博客大全', url:'https://daohang.lusongsong.com/webdir.html'} , {name:'nownownow', url:'https://nownownow.com/'}],
     '14': [{name:'rssblog', url:'https://rssblog.imcbc.cn/member/'}, {name:'feedspot-bloggers', url:'https://bloggers.feedspot.com/'}],
     '16': [{name:'个站商店', url:'https://storeweb.cn/'}],
     '17': [{name:'十年之约', url:'https://www.foreverblog.cn/'}, {name:'jekyll wiki', url:'https://github.com/jekyll/jekyll/wiki/Sites'} ],
