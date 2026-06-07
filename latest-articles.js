@@ -1,37 +1,44 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/7/2026, 4:26:29 AM
+// 抓取日期: 6/7/2026, 8:59:33 AM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
-  "2002": [
+  "2000": [
     {
-      "name": "seth",
-      "year": "02",
-      "title": "Real artists…",
-      "url": "https://seths.blog/2026/06/real-artists/",
-      "date": "2026-06-06"
+      "name": "Luca",
+      "year": "00",
+      "title": "点拿铁被误听成茶",
+      "url": "https://wlj.me/notes/sp-note-20260607-142937/",
+      "date": "2026-06-07"
+    }
+  ],
+  "2004": [
+    {
+      "name": "我的天",
+      "year": "04",
+      "title": "迷你电脑电源适配器没事",
+      "url": "http://www.xlanda.net/posts/22245",
+      "date": "2026-06-07"
     }
   ],
   "2005": [
     {
-      "name": "yaner",
+      "name": "Gea-Suan Lin",
       "year": "05",
-      "title": "wordpress数据导入blogger",
-      "url": "https://yaner.cc/689.html",
-      "date": "2026-06-07"
-    }
-  ],
-  "2006": [
-    {
-      "name": "黄杰敏",
-      "year": "06",
-      "title": "高考二十载感怀",
-      "url": "https://www.jiemin.com/archives/1830.html",
-      "date": "2026-06-07"
+      "title": "VoidZero 加入 Cloudflare",
+      "url": "https://blog.gslin.org/archives/2026/06/07/13061/voidzero-%e5%8a%a0%e5%85%a5-cloudflare/",
+      "date": "2026-06-06"
     }
   ],
   "2008": [
+    {
+      "name": "军",
+      "year": "08",
+      "title": "有点好奇宋朝的高考",
+      "url": "https://me.xu19.com/imperial-examination-in-the-song-dynasty/",
+      "date": "2026-06-06"
+    },
     {
       "name": "杜郎俊赏",
       "year": "08",
@@ -81,36 +88,31 @@ const latestArticlesByYear = {
       "title": "自己做饭",
       "url": "http://www.zjhuiwan.cn/info/20260606/5212122510171204.html",
       "date": "2026-06-06"
-    },
-    {
-      "name": "SimonAKing",
-      "year": "17",
-      "title": "全体进化：SkillOpt 赢麻了 与 营销号的狂欢",
-      "url": "https://simonaking.com/blog/skillopt-evolution/",
-      "date": "2026-06-06"
     }
   ],
   "2019": [
     {
-      "name": "沧海月明",
+      "name": "奶爸建站笔记",
       "year": "19",
-      "title": "AI 的焦虑",
-      "url": "https://www.inlighting.org/archives/ai-anxiety",
-      "date": "2026-06-06"
+      "title": "AI建站真的比WordPress好吗？我用Claude、DeepSeek、Codex实测后的结论",
+      "url": "https://blog.naibabiji.com/skill/wordpress-vs-ai.html",
+      "date": "2026-06-07"
+    }
+  ],
+  "2020": [
+    {
+      "name": "vinchent",
+      "year": "20",
+      "title": "2026全国I卷作文",
+      "url": "https://www.vinchent.xyz/2026quan-guo-ijuan-zuo-wen",
+      "date": "2026-06-07"
     },
     {
-      "name": "So!azy",
-      "year": "19",
-      "title": "不抽烟，不喝酒",
-      "url": "https://blog.solazy.me/20260606/",
-      "date": "2026-06-06"
-    },
-    {
-      "name": "浪浪山下那个村",
-      "year": "19",
-      "title": "NVIDIA-OpenCode-免费模型使用指南",
-      "url": "https://www.zeekling.cn/articles/2026/06/06/1780760812734.html",
-      "date": "2026-06-06"
+      "name": "初然忆",
+      "year": "20",
+      "title": "评论系统切换到Twikoo",
+      "url": "https://www.imcry.vip/post/2026-6-7-1409/",
+      "date": "2026-06-07"
     }
   ],
   "2021": [
@@ -120,13 +122,6 @@ const latestArticlesByYear = {
       "title": "牙齿治疗决策，还是想保住这颗牙",
       "url": "https://9sb.net/archives/dental-treatment-decision-do-you-still-want-to-preserve-this-tooth.html",
       "date": "2026-06-07"
-    },
-    {
-      "name": "DevNow",
-      "year": "21",
-      "title": "Product Hunt 每日热榜 | 2026-06-06",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-06-06",
-      "date": "2026-06-06"
     }
   ],
   "2024": [
@@ -145,6 +140,13 @@ const latestArticlesByYear = {
       "date": "2026-06-06"
     },
     {
+      "name": "爱吃猫的鱼",
+      "year": "24",
+      "title": "当身体被强制暂停",
+      "url": "https://blog.talen.top/posts/xxakfase",
+      "date": "2026-06-06"
+    },
+    {
       "name": "Chongxi",
       "year": "24",
       "title": "母语级英语的本质，不是英语",
@@ -152,21 +154,19 @@ const latestArticlesByYear = {
       "date": "2026-06-06"
     }
   ],
-  "2025": [
-    {
-      "name": "青萍",
-      "year": "25",
-      "title": "2026精选5款热门AI配音软件",
-      "url": "https://blog.lusyoe.com/article/2026-top-5-ai-voice-tools",
-      "date": "2026-06-06"
-    }
-  ],
   "2026": [
     {
-      "name": "周阿源",
+      "name": "妄司逸",
       "year": "26",
-      "title": "又是一年高考时｜愿你提笔从容，落笔无悔",
-      "url": "https://zhouayuan.com/post/50.html",
+      "title": "自建图床服务",
+      "url": "https://blog.flechazo.icu/2026/06/07/imghub/",
+      "date": "2026-06-07"
+    },
+    {
+      "name": "安迪",
+      "year": "26",
+      "title": "卸载搜狗输入法",
+      "url": "https://i55.top/archives/532/",
       "date": "2026-06-07"
     }
   ]
