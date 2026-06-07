@@ -184,7 +184,8 @@ const blogProgramData = {
     '06': [{name:'typecho', url:'https://typecho.org/'}],
     '14': [{name:'TaoBlog', url:'https://blog.twofei.com/blog'}],
     '21': [{name:'清雨', url:'https://prain.cn/'}],
-    '25': [{name:'serenade', url:'https://dyedd.cn/posts/serenade'}]
+    '25': [{name:'serenade', url:'https://dyedd.cn/posts/serenade'}],
+	  '26': [{name:'MYBLOG博客网站项目', url:'https://github.com/DCSCDF'}]
 };
 
 // ==================== AI导航数据 ====================
