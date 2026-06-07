@@ -185,10 +185,10 @@ const blogProgramData = {
     '14': [{name:'TaoBlog', url:'https://blog.twofei.com/blog'}],
     '21': [{name:'清雨', url:'https://prain.cn/'}],
     '25': [{name:'serenade', url:'https://dyedd.cn/posts/serenade'}],
-	  '26': [{name:'MYBLOG博客网站项目', url:'https://github.com/DCSCDF'}]
+	  '26': [{name:'MYBLOG博客网站项目', url:'https://github.com/DCSCDF'}  , {name:'FlecBlog', url:'https://github.com/talen8/FlecBlog'} ]
 };
 
-// ==================== AI导航数据 ====================
+// ==================== AI导航数据                   , {name:'', url:''}       ====================
 const aiNavData = {
     '21': [{name:'AInav人工智能导航', url:'https://www.ainav.cn/'}],
     '23': [{name:'深度AI导航', url:'https://www.deepdhai.com/'}, {name:'2345ai导航', url:'https://ai.2345.com/'}, {name:'tools-ai', url:'https://www.tools-ai.cn/'}, {name:'aibase', url:'https://top.aibase.com/'}, {name:'xiaobiuAI导航', url:'https://www.xiaobiu.cn/'}, {name:'非猪ai导航', url:'https://feizhuke.com/'}, {name:'aitobox', url:'https://aitobox.cn/nav/'}, {name:'AI技术导航', url:'https://www.codernav.cn/ai'}, {name:'aitoolbox', url:'https://aitoolbox.cn/'}, {name:'ai-toolbox net', url:'https://www.ai-toolbox.net/'}, {name:'零沫AI', url:'https://0mo.com/'}, {name:'ailookme', url:'https://www.ailookme.com/'}, {name:'ainavpro', url:'https://www.ainavpro.com/'}, {name:'易之网AI', url:'https://www.yizz.cn/'}, {name:'ai138', url:'https://www.ai138.com/'}],
