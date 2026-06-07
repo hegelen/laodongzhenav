@@ -164,7 +164,7 @@ const blogNavData = {
     '25': [ {name:'博客联盟', url:'https://www.bokelianmeng.com/'}, {name:'博客星球', url:'https://blogplanet.cn/'}, {name:'博客集', url:'https://bloginc.cn/'}, {name:'博客小镇', url:'https://blog.town/'}, {name:'hot166博客导航', url:'https://hot166.com/blogger'}, {name:'无聊湾', url:'https://boringbay.com/'}, {name:'博客名录', url:'https://blog.tz1989.net/'}, {name:'BOZHU.LINK', url:'https://blogger.toocool.cc/'}, {name:'朋.友', url:'https://peng.you/'},{name:'博客圈论坛', url:'https://bkq.net.cn/'},{name:'博客中心', url:'https://bokehub.com/home'},{name:'Wiwi.Blog 的部落卷', url:'https://wiwi.blog/blogroll'},{name:'部落卷卷', url:'https://blogblog.club/blogrollroll'},{name:'BlogRoll-notion', url:'https://blogroll.notion.site/'}, {name:'博客之家', url:'https://www.perass.com/'}, {name:'时光链', url:'http://www.leow.cn/link/'}, {name:'BlogDo博客导航大全', url:'https://www.blog.do/'} , {name:'博客星球', url:'https://www.blogplanet.cn/'}  , {name:'xinaliu博客导航', url:'http://www.xinaliu.com/'}   ],
   	// ==================== 复制方便    , {name:'', url:''}   ====================
 
-  '26': [{name:'若梦博客', url:'http://www.rmbk.cc/'}, {name:'有个站', url:'https://www.ygz.ink/'}, {name:'大佬论坛摸鱼', url:'https://www.dalao.net/index-1-2.htm'}, {name:'好站网', url:'https://haozhan.wang/'} , {name:'壹個博客', url:'https://oneblog.net/'}  , {name:'博客圈子', url:'https://bkqz.cn/'}  , {name:'聚合文摘', url:'http://maorongwanju.cn/'}     ]
+  '26': [{name:'若梦博客', url:'http://www.rmbk.cc/'}, {name:'有个站', url:'https://www.ygz.ink/'}, {name:'大佬论坛摸鱼', url:'https://www.dalao.net/index-1-2.htm'}, {name:'好站网', url:'https://haozhan.wang/'}  , {name:'博客圈子', url:'https://bkqz.cn/'}  , {name:'聚合文摘', url:'http://maorongwanju.cn/'}     ]
 };
 
 // ==================== 随机访问博客数据    , {name:'', url:''}   ====================
