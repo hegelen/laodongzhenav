@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/6/2026, 8:19:25 PM
+// 抓取日期: 6/7/2026, 1:08:28 AM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -13,6 +13,15 @@ const latestArticlesByYear = {
       "date": "2026-06-06"
     }
   ],
+  "2002": [
+    {
+      "name": "seth",
+      "year": "02",
+      "title": "Real artists…",
+      "url": "https://seths.blog/2026/06/real-artists/",
+      "date": "2026-06-06"
+    }
+  ],
   "2004": [
     {
       "name": "龙哥",
@@ -20,30 +29,46 @@ const latestArticlesByYear = {
       "title": "宝塔面板去除强制绑定宝塔官网账号",
       "url": "https://long.ge/18068.html",
       "date": "2026-06-06"
+    },
+    {
+      "name": "我的天",
+      "year": "04",
+      "title": "迷你电脑电源适配器没事",
+      "url": "http://www.xlanda.net/posts/22245",
+      "date": "2026-06-07"
+    }
+  ],
+  "2005": [
+    {
+      "name": "Gea-Suan Lin",
+      "year": "05",
+      "title": "VoidZero 加入 Cloudflare",
+      "url": "https://blog.gslin.org/archives/2026/06/07/13061/voidzero-%e5%8a%a0%e5%85%a5-cloudflare/",
+      "date": "2026-06-06"
+    }
+  ],
+  "2006": [
+    {
+      "name": "黄杰敏",
+      "year": "06",
+      "title": "高考二十载感怀",
+      "url": "https://www.jiemin.com/archives/1830.html",
+      "date": "2026-06-07"
     }
   ],
   "2008": [
-    {
-      "name": "杜郎俊赏",
-      "year": "08",
-      "title": "我不怀念天涯",
-      "url": "https://dujun.io/f6c2bff5-b5f7-57f6-a33b-6ac61f457ffb.html",
-      "date": "2026-06-06"
-    },
     {
       "name": "军",
       "year": "08",
       "title": "有点好奇宋朝的高考",
       "url": "https://me.xu19.com/imperial-examination-in-the-song-dynasty/",
       "date": "2026-06-06"
-    }
-  ],
-  "2010": [
+    },
     {
-      "name": "忆往事",
-      "year": "10",
-      "title": "小黄狗",
-      "url": "https://zhou.ge/2026-06-06.html",
+      "name": "杜郎俊赏",
+      "year": "08",
+      "title": "我不怀念天涯",
+      "url": "https://dujun.io/f6c2bff5-b5f7-57f6-a33b-6ac61f457ffb.html",
       "date": "2026-06-06"
     }
   ],
@@ -58,10 +83,10 @@ const latestArticlesByYear = {
   ],
   "2012": [
     {
-      "name": "MacTalk-池建强的随想录",
+      "name": "水拍石",
       "year": "12",
-      "title": "谁说 ChatGTP 和 Codex 合体了？",
-      "url": "https://macshuo.com/?p=2063",
+      "title": "心慌",
+      "url": "https://www.leitao.cn/10266.html",
       "date": "2026-06-06"
     }
   ],
@@ -74,35 +99,12 @@ const latestArticlesByYear = {
       "date": "2026-06-06"
     }
   ],
-  "2015": [
-    {
-      "name": "WordPress 知识宝库",
-      "year": "15",
-      "title": "워드프레스 Kirki 플러그인 보안 경고: 인증 없이 권한 상승 가능한 치명적 취약점 발견",
-      "url": "https://www.thewordcracker.com/basic/%ec%9b%8c%eb%93%9c%ed%94%84%eb%a0%88%ec%8a%a4-kirki-%ed%94%8c%eb%9f%ac%ea%b7%b8%ec%9d%b8-%eb%b3%b4%ec%95%88-%ea%b2%bd%ea%b3%a0/",
-      "date": "2026-06-05"
-    }
-  ],
   "2017": [
     {
-      "name": "SimonAKing",
+      "name": "秋风于渭水",
       "year": "17",
-      "title": "全体进化：SkillOpt 赢麻了 与 营销号的狂欢",
-      "url": "https://simonaking.com/blog/skillopt-evolution/",
-      "date": "2026-06-06"
-    },
-    {
-      "name": "zj",
-      "year": "17",
-      "title": "自己做饭",
-      "url": "http://www.zjhuiwan.cn/info/20260606/5212122510171204.html",
-      "date": "2026-06-06"
-    },
-    {
-      "name": "串串狗小刊",
-      "year": "17",
-      "title": "三个最近做 SaaS 的 JS 小技巧",
-      "url": "https://www.ccgxk.com/front-end/770.html",
+      "title": "WordPress 又出上古Bug？你的 Feed 订阅源里面居然藏着一个博彩网站？！",
+      "url": "https://www.tjsky.net/tutorial/1633",
       "date": "2026-06-06"
     }
   ],
@@ -112,13 +114,6 @@ const latestArticlesByYear = {
       "year": "19",
       "title": "NVIDIA-OpenCode-免费模型使用指南",
       "url": "https://www.zeekling.cn/articles/2026/06/06/1780760812734.html",
-      "date": "2026-06-06"
-    },
-    {
-      "name": "沧海月明",
-      "year": "19",
-      "title": "AI 的焦虑",
-      "url": "https://www.inlighting.org/archives/ai-anxiety",
       "date": "2026-06-06"
     }
   ],
@@ -166,6 +161,13 @@ const latestArticlesByYear = {
     }
   ],
   "2026": [
+    {
+      "name": "周阿源",
+      "year": "26",
+      "title": "六六顺遂，恰逢周六",
+      "url": "https://zhouayuan.com/post/49.html",
+      "date": "2026-06-06"
+    },
     {
       "name": "寻生纪",
       "year": "26",
