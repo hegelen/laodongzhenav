@@ -339,8 +339,8 @@ const SearchEngineData = {
 	'03': [{name:'百度高级搜索', url:'https://www.baidu.com/gaoji/advanced.html'}],
 	'07': [{name:'搜狗高级搜搜', url:'https://www.sogou.com/advanced/advanced.html'}],
     '09': [{name:'bing', url:'https://www.bing.com/'}],
-	 '12': [{name:'360搜索', url:'https://www.so.com/'}],
-	  '17': [{name:'wiby', url:'https://wiby.me/' desc:'旧个人主页搜索' }],
+	'12': [{name:'360搜索', url:'https://www.so.com/'}],
+	'17': [{name:'wiby', url:'https://wiby.me/, desc:'旧个人主页搜索' }],
     '18': [{name:'kaqi', url:'https://kagi.com/'}],
 	'20': [{name:'百度开发者搜索', url:'https://kaifa.baidu.com/'}],
 	'24': [{name:'丑搜-博客搜索', url:'https://search.save-web.org/'}]
