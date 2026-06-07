@@ -1,18 +1,9 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/7/2026, 1:40:21 AM
+// 抓取日期: 6/7/2026, 4:26:29 AM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
-  "2000": [
-    {
-      "name": "Luca",
-      "year": "00",
-      "title": "鼓起勇气看全英话剧",
-      "url": "https://wlj.me/notes/sp-note-20260607-022714/",
-      "date": "2026-06-06"
-    }
-  ],
   "2002": [
     {
       "name": "seth",
@@ -22,13 +13,13 @@ const latestArticlesByYear = {
       "date": "2026-06-06"
     }
   ],
-  "2004": [
+  "2005": [
     {
-      "name": "龙哥",
-      "year": "04",
-      "title": "宝塔面板去除强制绑定宝塔官网账号",
-      "url": "https://long.ge/18068.html",
-      "date": "2026-06-06"
+      "name": "yaner",
+      "year": "05",
+      "title": "wordpress数据导入blogger",
+      "url": "https://yaner.cc/689.html",
+      "date": "2026-06-07"
     }
   ],
   "2006": [
@@ -42,10 +33,10 @@ const latestArticlesByYear = {
   ],
   "2008": [
     {
-      "name": "军",
+      "name": "杜郎俊赏",
       "year": "08",
-      "title": "有点好奇宋朝的高考",
-      "url": "https://me.xu19.com/imperial-examination-in-the-song-dynasty/",
+      "title": "我不怀念天涯",
+      "url": "https://dujun.io/f6c2bff5-b5f7-57f6-a33b-6ac61f457ffb.html",
       "date": "2026-06-06"
     }
   ],
@@ -67,13 +58,6 @@ const latestArticlesByYear = {
   ],
   "2012": [
     {
-      "name": "水拍石",
-      "year": "12",
-      "title": "心慌",
-      "url": "https://www.leitao.cn/10266.html",
-      "date": "2026-06-06"
-    },
-    {
       "name": "MacTalk-池建强的随想录",
       "year": "12",
       "title": "谁说 ChatGTP 和 Codex 合体了？",
@@ -81,21 +65,16 @@ const latestArticlesByYear = {
       "date": "2026-06-06"
     }
   ],
+  "2016": [
+    {
+      "name": "Keyle",
+      "year": "16",
+      "title": "凌晨一点的键盘声",
+      "url": "https://vrast.cn/posts/17192/",
+      "date": "2026-06-06"
+    }
+  ],
   "2017": [
-    {
-      "name": "秋风于渭水",
-      "year": "17",
-      "title": "WordPress 又出上古Bug？你的 Feed 订阅源里面居然藏着一个博彩网站？！",
-      "url": "https://www.tjsky.net/tutorial/1633",
-      "date": "2026-06-06"
-    },
-    {
-      "name": "串串狗小刊",
-      "year": "17",
-      "title": "三个最近做 SaaS 的 JS 小技巧",
-      "url": "https://www.ccgxk.com/front-end/770.html",
-      "date": "2026-06-06"
-    },
     {
       "name": "zj",
       "year": "17",
@@ -113,30 +92,51 @@ const latestArticlesByYear = {
   ],
   "2019": [
     {
-      "name": "浪浪山下那个村",
-      "year": "19",
-      "title": "NVIDIA-OpenCode-免费模型使用指南",
-      "url": "https://www.zeekling.cn/articles/2026/06/06/1780760812734.html",
-      "date": "2026-06-06"
-    },
-    {
       "name": "沧海月明",
       "year": "19",
       "title": "AI 的焦虑",
       "url": "https://www.inlighting.org/archives/ai-anxiety",
       "date": "2026-06-06"
+    },
+    {
+      "name": "So!azy",
+      "year": "19",
+      "title": "不抽烟，不喝酒",
+      "url": "https://blog.solazy.me/20260606/",
+      "date": "2026-06-06"
+    },
+    {
+      "name": "浪浪山下那个村",
+      "year": "19",
+      "title": "NVIDIA-OpenCode-免费模型使用指南",
+      "url": "https://www.zeekling.cn/articles/2026/06/06/1780760812734.html",
+      "date": "2026-06-06"
     }
   ],
-  "2023": [
+  "2021": [
     {
-      "name": "鹿泽",
-      "year": "23",
-      "title": "AI搜索如何改变小型企业的本地SEO优化",
-      "url": "https://www.bailuze.com/24123.html",
+      "name": "记录生活",
+      "year": "21",
+      "title": "牙齿治疗决策，还是想保住这颗牙",
+      "url": "https://9sb.net/archives/dental-treatment-decision-do-you-still-want-to-preserve-this-tooth.html",
+      "date": "2026-06-07"
+    },
+    {
+      "name": "DevNow",
+      "year": "21",
+      "title": "Product Hunt 每日热榜 | 2026-06-06",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-06-06",
       "date": "2026-06-06"
     }
   ],
   "2024": [
+    {
+      "name": "团团生活志",
+      "year": "24",
+      "title": "各大AI使用感受",
+      "url": "https://t-t.live/archives/DoLWW2Jo",
+      "date": "2026-06-06"
+    },
     {
       "name": "Chongxi",
       "year": "24",
@@ -145,27 +145,29 @@ const latestArticlesByYear = {
       "date": "2026-06-06"
     },
     {
-      "name": "爱吃猫的鱼",
+      "name": "Chongxi",
       "year": "24",
-      "title": "当身体被强制暂停",
-      "url": "https://blog.talen.top/posts/xxakfase",
+      "title": "母语级英语的本质，不是英语",
+      "url": "https://xice.cx/posts/English/",
+      "date": "2026-06-06"
+    }
+  ],
+  "2025": [
+    {
+      "name": "青萍",
+      "year": "25",
+      "title": "2026精选5款热门AI配音软件",
+      "url": "https://blog.lusyoe.com/article/2026-top-5-ai-voice-tools",
       "date": "2026-06-06"
     }
   ],
   "2026": [
     {
-      "name": "寻生纪",
-      "year": "26",
-      "title": "浙江有礼·台州有请",
-      "url": "https://www.iseeklife.com/archives/1494",
-      "date": "2026-06-06"
-    },
-    {
       "name": "周阿源",
       "year": "26",
-      "title": "六六顺遂，恰逢周六",
-      "url": "https://zhouayuan.com/post/49.html",
-      "date": "2026-06-06"
+      "title": "又是一年高考时｜愿你提笔从容，落笔无悔",
+      "url": "https://zhouayuan.com/post/50.html",
+      "date": "2026-06-07"
     }
   ]
 };
