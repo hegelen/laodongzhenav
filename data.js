@@ -224,7 +224,7 @@ const featuredNavData = {
 
 // ==================== 工具导航数据    , {name:'', url:''}    ====================
 const toolNavData = {
-   
+   '96': [{name:'Internet Archive', url:'https://archive.org/'}],
     '07': [{name:'蛙蛙工具', url:'https://www.iamwawa.cn/'}],
 	  '08': [{name:'github', url:'https://github.com/'}],
 	  '10': [{name:'imgbun文本转图片', url:'https://imgbun.com/'}],
