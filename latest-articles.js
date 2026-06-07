@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/7/2026, 2:59:46 PM
+// 抓取日期: 6/7/2026, 8:21:16 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -22,28 +22,12 @@ const latestArticlesByYear = {
       "date": "2026-06-07"
     }
   ],
-  "2004": [
-    {
-      "name": "我的天",
-      "year": "04",
-      "title": "迷你电脑电源适配器没事",
-      "url": "http://www.xlanda.net/posts/22245",
-      "date": "2026-06-07"
-    }
-  ],
   "2005": [
     {
       "name": "yaner",
       "year": "05",
       "title": "wordpress数据导入blogger",
       "url": "https://yaner.cc/689.html",
-      "date": "2026-06-07"
-    },
-    {
-      "name": "ACEVS",
-      "year": "05",
-      "title": "能上瘾的东西  一般都不是好东西  咖啡  茶  毒品 尤其不是身体自身创造的。",
-      "url": "https://acevs.com/5022/",
       "date": "2026-06-07"
     }
   ],
@@ -53,6 +37,13 @@ const latestArticlesByYear = {
       "year": "06",
       "title": "高考二十载感怀",
       "url": "https://www.jiemin.com/archives/1830.html",
+      "date": "2026-06-07"
+    },
+    {
+      "name": "joojen Zhou",
+      "year": "06",
+      "title": "房子依然是很多人意难平",
+      "url": "https://joojen.com/archives/9012.html",
       "date": "2026-06-07"
     }
   ],
@@ -76,11 +67,20 @@ const latestArticlesByYear = {
   ],
   "2011": [
     {
-      "name": "forecho",
+      "name": "唐巧",
       "year": "11",
-      "title": "大陆用户开美国期货账户，我会先选 AMP Futures",
-      "url": "https://blog.forecho.com/open-us-futures-broker-from-china.html",
-      "date": "2026-06-06"
+      "title": "更换搬瓦工 VPS IP",
+      "url": "https://blog.devtang.com/2026/06/07/change-bandwagon-host-ip/",
+      "date": "2026-06-07"
+    }
+  ],
+  "2013": [
+    {
+      "name": "林羽凡",
+      "year": "13",
+      "title": "我开发多agent的智能体的总结",
+      "url": "https://www.linyufan.com/post/5840",
+      "date": "2026-06-07"
     }
   ],
   "2014": [
@@ -92,28 +92,46 @@ const latestArticlesByYear = {
       "date": "2026-06-07"
     }
   ],
+  "2015": [
+    {
+      "name": "WordPress 知识宝库",
+      "year": "15",
+      "title": "OpenAI 연구원이 밝힌 6년 걸릴 공부 3일 만에 끝내는 법 (탑다운 공부법)",
+      "url": "https://www.thewordcracker.com/blog/ai-%ec%8b%9c%eb%8c%80%ec%9d%98-%ea%b3%b5%eb%b6%80%eb%b2%95/",
+      "date": "2026-06-07"
+    }
+  ],
   "2016": [
     {
-      "name": "Keyle",
+      "name": "太隐",
       "year": "16",
-      "title": "凌晨一点的键盘声",
-      "url": "https://vrast.cn/posts/17192/",
-      "date": "2026-06-06"
+      "title": "空话比废话更有危害 ｜隐说 NO.26",
+      "url": "https://wangyurui.com/posts/kong-hua-bi-fei-hua-geng-you-wei-hai-yin-shuo-no-947bef58",
+      "date": "2026-06-07"
+    }
+  ],
+  "2017": [
+    {
+      "name": "串串狗小刊",
+      "year": "17",
+      "title": "拆解 aidocmaker 这个 SEO 神站，聊聊 Lovart 的交互设计",
+      "url": "https://www.ccgxk.com/codeother/771.html",
+      "date": "2026-06-07"
     }
   ],
   "2019": [
+    {
+      "name": "新世界的大门",
+      "year": "19",
+      "title": "2026-05-31 / 起夜级发行版",
+      "url": "https://blog.xinshijiededa.men/daily/40/",
+      "date": "2026-06-07"
+    },
     {
       "name": "So!azy",
       "year": "19",
       "title": "手生了就要多练",
       "url": "https://blog.solazy.me/20260607/",
-      "date": "2026-06-07"
-    },
-    {
-      "name": "奶爸建站笔记",
-      "year": "19",
-      "title": "AI建站真的比WordPress好吗？我用Claude、DeepSeek、Codex实测后的结论",
-      "url": "https://blog.naibabiji.com/skill/wordpress-vs-ai.html",
       "date": "2026-06-07"
     }
   ],
@@ -124,30 +142,14 @@ const latestArticlesByYear = {
       "title": "2026全国I卷作文",
       "url": "https://www.vinchent.xyz/2026quan-guo-ijuan-zuo-wen",
       "date": "2026-06-07"
-    },
-    {
-      "name": "初然忆",
-      "year": "20",
-      "title": "评论系统切换到Twikoo",
-      "url": "https://www.imcry.vip/post/2026-6-7-1409/",
-      "date": "2026-06-07"
     }
   ],
   "2021": [
     {
-      "name": "DevNow",
+      "name": "喵喵小站・博客志",
       "year": "21",
-      "title": "Product Hunt 每日热榜 | 2026-06-07",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-06-07",
-      "date": "2026-06-07"
-    }
-  ],
-  "2023": [
-    {
-      "name": "宗宗酱",
-      "year": "23",
-      "title": "奶爸的WordPress专用服务器管理面板-WP Panel",
-      "url": "https://ygz.ink/archives/5173.html",
+      "title": "美国大学女生快乐的校园生活，剧情真不错啊",
+      "url": "https://www.mmbkz.cn/370cb772.html",
       "date": "2026-06-07"
     }
   ],
@@ -158,16 +160,16 @@ const latestArticlesByYear = {
       "title": "母语级英语的本质，不是英语",
       "url": "https://xice.cx/posts/English/",
       "date": "2026-06-06"
-    },
-    {
-      "name": "团团生活志",
-      "year": "24",
-      "title": "各大AI使用感受",
-      "url": "https://t-t.live/archives/DoLWW2Jo",
-      "date": "2026-06-06"
     }
   ],
   "2026": [
+    {
+      "name": "安迪",
+      "year": "26",
+      "title": "卸载搜狗输入法",
+      "url": "https://i55.top/archives/532/",
+      "date": "2026-06-07"
+    },
     {
       "name": "妄司逸",
       "year": "26",
