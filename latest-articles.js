@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/7/2026, 1:08:28 AM
+// 抓取日期: 6/7/2026, 1:40:21 AM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -29,22 +29,6 @@ const latestArticlesByYear = {
       "title": "宝塔面板去除强制绑定宝塔官网账号",
       "url": "https://long.ge/18068.html",
       "date": "2026-06-06"
-    },
-    {
-      "name": "我的天",
-      "year": "04",
-      "title": "迷你电脑电源适配器没事",
-      "url": "http://www.xlanda.net/posts/22245",
-      "date": "2026-06-07"
-    }
-  ],
-  "2005": [
-    {
-      "name": "Gea-Suan Lin",
-      "year": "05",
-      "title": "VoidZero 加入 Cloudflare",
-      "url": "https://blog.gslin.org/archives/2026/06/07/13061/voidzero-%e5%8a%a0%e5%85%a5-cloudflare/",
-      "date": "2026-06-06"
     }
   ],
   "2006": [
@@ -63,16 +47,16 @@ const latestArticlesByYear = {
       "title": "有点好奇宋朝的高考",
       "url": "https://me.xu19.com/imperial-examination-in-the-song-dynasty/",
       "date": "2026-06-06"
-    },
-    {
-      "name": "杜郎俊赏",
-      "year": "08",
-      "title": "我不怀念天涯",
-      "url": "https://dujun.io/f6c2bff5-b5f7-57f6-a33b-6ac61f457ffb.html",
-      "date": "2026-06-06"
     }
   ],
   "2011": [
+    {
+      "name": "forecho",
+      "year": "11",
+      "title": "大陆用户开美国期货账户，我会先选 AMP Futures",
+      "url": "https://blog.forecho.com/open-us-futures-broker-from-china.html",
+      "date": "2026-06-06"
+    },
     {
       "name": "君子不器",
       "year": "11",
@@ -88,14 +72,12 @@ const latestArticlesByYear = {
       "title": "心慌",
       "url": "https://www.leitao.cn/10266.html",
       "date": "2026-06-06"
-    }
-  ],
-  "2013": [
+    },
     {
-      "name": "林羽凡",
-      "year": "13",
-      "title": "简单总结：接入了阿里云的“读光”OCR识别票据，鸿蒙app显示markdown内容",
-      "url": "https://www.linyufan.com/post/5838",
+      "name": "MacTalk-池建强的随想录",
+      "year": "12",
+      "title": "谁说 ChatGTP 和 Codex 合体了？",
+      "url": "https://macshuo.com/?p=2063",
       "date": "2026-06-06"
     }
   ],
@@ -106,6 +88,27 @@ const latestArticlesByYear = {
       "title": "WordPress 又出上古Bug？你的 Feed 订阅源里面居然藏着一个博彩网站？！",
       "url": "https://www.tjsky.net/tutorial/1633",
       "date": "2026-06-06"
+    },
+    {
+      "name": "串串狗小刊",
+      "year": "17",
+      "title": "三个最近做 SaaS 的 JS 小技巧",
+      "url": "https://www.ccgxk.com/front-end/770.html",
+      "date": "2026-06-06"
+    },
+    {
+      "name": "zj",
+      "year": "17",
+      "title": "自己做饭",
+      "url": "http://www.zjhuiwan.cn/info/20260606/5212122510171204.html",
+      "date": "2026-06-06"
+    },
+    {
+      "name": "SimonAKing",
+      "year": "17",
+      "title": "全体进化：SkillOpt 赢麻了 与 营销号的狂欢",
+      "url": "https://simonaking.com/blog/skillopt-evolution/",
+      "date": "2026-06-06"
     }
   ],
   "2019": [
@@ -115,23 +118,21 @@ const latestArticlesByYear = {
       "title": "NVIDIA-OpenCode-免费模型使用指南",
       "url": "https://www.zeekling.cn/articles/2026/06/06/1780760812734.html",
       "date": "2026-06-06"
-    }
-  ],
-  "2021": [
+    },
     {
-      "name": "DevNow",
-      "year": "21",
-      "title": "Product Hunt 每日热榜 | 2026-06-06",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-06-06",
+      "name": "沧海月明",
+      "year": "19",
+      "title": "AI 的焦虑",
+      "url": "https://www.inlighting.org/archives/ai-anxiety",
       "date": "2026-06-06"
     }
   ],
-  "2022": [
+  "2023": [
     {
-      "name": "晴雀堂",
-      "year": "22",
-      "title": "明天高考了",
-      "url": "https://blog.verynb.net/posts/8485.html",
+      "name": "鹿泽",
+      "year": "23",
+      "title": "AI搜索如何改变小型企业的本地SEO优化",
+      "url": "https://www.bailuze.com/24123.html",
       "date": "2026-06-06"
     }
   ],
@@ -144,35 +145,26 @@ const latestArticlesByYear = {
       "date": "2026-06-06"
     },
     {
-      "name": "团团生活志",
+      "name": "爱吃猫的鱼",
       "year": "24",
-      "title": "各大AI使用感受",
-      "url": "https://t-t.live/archives/DoLWW2Jo",
-      "date": "2026-06-06"
-    }
-  ],
-  "2025": [
-    {
-      "name": "青萍",
-      "year": "25",
-      "title": "2026精选5款热门AI配音软件",
-      "url": "https://blog.lusyoe.com/article/2026-top-5-ai-voice-tools",
+      "title": "当身体被强制暂停",
+      "url": "https://blog.talen.top/posts/xxakfase",
       "date": "2026-06-06"
     }
   ],
   "2026": [
     {
-      "name": "周阿源",
-      "year": "26",
-      "title": "六六顺遂，恰逢周六",
-      "url": "https://zhouayuan.com/post/49.html",
-      "date": "2026-06-06"
-    },
-    {
       "name": "寻生纪",
       "year": "26",
       "title": "浙江有礼·台州有请",
       "url": "https://www.iseeklife.com/archives/1494",
+      "date": "2026-06-06"
+    },
+    {
+      "name": "周阿源",
+      "year": "26",
+      "title": "六六顺遂，恰逢周六",
+      "url": "https://zhouayuan.com/post/49.html",
       "date": "2026-06-06"
     }
   ]
