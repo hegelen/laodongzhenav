@@ -287,6 +287,7 @@ const officialblogdata = {
 	'17': [{name:'字节跳动技术团队', url:'https://blog.csdn.net/ByteDanceTech'}   , {name:'腾讯技术工程', url:'https://blog.csdn.net/Tencent_TEG'}  , {name:'闲鱼技术', url:'https://blog.csdn.net/weixin_38912070'}  , {name:'饿了么大前端', url:'https://www.zhihu.com/people/elemefe'}   , {name:'uber blog', url:'https://www.uber.com/blog/'}    ],
 	'18': [{name:'小米信息部技术团队', url:'https://xiaomi-info.github.io/'}  , {name:'tensorflow博客', url:'https://blog.tensorflow.org/'}     ],
 	'19': [{name:'滴滴技术', url:'https://blog.csdn.net/DiDi_Tech'} , {name:'IBM开发者博客', url:'https://developer.ibm.com/blogs/'}  , {name:'百度fex', url:'https://fex-team.github.io/'}  , {name:'Microsoft开发者博客', url:'https://devblogs.microsoft.com/'}    ],
+	'20': [{name:'archive-is博客', url:'https://archive-is.tumblr.com/'}],
 	'21': [{name:'cloudflare中文博客', url:'https://blog.cloudflare.com/zh-cn/'}     , {name:'HarmonyOS SDK', url:'https://blog.csdn.net/HUAWEI_HMSCore'}   ],
 
     '22': [{name:'kaqi官方博客', url:'https://blog.kagi.com/'}],
@@ -333,7 +334,7 @@ const pediadata = {
     '18': [{name:'全历史', url:'https://www.allhistory.com/'}]
 };
 
-// ==================== 搜索引擎大全导航 , {name:'', url:''}   ====================
+// ==================== 搜索引擎大全导航 , {name:'', url:''}    , {name:'', url:'', desc:'' }   ====================
 const SearchEngineData = {
 	    '00': [{name:'百度', url:'https://www.baidu.com/'}],
 	'03': [{name:'百度高级搜索', url:'https://www.baidu.com/gaoji/advanced.html'}],
