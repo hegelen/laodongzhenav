@@ -1,43 +1,41 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/7/2026, 8:21:16 PM
+// 抓取日期: 6/8/2026, 1:14:32 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
-  "2000": [
-    {
-      "name": "Luca",
-      "year": "00",
-      "title": "点拿铁被误听成茶",
-      "url": "https://wlj.me/notes/sp-note-20260607-142937/",
-      "date": "2026-06-07"
-    }
-  ],
   "2002": [
     {
       "name": "seth",
       "year": "02",
-      "title": "Marketing clerks",
-      "url": "https://seths.blog/2026/06/marketing-clerks/",
-      "date": "2026-06-07"
+      "title": "Art is a verb",
+      "url": "https://seths.blog/2026/06/art-is-a-verb/",
+      "date": "2026-06-08"
     }
   ],
   "2005": [
     {
-      "name": "yaner",
+      "name": "Gea-Suan Lin",
       "year": "05",
-      "title": "wordpress数据导入blogger",
-      "url": "https://yaner.cc/689.html",
+      "title": "英國的 GOV.UK 將 Stripe 改用荷蘭的 Adyen 付款服務",
+      "url": "https://blog.gslin.org/archives/2026/06/08/13062/%e8%8b%b1%e5%9c%8b%e7%9a%84-gov-uk-%e5%b0%87-stripe-%e6%94%b9%e7%94%a8%e8%8d%b7%e8%98%ad%e7%9a%84-adyen-%e4%bb%98%e6%ac%be%e6%9c%8d%e5%8b%99/",
       "date": "2026-06-07"
+    },
+    {
+      "name": "Lenciel",
+      "year": "05",
+      "title": "马代(2)",
+      "url": "https://lenciel.com/2026/06/maldives-2/",
+      "date": "2026-06-08"
     }
   ],
   "2006": [
     {
-      "name": "黄杰敏",
+      "name": "随风沐虐",
       "year": "06",
-      "title": "高考二十载感怀",
-      "url": "https://www.jiemin.com/archives/1830.html",
-      "date": "2026-06-07"
+      "title": "腾讯云备案信息核查顺利完成",
+      "url": "https://www.munue.com/800.html",
+      "date": "2026-06-08"
     },
     {
       "name": "joojen Zhou",
@@ -47,21 +45,21 @@ const latestArticlesByYear = {
       "date": "2026-06-07"
     }
   ],
+  "2008": [
+    {
+      "name": "生活的左上角",
+      "year": "08",
+      "title": "杂记·雨一直下·2624",
+      "url": "https://bwskyer.com/rain-keeps-falling.html",
+      "date": "2026-06-08"
+    }
+  ],
   "2009": [
     {
       "name": "异数",
       "year": "09",
       "title": "随笔 || AI编程有感",
       "url": "https://www.yishu.pro/221.html",
-      "date": "2026-06-07"
-    }
-  ],
-  "2010": [
-    {
-      "name": "磊磊落落",
-      "year": "10",
-      "title": "為什麼要讀古文？",
-      "url": "https://leileiluoluo.com/posts/du-gu-wen.html",
       "date": "2026-06-07"
     }
   ],
@@ -74,107 +72,105 @@ const latestArticlesByYear = {
       "date": "2026-06-07"
     }
   ],
+  "2012": [
+    {
+      "name": "水拍石",
+      "year": "12",
+      "title": "给wordpress增加Basic Auth密码",
+      "url": "https://www.leitao.cn/10272.html",
+      "date": "2026-06-08"
+    }
+  ],
   "2013": [
     {
       "name": "林羽凡",
       "year": "13",
-      "title": "我开发多agent的智能体的总结",
-      "url": "https://www.linyufan.com/post/5840",
-      "date": "2026-06-07"
+      "title": "我在本地部署了Qwen3.6-35B-A3B和Gemma4 12B，真正意义上的本地大模型",
+      "url": "https://www.linyufan.com/post/5841",
+      "date": "2026-06-08"
     }
   ],
   "2014": [
     {
-      "name": "ying",
+      "name": "卡片创作实验室",
       "year": "14",
-      "title": "《GPT 图解》笔记：Transformer",
-      "url": "https://izualzhy.cn/llm-diagrammatize-transformer",
-      "date": "2026-06-07"
-    }
-  ],
-  "2015": [
-    {
-      "name": "WordPress 知识宝库",
-      "year": "15",
-      "title": "OpenAI 연구원이 밝힌 6년 걸릴 공부 3일 만에 끝내는 법 (탑다운 공부법)",
-      "url": "https://www.thewordcracker.com/blog/ai-%ec%8b%9c%eb%8c%80%ec%9d%98-%ea%b3%b5%eb%b6%80%eb%b2%95/",
-      "date": "2026-06-07"
-    }
-  ],
-  "2016": [
-    {
-      "name": "太隐",
-      "year": "16",
-      "title": "空话比废话更有危害 ｜隐说 NO.26",
-      "url": "https://wangyurui.com/posts/kong-hua-bi-fei-hua-geng-you-wei-hai-yin-shuo-no-947bef58",
+      "title": "普通人的小创造：从解决小我需求开始",
+      "url": "https://cnfeat.com/posts/2026/06/08/%E6%99%AE%E9%80%9A%E4%BA%BA%E7%9A%84%E5%B0%8F%E5%88%9B%E9%80%A0%E4%BB%8E%E8%A7%A3%E5%86%B3%E5%B0%8F%E6%88%91%E9%9C%80%E6%B1%82%E5%BC%80%E5%A7%8B/",
       "date": "2026-06-07"
     }
   ],
   "2017": [
     {
-      "name": "串串狗小刊",
+      "name": "科学空间",
       "year": "17",
-      "title": "拆解 aidocmaker 这个 SEO 神站，聊聊 Lovart 的交互设计",
-      "url": "https://www.ccgxk.com/codeother/771.html",
-      "date": "2026-06-07"
+      "title": "流形上的最速下降：6. Muon + 双旋转",
+      "url": "https://kexue.fm/archives/11777",
+      "date": "2026-06-08"
     }
   ],
   "2019": [
-    {
-      "name": "新世界的大门",
-      "year": "19",
-      "title": "2026-05-31 / 起夜级发行版",
-      "url": "https://blog.xinshijiededa.men/daily/40/",
-      "date": "2026-06-07"
-    },
     {
       "name": "So!azy",
       "year": "19",
       "title": "手生了就要多练",
       "url": "https://blog.solazy.me/20260607/",
       "date": "2026-06-07"
+    },
+    {
+      "name": "浪浪山下那个村",
+      "year": "19",
+      "title": "PuaSE v0.2.4 发布简介：让 AI 编程从\"自由发挥\"到\"流程交付\"",
+      "url": "https://www.zeekling.cn/articles/2026/06/07/1780820406890.html",
+      "date": "2026-06-07"
     }
   ],
   "2020": [
     {
-      "name": "vinchent",
+      "name": "初然忆",
       "year": "20",
-      "title": "2026全国I卷作文",
-      "url": "https://www.vinchent.xyz/2026quan-guo-ijuan-zuo-wen",
+      "title": "阿里云DNS解析的免费套餐要限速？快跑！",
+      "url": "https://www.imcry.vip/post/2026-6-8-400/",
       "date": "2026-06-07"
     }
   ],
   "2021": [
     {
-      "name": "喵喵小站・博客志",
+      "name": "记录生活",
       "year": "21",
-      "title": "美国大学女生快乐的校园生活，剧情真不错啊",
-      "url": "https://www.mmbkz.cn/370cb772.html",
-      "date": "2026-06-07"
+      "title": "留一个烂员工，毁掉整个团队，你怎么看？",
+      "url": "https://9sb.net/archives/what-do-you-think-about-keeping-a-bad-employee-and-destroying-the-entire-team.html",
+      "date": "2026-06-08"
+    },
+    {
+      "name": "DAIDAIFU",
+      "year": "21",
+      "title": "毛囊炎克星——神药推荐",
+      "url": "https://www.ddf.im/index.php/2026/06/08/1257.html",
+      "date": "2026-06-08"
+    },
+    {
+      "name": "DevNow",
+      "year": "21",
+      "title": "Product Hunt 每日热榜 | 2026-06-08",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-06-08",
+      "date": "2026-06-08"
     }
   ],
-  "2024": [
+  "2023": [
     {
-      "name": "Chongxi",
-      "year": "24",
-      "title": "母语级英语的本质，不是英语",
-      "url": "https://xice.cx/posts/English/",
-      "date": "2026-06-06"
+      "name": "鹿泽",
+      "year": "23",
+      "title": "AI时代友好的SEO优化",
+      "url": "https://www.bailuze.com/24126.html",
+      "date": "2026-06-08"
     }
   ],
   "2026": [
     {
-      "name": "安迪",
+      "name": "周阿源",
       "year": "26",
-      "title": "卸载搜狗输入法",
-      "url": "https://i55.top/archives/532/",
-      "date": "2026-06-07"
-    },
-    {
-      "name": "妄司逸",
-      "year": "26",
-      "title": "自建图床服务",
-      "url": "https://blog.flechazo.icu/2026/06/07/imghub/",
+      "title": "小小吃播上线🍜 早餐 Vlog ",
+      "url": "https://zhouayuan.com/post/52.html",
       "date": "2026-06-07"
     }
   ]
