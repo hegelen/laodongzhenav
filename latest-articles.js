@@ -1,43 +1,34 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/9/2026, 7:23:10 AM
-// 只抓取最近14天内的文章，共 18 篇
-// 目标 20 篇，实际 18 篇
+// 抓取日期: 6/9/2026, 9:08:59 PM
+// 只抓取最近14天内的文章，共 20 篇
+// 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
-  "2000": [
-    {
-      "name": "Luca",
-      "year": "00",
-      "title": "BoldVoice：一年 150 美元的口音教练",
-      "url": "https://wlj.me/posts/boldvoice-accent-coach/",
-      "date": "2026-06-08"
-    }
-  ],
   "2002": [
     {
       "name": "seth",
       "year": "02",
-      "title": "Art is a verb",
-      "url": "https://seths.blog/2026/06/art-is-a-verb/",
-      "date": "2026-06-08"
+      "title": "None of it is important (and all of it is)",
+      "url": "https://seths.blog/2026/06/none-of-it-is-important-or-all-of-it-is/",
+      "date": "2026-06-09"
     }
   ],
   "2003": [
     {
-      "name": "王通",
+      "name": "愆伏",
       "year": "03",
-      "title": "王通：AI智能体会增强个人能力100倍",
-      "url": "https://www.ufoer.com/post/13512.html",
+      "title": "第一次去看陶喆演唱会",
+      "url": "https://www.tortorse.com/archives/tao-zhe-soul-power-ii-nanjing-concert/",
       "date": "2026-06-09"
     }
   ],
   "2004": [
     {
-      "name": "delphij",
+      "name": "我的天",
       "year": "04",
-      "title": "如何：不借助第三方服务粗略检测访客是否来自中国大陆",
-      "url": "https://blog.delphij.net/posts/2026/06/detecting-chinese-user/",
-      "date": "2026-06-08"
+      "title": "旧电脑焕发第二春",
+      "url": "http://www.xlanda.net/posts/22249",
+      "date": "2026-06-09"
     }
   ],
   "2005": [
@@ -47,93 +38,114 @@ const latestArticlesByYear = {
       "title": "祸从天降",
       "url": "https://acevs.com/5026/",
       "date": "2026-06-08"
+    },
+    {
+      "name": "Gea-Suan Lin",
+      "year": "05",
+      "title": "RADb 的 routing 資訊",
+      "url": "https://blog.gslin.org/archives/2026/06/10/13065/radb-%e7%9a%84-routing-%e8%b3%87%e8%a8%8a/",
+      "date": "2026-06-09"
     }
   ],
   "2009": [
     {
-      "name": "老张",
+      "name": "老刘",
       "year": "09",
-      "title": "wordpress兰空图床插件V2版",
-      "url": "https://laozhang.org/archives/4070.html",
-      "date": "2026-06-08"
+      "title": "你在陪别人喝酒，我在陪女儿写作业",
+      "url": "https://www.iliu.org/posts/ni-zai-pei-bieren-hejiu/",
+      "date": "2026-06-09"
     }
   ],
-  "2012": [
+  "2010": [
     {
-      "name": "水拍石",
-      "year": "12",
-      "title": "给wordpress增加Basic Auth密码",
-      "url": "https://www.leitao.cn/10272.html",
-      "date": "2026-06-08"
-    }
-  ],
-  "2013": [
-    {
-      "name": "林羽凡",
-      "year": "13",
-      "title": "Ai发展这么迅猛，谁不焦虑？",
-      "url": "https://www.linyufan.com/post/5842",
+      "name": "lilydjwg",
+      "year": "10",
+      "title": "\n        通过字幕总结YouTube视频内容\n      ",
+      "url": "https://blog.lilydjwg.me/posts/217033.html",
       "date": "2026-06-09"
     },
     {
-      "name": "蛋蛋",
-      "year": "13",
-      "title": "Dream2.0 Plus 友链头像 400 错误：双重编码陷阱排查",
-      "url": "https://wuqishi.com/archives/dream2-plus-avatar-double-encoding-fix",
-      "date": "2026-06-08"
+      "name": "Jeray",
+      "year": "10",
+      "title": "夜爬 - 旺山小狗线",
+      "url": "https://hi.jeray.wang/L/219.html",
+      "date": "2026-06-09"
+    }
+  ],
+  "2015": [
+    {
+      "name": "WordPress 知识宝库",
+      "year": "15",
+      "title": "서버 과부하로 인한 워드프레스 ERR_TIMED_OUT 오류 해결",
+      "url": "https://www.thewordcracker.com/basic/%ec%84%9c%eb%b2%84-%ea%b3%bc%eb%b6%80%ed%95%98%eb%a1%9c-%ec%9d%b8%ed%95%9c-%ec%9b%8c%eb%93%9c%ed%94%84%eb%a0%88%ec%8a%a4-err_timed_out-%ec%98%a4%eb%a5%98-%ed%95%b4%ea%b2%b0/",
+      "date": "2026-06-09"
     }
   ],
   "2017": [
+    {
+      "name": "串串狗小刊",
+      "year": "17",
+      "title": "SEO 之用 coolify 部署 nextjs 和 面包屑 使用误区",
+      "url": "https://www.ccgxk.com/codeother/773.html",
+      "date": "2026-06-09"
+    },
     {
       "name": "2broear",
       "year": "17",
       "title": "一只去喵星的橘猫– 日常记事（二百一十九）",
       "url": "https://blog.2broear.com/weblog/09-06-2026_%e4%b8%80%e5%8f%aa%e5%8e%bb%e5%96%b5%e6%98%9f%e7%9a%84%e6%a9%98%e7%8c%ab-%e6%97%a5%e5%b8%b8%e8%ae%b0%e4%ba%8b%ef%bc%88%e4%ba%8c%e7%99%be%e4%b8%80%e5%8d%81%e4%b9%9d%ef%bc%89",
       "date": "2026-06-09"
-    },
-    {
-      "name": "串串狗小刊",
-      "year": "17",
-      "title": "注意，JS 里的  JSON.parse()  也有安全隐患！",
-      "url": "https://www.ccgxk.com/front-end/772.html",
-      "date": "2026-06-08"
     }
   ],
-  "2020": [
+  "2019": [
     {
-      "name": "初然忆",
-      "year": "20",
-      "title": "满足，收到了来自BlogsClub的新手礼包",
-      "url": "https://www.imcry.vip/post/2026-6-9-1231/",
+      "name": "新世界的大门",
+      "year": "19",
+      "title": "2026-06-01 / 土木，隱忍",
+      "url": "https://blog.xinshijiededa.men/daily/41/",
       "date": "2026-06-09"
     },
     {
-      "name": "vinchent",
-      "year": "20",
-      "title": "Writefreely使用体验",
-      "url": "https://www.vinchent.xyz/writefreelyshi-yong-ti-yan",
-      "date": "2026-06-08"
+      "name": "So!azy",
+      "year": "19",
+      "title": "关于自律",
+      "url": "https://blog.solazy.me/20260609/",
+      "date": "2026-06-09"
+    },
+    {
+      "name": "herman",
+      "year": "19",
+      "title": "Active recall",
+      "url": "https://herman.bearblog.dev/active-recall/",
+      "date": "2026-06-09"
     }
   ],
   "2021": [
     {
-      "name": "DevNow",
+      "name": "Dayu",
       "year": "21",
-      "title": "Product Hunt 每日热榜 | 2026-06-08",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-06-08",
-      "date": "2026-06-08"
+      "title": "2026年 激战2 常用网站和工具 #Guild wars 2",
+      "url": "https://anotherdayu.com/guild-wars-2/",
+      "date": "2026-06-09"
     }
   ],
   "2023": [
     {
-      "name": "鹿泽",
+      "name": "火米",
       "year": "23",
-      "title": "谷歌广告在搜索中出现在哪里？Google Ads格式",
-      "url": "https://www.bailuze.com/24130.html",
+      "title": "什么样的人在听我的播客",
+      "url": "https://huo.me/profile/",
       "date": "2026-06-09"
     }
   ],
   "2024": [
+    {
+      "name": "奶狗",
+      "year": "24",
+      "title": "小小说｜《最后一杯咖啡》",
+      "url": "https://www.naigou.cn/gy_8r4qk/",
+      "date": "2026-06-09"
+    },
     {
       "name": "姓王者",
       "year": "24",
@@ -144,17 +156,17 @@ const latestArticlesByYear = {
   ],
   "2026": [
     {
-      "name": "华立",
-      "year": "26",
-      "title": "墨迹博客(InkBlog) v1.26.6.05 to v1.26.6.09 升级指南",
-      "url": "https://www.renhuali.cn/journal/cmq60feom00bachf1p5t82bi8",
-      "date": "2026-06-09"
-    },
-    {
       "name": "麦子的思绪",
       "year": "26",
       "title": "2000年高考才懂：读书不是唯一出路，但扛住压力真的很有用",
       "url": "https://mzdsx.com/2026/06/09/2000%e5%b9%b4%e9%ab%98%e8%80%83%e6%89%8d%e6%87%82%ef%bc%9a%e8%af%bb%e4%b9%a6%e4%b8%8d%e6%98%af%e5%94%af%e4%b8%80%e5%87%ba%e8%b7%af%ef%bc%8c%e4%bd%86%e6%89%9b%e4%bd%8f%e5%8e%8b%e5%8a%9b%e7%9c%9f/",
+      "date": "2026-06-09"
+    },
+    {
+      "name": "华立",
+      "year": "26",
+      "title": "墨迹博客(InkBlog) v1.26.6.05 to v1.26.6.09 升级指南",
+      "url": "https://www.renhuali.cn/journal/cmq60feom00bachf1p5t82bi8",
       "date": "2026-06-09"
     }
   ]
