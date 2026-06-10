@@ -282,7 +282,7 @@ const officialblogdata = {
 	'10': [{name:'cloudflare博客', url:'https://blog.cloudflare.com/'}],
 	'11': [{name:'腾讯全端', url:'http://www.alloyteam.com/'}],
 	'13': [{name:'美团技术团队', url:'https://tech.meituan.com/'}, {name:'有道技术博客', url:'https://techblog.youdao.com/'} ],
-	'14': [{name:'阿里淘系技术', url:'https://blog.csdn.net/Taobaojishu'}      , {name:'Elastic 中国社区博客', url:'https://elasticstack.blog.csdn.net/'}     , {name:'亚马逊AWS博客', url:'https://aws.amazon.com/blogs/aws/'}         ],
+	'14': [{name:'阿里淘系技术', url:'https://blog.csdn.net/Taobaojishu'}      , {name:'Elastic 中国社区博客', url:'https://elasticstack.blog.csdn.net/'}     , {name:'亚马逊AWS博客', url:'https://aws.amazon.com/blogs/aws/'}   , {name:'菠萝阁-Z-Blog官方博客', url:'https://blog.zblogcn.com/'}       ],
 	'15': [{name:'有赞技术团队', url:'https://tech.youzan.com/'}],
 	'16': [ {name:'华为云开发者联盟', url:'https://blog.csdn.net/devcloud'}   , {name:'京东用户体验设计部 凹凸实验室', url:'https://aotu.io/'} ],
 	'17': [{name:'字节跳动技术团队', url:'https://blog.csdn.net/ByteDanceTech'}   , {name:'腾讯技术工程', url:'https://blog.csdn.net/Tencent_TEG'}  , {name:'闲鱼技术', url:'https://blog.csdn.net/weixin_38912070'}  , {name:'饿了么大前端', url:'https://www.zhihu.com/people/elemefe'}   , {name:'uber blog', url:'https://www.uber.com/blog/'}    ],
