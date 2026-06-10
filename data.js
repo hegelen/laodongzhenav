@@ -219,7 +219,7 @@ const featuredNavData = {
     '23': [{name:'影视宝藏导航', url:'https://tv.baozangdh.com/'}, {name:'OSLAW', url:'https://www.oslaw.cn/site-nav'}, {name:'科技lion导航', url:'https://dh.kejilion.pro/'}],
     '24': [{name:'二次元宝藏导航', url:'https://acg.baozangdh.com/'}, {name:'资源帝VR导航', url:'https://vr.ziyuandi.cn/'}, {name:'mjj网址导航', url:'http://www.mjj.vip/'} , {name:'卡卡罗特导航', url:'https://blog.share888.top/nav/'}  ],
     '25': [{name:'猫步求职导航', url:'https://nav.maobucv.com/'},  {name:'图标西西', url:'https://icon.cc/'}],
-	'26': [{name:'松松导航', url:'https://daohang.lusongsong.com/'} , {name:'联名导航网', url:'http://unionname.cn/'} , {name:'鹅毛导航', url:'https://www.iemao.com/'}        ],
+	'26': [{name:'松松导航', url:'https://daohang.lusongsong.com/'} , {name:'联名导航网', url:'http://unionname.cn/'} , {name:'鹅毛导航', url:'https://www.iemao.com/'}  , {name:'官网大全', url:'https://gwdir.com/'}        ],
 };
 
 // ==================== 工具导航数据    , {name:'', url:''}    ====================
