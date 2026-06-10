@@ -1,9 +1,18 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/9/2026, 9:08:59 PM
+// 抓取日期: 6/10/2026, 2:12:21 AM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
+  "2000": [
+    {
+      "name": "Luca",
+      "year": "00",
+      "title": "Mac 远程桌面：看的是同一个画面",
+      "url": "https://wlj.me/posts/mac-remote-desktop-shared-screen/",
+      "date": "2026-06-09"
+    }
+  ],
   "2002": [
     {
       "name": "seth",
@@ -15,10 +24,10 @@ const latestArticlesByYear = {
   ],
   "2003": [
     {
-      "name": "愆伏",
+      "name": "王通",
       "year": "03",
-      "title": "第一次去看陶喆演唱会",
-      "url": "https://www.tortorse.com/archives/tao-zhe-soul-power-ii-nanjing-concert/",
+      "title": "王通：AI智能体会增强个人能力100倍",
+      "url": "https://www.ufoer.com/post/13512.html",
       "date": "2026-06-09"
     }
   ],
@@ -26,33 +35,33 @@ const latestArticlesByYear = {
     {
       "name": "我的天",
       "year": "04",
-      "title": "旧电脑焕发第二春",
-      "url": "http://www.xlanda.net/posts/22249",
+      "title": "TP-LINK连锐捷",
+      "url": "http://www.xlanda.net/posts/22251",
+      "date": "2026-06-10"
+    },
+    {
+      "name": "kaix.in",
+      "year": "04",
+      "title": "AI 博客问题挑战",
+      "url": "https://kaix.in/2026/0609/",
       "date": "2026-06-09"
     }
   ],
   "2005": [
     {
-      "name": "ACEVS",
-      "year": "05",
-      "title": "祸从天降",
-      "url": "https://acevs.com/5026/",
-      "date": "2026-06-08"
-    },
-    {
       "name": "Gea-Suan Lin",
       "year": "05",
-      "title": "RADb 的 routing 資訊",
-      "url": "https://blog.gslin.org/archives/2026/06/10/13065/radb-%e7%9a%84-routing-%e8%b3%87%e8%a8%8a/",
+      "title": "Linux 上的 Firefox 要支援 Vulkan Video Decoding 了？",
+      "url": "https://blog.gslin.org/archives/2026/06/10/13066/linux-%e4%b8%8a%e7%9a%84-firefox-%e8%a6%81%e6%94%af%e6%8f%b4-vulkan-video-decoding-%e4%ba%86%ef%bc%9f/",
       "date": "2026-06-09"
     }
   ],
-  "2009": [
+  "2007": [
     {
-      "name": "老刘",
-      "year": "09",
-      "title": "你在陪别人喝酒，我在陪女儿写作业",
-      "url": "https://www.iliu.org/posts/ni-zai-pei-bieren-hejiu/",
+      "name": "苏洋",
+      "year": "07",
+      "title": "把 MinIO 示例迁到 OtterIO：使用、部署与迁移验证",
+      "url": "https://soulteary.com/2026/06/09/migrate-minio-examples-to-otterio-usage-deployment-and-verification.html",
       "date": "2026-06-09"
     }
   ],
@@ -72,6 +81,15 @@ const latestArticlesByYear = {
       "date": "2026-06-09"
     }
   ],
+  "2013": [
+    {
+      "name": "林羽凡",
+      "year": "13",
+      "title": "鸿蒙版“林羽凡笔记”App增加暗色模式",
+      "url": "https://www.linyufan.com/post/5843",
+      "date": "2026-06-09"
+    }
+  ],
   "2015": [
     {
       "name": "WordPress 知识宝库",
@@ -88,21 +106,14 @@ const latestArticlesByYear = {
       "title": "SEO 之用 coolify 部署 nextjs 和 面包屑 使用误区",
       "url": "https://www.ccgxk.com/codeother/773.html",
       "date": "2026-06-09"
-    },
-    {
-      "name": "2broear",
-      "year": "17",
-      "title": "一只去喵星的橘猫– 日常记事（二百一十九）",
-      "url": "https://blog.2broear.com/weblog/09-06-2026_%e4%b8%80%e5%8f%aa%e5%8e%bb%e5%96%b5%e6%98%9f%e7%9a%84%e6%a9%98%e7%8c%ab-%e6%97%a5%e5%b8%b8%e8%ae%b0%e4%ba%8b%ef%bc%88%e4%ba%8c%e7%99%be%e4%b8%80%e5%8d%81%e4%b9%9d%ef%bc%89",
-      "date": "2026-06-09"
     }
   ],
   "2019": [
     {
-      "name": "新世界的大门",
+      "name": "herman",
       "year": "19",
-      "title": "2026-06-01 / 土木，隱忍",
-      "url": "https://blog.xinshijiededa.men/daily/41/",
+      "title": "Active recall",
+      "url": "https://herman.bearblog.dev/active-recall/",
       "date": "2026-06-09"
     },
     {
@@ -111,12 +122,21 @@ const latestArticlesByYear = {
       "title": "关于自律",
       "url": "https://blog.solazy.me/20260609/",
       "date": "2026-06-09"
+    }
+  ],
+  "2020": [
+    {
+      "name": "資工小廢物 - JN",
+      "year": "20",
+      "title": "千呼萬喚的露狗！還有新的烘焙雞！",
+      "url": "https://blog.giveanornot.com/new-homepage/",
+      "date": "2026-06-10"
     },
     {
-      "name": "herman",
-      "year": "19",
-      "title": "Active recall",
-      "url": "https://herman.bearblog.dev/active-recall/",
+      "name": "初然忆",
+      "year": "20",
+      "title": "满足，收到了来自BlogsClub的新手礼包",
+      "url": "https://www.imcry.vip/post/2026-6-9-1231/",
       "date": "2026-06-09"
     }
   ],
@@ -136,38 +156,22 @@ const latestArticlesByYear = {
       "title": "什么样的人在听我的播客",
       "url": "https://huo.me/profile/",
       "date": "2026-06-09"
-    }
-  ],
-  "2024": [
-    {
-      "name": "奶狗",
-      "year": "24",
-      "title": "小小说｜《最后一杯咖啡》",
-      "url": "https://www.naigou.cn/gy_8r4qk/",
-      "date": "2026-06-09"
     },
     {
-      "name": "姓王者",
-      "year": "24",
-      "title": "别让AI替你捣乱-致零软件工程经验新人的指南",
-      "url": "https://xingwangzhe.fun/posts/zero-se-newcomer-guide/",
-      "date": "2026-06-09"
+      "name": "无敌",
+      "year": "23",
+      "title": "为博客构建“轻量级知识索引”（四）：系列文章导航与阅读路径设计",
+      "url": "http://blog.tangwudi.com/technology/homedatacenter14334/",
+      "date": "2026-06-10"
     }
   ],
   "2026": [
     {
-      "name": "麦子的思绪",
-      "year": "26",
-      "title": "2000年高考才懂：读书不是唯一出路，但扛住压力真的很有用",
-      "url": "https://mzdsx.com/2026/06/09/2000%e5%b9%b4%e9%ab%98%e8%80%83%e6%89%8d%e6%87%82%ef%bc%9a%e8%af%bb%e4%b9%a6%e4%b8%8d%e6%98%af%e5%94%af%e4%b8%80%e5%87%ba%e8%b7%af%ef%bc%8c%e4%bd%86%e6%89%9b%e4%bd%8f%e5%8e%8b%e5%8a%9b%e7%9c%9f/",
-      "date": "2026-06-09"
-    },
-    {
       "name": "华立",
       "year": "26",
-      "title": "墨迹博客(InkBlog) v1.26.6.05 to v1.26.6.09 升级指南",
-      "url": "https://www.renhuali.cn/journal/cmq60feom00bachf1p5t82bi8",
-      "date": "2026-06-09"
+      "title": "梦和灵感论AI自主意识与人类是另一种AI(圈养)的可能性",
+      "url": "https://www.renhuali.cn/journal/cmq7cw7e20050ch3o0ewt1aog",
+      "date": "2026-06-10"
     }
   ]
 };
