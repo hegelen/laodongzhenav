@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/10/2026, 9:35:55 PM
+// 抓取日期: 6/11/2026, 8:22:59 AM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -13,32 +13,16 @@ const latestArticlesByYear = {
       "date": "2026-06-10"
     }
   ],
-  "2003": [
-    {
-      "name": "王通",
-      "year": "03",
-      "title": "王通：【凝神聚气秘法】让你不再神耗气散力疲！",
-      "url": "https://www.ufoer.com/post/13518.html",
-      "date": "2026-06-10"
-    }
-  ],
   "2004": [
     {
       "name": "我的天",
       "year": "04",
-      "title": "TP-LINK连锐捷",
-      "url": "http://www.xlanda.net/posts/22251",
-      "date": "2026-06-10"
+      "title": "旧电脑win10更新完毕",
+      "url": "http://www.xlanda.net/posts/22254",
+      "date": "2026-06-11"
     }
   ],
   "2005": [
-    {
-      "name": "ACEVS",
-      "year": "05",
-      "title": "沙丘",
-      "url": "https://acevs.com/5029/",
-      "date": "2026-06-10"
-    },
     {
       "name": "春田",
       "year": "05",
@@ -47,20 +31,38 @@ const latestArticlesByYear = {
       "date": "2026-06-10"
     },
     {
-      "name": "Gea-Suan Lin",
+      "name": "ACEVS",
       "year": "05",
-      "title": "Linux 上的 Firefox 要支援 Vulkan Video Decoding 了？",
-      "url": "https://blog.gslin.org/archives/2026/06/10/13066/linux-%e4%b8%8a%e7%9a%84-firefox-%e8%a6%81%e6%94%af%e6%8f%b4-vulkan-video-decoding-%e4%ba%86%ef%bc%9f/",
-      "date": "2026-06-09"
+      "title": "二宝的鸡毛蒜皮",
+      "url": "https://acevs.com/5031/",
+      "date": "2026-06-11"
     }
   ],
-  "2011": [
+  "2006": [
     {
-      "name": "forecho",
-      "year": "11",
-      "title": "Rectangle Pro 使用教程：买了之后才搞懂",
-      "url": "https://blog.forecho.com/rectangle-pro-usage-guide.html",
-      "date": "2026-06-10"
+      "name": "随风沐虐",
+      "year": "06",
+      "title": "2026年美加墨世界杯来了，好消息是央视全程免费直播（附完全观赛指南）",
+      "url": "https://www.munue.com/801.html",
+      "date": "2026-06-11"
+    }
+  ],
+  "2009": [
+    {
+      "name": "老刘",
+      "year": "09",
+      "title": "华严经三题：回向、因缘和合与穿越的秘密",
+      "url": "https://www.iliu.org/posts/huayan-jing-huixiang-yinyuan-su-hui/",
+      "date": "2026-06-11"
+    }
+  ],
+  "2010": [
+    {
+      "name": "limboy",
+      "year": "10",
+      "title": "微信是一个奇葩",
+      "url": "https://limboy.me/posts/wechat-is-abnormal",
+      "date": "2026-06-11"
     }
   ],
   "2013": [
@@ -70,14 +72,35 @@ const latestArticlesByYear = {
       "title": "服务器高性能网络调优",
       "url": "https://www.kawabangga.com/posts/7292",
       "date": "2026-06-10"
+    },
+    {
+      "name": "林羽凡",
+      "year": "13",
+      "title": "我去，这些个大厂，接口还没用热乎呢，就下线接口功能了。",
+      "url": "https://www.linyufan.com/post/5848",
+      "date": "2026-06-11"
+    },
+    {
+      "name": "蛋蛋",
+      "year": "13",
+      "title": "代码增强插件 — PluginCodeEnhance 发布",
+      "url": "https://wuqishi.com/archives/halo-plugin-code-enhance-intro",
+      "date": "2026-06-11"
+    },
+    {
+      "name": "小z",
+      "year": "13",
+      "title": "ZMark 1.0.0正式版来了，AI检索功能已就绪",
+      "url": "https://blog.xiaoz.org/archives/23055",
+      "date": "2026-06-11"
     }
   ],
-  "2016": [
+  "2015": [
     {
-      "name": "ximi",
-      "year": "16",
-      "title": "用了安卓才发现，我只能自己写个备忘录了",
-      "url": "https://www.ximi.me/post-6041.html",
+      "name": "elmagnifico",
+      "year": "15",
+      "title": "AI自进化",
+      "url": "https://elmagnifico.tech/2026/06/11/AI-Self-Iteration/",
       "date": "2026-06-10"
     }
   ],
@@ -90,22 +113,13 @@ const latestArticlesByYear = {
       "date": "2026-06-10"
     }
   ],
-  "2018": [
-    {
-      "name": "游钓四方",
-      "year": "18",
-      "title": "Photosuite EXIF 优化",
-      "url": "https://blog.lhasa.icu/posts/technology/2026-06-09-photosuite-v0-5-0-beta/",
-      "date": "2026-06-10"
-    }
-  ],
   "2020": [
     {
-      "name": "資工小廢物 - JN",
+      "name": "初然忆",
       "year": "20",
-      "title": "千呼萬喚的露狗！還有新的烘焙雞！",
-      "url": "https://blog.giveanornot.com/new-homepage/",
-      "date": "2026-06-10"
+      "title": "解决阿里云邮件推送被微软屏蔽的问题",
+      "url": "https://www.imcry.vip/post/2026-6-11-1133/",
+      "date": "2026-06-11"
     }
   ],
   "2021": [
@@ -119,6 +133,13 @@ const latestArticlesByYear = {
   ],
   "2023": [
     {
+      "name": "鹿泽",
+      "year": "23",
+      "title": "竞争对手分析在SEO代理策略中的重要性",
+      "url": "https://www.bailuze.com/24142.html",
+      "date": "2026-06-11"
+    },
+    {
       "name": "Siwei Li",
       "year": "23",
       "title": "第一个微信小程序上线（体表面积BSA）",
@@ -126,34 +147,11 @@ const latestArticlesByYear = {
       "date": "2026-06-10"
     },
     {
-      "name": "无敌",
+      "name": "宗宗酱",
       "year": "23",
-      "title": "为博客构建“轻量级知识索引”（四）：系列文章导航与阅读路径设计",
-      "url": "http://blog.tangwudi.com/technology/homedatacenter14334/",
-      "date": "2026-06-10"
-    },
-    {
-      "name": "鹿泽",
-      "year": "23",
-      "title": "什么是AEO？它如何改变SEO的未来？",
-      "url": "https://www.bailuze.com/24139.html",
-      "date": "2026-06-10"
-    },
-    {
-      "name": "火米",
-      "year": "23",
-      "title": "一个安全的玩耍空间",
-      "url": "https://huo.me/studio/",
-      "date": "2026-06-10"
-    }
-  ],
-  "2024": [
-    {
-      "name": "姓王者",
-      "year": "24",
-      "title": "我做了一个现代Web版本的标签云，支持图片视频Web组件",
-      "url": "https://xingwangzhe.fun/posts/modern-tags-cloud-3d/",
-      "date": "2026-06-10"
+      "title": "公众号差点被封",
+      "url": "https://ygz.ink/archives/5206.html",
+      "date": "2026-06-11"
     }
   ],
   "2025": [
@@ -167,10 +165,10 @@ const latestArticlesByYear = {
   ],
   "2026": [
     {
-      "name": "华立",
+      "name": "周阿源",
       "year": "26",
-      "title": "梦和灵感论AI自主意识与人类是另一种AI(圈养)的可能性",
-      "url": "https://www.renhuali.cn/journal/cmq7cw7e20050ch3o0ewt1aog",
+      "title": "喵糖布丁｜把甜软画进抱枕里",
+      "url": "https://zhouayuan.com/post/53.html",
       "date": "2026-06-10"
     }
   ]
