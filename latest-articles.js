@@ -1,15 +1,33 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/11/2026, 9:32:04 PM
+// 抓取日期: 6/12/2026, 1:37:55 AM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
-  "2000": [
+  "2001": [
     {
-      "name": "Luca",
-      "year": "00",
-      "title": "ntfy.sh 是什么",
-      "url": "https://wlj.me/posts/20260611-ntfy-sh/",
+      "name": "东评衿就",
+      "year": "01",
+      "title": "也许是全球首个GEO鉴证skill",
+      "url": "https://dongjunke.cn/posts/2026/06/11/10349.html",
+      "date": "2026-06-11"
+    }
+  ],
+  "2002": [
+    {
+      "name": "seth",
+      "year": "02",
+      "title": "Values capture",
+      "url": "https://seths.blog/2026/06/values-capture-2/",
+      "date": "2026-06-11"
+    }
+  ],
+  "2003": [
+    {
+      "name": "愆伏",
+      "year": "03",
+      "title": "专业的事，还是让专业的人做吧",
+      "url": "https://www.tortorse.com/archives/leave-professional-work-to-professionals/",
       "date": "2026-06-11"
     }
   ],
@@ -17,31 +35,24 @@ const latestArticlesByYear = {
     {
       "name": "我的天",
       "year": "04",
-      "title": "旧电脑win10更新完毕",
-      "url": "http://www.xlanda.net/posts/22254",
-      "date": "2026-06-11"
-    },
-    {
-      "name": "龙哥",
-      "year": "04",
-      "title": "服务器安装Debian13和WP-Panel教程",
-      "url": "https://long.ge/18069.html",
-      "date": "2026-06-11"
+      "title": "挑选USB无线网卡",
+      "url": "http://www.xlanda.net/posts/22256",
+      "date": "2026-06-12"
     }
   ],
   "2005": [
-    {
-      "name": "云风",
-      "year": "05",
-      "title": "对基本有序的序列排序算法",
-      "url": "https://blog.codingnow.com/2026/06/powersort.html",
-      "date": "2026-06-11"
-    },
     {
       "name": "ACEVS",
       "year": "05",
       "title": "二宝的鸡毛蒜皮",
       "url": "https://acevs.com/5031/",
+      "date": "2026-06-11"
+    },
+    {
+      "name": "云风",
+      "year": "05",
+      "title": "对基本有序的序列排序算法",
+      "url": "https://blog.codingnow.com/2026/06/powersort.html",
       "date": "2026-06-11"
     }
   ],
@@ -61,16 +72,16 @@ const latestArticlesByYear = {
       "title": "老张博客更换Riven主题了！",
       "url": "https://laozhang.org/archives/4096.html",
       "date": "2026-06-11"
-    },
-    {
-      "name": "老刘",
-      "year": "09",
-      "title": "华严经三题：回向、因缘和合与穿越的秘密",
-      "url": "https://www.iliu.org/posts/huayan-jing-huixiang-yinyuan-su-hui/",
-      "date": "2026-06-11"
     }
   ],
   "2013": [
+    {
+      "name": "小z",
+      "year": "13",
+      "title": "ZMark 1.0.0正式版来了，AI检索功能已就绪",
+      "url": "https://blog.xiaoz.org/archives/23055",
+      "date": "2026-06-11"
+    },
     {
       "name": "蛋蛋",
       "year": "13",
@@ -79,35 +90,35 @@ const latestArticlesByYear = {
       "date": "2026-06-11"
     },
     {
-      "name": "小z",
+      "name": "林羽凡",
       "year": "13",
-      "title": "ZMark 1.0.0正式版来了，AI检索功能已就绪",
-      "url": "https://blog.xiaoz.org/archives/23055",
+      "title": "我去，这些个大厂，接口还没用热乎呢，就下线接口功能了。",
+      "url": "https://www.linyufan.com/post/5848",
+      "date": "2026-06-11"
+    }
+  ],
+  "2015": [
+    {
+      "name": "WordPress 知识宝库",
+      "year": "15",
+      "title": "워드프레스 UpdraftPlus 백업 복원 플러그인 보안 업데이트 - 인증 우회 취약점 해결",
+      "url": "https://www.thewordcracker.com/basic/%ec%9b%8c%eb%93%9c%ed%94%84%eb%a0%88%ec%8a%a4-updraftplus-%ed%94%8c%eb%9f%ac%ea%b7%b8%ec%9d%b8-%eb%b3%b4%ec%95%88-%ec%97%85%eb%8d%b0%ec%9d%b4%ed%8a%b8/",
       "date": "2026-06-11"
     }
   ],
   "2016": [
     {
+      "name": "太隐",
+      "year": "16",
+      "title": "写给斯大林的最后一封信",
+      "url": "https://wangyurui.com/posts/xie-gei-si-da-lin-de-zui-hou-yi-feng-xin-a27f6e89",
+      "date": "2026-06-11"
+    },
+    {
       "name": "故事里",
       "year": "16",
       "title": "如若一无所有，能否快乐自由",
       "url": "https://www.gushi.li/if-you-have-nothing-can-you-be-happy-and-free.html",
-      "date": "2026-06-11"
-    }
-  ],
-  "2017": [
-    {
-      "name": "串串狗小刊",
-      "year": "17",
-      "title": "今年最燃Web出海奇迹，小白从0建站一个月入万刀全程详细复盘！",
-      "url": "https://www.ccgxk.com/codeother/775.html",
-      "date": "2026-06-11"
-    },
-    {
-      "name": "秋风于渭水",
-      "year": "17",
-      "title": "我写了个 Chrome 扩展「Smart Tab Pinner」解决标签页总被误关的问题",
-      "url": "https://www.tjsky.net/best-software/1642",
       "date": "2026-06-11"
     }
   ],
@@ -121,13 +132,6 @@ const latestArticlesByYear = {
     }
   ],
   "2020": [
-    {
-      "name": "vinchent",
-      "year": "20",
-      "title": "关于死亡教育的一则通告",
-      "url": "https://www.vinchent.xyz/guan-yu-si-wang-jiao-yu-de-ze-tong-gao",
-      "date": "2026-06-11"
-    },
     {
       "name": "初然忆",
       "year": "20",
@@ -147,10 +151,10 @@ const latestArticlesByYear = {
   ],
   "2023": [
     {
-      "name": "鹿泽",
+      "name": "宗宗酱",
       "year": "23",
-      "title": "WordPress网站流量统计查看访问量的方法",
-      "url": "https://www.bailuze.com/25243.html",
+      "title": "公众号差点被封",
+      "url": "https://ygz.ink/archives/5206.html",
       "date": "2026-06-11"
     }
   ],
