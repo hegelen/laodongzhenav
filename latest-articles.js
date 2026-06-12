@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/12/2026, 1:37:55 AM
+// 抓取日期: 6/12/2026, 3:35:08 AM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -29,39 +29,21 @@ const latestArticlesByYear = {
       "title": "专业的事，还是让专业的人做吧",
       "url": "https://www.tortorse.com/archives/leave-professional-work-to-professionals/",
       "date": "2026-06-11"
-    }
-  ],
-  "2004": [
+    },
     {
-      "name": "我的天",
-      "year": "04",
-      "title": "挑选USB无线网卡",
-      "url": "http://www.xlanda.net/posts/22256",
-      "date": "2026-06-12"
+      "name": "阮一峰",
+      "year": "03",
+      "title": "科技爱好者周刊（第 400 期）：rsync 的争论",
+      "url": "http://www.ruanyifeng.com/blog/2026/06/weekly-issue-400.html",
+      "date": "2026-06-11"
     }
   ],
   "2005": [
-    {
-      "name": "ACEVS",
-      "year": "05",
-      "title": "二宝的鸡毛蒜皮",
-      "url": "https://acevs.com/5031/",
-      "date": "2026-06-11"
-    },
     {
       "name": "云风",
       "year": "05",
       "title": "对基本有序的序列排序算法",
       "url": "https://blog.codingnow.com/2026/06/powersort.html",
-      "date": "2026-06-11"
-    }
-  ],
-  "2006": [
-    {
-      "name": "随风沐虐",
-      "year": "06",
-      "title": "2026年美加墨世界杯来了，好消息是央视全程免费直播（附完全观赛指南）",
-      "url": "https://www.munue.com/801.html",
       "date": "2026-06-11"
     }
   ],
@@ -75,20 +57,6 @@ const latestArticlesByYear = {
     }
   ],
   "2013": [
-    {
-      "name": "小z",
-      "year": "13",
-      "title": "ZMark 1.0.0正式版来了，AI检索功能已就绪",
-      "url": "https://blog.xiaoz.org/archives/23055",
-      "date": "2026-06-11"
-    },
-    {
-      "name": "蛋蛋",
-      "year": "13",
-      "title": "代码增强插件 — PluginCodeEnhance 发布",
-      "url": "https://wuqishi.com/archives/halo-plugin-code-enhance-intro",
-      "date": "2026-06-11"
-    },
     {
       "name": "林羽凡",
       "year": "13",
@@ -120,6 +88,22 @@ const latestArticlesByYear = {
       "title": "如若一无所有，能否快乐自由",
       "url": "https://www.gushi.li/if-you-have-nothing-can-you-be-happy-and-free.html",
       "date": "2026-06-11"
+    },
+    {
+      "name": "Keyle",
+      "year": "16",
+      "title": "《恶魔轮盘改》项目完整实现详解：架构、流程与双端同步",
+      "url": "https://vrast.cn/posts/3735/",
+      "date": "2026-06-12"
+    }
+  ],
+  "2017": [
+    {
+      "name": "秋风于渭水",
+      "year": "17",
+      "title": "我写了个 Chrome 扩展「Smart Tab Pinner」解决标签页总被误关的问题",
+      "url": "https://www.tjsky.net/best-software/1642",
+      "date": "2026-06-11"
     }
   ],
   "2019": [
@@ -132,6 +116,13 @@ const latestArticlesByYear = {
     }
   ],
   "2020": [
+    {
+      "name": "vinchent",
+      "year": "20",
+      "title": "关于死亡教育的一则通告",
+      "url": "https://www.vinchent.xyz/guan-yu-si-wang-jiao-yu-de-ze-tong-gao",
+      "date": "2026-06-11"
+    },
     {
       "name": "初然忆",
       "year": "20",
@@ -174,6 +165,13 @@ const latestArticlesByYear = {
       "title": "锈铁年月",
       "url": "https://mzdsx.com/2026/06/12/%e9%94%88%e9%93%81%e5%b9%b4%e6%9c%88/",
       "date": "2026-06-11"
+    },
+    {
+      "name": "妄司逸",
+      "year": "26",
+      "title": "AI做了个部落冲突管理网站",
+      "url": "https://blog.flechazo.icu/2026/06/12/coc-counter/",
+      "date": "2026-06-12"
     }
   ]
 };
