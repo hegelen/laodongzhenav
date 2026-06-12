@@ -1,9 +1,18 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/12/2026, 3:35:08 AM
+// 抓取日期: 6/12/2026, 10:26:51 AM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
+  "2000": [
+    {
+      "name": "Luca",
+      "year": "00",
+      "title": "ntfy.sh 是什么",
+      "url": "https://wlj.me/posts/20260611-ntfy-sh/",
+      "date": "2026-06-11"
+    }
+  ],
   "2001": [
     {
       "name": "东评衿就",
@@ -17,71 +26,55 @@ const latestArticlesByYear = {
     {
       "name": "seth",
       "year": "02",
-      "title": "Values capture",
-      "url": "https://seths.blog/2026/06/values-capture-2/",
-      "date": "2026-06-11"
+      "title": "Nü Tennis",
+      "url": "https://seths.blog/2026/06/nu-tennis/",
+      "date": "2026-06-12"
     }
   ],
   "2003": [
-    {
-      "name": "愆伏",
-      "year": "03",
-      "title": "专业的事，还是让专业的人做吧",
-      "url": "https://www.tortorse.com/archives/leave-professional-work-to-professionals/",
-      "date": "2026-06-11"
-    },
     {
       "name": "阮一峰",
       "year": "03",
       "title": "科技爱好者周刊（第 400 期）：rsync 的争论",
       "url": "http://www.ruanyifeng.com/blog/2026/06/weekly-issue-400.html",
       "date": "2026-06-11"
+    },
+    {
+      "name": "愆伏",
+      "year": "03",
+      "title": "专业的事，还是让专业的人做吧",
+      "url": "https://www.tortorse.com/archives/leave-professional-work-to-professionals/",
+      "date": "2026-06-11"
+    }
+  ],
+  "2004": [
+    {
+      "name": "我的天",
+      "year": "04",
+      "title": "挑选USB无线网卡",
+      "url": "http://www.xlanda.net/posts/22256",
+      "date": "2026-06-12"
     }
   ],
   "2005": [
     {
-      "name": "云风",
+      "name": "ACEVS",
       "year": "05",
-      "title": "对基本有序的序列排序算法",
-      "url": "https://blog.codingnow.com/2026/06/powersort.html",
-      "date": "2026-06-11"
-    }
-  ],
-  "2009": [
-    {
-      "name": "老张",
-      "year": "09",
-      "title": "老张博客更换Riven主题了！",
-      "url": "https://laozhang.org/archives/4096.html",
-      "date": "2026-06-11"
-    }
-  ],
-  "2013": [
-    {
-      "name": "林羽凡",
-      "year": "13",
-      "title": "我去，这些个大厂，接口还没用热乎呢，就下线接口功能了。",
-      "url": "https://www.linyufan.com/post/5848",
-      "date": "2026-06-11"
+      "title": "一个评论的ai评论",
+      "url": "https://acevs.com/5033/",
+      "date": "2026-06-12"
     }
   ],
   "2015": [
     {
       "name": "WordPress 知识宝库",
       "year": "15",
-      "title": "워드프레스 UpdraftPlus 백업 복원 플러그인 보안 업데이트 - 인증 우회 취약점 해결",
-      "url": "https://www.thewordcracker.com/basic/%ec%9b%8c%eb%93%9c%ed%94%84%eb%a0%88%ec%8a%a4-updraftplus-%ed%94%8c%eb%9f%ac%ea%b7%b8%ec%9d%b8-%eb%b3%b4%ec%95%88-%ec%97%85%eb%8d%b0%ec%9d%b4%ed%8a%b8/",
-      "date": "2026-06-11"
+      "title": "코딩 없이 AI로 1시간 만에 홈페이지 만들기 - 워드프레스 대신 Replit?",
+      "url": "https://www.thewordcracker.com/blog/%ec%bd%94%eb%94%a9-%ec%97%86%ec%9d%b4-%ec%82%ac%ec%9d%b4%ed%8a%b8-%eb%a7%8c%eb%93%9c%eb%8a%94-%eb%b0%a9%eb%b2%95/",
+      "date": "2026-06-12"
     }
   ],
   "2016": [
-    {
-      "name": "太隐",
-      "year": "16",
-      "title": "写给斯大林的最后一封信",
-      "url": "https://wangyurui.com/posts/xie-gei-si-da-lin-de-zui-hou-yi-feng-xin-a27f6e89",
-      "date": "2026-06-11"
-    },
     {
       "name": "故事里",
       "year": "16",
@@ -95,14 +88,12 @@ const latestArticlesByYear = {
       "title": "《恶魔轮盘改》项目完整实现详解：架构、流程与双端同步",
       "url": "https://vrast.cn/posts/3735/",
       "date": "2026-06-12"
-    }
-  ],
-  "2017": [
+    },
     {
-      "name": "秋风于渭水",
-      "year": "17",
-      "title": "我写了个 Chrome 扩展「Smart Tab Pinner」解决标签页总被误关的问题",
-      "url": "https://www.tjsky.net/best-software/1642",
+      "name": "太隐",
+      "year": "16",
+      "title": "写给斯大林的最后一封信",
+      "url": "https://wangyurui.com/posts/xie-gei-si-da-lin-de-zui-hou-yi-feng-xin-a27f6e89",
       "date": "2026-06-11"
     }
   ],
@@ -113,6 +104,13 @@ const latestArticlesByYear = {
       "title": "看电影时，我到底在期待什么",
       "url": "https://blog.solazy.me/20260611/",
       "date": "2026-06-11"
+    },
+    {
+      "name": "Allen Hua",
+      "year": "19",
+      "title": "Linux Desktop 使用 NVIDIA 独显驱动 Google Earth Pro 和 WeChat",
+      "url": "https://hellodk.cn/post/1224",
+      "date": "2026-06-12"
     }
   ],
   "2020": [
@@ -121,13 +119,6 @@ const latestArticlesByYear = {
       "year": "20",
       "title": "关于死亡教育的一则通告",
       "url": "https://www.vinchent.xyz/guan-yu-si-wang-jiao-yu-de-ze-tong-gao",
-      "date": "2026-06-11"
-    },
-    {
-      "name": "初然忆",
-      "year": "20",
-      "title": "解决阿里云邮件推送被微软屏蔽的问题",
-      "url": "https://www.imcry.vip/post/2026-6-11-1133/",
       "date": "2026-06-11"
     }
   ],
@@ -142,14 +133,28 @@ const latestArticlesByYear = {
   ],
   "2023": [
     {
-      "name": "宗宗酱",
+      "name": "小归客",
       "year": "23",
-      "title": "公众号差点被封",
-      "url": "https://ygz.ink/archives/5206.html",
-      "date": "2026-06-11"
+      "title": "为Typecho增加文章阅读次数统计功能",
+      "url": "https://xgk.pw/archives/292/",
+      "date": "2026-06-12"
+    },
+    {
+      "name": "鹿泽",
+      "year": "23",
+      "title": "Google 搜索关于使用第三方 SEO 工具、服务和建议的指南",
+      "url": "https://www.bailuze.com/25246.html",
+      "date": "2026-06-12"
     }
   ],
   "2024": [
+    {
+      "name": "姓王者",
+      "year": "24",
+      "title": "回顾经典-程序员的三大美德",
+      "url": "https://xingwangzhe.fun/posts/programmers-three-virtues/",
+      "date": "2026-06-12"
+    },
     {
       "name": "团团生活志",
       "year": "24",
@@ -159,13 +164,6 @@ const latestArticlesByYear = {
     }
   ],
   "2026": [
-    {
-      "name": "麦子的思绪",
-      "year": "26",
-      "title": "锈铁年月",
-      "url": "https://mzdsx.com/2026/06/12/%e9%94%88%e9%93%81%e5%b9%b4%e6%9c%88/",
-      "date": "2026-06-11"
-    },
     {
       "name": "妄司逸",
       "year": "26",
