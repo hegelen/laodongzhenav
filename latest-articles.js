@@ -1,177 +1,177 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/10/2026, 2:12:21 AM
+// 抓取日期: 6/12/2026, 3:35:08 AM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
-  "2000": [
+  "2001": [
     {
-      "name": "Luca",
-      "year": "00",
-      "title": "Mac 远程桌面：看的是同一个画面",
-      "url": "https://wlj.me/posts/mac-remote-desktop-shared-screen/",
-      "date": "2026-06-09"
+      "name": "东评衿就",
+      "year": "01",
+      "title": "也许是全球首个GEO鉴证skill",
+      "url": "https://dongjunke.cn/posts/2026/06/11/10349.html",
+      "date": "2026-06-11"
     }
   ],
   "2002": [
     {
       "name": "seth",
       "year": "02",
-      "title": "None of it is important (and all of it is)",
-      "url": "https://seths.blog/2026/06/none-of-it-is-important-or-all-of-it-is/",
-      "date": "2026-06-09"
+      "title": "Values capture",
+      "url": "https://seths.blog/2026/06/values-capture-2/",
+      "date": "2026-06-11"
     }
   ],
   "2003": [
     {
-      "name": "王通",
+      "name": "愆伏",
       "year": "03",
-      "title": "王通：AI智能体会增强个人能力100倍",
-      "url": "https://www.ufoer.com/post/13512.html",
-      "date": "2026-06-09"
-    }
-  ],
-  "2004": [
-    {
-      "name": "我的天",
-      "year": "04",
-      "title": "TP-LINK连锐捷",
-      "url": "http://www.xlanda.net/posts/22251",
-      "date": "2026-06-10"
+      "title": "专业的事，还是让专业的人做吧",
+      "url": "https://www.tortorse.com/archives/leave-professional-work-to-professionals/",
+      "date": "2026-06-11"
     },
     {
-      "name": "kaix.in",
-      "year": "04",
-      "title": "AI 博客问题挑战",
-      "url": "https://kaix.in/2026/0609/",
-      "date": "2026-06-09"
+      "name": "阮一峰",
+      "year": "03",
+      "title": "科技爱好者周刊（第 400 期）：rsync 的争论",
+      "url": "http://www.ruanyifeng.com/blog/2026/06/weekly-issue-400.html",
+      "date": "2026-06-11"
     }
   ],
   "2005": [
     {
-      "name": "Gea-Suan Lin",
+      "name": "云风",
       "year": "05",
-      "title": "Linux 上的 Firefox 要支援 Vulkan Video Decoding 了？",
-      "url": "https://blog.gslin.org/archives/2026/06/10/13066/linux-%e4%b8%8a%e7%9a%84-firefox-%e8%a6%81%e6%94%af%e6%8f%b4-vulkan-video-decoding-%e4%ba%86%ef%bc%9f/",
-      "date": "2026-06-09"
+      "title": "对基本有序的序列排序算法",
+      "url": "https://blog.codingnow.com/2026/06/powersort.html",
+      "date": "2026-06-11"
     }
   ],
-  "2007": [
+  "2009": [
     {
-      "name": "苏洋",
-      "year": "07",
-      "title": "把 MinIO 示例迁到 OtterIO：使用、部署与迁移验证",
-      "url": "https://soulteary.com/2026/06/09/migrate-minio-examples-to-otterio-usage-deployment-and-verification.html",
-      "date": "2026-06-09"
-    }
-  ],
-  "2010": [
-    {
-      "name": "lilydjwg",
-      "year": "10",
-      "title": "\n        通过字幕总结YouTube视频内容\n      ",
-      "url": "https://blog.lilydjwg.me/posts/217033.html",
-      "date": "2026-06-09"
-    },
-    {
-      "name": "Jeray",
-      "year": "10",
-      "title": "夜爬 - 旺山小狗线",
-      "url": "https://hi.jeray.wang/L/219.html",
-      "date": "2026-06-09"
+      "name": "老张",
+      "year": "09",
+      "title": "老张博客更换Riven主题了！",
+      "url": "https://laozhang.org/archives/4096.html",
+      "date": "2026-06-11"
     }
   ],
   "2013": [
     {
       "name": "林羽凡",
       "year": "13",
-      "title": "鸿蒙版“林羽凡笔记”App增加暗色模式",
-      "url": "https://www.linyufan.com/post/5843",
-      "date": "2026-06-09"
+      "title": "我去，这些个大厂，接口还没用热乎呢，就下线接口功能了。",
+      "url": "https://www.linyufan.com/post/5848",
+      "date": "2026-06-11"
     }
   ],
   "2015": [
     {
       "name": "WordPress 知识宝库",
       "year": "15",
-      "title": "서버 과부하로 인한 워드프레스 ERR_TIMED_OUT 오류 해결",
-      "url": "https://www.thewordcracker.com/basic/%ec%84%9c%eb%b2%84-%ea%b3%bc%eb%b6%80%ed%95%98%eb%a1%9c-%ec%9d%b8%ed%95%9c-%ec%9b%8c%eb%93%9c%ed%94%84%eb%a0%88%ec%8a%a4-err_timed_out-%ec%98%a4%eb%a5%98-%ed%95%b4%ea%b2%b0/",
-      "date": "2026-06-09"
+      "title": "워드프레스 UpdraftPlus 백업 복원 플러그인 보안 업데이트 - 인증 우회 취약점 해결",
+      "url": "https://www.thewordcracker.com/basic/%ec%9b%8c%eb%93%9c%ed%94%84%eb%a0%88%ec%8a%a4-updraftplus-%ed%94%8c%eb%9f%ac%ea%b7%b8%ec%9d%b8-%eb%b3%b4%ec%95%88-%ec%97%85%eb%8d%b0%ec%9d%b4%ed%8a%b8/",
+      "date": "2026-06-11"
+    }
+  ],
+  "2016": [
+    {
+      "name": "太隐",
+      "year": "16",
+      "title": "写给斯大林的最后一封信",
+      "url": "https://wangyurui.com/posts/xie-gei-si-da-lin-de-zui-hou-yi-feng-xin-a27f6e89",
+      "date": "2026-06-11"
+    },
+    {
+      "name": "故事里",
+      "year": "16",
+      "title": "如若一无所有，能否快乐自由",
+      "url": "https://www.gushi.li/if-you-have-nothing-can-you-be-happy-and-free.html",
+      "date": "2026-06-11"
+    },
+    {
+      "name": "Keyle",
+      "year": "16",
+      "title": "《恶魔轮盘改》项目完整实现详解：架构、流程与双端同步",
+      "url": "https://vrast.cn/posts/3735/",
+      "date": "2026-06-12"
     }
   ],
   "2017": [
     {
-      "name": "串串狗小刊",
+      "name": "秋风于渭水",
       "year": "17",
-      "title": "SEO 之用 coolify 部署 nextjs 和 面包屑 使用误区",
-      "url": "https://www.ccgxk.com/codeother/773.html",
-      "date": "2026-06-09"
+      "title": "我写了个 Chrome 扩展「Smart Tab Pinner」解决标签页总被误关的问题",
+      "url": "https://www.tjsky.net/best-software/1642",
+      "date": "2026-06-11"
     }
   ],
   "2019": [
     {
-      "name": "herman",
-      "year": "19",
-      "title": "Active recall",
-      "url": "https://herman.bearblog.dev/active-recall/",
-      "date": "2026-06-09"
-    },
-    {
       "name": "So!azy",
       "year": "19",
-      "title": "关于自律",
-      "url": "https://blog.solazy.me/20260609/",
-      "date": "2026-06-09"
+      "title": "看电影时，我到底在期待什么",
+      "url": "https://blog.solazy.me/20260611/",
+      "date": "2026-06-11"
     }
   ],
   "2020": [
     {
-      "name": "資工小廢物 - JN",
+      "name": "vinchent",
       "year": "20",
-      "title": "千呼萬喚的露狗！還有新的烘焙雞！",
-      "url": "https://blog.giveanornot.com/new-homepage/",
-      "date": "2026-06-10"
+      "title": "关于死亡教育的一则通告",
+      "url": "https://www.vinchent.xyz/guan-yu-si-wang-jiao-yu-de-ze-tong-gao",
+      "date": "2026-06-11"
     },
     {
       "name": "初然忆",
       "year": "20",
-      "title": "满足，收到了来自BlogsClub的新手礼包",
-      "url": "https://www.imcry.vip/post/2026-6-9-1231/",
-      "date": "2026-06-09"
+      "title": "解决阿里云邮件推送被微软屏蔽的问题",
+      "url": "https://www.imcry.vip/post/2026-6-11-1133/",
+      "date": "2026-06-11"
     }
   ],
   "2021": [
     {
-      "name": "Dayu",
+      "name": "DevNow",
       "year": "21",
-      "title": "2026年 激战2 常用网站和工具 #Guild wars 2",
-      "url": "https://anotherdayu.com/guild-wars-2/",
-      "date": "2026-06-09"
+      "title": "Product Hunt 每日热榜 | 2026-06-11",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-06-11",
+      "date": "2026-06-11"
     }
   ],
   "2023": [
     {
-      "name": "火米",
+      "name": "宗宗酱",
       "year": "23",
-      "title": "什么样的人在听我的播客",
-      "url": "https://huo.me/profile/",
-      "date": "2026-06-09"
-    },
+      "title": "公众号差点被封",
+      "url": "https://ygz.ink/archives/5206.html",
+      "date": "2026-06-11"
+    }
+  ],
+  "2024": [
     {
-      "name": "无敌",
-      "year": "23",
-      "title": "为博客构建“轻量级知识索引”（四）：系列文章导航与阅读路径设计",
-      "url": "http://blog.tangwudi.com/technology/homedatacenter14334/",
-      "date": "2026-06-10"
+      "name": "团团生活志",
+      "year": "24",
+      "title": "没想到我也经历了一次劳动维权",
+      "url": "https://t-t.live/archives/14cF5QYJ",
+      "date": "2026-06-11"
     }
   ],
   "2026": [
     {
-      "name": "华立",
+      "name": "麦子的思绪",
       "year": "26",
-      "title": "梦和灵感论AI自主意识与人类是另一种AI(圈养)的可能性",
-      "url": "https://www.renhuali.cn/journal/cmq7cw7e20050ch3o0ewt1aog",
-      "date": "2026-06-10"
+      "title": "锈铁年月",
+      "url": "https://mzdsx.com/2026/06/12/%e9%94%88%e9%93%81%e5%b9%b4%e6%9c%88/",
+      "date": "2026-06-11"
+    },
+    {
+      "name": "妄司逸",
+      "year": "26",
+      "title": "AI做了个部落冲突管理网站",
+      "url": "https://blog.flechazo.icu/2026/06/12/coc-counter/",
+      "date": "2026-06-12"
     }
   ]
 };
