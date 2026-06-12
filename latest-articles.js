@@ -1,40 +1,15 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/12/2026, 1:25:36 PM
+// 抓取日期: 6/12/2026, 9:11:16 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
-  "2001": [
+  "2002": [
     {
-      "name": "东评衿就",
-      "year": "01",
-      "title": "也许是全球首个GEO鉴证skill",
-      "url": "https://dongjunke.cn/posts/2026/06/11/10349.html",
-      "date": "2026-06-11"
-    }
-  ],
-  "2003": [
-    {
-      "name": "愆伏",
-      "year": "03",
-      "title": "专业的事，还是让专业的人做吧",
-      "url": "https://www.tortorse.com/archives/leave-professional-work-to-professionals/",
-      "date": "2026-06-11"
-    },
-    {
-      "name": "阮一峰",
-      "year": "03",
-      "title": "科技爱好者周刊（第 400 期）：rsync 的争论",
-      "url": "http://www.ruanyifeng.com/blog/2026/06/weekly-issue-400.html",
-      "date": "2026-06-11"
-    }
-  ],
-  "2004": [
-    {
-      "name": "我的天",
-      "year": "04",
-      "title": "挑选USB无线网卡",
-      "url": "http://www.xlanda.net/posts/22256",
+      "name": "seth",
+      "year": "02",
+      "title": "Nü Tennis",
+      "url": "https://seths.blog/2026/06/nu-tennis/",
       "date": "2026-06-12"
     }
   ],
@@ -76,37 +51,37 @@ const latestArticlesByYear = {
   ],
   "2016": [
     {
-      "name": "太隐",
-      "year": "16",
-      "title": "写给斯大林的最后一封信",
-      "url": "https://wangyurui.com/posts/xie-gei-si-da-lin-de-zui-hou-yi-feng-xin-a27f6e89",
-      "date": "2026-06-11"
-    },
-    {
       "name": "Keyle",
       "year": "16",
       "title": "《恶魔轮盘改》项目完整实现详解：架构、流程与双端同步",
       "url": "https://vrast.cn/posts/3735/",
       "date": "2026-06-12"
-    },
-    {
-      "name": "故事里",
-      "year": "16",
-      "title": "如若一无所有，能否快乐自由",
-      "url": "https://www.gushi.li/if-you-have-nothing-can-you-be-happy-and-free.html",
-      "date": "2026-06-11"
     }
   ],
   "2017": [
     {
       "name": "串串狗小刊",
       "year": "17",
-      "title": "今年最燃Web出海奇迹，小白从0建站一个月入万刀全程详细复盘！",
-      "url": "https://www.ccgxk.com/codeother/775.html",
-      "date": "2026-06-11"
+      "title": "SEO 出海之田七使用 google trends 的经验",
+      "url": "https://www.ccgxk.com/codeother/776.html",
+      "date": "2026-06-12"
+    },
+    {
+      "name": "碎言",
+      "year": "17",
+      "title": "复古像素游戏：《我的博客》",
+      "url": "https://www.suiyan.cc/blog/20260612083444",
+      "date": "2026-06-12"
     }
   ],
   "2019": [
+    {
+      "name": "李锋镝",
+      "year": "19",
+      "title": "Claude-HUD 使用文档",
+      "url": "https://www.lifengdi.com/ren-gong-zhi-neng/4730",
+      "date": "2026-06-12"
+    },
     {
       "name": "So!azy",
       "year": "19",
@@ -129,6 +104,13 @@ const latestArticlesByYear = {
       "title": "這是我很喜歡部落格的地方",
       "url": "https://blog.giveanornot.com/culture-of-blogs/",
       "date": "2026-06-12"
+    },
+    {
+      "name": "EdNovas",
+      "year": "20",
+      "title": "Casbay VPS",
+      "url": "https://ednovas.xyz/2026/06/12/casbay/",
+      "date": "2026-06-12"
     }
   ],
   "2021": [
@@ -141,6 +123,20 @@ const latestArticlesByYear = {
     }
   ],
   "2023": [
+    {
+      "name": "宗宗酱",
+      "year": "23",
+      "title": "理性买体彩",
+      "url": "https://ygz.ink/archives/5215.html",
+      "date": "2026-06-12"
+    },
+    {
+      "name": "小归客",
+      "year": "23",
+      "title": "为Typecho增加文章阅读次数统计功能",
+      "url": "https://xgk.pw/archives/292/",
+      "date": "2026-06-12"
+    },
     {
       "name": "鹿泽",
       "year": "23",
