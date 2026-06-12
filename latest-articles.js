@@ -1,18 +1,9 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/12/2026, 10:26:51 AM
+// 抓取日期: 6/12/2026, 1:25:36 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
-  "2000": [
-    {
-      "name": "Luca",
-      "year": "00",
-      "title": "ntfy.sh 是什么",
-      "url": "https://wlj.me/posts/20260611-ntfy-sh/",
-      "date": "2026-06-11"
-    }
-  ],
   "2001": [
     {
       "name": "东评衿就",
@@ -22,28 +13,19 @@ const latestArticlesByYear = {
       "date": "2026-06-11"
     }
   ],
-  "2002": [
-    {
-      "name": "seth",
-      "year": "02",
-      "title": "Nü Tennis",
-      "url": "https://seths.blog/2026/06/nu-tennis/",
-      "date": "2026-06-12"
-    }
-  ],
   "2003": [
-    {
-      "name": "阮一峰",
-      "year": "03",
-      "title": "科技爱好者周刊（第 400 期）：rsync 的争论",
-      "url": "http://www.ruanyifeng.com/blog/2026/06/weekly-issue-400.html",
-      "date": "2026-06-11"
-    },
     {
       "name": "愆伏",
       "year": "03",
       "title": "专业的事，还是让专业的人做吧",
       "url": "https://www.tortorse.com/archives/leave-professional-work-to-professionals/",
+      "date": "2026-06-11"
+    },
+    {
+      "name": "阮一峰",
+      "year": "03",
+      "title": "科技爱好者周刊（第 400 期）：rsync 的争论",
+      "url": "http://www.ruanyifeng.com/blog/2026/06/weekly-issue-400.html",
       "date": "2026-06-11"
     }
   ],
@@ -65,6 +47,24 @@ const latestArticlesByYear = {
       "date": "2026-06-12"
     }
   ],
+  "2006": [
+    {
+      "name": "joojen Zhou",
+      "year": "06",
+      "title": "关于工作本质的思考",
+      "url": "https://joojen.com/archives/9018.html",
+      "date": "2026-06-12"
+    }
+  ],
+  "2011": [
+    {
+      "name": "老孙",
+      "year": "11",
+      "title": "搬家 &amp; 测试",
+      "url": "https://www.imsun.org/archives/1786.html",
+      "date": "2026-06-12"
+    }
+  ],
   "2015": [
     {
       "name": "WordPress 知识宝库",
@@ -76,10 +76,10 @@ const latestArticlesByYear = {
   ],
   "2016": [
     {
-      "name": "故事里",
+      "name": "太隐",
       "year": "16",
-      "title": "如若一无所有，能否快乐自由",
-      "url": "https://www.gushi.li/if-you-have-nothing-can-you-be-happy-and-free.html",
+      "title": "写给斯大林的最后一封信",
+      "url": "https://wangyurui.com/posts/xie-gei-si-da-lin-de-zui-hou-yi-feng-xin-a27f6e89",
       "date": "2026-06-11"
     },
     {
@@ -90,10 +90,19 @@ const latestArticlesByYear = {
       "date": "2026-06-12"
     },
     {
-      "name": "太隐",
+      "name": "故事里",
       "year": "16",
-      "title": "写给斯大林的最后一封信",
-      "url": "https://wangyurui.com/posts/xie-gei-si-da-lin-de-zui-hou-yi-feng-xin-a27f6e89",
+      "title": "如若一无所有，能否快乐自由",
+      "url": "https://www.gushi.li/if-you-have-nothing-can-you-be-happy-and-free.html",
+      "date": "2026-06-11"
+    }
+  ],
+  "2017": [
+    {
+      "name": "串串狗小刊",
+      "year": "17",
+      "title": "今年最燃Web出海奇迹，小白从0建站一个月入万刀全程详细复盘！",
+      "url": "https://www.ccgxk.com/codeother/775.html",
       "date": "2026-06-11"
     }
   ],
@@ -101,9 +110,9 @@ const latestArticlesByYear = {
     {
       "name": "So!azy",
       "year": "19",
-      "title": "看电影时，我到底在期待什么",
-      "url": "https://blog.solazy.me/20260611/",
-      "date": "2026-06-11"
+      "title": "记一次出差时的 AirPods 巡回",
+      "url": "https://blog.solazy.me/20260612/",
+      "date": "2026-06-12"
     },
     {
       "name": "Allen Hua",
@@ -115,30 +124,23 @@ const latestArticlesByYear = {
   ],
   "2020": [
     {
-      "name": "vinchent",
+      "name": "資工小廢物 - JN",
       "year": "20",
-      "title": "关于死亡教育的一则通告",
-      "url": "https://www.vinchent.xyz/guan-yu-si-wang-jiao-yu-de-ze-tong-gao",
-      "date": "2026-06-11"
+      "title": "這是我很喜歡部落格的地方",
+      "url": "https://blog.giveanornot.com/culture-of-blogs/",
+      "date": "2026-06-12"
     }
   ],
   "2021": [
     {
       "name": "DevNow",
       "year": "21",
-      "title": "Product Hunt 每日热榜 | 2026-06-11",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-06-11",
-      "date": "2026-06-11"
+      "title": "Product Hunt 每日热榜 | 2026-06-12",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-06-12",
+      "date": "2026-06-12"
     }
   ],
   "2023": [
-    {
-      "name": "小归客",
-      "year": "23",
-      "title": "为Typecho增加文章阅读次数统计功能",
-      "url": "https://xgk.pw/archives/292/",
-      "date": "2026-06-12"
-    },
     {
       "name": "鹿泽",
       "year": "23",
@@ -154,16 +156,16 @@ const latestArticlesByYear = {
       "title": "回顾经典-程序员的三大美德",
       "url": "https://xingwangzhe.fun/posts/programmers-three-virtues/",
       "date": "2026-06-12"
-    },
-    {
-      "name": "团团生活志",
-      "year": "24",
-      "title": "没想到我也经历了一次劳动维权",
-      "url": "https://t-t.live/archives/14cF5QYJ",
-      "date": "2026-06-11"
     }
   ],
   "2026": [
+    {
+      "name": "麦子的思绪",
+      "year": "26",
+      "title": "今日冷知识：偶然弄懂了「唐帕」，原来小众词语这么有氛围感",
+      "url": "https://mzdsx.com/2026/06/12/%e4%bb%8a%e6%97%a5%e5%86%b7%e7%9f%a5%e8%af%86%ef%bc%9a%e5%81%b6%e7%84%b6%e5%bc%84%e6%87%82%e4%ba%86%e3%80%8c%e5%94%90%e5%b8%95%e3%80%8d%ef%bc%8c%e5%8e%9f%e6%9d%a5%e5%b0%8f%e4%bc%97%e8%af%8d%e8%af%ad/",
+      "date": "2026-06-12"
+    },
     {
       "name": "妄司逸",
       "year": "26",
