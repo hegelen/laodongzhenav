@@ -1,94 +1,55 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/12/2026, 3:35:08 AM
+// 抓取日期: 6/12/2026, 9:11:16 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
-  "2001": [
-    {
-      "name": "东评衿就",
-      "year": "01",
-      "title": "也许是全球首个GEO鉴证skill",
-      "url": "https://dongjunke.cn/posts/2026/06/11/10349.html",
-      "date": "2026-06-11"
-    }
-  ],
   "2002": [
     {
       "name": "seth",
       "year": "02",
-      "title": "Values capture",
-      "url": "https://seths.blog/2026/06/values-capture-2/",
-      "date": "2026-06-11"
-    }
-  ],
-  "2003": [
-    {
-      "name": "愆伏",
-      "year": "03",
-      "title": "专业的事，还是让专业的人做吧",
-      "url": "https://www.tortorse.com/archives/leave-professional-work-to-professionals/",
-      "date": "2026-06-11"
-    },
-    {
-      "name": "阮一峰",
-      "year": "03",
-      "title": "科技爱好者周刊（第 400 期）：rsync 的争论",
-      "url": "http://www.ruanyifeng.com/blog/2026/06/weekly-issue-400.html",
-      "date": "2026-06-11"
+      "title": "Nü Tennis",
+      "url": "https://seths.blog/2026/06/nu-tennis/",
+      "date": "2026-06-12"
     }
   ],
   "2005": [
     {
-      "name": "云风",
+      "name": "ACEVS",
       "year": "05",
-      "title": "对基本有序的序列排序算法",
-      "url": "https://blog.codingnow.com/2026/06/powersort.html",
-      "date": "2026-06-11"
+      "title": "一个评论的ai评论",
+      "url": "https://acevs.com/5033/",
+      "date": "2026-06-12"
     }
   ],
-  "2009": [
+  "2006": [
     {
-      "name": "老张",
-      "year": "09",
-      "title": "老张博客更换Riven主题了！",
-      "url": "https://laozhang.org/archives/4096.html",
-      "date": "2026-06-11"
+      "name": "joojen Zhou",
+      "year": "06",
+      "title": "关于工作本质的思考",
+      "url": "https://joojen.com/archives/9018.html",
+      "date": "2026-06-12"
     }
   ],
-  "2013": [
+  "2011": [
     {
-      "name": "林羽凡",
-      "year": "13",
-      "title": "我去，这些个大厂，接口还没用热乎呢，就下线接口功能了。",
-      "url": "https://www.linyufan.com/post/5848",
-      "date": "2026-06-11"
+      "name": "老孙",
+      "year": "11",
+      "title": "搬家 &amp; 测试",
+      "url": "https://www.imsun.org/archives/1786.html",
+      "date": "2026-06-12"
     }
   ],
   "2015": [
     {
       "name": "WordPress 知识宝库",
       "year": "15",
-      "title": "워드프레스 UpdraftPlus 백업 복원 플러그인 보안 업데이트 - 인증 우회 취약점 해결",
-      "url": "https://www.thewordcracker.com/basic/%ec%9b%8c%eb%93%9c%ed%94%84%eb%a0%88%ec%8a%a4-updraftplus-%ed%94%8c%eb%9f%ac%ea%b7%b8%ec%9d%b8-%eb%b3%b4%ec%95%88-%ec%97%85%eb%8d%b0%ec%9d%b4%ed%8a%b8/",
-      "date": "2026-06-11"
+      "title": "코딩 없이 AI로 1시간 만에 홈페이지 만들기 - 워드프레스 대신 Replit?",
+      "url": "https://www.thewordcracker.com/blog/%ec%bd%94%eb%94%a9-%ec%97%86%ec%9d%b4-%ec%82%ac%ec%9d%b4%ed%8a%b8-%eb%a7%8c%eb%93%9c%eb%8a%94-%eb%b0%a9%eb%b2%95/",
+      "date": "2026-06-12"
     }
   ],
   "2016": [
-    {
-      "name": "太隐",
-      "year": "16",
-      "title": "写给斯大林的最后一封信",
-      "url": "https://wangyurui.com/posts/xie-gei-si-da-lin-de-zui-hou-yi-feng-xin-a27f6e89",
-      "date": "2026-06-11"
-    },
-    {
-      "name": "故事里",
-      "year": "16",
-      "title": "如若一无所有，能否快乐自由",
-      "url": "https://www.gushi.li/if-you-have-nothing-can-you-be-happy-and-free.html",
-      "date": "2026-06-11"
-    },
     {
       "name": "Keyle",
       "year": "16",
@@ -99,72 +60,107 @@ const latestArticlesByYear = {
   ],
   "2017": [
     {
-      "name": "秋风于渭水",
+      "name": "串串狗小刊",
       "year": "17",
-      "title": "我写了个 Chrome 扩展「Smart Tab Pinner」解决标签页总被误关的问题",
-      "url": "https://www.tjsky.net/best-software/1642",
-      "date": "2026-06-11"
+      "title": "SEO 出海之田七使用 google trends 的经验",
+      "url": "https://www.ccgxk.com/codeother/776.html",
+      "date": "2026-06-12"
+    },
+    {
+      "name": "碎言",
+      "year": "17",
+      "title": "复古像素游戏：《我的博客》",
+      "url": "https://www.suiyan.cc/blog/20260612083444",
+      "date": "2026-06-12"
     }
   ],
   "2019": [
     {
+      "name": "李锋镝",
+      "year": "19",
+      "title": "Claude-HUD 使用文档",
+      "url": "https://www.lifengdi.com/ren-gong-zhi-neng/4730",
+      "date": "2026-06-12"
+    },
+    {
       "name": "So!azy",
       "year": "19",
-      "title": "看电影时，我到底在期待什么",
-      "url": "https://blog.solazy.me/20260611/",
-      "date": "2026-06-11"
+      "title": "记一次出差时的 AirPods 巡回",
+      "url": "https://blog.solazy.me/20260612/",
+      "date": "2026-06-12"
+    },
+    {
+      "name": "Allen Hua",
+      "year": "19",
+      "title": "Linux Desktop 使用 NVIDIA 独显驱动 Google Earth Pro 和 WeChat",
+      "url": "https://hellodk.cn/post/1224",
+      "date": "2026-06-12"
     }
   ],
   "2020": [
     {
-      "name": "vinchent",
+      "name": "資工小廢物 - JN",
       "year": "20",
-      "title": "关于死亡教育的一则通告",
-      "url": "https://www.vinchent.xyz/guan-yu-si-wang-jiao-yu-de-ze-tong-gao",
-      "date": "2026-06-11"
+      "title": "這是我很喜歡部落格的地方",
+      "url": "https://blog.giveanornot.com/culture-of-blogs/",
+      "date": "2026-06-12"
     },
     {
-      "name": "初然忆",
+      "name": "EdNovas",
       "year": "20",
-      "title": "解决阿里云邮件推送被微软屏蔽的问题",
-      "url": "https://www.imcry.vip/post/2026-6-11-1133/",
-      "date": "2026-06-11"
+      "title": "Casbay VPS",
+      "url": "https://ednovas.xyz/2026/06/12/casbay/",
+      "date": "2026-06-12"
     }
   ],
   "2021": [
     {
       "name": "DevNow",
       "year": "21",
-      "title": "Product Hunt 每日热榜 | 2026-06-11",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-06-11",
-      "date": "2026-06-11"
+      "title": "Product Hunt 每日热榜 | 2026-06-12",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-06-12",
+      "date": "2026-06-12"
     }
   ],
   "2023": [
     {
       "name": "宗宗酱",
       "year": "23",
-      "title": "公众号差点被封",
-      "url": "https://ygz.ink/archives/5206.html",
-      "date": "2026-06-11"
+      "title": "理性买体彩",
+      "url": "https://ygz.ink/archives/5215.html",
+      "date": "2026-06-12"
+    },
+    {
+      "name": "小归客",
+      "year": "23",
+      "title": "为Typecho增加文章阅读次数统计功能",
+      "url": "https://xgk.pw/archives/292/",
+      "date": "2026-06-12"
+    },
+    {
+      "name": "鹿泽",
+      "year": "23",
+      "title": "Google 搜索关于使用第三方 SEO 工具、服务和建议的指南",
+      "url": "https://www.bailuze.com/25246.html",
+      "date": "2026-06-12"
     }
   ],
   "2024": [
     {
-      "name": "团团生活志",
+      "name": "姓王者",
       "year": "24",
-      "title": "没想到我也经历了一次劳动维权",
-      "url": "https://t-t.live/archives/14cF5QYJ",
-      "date": "2026-06-11"
+      "title": "回顾经典-程序员的三大美德",
+      "url": "https://xingwangzhe.fun/posts/programmers-three-virtues/",
+      "date": "2026-06-12"
     }
   ],
   "2026": [
     {
       "name": "麦子的思绪",
       "year": "26",
-      "title": "锈铁年月",
-      "url": "https://mzdsx.com/2026/06/12/%e9%94%88%e9%93%81%e5%b9%b4%e6%9c%88/",
-      "date": "2026-06-11"
+      "title": "今日冷知识：偶然弄懂了「唐帕」，原来小众词语这么有氛围感",
+      "url": "https://mzdsx.com/2026/06/12/%e4%bb%8a%e6%97%a5%e5%86%b7%e7%9f%a5%e8%af%86%ef%bc%9a%e5%81%b6%e7%84%b6%e5%bc%84%e6%87%82%e4%ba%86%e3%80%8c%e5%94%90%e5%b8%95%e3%80%8d%ef%bc%8c%e5%8e%9f%e6%9d%a5%e5%b0%8f%e4%bc%97%e8%af%8d%e8%af%ad/",
+      "date": "2026-06-12"
     },
     {
       "name": "妄司逸",
