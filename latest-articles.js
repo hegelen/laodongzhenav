@@ -1,9 +1,18 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/13/2026, 6:44:42 AM
+// 抓取日期: 6/13/2026, 12:27:01 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
+  "2002": [
+    {
+      "name": "seth",
+      "year": "02",
+      "title": "The troll button",
+      "url": "https://seths.blog/2026/06/the-troll-button/",
+      "date": "2026-06-13"
+    }
+  ],
   "2004": [
     {
       "name": "我的天",
@@ -20,15 +29,20 @@ const latestArticlesByYear = {
       "title": "美國政府出手禁止 Anthropic 提供 Fable 5 服務",
       "url": "https://blog.gslin.org/archives/2026/06/13/13068/%e7%be%8e%e5%9c%8b%e6%94%bf%e5%ba%9c%e5%87%ba%e6%89%8b%e7%a6%81%e6%ad%a2-anthropic-%e6%8f%90%e4%be%9b-fable-5-%e6%9c%8d%e5%8b%99/",
       "date": "2026-06-13"
-    }
-  ],
-  "2006": [
+    },
     {
-      "name": "joojen Zhou",
-      "year": "06",
-      "title": "关于工作本质的思考",
-      "url": "https://joojen.com/archives/9018.html",
-      "date": "2026-06-12"
+      "name": "王志勇",
+      "year": "05",
+      "title": "数码评测(68)：组装高速U盘/移动硬盘",
+      "url": "http://www.auiou.com/relevant/00002161.jsp",
+      "date": "2026-06-13"
+    },
+    {
+      "name": "ACEVS",
+      "year": "05",
+      "title": "分类",
+      "url": "https://acevs.com/5035/",
+      "date": "2026-06-13"
     }
   ],
   "2008": [
@@ -42,10 +56,10 @@ const latestArticlesByYear = {
   ],
   "2009": [
     {
-      "name": "老刘",
+      "name": "异数",
       "year": "09",
-      "title": "路边摊不再便宜，也该管管了",
-      "url": "https://www.iliu.org/posts/street-vendor-normalization/",
+      "title": "彩票 || 2026065期大乐透分析",
+      "url": "https://www.yishu.pro/222.html",
       "date": "2026-06-13"
     }
   ],
@@ -60,29 +74,20 @@ const latestArticlesByYear = {
   ],
   "2011": [
     {
-      "name": "老孙",
+      "name": "唐巧",
       "year": "11",
-      "title": "搬家 &amp; 测试",
-      "url": "https://www.imsun.org/archives/1786.html",
-      "date": "2026-06-12"
-    }
-  ],
-  "2012": [
-    {
-      "name": "水拍石",
-      "year": "12",
-      "title": "情绪与自我激励",
-      "url": "https://www.leitao.cn/10324.html",
+      "title": "玩教具行业的核心竞争力",
+      "url": "https://blog.devtang.com/2026/06/13/educational-toy-industry-thinking/",
       "date": "2026-06-13"
     }
   ],
-  "2015": [
+  "2013": [
     {
-      "name": "WordPress 知识宝库",
-      "year": "15",
-      "title": "코딩 없이 AI로 1시간 만에 홈페이지 만들기 - 워드프레스 대신 Replit?",
-      "url": "https://www.thewordcracker.com/blog/%ec%bd%94%eb%94%a9-%ec%97%86%ec%9d%b4-%ec%82%ac%ec%9d%b4%ed%8a%b8-%eb%a7%8c%eb%93%9c%eb%8a%94-%eb%b0%a9%eb%b2%95/",
-      "date": "2026-06-12"
+      "name": "林羽凡",
+      "year": "13",
+      "title": "终于完善了一个鸿蒙版的Markdown渲染器",
+      "url": "https://www.linyufan.com/post/5850",
+      "date": "2026-06-13"
     }
   ],
   "2017": [
@@ -94,27 +99,13 @@ const latestArticlesByYear = {
       "date": "2026-06-12"
     }
   ],
-  "2019": [
+  "2018": [
     {
-      "name": "李锋镝",
-      "year": "19",
-      "title": "Claude-HUD 使用文档",
-      "url": "https://www.lifengdi.com/ren-gong-zhi-neng/4730",
-      "date": "2026-06-12"
-    },
-    {
-      "name": "Allen Hua",
-      "year": "19",
-      "title": "Linux Desktop 使用 NVIDIA 独显驱动 Google Earth Pro 和 WeChat",
-      "url": "https://hellodk.cn/post/1224",
-      "date": "2026-06-12"
-    },
-    {
-      "name": "So!azy",
-      "year": "19",
-      "title": "记一次出差时的 AirPods 巡回",
-      "url": "https://blog.solazy.me/20260612/",
-      "date": "2026-06-12"
+      "name": "运维咖啡吧",
+      "year": "18",
+      "title": "明镜荡｜上海出发一小时的宝藏湖荡露营地",
+      "url": "https://blog.ops-coffee.com/r/city-china-jiangsu-suzhou-kunshan-mingjingdang.html",
+      "date": "2026-06-13"
     }
   ],
   "2020": [
@@ -124,6 +115,13 @@ const latestArticlesByYear = {
       "title": "Casbay VPS",
       "url": "https://ednovas.xyz/2026/06/12/casbay/",
       "date": "2026-06-12"
+    },
+    {
+      "name": "Z次元",
+      "year": "20",
+      "title": "Tailscale——一款高效的内网穿透、远程连接电脑方案",
+      "url": "https://blog.ahzoo.cn/p/75f9e64/",
+      "date": "2026-06-13"
     }
   ],
   "2021": [
@@ -137,9 +135,9 @@ const latestArticlesByYear = {
     {
       "name": "DevNow",
       "year": "21",
-      "title": "Product Hunt 每日热榜 | 2026-06-12",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-06-12",
-      "date": "2026-06-12"
+      "title": "Product Hunt 每日热榜 | 2026-06-13",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-06-13",
+      "date": "2026-06-13"
     }
   ],
   "2023": [
@@ -151,26 +149,26 @@ const latestArticlesByYear = {
       "date": "2026-06-13"
     },
     {
-      "name": "宗宗酱",
+      "name": "兔哥",
       "year": "23",
-      "title": "理性买体彩",
-      "url": "https://ygz.ink/archives/5215.html",
-      "date": "2026-06-12"
-    }
-  ],
-  "2026": [
-    {
-      "name": "麦子的思绪",
-      "year": "26",
-      "title": "今日冷知识：偶然弄懂了「唐帕」，原来小众词语这么有氛围感",
-      "url": "https://mzdsx.com/2026/06/12/%e4%bb%8a%e6%97%a5%e5%86%b7%e7%9f%a5%e8%af%86%ef%bc%9a%e5%81%b6%e7%84%b6%e5%bc%84%e6%87%82%e4%ba%86%e3%80%8c%e5%94%90%e5%b8%95%e3%80%8d%ef%bc%8c%e5%8e%9f%e6%9d%a5%e5%b0%8f%e4%bc%97%e8%af%8d%e8%af%ad/",
-      "date": "2026-06-12"
+      "title": "甲骨文云悄悄改文档：Always Free 的 ARM 实例配额从「4核24G」变成「2核12G」？",
+      "url": "https://uuzi.net/oracle-cloud-always-free-arm-quota-cut-4-to-2-ocpu/",
+      "date": "2026-06-13"
     },
     {
-      "name": "一万先生",
-      "year": "26",
-      "title": "噩耗！甲骨文免费额度减半！附上减配教程 预防扣费",
-      "url": "/feed/8",
+      "name": "宗宗酱",
+      "year": "23",
+      "title": "淘了个锤子手机当备用机",
+      "url": "https://ygz.ink/archives/5222.html",
+      "date": "2026-06-13"
+    }
+  ],
+  "2024": [
+    {
+      "name": "xgclevo",
+      "year": "24",
+      "title": "低功耗蓝牙广播",
+      "url": "https://blog.xgclevo.top/posts/197c3ecd/",
       "date": "2026-06-13"
     }
   ]
