@@ -305,6 +305,7 @@ const paidBlogData = {
 
 // ==================== 下载网站导航    , {name:'', url:''}     ====================
 const downwebData = {
+	 '13': [{name:'中国科学技术大学开源软件镜像', url:'https://mirrors.ustc.edu.cn/'}],
     '13': [{name:'清华大学开源软件镜像站', url:'https://mirror.tuna.tsinghua.edu.cn/'}]
 };
 
