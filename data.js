@@ -470,7 +470,7 @@ const categories = {
     '💻 独立博客程序': blogProgramData,
     '📖 学习导航大全': studyNavData,
     '📚︎ 独立百科大全': pediadata,
-	'⬇⬇⬇ 下载网站大全': downwebdata,
+	' ⬇ 下载网站大全': downwebData,
 	'🤖 AI人工智能': aiData,
     '🛰 AI导航大全': aiNavData,
     '⭐ 特色网址导航': featuredNavData,
