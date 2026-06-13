@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/13/2026, 12:27:01 PM
+// 抓取日期: 6/13/2026, 8:24:37 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -13,28 +13,12 @@ const latestArticlesByYear = {
       "date": "2026-06-13"
     }
   ],
-  "2004": [
-    {
-      "name": "我的天",
-      "year": "04",
-      "title": "自驱力",
-      "url": "http://www.xlanda.net/posts/22258",
-      "date": "2026-06-13"
-    }
-  ],
   "2005": [
     {
       "name": "Gea-Suan Lin",
       "year": "05",
-      "title": "美國政府出手禁止 Anthropic 提供 Fable 5 服務",
-      "url": "https://blog.gslin.org/archives/2026/06/13/13068/%e7%be%8e%e5%9c%8b%e6%94%bf%e5%ba%9c%e5%87%ba%e6%89%8b%e7%a6%81%e6%ad%a2-anthropic-%e6%8f%90%e4%be%9b-fable-5-%e6%9c%8d%e5%8b%99/",
-      "date": "2026-06-13"
-    },
-    {
-      "name": "王志勇",
-      "year": "05",
-      "title": "数码评测(68)：组装高速U盘/移动硬盘",
-      "url": "http://www.auiou.com/relevant/00002161.jsp",
+      "title": "FFmpeg 又被拿出來鞭安全問題了，這次有 21 個 0-day",
+      "url": "https://blog.gslin.org/archives/2026/06/14/13069/ffmpeg-%e5%8f%88%e8%a2%ab%e6%8b%bf%e5%87%ba%e4%be%86%e9%9e%ad%e5%ae%89%e5%85%a8%e5%95%8f%e9%a1%8c%e4%ba%86%ef%bc%8c%e9%80%99%e6%ac%a1%e6%9c%89-21-%e5%80%8b-0-day/",
       "date": "2026-06-13"
     },
     {
@@ -47,6 +31,13 @@ const latestArticlesByYear = {
   ],
   "2008": [
     {
+      "name": "军",
+      "year": "08",
+      "title": "永久版本是个坑",
+      "url": "https://me.xu19.com/he-permanent-version-of-the-software-is-a-pitfall/",
+      "date": "2026-06-13"
+    },
+    {
       "name": "生活的左上角",
       "year": "08",
       "title": "我的混账人生（六）：澄溪小学",
@@ -55,6 +46,13 @@ const latestArticlesByYear = {
     }
   ],
   "2009": [
+    {
+      "name": "老刘",
+      "year": "09",
+      "title": "路边摊不再便宜，也该管管了",
+      "url": "https://www.iliu.org/posts/street-vendor-normalization/",
+      "date": "2026-06-13"
+    },
     {
       "name": "异数",
       "year": "09",
@@ -69,6 +67,13 @@ const latestArticlesByYear = {
       "year": "10",
       "title": "Up Typecho1.3",
       "url": "https://zhou.ge/2026-06-13.html",
+      "date": "2026-06-13"
+    },
+    {
+      "name": "limboy",
+      "year": "10",
+      "title": "读《置身钉内》后的一些感受",
+      "url": "https://limboy.me/posts/pinned-inside-dingtalk",
       "date": "2026-06-13"
     }
   ],
@@ -85,18 +90,9 @@ const latestArticlesByYear = {
     {
       "name": "林羽凡",
       "year": "13",
-      "title": "终于完善了一个鸿蒙版的Markdown渲染器",
-      "url": "https://www.linyufan.com/post/5850",
+      "title": "看来Trae用不起了",
+      "url": "https://www.linyufan.com/post/5851",
       "date": "2026-06-13"
-    }
-  ],
-  "2017": [
-    {
-      "name": "串串狗小刊",
-      "year": "17",
-      "title": "SEO 出海之田七使用 google trends 的经验",
-      "url": "https://www.ccgxk.com/codeother/776.html",
-      "date": "2026-06-12"
     }
   ],
   "2018": [
@@ -108,14 +104,16 @@ const latestArticlesByYear = {
       "date": "2026-06-13"
     }
   ],
-  "2020": [
+  "2019": [
     {
-      "name": "EdNovas",
-      "year": "20",
-      "title": "Casbay VPS",
-      "url": "https://ednovas.xyz/2026/06/12/casbay/",
-      "date": "2026-06-12"
-    },
+      "name": "浪浪山下那个村",
+      "year": "19",
+      "title": "PuaSE v0.2.2 → v0.2.5 版本变化全览",
+      "url": "https://www.zeekling.cn/articles/2026/06/13/1781366163530.html",
+      "date": "2026-06-13"
+    }
+  ],
+  "2020": [
     {
       "name": "Z次元",
       "year": "20",
@@ -133,10 +131,19 @@ const latestArticlesByYear = {
       "date": "2026-06-12"
     },
     {
-      "name": "DevNow",
+      "name": "WSH",
       "year": "21",
-      "title": "Product Hunt 每日热榜 | 2026-06-13",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-06-13",
+      "title": "失而复得",
+      "url": "https://www.wsh233.cn/post/失而复得",
+      "date": "2026-06-13"
+    }
+  ],
+  "2022": [
+    {
+      "name": "倦意",
+      "year": "22",
+      "title": "无需服务器低成本搭建域名邮箱",
+      "url": "https://jyblog.cn/5701/",
       "date": "2026-06-13"
     }
   ],
@@ -147,28 +154,21 @@ const latestArticlesByYear = {
       "title": "如何利用现代SEO信号评估旧页面？",
       "url": "https://www.bailuze.com/24150.html",
       "date": "2026-06-13"
-    },
-    {
-      "name": "兔哥",
-      "year": "23",
-      "title": "甲骨文云悄悄改文档：Always Free 的 ARM 实例配额从「4核24G」变成「2核12G」？",
-      "url": "https://uuzi.net/oracle-cloud-always-free-arm-quota-cut-4-to-2-ocpu/",
-      "date": "2026-06-13"
-    },
-    {
-      "name": "宗宗酱",
-      "year": "23",
-      "title": "淘了个锤子手机当备用机",
-      "url": "https://ygz.ink/archives/5222.html",
-      "date": "2026-06-13"
     }
   ],
-  "2024": [
+  "2026": [
     {
-      "name": "xgclevo",
-      "year": "24",
-      "title": "低功耗蓝牙广播",
-      "url": "https://blog.xgclevo.top/posts/197c3ecd/",
+      "name": "一万先生",
+      "year": "26",
+      "title": "噩耗！甲骨文免费额度减半！附上减配教程 预防扣费",
+      "url": "/feed/8",
+      "date": "2026-06-13"
+    },
+    {
+      "name": "安迪",
+      "year": "26",
+      "title": "图片存档",
+      "url": "https://i55.top/archives/535/",
       "date": "2026-06-13"
     }
   ]
