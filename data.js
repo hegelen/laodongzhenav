@@ -117,7 +117,7 @@ const forumData = {
     '04': [{name:'其乐', url:'https://keylol.com/'}, {name:'虎扑', url:'https://bbs.hupu.com/'}, {name:'海川化工', url:'https://bbs.hcbbs.com/'}],
 	'05': [{name:'reddit', url:'aHR0cHM6Ly93d3cucmVkZGl0LmNvbS8%3D'}],
     '06': [{name:'迅维', url:'https://www.chinafix.com/forum.php'}, {name:'飞卢', url:'https://bbs.faloo.com/'}, {name:'煎蛋', url:'https://jandan.net/bbs'}, {name:'绝客', url:'https://jkmrp.com/'}],
-    '07': [{name:'chiphell', url:'https://www.chiphell.com/forum.php'}, {name:'矿石收音机', url:'http://www.crystalradio.cn/forum.php'}],
+    '07': [{name:'chiphell', url:'https://www.chiphell.com/forum.php'}, {name:'矿石收音机', url:'http://www.crystalradio.cn/forum.php'}  , {name:'广告中国', url:'https://www.advertcn.com/'}   ],
     '08': [{name:'hostloc', url:'https://hostloc.com/'}, {name:'吾爱破解', url:'https://www.52pojie.cn/index.php'}],
     '09': [{name:'北邮人论坛', url:'https://bbs.byr.cn/'}, {name:'Ruby中文社区', url:'https://ruby-china.org/'}, {name:'w3ctech前端技术社区', url:'https://w3ctech.com/'} ],
     '10': [{name:'v2ex', url:'https://www.v2ex.com/'}],
