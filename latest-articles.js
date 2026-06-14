@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/13/2026, 8:24:37 PM
+// 抓取日期: 6/14/2026, 8:26:38 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -8,168 +8,170 @@ const latestArticlesByYear = {
     {
       "name": "seth",
       "year": "02",
-      "title": "The troll button",
-      "url": "https://seths.blog/2026/06/the-troll-button/",
-      "date": "2026-06-13"
+      "title": "The nature of launch day",
+      "url": "https://seths.blog/2026/06/the-nature-of-launch-day/",
+      "date": "2026-06-14"
+    }
+  ],
+  "2004": [
+    {
+      "name": "我的天",
+      "year": "04",
+      "title": "又到高考",
+      "url": "http://www.xlanda.net/posts/22260",
+      "date": "2026-06-14"
+    },
+    {
+      "name": "TonyBai",
+      "year": "04",
+      "title": "别再省 Token 了！硅谷新共识：浪费算力才是唯一捷径",
+      "url": "https://tonybai.com/2026/06/14/stop-saving-tokens-silicon-valley-consensus-waste-compute-shortcut/",
+      "date": "2026-06-14"
     }
   ],
   "2005": [
     {
       "name": "Gea-Suan Lin",
       "year": "05",
-      "title": "FFmpeg 又被拿出來鞭安全問題了，這次有 21 個 0-day",
-      "url": "https://blog.gslin.org/archives/2026/06/14/13069/ffmpeg-%e5%8f%88%e8%a2%ab%e6%8b%bf%e5%87%ba%e4%be%86%e9%9e%ad%e5%ae%89%e5%85%a8%e5%95%8f%e9%a1%8c%e4%ba%86%ef%bc%8c%e9%80%99%e6%ac%a1%e6%9c%89-21-%e5%80%8b-0-day/",
-      "date": "2026-06-13"
+      "title": "x86-64 轉 aarch64 的靜態翻譯",
+      "url": "https://blog.gslin.org/archives/2026/06/14/13073/x86-64-%e8%bd%89-aarch64-%e7%9a%84%e9%9d%9c%e6%85%8b%e7%bf%bb%e8%ad%af/",
+      "date": "2026-06-14"
     },
     {
       "name": "ACEVS",
       "year": "05",
-      "title": "分类",
-      "url": "https://acevs.com/5035/",
-      "date": "2026-06-13"
+      "title": "桑葚",
+      "url": "https://acevs.com/5037/",
+      "date": "2026-06-14"
+    }
+  ],
+  "2007": [
+    {
+      "name": "苏洋",
+      "year": "07",
+      "title": "从零重建 macOS 开发机：可复现的环境初始化流程",
+      "url": "https://soulteary.com/2026/06/14/rebuild-macos-dev-machine-from-scratch-reproducible-environment-setup.html",
+      "date": "2026-06-14"
     }
   ],
   "2008": [
     {
-      "name": "军",
-      "year": "08",
-      "title": "永久版本是个坑",
-      "url": "https://me.xu19.com/he-permanent-version-of-the-software-is-a-pitfall/",
-      "date": "2026-06-13"
-    },
-    {
       "name": "生活的左上角",
       "year": "08",
-      "title": "我的混账人生（六）：澄溪小学",
-      "url": "https://bwskyer.com/my-messed-up-life-6.html",
-      "date": "2026-06-13"
-    }
-  ],
-  "2009": [
-    {
-      "name": "老刘",
-      "year": "09",
-      "title": "路边摊不再便宜，也该管管了",
-      "url": "https://www.iliu.org/posts/street-vendor-normalization/",
-      "date": "2026-06-13"
-    },
-    {
-      "name": "异数",
-      "year": "09",
-      "title": "彩票 || 2026065期大乐透分析",
-      "url": "https://www.yishu.pro/222.html",
-      "date": "2026-06-13"
-    }
-  ],
-  "2010": [
-    {
-      "name": "忆往事",
-      "year": "10",
-      "title": "Up Typecho1.3",
-      "url": "https://zhou.ge/2026-06-13.html",
-      "date": "2026-06-13"
-    },
-    {
-      "name": "limboy",
-      "year": "10",
-      "title": "读《置身钉内》后的一些感受",
-      "url": "https://limboy.me/posts/pinned-inside-dingtalk",
-      "date": "2026-06-13"
-    }
-  ],
-  "2011": [
-    {
-      "name": "唐巧",
-      "year": "11",
-      "title": "玩教具行业的核心竞争力",
-      "url": "https://blog.devtang.com/2026/06/13/educational-toy-industry-thinking/",
-      "date": "2026-06-13"
+      "title": "我的混账人生（七）：最初的光",
+      "url": "https://bwskyer.com/my-messed-up-life-7.html",
+      "date": "2026-06-14"
     }
   ],
   "2013": [
     {
+      "name": "蛋蛋",
+      "year": "13",
+      "title": "Nginx 又双叒给我挖坑了：HSTS 撞车 + 宝塔偷偷锁 Frame",
+      "url": "https://wuqishi.com/archives/nginx-hsts-csp-pitfall-bt-panel",
+      "date": "2026-06-14"
+    },
+    {
       "name": "林羽凡",
       "year": "13",
-      "title": "看来Trae用不起了",
-      "url": "https://www.linyufan.com/post/5851",
-      "date": "2026-06-13"
+      "title": "我给“林羽凡笔记”增加了语音输入笔记功能",
+      "url": "https://www.linyufan.com/post/5852",
+      "date": "2026-06-14"
     }
   ],
-  "2018": [
+  "2014": [
     {
-      "name": "运维咖啡吧",
-      "year": "18",
-      "title": "明镜荡｜上海出发一小时的宝藏湖荡露营地",
-      "url": "https://blog.ops-coffee.com/r/city-china-jiangsu-suzhou-kunshan-mingjingdang.html",
-      "date": "2026-06-13"
+      "name": "ying",
+      "year": "14",
+      "title": "《GPT 图解》笔记：微调与RLHF、总结",
+      "url": "https://izualzhy.cn/llm-diagrammatize-ft-rlhf-summary",
+      "date": "2026-06-14"
+    }
+  ],
+  "2016": [
+    {
+      "name": "Keyle",
+      "year": "16",
+      "title": "听闻的一些故事",
+      "url": "https://vrast.cn/posts/50713/",
+      "date": "2026-06-14"
+    }
+  ],
+  "2017": [
+    {
+      "name": "串串狗小刊",
+      "year": "17",
+      "title": "驾驭工程后，AI 圈又一个新概念  Loop 工程（循环工程）",
+      "url": "https://www.ccgxk.com/codeother/778.html",
+      "date": "2026-06-14"
     }
   ],
   "2019": [
     {
-      "name": "浪浪山下那个村",
+      "name": "So!azy",
       "year": "19",
-      "title": "PuaSE v0.2.2 → v0.2.5 版本变化全览",
-      "url": "https://www.zeekling.cn/articles/2026/06/13/1781366163530.html",
-      "date": "2026-06-13"
-    }
-  ],
-  "2020": [
-    {
-      "name": "Z次元",
-      "year": "20",
-      "title": "Tailscale——一款高效的内网穿透、远程连接电脑方案",
-      "url": "https://blog.ahzoo.cn/p/75f9e64/",
-      "date": "2026-06-13"
-    }
-  ],
-  "2021": [
-    {
-      "name": "记录生活",
-      "year": "21",
-      "title": "Typecho 站内搜索插件 SiteSearch（BUG）",
-      "url": "https://9sb.net/archives/typecho-site-search-plugin-sitesearch-bug.html",
-      "date": "2026-06-12"
-    },
-    {
-      "name": "WSH",
-      "year": "21",
-      "title": "失而复得",
-      "url": "https://www.wsh233.cn/post/失而复得",
-      "date": "2026-06-13"
+      "title": "我的美食雷达",
+      "url": "https://blog.solazy.me/20260614/",
+      "date": "2026-06-14"
     }
   ],
   "2022": [
     {
-      "name": "倦意",
+      "name": "VeryJack",
       "year": "22",
-      "title": "无需服务器低成本搭建域名邮箱",
-      "url": "https://jyblog.cn/5701/",
-      "date": "2026-06-13"
+      "title": "从学校到公司，从上海到成都",
+      "url": "https://veryjack.com/life/university_to_company/",
+      "date": "2026-06-14"
     }
   ],
   "2023": [
     {
-      "name": "鹿泽",
+      "name": "宗宗酱",
       "year": "23",
-      "title": "如何利用现代SEO信号评估旧页面？",
-      "url": "https://www.bailuze.com/24150.html",
-      "date": "2026-06-13"
+      "title": "有没有大型仙剑/修仙类游戏",
+      "url": "https://ygz.ink/archives/5242.html",
+      "date": "2026-06-14"
+    }
+  ],
+  "2024": [
+    {
+      "name": "倾城于你",
+      "year": "24",
+      "title": "哪吒面板数据库瘦身-从1.2G到6M",
+      "url": "https://qninq.cn/archives/vacuumnezhadb.html",
+      "date": "2026-06-14"
+    }
+  ],
+  "2025": [
+    {
+      "name": "Marcus",
+      "year": "25",
+      "title": "2026.06.14 博客阅读周记",
+      "url": "https://www.immarcus.com/blog/weekly-20260614",
+      "date": "2026-06-14"
     }
   ],
   "2026": [
     {
-      "name": "一万先生",
+      "name": "安迪",
       "year": "26",
-      "title": "噩耗！甲骨文免费额度减半！附上减配教程 预防扣费",
-      "url": "/feed/8",
+      "title": "世界杯有感",
+      "url": "https://i55.top/archives/538/",
       "date": "2026-06-13"
     },
     {
-      "name": "安迪",
+      "name": "周阿源",
       "year": "26",
-      "title": "图片存档",
-      "url": "https://i55.top/archives/535/",
-      "date": "2026-06-13"
+      "title": "周末涂涂画画｜给生活添一抹彩色",
+      "url": "https://zhouayuan.com/post/54.html",
+      "date": "2026-06-14"
+    },
+    {
+      "name": "麦子的思绪",
+      "year": "26",
+      "title": "Tangpa.com",
+      "url": "https://mzdsx.com/2026/06/14/tangpa-com/",
+      "date": "2026-06-14"
     }
   ]
 };
