@@ -334,7 +334,8 @@ const aiData = {
 const pediadata = {
 	'01': [ {name:'ifixit维修百科', url:'https://ifixit.com/'}  ],
 	'05': [{name:'快懂百科', url:'https://www.baike.com/'}],
-	'05': [{name:'百度百科', url:'https://baike.baidu.com/'}],
+	'06': [{name:'百度百科', url:'https://baike.baidu.com/'}],
+	'08': [{name:'蓝色理想百科', url:'http://wiki.blueidea.com/'}],
     '10': [{name:'发音字典', url:'https://www.voicedic.com/'}],
     '13': [{name:'wikihow', url:'https://zh.wikihow.com/'}],
     '15': [{name:'观沧海', url:'https://www.ageeye.cn/'}   , {name:'灰机wiki', url:'https://www.huijiwiki.com/'}                 ],
