@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/14/2026, 8:26:38 PM
+// 抓取日期: 6/15/2026, 9:54:04 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -8,170 +8,168 @@ const latestArticlesByYear = {
     {
       "name": "seth",
       "year": "02",
-      "title": "The nature of launch day",
-      "url": "https://seths.blog/2026/06/the-nature-of-launch-day/",
-      "date": "2026-06-14"
+      "title": "Degrees of freedom",
+      "url": "https://seths.blog/2026/06/degrees-of-freedom-3/",
+      "date": "2026-06-15"
     }
   ],
   "2004": [
     {
-      "name": "我的天",
-      "year": "04",
-      "title": "又到高考",
-      "url": "http://www.xlanda.net/posts/22260",
-      "date": "2026-06-14"
-    },
-    {
       "name": "TonyBai",
       "year": "04",
-      "title": "别再省 Token 了！硅谷新共识：浪费算力才是唯一捷径",
-      "url": "https://tonybai.com/2026/06/14/stop-saving-tokens-silicon-valley-consensus-waste-compute-shortcut/",
-      "date": "2026-06-14"
+      "title": "谷歌 SRE 重磅白皮书：当 AI 自动写出 10 倍代码，谁来阻止系统崩溃？",
+      "url": "https://tonybai.com/2026/06/15/google-ai-in-sre/",
+      "date": "2026-06-15"
     }
   ],
-  "2005": [
+  "2006": [
     {
-      "name": "Gea-Suan Lin",
-      "year": "05",
-      "title": "x86-64 轉 aarch64 的靜態翻譯",
-      "url": "https://blog.gslin.org/archives/2026/06/14/13073/x86-64-%e8%bd%89-aarch64-%e7%9a%84%e9%9d%9c%e6%85%8b%e7%bf%bb%e8%ad%af/",
-      "date": "2026-06-14"
-    },
-    {
-      "name": "ACEVS",
-      "year": "05",
-      "title": "桑葚",
-      "url": "https://acevs.com/5037/",
-      "date": "2026-06-14"
+      "name": "joojen Zhou",
+      "year": "06",
+      "title": "你只是打个工而已",
+      "url": "https://joojen.com/archives/9022.html",
+      "date": "2026-06-15"
     }
   ],
   "2007": [
     {
-      "name": "苏洋",
+      "name": "朱小呆",
       "year": "07",
-      "title": "从零重建 macOS 开发机：可复现的环境初始化流程",
-      "url": "https://soulteary.com/2026/06/14/rebuild-macos-dev-machine-from-scratch-reproducible-environment-setup.html",
-      "date": "2026-06-14"
+      "title": "2026年「徽章猎人」活动第二季度收官",
+      "url": "https://zhujay.com/talk/talk_detail.html?id=1240",
+      "date": "2026-06-15"
     }
   ],
-  "2008": [
+  "2010": [
     {
-      "name": "生活的左上角",
-      "year": "08",
-      "title": "我的混账人生（七）：最初的光",
-      "url": "https://bwskyer.com/my-messed-up-life-7.html",
-      "date": "2026-06-14"
+      "name": "忆往事",
+      "year": "10",
+      "title": "配镜&amp;手表",
+      "url": "https://zhou.ge/2026-06-15.html",
+      "date": "2026-06-15"
     }
   ],
   "2013": [
     {
-      "name": "蛋蛋",
+      "name": "小z",
       "year": "13",
-      "title": "Nginx 又双叒给我挖坑了：HSTS 撞车 + 宝塔偷偷锁 Frame",
-      "url": "https://wuqishi.com/archives/nginx-hsts-csp-pitfall-bt-panel",
-      "date": "2026-06-14"
-    },
-    {
-      "name": "林羽凡",
-      "year": "13",
-      "title": "我给“林羽凡笔记”增加了语音输入笔记功能",
-      "url": "https://www.linyufan.com/post/5852",
-      "date": "2026-06-14"
+      "title": "ZMark书签管理器618限时折扣，买一送一",
+      "url": "https://blog.xiaoz.org/archives/23066",
+      "date": "2026-06-15"
     }
   ],
   "2014": [
     {
-      "name": "ying",
+      "name": "梦幻辰风",
       "year": "14",
-      "title": "《GPT 图解》笔记：微调与RLHF、总结",
-      "url": "https://izualzhy.cn/llm-diagrammatize-ft-rlhf-summary",
-      "date": "2026-06-14"
-    }
-  ],
-  "2016": [
-    {
-      "name": "Keyle",
-      "year": "16",
-      "title": "听闻的一些故事",
-      "url": "https://vrast.cn/posts/50713/",
-      "date": "2026-06-14"
+      "title": "愿我是你世界里的光",
+      "url": "https://www.mhcf.net/post-1209.html",
+      "date": "2026-06-15"
     }
   ],
   "2017": [
     {
       "name": "串串狗小刊",
       "year": "17",
-      "title": "驾驭工程后，AI 圈又一个新概念  Loop 工程（循环工程）",
-      "url": "https://www.ccgxk.com/codeother/778.html",
-      "date": "2026-06-14"
+      "title": "让老外感受到了中国 SEO 的威力，amazing！",
+      "url": "https://www.ccgxk.com/codeother/779.html",
+      "date": "2026-06-15"
     }
   ],
   "2019": [
     {
-      "name": "So!azy",
+      "name": "流情",
       "year": "19",
-      "title": "我的美食雷达",
-      "url": "https://blog.solazy.me/20260614/",
-      "date": "2026-06-14"
+      "title": "梦里远行",
+      "url": "https://liuqingwushui.top/archives/162/",
+      "date": "2026-06-15"
     }
   ],
-  "2022": [
+  "2020": [
     {
-      "name": "VeryJack",
-      "year": "22",
-      "title": "从学校到公司，从上海到成都",
-      "url": "https://veryjack.com/life/university_to_company/",
-      "date": "2026-06-14"
+      "name": "初然忆",
+      "year": "20",
+      "title": "澄迈到海口的拼车小记",
+      "url": "https://www.imcry.vip/post/2026-6-15-1407/",
+      "date": "2026-06-15"
+    },
+    {
+      "name": "資工小廢物 - JN",
+      "year": "20",
+      "title": "現此時我對 AI 的想法（2026）",
+      "url": "https://blog.giveanornot.com/ai-challenge/",
+      "date": "2026-06-15"
+    },
+    {
+      "name": "优世界",
+      "year": "20",
+      "title": "静态博客 Gridea 新平替：Gridea Pro",
+      "url": "https://usj.cc/202606151312.html",
+      "date": "2026-06-15"
+    }
+  ],
+  "2021": [
+    {
+      "name": "DevNow",
+      "year": "21",
+      "title": "Product Hunt 每日热榜 | 2026-06-15",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-06-15",
+      "date": "2026-06-15"
+    },
+    {
+      "name": "Dayu",
+      "year": "21",
+      "title": "Beren 与 Lúthien 长眠处",
+      "url": "https://anotherdayu.com/beren-and-lúthien/",
+      "date": "2026-06-15"
+    },
+    {
+      "name": "记录生活",
+      "year": "21",
+      "title": "Typecho 插件推荐 UploadPlugin",
+      "url": "https://9sb.net/archives/typecho-plugin-recommended-uploadplugin.html",
+      "date": "2026-06-15"
     }
   ],
   "2023": [
     {
+      "name": "小野",
+      "year": "23",
+      "title": "QQ音乐播放接口：PHP逆向分析与实现",
+      "url": "https://lb5.net/257.html",
+      "date": "2026-06-15"
+    },
+    {
+      "name": "鹿泽",
+      "year": "23",
+      "title": "为什么SEO优化正变得不仅仅是关键词：AI如何改变规则？",
+      "url": "https://www.bailuze.com/24153.html",
+      "date": "2026-06-15"
+    },
+    {
       "name": "宗宗酱",
       "year": "23",
-      "title": "有没有大型仙剑/修仙类游戏",
-      "url": "https://ygz.ink/archives/5242.html",
-      "date": "2026-06-14"
+      "title": "Bug",
+      "url": "https://ygz.ink/archives/5251.html",
+      "date": "2026-06-15"
     }
   ],
   "2024": [
     {
-      "name": "倾城于你",
+      "name": "奶狗",
       "year": "24",
-      "title": "哪吒面板数据库瘦身-从1.2G到6M",
-      "url": "https://qninq.cn/archives/vacuumnezhadb.html",
-      "date": "2026-06-14"
+      "title": "世界，您好！",
+      "url": "https://www.naigou.cn/1_xqu7vl/",
+      "date": "2026-06-15"
     }
   ],
   "2025": [
     {
-      "name": "Marcus",
+      "name": "青萍",
       "year": "25",
-      "title": "2026.06.14 博客阅读周记",
-      "url": "https://www.immarcus.com/blog/weekly-20260614",
-      "date": "2026-06-14"
-    }
-  ],
-  "2026": [
-    {
-      "name": "安迪",
-      "year": "26",
-      "title": "世界杯有感",
-      "url": "https://i55.top/archives/538/",
-      "date": "2026-06-13"
-    },
-    {
-      "name": "周阿源",
-      "year": "26",
-      "title": "周末涂涂画画｜给生活添一抹彩色",
-      "url": "https://zhouayuan.com/post/54.html",
-      "date": "2026-06-14"
-    },
-    {
-      "name": "麦子的思绪",
-      "year": "26",
-      "title": "Tangpa.com",
-      "url": "https://mzdsx.com/2026/06/14/tangpa-com/",
-      "date": "2026-06-14"
+      "title": "AI语音技术到底能做什么",
+      "url": "https://blog.lusyoe.com/article/ai-voice-tech-beginners-guide",
+      "date": "2026-06-15"
     }
   ]
 };
