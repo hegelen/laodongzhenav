@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/15/2026, 9:54:04 PM
+// 抓取日期: 6/16/2026, 9:52:35 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -8,168 +8,170 @@ const latestArticlesByYear = {
     {
       "name": "seth",
       "year": "02",
-      "title": "Degrees of freedom",
-      "url": "https://seths.blog/2026/06/degrees-of-freedom-3/",
-      "date": "2026-06-15"
+      "title": "The relentless math of the long tail",
+      "url": "https://seths.blog/2026/06/the-relentless-math-of-the-long-tail/",
+      "date": "2026-06-16"
+    },
+    {
+      "name": "不吐不快",
+      "year": "02",
+      "title": "KiCad 多版本文件转换器",
+      "url": "https://mianao.info/KiCad-Multi-Version-Converter/",
+      "date": "2026-06-16"
     }
   ],
   "2004": [
     {
       "name": "TonyBai",
       "year": "04",
-      "title": "谷歌 SRE 重磅白皮书：当 AI 自动写出 10 倍代码，谁来阻止系统崩溃？",
-      "url": "https://tonybai.com/2026/06/15/google-ai-in-sre/",
+      "title": "为什么说“编译通过，就能运行”？Google 专家 Alice 揭秘 Rust 的工程美学与底层逻辑",
+      "url": "https://tonybai.com/2026/06/16/why-if-it-compiles-it-runs-rust-engineering-aesthetics-and-logic/",
       "date": "2026-06-15"
+    },
+    {
+      "name": "我的天",
+      "year": "04",
+      "title": "献血碎碎念",
+      "url": "http://www.xlanda.net/posts/22266",
+      "date": "2026-06-16"
+    }
+  ],
+  "2005": [
+    {
+      "name": "ACEVS",
+      "year": "05",
+      "title": "拆电钢琴",
+      "url": "https://acevs.com/5041/",
+      "date": "2026-06-16"
     }
   ],
   "2006": [
     {
-      "name": "joojen Zhou",
+      "name": "随风沐虐",
       "year": "06",
-      "title": "你只是打个工而已",
-      "url": "https://joojen.com/archives/9022.html",
-      "date": "2026-06-15"
+      "title": "全国节能宣传周",
+      "url": "https://www.munue.com/energy-conservation-publicity-week.html",
+      "date": "2026-06-16"
     }
   ],
   "2007": [
     {
-      "name": "朱小呆",
+      "name": "树下语",
       "year": "07",
-      "title": "2026年「徽章猎人」活动第二季度收官",
-      "url": "https://zhujay.com/talk/talk_detail.html?id=1240",
-      "date": "2026-06-15"
+      "title": "怪事谈：办公室来了一群特殊访客",
+      "url": "https://yishu-life.com/index.php/archives/482.html",
+      "date": "2026-06-16"
     }
   ],
-  "2010": [
+  "2009": [
     {
-      "name": "忆往事",
-      "year": "10",
-      "title": "配镜&amp;手表",
-      "url": "https://zhou.ge/2026-06-15.html",
-      "date": "2026-06-15"
+      "name": "老张",
+      "year": "09",
+      "title": "[推广]酷鸭数据端午活动6.16开启！限时4天！",
+      "url": "https://laozhang.org/archives/4154.html",
+      "date": "2026-06-16"
     }
   ],
   "2013": [
     {
-      "name": "小z",
+      "name": "林羽凡",
       "year": "13",
-      "title": "ZMark书签管理器618限时折扣，买一送一",
-      "url": "https://blog.xiaoz.org/archives/23066",
-      "date": "2026-06-15"
+      "title": "今天把websocket的登录流程打通了，简单总结一下",
+      "url": "https://www.linyufan.com/post/5855",
+      "date": "2026-06-16"
     }
   ],
-  "2014": [
+  "2016": [
     {
-      "name": "梦幻辰风",
-      "year": "14",
-      "title": "愿我是你世界里的光",
-      "url": "https://www.mhcf.net/post-1209.html",
-      "date": "2026-06-15"
+      "name": "ximi",
+      "year": "16",
+      "title": "分享一个比较实用的网页favicon图标获取方法",
+      "url": "https://www.ximi.me/post-6042.html",
+      "date": "2026-06-16"
     }
   ],
   "2017": [
     {
       "name": "串串狗小刊",
       "year": "17",
-      "title": "让老外感受到了中国 SEO 的威力，amazing！",
-      "url": "https://www.ccgxk.com/codeother/779.html",
-      "date": "2026-06-15"
+      "title": "用 AI 挑选 skill 头疼？聊聊四大 skill 仓库",
+      "url": "https://www.ccgxk.com/codeother/780.html",
+      "date": "2026-06-16"
     }
   ],
   "2019": [
     {
+      "name": "李锋镝",
+      "year": "19",
+      "title": "LiteLLM 本地代理搭建",
+      "url": "https://www.lifengdi.com/ren-gong-zhi-neng/4732",
+      "date": "2026-06-16"
+    },
+    {
       "name": "流情",
       "year": "19",
-      "title": "梦里远行",
-      "url": "https://liuqingwushui.top/archives/162/",
-      "date": "2026-06-15"
+      "title": "小确幸的一天",
+      "url": "https://liuqingwushui.top/archives/163/",
+      "date": "2026-06-16"
     }
   ],
   "2020": [
     {
-      "name": "初然忆",
+      "name": "天书vip",
       "year": "20",
-      "title": "澄迈到海口的拼车小记",
-      "url": "https://www.imcry.vip/post/2026-6-15-1407/",
-      "date": "2026-06-15"
-    },
-    {
-      "name": "資工小廢物 - JN",
-      "year": "20",
-      "title": "現此時我對 AI 的想法（2026）",
-      "url": "https://blog.giveanornot.com/ai-challenge/",
-      "date": "2026-06-15"
-    },
-    {
-      "name": "优世界",
-      "year": "20",
-      "title": "静态博客 Gridea 新平替：Gridea Pro",
-      "url": "https://usj.cc/202606151312.html",
-      "date": "2026-06-15"
+      "title": "稳定的系统没有 “一战成名”",
+      "url": "https://www.skybook.vip/inn/144",
+      "date": "2026-06-16"
     }
   ],
   "2021": [
     {
       "name": "DevNow",
       "year": "21",
-      "title": "Product Hunt 每日热榜 | 2026-06-15",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-06-15",
-      "date": "2026-06-15"
-    },
-    {
-      "name": "Dayu",
-      "year": "21",
-      "title": "Beren 与 Lúthien 长眠处",
-      "url": "https://anotherdayu.com/beren-and-lúthien/",
-      "date": "2026-06-15"
-    },
-    {
-      "name": "记录生活",
-      "year": "21",
-      "title": "Typecho 插件推荐 UploadPlugin",
-      "url": "https://9sb.net/archives/typecho-plugin-recommended-uploadplugin.html",
-      "date": "2026-06-15"
+      "title": "Product Hunt 每日热榜 | 2026-06-16",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-06-16",
+      "date": "2026-06-16"
     }
   ],
   "2023": [
     {
-      "name": "小野",
-      "year": "23",
-      "title": "QQ音乐播放接口：PHP逆向分析与实现",
-      "url": "https://lb5.net/257.html",
-      "date": "2026-06-15"
-    },
-    {
       "name": "鹿泽",
       "year": "23",
-      "title": "为什么SEO优化正变得不仅仅是关键词：AI如何改变规则？",
-      "url": "https://www.bailuze.com/24153.html",
-      "date": "2026-06-15"
+      "title": "链接权益与链接关键意味着什么？如何影响SEO？",
+      "url": "https://www.bailuze.com/24155.html",
+      "date": "2026-06-16"
     },
     {
-      "name": "宗宗酱",
+      "name": "按钮与磁带",
       "year": "23",
-      "title": "Bug",
-      "url": "https://ygz.ink/archives/5251.html",
-      "date": "2026-06-15"
-    }
-  ],
-  "2024": [
-    {
-      "name": "奶狗",
-      "year": "24",
-      "title": "世界，您好！",
-      "url": "https://www.naigou.cn/1_xqu7vl/",
-      "date": "2026-06-15"
+      "title": "bearblog",
+      "url": "https://jefftay.com/bearblog/",
+      "date": "2026-06-16"
     }
   ],
   "2025": [
     {
-      "name": "青萍",
+      "name": "Marcus",
       "year": "25",
-      "title": "AI语音技术到底能做什么",
-      "url": "https://blog.lusyoe.com/article/ai-voice-tech-beginners-guide",
-      "date": "2026-06-15"
+      "title": "安静车厢",
+      "url": "https://www.immarcus.com/blog/quiet-car",
+      "date": "2026-06-16"
+    }
+  ],
+  "2026": [
+    {
+      "name": "安迪",
+      "year": "26",
+      "title": "硅云十年之约虚拟主机",
+      "url": "https://i55.top/archives/539/",
+      "date": "2026-06-16"
+    },
+    {
+      "name": "麦子的思绪",
+      "year": "26",
+      "title": "深夜重刷老港剧，终究还是怀念从前",
+      "url": "https://mzdsx.com/2026/06/16/%e6%b7%b1%e5%a4%9c%e9%87%8d%e5%88%b7%e8%80%81%e6%b8%af%e5%89%a7%ef%bc%8c%e7%bb%88%e7%a9%b6%e8%bf%98%e6%98%af%e6%80%80%e5%bf%b5%e4%bb%8e%e5%89%8d/",
+      "date": "2026-06-16"
     }
   ]
 };
