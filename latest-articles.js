@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/16/2026, 9:52:35 PM
+// 抓取日期: 6/17/2026, 7:14:27 AM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -20,73 +20,60 @@ const latestArticlesByYear = {
       "date": "2026-06-16"
     }
   ],
+  "2003": [
+    {
+      "name": "王通",
+      "year": "03",
+      "title": "王通:天地灵气复苏，24字修炼口诀",
+      "url": "https://www.ufoer.com/post/13715.html",
+      "date": "2026-06-17"
+    }
+  ],
   "2004": [
     {
-      "name": "TonyBai",
+      "name": "kaix.in",
       "year": "04",
-      "title": "为什么说“编译通过，就能运行”？Google 专家 Alice 揭秘 Rust 的工程美学与底层逻辑",
-      "url": "https://tonybai.com/2026/06/16/why-if-it-compiles-it-runs-rust-engineering-aesthetics-and-logic/",
-      "date": "2026-06-15"
+      "title": "2026.06.17 14:21",
+      "url": "https://kaix.in/2026/0617/",
+      "date": "2026-06-17"
     },
     {
       "name": "我的天",
       "year": "04",
-      "title": "献血碎碎念",
-      "url": "http://www.xlanda.net/posts/22266",
-      "date": "2026-06-16"
+      "title": "没救了",
+      "url": "http://www.xlanda.net/posts/22268",
+      "date": "2026-06-17"
+    },
+    {
+      "name": "TonyBai",
+      "year": "04",
+      "title": "DeepMind 亮出王炸：别再手写 Agent Harness 了，AI 已经学会自己写了！",
+      "url": "https://tonybai.com/2026/06/17/deepmind-automation-agent-harness-ai-self-coding/",
+      "date": "2026-06-17"
     }
   ],
   "2005": [
     {
       "name": "ACEVS",
       "year": "05",
-      "title": "拆电钢琴",
-      "url": "https://acevs.com/5041/",
-      "date": "2026-06-16"
-    }
-  ],
-  "2006": [
-    {
-      "name": "随风沐虐",
-      "year": "06",
-      "title": "全国节能宣传周",
-      "url": "https://www.munue.com/energy-conservation-publicity-week.html",
-      "date": "2026-06-16"
-    }
-  ],
-  "2007": [
-    {
-      "name": "树下语",
-      "year": "07",
-      "title": "怪事谈：办公室来了一群特殊访客",
-      "url": "https://yishu-life.com/index.php/archives/482.html",
-      "date": "2026-06-16"
+      "title": "无力回天",
+      "url": "https://acevs.com/5044/",
+      "date": "2026-06-17"
     }
   ],
   "2009": [
+    {
+      "name": "多多",
+      "year": "09",
+      "title": "无极 以后你会失去更多",
+      "url": "https://ddlog.cn/?p=550",
+      "date": "2026-06-16"
+    },
     {
       "name": "老张",
       "year": "09",
       "title": "[推广]酷鸭数据端午活动6.16开启！限时4天！",
       "url": "https://laozhang.org/archives/4154.html",
-      "date": "2026-06-16"
-    }
-  ],
-  "2013": [
-    {
-      "name": "林羽凡",
-      "year": "13",
-      "title": "今天把websocket的登录流程打通了，简单总结一下",
-      "url": "https://www.linyufan.com/post/5855",
-      "date": "2026-06-16"
-    }
-  ],
-  "2016": [
-    {
-      "name": "ximi",
-      "year": "16",
-      "title": "分享一个比较实用的网页favicon图标获取方法",
-      "url": "https://www.ximi.me/post-6042.html",
       "date": "2026-06-16"
     }
   ],
@@ -97,30 +84,28 @@ const latestArticlesByYear = {
       "title": "用 AI 挑选 skill 头疼？聊聊四大 skill 仓库",
       "url": "https://www.ccgxk.com/codeother/780.html",
       "date": "2026-06-16"
-    }
-  ],
-  "2019": [
-    {
-      "name": "李锋镝",
-      "year": "19",
-      "title": "LiteLLM 本地代理搭建",
-      "url": "https://www.lifengdi.com/ren-gong-zhi-neng/4732",
-      "date": "2026-06-16"
     },
     {
-      "name": "流情",
-      "year": "19",
-      "title": "小确幸的一天",
-      "url": "https://liuqingwushui.top/archives/163/",
-      "date": "2026-06-16"
+      "name": "秋风于渭水",
+      "year": "17",
+      "title": "哪吒探针爆致命漏洞（CVE-2026-53519）大批 MJJ 中招！探针就该老老实实做监测好不",
+      "url": "https://www.tjsky.net/news/1664",
+      "date": "2026-06-17"
     }
   ],
   "2020": [
     {
-      "name": "天书vip",
+      "name": "呆哥",
       "year": "20",
-      "title": "稳定的系统没有 “一战成名”",
-      "url": "https://www.skybook.vip/inn/144",
+      "title": "（误回解除，帖子锁定）",
+      "url": "https://www.dalao.net/thread-59853.htm",
+      "date": "2026-06-17"
+    },
+    {
+      "name": "不凡",
+      "year": "20",
+      "title": "新购的唯卓仕55mm f1.8 EVO镜头有瑕疵，已退货",
+      "url": "https://www.bufanz.com/20260616675.html",
       "date": "2026-06-16"
     }
   ],
@@ -133,13 +118,22 @@ const latestArticlesByYear = {
       "date": "2026-06-16"
     }
   ],
+  "2022": [
+    {
+      "name": "倦意",
+      "year": "22",
+      "title": "域名故事：低成本拿下域名 jyblog.com 从售价16万到350块",
+      "url": "https://jyblog.cn/5732/",
+      "date": "2026-06-17"
+    }
+  ],
   "2023": [
     {
-      "name": "鹿泽",
+      "name": "无敌",
       "year": "23",
-      "title": "链接权益与链接关键意味着什么？如何影响SEO？",
-      "url": "https://www.bailuze.com/24155.html",
-      "date": "2026-06-16"
+      "title": "为博客构建“轻量级知识索引”（五）：猜你所想——embedding的真正引入",
+      "url": "http://blog.tangwudi.com/technology/homedatacenter14419/",
+      "date": "2026-06-17"
     },
     {
       "name": "按钮与磁带",
@@ -153,9 +147,9 @@ const latestArticlesByYear = {
     {
       "name": "Marcus",
       "year": "25",
-      "title": "安静车厢",
-      "url": "https://www.immarcus.com/blog/quiet-car",
-      "date": "2026-06-16"
+      "title": "募捐、求职履历和比特币",
+      "url": "https://www.immarcus.com/blog/fundraising-resume-bitcoin",
+      "date": "2026-06-17"
     }
   ],
   "2026": [
@@ -167,11 +161,11 @@ const latestArticlesByYear = {
       "date": "2026-06-16"
     },
     {
-      "name": "麦子的思绪",
+      "name": "周阿源",
       "year": "26",
-      "title": "深夜重刷老港剧，终究还是怀念从前",
-      "url": "https://mzdsx.com/2026/06/16/%e6%b7%b1%e5%a4%9c%e9%87%8d%e5%88%b7%e8%80%81%e6%b8%af%e5%89%a7%ef%bc%8c%e7%bb%88%e7%a9%b6%e8%bf%98%e6%98%af%e6%80%80%e5%bf%b5%e4%bb%8e%e5%89%8d/",
-      "date": "2026-06-16"
+      "title": "清晨日常速写｜画下洗漱时乱糟糟的自己",
+      "url": "https://zhouayuan.com/post/55.html",
+      "date": "2026-06-17"
     }
   ]
 };
