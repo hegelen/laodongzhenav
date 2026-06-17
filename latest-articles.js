@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/17/2026, 7:14:27 AM
+// 抓取日期: 6/17/2026, 9:21:01 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -8,35 +8,12 @@ const latestArticlesByYear = {
     {
       "name": "seth",
       "year": "02",
-      "title": "The relentless math of the long tail",
-      "url": "https://seths.blog/2026/06/the-relentless-math-of-the-long-tail/",
-      "date": "2026-06-16"
-    },
-    {
-      "name": "不吐不快",
-      "year": "02",
-      "title": "KiCad 多版本文件转换器",
-      "url": "https://mianao.info/KiCad-Multi-Version-Converter/",
-      "date": "2026-06-16"
-    }
-  ],
-  "2003": [
-    {
-      "name": "王通",
-      "year": "03",
-      "title": "王通:天地灵气复苏，24字修炼口诀",
-      "url": "https://www.ufoer.com/post/13715.html",
+      "title": "Status symbols",
+      "url": "https://seths.blog/2026/06/status-symbols/",
       "date": "2026-06-17"
     }
   ],
   "2004": [
-    {
-      "name": "kaix.in",
-      "year": "04",
-      "title": "2026.06.17 14:21",
-      "url": "https://kaix.in/2026/0617/",
-      "date": "2026-06-17"
-    },
     {
       "name": "我的天",
       "year": "04",
@@ -50,9 +27,23 @@ const latestArticlesByYear = {
       "title": "DeepMind 亮出王炸：别再手写 Agent Harness 了，AI 已经学会自己写了！",
       "url": "https://tonybai.com/2026/06/17/deepmind-automation-agent-harness-ai-self-coding/",
       "date": "2026-06-17"
+    },
+    {
+      "name": "kaix.in",
+      "year": "04",
+      "title": "2026.06.17 14:21",
+      "url": "https://kaix.in/2026/0617/",
+      "date": "2026-06-17"
     }
   ],
   "2005": [
+    {
+      "name": "春田",
+      "year": "05",
+      "title": "１０７９．情けは人の為ならず",
+      "url": "http://kaikeimura.way-nifty.com/blog/2026/06/post-6736d9.html",
+      "date": "2026-06-17"
+    },
     {
       "name": "ACEVS",
       "year": "05",
@@ -61,69 +52,89 @@ const latestArticlesByYear = {
       "date": "2026-06-17"
     }
   ],
+  "2006": [
+    {
+      "name": "joojen Zhou",
+      "year": "06",
+      "title": "2026 年 5 月房地产数据来了",
+      "url": "https://joojen.com/archives/9034.html",
+      "date": "2026-06-17"
+    }
+  ],
+  "2007": [
+    {
+      "name": "织梦岁月",
+      "year": "07",
+      "title": "记一次重大失误",
+      "url": "https://zhujianlin.com/archives/2178.html",
+      "date": "2026-06-17"
+    }
+  ],
   "2009": [
     {
-      "name": "多多",
+      "name": "老刘",
       "year": "09",
-      "title": "无极 以后你会失去更多",
-      "url": "https://ddlog.cn/?p=550",
-      "date": "2026-06-16"
-    },
+      "title": "甜粽子、咸粽子",
+      "url": "https://www.iliu.org/posts/northern-sweet-southern-salty-zongzi/",
+      "date": "2026-06-17"
+    }
+  ],
+  "2010": [
     {
-      "name": "老张",
-      "year": "09",
-      "title": "[推广]酷鸭数据端午活动6.16开启！限时4天！",
-      "url": "https://laozhang.org/archives/4154.html",
-      "date": "2026-06-16"
+      "name": "忆往事",
+      "year": "10",
+      "title": "蓄意碰瓷",
+      "url": "https://zhou.ge/2026-06-17.html",
+      "date": "2026-06-17"
+    }
+  ],
+  "2013": [
+    {
+      "name": "林羽凡",
+      "year": "13",
+      "title": "首试Zode开发工具",
+      "url": "https://www.linyufan.com/post/5857",
+      "date": "2026-06-17"
     }
   ],
   "2017": [
     {
       "name": "串串狗小刊",
       "year": "17",
-      "title": "用 AI 挑选 skill 头疼？聊聊四大 skill 仓库",
-      "url": "https://www.ccgxk.com/codeother/780.html",
-      "date": "2026-06-16"
+      "title": "Node-js 新手需要知道什么？",
+      "url": "https://www.ccgxk.com/front-end/781.html",
+      "date": "2026-06-17"
     },
     {
-      "name": "秋风于渭水",
+      "name": "科学空间",
       "year": "17",
-      "title": "哪吒探针爆致命漏洞（CVE-2026-53519）大批 MJJ 中招！探针就该老老实实做监测好不",
-      "url": "https://www.tjsky.net/news/1664",
+      "title": "MoE环游记：9、门控归一化之争",
+      "url": "https://kexue.fm/archives/11782",
+      "date": "2026-06-17"
+    }
+  ],
+  "2019": [
+    {
+      "name": "奶爸建站笔记",
+      "year": "19",
+      "title": "SiteGround数据库超出限额怎么办？一个真实案例帮你搞定",
+      "url": "https://blog.naibabiji.com/skill/siteground-database-over-limit.html",
       "date": "2026-06-17"
     }
   ],
   "2020": [
     {
+      "name": "不凡",
+      "year": "20",
+      "title": "新购神牛离机闪光灯iT32，功能多又实用！",
+      "url": "https://www.bufanz.com/20260617680.html",
+      "date": "2026-06-17"
+    },
+    {
       "name": "呆哥",
       "year": "20",
       "title": "（误回解除，帖子锁定）",
       "url": "https://www.dalao.net/thread-59853.htm",
-      "date": "2026-06-17"
-    },
-    {
-      "name": "不凡",
-      "year": "20",
-      "title": "新购的唯卓仕55mm f1.8 EVO镜头有瑕疵，已退货",
-      "url": "https://www.bufanz.com/20260616675.html",
-      "date": "2026-06-16"
-    }
-  ],
-  "2021": [
-    {
-      "name": "DevNow",
-      "year": "21",
-      "title": "Product Hunt 每日热榜 | 2026-06-16",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-06-16",
-      "date": "2026-06-16"
-    }
-  ],
-  "2022": [
-    {
-      "name": "倦意",
-      "year": "22",
-      "title": "域名故事：低成本拿下域名 jyblog.com 从售价16万到350块",
-      "url": "https://jyblog.cn/5732/",
       "date": "2026-06-17"
     }
   ],
@@ -136,11 +147,18 @@ const latestArticlesByYear = {
       "date": "2026-06-17"
     },
     {
-      "name": "按钮与磁带",
+      "name": "鹿泽",
       "year": "23",
-      "title": "bearblog",
-      "url": "https://jefftay.com/bearblog/",
-      "date": "2026-06-16"
+      "title": "选择可靠SEO服务机构的重要性",
+      "url": "https://www.bailuze.com/24157.html",
+      "date": "2026-06-17"
+    },
+    {
+      "name": "宗宗酱",
+      "year": "23",
+      "title": "网站被百度K掉不是个例",
+      "url": "https://ygz.ink/archives/5300.html",
+      "date": "2026-06-17"
     }
   ],
   "2025": [
@@ -149,22 +167,6 @@ const latestArticlesByYear = {
       "year": "25",
       "title": "募捐、求职履历和比特币",
       "url": "https://www.immarcus.com/blog/fundraising-resume-bitcoin",
-      "date": "2026-06-17"
-    }
-  ],
-  "2026": [
-    {
-      "name": "安迪",
-      "year": "26",
-      "title": "硅云十年之约虚拟主机",
-      "url": "https://i55.top/archives/539/",
-      "date": "2026-06-16"
-    },
-    {
-      "name": "周阿源",
-      "year": "26",
-      "title": "清晨日常速写｜画下洗漱时乱糟糟的自己",
-      "url": "https://zhouayuan.com/post/55.html",
       "date": "2026-06-17"
     }
   ]
