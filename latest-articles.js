@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/17/2026, 9:21:01 PM
+// 抓取日期: 6/18/2026, 7:48:17 AM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -17,23 +17,9 @@ const latestArticlesByYear = {
     {
       "name": "我的天",
       "year": "04",
-      "title": "没救了",
-      "url": "http://www.xlanda.net/posts/22268",
-      "date": "2026-06-17"
-    },
-    {
-      "name": "TonyBai",
-      "year": "04",
-      "title": "DeepMind 亮出王炸：别再手写 Agent Harness 了，AI 已经学会自己写了！",
-      "url": "https://tonybai.com/2026/06/17/deepmind-automation-agent-harness-ai-self-coding/",
-      "date": "2026-06-17"
-    },
-    {
-      "name": "kaix.in",
-      "year": "04",
-      "title": "2026.06.17 14:21",
-      "url": "https://kaix.in/2026/0617/",
-      "date": "2026-06-17"
+      "title": "人老了",
+      "url": "http://www.xlanda.net/posts/22270",
+      "date": "2026-06-18"
     }
   ],
   "2005": [
@@ -47,35 +33,24 @@ const latestArticlesByYear = {
     {
       "name": "ACEVS",
       "year": "05",
-      "title": "无力回天",
-      "url": "https://acevs.com/5044/",
-      "date": "2026-06-17"
+      "title": "电钢琴续",
+      "url": "https://acevs.com/5046/",
+      "date": "2026-06-18"
     }
   ],
   "2006": [
+    {
+      "name": "随风沐虐",
+      "year": "06",
+      "title": "6月18日，全国草原保护日",
+      "url": "https://www.munue.com/grassland-protection-day.html",
+      "date": "2026-06-18"
+    },
     {
       "name": "joojen Zhou",
       "year": "06",
       "title": "2026 年 5 月房地产数据来了",
       "url": "https://joojen.com/archives/9034.html",
-      "date": "2026-06-17"
-    }
-  ],
-  "2007": [
-    {
-      "name": "织梦岁月",
-      "year": "07",
-      "title": "记一次重大失误",
-      "url": "https://zhujianlin.com/archives/2178.html",
-      "date": "2026-06-17"
-    }
-  ],
-  "2009": [
-    {
-      "name": "老刘",
-      "year": "09",
-      "title": "甜粽子、咸粽子",
-      "url": "https://www.iliu.org/posts/northern-sweet-southern-salty-zongzi/",
       "date": "2026-06-17"
     }
   ],
@@ -88,70 +63,86 @@ const latestArticlesByYear = {
       "date": "2026-06-17"
     }
   ],
-  "2013": [
+  "2015": [
     {
-      "name": "林羽凡",
-      "year": "13",
-      "title": "首试Zode开发工具",
-      "url": "https://www.linyufan.com/post/5857",
+      "name": "WordPress 知识宝库",
+      "year": "15",
+      "title": "워드프레스 하단 푸터 영역에 이용약관 페이지 링크 표시하는 방법",
+      "url": "https://www.thewordcracker.com/intermediate/%ec%9b%8c%eb%93%9c%ed%94%84%eb%a0%88%ec%8a%a4-%ec%9d%b4%ec%9a%a9%ec%95%bd%ea%b4%80-%ed%8e%98%ec%9d%b4%ec%a7%80-%eb%a7%81%ed%81%ac-%ed%91%9c%ec%8b%9c/",
       "date": "2026-06-17"
     }
   ],
   "2017": [
-    {
-      "name": "串串狗小刊",
-      "year": "17",
-      "title": "Node-js 新手需要知道什么？",
-      "url": "https://www.ccgxk.com/front-end/781.html",
-      "date": "2026-06-17"
-    },
     {
       "name": "科学空间",
       "year": "17",
       "title": "MoE环游记：9、门控归一化之争",
       "url": "https://kexue.fm/archives/11782",
       "date": "2026-06-17"
+    },
+    {
+      "name": "串串狗小刊",
+      "year": "17",
+      "title": "Node-js 新手需要知道什么？",
+      "url": "https://www.ccgxk.com/front-end/781.html",
+      "date": "2026-06-17"
     }
   ],
   "2019": [
     {
-      "name": "奶爸建站笔记",
+      "name": "李锋镝",
       "year": "19",
-      "title": "SiteGround数据库超出限额怎么办？一个真实案例帮你搞定",
-      "url": "https://blog.naibabiji.com/skill/siteground-database-over-limit.html",
+      "title": "SpringBoot DeferredLog 完整详解",
+      "url": "https://www.lifengdi.com/hou-duan/4734",
+      "date": "2026-06-18"
+    },
+    {
+      "name": "So!azy",
+      "year": "19",
+      "title": "开始万豪白金挑战",
+      "url": "https://blog.solazy.me/20260617/",
       "date": "2026-06-17"
+    },
+    {
+      "name": "流情",
+      "year": "19",
+      "title": "端午出游—A计划，I启动",
+      "url": "https://liuqingwushui.top/archives/164/",
+      "date": "2026-06-18"
     }
   ],
   "2020": [
+    {
+      "name": "无妄当自持",
+      "year": "20",
+      "title": "给 Hermes Agent 接入 Sciverse：5 分钟搞定学术搜索 MCP",
+      "url": "https://www.insidentally.com/articles/000050/",
+      "date": "2026-06-18"
+    },
     {
       "name": "不凡",
       "year": "20",
       "title": "新购神牛离机闪光灯iT32，功能多又实用！",
       "url": "https://www.bufanz.com/20260617680.html",
       "date": "2026-06-17"
-    },
+    }
+  ],
+  "2021": [
     {
-      "name": "呆哥",
-      "year": "20",
-      "title": "（误回解除，帖子锁定）",
-      "url": "https://www.dalao.net/thread-59853.htm",
+      "name": "DevNow",
+      "year": "21",
+      "title": "Product Hunt 每日热榜 | 2026-06-17",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-06-17",
       "date": "2026-06-17"
     }
   ],
   "2023": [
     {
-      "name": "无敌",
-      "year": "23",
-      "title": "为博客构建“轻量级知识索引”（五）：猜你所想——embedding的真正引入",
-      "url": "http://blog.tangwudi.com/technology/homedatacenter14419/",
-      "date": "2026-06-17"
-    },
-    {
       "name": "鹿泽",
       "year": "23",
-      "title": "选择可靠SEO服务机构的重要性",
-      "url": "https://www.bailuze.com/24157.html",
-      "date": "2026-06-17"
+      "title": "各行业GEO填词参考，AI搜索提示词优化指南",
+      "url": "https://www.bailuze.com/25315.html",
+      "date": "2026-06-18"
     },
     {
       "name": "宗宗酱",
@@ -165,9 +156,18 @@ const latestArticlesByYear = {
     {
       "name": "Marcus",
       "year": "25",
-      "title": "募捐、求职履历和比特币",
-      "url": "https://www.immarcus.com/blog/fundraising-resume-bitcoin",
-      "date": "2026-06-17"
+      "title": "麻醉体感实录",
+      "url": "https://www.immarcus.com/blog/experiencing-anesthesia",
+      "date": "2026-06-18"
+    }
+  ],
+  "2026": [
+    {
+      "name": "华立",
+      "year": "26",
+      "title": "Step Plan 限时免费体验， 海量 Token 放送中！",
+      "url": "https://www.renhuali.cn/journal/cmqiyiryv0002chyjl7jhjlsc",
+      "date": "2026-06-18"
     }
   ]
 };
