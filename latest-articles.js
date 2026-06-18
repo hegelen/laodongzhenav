@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/18/2026, 7:48:17 AM
+// 抓取日期: 6/18/2026, 9:29:35 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -8,106 +8,90 @@ const latestArticlesByYear = {
     {
       "name": "seth",
       "year": "02",
-      "title": "Status symbols",
-      "url": "https://seths.blog/2026/06/status-symbols/",
-      "date": "2026-06-17"
+      "title": "Promotion, activation, conversation",
+      "url": "https://seths.blog/2026/06/promotion-activation-conversation/",
+      "date": "2026-06-18"
+    }
+  ],
+  "2003": [
+    {
+      "name": "爱情在线",
+      "year": "03",
+      "title": "生命中的NPC",
+      "url": "https://aqzx.com/blog_view.asp?id=65",
+      "date": "2026-06-18"
     }
   ],
   "2004": [
     {
-      "name": "我的天",
+      "name": "竹炉山房",
       "year": "04",
-      "title": "人老了",
-      "url": "http://www.xlanda.net/posts/22270",
-      "date": "2026-06-18"
-    }
-  ],
-  "2005": [
-    {
-      "name": "春田",
-      "year": "05",
-      "title": "１０７９．情けは人の為ならず",
-      "url": "http://kaikeimura.way-nifty.com/blog/2026/06/post-6736d9.html",
-      "date": "2026-06-17"
-    },
-    {
-      "name": "ACEVS",
-      "year": "05",
-      "title": "电钢琴续",
-      "url": "https://acevs.com/5046/",
-      "date": "2026-06-18"
-    }
-  ],
-  "2006": [
-    {
-      "name": "随风沐虐",
-      "year": "06",
-      "title": "6月18日，全国草原保护日",
-      "url": "https://www.munue.com/grassland-protection-day.html",
+      "title": "混乱的一天",
+      "url": "https://synyan.cn/t/62967",
       "date": "2026-06-18"
     },
     {
-      "name": "joojen Zhou",
-      "year": "06",
-      "title": "2026 年 5 月房地产数据来了",
-      "url": "https://joojen.com/archives/9034.html",
+      "name": "TonyBai",
+      "year": "04",
+      "title": "在 AI 编码时代，为什么我们依然选择 Go 而不是 Rust？",
+      "url": "https://tonybai.com/2026/06/18/why-choose-go-over-rust-today-in-ai-age/",
       "date": "2026-06-17"
     }
   ],
-  "2010": [
+  "2009": [
     {
-      "name": "忆往事",
-      "year": "10",
-      "title": "蓄意碰瓷",
-      "url": "https://zhou.ge/2026-06-17.html",
-      "date": "2026-06-17"
+      "name": "标点符",
+      "year": "09",
+      "title": "Win 11安装部署OpenClaw教程",
+      "url": "https://www.biaodianfu.com/windows-11-openclaw.html",
+      "date": "2026-06-18"
     }
   ],
-  "2015": [
+  "2012": [
     {
-      "name": "WordPress 知识宝库",
-      "year": "15",
-      "title": "워드프레스 하단 푸터 영역에 이용약관 페이지 링크 표시하는 방법",
-      "url": "https://www.thewordcracker.com/intermediate/%ec%9b%8c%eb%93%9c%ed%94%84%eb%a0%88%ec%8a%a4-%ec%9d%b4%ec%9a%a9%ec%95%bd%ea%b4%80-%ed%8e%98%ec%9d%b4%ec%a7%80-%eb%a7%81%ed%81%ac-%ed%91%9c%ec%8b%9c/",
-      "date": "2026-06-17"
+      "name": "水拍石",
+      "year": "12",
+      "title": "序：在思想的长河中追寻经济的本质",
+      "url": "https://www.leitao.cn/10368.html",
+      "date": "2026-06-18"
     }
   ],
-  "2017": [
+  "2013": [
     {
-      "name": "科学空间",
-      "year": "17",
-      "title": "MoE环游记：9、门控归一化之争",
-      "url": "https://kexue.fm/archives/11782",
-      "date": "2026-06-17"
+      "name": "小z",
+      "year": "13",
+      "title": "Zocr：一款开箱即用的轻量OCR API，支持Docker一键部署",
+      "url": "https://blog.xiaoz.org/archives/23085",
+      "date": "2026-06-18"
     },
     {
-      "name": "串串狗小刊",
-      "year": "17",
-      "title": "Node-js 新手需要知道什么？",
-      "url": "https://www.ccgxk.com/front-end/781.html",
-      "date": "2026-06-17"
+      "name": "Jonty",
+      "year": "13",
+      "title": "还是把电梯卡使用限制时间给破解了！",
+      "url": "https://nobb.cc/2026-06-18-3747.html",
+      "date": "2026-06-18"
+    },
+    {
+      "name": "林羽凡",
+      "year": "13",
+      "title": "准备在“林羽凡笔记”中再开发一个语音模式的Agent",
+      "url": "https://www.linyufan.com/post/5859",
+      "date": "2026-06-18"
     }
   ],
   "2019": [
-    {
-      "name": "李锋镝",
-      "year": "19",
-      "title": "SpringBoot DeferredLog 完整详解",
-      "url": "https://www.lifengdi.com/hou-duan/4734",
-      "date": "2026-06-18"
-    },
-    {
-      "name": "So!azy",
-      "year": "19",
-      "title": "开始万豪白金挑战",
-      "url": "https://blog.solazy.me/20260617/",
-      "date": "2026-06-17"
-    },
     {
       "name": "流情",
       "year": "19",
       "title": "端午出游—A计划，I启动",
       "url": "https://liuqingwushui.top/archives/164/",
+      "date": "2026-06-18"
+    },
+    {
+      "name": "李锋镝",
+      "year": "19",
+      "title": "SpringBoot DeferredLog 完整详解",
+      "url": "https://www.lifengdi.com/hou-duan/4734",
       "date": "2026-06-18"
     }
   ],
@@ -115,41 +99,41 @@ const latestArticlesByYear = {
     {
       "name": "无妄当自持",
       "year": "20",
-      "title": "给 Hermes Agent 接入 Sciverse：5 分钟搞定学术搜索 MCP",
-      "url": "https://www.insidentally.com/articles/000050/",
+      "title": "在 RTX 4060 Laptop（8GB 显存）笔记本上部署 Qwen3.5-4B 和 Qwopus3.5-9B-Coder 的完整实战",
+      "url": "https://www.insidentally.com/articles/000051/",
       "date": "2026-06-18"
     },
     {
-      "name": "不凡",
+      "name": "vinchent",
       "year": "20",
-      "title": "新购神牛离机闪光灯iT32，功能多又实用！",
-      "url": "https://www.bufanz.com/20260617680.html",
-      "date": "2026-06-17"
+      "title": "写在2026年中间",
+      "url": "https://www.vinchent.xyz/xie-zai-2026nian-zhong-jian",
+      "date": "2026-06-18"
     }
   ],
   "2021": [
     {
       "name": "DevNow",
       "year": "21",
-      "title": "Product Hunt 每日热榜 | 2026-06-17",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-06-17",
-      "date": "2026-06-17"
+      "title": "Product Hunt 每日热榜 | 2026-06-18",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-06-18",
+      "date": "2026-06-18"
     }
   ],
   "2023": [
     {
-      "name": "鹿泽",
+      "name": "火米",
       "year": "23",
-      "title": "各行业GEO填词参考，AI搜索提示词优化指南",
-      "url": "https://www.bailuze.com/25315.html",
+      "title": "Bear（熊掌记）出了个 md 编辑器",
+      "url": "https://huo.me/lettera/",
       "date": "2026-06-18"
     },
     {
-      "name": "宗宗酱",
+      "name": "小归客",
       "year": "23",
-      "title": "网站被百度K掉不是个例",
-      "url": "https://ygz.ink/archives/5300.html",
-      "date": "2026-06-17"
+      "title": "开源#AI写的XGK博客程序",
+      "url": "https://xgk.pw/archives/294/",
+      "date": "2026-06-18"
     }
   ],
   "2025": [
@@ -159,9 +143,23 @@ const latestArticlesByYear = {
       "title": "麻醉体感实录",
       "url": "https://www.immarcus.com/blog/experiencing-anesthesia",
       "date": "2026-06-18"
+    },
+    {
+      "name": "青萍",
+      "year": "25",
+      "title": "真人配音兼职怎么找：几个渠道对比，末尾推荐一个免费入驻的",
+      "url": "https://blog.lusyoe.com/article/real-voice-actor-side-gig-guide",
+      "date": "2026-06-18"
     }
   ],
   "2026": [
+    {
+      "name": "安迪",
+      "year": "26",
+      "title": "硅云养老主机",
+      "url": "https://i55.top/archives/540/",
+      "date": "2026-06-18"
+    },
     {
       "name": "华立",
       "year": "26",
