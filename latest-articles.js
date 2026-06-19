@@ -1,9 +1,18 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/19/2026, 11:20:42 AM
+// 抓取日期: 6/19/2026, 8:34:30 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
+  "2001": [
+    {
+      "name": "nc-show",
+      "year": "01",
+      "title": "《永恒的舞动》第一百二十八章",
+      "url": "https://nicrosoft.net/blog/2335/",
+      "date": "2026-06-19"
+    }
+  ],
   "2002": [
     {
       "name": "seth",
@@ -20,6 +29,13 @@ const latestArticlesByYear = {
       "title": "世界杯回忆录",
       "url": "http://www.xlanda.net/posts/22273",
       "date": "2026-06-19"
+    },
+    {
+      "name": "TonyBai",
+      "year": "04",
+      "title": "Anthropic 40万大样本揭秘：AI 时代为什么“专家”身价暴涨？",
+      "url": "https://tonybai.com/2026/06/19/agentic-coding-and-persistent-returns-to-expertise/",
+      "date": "2026-06-19"
     }
   ],
   "2005": [
@@ -29,12 +45,21 @@ const latestArticlesByYear = {
       "title": "RFC 超過 10000 了",
       "url": "https://blog.gslin.org/archives/2026/06/19/13075/rfc-%e8%b6%85%e9%81%8e-10000-%e4%ba%86/",
       "date": "2026-06-18"
+    }
+  ],
+  "2006": [
+    {
+      "name": "忘记了回忆",
+      "year": "06",
+      "title": "端午",
+      "url": "https://ltmltm.cn/bk/1465.html",
+      "date": "2026-06-19"
     },
     {
-      "name": "ACEVS",
-      "year": "05",
-      "title": "牛瘪汤放弃",
-      "url": "https://acevs.com/5048/",
+      "name": "随风沐虐",
+      "year": "06",
+      "title": "6月19日，六月节",
+      "url": "https://www.munue.com/juneteenth.html",
       "date": "2026-06-19"
     }
   ],
@@ -58,6 +83,13 @@ const latestArticlesByYear = {
   ],
   "2012": [
     {
+      "name": "郭晓力",
+      "year": "12",
+      "title": "重读《格鲁夫给经理人的第一课》-20260619",
+      "url": "https://guoxiaoli.com/post/664.html",
+      "date": "2026-06-19"
+    },
+    {
       "name": "水拍石",
       "year": "12",
       "title": "第一章 早晨的面包：经济秩序从哪里来",
@@ -69,64 +101,34 @@ const latestArticlesByYear = {
     {
       "name": "林羽凡",
       "year": "13",
-      "title": "准备在“林羽凡笔记”中再开发一个语音模式的Agent",
-      "url": "https://www.linyufan.com/post/5859",
-      "date": "2026-06-18"
-    },
-    {
-      "name": "Jonty",
-      "year": "13",
-      "title": "还是把电梯卡使用限制时间给破解了！",
-      "url": "https://nobb.cc/2026-06-18-3747.html",
-      "date": "2026-06-18"
+      "title": "“林羽凡笔记”中的语音Agent开发完成了",
+      "url": "https://www.linyufan.com/post/5860",
+      "date": "2026-06-19"
     }
   ],
   "2015": [
     {
-      "name": "elmagnifico",
+      "name": "WordPress 知识宝库",
       "year": "15",
-      "title": "第一次骨折",
-      "url": "https://elmagnifico.tech/2026/06/19/Fracture/",
+      "title": "Wordfence·클라우드웨이즈가 코드 블록을 악성코드로 탐지할 때 대처법",
+      "url": "https://www.thewordcracker.com/intermediate/wordfence-%ed%81%b4%eb%9d%bc%ec%9a%b0%eb%93%9c%ec%9b%a8%ec%9d%b4%ec%a6%88-%ec%95%85%ec%84%b1%ec%bd%94%eb%93%9c-%ec%98%a4%ed%83%90-%eb%ac%b8%ec%a0%9c/",
       "date": "2026-06-18"
     }
   ],
-  "2019": [
+  "2017": [
     {
-      "name": "新世界的大门",
-      "year": "19",
-      "title": "2026-06-06 / 保留节目",
-      "url": "https://blog.xinshijiededa.men/daily/45/",
+      "name": "串串狗小刊",
+      "year": "17",
+      "title": "出海建站之 Product Hunt 的封号限制解封",
+      "url": "https://www.ccgxk.com/codeother/783.html",
       "date": "2026-06-19"
     },
     {
-      "name": "So!azy",
-      "year": "19",
-      "title": "端午流水账 0618",
-      "url": "https://blog.solazy.me/20260618/",
-      "date": "2026-06-18"
-    }
-  ],
-  "2020": [
-    {
-      "name": "vinchent",
-      "year": "20",
-      "title": "写在2026年中间",
-      "url": "https://www.vinchent.xyz/xie-zai-2026nian-zhong-jian",
-      "date": "2026-06-18"
-    },
-    {
-      "name": "初然忆",
-      "year": "20",
-      "title": "端午前夕，海甸之境",
-      "url": "https://www.imcry.vip/post/2026-6-19-019/",
-      "date": "2026-06-18"
-    },
-    {
-      "name": "无妄当自持",
-      "year": "20",
-      "title": "在 RTX 4060 Laptop（8GB 显存）笔记本上部署 Qwen3.5-4B 和 Qwopus3.5-9B-Coder 的完整实战",
-      "url": "https://www.insidentally.com/articles/000051/",
-      "date": "2026-06-18"
+      "name": "科学空间",
+      "year": "17",
+      "title": "强制间隔投影（Margin-Enforcing Projection）",
+      "url": "https://kexue.fm/archives/11784",
+      "date": "2026-06-19"
     }
   ],
   "2021": [
@@ -136,40 +138,38 @@ const latestArticlesByYear = {
       "title": "当探店吃播撞上《网络测评规范》",
       "url": "https://9sb.net/archives/when-tandian-eat-broadcast-collides-with-the-network-evaluation-standards.html",
       "date": "2026-06-19"
+    },
+    {
+      "name": "DevNow",
+      "year": "21",
+      "title": "Product Hunt 每日热榜 | 2026-06-19",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-06-19",
+      "date": "2026-06-19"
     }
   ],
   "2023": [
     {
-      "name": "火米",
+      "name": "建站百科",
       "year": "23",
-      "title": "Bear（熊掌记）出了个 md 编辑器",
-      "url": "https://huo.me/lettera/",
-      "date": "2026-06-18"
-    },
-    {
-      "name": "宗宗酱",
-      "year": "23",
-      "title": "600买尼康D3300是不是烂机器啊",
-      "url": "https://ygz.ink/archives/5309.html",
+      "title": "弘速云香港8核8G CN2VPS基础信息测试结果，流媒体解锁，回程精品稳定建站！",
+      "url": "https://www.jzbk.net/3103.html",
       "date": "2026-06-19"
     }
   ],
   "2025": [
+    {
+      "name": "落花雨记",
+      "year": "25",
+      "title": "慢慢来",
+      "url": "https://www.luohuayu.cn/71.html",
+      "date": "2026-06-19"
+    },
     {
       "name": "Marcus",
       "year": "25",
       "title": "自下而上的社区文化",
       "url": "https://www.immarcus.com/blog/bottom-up-community-culture",
       "date": "2026-06-19"
-    }
-  ],
-  "2026": [
-    {
-      "name": "安迪",
-      "year": "26",
-      "title": "硅云养老主机",
-      "url": "https://i55.top/archives/540/",
-      "date": "2026-06-18"
     }
   ]
 };
