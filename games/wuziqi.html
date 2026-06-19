@@ -36,7 +36,7 @@
             border-radius: 16px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), inset 0 0 0 1px rgba(255, 215, 140, 0.4);
             cursor: pointer;
-            background-color: #e8d5b5; /* 底色，会被canvas绘制覆盖 */
+            background-color: #e8d5b5;
         }
 
         .info-panel {
@@ -140,7 +140,7 @@
 <script>
     (function(){
         const boardSize = 15;
-        const padding = 28;  // 四周内边距，使边缘交叉点可点击
+        const padding = 40;   // 增大内边距，让边缘棋子完整显示
         let board = Array(boardSize).fill().map(() => Array(boardSize).fill(null));
         let currentTurn = 'black';
         let gameOver = false;
@@ -158,7 +158,7 @@
         
         const dirs = [[1,0],[0,1],[1,1],[1,-1]];
         
-        // ---------- 评估函数（同原代码）----------
+        // ---------- 评估函数（不变）----------
         function evaluateDirection(board, row, col, color) {
             let totalScore = 0;
             for(let d of dirs) {
@@ -320,11 +320,11 @@
             resetGame();
         }
         
-        // ---------- 绘图（增加木质背景，所有坐标加上padding）----------
+        // ---------- 绘图（padding增大，边缘棋子完整）----------
         function drawBoard() {
             ctx.clearRect(0, 0, canvasSize, canvasSize);
             
-            // 1. 绘制木质底色（仿木纹渐变）
+            // 木质底色
             const woodGrad = ctx.createLinearGradient(0, 0, canvasSize, canvasSize);
             woodGrad.addColorStop(0, '#d4b48c');
             woodGrad.addColorStop(0.3, '#c4a07a');
@@ -333,7 +333,7 @@
             ctx.fillStyle = woodGrad;
             ctx.fillRect(0, 0, canvasSize, canvasSize);
             
-            // 添加一些木纹线条（简单的深浅条纹）
+            // 木纹
             ctx.strokeStyle = 'rgba(120, 80, 50, 0.15)';
             ctx.lineWidth = 2;
             for (let i = 0; i < 20; i++) {
@@ -344,7 +344,7 @@
                 ctx.stroke();
             }
             
-            // 2. 绘制网格线
+            // 网格线
             ctx.beginPath();
             ctx.strokeStyle = '#2c1e0e';
             ctx.lineWidth = 1.8;
@@ -358,7 +358,7 @@
             }
             ctx.stroke();
             
-            // 3. 星位标记
+            // 星位
             const starPos = [[3,3],[3,11],[11,3],[11,11],[7,7]];
             for(let [r,c] of starPos) {
                 const x = padding + c * cellSize;
@@ -373,7 +373,7 @@
                 ctx.fill();
             }
             
-            // 4. 绘制棋子
+            // 棋子
             for(let i=0; i<boardSize; i++) {
                 for(let j=0; j<boardSize; j++) {
                     const val = board[i][j];
@@ -399,7 +399,7 @@
                 }
             }
             
-            // 5. 胜利信息
+            // 胜利信息
             if(gameOver && winner) {
                 ctx.font = `bold ${Math.floor(cellSize*0.8)}px "Segoe UI"`;
                 ctx.fillStyle = winner === 'black' ? '#1e2a2a' : '#d4c9a6';
@@ -413,14 +413,13 @@
             }
         }
         
-        // 交互 – 根据鼠标位置找到最近的交叉点（考虑padding）
+        // 交互（padding 已调整，点击检测同样适用）
         function getNearestIntersection(clientX, clientY) {
             const rect = canvas.getBoundingClientRect();
             const scaleX = canvasSize / rect.width;
             const scaleY = canvasSize / rect.height;
             let canvasX = (clientX - rect.left) * scaleX;
             let canvasY = (clientY - rect.top) * scaleY;
-            // 相对于padding偏移
             let rowFloat = (canvasY - padding) / cellSize;
             let colFloat = (canvasX - padding) / cellSize;
             let row = Math.round(rowFloat);
