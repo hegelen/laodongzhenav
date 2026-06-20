@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/20/2026, 10:54:29 AM
+// 抓取日期: 6/20/2026, 8:28:18 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -11,15 +11,6 @@ const latestArticlesByYear = {
       "title": "花了一个月时间，才磕磕绊绊把这本书读了",
       "url": "https://wlj.me/notes/sp-note-20260620-164446/",
       "date": "2026-06-20"
-    }
-  ],
-  "2001": [
-    {
-      "name": "nc-show",
-      "year": "01",
-      "title": "《永恒的舞动》第一百二十八章",
-      "url": "https://nicrosoft.net/blog/2335/",
-      "date": "2026-06-19"
     }
   ],
   "2002": [
@@ -40,17 +31,17 @@ const latestArticlesByYear = {
       "date": "2026-06-20"
     },
     {
+      "name": "龙哥",
+      "year": "04",
+      "title": "英语词典Regdict.com更新改版成功",
+      "url": "https://long.ge/18072.html",
+      "date": "2026-06-20"
+    },
+    {
       "name": "TonyBai",
       "year": "04",
       "title": "大模型正在见顶！传奇架构师：欢迎来到“平坦曲线时代”",
       "url": "https://tonybai.com/2026/06/20/steve-yegge-the-flat-curve-society/",
-      "date": "2026-06-19"
-    },
-    {
-      "name": "小陈故事",
-      "year": "04",
-      "title": "伤心的孩子啊",
-      "url": "https://www.chener.net/archives/sadchild/",
       "date": "2026-06-19"
     }
   ],
@@ -65,20 +56,36 @@ const latestArticlesByYear = {
   ],
   "2006": [
     {
-      "name": "随风沐虐",
+      "name": "忘记了回忆",
       "year": "06",
-      "title": "6月19日，六月节",
-      "url": "https://www.munue.com/juneteenth.html",
-      "date": "2026-06-19"
+      "title": "同学录",
+      "url": "https://ltmltm.cn/bk/1467.html",
+      "date": "2026-06-20"
     }
   ],
-  "2012": [
+  "2008": [
     {
-      "name": "郭晓力",
-      "year": "12",
-      "title": "重读《格鲁夫给经理人的第一课》-20260619",
-      "url": "https://guoxiaoli.com/post/664.html",
-      "date": "2026-06-19"
+      "name": "杜郎俊赏",
+      "year": "08",
+      "title": "端午能不能快乐？",
+      "url": "https://dujun.io/duan-wu-kuai-le.html",
+      "date": "2026-06-20"
+    },
+    {
+      "name": "军",
+      "year": "08",
+      "title": "满满一箱的战利品",
+      "url": "https://me.xu19.com/full-box-of-diy-handmade-porcelain-from-jingdezhen/",
+      "date": "2026-06-20"
+    }
+  ],
+  "2010": [
+    {
+      "name": "麦麦同学",
+      "year": "10",
+      "title": "某年某月某日某时某分",
+      "url": "https://www.mmtx.net/1170.html",
+      "date": "2026-06-20"
     }
   ],
   "2013": [
@@ -92,35 +99,19 @@ const latestArticlesByYear = {
   ],
   "2017": [
     {
-      "name": "科学空间",
+      "name": "串串狗小刊",
       "year": "17",
-      "title": "强制间隔投影（Margin-Enforcing Projection）",
-      "url": "https://kexue.fm/archives/11784",
-      "date": "2026-06-19"
-    },
-    {
-      "name": "碎言",
-      "year": "17",
-      "title": "个站商店悄悄的删除我的博客",
-      "url": "https://www.suiyan.cc/blog/20260620131006",
+      "title": "月入 4w 刀的小耳朵 sir 的出海经验",
+      "url": "https://www.ccgxk.com/codeother/784.html",
       "date": "2026-06-20"
     }
   ],
   "2019": [
     {
-      "name": "新世界的大门",
+      "name": "奶爸建站笔记",
       "year": "19",
-      "title": "端午牛逼",
-      "url": "https://blog.xinshijiededa.men/tuen-ng/",
-      "date": "2026-06-19"
-    }
-  ],
-  "2020": [
-    {
-      "name": "瓦解",
-      "year": "20",
-      "title": "AI开发——安卓备忘录 memoX",
-      "url": "https://hin.cool/posts/memox.html",
+      "title": "WordPress阿里云CDN配置教程：实现全站加速、自动清缓存与证书自动续期",
+      "url": "https://blog.naibabiji.com/skill/aliyun-cdn.html",
       "date": "2026-06-20"
     }
   ],
@@ -128,19 +119,12 @@ const latestArticlesByYear = {
     {
       "name": "DevNow",
       "year": "21",
-      "title": "Product Hunt 每日热榜 | 2026-06-19",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-06-19",
-      "date": "2026-06-19"
+      "title": "Product Hunt 每日热榜 | 2026-06-20",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-06-20",
+      "date": "2026-06-20"
     }
   ],
   "2023": [
-    {
-      "name": "宗宗酱",
-      "year": "23",
-      "title": "腾讯推出腾讯网盘",
-      "url": "https://ygz.ink/archives/5326.html",
-      "date": "2026-06-20"
-    },
     {
       "name": "建站百科",
       "year": "23",
@@ -154,6 +138,29 @@ const latestArticlesByYear = {
       "title": "开源#纪念日提醒程序",
       "url": "https://xgk.pw/archives/298/",
       "date": "2026-06-20"
+    },
+    {
+      "name": "宗宗酱",
+      "year": "23",
+      "title": "腾讯推出腾讯网盘",
+      "url": "https://ygz.ink/archives/5326.html",
+      "date": "2026-06-20"
+    }
+  ],
+  "2024": [
+    {
+      "name": "倾城于你",
+      "year": "24",
+      "title": "EasyNote：极简自托管记事本",
+      "url": "https://qninq.cn/archives/easynote.html",
+      "date": "2026-06-20"
+    },
+    {
+      "name": "Chongxi",
+      "year": "24",
+      "title": "使用obisidian和git插件来完美管理静态博客",
+      "url": "https://xice.cx/posts/useGitOnObisdian/",
+      "date": "2026-06-20"
     }
   ],
   "2025": [
@@ -162,15 +169,6 @@ const latestArticlesByYear = {
       "year": "25",
       "title": "MPC 的人生",
       "url": "https://www.immarcus.com/blog/model-predictive-controlled-life",
-      "date": "2026-06-20"
-    }
-  ],
-  "2026": [
-    {
-      "name": "周阿源",
-      "year": "26",
-      "title": "今日手绘｜复古甜妹的俏皮 wink",
-      "url": "https://zhouayuan.com/post/56.html",
       "date": "2026-06-20"
     }
   ]
