@@ -1,9 +1,18 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/19/2026, 8:34:30 PM
+// 抓取日期: 6/20/2026, 10:54:29 AM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
+  "2000": [
+    {
+      "name": "Luca",
+      "year": "00",
+      "title": "花了一个月时间，才磕磕绊绊把这本书读了",
+      "url": "https://wlj.me/notes/sp-note-20260620-164446/",
+      "date": "2026-06-20"
+    }
+  ],
   "2001": [
     {
       "name": "nc-show",
@@ -17,67 +26,49 @@ const latestArticlesByYear = {
     {
       "name": "seth",
       "year": "02",
-      "title": "The gap between true and known",
-      "url": "https://seths.blog/2026/06/the-gap-between-true-and-known/",
-      "date": "2026-06-19"
+      "title": "99% might be enough (or not)",
+      "url": "https://seths.blog/2026/06/99-might-be-enough-or-not/",
+      "date": "2026-06-20"
     }
   ],
   "2004": [
     {
       "name": "我的天",
       "year": "04",
-      "title": "世界杯回忆录",
-      "url": "http://www.xlanda.net/posts/22273",
-      "date": "2026-06-19"
+      "title": "初次吃荔乡凤",
+      "url": "http://www.xlanda.net/posts/22276",
+      "date": "2026-06-20"
     },
     {
       "name": "TonyBai",
       "year": "04",
-      "title": "Anthropic 40万大样本揭秘：AI 时代为什么“专家”身价暴涨？",
-      "url": "https://tonybai.com/2026/06/19/agentic-coding-and-persistent-returns-to-expertise/",
+      "title": "大模型正在见顶！传奇架构师：欢迎来到“平坦曲线时代”",
+      "url": "https://tonybai.com/2026/06/20/steve-yegge-the-flat-curve-society/",
+      "date": "2026-06-19"
+    },
+    {
+      "name": "小陈故事",
+      "year": "04",
+      "title": "伤心的孩子啊",
+      "url": "https://www.chener.net/archives/sadchild/",
       "date": "2026-06-19"
     }
   ],
   "2005": [
     {
-      "name": "Gea-Suan Lin",
+      "name": "ACEVS",
       "year": "05",
-      "title": "RFC 超過 10000 了",
-      "url": "https://blog.gslin.org/archives/2026/06/19/13075/rfc-%e8%b6%85%e9%81%8e-10000-%e4%ba%86/",
-      "date": "2026-06-18"
+      "title": "电钢琴续2",
+      "url": "https://acevs.com/5050/",
+      "date": "2026-06-20"
     }
   ],
   "2006": [
-    {
-      "name": "忘记了回忆",
-      "year": "06",
-      "title": "端午",
-      "url": "https://ltmltm.cn/bk/1465.html",
-      "date": "2026-06-19"
-    },
     {
       "name": "随风沐虐",
       "year": "06",
       "title": "6月19日，六月节",
       "url": "https://www.munue.com/juneteenth.html",
-      "date": "2026-06-19"
-    }
-  ],
-  "2007": [
-    {
-      "name": "织梦岁月",
-      "year": "07",
-      "title": "我真是个好人呐",
-      "url": "https://zhujianlin.com/archives/2192.html",
-      "date": "2026-06-19"
-    }
-  ],
-  "2009": [
-    {
-      "name": "老刘",
-      "year": "09",
-      "title": "6.18，我又买了一台荣耀手机",
-      "url": "https://www.iliu.org/posts/618-honor-win-rt/",
       "date": "2026-06-19"
     }
   ],
@@ -88,13 +79,6 @@ const latestArticlesByYear = {
       "title": "重读《格鲁夫给经理人的第一课》-20260619",
       "url": "https://guoxiaoli.com/post/664.html",
       "date": "2026-06-19"
-    },
-    {
-      "name": "水拍石",
-      "year": "12",
-      "title": "第一章 早晨的面包：经济秩序从哪里来",
-      "url": "https://www.leitao.cn/10370.html",
-      "date": "2026-06-19"
     }
   ],
   "2013": [
@@ -103,42 +87,44 @@ const latestArticlesByYear = {
       "year": "13",
       "title": "“林羽凡笔记”中的语音Agent开发完成了",
       "url": "https://www.linyufan.com/post/5860",
-      "date": "2026-06-19"
-    }
-  ],
-  "2015": [
-    {
-      "name": "WordPress 知识宝库",
-      "year": "15",
-      "title": "Wordfence·클라우드웨이즈가 코드 블록을 악성코드로 탐지할 때 대처법",
-      "url": "https://www.thewordcracker.com/intermediate/wordfence-%ed%81%b4%eb%9d%bc%ec%9a%b0%eb%93%9c%ec%9b%a8%ec%9d%b4%ec%a6%88-%ec%95%85%ec%84%b1%ec%bd%94%eb%93%9c-%ec%98%a4%ed%83%90-%eb%ac%b8%ec%a0%9c/",
-      "date": "2026-06-18"
+      "date": "2026-06-20"
     }
   ],
   "2017": [
-    {
-      "name": "串串狗小刊",
-      "year": "17",
-      "title": "出海建站之 Product Hunt 的封号限制解封",
-      "url": "https://www.ccgxk.com/codeother/783.html",
-      "date": "2026-06-19"
-    },
     {
       "name": "科学空间",
       "year": "17",
       "title": "强制间隔投影（Margin-Enforcing Projection）",
       "url": "https://kexue.fm/archives/11784",
       "date": "2026-06-19"
+    },
+    {
+      "name": "碎言",
+      "year": "17",
+      "title": "个站商店悄悄的删除我的博客",
+      "url": "https://www.suiyan.cc/blog/20260620131006",
+      "date": "2026-06-20"
+    }
+  ],
+  "2019": [
+    {
+      "name": "新世界的大门",
+      "year": "19",
+      "title": "端午牛逼",
+      "url": "https://blog.xinshijiededa.men/tuen-ng/",
+      "date": "2026-06-19"
+    }
+  ],
+  "2020": [
+    {
+      "name": "瓦解",
+      "year": "20",
+      "title": "AI开发——安卓备忘录 memoX",
+      "url": "https://hin.cool/posts/memox.html",
+      "date": "2026-06-20"
     }
   ],
   "2021": [
-    {
-      "name": "记录生活",
-      "year": "21",
-      "title": "当探店吃播撞上《网络测评规范》",
-      "url": "https://9sb.net/archives/when-tandian-eat-broadcast-collides-with-the-network-evaluation-standards.html",
-      "date": "2026-06-19"
-    },
     {
       "name": "DevNow",
       "year": "21",
@@ -149,27 +135,43 @@ const latestArticlesByYear = {
   ],
   "2023": [
     {
+      "name": "宗宗酱",
+      "year": "23",
+      "title": "腾讯推出腾讯网盘",
+      "url": "https://ygz.ink/archives/5326.html",
+      "date": "2026-06-20"
+    },
+    {
       "name": "建站百科",
       "year": "23",
-      "title": "弘速云香港8核8G CN2VPS基础信息测试结果，流媒体解锁，回程精品稳定建站！",
-      "url": "https://www.jzbk.net/3103.html",
-      "date": "2026-06-19"
+      "title": "弘速云免费发放福利了，10台美国NTT双ISP VPS套餐抽奖活动！",
+      "url": "https://www.jzbk.net/3114.html",
+      "date": "2026-06-20"
+    },
+    {
+      "name": "小归客",
+      "year": "23",
+      "title": "开源#纪念日提醒程序",
+      "url": "https://xgk.pw/archives/298/",
+      "date": "2026-06-20"
     }
   ],
   "2025": [
     {
-      "name": "落花雨记",
-      "year": "25",
-      "title": "慢慢来",
-      "url": "https://www.luohuayu.cn/71.html",
-      "date": "2026-06-19"
-    },
-    {
       "name": "Marcus",
       "year": "25",
-      "title": "自下而上的社区文化",
-      "url": "https://www.immarcus.com/blog/bottom-up-community-culture",
-      "date": "2026-06-19"
+      "title": "MPC 的人生",
+      "url": "https://www.immarcus.com/blog/model-predictive-controlled-life",
+      "date": "2026-06-20"
+    }
+  ],
+  "2026": [
+    {
+      "name": "周阿源",
+      "year": "26",
+      "title": "今日手绘｜复古甜妹的俏皮 wink",
+      "url": "https://zhouayuan.com/post/56.html",
+      "date": "2026-06-20"
     }
   ]
 };
