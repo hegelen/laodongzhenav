@@ -1,175 +1,179 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/19/2026, 8:34:30 PM
+// 抓取日期: 6/21/2026, 8:35:51 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
-  "2001": [
-    {
-      "name": "nc-show",
-      "year": "01",
-      "title": "《永恒的舞动》第一百二十八章",
-      "url": "https://nicrosoft.net/blog/2335/",
-      "date": "2026-06-19"
-    }
-  ],
   "2002": [
     {
       "name": "seth",
       "year": "02",
-      "title": "The gap between true and known",
-      "url": "https://seths.blog/2026/06/the-gap-between-true-and-known/",
-      "date": "2026-06-19"
-    }
-  ],
-  "2004": [
-    {
-      "name": "我的天",
-      "year": "04",
-      "title": "世界杯回忆录",
-      "url": "http://www.xlanda.net/posts/22273",
-      "date": "2026-06-19"
-    },
-    {
-      "name": "TonyBai",
-      "year": "04",
-      "title": "Anthropic 40万大样本揭秘：AI 时代为什么“专家”身价暴涨？",
-      "url": "https://tonybai.com/2026/06/19/agentic-coding-and-persistent-returns-to-expertise/",
-      "date": "2026-06-19"
+      "title": "“In its larval state”",
+      "url": "https://seths.blog/2026/06/in-its-larval-state/",
+      "date": "2026-06-21"
     }
   ],
   "2005": [
     {
-      "name": "Gea-Suan Lin",
+      "name": "ACEVS",
       "year": "05",
-      "title": "RFC 超過 10000 了",
-      "url": "https://blog.gslin.org/archives/2026/06/19/13075/rfc-%e8%b6%85%e9%81%8e-10000-%e4%ba%86/",
-      "date": "2026-06-18"
-    }
-  ],
-  "2006": [
-    {
-      "name": "忘记了回忆",
-      "year": "06",
-      "title": "端午",
-      "url": "https://ltmltm.cn/bk/1465.html",
-      "date": "2026-06-19"
+      "title": "乐器上手难易度ai建议",
+      "url": "https://acevs.com/5052/",
+      "date": "2026-06-21"
     },
     {
-      "name": "随风沐虐",
-      "year": "06",
-      "title": "6月19日，六月节",
-      "url": "https://www.munue.com/juneteenth.html",
-      "date": "2026-06-19"
+      "name": "Gea-Suan Lin",
+      "year": "05",
+      "title": "Linux 上的 Restartable Sequences",
+      "url": "https://blog.gslin.org/archives/2026/06/21/13078/linux-%e4%b8%8a%e7%9a%84-restartable-sequences/",
+      "date": "2026-06-21"
     }
   ],
-  "2007": [
+  "2008": [
     {
-      "name": "织梦岁月",
-      "year": "07",
-      "title": "我真是个好人呐",
-      "url": "https://zhujianlin.com/archives/2192.html",
-      "date": "2026-06-19"
+      "name": "河马",
+      "year": "08",
+      "title": "检查程序是否PHP 8 compatible",
+      "url": "https://www.iamhippo.com/2026-06/1992.html",
+      "date": "2026-06-21"
     }
   ],
   "2009": [
     {
-      "name": "老刘",
+      "name": "1900的灯泡店",
       "year": "09",
-      "title": "6.18，我又买了一台荣耀手机",
-      "url": "https://www.iliu.org/posts/618-honor-win-rt/",
-      "date": "2026-06-19"
+      "title": "286、夏至",
+      "url": "https://1900.live/286-xia-zhi/",
+      "date": "2026-06-21"
+    }
+  ],
+  "2011": [
+    {
+      "name": "forecho",
+      "year": "11",
+      "title": "富途、老虎之后，大陆用户还能怎么买美股：我会试试 Bitget 美股代币",
+      "url": "https://blog.forecho.com/buy-us-stocks-with-usdt-bitget-stock-tokens.html",
+      "date": "2026-06-21"
     }
   ],
   "2012": [
     {
-      "name": "郭晓力",
-      "year": "12",
-      "title": "重读《格鲁夫给经理人的第一课》-20260619",
-      "url": "https://guoxiaoli.com/post/664.html",
-      "date": "2026-06-19"
-    },
-    {
       "name": "水拍石",
       "year": "12",
-      "title": "第一章 早晨的面包：经济秩序从哪里来",
-      "url": "https://www.leitao.cn/10370.html",
-      "date": "2026-06-19"
+      "title": "第三章 看不见的手与看得见的贫困：古典政治经济学的展开与分裂",
+      "url": "https://www.leitao.cn/10374.html",
+      "date": "2026-06-21"
     }
   ],
   "2013": [
     {
       "name": "林羽凡",
       "year": "13",
-      "title": "“林羽凡笔记”中的语音Agent开发完成了",
-      "url": "https://www.linyufan.com/post/5860",
-      "date": "2026-06-19"
+      "title": "我开发的“林羽凡笔记”中的语音Agent全部功能完成了",
+      "url": "https://www.linyufan.com/post/5862",
+      "date": "2026-06-21"
     }
   ],
-  "2015": [
+  "2014": [
     {
-      "name": "WordPress 知识宝库",
-      "year": "15",
-      "title": "Wordfence·클라우드웨이즈가 코드 블록을 악성코드로 탐지할 때 대처법",
-      "url": "https://www.thewordcracker.com/intermediate/wordfence-%ed%81%b4%eb%9d%bc%ec%9a%b0%eb%93%9c%ec%9b%a8%ec%9d%b4%ec%a6%88-%ec%95%85%ec%84%b1%ec%bd%94%eb%93%9c-%ec%98%a4%ed%83%90-%eb%ac%b8%ec%a0%9c/",
-      "date": "2026-06-18"
+      "name": "ying",
+      "year": "14",
+      "title": "microgpt 解析",
+      "url": "https://izualzhy.cn/karpathy-microgpt-analysis",
+      "date": "2026-06-21"
+    }
+  ],
+  "2016": [
+    {
+      "name": "太隐",
+      "year": "16",
+      "title": "国家缺钱了，应该谁来买单？",
+      "url": "https://wangyurui.com/posts/sang-hong-yang-zhi-wen-1b2efb8e",
+      "date": "2026-06-21"
     }
   ],
   "2017": [
     {
       "name": "串串狗小刊",
       "year": "17",
-      "title": "出海建站之 Product Hunt 的封号限制解封",
-      "url": "https://www.ccgxk.com/codeother/783.html",
-      "date": "2026-06-19"
-    },
+      "title": "超惊艳的 3D 开放世界浏览器游戏 LAAS ，全程 Claude Fable 5 无干预开发",
+      "url": "https://www.ccgxk.com/front-end/785.html",
+      "date": "2026-06-21"
+    }
+  ],
+  "2019": [
     {
-      "name": "科学空间",
-      "year": "17",
-      "title": "强制间隔投影（Margin-Enforcing Projection）",
-      "url": "https://kexue.fm/archives/11784",
-      "date": "2026-06-19"
+      "name": "So!azy",
+      "year": "19",
+      "title": "「安康警察」和「逆风警察」",
+      "url": "https://blog.solazy.me/20260621/",
+      "date": "2026-06-21"
+    }
+  ],
+  "2020": [
+    {
+      "name": "初然忆",
+      "year": "20",
+      "title": "“简笔记”的作者，一位行为艺术家",
+      "url": "https://www.imcry.vip/post/2026-6-21-1139/",
+      "date": "2026-06-21"
     }
   ],
   "2021": [
     {
-      "name": "记录生活",
-      "year": "21",
-      "title": "当探店吃播撞上《网络测评规范》",
-      "url": "https://9sb.net/archives/when-tandian-eat-broadcast-collides-with-the-network-evaluation-standards.html",
-      "date": "2026-06-19"
-    },
-    {
       "name": "DevNow",
       "year": "21",
-      "title": "Product Hunt 每日热榜 | 2026-06-19",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-06-19",
-      "date": "2026-06-19"
+      "title": "Product Hunt 每日热榜 | 2026-06-21",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-06-21",
+      "date": "2026-06-21"
+    },
+    {
+      "name": "Robes",
+      "year": "21",
+      "title": "一款液态玻璃风格Typecho主题",
+      "url": "https://robes.xin/1180.html",
+      "date": "2026-06-21"
+    },
+    {
+      "name": "WSH",
+      "year": "21",
+      "title": "观天龙八部1",
+      "url": "https://www.wsh233.cn/post/观天龙八部1",
+      "date": "2026-06-21"
     }
   ],
-  "2023": [
+  "2022": [
     {
-      "name": "建站百科",
-      "year": "23",
-      "title": "弘速云香港8核8G CN2VPS基础信息测试结果，流媒体解锁，回程精品稳定建站！",
-      "url": "https://www.jzbk.net/3103.html",
-      "date": "2026-06-19"
+      "name": "VeryJack",
+      "year": "22",
+      "title": "我做了一个免费的在线图片压缩工具——VeryPixel",
+      "url": "https://veryjack.com/technique/verypixel/",
+      "date": "2026-06-21"
+    }
+  ],
+  "2024": [
+    {
+      "name": "Chongxi",
+      "year": "24",
+      "title": "如何验证对方是不是Chongxi我本人",
+      "url": "https://xice.cx/posts/VerifyChongxi/",
+      "date": "2026-06-21"
     }
   ],
   "2025": [
     {
-      "name": "落花雨记",
-      "year": "25",
-      "title": "慢慢来",
-      "url": "https://www.luohuayu.cn/71.html",
-      "date": "2026-06-19"
-    },
-    {
       "name": "Marcus",
       "year": "25",
-      "title": "自下而上的社区文化",
-      "url": "https://www.immarcus.com/blog/bottom-up-community-culture",
-      "date": "2026-06-19"
+      "title": "2026.06.21 博客阅读周记",
+      "url": "https://www.immarcus.com/blog/weekly-20260621",
+      "date": "2026-06-21"
+    },
+    {
+      "name": "青萍",
+      "year": "25",
+      "title": "音频可视化：从波形到视频的三种实现路径",
+      "url": "https://blog.lusyoe.com/article/audio-visualization-guide",
+      "date": "2026-06-21"
     }
   ]
 };
