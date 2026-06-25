@@ -1,45 +1,47 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/24/2026, 8:56:24 PM
+// 抓取日期: 6/25/2026, 2:32:48 AM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
+  "2000": [
+    {
+      "name": "Luca",
+      "year": "00",
+      "title": "低功耗运行换更长试错期",
+      "url": "https://wlj.me/notes/sp-note-20260624-172644/",
+      "date": "2026-06-24"
+    }
+  ],
   "2004": [
+    {
+      "name": "我的天",
+      "year": "04",
+      "title": "垃圾轮转",
+      "url": "http://www.xlanda.net/posts/22286",
+      "date": "2026-06-25"
+    },
     {
       "name": "扫地老僧",
       "year": "04",
       "title": "关于长城的误解",
       "url": "https://doyj.com/2026/06/24/%e5%85%b3%e4%ba%8e%e9%95%bf%e5%9f%8e%e7%9a%84%e8%af%af%e8%a7%a3/",
       "date": "2026-06-24"
-    },
-    {
-      "name": "TonyBai",
-      "year": "04",
-      "title": "Go 1.27新特性前瞻：泛型方法落地，标准库内建 UUID",
-      "url": "https://tonybai.com/2026/06/24/go-1-27-foresight/",
-      "date": "2026-06-23"
-    },
-    {
-      "name": "我的天",
-      "year": "04",
-      "title": "从广州碧桂园到丽江花园",
-      "url": "http://www.xlanda.net/posts/22284",
-      "date": "2026-06-24"
     }
   ],
   "2005": [
+    {
+      "name": "ACEVS",
+      "year": "05",
+      "title": "汽车为什么是gdp利器？",
+      "url": "https://acevs.com/5061/",
+      "date": "2026-06-25"
+    },
     {
       "name": "Gea-Suan Lin",
       "year": "05",
       "title": "www.hinet.net 被消滅了",
       "url": "https://blog.gslin.org/archives/2026/06/24/13081/www-hinet-net-%e8%a2%ab%e6%b6%88%e6%bb%85%e4%ba%86/",
-      "date": "2026-06-24"
-    },
-    {
-      "name": "春田",
-      "year": "05",
-      "title": "１０８０．「働く」について考える　(６)ディズニーランドの駐車場係の話",
-      "url": "http://kaikeimura.way-nifty.com/blog/2026/06/post-5f2557.html",
       "date": "2026-06-24"
     }
   ],
@@ -59,29 +61,15 @@ const latestArticlesByYear = {
       "title": "CSS color-scheme属性与light-dark()颜色函数",
       "url": "https://www.zhangxinxu.com/wordpress/2026/06/css-color-theme-light-dark-function/",
       "date": "2026-06-24"
-    },
-    {
-      "name": "标点符",
-      "year": "09",
-      "title": "Node.Js 版本管理工具nvm-windows",
-      "url": "https://www.biaodianfu.com/nvm-windows.html",
-      "date": "2026-06-24"
-    },
-    {
-      "name": "老张",
-      "year": "09",
-      "title": "Telegram群抽奖机器人，开源了！",
-      "url": "https://laozhang.org/archives/4173.html",
-      "date": "2026-06-24"
     }
   ],
   "2012": [
     {
       "name": "水拍石",
       "year": "12",
-      "title": "第六章 交易为什么这么难：制度经济学与真实世界",
-      "url": "https://www.leitao.cn/10382.html",
-      "date": "2026-06-24"
+      "title": "第七章 资本主义的镜子：马克思主义的洞见与歧途",
+      "url": "https://www.leitao.cn/10384.html",
+      "date": "2026-06-25"
     }
   ],
   "2014": [
@@ -118,28 +106,30 @@ const latestArticlesByYear = {
       "date": "2026-06-24"
     }
   ],
+  "2018": [
+    {
+      "name": "秋葵",
+      "year": "18",
+      "title": "Java中Thread类join方法的原理",
+      "url": "https://qiukui-note.happy365.day/20260624/introduce-thread-join-in-java/",
+      "date": "2026-06-24"
+    }
+  ],
   "2020": [
     {
-      "name": "初然忆",
+      "name": "Battle Le",
       "year": "20",
-      "title": "R0对战平台后门被石锤，远控用户电脑是其手段之一",
-      "url": "https://www.imcry.vip/post/2026-6-25-016/",
-      "date": "2026-06-24"
-    },
-    {
-      "name": "优世界",
-      "year": "20",
-      "title": "和朋友在武汉东湖 city walk 回忆录",
-      "url": "https://usj.cc/20260624214719.html",
+      "title": "天台（tāi）游记",
+      "url": "https://battlele.com/tiantai-trip/",
       "date": "2026-06-24"
     }
   ],
   "2021": [
     {
-      "name": "DevNow",
+      "name": "记录生活",
       "year": "21",
-      "title": "Product Hunt 每日热榜 | 2026-06-24",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-06-24",
+      "title": "我又没忍住，又去找AI帮忙了，这次还好没翻车",
+      "url": "https://9sb.net/archives/i-couldnt-hold-back-and-went-to-ai-for-help-again-fortunately-i-didnt-overturn-this-time.html",
       "date": "2026-06-24"
     },
     {
@@ -147,6 +137,22 @@ const latestArticlesByYear = {
       "year": "21",
       "title": "观天龙八部2-王语嫣与AI",
       "url": "https://www.wsh233.cn/post/观天龙八部2-王语嫣与大模型",
+      "date": "2026-06-24"
+    },
+    {
+      "name": "Dayu",
+      "year": "21",
+      "title": "我的背包",
+      "url": "https://anotherdayu.com/my-backpack/",
+      "date": "2026-06-24"
+    }
+  ],
+  "2023": [
+    {
+      "name": "宗宗酱",
+      "year": "23",
+      "title": "人生的第一台单反：尼康D3200",
+      "url": "https://ygz.ink/archives/5347.html",
       "date": "2026-06-24"
     }
   ],
