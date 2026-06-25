@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/25/2026, 2:32:48 AM
+// 抓取日期: 6/25/2026, 9:06:43 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -8,25 +8,34 @@ const latestArticlesByYear = {
     {
       "name": "Luca",
       "year": "00",
-      "title": "低功耗运行换更长试错期",
-      "url": "https://wlj.me/notes/sp-note-20260624-172644/",
-      "date": "2026-06-24"
+      "title": "来看电影，一不小心包了个场啊",
+      "url": "https://wlj.me/notes/sp-note-20260625-181044/",
+      "date": "2026-06-25"
+    }
+  ],
+  "2002": [
+    {
+      "name": "seth",
+      "year": "02",
+      "title": "Standby –> Intervention",
+      "url": "https://seths.blog/2026/06/standby-intervention/",
+      "date": "2026-06-25"
     }
   ],
   "2004": [
+    {
+      "name": "TonyBai",
+      "year": "04",
+      "title": "浏览器里的“安全阴谋”：为什么 Go 1.27 的 UUIDv7 会离奇丧失随机性？",
+      "url": "https://tonybai.com/2026/06/25/go-1-27-uuid-newv7-always-generates-uuid-with-7000-on-browsers/",
+      "date": "2026-06-25"
+    },
     {
       "name": "我的天",
       "year": "04",
       "title": "垃圾轮转",
       "url": "http://www.xlanda.net/posts/22286",
       "date": "2026-06-25"
-    },
-    {
-      "name": "扫地老僧",
-      "year": "04",
-      "title": "关于长城的误解",
-      "url": "https://doyj.com/2026/06/24/%e5%85%b3%e4%ba%8e%e9%95%bf%e5%9f%8e%e7%9a%84%e8%af%af%e8%a7%a3/",
-      "date": "2026-06-24"
     }
   ],
   "2005": [
@@ -36,31 +45,24 @@ const latestArticlesByYear = {
       "title": "汽车为什么是gdp利器？",
       "url": "https://acevs.com/5061/",
       "date": "2026-06-25"
-    },
-    {
-      "name": "Gea-Suan Lin",
-      "year": "05",
-      "title": "www.hinet.net 被消滅了",
-      "url": "https://blog.gslin.org/archives/2026/06/24/13081/www-hinet-net-%e8%a2%ab%e6%b6%88%e6%bb%85%e4%ba%86/",
-      "date": "2026-06-24"
-    }
-  ],
-  "2006": [
-    {
-      "name": "joojen Zhou",
-      "year": "06",
-      "title": "日更是没用的",
-      "url": "https://joojen.com/archives/9040.html",
-      "date": "2026-06-24"
     }
   ],
   "2009": [
     {
-      "name": "张鑫旭",
+      "name": "异数",
       "year": "09",
-      "title": "CSS color-scheme属性与light-dark()颜色函数",
-      "url": "https://www.zhangxinxu.com/wordpress/2026/06/css-color-theme-light-dark-function/",
-      "date": "2026-06-24"
+      "title": "软件 || 图集规范管理软件-文档管理器V1.5.0",
+      "url": "https://www.yishu.pro/225.html",
+      "date": "2026-06-25"
+    }
+  ],
+  "2010": [
+    {
+      "name": "麦麦同学",
+      "year": "10",
+      "title": "成也霄鹏，败也霄鹏！追随恩师埋下隐患，刘彬彬亲手葬送十余载泰山生涯",
+      "url": "https://www.mmtx.net/1173.html",
+      "date": "2026-06-25"
     }
   ],
   "2012": [
@@ -72,106 +74,106 @@ const latestArticlesByYear = {
       "date": "2026-06-25"
     }
   ],
-  "2014": [
+  "2013": [
     {
-      "name": "梦幻辰风",
-      "year": "14",
-      "title": "狗蛋的居家生活",
-      "url": "https://www.mhcf.net/post-1210.html",
-      "date": "2026-06-24"
+      "name": "林羽凡",
+      "year": "13",
+      "title": "免费玩token的时代结束了",
+      "url": "https://www.linyufan.com/post/5868",
+      "date": "2026-06-25"
     }
   ],
   "2015": [
     {
-      "name": "WordPress 知识宝库",
+      "name": "Guyskk",
       "year": "15",
-      "title": "워드프레스에서 갑자기 '응답이 올바른 JSON 응답이 아닙니다' 오류가 발생하는 경우",
-      "url": "https://www.thewordcracker.com/basic/%ec%9b%8c%eb%93%9c%ed%94%84%eb%a0%88%ec%8a%a4%ec%97%90%ec%84%9c-%ea%b0%91%ec%9e%90%ea%b8%b0-%ec%9d%91%eb%8b%b5%ec%9d%b4-%ec%98%ac%eb%b0%94%eb%a5%b8-json-%ec%9d%91%eb%8b%b5%ec%9d%b4-%ec%95%84/",
-      "date": "2026-06-24"
+      "title": "把 AI 编程看成一个控制系统：beecodeai 的设计原理",
+      "url": "https://blog.guyskk.com/notes/ai-coding-control-system",
+      "date": "2026-06-26"
     }
   ],
-  "2017": [
+  "2016": [
     {
-      "name": "碎言",
-      "year": "17",
-      "title": "腻了",
-      "url": "https://www.suiyan.cc/blog/20260624182301",
-      "date": "2026-06-24"
-    },
-    {
-      "name": "串串狗小刊",
-      "year": "17",
-      "title": "出海 Web 之  Vercel 的必踩坑和 140 分钟需求调研",
-      "url": "https://www.ccgxk.com/codeother/788.html",
-      "date": "2026-06-24"
+      "name": "故事里",
+      "year": "16",
+      "title": "一想到你的不完美，便觉得更加爱你了",
+      "url": "https://www.gushi.li/thinking-of-your-imperfections-makes-me-love-you-more.html",
+      "date": "2026-06-25"
     }
   ],
-  "2018": [
+  "2019": [
     {
-      "name": "秋葵",
-      "year": "18",
-      "title": "Java中Thread类join方法的原理",
-      "url": "https://qiukui-note.happy365.day/20260624/introduce-thread-join-in-java/",
-      "date": "2026-06-24"
+      "name": "沧海月明",
+      "year": "19",
+      "title": "从 OceanBase 离开，再出发",
+      "url": "https://www.inlighting.org/archives/leave-from-oceanbase-and-start-again",
+      "date": "2026-06-25"
     }
   ],
   "2020": [
     {
-      "name": "Battle Le",
+      "name": "优世界",
       "year": "20",
-      "title": "天台（tāi）游记",
-      "url": "https://battlele.com/tiantai-trip/",
-      "date": "2026-06-24"
-    }
-  ],
-  "2021": [
-    {
-      "name": "记录生活",
-      "year": "21",
-      "title": "我又没忍住，又去找AI帮忙了，这次还好没翻车",
-      "url": "https://9sb.net/archives/i-couldnt-hold-back-and-went-to-ai-for-help-again-fortunately-i-didnt-overturn-this-time.html",
-      "date": "2026-06-24"
+      "title": "怎么也飞不出，花花的世界",
+      "url": "https://usj.cc/20260625174724.html",
+      "date": "2026-06-25"
     },
     {
-      "name": "WSH",
-      "year": "21",
-      "title": "观天龙八部2-王语嫣与AI",
-      "url": "https://www.wsh233.cn/post/观天龙八部2-王语嫣与大模型",
-      "date": "2026-06-24"
-    },
-    {
-      "name": "Dayu",
-      "year": "21",
-      "title": "我的背包",
-      "url": "https://anotherdayu.com/my-backpack/",
-      "date": "2026-06-24"
+      "name": "資工小廢物 - JN",
+      "year": "20",
+      "title": "一點點",
+      "url": "https://blog.giveanornot.com/just-a-little/",
+      "date": "2026-06-25"
     }
   ],
   "2023": [
     {
-      "name": "宗宗酱",
+      "name": "鹿泽",
       "year": "23",
-      "title": "人生的第一台单反：尼康D3200",
-      "url": "https://ygz.ink/archives/5347.html",
-      "date": "2026-06-24"
+      "title": "SEO与PPC：为业务选择合适的策略",
+      "url": "https://www.bailuze.com/24191.html",
+      "date": "2026-06-25"
     }
   ],
   "2024": [
     {
+      "name": "Chongxi",
+      "year": "24",
+      "title": "中国移动PT927G光猫折腾指南：破解超级密码改桥接",
+      "url": "https://xice.cx/posts/CMCCPT927G/",
+      "date": "2026-06-25"
+    },
+    {
       "name": "姓王者",
       "year": "24",
-      "title": "人工智能实训Day3：Agent智能体实践——工具调用与多技能协作",
-      "url": "https://xingwangzhe.fun/posts/ai-training-agent-day3/",
-      "date": "2026-06-24"
+      "title": "人工智能实训Day4：Agent智能体系统Proposal——B4 LLM决策模块",
+      "url": "https://xingwangzhe.fun/posts/ai-training-agent-day4-proposal/",
+      "date": "2026-06-25"
+    },
+    {
+      "name": "Chongxi",
+      "year": "24",
+      "title": "中国移动PT927G光猫折腾指南：破解超级密码改桥接",
+      "url": "https://xice.cx/posts/CMCCPT927G/",
+      "date": "2026-06-25"
     }
   ],
   "2025": [
     {
-      "name": "桃子味",
+      "name": "Marcus",
       "year": "25",
-      "title": "经验福利—异次元发卡配置支付宝当面付教程",
-      "url": "https://www.taoziwei.com/339/",
-      "date": "2026-06-24"
+      "title": "「所有平台都是跟踪器」",
+      "url": "https://www.immarcus.com/blog/all-platforms-are-trackers",
+      "date": "2026-06-25"
+    }
+  ],
+  "2026": [
+    {
+      "name": "麦子的思绪",
+      "year": "26",
+      "title": "脚下有泥，身后是深渊，真正的不服周，是向命运硬刚到底",
+      "url": "https://mzdsx.com/2026/06/25/%e8%84%9a%e4%b8%8b%e6%9c%89%e6%b3%a5%ef%bc%8c%e8%ba%ab%e5%90%8e%e6%98%af%e6%b7%b1%e6%b8%8a%ef%bc%8c%e7%9c%9f%e6%ad%a3%e7%9a%84%e4%b8%8d%e6%9c%8d%e5%91%a8%ef%bc%8c%e6%98%af%e5%90%91%e5%91%bd%e8%bf%90/",
+      "date": "2026-06-25"
     }
   ]
 };
