@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/27/2026, 6:05:36 AM
+// 抓取日期: 6/27/2026, 8:20:34 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -8,50 +8,57 @@ const latestArticlesByYear = {
     {
       "name": "seth",
       "year": "02",
-      "title": "You don’t need a better camera",
-      "url": "https://seths.blog/2026/06/you-dont-need-a-better-camera/",
-      "date": "2026-06-26"
+      "title": "Seeking a complement",
+      "url": "https://seths.blog/2026/06/seeking-a-complement/",
+      "date": "2026-06-27"
     }
   ],
   "2004": [
-    {
-      "name": "TonyBai",
-      "year": "04",
-      "title": "从 WordPress 到 Hugo：一个 20 年技术博客的迁移实录",
-      "url": "https://tonybai.com/2026/06/27/wp-to-hugo-migration-journey/",
-      "date": "2026-06-26"
-    },
     {
       "name": "我的天",
       "year": "04",
       "title": "入手血糖试纸",
       "url": "http://www.xlanda.net/posts/22290",
       "date": "2026-06-27"
+    },
+    {
+      "name": "TonyBai",
+      "year": "04",
+      "title": "从 WordPress 到 Hugo：一个 20 年技术博客的迁移实录",
+      "url": "https://tonybai.com/2026/06/27/wp-to-hugo-migration-journey/",
+      "date": "2026-06-26"
     }
   ],
   "2005": [
     {
       "name": "ACEVS",
       "year": "05",
-      "title": "小登中登老登股票行业分类",
-      "url": "https://acevs.com/5063/",
-      "date": "2026-06-26"
+      "title": "小记2026年6月27日",
+      "url": "https://acevs.com/5065/",
+      "date": "2026-06-27"
     },
     {
-      "name": "王志勇",
+      "name": "Gea-Suan Lin",
       "year": "05",
-      "title": "人生讨论(25)：永远不能出口的话",
-      "url": "http://www.auiou.com/relevant/00002164.jsp",
-      "date": "2026-06-26"
+      "title": "OpenAI 發表新的旗艦 GPT‑5.6 Sol",
+      "url": "https://blog.gslin.org/archives/2026/06/28/13083/openai-%e7%99%bc%e8%a1%a8%e6%96%b0%e7%9a%84%e6%97%97%e8%89%a6-gpt-5-6-sol/",
+      "date": "2026-06-27"
     }
   ],
   "2007": [
     {
       "name": "树下语",
       "year": "07",
-      "title": "纷扰春夏时",
-      "url": "https://yishu-life.com/index.php/archives/483.html",
-      "date": "2026-06-26"
+      "title": "不让青春留白",
+      "url": "https://yishu-life.com/index.php/archives/485.html",
+      "date": "2026-06-27"
+    },
+    {
+      "name": "朱小呆",
+      "year": "07",
+      "title": "夏天就好这一口，冰镇酸辣鸡爪",
+      "url": "https://zhujay.com/talk/talk_detail.html?id=1246",
+      "date": "2026-06-27"
     }
   ],
   "2009": [
@@ -79,38 +86,15 @@ const latestArticlesByYear = {
       "title": "快来注册Agent Mail",
       "url": "https://www.linyufan.com/post/5870",
       "date": "2026-06-27"
-    },
-    {
-      "name": "小z",
-      "year": "13",
-      "title": "小而美的ZNote笔记软件 —— 支持Docker私有部署和WEB访问",
-      "url": "https://blog.xiaoz.org/archives/23140",
-      "date": "2026-06-26"
-    }
-  ],
-  "2015": [
-    {
-      "name": "Guyskk",
-      "year": "15",
-      "title": "AI 编程=控制系统：BeecodeAI 的设计原理",
-      "url": "https://blog.guyskk.com/notes/ai-coding-control-system",
-      "date": "2026-06-26"
     }
   ],
   "2017": [
     {
       "name": "串串狗小刊",
       "year": "17",
-      "title": "停止使用 JWT ！",
-      "url": "https://www.ccgxk.com/emlog_dev/790.html",
-      "date": "2026-06-26"
-    },
-    {
-      "name": "碎言",
-      "year": "17",
-      "title": "优秀博客大赛颁奖现场",
-      "url": "https://www.suiyan.cc/blog/20260626163154",
-      "date": "2026-06-26"
+      "title": "简单聊聊出海 Web 的游戏站",
+      "url": "https://www.ccgxk.com/codeother/791.html",
+      "date": "2026-06-27"
     }
   ],
   "2018": [
@@ -122,40 +106,61 @@ const latestArticlesByYear = {
       "date": "2026-06-27"
     }
   ],
-  "2020": [
+  "2019": [
     {
-      "name": "初然忆",
-      "year": "20",
-      "title": "3块的CoCo美式咖啡",
-      "url": "https://www.imcry.vip/post/2026-6-26-1845/",
-      "date": "2026-06-26"
+      "name": "吴诗涛",
+      "year": "19",
+      "title": "使用翻译模型翻译外文书籍",
+      "url": "https://shitao5.org/posts/ai-book-translation-workflow/",
+      "date": "2026-06-27"
     }
   ],
   "2021": [
     {
       "name": "DevNow",
       "year": "21",
-      "title": "Product Hunt 每日热榜 | 2026-06-26",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-06-26",
-      "date": "2026-06-26"
-    }
-  ],
-  "2022": [
+      "title": "Product Hunt 每日热榜 | 2026-06-27",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-06-27",
+      "date": "2026-06-27"
+    },
     {
-      "name": "晴雀堂",
-      "year": "22",
-      "title": "二周目了",
-      "url": "https://blog.verynb.net/posts/5172.html",
-      "date": "2026-06-26"
+      "name": "记录生活",
+      "year": "21",
+      "title": "外地支援这事，从帮忙变成了义务",
+      "url": "https://9sb.net/archives/the-matter-of-providing-support-from-other-places-has-changed-from-assistance-to-obligation.html",
+      "date": "2026-06-27"
+    },
+    {
+      "name": "WSH",
+      "year": "21",
+      "title": "AI见闻之数据",
+      "url": "https://www.wsh233.cn/post/ai见闻之数据",
+      "date": "2026-06-27"
     }
   ],
   "2023": [
     {
+      "name": "鹿泽",
+      "year": "23",
+      "title": "在构建网站时，SEO真正重要的东西",
+      "url": "https://www.bailuze.com/24196.html",
+      "date": "2026-06-27"
+    },
+    {
       "name": "宗宗酱",
       "year": "23",
-      "title": "上周拔牙这周补牙😭",
-      "url": "https://ygz.ink/archives/5373.html",
-      "date": "2026-06-26"
+      "title": "用尼康D3200拍的第一组照片",
+      "url": "https://ygz.ink/archives/5387.html",
+      "date": "2026-06-27"
+    }
+  ],
+  "2024": [
+    {
+      "name": "姓王者",
+      "year": "24",
+      "title": "友链图谱 2.0 - 3D 更美观的可视化",
+      "url": "https://xingwangzhe.fun/posts/2d3d-graph-v2/",
+      "date": "2026-06-27"
     }
   ],
   "2025": [
@@ -165,15 +170,6 @@ const latestArticlesByYear = {
       "title": "明天开车十小时",
       "url": "https://www.immarcus.com/blog/ten-hour-drive-tomorrow",
       "date": "2026-06-27"
-    }
-  ],
-  "2026": [
-    {
-      "name": "麦子的思绪",
-      "year": "26",
-      "title": "这个blog，想换域名了",
-      "url": "https://mzdsx.com/2026/06/26/%e8%bf%99%e4%b8%aablog%ef%bc%8c%e6%83%b3%e6%8d%a2%e5%9f%9f%e5%90%8d%e4%ba%86/",
-      "date": "2026-06-26"
     }
   ]
 };
