@@ -1,18 +1,9 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/26/2026, 8:55:09 PM
+// 抓取日期: 6/27/2026, 6:05:36 AM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
-  "2000": [
-    {
-      "name": "Luca",
-      "year": "00",
-      "title": "放下工作二十天无事发生",
-      "url": "https://wlj.me/notes/sp-note-20260626-095642/",
-      "date": "2026-06-26"
-    }
-  ],
   "2002": [
     {
       "name": "seth",
@@ -22,29 +13,20 @@ const latestArticlesByYear = {
       "date": "2026-06-26"
     }
   ],
-  "2003": [
-    {
-      "name": "阮一峰",
-      "year": "03",
-      "title": "科技爱好者周刊（第 401 期）：如何赚到10亿美元",
-      "url": "http://www.ruanyifeng.com/blog/2026/06/weekly-issue-401.html",
-      "date": "2026-06-26"
-    }
-  ],
   "2004": [
     {
       "name": "TonyBai",
       "year": "04",
-      "title": "偿还十年技术债：深度拆解 Go 1.27 的 GODEBUG 强力清理计划",
-      "url": "https://tonybai.com/2026/06/26/policy-for-removing-godebug-flags/",
+      "title": "从 WordPress 到 Hugo：一个 20 年技术博客的迁移实录",
+      "url": "https://tonybai.com/2026/06/27/wp-to-hugo-migration-journey/",
       "date": "2026-06-26"
     },
     {
       "name": "我的天",
       "year": "04",
-      "title": "没完没了",
-      "url": "http://www.xlanda.net/posts/22288",
-      "date": "2026-06-26"
+      "title": "入手血糖试纸",
+      "url": "http://www.xlanda.net/posts/22290",
+      "date": "2026-06-27"
     }
   ],
   "2005": [
@@ -53,6 +35,13 @@ const latestArticlesByYear = {
       "year": "05",
       "title": "小登中登老登股票行业分类",
       "url": "https://acevs.com/5063/",
+      "date": "2026-06-26"
+    },
+    {
+      "name": "王志勇",
+      "year": "05",
+      "title": "人生讨论(25)：永远不能出口的话",
+      "url": "http://www.auiou.com/relevant/00002164.jsp",
       "date": "2026-06-26"
     }
   ],
@@ -69,37 +58,37 @@ const latestArticlesByYear = {
     {
       "name": "异数",
       "year": "09",
-      "title": "软件 || 图集规范管理软件-文档管理器使用教程2.0",
-      "url": "https://www.yishu.pro/227.html",
-      "date": "2026-06-26"
+      "title": " 软件 || 图集规范管理软件-文档管理器反馈意见汇总（1）",
+      "url": "https://www.yishu.pro/228.html",
+      "date": "2026-06-27"
     }
   ],
   "2012": [
     {
       "name": "水拍石",
       "year": "12",
-      "title": "第八章 国家里面的市场：中国制内市场的历史逻辑",
-      "url": "https://www.leitao.cn/10386.html",
-      "date": "2026-06-26"
+      "title": "第九章 算法、债务与新垄断：21世纪经济的新问题",
+      "url": "https://www.leitao.cn/10388.html",
+      "date": "2026-06-27"
     }
   ],
   "2013": [
     {
       "name": "林羽凡",
       "year": "13",
-      "title": "发现折耳根很好吃呀",
-      "url": "https://www.linyufan.com/post/5869",
+      "title": "快来注册Agent Mail",
+      "url": "https://www.linyufan.com/post/5870",
+      "date": "2026-06-27"
+    },
+    {
+      "name": "小z",
+      "year": "13",
+      "title": "小而美的ZNote笔记软件 —— 支持Docker私有部署和WEB访问",
+      "url": "https://blog.xiaoz.org/archives/23140",
       "date": "2026-06-26"
     }
   ],
   "2015": [
-    {
-      "name": "WordPress 知识宝库",
-      "year": "15",
-      "title": "워드프레스 보안 강화: 애플리케이션 비밀번호를 꺼야 하는 경우와 비활성화 방법",
-      "url": "https://www.thewordcracker.com/basic/%ec%9b%8c%eb%93%9c%ed%94%84%eb%a0%88%ec%8a%a4-%ec%95%a0%ed%94%8c%eb%a6%ac%ec%bc%80%ec%9d%b4%ec%85%98-%eb%b9%84%eb%b0%80%eb%b2%88%ed%98%b8-%eb%b9%84%ed%99%9c%ec%84%b1%ed%99%94/",
-      "date": "2026-06-26"
-    },
     {
       "name": "Guyskk",
       "year": "15",
@@ -115,6 +104,40 @@ const latestArticlesByYear = {
       "title": "停止使用 JWT ！",
       "url": "https://www.ccgxk.com/emlog_dev/790.html",
       "date": "2026-06-26"
+    },
+    {
+      "name": "碎言",
+      "year": "17",
+      "title": "优秀博客大赛颁奖现场",
+      "url": "https://www.suiyan.cc/blog/20260626163154",
+      "date": "2026-06-26"
+    }
+  ],
+  "2018": [
+    {
+      "name": "秋葵",
+      "year": "18",
+      "title": "流行词之走个面儿",
+      "url": "https://qiukui-note.happy365.day/20260627/zou-ge-mian-er/",
+      "date": "2026-06-27"
+    }
+  ],
+  "2020": [
+    {
+      "name": "初然忆",
+      "year": "20",
+      "title": "3块的CoCo美式咖啡",
+      "url": "https://www.imcry.vip/post/2026-6-26-1845/",
+      "date": "2026-06-26"
+    }
+  ],
+  "2021": [
+    {
+      "name": "DevNow",
+      "year": "21",
+      "title": "Product Hunt 每日热榜 | 2026-06-26",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-06-26",
+      "date": "2026-06-26"
     }
   ],
   "2022": [
@@ -128,33 +151,10 @@ const latestArticlesByYear = {
   ],
   "2023": [
     {
-      "name": "鄢云峰",
+      "name": "宗宗酱",
       "year": "23",
-      "title": "电脑端微信自带长截图功能啦！另外推荐几款截图工具~",
-      "url": "https://yanyunfeng.com/article/93",
-      "date": "2026-06-26"
-    }
-  ],
-  "2024": [
-    {
-      "name": "姓王者",
-      "year": "24",
-      "title": "告别 Pagefind，用 Orama 实现静态博客的全文搜索",
-      "url": "https://xingwangzhe.fun/posts/orama-search-replace-pagefind/",
-      "date": "2026-06-26"
-    },
-    {
-      "name": "Chongxi",
-      "year": "24",
-      "title": "家中网络「捉奸」记",
-      "url": "https://xice.cx/posts/fuckPCDN/",
-      "date": "2026-06-26"
-    },
-    {
-      "name": "Chongxi",
-      "year": "24",
-      "title": "家中网络「捉奸」记",
-      "url": "https://xice.cx/posts/fuckPCDN/",
+      "title": "上周拔牙这周补牙😭",
+      "url": "https://ygz.ink/archives/5373.html",
       "date": "2026-06-26"
     }
   ],
@@ -162,9 +162,9 @@ const latestArticlesByYear = {
     {
       "name": "Marcus",
       "year": "25",
-      "title": "英语角",
-      "url": "https://www.immarcus.com/blog/english-corner",
-      "date": "2026-06-26"
+      "title": "明天开车十小时",
+      "url": "https://www.immarcus.com/blog/ten-hour-drive-tomorrow",
+      "date": "2026-06-27"
     }
   ],
   "2026": [
