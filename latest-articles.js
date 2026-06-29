@@ -1,179 +1,175 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/28/2026, 8:25:07 PM
+// 抓取日期: 6/29/2026, 8:57:36 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
-  "2001": [
-    {
-      "name": "东评衿就",
-      "year": "01",
-      "title": "当ai开始互相写信",
-      "url": "https://dongjunke.cn/posts/2026/06/28/11833.html",
-      "date": "2026-06-28"
-    }
-  ],
   "2004": [
     {
       "name": "TonyBai",
       "year": "04",
-      "title": "YC 揭秘 AI 原生组织：打造一家在睡梦中自我进化的公司",
-      "url": "https://tonybai.com/2026/06/28/yc-ai-native-company-self-evolving-organizations/",
-      "date": "2026-06-27"
+      "title": "折腾过各种语言后，我为什么总是回到 Go 语言？",
+      "url": "https://tonybai.com/2026/06/29/keep-returning-to-go-no-matter-how-many-languages-i-try/",
+      "date": "2026-06-28"
     },
     {
       "name": "我的天",
       "year": "04",
-      "title": "扎针",
-      "url": "http://www.xlanda.net/posts/22292",
-      "date": "2026-06-28"
+      "title": "蚊子的价值",
+      "url": "http://www.xlanda.net/posts/22295",
+      "date": "2026-06-29"
+    },
+    {
+      "name": "Jake",
+      "year": "04",
+      "title": "Syrovex 招聘｜寻找优秀的创业伙伴",
+      "url": "https://jaketao.com/syrovex-hiring",
+      "date": "2026-06-29"
+    },
+    {
+      "name": "竹炉山房",
+      "year": "04",
+      "title": "老板娘炒股",
+      "url": "https://synyan.cn/t/63007",
+      "date": "2026-06-29"
     }
   ],
   "2005": [
     {
       "name": "ACEVS",
       "year": "05",
-      "title": "火锅自助没去",
-      "url": "https://acevs.com/5067/",
-      "date": "2026-06-28"
+      "title": "小记2026年6月29日",
+      "url": "https://acevs.com/5069/",
+      "date": "2026-06-29"
     }
   ],
-  "2012": [
+  "2006": [
     {
-      "name": "水拍石",
-      "year": "12",
-      "title": "第十章 超越主义之争：经济学与人类合作的未来",
-      "url": "https://www.leitao.cn/10390.html",
-      "date": "2026-06-28"
+      "name": "随风沐虐",
+      "year": "06",
+      "title": "腾讯云服务器如何重启宝塔面板？",
+      "url": "https://www.munue.com/803.html",
+      "date": "2026-06-29"
+    }
+  ],
+  "2007": [
+    {
+      "name": "朱小呆",
+      "year": "07",
+      "title": "六月小结｜继续走，别停",
+      "url": "https://zhujay.com/blog/blog_detail.html?id=1248",
+      "date": "2026-06-29"
+    }
+  ],
+  "2009": [
+    {
+      "name": "张鑫旭",
+      "year": "09",
+      "title": "浏览器原生支持JSON模块导入与开发啦！",
+      "url": "https://www.zhangxinxu.com/wordpress/2026/06/native-json-module-import/",
+      "date": "2026-06-29"
+    }
+  ],
+  "2010": [
+    {
+      "name": "麦麦同学",
+      "year": "10",
+      "title": "提供临时邮箱",
+      "url": "https://www.mmtx.net/1174.html",
+      "date": "2026-06-29"
     }
   ],
   "2013": [
     {
-      "name": "林羽凡",
+      "name": "小z",
       "year": "13",
-      "title": "“林羽凡笔记”系统支持Mcp协议了",
-      "url": "https://www.linyufan.com/post/5873",
-      "date": "2026-06-28"
-    }
-  ],
-  "2015": [
+      "title": "时隔两天，开源笔记软件ZNote又双叒叕更新了，前来汇报",
+      "url": "https://blog.xiaoz.org/archives/23157",
+      "date": "2026-06-29"
+    },
     {
-      "name": "WordPress 知识宝库",
-      "year": "15",
-      "title": "워드프레스 마이그레이션 파일이 너무 클 때 – 3GB 이상 백업본 이전하기 (feat. All-in-One WP Migration)",
-      "url": "https://www.thewordcracker.com/intermediate/%ec%9b%8c%eb%93%9c%ed%94%84%eb%a0%88%ec%8a%a4-%eb%8c%80%ec%9a%a9%eb%9f%89-%eb%b0%b1%ec%97%85%eb%b3%b8-%eb%a7%88%ec%9d%b4%ea%b7%b8%eb%a0%88%ec%9d%b4%ec%85%98/",
-      "date": "2026-06-28"
-    }
-  ],
-  "2016": [
-    {
-      "name": "太隐",
-      "year": "16",
-      "title": "社会学为什么在中国难以发展？｜ 隐说 NO. 27",
-      "url": "https://wangyurui.com/posts/she-hui-xue-wei-shi-yao-zai-zhong-guo-nan-yi-fa-112bb4cd",
-      "date": "2026-06-28"
+      "name": "卡瓦邦噶",
+      "year": "13",
+      "title": "生活来在一个包里",
+      "url": "https://www.kawabangga.com/posts/7314",
+      "date": "2026-06-29"
     }
   ],
   "2017": [
     {
-      "name": "碎言",
+      "name": "2broear",
       "year": "17",
-      "title": "静态博客如何添加rss文章聚合？",
-      "url": "https://www.suiyan.cc/blog/20260628204100",
-      "date": "2026-06-28"
+      "title": "最近让AI帮忙做的一些事",
+      "url": "https://blog.2broear.com/notes/29-06-2026_ai-powered-blog",
+      "date": "2026-06-29"
     },
     {
       "name": "串串狗小刊",
       "year": "17",
-      "title": "DeepSeek 发布氮气加速器 DSpark！可惜好东西又开源了",
-      "url": "https://www.ccgxk.com/codeother/792.html",
-      "date": "2026-06-28"
+      "title": "无港卡开通 Stripe 收款和 Nofollow 转 Dofollow 技巧",
+      "url": "https://www.ccgxk.com/codeother/793.html",
+      "date": "2026-06-29"
     }
   ],
   "2018": [
     {
-      "name": "希仁之拥",
+      "name": "秋葵",
       "year": "18",
-      "title": "领克900半年使用体验",
-      "url": "https://blog.keepchen.com/a/Half-Year-Experience-with-the-Lynk-&-Co-900.html",
-      "date": "2026-06-28"
+      "title": "GitHub一周热点",
+      "url": "https://qiukui-note.happy365.day/20260629/github-trends-weekly/",
+      "date": "2026-06-29"
     }
   ],
   "2019": [
     {
       "name": "So!azy",
       "year": "19",
-      "title": "AirPods 一个月丢三次",
-      "url": "https://blog.solazy.me/20260628/",
-      "date": "2026-06-28"
+      "title": "AirPods 追回记",
+      "url": "https://blog.solazy.me/20260629/",
+      "date": "2026-06-29"
     },
     {
-      "name": "瓜老汉",
+      "name": "李锋镝",
       "year": "19",
-      "title": "买机票最划算时间点",
-      "url": "http://www.gualaohan.com/post/820",
-      "date": "2026-06-28"
+      "title": "Kratos+主题新功能预览及功能演示",
+      "url": "https://www.lifengdi.com/article/wordpress/4744",
+      "date": "2026-06-29"
     }
   ],
   "2020": [
     {
-      "name": "不凡",
+      "name": "Z次元",
       "year": "20",
-      "title": "唯卓仕微距环长期闲置，在闲鱼成功卖掉，又回本132元",
-      "url": "https://www.bufanz.com/20260628691.html",
-      "date": "2026-06-28"
-    }
-  ],
-  "2021": [
-    {
-      "name": "yveji",
-      "year": "21",
-      "title": "逍遥仙",
-      "url": "https://www.yveji.com/Cultural/xiao-yao-xian.html",
-      "date": "2026-06-28"
-    },
-    {
-      "name": "DevNow",
-      "year": "21",
-      "title": "Product Hunt 每日热榜 | 2026-06-28",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-06-28",
-      "date": "2026-06-28"
+      "title": "无标题",
+      "url": "https://blog.ahzoo.cn/diary/",
+      "date": "2026-06-29"
     }
   ],
   "2023": [
     {
-      "name": "宗宗酱",
+      "name": "湘铭",
       "year": "23",
-      "title": "单反今日练习",
-      "url": "https://ygz.ink/archives/5391.html",
-      "date": "2026-06-28"
-    }
-  ],
-  "2024": [
-    {
-      "name": "姓王者",
-      "year": "24",
-      "title": "d3-force-3d 构建时预计算 3D 网络布局，减少客户端渲染压力",
-      "url": "https://xingwangzhe.fun/posts/d3-force-precompute-3d/",
-      "date": "2026-06-28"
+      "title": "又拍云图片无法访问-解决方法",
+      "url": "https://xiangming.site/1132.html",
+      "date": "2026-06-29"
     }
   ],
   "2025": [
     {
       "name": "Marcus",
       "year": "25",
-      "title": "今日驾驶流水账",
-      "url": "https://www.immarcus.com/blog/todays-driving-diary",
-      "date": "2026-06-28"
+      "title": "魔法的世界",
+      "url": "https://www.immarcus.com/blog/world-of-magic",
+      "date": "2026-06-29"
     }
   ],
   "2026": [
     {
-      "name": "安迪",
+      "name": "一万先生",
       "year": "26",
-      "title": "老薛主机注销我账号",
-      "url": "https://i55.top/archives/543/",
-      "date": "2026-06-28"
+      "title": "网易云音乐拿永久黑胶vip教程(音乐人认证)",
+      "url": "/feed/9",
+      "date": "2026-06-29"
     }
   ]
 };
