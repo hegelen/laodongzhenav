@@ -1,179 +1,173 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 6/30/2026, 9:03:28 PM
+// 抓取日期: 7/1/2026, 8:56:33 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
-  "2000": [
-    {
-      "name": "Luca",
-      "year": "00",
-      "title": "帮娃点星巴克喝起来特别香",
-      "url": "https://wlj.me/notes/sp-note-20260630-105732/",
-      "date": "2026-06-30"
-    }
-  ],
   "2002": [
     {
       "name": "seth",
       "year": "02",
-      "title": "Fancy food update",
-      "url": "https://seths.blog/2026/06/fancy-food-update/",
-      "date": "2026-06-30"
-    }
-  ],
-  "2003": [
-    {
-      "name": "王通",
-      "year": "03",
-      "title": "王通：知识付费老师如何利用Ai月入10万",
-      "url": "https://www.ufoer.com/post/13932.html",
-      "date": "2026-06-30"
-    },
-    {
-      "name": "阮一峰",
-      "year": "03",
-      "title": "Dario Amodei：AI 开源是伪命题",
-      "url": "http://www.ruanyifeng.com/blog/2026/06/anthropic.html",
-      "date": "2026-06-30"
+      "title": "Can you believe it?",
+      "url": "https://seths.blog/2026/07/can-you-believe-it/",
+      "date": "2026-07-01"
     }
   ],
   "2004": [
     {
+      "name": "kaix.in",
+      "year": "04",
+      "title": "配料表干净",
+      "url": "https://kaix.in/2026/0701/",
+      "date": "2026-07-01"
+    },
+    {
       "name": "我的天",
       "year": "04",
-      "title": "小区楼下的小猫",
-      "url": "http://www.xlanda.net/posts/22297",
+      "title": "猫狗缘",
+      "url": "http://www.xlanda.net/posts/22299",
+      "date": "2026-07-01"
+    },
+    {
+      "name": "TonyBai",
+      "year": "04",
+      "title": "HashiCorp 创始人：AI 时代，我们为什么越来越需要有“品味”的程序员？",
+      "url": "https://tonybai.com/2026/07/01/.file.contentbasename/",
       "date": "2026-06-30"
     }
   ],
   "2005": [
     {
-      "name": "当下",
+      "name": "ACEVS",
       "year": "05",
-      "title": "1-6月购物日志",
-      "url": "https://blog.fueis.com/26-beauty",
-      "date": "2026-06-30"
+      "title": "轮滑六次？",
+      "url": "https://acevs.com/5075/",
+      "date": "2026-07-01"
     },
     {
-      "name": "Gea-Suan Lin",
+      "name": "春田",
       "year": "05",
-      "title": "RAM 與 SSD 價格的走勢圖",
-      "url": "https://blog.gslin.org/archives/2026/06/30/13085/ram-%e8%88%87-ssd-%e5%83%b9%e6%a0%bc%e7%9a%84%e8%b5%b0%e5%8b%a2%e5%9c%96/",
-      "date": "2026-06-30"
+      "title": "１０８１．経営はこの３つでできる",
+      "url": "http://kaikeimura.way-nifty.com/blog/2026/07/post-78800c.html",
+      "date": "2026-07-01"
     }
   ],
-  "2008": [
+  "2007": [
     {
-      "name": "生活的左上角",
-      "year": "08",
-      "title": "杂记·六月小结·2627",
-      "url": "https://bwskyer.com/june-wrap-2026.html",
-      "date": "2026-06-30"
+      "name": "朱小呆",
+      "year": "07",
+      "title": "徽章猎人第三季度正式开启",
+      "url": "https://zhujay.com/talk/talk_detail.html?id=1249",
+      "date": "2026-07-01"
     }
   ],
   "2009": [
     {
-      "name": "老刘",
+      "name": "欧雷流",
       "year": "09",
-      "title": "Arch Linux 电源优化指南",
-      "url": "https://www.iliu.org/posts/arch-linux-power-optimize/",
-      "date": "2026-06-30"
+      "title": "先让自己吃饱饭，才有余力谈理想",
+      "url": "https://ourai.ws/posts/started-taking-on-software-outsourcing-projects/",
+      "date": "2026-07-01"
     }
   ],
-  "2011": [
+  "2012": [
     {
-      "name": "Verne",
-      "year": "11",
-      "title": "Claude Code 第三方 API 代理配置 Headroom",
-      "url": "https://blog.einverne.info/post/2026/06/headroom-with-custom-base-url-claude-code.html",
-      "date": "2026-06-30"
+      "name": "水拍石",
+      "year": "12",
+      "title": "癫狂",
+      "url": "https://www.leitao.cn/10405.html",
+      "date": "2026-07-01"
     }
   ],
-  "2014": [
+  "2013": [
     {
-      "name": "孤斗",
-      "year": "14",
-      "title": "你是谁，你知道么",
-      "url": "https://d-d.design/single/19465",
-      "date": "2026-06-30"
-    }
-  ],
-  "2015": [
-    {
-      "name": "WordPress 知识宝库",
-      "year": "15",
-      "title": "카페24 도메인 A 레코드 설정 오류 문제 해결하기",
-      "url": "https://www.thewordcracker.com/basic/%ec%b9%b4%ed%8e%9824-%eb%8f%84%eb%a9%94%ec%9d%b8-a-%eb%a0%88%ec%bd%94%eb%93%9c-%ec%84%a4%ec%a0%95-%ec%98%a4%eb%a5%98/",
-      "date": "2026-06-30"
+      "name": "小z",
+      "year": "13",
+      "title": "ZNote私有笔记安卓版APP来了",
+      "url": "https://blog.xiaoz.org/archives/23169",
+      "date": "2026-07-01"
     }
   ],
   "2017": [
     {
       "name": "串串狗小刊",
       "year": "17",
-      "title": "出海 Web 不要 恋战 新词游戏站",
-      "url": "https://www.ccgxk.com/codeother/794.html",
-      "date": "2026-06-30"
-    }
-  ],
-  "2019": [
-    {
-      "name": "流情",
-      "year": "19",
-      "title": "这言论，好特么有道理",
-      "url": "https://liuqingwushui.top/archives/168/",
-      "date": "2026-06-30"
+      "title": "出海 Web 之 GSC 里的曝光量和点击量和外链的关系",
+      "url": "https://www.ccgxk.com/codeother/795.html",
+      "date": "2026-07-01"
     }
   ],
   "2020": [
     {
-      "name": "我不是咕咕鸽",
-      "year": "20",
-      "title": "【好玩儿的 Docker 项目】十分钟搭建一个 Obsidian 私有同步服务——Fast Note Sync，多端实时同步笔记和附件",
-      "url": "https://blog.laoda.de/archives/docker-compose-install-fast-note-sync",
-      "date": "2026-06-30"
-    },
-    {
-      "name": "无梦梦游记",
-      "year": "20",
-      "title": "笔记·独立动画的基本工作流",
-      "url": "https://bkryofu.cn/p/dd89adea.html",
-      "date": "2026-06-30"
-    },
-    {
       "name": "不凡",
       "year": "20",
-      "title": "卓尔UV镜和绿巨能UV镜，镜片看不出区别，效果一样",
-      "url": "https://www.bufanz.com/20260630695.html",
-      "date": "2026-06-30"
+      "title": "开放世界ARPG×赛博朋克题材×霓虹视觉风格《赛博朋克2077 终极版》史低价164.5元",
+      "url": "https://www.bufanz.com/20260701701.html",
+      "date": "2026-07-01"
     }
   ],
   "2021": [
     {
+      "name": "DAIDAIFU",
+      "year": "21",
+      "title": "2026之半年感叹🚀",
+      "url": "https://www.ddf.im/index.php/2026/07/01/2026.html",
+      "date": "2026-07-01"
+    },
+    {
       "name": "DevNow",
       "year": "21",
-      "title": "Product Hunt 每日热榜 | 2026-06-30",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-06-30",
-      "date": "2026-06-30"
+      "title": "Product Hunt 每日热榜 | 2026-07-01",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-07-01",
+      "date": "2026-07-01"
     }
   ],
   "2023": [
     {
+      "name": "无敌",
+      "year": "23",
+      "title": "为博客构建“轻量级知识索引”（七）：右侧菜单——语义空间与分类体系的统一组织机制",
+      "url": "http://blog.tangwudi.com/technology/homedatacenter14464/",
+      "date": "2026-07-01"
+    },
+    {
+      "name": "鹿泽",
+      "year": "23",
+      "title": "为什么值得积极运营谷歌商品？拥有商业档案的好处",
+      "url": "https://www.bailuze.com/24207.html",
+      "date": "2026-07-01"
+    },
+    {
+      "name": "建站百科",
+      "year": "23",
+      "title": "jtti.cc：2026年7月1日盛典活动香港cn2giavps最新测试数据！高稳定性人群的选择！",
+      "url": "https://www.jzbk.net/3135.html",
+      "date": "2026-07-01"
+    },
+    {
       "name": "宗宗酱",
       "year": "23",
-      "title": "📷人文摄影练习",
-      "url": "https://ygz.ink/archives/5414.html",
-      "date": "2026-06-30"
+      "title": "📷单反摄影练习",
+      "url": "https://ygz.ink/archives/5421.html",
+      "date": "2026-07-01"
+    }
+  ],
+  "2024": [
+    {
+      "name": "团团生活志",
+      "year": "24",
+      "title": "Mysql数据库损坏导致丢失部分数据",
+      "url": "https://t-t.live/archives/Epw1vK9w",
+      "date": "2026-07-01"
     }
   ],
   "2025": [
     {
       "name": "Marcus",
       "year": "25",
-      "title": "时间的交换",
-      "url": "https://www.immarcus.com/blog/exchange-of-time",
-      "date": "2026-06-30"
+      "title": "写博客也许是一种自我救赎",
+      "url": "https://www.immarcus.com/blog/writing-blog-as-self-redemption",
+      "date": "2026-07-01"
     }
   ]
 };
