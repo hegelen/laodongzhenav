@@ -1,74 +1,76 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 7/3/2026, 8:25:36 PM
+// 抓取日期: 7/4/2026, 8:17:54 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
-  "2000": [
-    {
-      "name": "Luca",
-      "year": "00",
-      "title": "朋友里藏着个方脑机器人",
-      "url": "https://wlj.me/notes/sp-note-20260703-103526/",
-      "date": "2026-07-03"
-    }
-  ],
-  "2001": [
-    {
-      "name": "东评衿就",
-      "year": "01",
-      "title": "长安公园荷花",
-      "url": "https://dongjunke.cn/posts/2026/07/03/6858.html",
-      "date": "2026-07-03"
-    }
-  ],
   "2002": [
     {
       "name": "seth",
       "year": "02",
-      "title": "Operator error",
-      "url": "https://seths.blog/2026/07/operator-error/",
-      "date": "2026-07-03"
-    }
-  ],
-  "2003": [
-    {
-      "name": "阮一峰",
-      "year": "03",
-      "title": "科技爱好者周刊（第 402 期）：我在智念 AI 的日子（小说）",
-      "url": "http://www.ruanyifeng.com/blog/2026/07/weekly-issue-402.html",
-      "date": "2026-07-02"
+      "title": "Freedom",
+      "url": "https://seths.blog/2026/07/freedom/",
+      "date": "2026-07-04"
     }
   ],
   "2004": [
     {
       "name": "我的天",
       "year": "04",
-      "title": "喂猫",
-      "url": "http://www.xlanda.net/posts/22305",
-      "date": "2026-07-03"
+      "title": "打开潘多拉宝盒",
+      "url": "http://www.xlanda.net/posts/22307",
+      "date": "2026-07-04"
     },
     {
-      "name": "TonyBai",
+      "name": "龙哥",
       "year": "04",
-      "title": "别把“容易”当“简单”：Gin 框架作者撰文揭秘 88k Star 背后的架构哲学",
-      "url": "https://tonybai.com/2026/07/04/build-gin-simple-over-easy/",
-      "date": "2026-07-03"
+      "title": "漂亮的侧边返回顶部和底部代码",
+      "url": "https://long.ge/18076.html",
+      "date": "2026-07-04"
     }
   ],
   "2005": [
     {
-      "name": "ACEVS",
+      "name": "Lenciel",
       "year": "05",
-      "title": "冤枉了对手",
-      "url": "https://acevs.com/5079/",
+      "title": "彩云易散",
+      "url": "https://lenciel.com/2026/07/nothing-gold-can-stay/",
       "date": "2026-07-03"
-    },
+    }
+  ],
+  "2006": [
     {
-      "name": "王志勇",
-      "year": "05",
-      "title": "夜晚靓歌(13)：SNH48做客广州电台",
-      "url": "http://www.auiou.com/relevant/00002165.jsp",
+      "name": "随风沐虐",
+      "year": "06",
+      "title": "李慧老师新书《回望故乡三千里》",
+      "url": "https://www.munue.com/804.html",
+      "date": "2026-07-04"
+    }
+  ],
+  "2008": [
+    {
+      "name": "军",
+      "year": "08",
+      "title": "飞猪处理航班延误事件",
+      "url": "https://me.xu19.com/third-party-air-ticketing-platform-fliggy-poorly-handled-flight-delay-incidents/",
+      "date": "2026-07-04"
+    }
+  ],
+  "2009": [
+    {
+      "name": "老张",
+      "year": "09",
+      "title": "日记本‌diary主题for Typecho",
+      "url": "https://laozhang.org/archives/4211.html",
+      "date": "2026-07-04"
+    }
+  ],
+  "2011": [
+    {
+      "name": "唐巧",
+      "year": "11",
+      "title": "黑洞健身的进化 — AI 时代的一人 App",
+      "url": "https://blog.devtang.com/2026/07/03/heidong-fitness-evolution/",
       "date": "2026-07-03"
     }
   ],
@@ -76,102 +78,100 @@ const latestArticlesByYear = {
     {
       "name": "林羽凡",
       "year": "13",
-      "title": "“林羽凡笔记”Web端Ai对话中，增加图片上传功能",
-      "url": "https://www.linyufan.com/post/5878",
-      "date": "2026-07-03"
+      "title": "我的第一条本地大模型生成的视频",
+      "url": "https://www.linyufan.com/post/5879",
+      "date": "2026-07-04"
     }
   ],
   "2017": [
     {
+      "name": "碎言",
+      "year": "17",
+      "title": "拖延确实很折磨人",
+      "url": "https://www.suiyan.cc/blog/20260704183515",
+      "date": "2026-07-04"
+    },
+    {
       "name": "串串狗小刊",
       "year": "17",
-      "title": "如何设计良好的 API",
-      "url": "https://www.ccgxk.com/emlog_dev/797.html",
-      "date": "2026-07-03"
+      "title": "程序员现在的最佳副业 ~ Web 出海",
+      "url": "https://www.ccgxk.com/codeother/798.html",
+      "date": "2026-07-04"
     }
   ],
   "2019": [
     {
-      "name": "奶爸建站笔记",
+      "name": "So!azy",
       "year": "19",
-      "title": "WordPress 如何单独管理产品、案例和解决方案？CPT UI 插件使用教程",
-      "url": "https://blog.naibabiji.com/skill/cpt-ui-tutorial.html",
-      "date": "2026-07-03"
+      "title": "周末流水账 0704",
+      "url": "https://blog.solazy.me/20260704/",
+      "date": "2026-07-04"
     }
   ],
   "2020": [
     {
-      "name": "初然忆",
+      "name": "优世界",
       "year": "20",
-      "title": "写在“美莎克”之前",
-      "url": "https://www.imcry.vip/post/2026-7-3-1627/",
-      "date": "2026-07-03"
-    },
-    {
-      "name": "呆哥",
-      "year": "20",
-      "title": "机房被打，还在恢复中",
-      "url": "https://www.dalao.net/thread-60558.htm",
-      "date": "2026-07-03"
+      "title": "入手了智能手表 OPPO watch x3",
+      "url": "https://usj.cc/20260704094325.html",
+      "date": "2026-07-04"
     }
   ],
   "2021": [
     {
       "name": "DevNow",
       "year": "21",
-      "title": "Product Hunt 每日热榜 | 2026-07-03",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-07-03",
-      "date": "2026-07-03"
+      "title": "Product Hunt 每日热榜 | 2026-07-04",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-07-04",
+      "date": "2026-07-04"
     },
     {
-      "name": "记录生活",
+      "name": "WSH",
       "year": "21",
-      "title": "腾讯云 EdgeOne  国内站 福利 与之前兑换没冲突 速度上车",
-      "url": "https://9sb.net/archives/tencent-cloud-edgeone-domestic-station-benefits-no-conflict-with-previous-redemptions-speed-on-board.html",
-      "date": "2026-07-03"
+      "title": "野生菌",
+      "url": "https://www.wsh233.cn/post/野生菌",
+      "date": "2026-07-04"
     }
   ],
   "2023": [
     {
       "name": "小归客",
       "year": "23",
-      "title": "用秒哒做了一个“typecho手机端”",
-      "url": "https://xgk.pw/archives/301/",
-      "date": "2026-07-03"
+      "title": "测试",
+      "url": "https://xgk.pw/archives/302/",
+      "date": "2026-07-04"
     },
     {
-      "name": "宗宗酱",
+      "name": "鹿泽",
       "year": "23",
-      "title": "📷洪崖洞单反摄影练习",
-      "url": "https://ygz.ink/archives/5432.html",
-      "date": "2026-07-03"
+      "title": "链接建设失效是什么意思，为什么它还能正常工作？",
+      "url": "https://www.bailuze.com/24214.html",
+      "date": "2026-07-04"
+    },
+    {
+      "name": "Siwei Li",
+      "year": "23",
+      "title": "2026年7月 黛西花园重游",
+      "url": "https://siwei.li/2026nian-7yue-dai-xi-hua-yuan-zhong-you/",
+      "date": "2026-07-04"
     }
   ],
   "2024": [
     {
-      "name": "Chongxi",
+      "name": "姓王者",
       "year": "24",
-      "title": "x402：一个来自27年前的状态码能救活被ai榨干的「人类网站」吗",
-      "url": "https://xice.cx/posts/x402OverCloudflare/",
-      "date": "2026-07-03"
+      "title": "第一次做学术 Poster——人工智能实训 Week2 的报告体验",
+      "url": "https://xingwangzhe.fun/posts/ai-week2end-poster/",
+      "date": "2026-07-04"
     }
   ],
   "2025": [
     {
       "name": "Marcus",
       "year": "25",
-      "title": "恐怖的烤鸡翅",
-      "url": "https://www.immarcus.com/blog/spooky-grilled-chicken-wings",
-      "date": "2026-07-03"
-    }
-  ],
-  "2026": [
-    {
-      "name": "一个博客",
-      "year": "26",
-      "title": "说说：葡萄牙送走克罗地亚，C罗留下继续征战，莫德里奇遗憾告别\r\n到了淘汰赛阶…",
-      "url": "https://yigeboke.com/shuoshuo.php#shuo_33",
-      "date": "2026-07-03"
+      "title": "内容的权威来源",
+      "url": "https://www.immarcus.com/blog/authoritative-source-of-content",
+      "date": "2026-07-04"
     }
   ]
 };
