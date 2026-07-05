@@ -1,176 +1,178 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 7/4/2026, 8:17:54 PM
+// 抓取日期: 7/5/2026, 8:25:47 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
+  "2000": [
+    {
+      "name": "Luca",
+      "year": "00",
+      "title": "翻星标旧文读反馈之道",
+      "url": "https://wlj.me/notes/sp-note-20260705-144935/",
+      "date": "2026-07-05"
+    }
+  ],
   "2002": [
     {
       "name": "seth",
       "year": "02",
-      "title": "Freedom",
-      "url": "https://seths.blog/2026/07/freedom/",
-      "date": "2026-07-04"
+      "title": "The urgency paradox",
+      "url": "https://seths.blog/2026/07/the-urgency-paradox/",
+      "date": "2026-07-05"
     }
   ],
   "2004": [
     {
-      "name": "我的天",
+      "name": "TonyBai",
       "year": "04",
-      "title": "打开潘多拉宝盒",
-      "url": "http://www.xlanda.net/posts/22307",
+      "title": "五年，三篇文章，一个我一直没真正解决的问题",
+      "url": "https://tonybai.com/2026/07/05/go-private-modules-lessons-learned/",
       "date": "2026-07-04"
     },
     {
-      "name": "龙哥",
+      "name": "竹炉山房",
       "year": "04",
-      "title": "漂亮的侧边返回顶部和底部代码",
-      "url": "https://long.ge/18076.html",
-      "date": "2026-07-04"
+      "title": "史上最sb裁判",
+      "url": "https://synyan.cn/t/63089",
+      "date": "2026-07-05"
     }
   ],
   "2005": [
     {
-      "name": "Lenciel",
+      "name": "王志勇",
       "year": "05",
-      "title": "彩云易散",
-      "url": "https://lenciel.com/2026/07/nothing-gold-can-stay/",
-      "date": "2026-07-03"
+      "title": "误操作导致部分数据丢失",
+      "url": "http://www.auiou.com/relevant/00002166.jsp",
+      "date": "2026-07-05"
+    },
+    {
+      "name": "ACEVS",
+      "year": "05",
+      "title": "红李子",
+      "url": "https://acevs.com/5083/",
+      "date": "2026-07-05"
     }
   ],
   "2006": [
     {
-      "name": "随风沐虐",
+      "name": "傻猫",
       "year": "06",
-      "title": "李慧老师新书《回望故乡三千里》",
-      "url": "https://www.munue.com/804.html",
-      "date": "2026-07-04"
+      "title": "中文版Superpowers使用方法",
+      "url": "https://www.samool.com/52680.html",
+      "date": "2026-07-05"
     }
   ],
-  "2008": [
+  "2007": [
     {
-      "name": "军",
-      "year": "08",
-      "title": "飞猪处理航班延误事件",
-      "url": "https://me.xu19.com/third-party-air-ticketing-platform-fliggy-poorly-handled-flight-delay-incidents/",
-      "date": "2026-07-04"
-    }
-  ],
-  "2009": [
-    {
-      "name": "老张",
-      "year": "09",
-      "title": "日记本‌diary主题for Typecho",
-      "url": "https://laozhang.org/archives/4211.html",
-      "date": "2026-07-04"
-    }
-  ],
-  "2011": [
-    {
-      "name": "唐巧",
-      "year": "11",
-      "title": "黑洞健身的进化 — AI 时代的一人 App",
-      "url": "https://blog.devtang.com/2026/07/03/heidong-fitness-evolution/",
-      "date": "2026-07-03"
+      "name": "不靠谱颜论",
+      "year": "07",
+      "title": "地铁站的马赛克墙，究竟是随机还是有序？",
+      "url": "https://yanlinlin.cn/2026/07/05/is-the-pattern-random/",
+      "date": "2026-07-05"
     }
   ],
   "2013": [
     {
       "name": "林羽凡",
       "year": "13",
-      "title": "我的第一条本地大模型生成的视频",
-      "url": "https://www.linyufan.com/post/5879",
-      "date": "2026-07-04"
+      "title": "我还是为我的任性付出的代价",
+      "url": "https://www.linyufan.com/post/5881",
+      "date": "2026-07-05"
+    }
+  ],
+  "2016": [
+    {
+      "name": "ximi",
+      "year": "16",
+      "title": "一个简易的本地web图库预览页面",
+      "url": "https://www.ximi.me/post-6044.html",
+      "date": "2026-07-05"
     }
   ],
   "2017": [
     {
-      "name": "碎言",
-      "year": "17",
-      "title": "拖延确实很折磨人",
-      "url": "https://www.suiyan.cc/blog/20260704183515",
-      "date": "2026-07-04"
-    },
-    {
       "name": "串串狗小刊",
       "year": "17",
-      "title": "程序员现在的最佳副业 ~ Web 出海",
-      "url": "https://www.ccgxk.com/codeother/798.html",
-      "date": "2026-07-04"
+      "title": "Web 出海之外链提交频率和如何不花 Token 处理代码",
+      "url": "https://www.ccgxk.com/codeother/799.html",
+      "date": "2026-07-05"
+    },
+    {
+      "name": "SimonAKing",
+      "year": "17",
+      "title": "模型适配权：Anthropic 藏得最深的垄断",
+      "url": "https://simonaking.com/blog/anthropic-model-adaptation-monopoly/",
+      "date": "2026-07-05"
     }
   ],
-  "2019": [
+  "2018": [
     {
-      "name": "So!azy",
-      "year": "19",
-      "title": "周末流水账 0704",
-      "url": "https://blog.solazy.me/20260704/",
-      "date": "2026-07-04"
+      "name": "运维咖啡吧",
+      "year": "18",
+      "title": "游记｜吹17度江风，吃地道豆腐包，建德3天2晚散漫自驾",
+      "url": "https://blog.ops-coffee.com/r/city-china-zhejiang-hangzhou-jiande-yanzhougucheng.html",
+      "date": "2026-07-05"
     }
   ],
   "2020": [
     {
-      "name": "优世界",
+      "name": "呆哥",
       "year": "20",
-      "title": "入手了智能手表 OPPO watch x3",
-      "url": "https://usj.cc/20260704094325.html",
-      "date": "2026-07-04"
+      "title": "网站迁移完成，恢复访问",
+      "url": "https://www.dalao.net/thread-60603.htm",
+      "date": "2026-07-05"
     }
   ],
   "2021": [
     {
       "name": "DevNow",
       "year": "21",
-      "title": "Product Hunt 每日热榜 | 2026-07-04",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-07-04",
-      "date": "2026-07-04"
-    },
+      "title": "Product Hunt 每日热榜 | 2026-07-05",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-07-05",
+      "date": "2026-07-05"
+    }
+  ],
+  "2022": [
     {
-      "name": "WSH",
-      "year": "21",
-      "title": "野生菌",
-      "url": "https://www.wsh233.cn/post/野生菌",
-      "date": "2026-07-04"
+      "name": "倦意",
+      "year": "22",
+      "title": "演唱会退票经历分享 退票需要收取高额手续费 维权的过程更难",
+      "url": "https://jyblog.com/5747/",
+      "date": "2026-07-05"
     }
   ],
   "2023": [
     {
+      "name": "宗宗酱",
+      "year": "23",
+      "title": "📷“拍照特种兵”的下午",
+      "url": "https://ygz.ink/archives/5457.html",
+      "date": "2026-07-05"
+    },
+    {
       "name": "小归客",
       "year": "23",
-      "title": "测试",
-      "url": "https://xgk.pw/archives/302/",
-      "date": "2026-07-04"
-    },
-    {
-      "name": "鹿泽",
-      "year": "23",
-      "title": "链接建设失效是什么意思，为什么它还能正常工作？",
-      "url": "https://www.bailuze.com/24214.html",
-      "date": "2026-07-04"
-    },
-    {
-      "name": "Siwei Li",
-      "year": "23",
-      "title": "2026年7月 黛西花园重游",
-      "url": "https://siwei.li/2026nian-7yue-dai-xi-hua-yuan-zhong-you/",
-      "date": "2026-07-04"
-    }
-  ],
-  "2024": [
-    {
-      "name": "姓王者",
-      "year": "24",
-      "title": "第一次做学术 Poster——人工智能实训 Week2 的报告体验",
-      "url": "https://xingwangzhe.fun/posts/ai-week2end-poster/",
-      "date": "2026-07-04"
+      "title": "个人主页旧版本开源",
+      "url": "https://xgk.pw/archives/305/",
+      "date": "2026-07-05"
     }
   ],
   "2025": [
     {
       "name": "Marcus",
       "year": "25",
-      "title": "内容的权威来源",
-      "url": "https://www.immarcus.com/blog/authoritative-source-of-content",
+      "title": "2026.07.05 博客阅读周记",
+      "url": "https://www.immarcus.com/blog/weekly-20260705",
+      "date": "2026-07-05"
+    }
+  ],
+  "2026": [
+    {
+      "name": "麦子的思绪",
+      "year": "26",
+      "title": "喝酒误事",
+      "url": "https://mzdsx.com/2026/07/05/%e5%96%9d%e9%85%92%e8%af%af%e4%ba%8b/",
       "date": "2026-07-04"
     }
   ]
