@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 7/6/2026, 9:02:00 PM
+// 抓取日期: 7/7/2026, 8:57:48 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -8,164 +8,168 @@ const latestArticlesByYear = {
     {
       "name": "seth",
       "year": "02",
-      "title": "Facts and feelings",
-      "url": "https://seths.blog/2026/07/facts-and-feelings/",
-      "date": "2026-07-06"
+      "title": "The Builder’s Creed",
+      "url": "https://seths.blog/2026/07/the-builders-creed/",
+      "date": "2026-07-07"
     }
   ],
   "2004": [
     {
-      "name": "TonyBai",
+      "name": "竹炉山房",
       "year": "04",
-      "title": "5 分钟上手 gvu：把 vanity import path 这件事，从“半天运维”变成一条命令",
-      "url": "https://tonybai.com/2026/07/06/get-started-with-gvu-in-5-minutes/",
-      "date": "2026-07-05"
+      "title": "大跌有感",
+      "url": "https://synyan.cn/t/63122",
+      "date": "2026-07-07"
     },
     {
       "name": "我的天",
       "year": "04",
-      "title": "确定荣事达小冰箱",
-      "url": "http://www.xlanda.net/posts/22311",
-      "date": "2026-07-06"
-    },
-    {
-      "name": "竹炉山房",
-      "year": "04",
-      "title": "中公教育",
-      "url": "https://synyan.cn/t/63094",
-      "date": "2026-07-06"
+      "title": "冰箱放哪里",
+      "url": "http://www.xlanda.net/posts/22314",
+      "date": "2026-07-07"
     }
   ],
   "2005": [
     {
+      "name": "Gea-Suan Lin",
+      "year": "05",
+      "title": "GPT-5.6 Sol Ultra 預計也會上 Codex",
+      "url": "https://blog.gslin.org/archives/2026/07/07/13092/gpt-5-6-sol-ultra-%e9%a0%90%e8%a8%88%e4%b9%9f%e6%9c%83%e4%b8%8a-codex/",
+      "date": "2026-07-07"
+    },
+    {
+      "name": "王志勇",
+      "year": "05",
+      "title": "https利弊(1)：https性能测试(可下载精确测试工具)",
+      "url": "http://www.auiou.com/relevant/00002167.jsp",
+      "date": "2026-07-08"
+    },
+    {
       "name": "ACEVS",
       "year": "05",
-      "title": "游泳池",
-      "url": "https://acevs.com/5085/",
-      "date": "2026-07-06"
+      "title": "下雨天凉快",
+      "url": "https://acevs.com/5087/",
+      "date": "2026-07-07"
     }
   ],
   "2006": [
     {
       "name": "忘记了回忆",
       "year": "06",
-      "title": "停电",
-      "url": "https://ltmltm.cn/bk/1472.html",
-      "date": "2026-07-06"
+      "title": "电源保护器",
+      "url": "https://ltmltm.cn/bk/1475.html",
+      "date": "2026-07-07"
+    }
+  ],
+  "2009": [
+    {
+      "name": "1900的灯泡店",
+      "year": "09",
+      "title": "287、小暑",
+      "url": "https://1900.live/287-xiao-shu/",
+      "date": "2026-07-07"
+    },
+    {
+      "name": "老刘",
+      "year": "09",
+      "title": "三块钱，一个下午，AI帮我做出了眼镜商城的Android App",
+      "url": "https://www.iliu.org/posts/mimo-android-app-jingyuanxuan/",
+      "date": "2026-07-07"
+    },
+    {
+      "name": "张鑫旭",
+      "year": "09",
+      "title": "AI时代网站智能体无障碍访问开发指南",
+      "url": "https://www.zhangxinxu.com/wordpress/2026/07/ai-agent-accessible-guide/",
+      "date": "2026-07-07"
     }
   ],
   "2013": [
     {
       "name": "林羽凡",
       "year": "13",
-      "title": "《新浪云终止服务》了，又一个云服务平台倒下了",
-      "url": "https://www.linyufan.com/post/5884",
-      "date": "2026-07-06"
+      "title": "又发现一个新的CLi的Agent工具DeepCode，我又接入了“林羽凡笔记”的MCP",
+      "url": "https://www.linyufan.com/post/5887",
+      "date": "2026-07-07"
     }
   ],
-  "2015": [
+  "2014": [
     {
-      "name": "WordPress 知识宝库",
-      "year": "15",
-      "title": "구글 사이트킷 'Unable to retrieve site connection' 오류 해결 방법",
-      "url": "https://www.thewordcracker.com/basic/%ea%b5%ac%ea%b8%80-%ec%82%ac%ec%9d%b4%ed%8a%b8%ed%82%b7-%ec%97%b0%ea%b2%b0-%ec%98%a4%eb%a5%98-%ed%95%b4%ea%b2%b0/",
-      "date": "2026-07-06"
+      "name": "松茸",
+      "year": "14",
+      "title": "分享AI创作《山海经·中次十经》之电动车",
+      "url": "https://zrs.xyz/2152.html",
+      "date": "2026-07-07"
     }
   ],
   "2017": [
     {
-      "name": "科学空间",
-      "year": "17",
-      "title": "让炼丹更科学一些（七）：步长调度与权重平均",
-      "url": "https://kexue.fm/archives/11804",
-      "date": "2026-07-06"
-    },
-    {
       "name": "串串狗小刊",
       "year": "17",
-      "title": "Codex 敞开用的技巧和谷歌趋势的参考词",
-      "url": "https://www.ccgxk.com/codeother/800.html",
-      "date": "2026-07-06"
-    },
-    {
-      "name": "碎言",
-      "year": "17",
-      "title": "AI自动回复评论，你怎么看？",
-      "url": "https://www.suiyan.cc/blog/20260706192737",
-      "date": "2026-07-06"
-    }
-  ],
-  "2018": [
-    {
-      "name": "秋葵",
-      "year": "18",
-      "title": "GitHub一周热点",
-      "url": "https://qiukui-note.happy365.day/20260706/github-trends-weekly/",
-      "date": "2026-07-06"
+      "title": "观看哥飞年终会议复盘的 8 个 Web 出海笔记",
+      "url": "https://www.ccgxk.com/codeother/801.html",
+      "date": "2026-07-07"
     }
   ],
   "2019": [
     {
-      "name": "吴诗涛",
-      "year": "19",
-      "title": "记远程办公新起点",
-      "url": "https://shitao5.org/posts/remote-work-new-beginning/",
-      "date": "2026-07-06"
-    },
-    {
       "name": "流情",
       "year": "19",
-      "title": "【景点篇】青城后山",
-      "url": "https://liuqingwushui.top/archives/169/",
-      "date": "2026-07-06"
+      "title": "BlogClub的礼物—鼠标垫",
+      "url": "https://liuqingwushui.top/archives/170/",
+      "date": "2026-07-07"
+    }
+  ],
+  "2021": [
+    {
+      "name": "DevNow",
+      "year": "21",
+      "title": "Product Hunt 每日热榜 | 2026-07-07",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-07-07",
+      "date": "2026-07-07"
     },
     {
-      "name": "呢喃",
-      "year": "19",
-      "title": "世界，您好！",
-      "url": "https://ninan.me/2026/07/06/hello-world/",
-      "date": "2026-07-06"
+      "name": "记录生活",
+      "year": "21",
+      "title": "忙里偷闲，给盆景“善后”的一晚",
+      "url": "https://9sb.net/archives/taking-a-break-from-busyness-and-giving-the-bonsai-a-night-of-aftermath.html",
+      "date": "2026-07-07"
+    }
+  ],
+  "2022": [
+    {
+      "name": "倦意",
+      "year": "22",
+      "title": "为了让用户给博客投稿 我做了一个投稿系统",
+      "url": "https://jyblog.com/5779/",
+      "date": "2026-07-07"
     }
   ],
   "2023": [
     {
-      "name": "小归客",
+      "name": "鹿泽",
       "year": "23",
-      "title": "小归客个人主页程序2026版本",
-      "url": "https://xgk.pw/archives/310/",
-      "date": "2026-07-06"
-    },
-    {
-      "name": "按钮与磁带",
-      "year": "23",
-      "title": "镖人：风起大漠",
-      "url": "https://jefftay.com/movies/blades-of-the-guardians",
-      "date": "2026-07-06"
+      "title": "PHP与SEO：如何创建搜索引擎友好的PHP页面",
+      "url": "https://www.bailuze.com/24221.html",
+      "date": "2026-07-07"
     }
   ],
   "2025": [
     {
       "name": "Marcus",
       "year": "25",
-      "title": "世界奇妙物语",
-      "url": "https://www.immarcus.com/blog/yonimo-kimyona-monogatari",
-      "date": "2026-07-06"
+      "title": "热血足球的发源地",
+      "url": "https://www.immarcus.com/blog/calcio-storico",
+      "date": "2026-07-07"
     }
   ],
   "2026": [
     {
-      "name": "一个博客",
+      "name": "安迪",
       "year": "26",
-      "title": "说说：时隔很久没有走进电影院，周星驰新作《功夫女足》定档 7 月 11 日，…",
-      "url": "https://yigeboke.com/shuoshuo.php#shuo_34",
-      "date": "2026-07-06"
-    },
-    {
-      "name": "华立",
-      "year": "26",
-      "title": "自古不变的五大赚钱赛道",
-      "url": "https://www.renhuali.cn/journal/cmr8mud1301twchyjc70i3kpr",
-      "date": "2026-07-06"
+      "title": "埃及对战阿根廷，热血沸腾的一场球赛",
+      "url": "https://i55.top/archives/545/",
+      "date": "2026-07-07"
     }
   ]
 };
