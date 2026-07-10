@@ -1,175 +1,171 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 7/9/2026, 8:55:33 PM
+// 抓取日期: 7/10/2026, 8:32:53 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
-  "2002": [
-    {
-      "name": "seth",
-      "year": "02",
-      "title": "Generous collusion",
-      "url": "https://seths.blog/2026/07/generous-collusion/",
-      "date": "2026-07-09"
-    }
-  ],
   "2003": [
     {
-      "name": "王通",
+      "name": "阮一峰",
       "year": "03",
-      "title": "王通：如何找到最吸引人的购买理由",
-      "url": "https://www.ufoer.com/post/13974.html",
-      "date": "2026-07-09"
-    },
-    {
-      "name": "爱情在线",
-      "year": "03",
-      "title": "AI 眼中的我",
-      "url": "https://aqzx.com/blog_view.asp?id=66",
-      "date": "2026-07-09"
+      "title": "科技爱好者周刊（第 403 期）：为什么 Dropbox 不成功",
+      "url": "http://www.ruanyifeng.com/blog/2026/07/weekly-issue-403.html",
+      "date": "2026-07-10"
     }
   ],
   "2004": [
     {
       "name": "TonyBai",
       "year": "04",
-      "title": "AI 重写 Bun 为Rust全过程揭秘：101万行代码、11天、64个Claude并行开工",
-      "url": "https://tonybai.com/2026/07/09/ai-rewrite-bun-in-rust/",
-      "date": "2026-07-09"
-    },
-    {
-      "name": "Jake",
-      "year": "04",
-      "title": "Syrovex 招聘｜寻找优秀的创业伙伴",
-      "url": "https://jaketao.com/syrovex-hiring",
-      "date": "2026-07-09"
+      "title": "Bun 重写为 Rust 后，Zig 之父罕见开炮：“我们早就等着看你重写”",
+      "url": "https://tonybai.com/2026/07/10/zig-founder-andrew-kelley-thoughts-bun-rust-rewrite/",
+      "date": "2026-07-10"
     },
     {
       "name": "竹炉山房",
       "year": "04",
-      "title": "台风“巴威”",
-      "url": "https://synyan.cn/t/63154",
-      "date": "2026-07-09"
+      "title": "梭哈的智慧",
+      "url": "https://synyan.cn/t/63129",
+      "date": "2026-07-10"
     }
   ],
   "2005": [
     {
       "name": "云风",
       "year": "05",
-      "title": "小孩的英语辅导",
-      "url": "https://blog.codingnow.com/2026/07/learning_english.html",
-      "date": "2026-07-09"
-    },
-    {
-      "name": "Gea-Suan Lin",
-      "year": "05",
-      "title": "CO₂ 對工作效率的影響，或是 CO₂ 當作指標時對工作效率的影響",
-      "url": "https://blog.gslin.org/archives/2026/07/10/13100/co%e2%82%82-%e5%b0%8d%e5%b7%a5%e4%bd%9c%e6%95%88%e7%8e%87%e7%9a%84%e5%bd%b1%e9%9f%bf%ef%bc%8c%e6%88%96%e6%98%af-co%e2%82%82-%e7%95%b6%e4%bd%9c%e6%8c%87%e6%a8%99%e6%99%82%e5%b0%8d%e5%b7%a5%e4%bd%9c/",
-      "date": "2026-07-09"
+      "title": "高尿酸血症确诊",
+      "url": "https://blog.codingnow.com/2026/07/hyperuricemia.html",
+      "date": "2026-07-10"
     }
   ],
-  "2008": [
+  "2007": [
     {
-      "name": "生活的左上角",
-      "year": "08",
-      "title": "博客优化手记",
-      "url": "https://bwskyer.com/blog-maintenance-notes.html",
-      "date": "2026-07-09"
+      "name": "无标题文档",
+      "year": "07",
+      "title": "解决 macOS 下 Samba 拷贝大文件断流报错的问题",
+      "url": "https://www.gracecode.com/posts/3208.html",
+      "date": "2026-07-10"
     }
   ],
   "2009": [
     {
-      "name": "张鑫旭",
+      "name": "孙琪峥",
       "year": "09",
-      "title": "前端快讯：setHTML()和Element.startViewTransition已支持",
-      "url": "https://www.zhangxinxu.com/wordpress/2026/07/sethtml-element-startviewtransition/",
-      "date": "2026-07-09"
+      "title": "Microsoft Office 2016 Internet Archive Minimal Setup KMS Activation Code",
+      "url": "https://www.sunqizheng.com/blog/2686.html",
+      "date": "2026-07-10"
+    },
+    {
+      "name": "谁见到过风？",
+      "year": "09",
+      "title": "2026年7月10日 《毛泽东传》 二、师范生（中）",
+      "url": "https://www.seenthewind.com/blog/2026/07/10/2026%e5%b9%b47%e6%9c%8810%e6%97%a5-%e3%80%8a%e6%af%9b%e6%b3%bd%e4%b8%9c%e4%bc%a0%e3%80%8b-%e4%ba%8c%e3%80%81%e5%b8%88%e8%8c%83%e7%94%9f%ef%bc%88%e4%b8%ad%ef%bc%89/",
+      "date": "2026-07-10"
     }
   ],
   "2013": [
     {
+      "name": "卡瓦邦噶",
+      "year": "13",
+      "title": "On Children",
+      "url": "https://www.kawabangga.com/posts/7328",
+      "date": "2026-07-10"
+    },
+    {
+      "name": "小z",
+      "year": "13",
+      "title": "全球多币种账户 + 海外实体借记卡，Starryblu开户教程与注意事项",
+      "url": "https://blog.xiaoz.org/archives/23207",
+      "date": "2026-07-10"
+    },
+    {
       "name": "林羽凡",
       "year": "13",
-      "title": "非科班出身能不能开发程序",
-      "url": "https://www.linyufan.com/post/5891",
-      "date": "2026-07-09"
+      "title": "重写了“林羽凡笔记”鸿蒙App中笔记目录的展现形式",
+      "url": "https://www.linyufan.com/post/5894",
+      "date": "2026-07-10"
+    }
+  ],
+  "2016": [
+    {
+      "name": "太隐",
+      "year": "16",
+      "title": "央地博弈",
+      "url": "https://wangyurui.com/posts/yang-di-bo-yi-07e25c1f",
+      "date": "2026-07-10"
     }
   ],
   "2017": [
     {
       "name": "串串狗小刊",
       "year": "17",
-      "title": "介绍几组我一直在使用的 Codex 插件",
-      "url": "https://www.ccgxk.com/codeother/803.html",
-      "date": "2026-07-09"
+      "title": "阅读源代码前要运行的 5 条 Git 命令",
+      "url": "https://www.ccgxk.com/emlog_dev/804.html",
+      "date": "2026-07-10"
     }
   ],
   "2019": [
     {
-      "name": "Zeruns",
+      "name": "jdeal",
       "year": "19",
-      "title": "绿联（Ugreen）DXP4800Pro NAS 开箱评测与拆解，4盘位NAS，i3-1315U，存储服务器",
-      "url": "https://blog.zeruns.com/archives/949.html",
-      "date": "2026-07-09"
+      "title": "嗯，我的专属工位红绿灯",
+      "url": "https://www.jdeal.cn/561.html",
+      "date": "2026-07-10"
     },
     {
-      "name": "沧海月明",
+      "name": "奶爸建站笔记",
       "year": "19",
-      "title": "OceanBase 的软件工程管理",
-      "url": "https://www.inlighting.org/archives/software-engineering-management-in-oceanbase",
-      "date": "2026-07-09"
+      "title": "做网站选 Next.js 还是 WordPress？2026 年中小企业与个人站长的理性选择指南",
+      "url": "https://blog.naibabiji.com/tutorial/next-js-vs-wordpress.html",
+      "date": "2026-07-10"
     }
   ],
   "2020": [
     {
-      "name": "資工小廢物 - JN",
-      "year": "20",
-      "title": "當部落格超越 Threads",
-      "url": "https://blog.giveanornot.com/when-blog-beats-threads/",
-      "date": "2026-07-09"
-    },
-    {
       "name": "不凡",
       "year": "20",
-      "title": "给三花猫的小儿子起名“小不点”",
-      "url": "https://www.bufanz.com/20260709727.html",
-      "date": "2026-07-09"
+      "title": "虎皮鹦鹉吃桃子",
+      "url": "https://www.bufanz.com/20260710728.html",
+      "date": "2026-07-10"
+    },
+    {
+      "name": "初然忆",
+      "year": "20",
+      "title": "外婆的近况",
+      "url": "https://www.imcry.vip/post/2026-7-10-1859/",
+      "date": "2026-07-10"
     }
   ],
   "2021": [
     {
-      "name": "WSH",
+      "name": "DevNow",
       "year": "21",
-      "title": "野生菌",
-      "url": "https://www.wsh233.cn/post/野生菌",
-      "date": "2026-07-09"
+      "title": "Product Hunt 每日热榜 | 2026-07-10",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-07-10",
+      "date": "2026-07-10"
     }
   ],
-  "2022": [
+  "2023": [
     {
-      "name": "晴雀堂",
-      "year": "22",
-      "title": "为hexo博客添加隐藏ai文本的功能",
-      "url": "https://blog.verynb.net/posts/57342.html",
-      "date": "2026-07-09"
-    }
-  ],
-  "2024": [
+      "name": "宗宗酱",
+      "year": "23",
+      "title": "放假了",
+      "url": "https://ygz.ink/archives/5481.html",
+      "date": "2026-07-10"
+    },
     {
-      "name": "姓王者",
-      "year": "24",
-      "title": "申请 Edgeone Makers 提升额度",
-      "url": "https://xingwangzhe.fun/posts/apply-edgeone-makers/",
-      "date": "2026-07-09"
-    }
-  ],
-  "2026": [
+      "name": "鹿泽",
+      "year": "23",
+      "title": "cloudflare-light-blog – 基于 Cloudflare Workers + D1 + R2 构建的轻量级博客系统",
+      "url": "https://www.bailuze.com/25510.html",
+      "date": "2026-07-10"
+    },
     {
-      "name": "一个博客",
-      "year": "26",
-      "title": "说说：原本定好 7 月 11 号的《功夫女足》观影票调整到 12 日晚 19…",
-      "url": "https://yigeboke.com/shuoshuo.php#shuo_35",
-      "date": "2026-07-09"
+      "name": "按钮与磁带",
+      "year": "23",
+      "title": "万米危机",
+      "url": "https://jefftay.com/movies/wings-of-dread",
+      "date": "2026-07-10"
     }
   ]
 };
