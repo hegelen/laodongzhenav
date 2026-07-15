@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 7/14/2026, 8:23:21 PM
+// 抓取日期: 7/15/2026, 8:21:15 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -8,155 +8,142 @@ const latestArticlesByYear = {
     {
       "name": "seth",
       "year": "02",
-      "title": "“Is it okay if I share my screen?”",
-      "url": "https://seths.blog/2026/07/is-it-okay-if-i-share-my-screen/",
-      "date": "2026-07-14"
+      "title": "Disposable software",
+      "url": "https://seths.blog/2026/07/disposable-software/",
+      "date": "2026-07-15"
     }
   ],
   "2004": [
     {
-      "name": "TonyBai",
+      "name": "kaix.in",
       "year": "04",
-      "title": "171个“已批准”却迟迟未实现的提案：Go语言的十年“欠账清单”",
-      "url": "https://tonybai.com/2026/07/14/171-accepted-unimplemented-go-proposals-a-decade-of-technical-debt/",
-      "date": "2026-07-13"
+      "title": "第一卷 03",
+      "url": "https://kaix.in/2026/0712/339a/",
+      "date": "2026-07-15"
     }
   ],
-  "2006": [
+  "2005": [
     {
-      "name": "忘记了回忆",
-      "year": "06",
-      "title": "填志愿",
-      "url": "https://ltmltm.cn/bk/1479.html",
-      "date": "2026-07-14"
+      "name": "春田",
+      "year": "05",
+      "title": "１０８３．生きられるだけ生きればいい",
+      "url": "http://kaikeimura.way-nifty.com/blog/2026/07/post-e796ce.html",
+      "date": "2026-07-15"
+    },
+    {
+      "name": "ACEVS",
+      "year": "05",
+      "title": "欧姆龙 D2FC-F-7N 相似的微动",
+      "url": "https://acevs.com/5103/",
+      "date": "2026-07-15"
     }
   ],
-  "2007": [
+  "2008": [
     {
-      "name": "朱小呆",
-      "year": "07",
-      "title": "开奖啦！5斤巫山脆李花落谁家？速来围观！",
-      "url": "https://zhujay.com/talk/talk_detail.html?id=1261",
-      "date": "2026-07-14"
+      "name": "军",
+      "year": "08",
+      "title": "10年火花塞的状态",
+      "url": "https://me.xu19.com/mercedes-benz-glk300-spark-plug-condition-after-ten-years/",
+      "date": "2026-07-15"
     }
   ],
-  "2009": [
+  "2011": [
     {
-      "name": "老张",
-      "year": "09",
-      "title": "“暑假综合症”犯了，得“治”！",
-      "url": "https://laozhang.org/archives/4230.html",
-      "date": "2026-07-14"
-    }
-  ],
-  "2012": [
-    {
-      "name": "郭晓力",
-      "year": "12",
-      "title": "在德州工区的一天",
-      "url": "https://guoxiaoli.com/post/665.html",
-      "date": "2026-07-14"
+      "name": "forecho",
+      "year": "11",
+      "title": "从 400U 到 800U：小账户做短线时，我这周学到的几件事",
+      "url": "https://blog.forecho.com/from-400u-to-800u-small-account-scalping-lessons.html",
+      "date": "2026-07-15"
     }
   ],
   "2013": [
     {
       "name": "林羽凡",
       "year": "13",
-      "title": "优化了“林羽凡笔记”分享页中切换主题色功能的显示位置",
-      "url": "https://www.linyufan.com/post/5900",
-      "date": "2026-07-14"
-    }
-  ],
-  "2014": [
-    {
-      "name": "运营不加班",
-      "year": "14",
-      "title": "吃灰iPhone 6再就业：给Claude Code做个红绿灯看板",
-      "url": "https://nops.icu/archives/243/",
-      "date": "2026-07-14"
+      "title": "我重新优化了“林羽凡笔记”chat模块中选择大模型的功能，给智谱大模型增加智能体模式",
+      "url": "https://www.linyufan.com/post/5903",
+      "date": "2026-07-15"
     }
   ],
   "2015": [
     {
       "name": "WordPress 知识宝库",
       "year": "15",
-      "title": "All-in-One WP Migration 아카이브 파일 손상으로 가져오기 실패 오류",
-      "url": "https://www.thewordcracker.com/basic/all-in-one-wp-migration-%ec%95%84%ec%b9%b4%ec%9d%b4%eb%b8%8c-%ed%8c%8c%ec%9d%bc-%ec%86%90%ec%83%81-%ec%98%a4%eb%a5%98/",
-      "date": "2026-07-14"
+      "title": "AI 검사 및 표절 검사 솔루션 | 텍스트 AI 생성 여부 분석",
+      "url": "https://www.thewordcracker.com/blog/ai-%ed%83%90%ec%a7%80-%eb%b0%8f-%ed%91%9c%ec%a0%88-%ea%b2%80%ec%82%ac-%ec%86%94%eb%a3%a8%ec%85%98-%ea%b0%80%ec%9d%b4%eb%93%9c/",
+      "date": "2026-07-15"
     },
     {
-      "name": "满心",
+      "name": "侯锐的思考与分享",
       "year": "15",
-      "title": "下班准点儿走，也错了？",
-      "url": "https://zhoutian.com/387.html",
-      "date": "2026-07-14"
+      "title": "大数据技术的演进：从 Hive、GFS 到 Raft",
+      "url": "https://www.nosuchfield.com/2026/07/15/The-Evolution-of-Big-Data-From-Hive-GFS-to-Raft/",
+      "date": "2026-07-15"
     }
   ],
   "2017": [
     {
-      "name": "串串狗小刊",
+      "name": "秋风于渭水",
       "year": "17",
-      "title": "OPC Web 出海之图视频的 AI 供应商渠道和简单外链",
-      "url": "https://www.ccgxk.com/codeother/808.html",
-      "date": "2026-07-14"
+      "title": "YouTube 无限重定向报错，谷歌账号身份验证无限失败，罪魁祸首居然是“已分区 cookie”？！",
+      "url": "https://www.tjsky.net/tutorial/1708",
+      "date": "2026-07-15"
     }
   ],
   "2019": [
     {
-      "name": "流情",
+      "name": "吴诗涛",
       "year": "19",
-      "title": "成年人的世界",
-      "url": "https://liuqingwushui.top/archives/173/",
-      "date": "2026-07-14"
+      "title": "重构输入流",
+      "url": "https://shitao5.org/posts/ai-powered-input-flow/",
+      "date": "2026-07-15"
+    },
+    {
+      "name": "凌飞",
+      "year": "19",
+      "title": "升学焦虑，是一剂慢性毒药",
+      "url": "https://www.llingfei.com/705.html",
+      "date": "2026-07-15"
     },
     {
       "name": "So!azy",
       "year": "19",
-      "title": "当职业素养成了稀缺品",
-      "url": "https://blog.solazy.me/20260714/",
-      "date": "2026-07-14"
+      "title": "别把前途押在别人身上",
+      "url": "https://blog.solazy.me/20260715/",
+      "date": "2026-07-15"
     }
   ],
   "2020": [
     {
-      "name": "呆哥",
+      "name": "不凡",
       "year": "20",
-      "title": "编辑器新增Markdown切换",
-      "url": "https://www.dalao.net/thread-61035.htm",
-      "date": "2026-07-14"
+      "title": "【不凡摄影作品 | 2026.7.15】",
+      "url": "https://www.bufanz.com/20260715744.html",
+      "date": "2026-07-15"
     }
   ],
   "2021": [
     {
       "name": "DevNow",
       "year": "21",
-      "title": "Product Hunt 每日热榜 | 2026-07-14",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-07-14",
-      "date": "2026-07-14"
-    }
-  ],
-  "2023": [
-    {
-      "name": "小归客",
-      "year": "23",
-      "title": "给主题添加一个“荣誉殿堂”独立页面",
-      "url": "https://xgk.pw/archives/313/",
-      "date": "2026-07-14"
+      "title": "Product Hunt 每日热榜 | 2026-07-15",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-07-15",
+      "date": "2026-07-15"
     },
     {
-      "name": "鹿泽",
-      "year": "23",
-      "title": "页面速度对SEO优化有多重要？",
-      "url": "https://www.bailuze.com/24238.html",
-      "date": "2026-07-14"
+      "name": "喵喵小站・博客志",
+      "year": "21",
+      "title": "嘿嘿，分享一下好吃的",
+      "url": "https://www.mmbkz.cn/5bd06cb7.html",
+      "date": "2026-07-15"
     }
   ],
   "2024": [
     {
-      "name": "Chongxi",
+      "name": "姓王者",
       "year": "24",
-      "title": "记一次无需实名换绑米哈游通行证手机号",
-      "url": "https://xice.cx/posts/fkMihoyo/",
+      "title": "关于博客组织友链迁移的公告",
+      "url": "https://xingwangzhe.fun/posts/blogroll-migration-notice/",
       "date": "2026-07-15"
     }
   ],
@@ -164,18 +151,25 @@ const latestArticlesByYear = {
     {
       "name": "Marcus",
       "year": "25",
-      "title": "夜猫子才是正常的吧",
-      "url": "https://www.immarcus.com/blog/night-owl-was-the-norm",
-      "date": "2026-07-14"
+      "title": "「你很厉害」",
+      "url": "https://www.immarcus.com/blog/you-are-awesome",
+      "date": "2026-07-15"
     }
   ],
   "2026": [
     {
-      "name": "麦子的思绪",
+      "name": "周阿源",
       "year": "26",
-      "title": "准备换域名了",
-      "url": "https://mzdsx.com/2026/07/14/%e5%87%86%e5%a4%87%e6%8d%a2%e5%9f%9f%e5%90%8d%e4%ba%86/",
-      "date": "2026-07-14"
+      "title": "上海 2026CBME 观展日记｜带女儿同行，满心期待却略感失望",
+      "url": "https://zhouayuan.com/post/57.html",
+      "date": "2026-07-15"
+    },
+    {
+      "name": "一个博客",
+      "year": "26",
+      "title": "求助｜慢性咽炎久治不愈，输液吃药不停复发怎么办",
+      "url": "https://yigeboke.com/article.php?id=47",
+      "date": "2026-07-15"
     }
   ]
 };
