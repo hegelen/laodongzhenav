@@ -1,175 +1,181 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 7/15/2026, 8:21:15 PM
+// 抓取日期: 7/16/2026, 8:12:47 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
-  "2002": [
+  "2000": [
     {
-      "name": "seth",
-      "year": "02",
-      "title": "Disposable software",
-      "url": "https://seths.blog/2026/07/disposable-software/",
-      "date": "2026-07-15"
+      "name": "Luca",
+      "year": "00",
+      "title": "上半年已逝时光飞速",
+      "url": "https://wlj.me/notes/sp-note-20260716-104658/",
+      "date": "2026-07-16"
     }
   ],
   "2004": [
     {
-      "name": "kaix.in",
+      "name": "TonyBai",
       "year": "04",
-      "title": "第一卷 03",
-      "url": "https://kaix.in/2026/0712/339a/",
+      "title": "Go 1.28 路线图首度曝光：Cgo 告别C工具链？泛型容器将入标准库？",
+      "url": "https://tonybai.com/2026/07/16/go-1-28-roadmap-compiler-and-runtime-features-preview/",
       "date": "2026-07-15"
     }
   ],
   "2005": [
     {
-      "name": "春田",
+      "name": "王志勇",
       "year": "05",
-      "title": "１０８３．生きられるだけ生きればいい",
-      "url": "http://kaikeimura.way-nifty.com/blog/2026/07/post-e796ce.html",
-      "date": "2026-07-15"
+      "title": "数码评测(71)：超低价享受i7-7700的体验/10%、30%的差距有多大？",
+      "url": "http://www.auiou.com/relevant/00002169.jsp",
+      "date": "2026-07-16"
+    },
+    {
+      "name": "Gea-Suan Lin",
+      "year": "05",
+      "title": "有消息說 Stripe 與 Advent 要買 PayPal",
+      "url": "https://blog.gslin.org/archives/2026/07/16/13114/%e6%9c%89%e6%b6%88%e6%81%af%e8%aa%aa-stripe-%e8%88%87-advent-%e8%a6%81%e8%b2%b7-paypal/",
+      "date": "2026-07-16"
     },
     {
       "name": "ACEVS",
       "year": "05",
-      "title": "欧姆龙 D2FC-F-7N 相似的微动",
-      "url": "https://acevs.com/5103/",
-      "date": "2026-07-15"
+      "title": "杂记2026年7月16日",
+      "url": "https://acevs.com/5106/",
+      "date": "2026-07-16"
     }
   ],
-  "2008": [
+  "2006": [
     {
-      "name": "军",
-      "year": "08",
-      "title": "10年火花塞的状态",
-      "url": "https://me.xu19.com/mercedes-benz-glk300-spark-plug-condition-after-ten-years/",
-      "date": "2026-07-15"
+      "name": "土木坛子",
+      "year": "06",
+      "title": "VCard疑似跑路",
+      "url": "https://tumutanzi.com/archives/17617",
+      "date": "2026-07-16"
+    },
+    {
+      "name": "随风沐虐",
+      "year": "06",
+      "title": "达成一个小目标：10000ml",
+      "url": "https://www.munue.com/807.html",
+      "date": "2026-07-16"
     }
   ],
-  "2011": [
+  "2009": [
     {
-      "name": "forecho",
-      "year": "11",
-      "title": "从 400U 到 800U：小账户做短线时，我这周学到的几件事",
-      "url": "https://blog.forecho.com/from-400u-to-800u-small-account-scalping-lessons.html",
-      "date": "2026-07-15"
+      "name": "三斗室",
+      "year": "09",
+      "title": "实验 autoresearch 优化论文摘要 SKILL 的效果",
+      "url": "http://chenlinux.com/2026/07/16/autoresearch-for-paper-reader-skill/",
+      "date": "2026-07-16"
+    }
+  ],
+  "2010": [
+    {
+      "name": "忆往事",
+      "year": "10",
+      "title": "老宅即将完工",
+      "url": "https://zhou.ge/2026-07-16.html",
+      "date": "2026-07-16"
     }
   ],
   "2013": [
     {
-      "name": "林羽凡",
+      "name": "小z",
       "year": "13",
-      "title": "我重新优化了“林羽凡笔记”chat模块中选择大模型的功能，给智谱大模型增加智能体模式",
-      "url": "https://www.linyufan.com/post/5903",
-      "date": "2026-07-15"
+      "title": "招商银行万事达借记卡申请与消费实测",
+      "url": "https://blog.xiaoz.org/archives/23241",
+      "date": "2026-07-16"
+    }
+  ],
+  "2014": [
+    {
+      "name": "xulihang",
+      "year": "14",
+      "title": "代码缩进",
+      "url": {
+        "$": {
+          "href": "https://blog.xulihang.me/indentation-in-coding/"
+        }
+      },
+      "date": "2026-07-16"
     }
   ],
   "2015": [
     {
-      "name": "WordPress 知识宝库",
+      "name": "胡东东",
       "year": "15",
-      "title": "AI 검사 및 표절 검사 솔루션 | 텍스트 AI 생성 여부 분석",
-      "url": "https://www.thewordcracker.com/blog/ai-%ed%83%90%ec%a7%80-%eb%b0%8f-%ed%91%9c%ec%a0%88-%ea%b2%80%ec%82%ac-%ec%86%94%eb%a3%a8%ec%85%98-%ea%b0%80%ec%9d%b4%eb%93%9c/",
-      "date": "2026-07-15"
-    },
-    {
-      "name": "侯锐的思考与分享",
-      "year": "15",
-      "title": "大数据技术的演进：从 Hive、GFS 到 Raft",
-      "url": "https://www.nosuchfield.com/2026/07/15/The-Evolution-of-Big-Data-From-Hive-GFS-to-Raft/",
-      "date": "2026-07-15"
+      "title": "耐心等待，静待花开",
+      "url": "https://blog.hudd.cn/1435.html",
+      "date": "2026-07-16"
     }
   ],
   "2017": [
     {
-      "name": "秋风于渭水",
+      "name": "串串狗小刊",
       "year": "17",
-      "title": "YouTube 无限重定向报错，谷歌账号身份验证无限失败，罪魁祸首居然是“已分区 cookie”？！",
-      "url": "https://www.tjsky.net/tutorial/1708",
-      "date": "2026-07-15"
+      "title": "Web 出海必备的外链列表",
+      "url": "https://www.ccgxk.com/codeother/810.html",
+      "date": "2026-07-16"
+    }
+  ],
+  "2018": [
+    {
+      "name": "秋葵",
+      "year": "18",
+      "title": "more命令&less命令",
+      "url": "https://qiukui-note.happy365.day/20260716/more-and-less-command/",
+      "date": "2026-07-16"
     }
   ],
   "2019": [
     {
-      "name": "吴诗涛",
-      "year": "19",
-      "title": "重构输入流",
-      "url": "https://shitao5.org/posts/ai-powered-input-flow/",
-      "date": "2026-07-15"
-    },
-    {
-      "name": "凌飞",
-      "year": "19",
-      "title": "升学焦虑，是一剂慢性毒药",
-      "url": "https://www.llingfei.com/705.html",
-      "date": "2026-07-15"
-    },
-    {
       "name": "So!azy",
       "year": "19",
-      "title": "别把前途押在别人身上",
-      "url": "https://blog.solazy.me/20260715/",
-      "date": "2026-07-15"
-    }
-  ],
-  "2020": [
-    {
-      "name": "不凡",
-      "year": "20",
-      "title": "【不凡摄影作品 | 2026.7.15】",
-      "url": "https://www.bufanz.com/20260715744.html",
-      "date": "2026-07-15"
+      "title": "低质量协作的本质是逃避思考",
+      "url": "https://blog.solazy.me/20260716/",
+      "date": "2026-07-16"
     }
   ],
   "2021": [
     {
-      "name": "DevNow",
+      "name": "WSH",
       "year": "21",
-      "title": "Product Hunt 每日热榜 | 2026-07-15",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-07-15",
-      "date": "2026-07-15"
-    },
-    {
-      "name": "喵喵小站・博客志",
-      "year": "21",
-      "title": "嘿嘿，分享一下好吃的",
-      "url": "https://www.mmbkz.cn/5bd06cb7.html",
-      "date": "2026-07-15"
+      "title": "头盔检查和释放消费",
+      "url": "https://www.wsh233.cn/post/头盔检查和释放消费",
+      "date": "2026-07-16"
     }
   ],
-  "2024": [
+  "2023": [
     {
-      "name": "姓王者",
-      "year": "24",
-      "title": "关于博客组织友链迁移的公告",
-      "url": "https://xingwangzhe.fun/posts/blogroll-migration-notice/",
-      "date": "2026-07-15"
+      "name": "宗宗酱",
+      "year": "23",
+      "title": "摄影练习",
+      "url": "https://ygz.ink/archives/5546.html",
+      "date": "2026-07-16"
+    },
+    {
+      "name": "鹿泽",
+      "year": "23",
+      "title": "为什么选择网页设计公司时，SEO友好的设计很重要？",
+      "url": "https://www.bailuze.com/24246.html",
+      "date": "2026-07-16"
+    },
+    {
+      "name": "按钮与磁带",
+      "year": "23",
+      "title": "鋼琴連載3，",
+      "url": "https://jefftay.com/blog-posts/piano-3",
+      "date": "2026-08-01"
     }
   ],
   "2025": [
     {
       "name": "Marcus",
       "year": "25",
-      "title": "「你很厉害」",
-      "url": "https://www.immarcus.com/blog/you-are-awesome",
-      "date": "2026-07-15"
-    }
-  ],
-  "2026": [
-    {
-      "name": "周阿源",
-      "year": "26",
-      "title": "上海 2026CBME 观展日记｜带女儿同行，满心期待却略感失望",
-      "url": "https://zhouayuan.com/post/57.html",
-      "date": "2026-07-15"
-    },
-    {
-      "name": "一个博客",
-      "year": "26",
-      "title": "求助｜慢性咽炎久治不愈，输液吃药不停复发怎么办",
-      "url": "https://yigeboke.com/article.php?id=47",
-      "date": "2026-07-15"
+      "title": "区块链里的 PoW vs PoS",
+      "url": "https://www.immarcus.com/blog/blockchain-pow-vs-pos",
+      "date": "2026-07-16"
     }
   ]
 };
