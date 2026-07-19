@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 7/18/2026, 8:11:22 PM
+// 抓取日期: 7/19/2026, 8:15:54 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -8,70 +8,75 @@ const latestArticlesByYear = {
     {
       "name": "seth",
       "year": "02",
-      "title": "Imminent, urgent, trending and important",
-      "url": "https://seths.blog/2026/07/imminent-urgent-trending-and-important/",
-      "date": "2026-07-18"
+      "title": "Pointless banality and the uncanny valley",
+      "url": "https://seths.blog/2026/07/pointless-banality-and-the-uncanny-valley/",
+      "date": "2026-07-19"
     }
   ],
   "2004": [
     {
-      "name": "小猪的窝",
+      "name": "TonyBai",
       "year": "04",
-      "title": "简单对比几个模型唱粤语歌",
-      "url": "https://ezo.biz/New_Learning/1501.html",
+      "title": "“皇帝的新衣”一年后：对话Thorsten Ball谈Agentic编程",
+      "url": "https://tonybai.com/2026/07/19/agentic-engineering-thorsten-ball-amp-interview/",
       "date": "2026-07-18"
     },
     {
-      "name": "TonyBai",
+      "name": "龙哥",
       "year": "04",
-      "title": "告别标签页焦虑：我让 AI 帮我做了个浏览器插件 TabQueue",
-      "url": "https://tonybai.com/2026/07/18/introducing-tabqueue/",
-      "date": "2026-07-17"
+      "title": "服务器顺利升级到MySQL 8.0.45",
+      "url": "https://long.ge/18080.html",
+      "date": "2026-07-19"
     }
   ],
   "2005": [
     {
+      "name": "Gea-Suan Lin",
+      "year": "05",
+      "title": "Fable 5 後續將會放到 Max 與 Team Premium 方案中 (維持 50% 限制)",
+      "url": "https://blog.gslin.org/archives/2026/07/19/13118/fable-5-%e5%be%8c%e7%ba%8c%e5%b0%87%e6%9c%83%e6%94%be%e5%88%b0-max-%e8%88%87-team-premium-%e6%96%b9%e6%a1%88%e4%b8%ad-%e7%b6%ad%e6%8c%81-50-%e9%99%90%e5%88%b6/",
+      "date": "2026-07-19"
+    },
+    {
       "name": "ACEVS",
       "year": "05",
-      "title": "杂记2026年7月18日",
-      "url": "https://acevs.com/5111/",
-      "date": "2026-07-18"
+      "title": "杂记2026年7月19日",
+      "url": "https://acevs.com/5113/",
+      "date": "2026-07-19"
     }
   ],
   "2007": [
     {
-      "name": "朱小呆",
+      "name": "树下语",
       "year": "07",
-      "title": "博客廿周年，纪念明信片正式发布啦！",
-      "url": "https://zhujay.com/talk/talk_detail.html?id=1262",
+      "title": "迟来的 “天命人”",
+      "url": "https://yishu-life.com/index.php/archives/489.html",
+      "date": "2026-07-19"
+    }
+  ],
+  "2011": [
+    {
+      "name": "唐巧",
+      "year": "11",
+      "title": "黑洞足迹本-AI 时代的一人 App",
+      "url": "https://blog.devtang.com/2026/07/18/heidong-footprint-ai-app/",
       "date": "2026-07-18"
     }
   ],
-  "2008": [
+  "2015": [
     {
-      "name": "军",
-      "year": "08",
-      "title": "自己动手更换空调滤芯",
-      "url": "https://me.xu19.com/diy-replace-mercedes-benz-glk300-cabin-air-filter/",
-      "date": "2026-07-18"
-    }
-  ],
-  "2012": [
+      "name": "elmagnifico",
+      "year": "15",
+      "title": "CodeBind Docs插件",
+      "url": "https://elmagnifico.tech/2026/07/20/CBD-VSC-Plugin/",
+      "date": "2026-07-19"
+    },
     {
-      "name": "王鑫",
-      "year": "12",
-      "title": "Seafile服务端，修改文件存储目录（二）",
-      "url": "https://wonse.info/seafile-data-2.html",
-      "date": "2026-07-18"
-    }
-  ],
-  "2013": [
-    {
-      "name": "林羽凡",
-      "year": "13",
-      "title": "林羽凡笔记增加大模型版本字段ai_model_version",
-      "url": "https://www.linyufan.com/post/5911",
-      "date": "2026-07-18"
+      "name": "WordPress 知识宝库",
+      "year": "15",
+      "title": "AI로 네이버 블로그 상위 노출 방법 — 1개월 실전 결과",
+      "url": "https://www.thewordcracker.com/blog/ai%eb%a1%9c-%eb%84%a4%ec%9d%b4%eb%b2%84-%eb%b8%94%eb%a1%9c%ea%b7%b8-%ec%83%81%ec%9c%84-%eb%85%b8%ec%b6%9c-%eb%b0%a9%eb%b2%95/",
+      "date": "2026-07-19"
     }
   ],
   "2016": [
@@ -85,91 +90,84 @@ const latestArticlesByYear = {
   ],
   "2017": [
     {
-      "name": "碎言",
-      "year": "17",
-      "title": "创造者悖论",
-      "url": "https://www.suiyan.cc/blog/20260718215503",
-      "date": "2026-07-18"
-    },
-    {
       "name": "串串狗小刊",
       "year": "17",
-      "title": "年轻人怎么抓住 AI 发展的风口？",
-      "url": "https://www.ccgxk.com/codeother/812.html",
-      "date": "2026-07-18"
+      "title": "Web 出海之一些广告流量主方案和 SaaS 站没必要搞社区",
+      "url": "https://www.ccgxk.com/codeother/813.html",
+      "date": "2026-07-19"
     }
   ],
   "2019": [
     {
-      "name": "凌飞",
+      "name": "新世界的大门",
       "year": "19",
-      "title": "足球亦是人生",
-      "url": "https://www.llingfei.com/706.html",
-      "date": "2026-07-18"
-    }
-  ],
-  "2020": [
-    {
-      "name": "HEMING",
-      "year": "20",
-      "title": "Domain thief Jianfei Wang is back. Keep an eye on your domains!",
-      "url": "https://heming.org/2698.html",
-      "date": "2026-07-18"
+      "title": "2026-06-12 / 鸿蒙7",
+      "url": "https://blog.xinshijiededa.men/daily/48/",
+      "date": "2026-07-19"
     },
     {
-      "name": "不凡",
-      "year": "20",
-      "title": "WordPress 6.9.0-6.9.4、7.0.0-7.0.1存在严重安全漏洞，尽快更新！",
-      "url": "https://www.bufanz.com/20260718754.html",
-      "date": "2026-07-18"
+      "name": "浪浪山下那个村",
+      "year": "19",
+      "title": "Apache HDFS 小文件相关问题全景分析（2022 — 2026）",
+      "url": "https://www.zeekling.cn/articles/2026/07/19/1784447376912.html",
+      "date": "2026-07-19"
+    },
+    {
+      "name": "So!azy",
+      "year": "19",
+      "title": "SOP 复制不了那双手",
+      "url": "https://blog.solazy.me/20260719/",
+      "date": "2026-07-19"
     }
   ],
   "2021": [
     {
+      "name": "WSH",
+      "year": "21",
+      "title": "关系降级",
+      "url": "https://www.wsh233.cn/post/关系降级",
+      "date": "2026-07-19"
+    },
+    {
       "name": "DevNow",
       "year": "21",
-      "title": "Product Hunt 每日热榜 | 2026-07-18",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-07-18",
-      "date": "2026-07-18"
+      "title": "Product Hunt 每日热榜 | 2026-07-19",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-07-19",
+      "date": "2026-07-19"
     }
   ],
   "2023": [
     {
-      "name": "鹿泽",
-      "year": "23",
-      "title": "结构性数据错误：如何检测并有效纠正？",
-      "url": "https://www.bailuze.com/24251.html",
-      "date": "2026-07-18"
-    },
-    {
-      "name": "小归客",
-      "year": "23",
-      "title": "水彩手绘插画、复古港风写实淡彩",
-      "url": "https://xgk.pw/archives/315/",
-      "date": "2026-07-18"
-    },
-    {
       "name": "按钮与磁带",
       "year": "23",
-      "title": "鋼琴連載3，",
-      "url": "https://jefftay.com/blog-posts/piano-3",
-      "date": "2026-08-01"
+      "title": "《逃学神探》和《卧底神探》",
+      "url": "https://jefftay.com/movies/detective-chen-series",
+      "date": "2026-07-20"
     },
     {
-      "name": "宗宗酱",
+      "name": "Siwei Li",
       "year": "23",
-      "title": "摄影练习",
-      "url": "https://ygz.ink/archives/5556.html",
-      "date": "2026-07-18"
+      "title": "哈苏 X2D II 顶盖浅划痕修复",
+      "url": "https://siwei.li/hasselblad-x2d-ii-scratch-repair/",
+      "date": "2026-07-19"
+    }
+  ],
+  "2024": [
+    {
+      "name": "姓王者",
+      "year": "24",
+      "title": "发布 @xingwangzhe/satteri-mermaid：剔除mermaid.js，用Rust原生渲染流程图，构建时产出纯静态SVG",
+      "url": "https://xingwangzhe.fun/posts/satteri-mermaid-npm-package/",
+      "date": "2026-07-19"
     }
   ],
   "2025": [
     {
       "name": "Marcus",
       "year": "25",
-      "title": "三种法律，三种世界",
-      "url": "https://www.immarcus.com/blog/three-laws-three-worlds",
-      "date": "2026-07-18"
+      "title": "2026.07.19 博客阅读周记",
+      "url": "https://www.immarcus.com/blog/weekly-20260719",
+      "date": "2026-07-19"
     }
   ]
 };
