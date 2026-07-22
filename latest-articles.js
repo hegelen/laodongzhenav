@@ -1,170 +1,175 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 7/21/2026, 8:30:45 PM
-// 只抓取最近14天内的文章，共 19 篇
-// 目标 20 篇，实际 19 篇
+// 抓取日期: 7/22/2026, 8:18:34 PM
+// 只抓取最近14天内的文章，共 20 篇
+// 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
+  "2000": [
+    {
+      "name": "Luca",
+      "year": "00",
+      "title": "看到大牛猫的公众号，才知道前几年那个设计",
+      "url": "https://wlj.me/notes/sp-note-20260722-225214/",
+      "date": "2026-07-22"
+    }
+  ],
   "2002": [
     {
       "name": "seth",
       "year": "02",
-      "title": "The Having/Doing job gap",
-      "url": "https://seths.blog/2026/07/the-having-doing-job-gap/",
-      "date": "2026-07-21"
+      "title": "State champs",
+      "url": "https://seths.blog/2026/07/state-champs/",
+      "date": "2026-07-22"
+    }
+  ],
+  "2003": [
+    {
+      "name": "王通",
+      "year": "03",
+      "title": "中医心理学的角度分析：开悟、发愿、利他",
+      "url": "https://www.ufoer.com/post/14046.html",
+      "date": "2026-07-22"
     }
   ],
   "2004": [
     {
       "name": "TonyBai",
       "year": "04",
-      "title": "Loop Engineering才火两个月，硅谷已经卷出“Graph Engineering”了",
-      "url": "https://tonybai.com/2026/07/21/from-loop-engineering-to-graph-engineering/",
-      "date": "2026-07-20"
+      "title": "Twitter之父再出手：Block开源Buzz，要让人类和AI Agent「同工同权」",
+      "url": "https://tonybai.com/2026/07/22/jack-dorsey-block-buzz-ai-agent-workspace-opensource/",
+      "date": "2026-07-22"
     }
   ],
   "2005": [
     {
+      "name": "春田",
+      "year": "05",
+      "title": "１０８４．「働く」について考える　(８)私の経験から②",
+      "url": "http://kaikeimura.way-nifty.com/blog/2026/07/post-757970.html",
+      "date": "2026-07-22"
+    },
+    {
       "name": "ACEVS",
       "year": "05",
-      "title": "电驴增加nfc模块",
-      "url": "https://acevs.com/5117/",
-      "date": "2026-07-21"
+      "title": "杂记2026年7月22日",
+      "url": "https://acevs.com/5119/",
+      "date": "2026-07-22"
     },
     {
       "name": "王志勇",
       "year": "05",
-      "title": "通过.hk域名看当今两地互联网",
-      "url": "http://www.auiou.com/relevant/00002171.jsp",
-      "date": "2026-07-20"
+      "title": "数码评测(72)：多核CPU选择之新发现",
+      "url": "http://www.auiou.com/relevant/00002173.jsp",
+      "date": "2026-07-22"
+    },
+    {
+      "name": "Gea-Suan Lin",
+      "year": "05",
+      "title": "LG 透過 Windows Update 推送 LG Monitor App Installer，裡面是個廣告 app",
+      "url": "https://blog.gslin.org/archives/2026/07/22/13123/lg-%e9%80%8f%e9%81%8e-windows-update-%e6%8e%a8%e9%80%81-lg-monitor-app-installer%ef%bc%8c%e8%a3%a1%e9%9d%a2%e6%98%af%e5%80%8b%e5%bb%a3%e5%91%8a-app/",
+      "date": "2026-07-22"
     }
   ],
   "2006": [
     {
-      "name": "郑永",
+      "name": "忘记了回忆",
       "year": "06",
-      "title": "阿根廷输了决赛，但信仰没有输",
-      "url": "https://xptt.com/657744.html",
-      "date": "2026-07-21"
+      "title": "充送",
+      "url": "https://ltmltm.cn/bk/1480.html",
+      "date": "2026-07-22"
     }
   ],
   "2007": [
     {
       "name": "朱小呆",
       "year": "07",
-      "title": "2026 徽章猎人【年度猎王】奖杯效果图正式出炉",
-      "url": "https://zhujay.com/talk/talk_detail.html?id=1263",
-      "date": "2026-07-21"
+      "title": "2026 年度榜单前三奖杯效果图正式出炉",
+      "url": "https://zhujay.com/talk/talk_detail.html?id=1264",
+      "date": "2026-07-22"
     }
   ],
   "2008": [
     {
-      "name": "杜郎俊赏",
+      "name": "军",
       "year": "08",
-      "title": "灵栖洞仙琢奇石，葫芦峡浪卷飞舟",
-      "url": "https://dujun.io/df99df0b-8df0-5f0b-914c-f2b7cf7c08ba.html",
-      "date": "2026-07-21"
+      "title": "中国护照免签情报1｜俄罗斯对中国免签政策延长",
+      "url": "https://me.xu19.com/china-passport-visa-free-intelligence-report-1-russia-extends-visa-free-policy-for-chinese-citizens/",
+      "date": "2026-07-22"
+    },
+    {
+      "name": "河马",
+      "year": "08",
+      "title": "天津联通->阿里云东京 Traceroute",
+      "url": "https://www.iamhippo.com/2026-07/2001.html",
+      "date": "2026-07-22"
     }
   ],
   "2013": [
     {
       "name": "林羽凡",
       "year": "13",
-      "title": "今日减肥餐",
-      "url": "https://www.linyufan.com/post/5914",
-      "date": "2026-07-21"
+      "title": "减肥一周总结暨今日饮食记录",
+      "url": "https://www.linyufan.com/post/5915",
+      "date": "2026-07-22"
     }
   ],
-  "2014": [
+  "2016": [
     {
-      "name": "松茸",
-      "year": "14",
-      "title": "给车子换了一对冰蓝色示宽灯",
-      "url": "https://songr.cn/2163.html",
-      "date": "2026-07-21"
-    },
-    {
-      "name": "缙哥哥",
-      "year": "14",
-      "title": "Filebase 免费S3对象存储，免费5G空间，月5G流量，无需绑卡",
-      "url": "https://www.dujin.org/23768.html",
-      "date": "2026-07-21"
+      "name": "幻影",
+      "year": "16",
+      "title": "全屋小米智能家居，从设计到安装，自己搞定",
+      "url": "https://blog.52hyjs.com/post-1283.html",
+      "date": "2026-07-22"
     }
   ],
   "2017": [
     {
       "name": "串串狗小刊",
       "year": "17",
-      "title": "注意！程序员不要使用 设计模式 了！",
-      "url": "https://www.ccgxk.com/emlog_dev/815.html",
-      "date": "2026-07-21"
-    }
-  ],
-  "2019": [
+      "title": "Web 出海让你结束上班时代！",
+      "url": "https://www.ccgxk.com/codeother/816.html",
+      "date": "2026-07-22"
+    },
     {
-      "name": "So!azy",
-      "year": "19",
-      "title": "凌晨十二点的工作群",
-      "url": "https://blog.solazy.me/20260721/",
-      "date": "2026-07-21"
+      "name": "秋风于渭水",
+      "year": "17",
+      "title": "10小时预警的服务器搬家 vs 零通知重启全球服务器：低价 VPS 界的操作越来越离谱了",
+      "url": "https://www.tjsky.net/natter/1726",
+      "date": "2026-07-22"
     }
   ],
   "2020": [
     {
-      "name": "呆哥",
+      "name": "老卢",
       "year": "20",
-      "title": "狗云弹性云6折码一个",
-      "url": "https://www.dalao.net/thread-61353.htm",
-      "date": "2026-07-21"
-    },
-    {
-      "name": "不凡",
-      "year": "20",
-      "title": "四川地区室外太阳下温度超50度！",
-      "url": "https://www.bufanz.com/20260721759.html",
-      "date": "2026-07-21"
+      "title": "说说：#2026-07-22 15:17",
+      "url": "https://blog.el9.cn/memos/6a606ea3382b7.html",
+      "date": "2026-07-22"
     }
   ],
   "2021": [
     {
-      "name": "WSH",
+      "name": "yveji",
       "year": "21",
-      "title": "断舍离",
-      "url": "https://www.wsh233.cn/post/断舍离",
-      "date": "2026-07-21"
-    },
-    {
-      "name": "DevNow",
-      "year": "21",
-      "title": "Product Hunt 每日热榜 | 2026-07-21",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-07-21",
-      "date": "2026-07-21"
+      "title": "舞阳吃什么？",
+      "url": "https://www.yveji.com/Delicacy/henan-wuyang.html",
+      "date": "2026-07-22"
     }
   ],
   "2023": [
     {
+      "name": "宗宗酱",
+      "year": "23",
+      "title": "入手GoPro7运动相机",
+      "url": "https://ygz.ink/archives/5590.html",
+      "date": "2026-07-22"
+    },
+    {
       "name": "鹿泽",
       "year": "23",
-      "title": "WordPress 7.0.2 版本维护和安全更新，修正了一些安全问题",
-      "url": "https://www.bailuze.com/25646.html",
-      "date": "2026-07-21"
-    }
-  ],
-  "2024": [
-    {
-      "name": "姓王者",
-      "year": "24",
-      "title": "我收到了 Mozilla Monitor 的泄露警报，你的邮箱可能也一样",
-      "url": "https://xingwangzhe.fun/posts/mozilla-monitor-check/",
-      "date": "2026-07-21"
-    }
-  ],
-  "2025": [
-    {
-      "name": "Marcus",
-      "year": "25",
-      "title": "现金管理账户",
-      "url": "https://www.immarcus.com/blog/cash-management-account",
-      "date": "2026-07-21"
+      "title": "最被忽视但真正推动成效的SEO策略",
+      "url": "https://www.bailuze.com/24261.html",
+      "date": "2026-07-22"
     }
   ]
 };
