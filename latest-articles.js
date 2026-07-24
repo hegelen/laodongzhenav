@@ -1,86 +1,91 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 7/23/2026, 8:22:24 PM
+// 抓取日期: 7/24/2026, 8:31:09 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
-  "2000": [
-    {
-      "name": "Luca",
-      "year": "00",
-      "title": "多年前我也算是在信息安全行业工作过，当时",
-      "url": "https://wlj.me/notes/sp-note-20260723-214935/",
-      "date": "2026-07-23"
-    }
-  ],
-  "2001": [
-    {
-      "name": "东评衿就",
-      "year": "01",
-      "title": "chatgpt太夯了！终于手搓出属于自己的博客主题",
-      "url": "https://dongjunke.cn/posts/2026/07/23/14600.html",
-      "date": "2026-07-23"
-    }
-  ],
   "2002": [
     {
-      "name": "不吐不快",
+      "name": "seth",
       "year": "02",
-      "title": "部署 Songloft 本地音乐服务器,让小爱音箱播放本地音乐",
-      "url": "https://mianao.info/deploy-songloft-local-music-server-for-xiaomi-ai-speaker/",
-      "date": "2026-07-23"
+      "title": "First take/next take/last take",
+      "url": "https://seths.blog/2026/07/first-take-next-take-last-take/",
+      "date": "2026-07-24"
+    }
+  ],
+  "2003": [
+    {
+      "name": "阮一峰",
+      "year": "03",
+      "title": "科技爱好者周刊（第 405 期）：资源，社会公平与算力",
+      "url": "http://www.ruanyifeng.com/blog/2026/07/weekly-issue-405.html",
+      "date": "2026-07-24"
     }
   ],
   "2004": [
     {
       "name": "我的天",
       "year": "04",
-      "title": "blog重新上线",
-      "url": "http://www.xlanda.net/posts/22350",
+      "title": "吃时间费眼睛的魔鬼",
+      "url": "http://www.xlanda.net/posts/22352",
+      "date": "2026-07-24"
+    },
+    {
+      "name": "TonyBai",
+      "year": "04",
+      "title": "重磅！Tokio官方发布全栈框架Topcoat：不用WASM，AI时代Rust也能“糊”网页了",
+      "url": "https://tonybai.com/2026/07/24/tokio-topcoat-rust-fullstack-framework/",
       "date": "2026-07-23"
     }
   ],
   "2005": [
     {
-      "name": "ACEVS",
+      "name": "云风",
       "year": "05",
-      "title": "碎片2026年7月23日",
-      "url": "https://acevs.com/5121/",
-      "date": "2026-07-23"
-    }
-  ],
-  "2007": [
-    {
-      "name": "朱小呆",
-      "year": "07",
-      "title": "是谁在傍晚二次渡劫",
-      "url": "https://zhujay.com/talk/talk_detail.html?id=1265",
-      "date": "2026-07-23"
+      "title": "对抗系统的桌游",
+      "url": "https://blog.codingnow.com/2026/07/deckers.html",
+      "date": "2026-07-24"
     },
     {
-      "name": "树下语",
-      "year": "07",
-      "title": "小西天的美景",
-      "url": "https://yishu-life.com/index.php/archives/514.html",
-      "date": "2026-07-23"
+      "name": "Gea-Suan Lin",
+      "year": "05",
+      "title": "JPEG 與 PNG 上的 progressive 效果",
+      "url": "https://blog.gslin.org/archives/2026/07/24/13127/jpeg-%e8%88%87-png-%e4%b8%8a%e7%9a%84-progressive-%e6%95%88%e6%9e%9c/",
+      "date": "2026-07-24"
+    },
+    {
+      "name": "ACEVS",
+      "year": "05",
+      "title": "火箭被闪电击中，会发生什么？",
+      "url": "https://acevs.com/5123/",
+      "date": "2026-07-24"
     }
   ],
-  "2012": [
+  "2011": [
     {
-      "name": "水拍石",
-      "year": "12",
-      "title": "近日杂记之20260723",
-      "url": "https://www.leitao.cn/10428.html",
-      "date": "2026-07-23"
+      "name": "forecho",
+      "year": "11",
+      "title": "从 800U 到爆仓：过度交易和扛单，最后还是把账户做没了",
+      "url": "https://blog.forecho.com/from-800u-to-liquidation-overtrading-countertrend.html",
+      "date": "2026-07-24"
     }
   ],
-  "2014": [
+  "2013": [
     {
-      "name": "卡片创作实验室",
-      "year": "14",
-      "title": "无标题",
-      "url": "https://cnfeat.com/posts/2026/07/23/2026-07-10-%E5%A6%82%E4%BD%95%E4%BB%8E%E8%87%AA%E5%B7%B1%E5%8F%98%E5%BC%BA%E5%88%87%E6%8D%A2%E5%88%B0%E8%AE%A9%E5%88%AB%E4%BA%BA%E5%8F%98%E5%BC%BA/",
-      "date": "2026-07-23"
+      "name": "林羽凡",
+      "year": "13",
+      "title": "今日减肥餐",
+      "url": "https://www.linyufan.com/post/5918",
+      "date": "2026-07-24"
+    }
+  ],
+  "2015": [
+    {
+      "name": "WordPress 知识宝库",
+      "year": "15",
+      "title": "케미클라우드(ChemiCloud) 워드프레스 호스팅 플랜 업그레이드 방법",
+      "url": "https://www.thewordcracker.com/miscellaneous/webhosting/%ec%bc%80%eb%af%b8%ed%81%b4%eb%9d%bc%ec%9a%b0%eb%93%9c-%ec%9b%8c%eb%93%9c%ed%94%84%eb%a0%88%ec%8a%a4-%ed%98%b8%ec%8a%a4%ed%8c%85-%ed%94%8c%eb%9e%9c-%ec%97%85%ea%b7%b8%eb%a0%88%ec%9d%b4%eb%93%9c/",
+      "date": "2026-07-24"
     }
   ],
   "2016": [
@@ -92,88 +97,77 @@ const latestArticlesByYear = {
       "date": "2026-07-23"
     }
   ],
-  "2017": [
+  "2019": [
     {
-      "name": "串串狗小刊",
-      "year": "17",
-      "title": "5个 link 标签，突破前端性能瓶颈！",
-      "url": "https://www.ccgxk.com/front-end/817.html",
-      "date": "2026-07-23"
+      "name": "奶爸建站笔记",
+      "year": "19",
+      "title": "实测 RAKsmart 圣何塞 CN2 精品 VPS｜2 核 4G 外贸建站 / 轻量上网全能款，三网回程直连",
+      "url": "https://blog.naibabiji.com/news/tested-raksmart-san-jose-cn2-premium-vps.html",
+      "date": "2026-07-24"
     },
     {
-      "name": "碎言",
-      "year": "17",
-      "title": "静态博客隐藏着一个容易被人忽略的隐私问题",
-      "url": "https://www.suiyan.cc/blog/20260723143703",
-      "date": "2026-07-23"
+      "name": "流情",
+      "year": "19",
+      "title": "续租合约的坑",
+      "url": "https://liuqingwushui.top/archives/176/",
+      "date": "2026-07-24"
     }
   ],
   "2020": [
     {
-      "name": "HEMING",
+      "name": "孙振超",
       "year": "20",
-      "title": "VMISS US.LA.TRI.Basic Review – New 207.x IP Range for CA$4.5/Month",
-      "url": "https://heming.org/2725.html",
-      "date": "2026-07-23"
+      "title": "删除顽固再生文件",
+      "url": "https://www.aqzx.com/blog/post/windows,无法删除.html",
+      "date": "2026-07-24"
     },
     {
-      "name": "yihong0618",
+      "name": "优世界",
       "year": "20",
-      "title": "八次离职",
-      "url": "https://blog.yihong0618.me/issue-345/",
-      "date": "2026-07-23"
+      "title": "流量卡还真得选御三家😂",
+      "url": "https://usj.cc/20260724101237.html",
+      "date": "2026-07-24"
     }
   ],
   "2021": [
     {
       "name": "DevNow",
       "year": "21",
-      "title": "Product Hunt 每日热榜 | 2026-07-23",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-07-23",
-      "date": "2026-07-23"
-    }
-  ],
-  "2022": [
-    {
-      "name": "zhecydn",
-      "year": "22",
-      "title": "edgeone配置加速s3 cloudflare r2对象存储（水）",
-      "url": "https://blog.zhecydn.asia/archives/2402",
-      "date": "2026-07-23"
+      "title": "Product Hunt 每日热榜 | 2026-07-24",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-07-24",
+      "date": "2026-07-24"
     }
   ],
   "2023": [
     {
+      "name": "无敌",
+      "year": "23",
+      "title": "AI 语义空间探索（三）：AI 如何判断两个向量是否相似？",
+      "url": "https://blog.tangwudi.com/technology/homedatacenter14601/",
+      "date": "2026-07-24"
+    },
+    {
       "name": "按钮与磁带",
       "year": "23",
-      "title": "机动杀人",
-      "url": "https://jefftay.com/movies/taking-lives",
-      "date": "2026-07-24"
+      "title": "How to Do Great Work",
+      "url": "https://jefftay.com/how-to-do-great-work",
+      "date": "2026-07-25"
     },
     {
       "name": "鹿泽",
       "year": "23",
-      "title": "2026年初创企业的SEO策略：5个行之有效的增长策略",
-      "url": "https://www.bailuze.com/24263.html",
-      "date": "2026-07-23"
+      "title": "理解SEO优化、运作原理、优势及其三大支柱",
+      "url": "https://www.bailuze.com/24266.html",
+      "date": "2026-07-24"
     }
   ],
-  "2024": [
+  "2026": [
     {
-      "name": "姓王者",
-      "year": "24",
-      "title": "给 Linux 上的 Chrome 打一针肾上腺素——我的 GPU 加速调优方案",
-      "url": "https://xingwangzhe.fun/posts/chrome-linux-gpu-tuning/",
-      "date": "2026-07-23"
-    }
-  ],
-  "2025": [
-    {
-      "name": "Marcus",
-      "year": "25",
-      "title": "疯狂的美国体育文化",
-      "url": "https://www.immarcus.com/blog/crazy-sports-culture-in-usa",
-      "date": "2026-07-23"
+      "name": "一万先生",
+      "year": "26",
+      "title": "CLAUDE玻利维亚低价羊毛教程",
+      "url": "/feed/10",
+      "date": "2026-07-24"
     }
   ]
 };
