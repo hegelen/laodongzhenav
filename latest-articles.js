@@ -1,173 +1,177 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 7/24/2026, 8:31:09 PM
+// 抓取日期: 7/25/2026, 8:19:22 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
+  "2000": [
+    {
+      "name": "Luca",
+      "year": "00",
+      "title": "昨晚重看了《牯岭街少年杀人事件.A Br",
+      "url": "https://wlj.me/notes/sp-note-20260725-145511/",
+      "date": "2026-07-25"
+    }
+  ],
   "2002": [
     {
       "name": "seth",
       "year": "02",
-      "title": "First take/next take/last take",
-      "url": "https://seths.blog/2026/07/first-take-next-take-last-take/",
-      "date": "2026-07-24"
-    }
-  ],
-  "2003": [
-    {
-      "name": "阮一峰",
-      "year": "03",
-      "title": "科技爱好者周刊（第 405 期）：资源，社会公平与算力",
-      "url": "http://www.ruanyifeng.com/blog/2026/07/weekly-issue-405.html",
-      "date": "2026-07-24"
+      "title": "More interesting",
+      "url": "https://seths.blog/2026/07/more-interesting/",
+      "date": "2026-07-25"
     }
   ],
   "2004": [
     {
       "name": "我的天",
       "year": "04",
-      "title": "吃时间费眼睛的魔鬼",
-      "url": "http://www.xlanda.net/posts/22352",
-      "date": "2026-07-24"
+      "title": "入手键盘抽屉",
+      "url": "http://www.xlanda.net/posts/22354",
+      "date": "2026-07-25"
     },
     {
-      "name": "TonyBai",
+      "name": "龙哥",
       "year": "04",
-      "title": "重磅！Tokio官方发布全栈框架Topcoat：不用WASM，AI时代Rust也能“糊”网页了",
-      "url": "https://tonybai.com/2026/07/24/tokio-topcoat-rust-fullstack-framework/",
-      "date": "2026-07-23"
+      "title": "is-for-sale.com出售网站重做",
+      "url": "https://long.ge/18082.html",
+      "date": "2026-07-25"
     }
   ],
   "2005": [
     {
-      "name": "云风",
-      "year": "05",
-      "title": "对抗系统的桌游",
-      "url": "https://blog.codingnow.com/2026/07/deckers.html",
-      "date": "2026-07-24"
-    },
-    {
       "name": "Gea-Suan Lin",
       "year": "05",
-      "title": "JPEG 與 PNG 上的 progressive 效果",
-      "url": "https://blog.gslin.org/archives/2026/07/24/13127/jpeg-%e8%88%87-png-%e4%b8%8a%e7%9a%84-progressive-%e6%95%88%e6%9e%9c/",
-      "date": "2026-07-24"
-    },
-    {
-      "name": "ACEVS",
-      "year": "05",
-      "title": "火箭被闪电击中，会发生什么？",
-      "url": "https://acevs.com/5123/",
+      "title": "Opus 5 出了",
+      "url": "https://blog.gslin.org/archives/2026/07/25/13129/opus-5-%e5%87%ba%e4%ba%86/",
       "date": "2026-07-24"
     }
   ],
-  "2011": [
+  "2007": [
     {
-      "name": "forecho",
-      "year": "11",
-      "title": "从 800U 到爆仓：过度交易和扛单，最后还是把账户做没了",
-      "url": "https://blog.forecho.com/from-800u-to-liquidation-overtrading-countertrend.html",
-      "date": "2026-07-24"
+      "name": "不靠谱颜论",
+      "year": "07",
+      "title": "代码量、算法岗与AI：一个程序员的日常思考",
+      "url": "https://yanlinlin.cn/2026/07/25/code-quantity-algorithm-position-and-ai/",
+      "date": "2026-07-25"
+    }
+  ],
+  "2008": [
+    {
+      "name": "生活的左上角",
+      "year": "08",
+      "title": "观《八仙！》有感：我只做，我认为对的事",
+      "url": "https://bwskyer.com/all-wishes-come-true-review.html",
+      "date": "2026-07-25"
+    },
+    {
+      "name": "军",
+      "year": "08",
+      "title": "解决Quicker旧版本无法登录",
+      "url": "https://me.xu19.com/solve-unable-to-log-in-to-older-versions-of-quicker/",
+      "date": "2026-07-25"
+    }
+  ],
+  "2009": [
+    {
+      "name": "异数",
+      "year": "09",
+      "title": "软件 || 图集规范管理软件-全新测试版上线，欢迎尝鲜",
+      "url": "https://www.yishu.pro/231.html",
+      "date": "2026-07-25"
     }
   ],
   "2013": [
     {
       "name": "林羽凡",
       "year": "13",
-      "title": "今日减肥餐",
-      "url": "https://www.linyufan.com/post/5918",
-      "date": "2026-07-24"
-    }
-  ],
-  "2015": [
-    {
-      "name": "WordPress 知识宝库",
-      "year": "15",
-      "title": "케미클라우드(ChemiCloud) 워드프레스 호스팅 플랜 업그레이드 방법",
-      "url": "https://www.thewordcracker.com/miscellaneous/webhosting/%ec%bc%80%eb%af%b8%ed%81%b4%eb%9d%bc%ec%9a%b0%eb%93%9c-%ec%9b%8c%eb%93%9c%ed%94%84%eb%a0%88%ec%8a%a4-%ed%98%b8%ec%8a%a4%ed%8c%85-%ed%94%8c%eb%9e%9c-%ec%97%85%ea%b7%b8%eb%a0%88%ec%9d%b4%eb%93%9c/",
-      "date": "2026-07-24"
+      "title": "今日减肥餐记录",
+      "url": "https://www.linyufan.com/post/5913",
+      "date": "2026-07-25"
     }
   ],
   "2016": [
     {
-      "name": "ximi",
+      "name": "幻影",
       "year": "16",
-      "title": "腾讯云,牛逼,爬虫数据采集合法合规!",
-      "url": "https://www.ximi.me/post-6047.html",
-      "date": "2026-07-23"
+      "title": "人活着，到底为了什么？",
+      "url": "https://blog.52hyjs.com/post-1285.html",
+      "date": "2026-07-25"
+    }
+  ],
+  "2017": [
+    {
+      "name": "串串狗小刊",
+      "year": "17",
+      "title": "程序员下班以后做什么副业合适？",
+      "url": "https://www.ccgxk.com/codeother/820.html",
+      "date": "2026-07-25"
+    },
+    {
+      "name": "碎言",
+      "year": "17",
+      "title": "让AI判断AI自己生成的文章是不是AI写的？",
+      "url": "https://www.suiyan.cc/blog/20260725191701",
+      "date": "2026-07-25"
     }
   ],
   "2019": [
     {
-      "name": "奶爸建站笔记",
+      "name": "新世界的大门",
       "year": "19",
-      "title": "实测 RAKsmart 圣何塞 CN2 精品 VPS｜2 核 4G 外贸建站 / 轻量上网全能款，三网回程直连",
-      "url": "https://blog.naibabiji.com/news/tested-raksmart-san-jose-cn2-premium-vps.html",
-      "date": "2026-07-24"
+      "title": "2026-06-17 / 反政府的 KYC",
+      "url": "https://blog.xinshijiededa.men/daily/53/",
+      "date": "2026-07-25"
     },
     {
-      "name": "流情",
+      "name": "沧海月明",
       "year": "19",
-      "title": "续租合约的坑",
-      "url": "https://liuqingwushui.top/archives/176/",
-      "date": "2026-07-24"
+      "title": "AI 时代，数据库需要具备什么样的能力？",
+      "url": "https://www.inlighting.org/archives/what-database-ability-is-ai-needed",
+      "date": "2026-07-25"
     }
   ],
   "2020": [
     {
-      "name": "孙振超",
+      "name": "不凡",
       "year": "20",
-      "title": "删除顽固再生文件",
-      "url": "https://www.aqzx.com/blog/post/windows,无法删除.html",
-      "date": "2026-07-24"
+      "title": "【不凡摄影作品 | 2026.7.25】",
+      "url": "https://www.bufanz.com/20260725763.html",
+      "date": "2026-07-25"
     },
     {
-      "name": "优世界",
+      "name": "呆哥",
       "year": "20",
-      "title": "流量卡还真得选御三家😂",
-      "url": "https://usj.cc/20260724101237.html",
-      "date": "2026-07-24"
-    }
-  ],
-  "2021": [
-    {
-      "name": "DevNow",
-      "year": "21",
-      "title": "Product Hunt 每日热榜 | 2026-07-24",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-07-24",
-      "date": "2026-07-24"
+      "title": ".web顶级域名正式写入全球DNS 根区",
+      "url": "https://www.dalao.net/thread-61576.htm",
+      "date": "2026-07-25"
     }
   ],
   "2023": [
     {
-      "name": "无敌",
-      "year": "23",
-      "title": "AI 语义空间探索（三）：AI 如何判断两个向量是否相似？",
-      "url": "https://blog.tangwudi.com/technology/homedatacenter14601/",
-      "date": "2026-07-24"
-    },
-    {
-      "name": "按钮与磁带",
-      "year": "23",
-      "title": "How to Do Great Work",
-      "url": "https://jefftay.com/how-to-do-great-work",
-      "date": "2026-07-25"
-    },
-    {
       "name": "鹿泽",
       "year": "23",
-      "title": "理解SEO优化、运作原理、优势及其三大支柱",
-      "url": "https://www.bailuze.com/24266.html",
-      "date": "2026-07-24"
+      "title": "页面内SEO是什么？介绍以及实战网站优化指南",
+      "url": "https://www.bailuze.com/24269.html",
+      "date": "2026-07-25"
+    }
+  ],
+  "2025": [
+    {
+      "name": "Marcus",
+      "year": "25",
+      "title": "豆子如何产生价值",
+      "url": "https://www.immarcus.com/blog/how-a-bean-creates-value",
+      "date": "2026-07-25"
     }
   ],
   "2026": [
     {
-      "name": "一万先生",
+      "name": "华立",
       "year": "26",
-      "title": "CLAUDE玻利维亚低价羊毛教程",
-      "url": "/feed/10",
-      "date": "2026-07-24"
+      "title": "自从有了AI看片都自由了 使用tvbox源搞了tvbox播放器",
+      "url": "https://www.renhuali.cn/journal/cmrzoqctg00h9chujwo4i3bu0",
+      "date": "2026-07-25"
     }
   ]
 };
