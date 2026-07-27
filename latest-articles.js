@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 7/26/2026, 8:22:35 PM
+// 抓取日期: 7/27/2026, 8:33:02 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -8,81 +8,101 @@ const latestArticlesByYear = {
     {
       "name": "seth",
       "year": "02",
-      "title": "The Lego problem, revisited",
-      "url": "https://seths.blog/2026/07/the-lego-problem/",
-      "date": "2026-07-26"
+      "title": "Optimizing yourself into a corner",
+      "url": "https://seths.blog/2026/07/optimizing-yourself-into-a-corner/",
+      "date": "2026-07-27"
+    }
+  ],
+  "2003": [
+    {
+      "name": "王通",
+      "year": "03",
+      "title": "王通：顾问式成交迅速提升转化率",
+      "url": "https://www.ufoer.com/post/14160.html",
+      "date": "2026-07-27"
     }
   ],
   "2004": [
     {
       "name": "我的天",
       "year": "04",
-      "title": "右手拇指腕管综合症",
-      "url": "http://www.xlanda.net/posts/22357",
-      "date": "2026-07-26"
+      "title": "我的桌底抽屉理论",
+      "url": "http://www.xlanda.net/posts/22359",
+      "date": "2026-07-27"
     },
     {
-      "name": "龙哥",
+      "name": "kaix.in",
       "year": "04",
-      "title": "不依赖第三方实现lightbox效果",
-      "url": "https://long.ge/18083.html",
-      "date": "2026-07-26"
+      "title": "生前事，身后事",
+      "url": "https://kaix.in/2026/0727/",
+      "date": "2026-07-27"
     },
     {
       "name": "小猪的窝",
       "year": "04",
-      "title": "重定向",
-      "url": "https://ezo.biz/Diary/1510.html",
-      "date": "2026-07-26"
-    },
-    {
-      "name": "TonyBai",
-      "year": "04",
-      "title": "不用 Python，也能训练大模型：两年之后再看 Go 语言机器学习框架 GoMLX",
-      "url": "https://tonybai.com/2026/07/26/gomlx-one-year-later/",
-      "date": "2026-07-25"
+      "title": "难题",
+      "url": "https://ezo.biz/Diary/1514.html",
+      "date": "2026-07-27"
     }
   ],
   "2005": [
     {
+      "name": "王志勇",
+      "year": "05",
+      "title": "人生讨论(26)：为什么很多人成功后很少发声？",
+      "url": "http://www.auiou.com/relevant/00002174.jsp",
+      "date": "2026-07-27"
+    },
+    {
       "name": "ACEVS",
       "year": "05",
-      "title": "卸载了autoclaw和qclaw",
-      "url": "https://acevs.com/5128/",
-      "date": "2026-07-26"
+      "title": "洗衣机进水管龙头坏了",
+      "url": "https://acevs.com/5130/",
+      "date": "2026-07-27"
     }
   ],
   "2006": [
     {
-      "name": "joojen Zhou",
+      "name": "随风沐虐",
       "year": "06",
-      "title": "2026年上半年房地产数据发布",
-      "url": "https://joojen.com/archives/9052.html",
-      "date": "2026-07-26"
-    },
-    {
-      "name": "忘记了回忆",
-      "year": "06",
-      "title": "网吧复兴？",
-      "url": "https://ltmltm.cn/bk/1482.html",
-      "date": "2026-07-26"
+      "title": "Google 推出全新安全验证方式：自拍视频登录账户",
+      "url": "https://www.munue.com/809.html",
+      "date": "2026-07-27"
     }
   ],
-  "2014": [
+  "2007": [
     {
-      "name": "ying",
-      "year": "14",
-      "title": "AI 改变了我的哪些习惯",
-      "url": "https://izualzhy.cn/what-ai-changes-me",
-      "date": "2026-07-26"
+      "name": "树下语",
+      "year": "07",
+      "title": "二师兄的爱情·曲度紫鸳",
+      "url": "https://yishu-life.com/index.php/archives/524.html",
+      "date": "2026-07-27"
+    }
+  ],
+  "2011": [
+    {
+      "name": "唐巧",
+      "year": "11",
+      "title": "从 Bartender 迁移到 Thaw",
+      "url": "https://blog.devtang.com/2026/07/27/from-bartender-to-thaw/",
+      "date": "2026-07-27"
+    }
+  ],
+  "2013": [
+    {
+      "name": "林羽凡",
+      "year": "13",
+      "title": "今天没有减肥餐，买了一套武林秘籍",
+      "url": "https://www.linyufan.com/post/5922",
+      "date": "2026-07-27"
     }
   ],
   "2015": [
     {
       "name": "WordPress 知识宝库",
       "year": "15",
-      "title": "6개월 만의 소규모 리뉴얼, 워드프레스 블로그 대문 페이지 레이아웃 변경",
-      "url": "https://www.thewordcracker.com/basic/6%ea%b0%9c%ec%9b%94-%eb%a7%8c%ec%9d%98-%ec%9b%8c%eb%93%9c%ed%94%84%eb%a0%88%ec%8a%a4-%eb%b8%94%eb%a1%9c%ea%b7%b8-%ec%86%8c%ea%b7%9c%eb%aa%a8-%eb%a6%ac%eb%89%b4%ec%96%bc/",
+      "title": "워드프레스 관리자 사용자 이름 변경하여 보안 강화하기",
+      "url": "https://www.thewordcracker.com/basic/%ec%9b%8c%eb%93%9c%ed%94%84%eb%a0%88%ec%8a%a4%ec%97%90%ec%84%9c-%ea%b4%80%eb%a6%ac%ec%9e%90%ec%9d%98-%ec%82%ac%ec%9a%a9%ec%9e%90-%ec%9d%b4%eb%a6%84-%eb%b3%80%ea%b2%bd/",
       "date": "2026-07-26"
     }
   ],
@@ -90,65 +110,58 @@ const latestArticlesByYear = {
     {
       "name": "串串狗小刊",
       "year": "17",
-      "title": "Web 出海之域名商、托管商等一定要分开",
-      "url": "https://www.ccgxk.com/codeother/821.html",
-      "date": "2026-07-26"
+      "title": "当你赚到第一个9块9的时候...",
+      "url": "https://www.ccgxk.com/codeother/823.html",
+      "date": "2026-07-27"
     }
   ],
   "2019": [
     {
-      "name": "LJF.COM",
+      "name": "流情",
       "year": "19",
-      "title": "《华杉讲透王阳明《传习录》--- 真知就是行动",
-      "url": "https://ljf.com/2026/07/26/1554/",
-      "date": "2026-07-26"
-    },
-    {
-      "name": "浪浪山下那个村",
-      "year": "19",
-      "title": "HDFS 升级模式（Upgrade Mode）完整分析",
-      "url": "https://www.zeekling.cn/articles/2026/07/26/1785057539878.html",
-      "date": "2026-07-26"
+      "title": "周末的清水煮锅",
+      "url": "https://liuqingwushui.top/archives/177/",
+      "date": "2026-07-27"
     },
     {
       "name": "So!azy",
       "year": "19",
-      "title": "断层里的心理学",
-      "url": "https://blog.solazy.me/20260726/",
-      "date": "2026-07-26"
+      "title": "Why me？",
+      "url": "https://blog.solazy.me/20260727/",
+      "date": "2026-07-27"
     }
   ],
   "2020": [
     {
-      "name": "HEMING",
+      "name": "初然忆",
       "year": "20",
-      "title": "After Years of Waiting, I Finally Registered an Emoji Domain: 😍.uz  for Just $2 /Year",
-      "url": "https://heming.org/2737.html",
-      "date": "2026-07-26"
+      "title": "用EO-Pages实现域名@记录跳转",
+      "url": "https://www.imcry.vip/post/2026-7-27-2138/",
+      "date": "2026-07-27"
     }
   ],
   "2021": [
     {
-      "name": "DevNow",
+      "name": "WSH",
       "year": "21",
-      "title": "等一切 风平浪静",
-      "url": "https://www.laughingzhu.cn/posts/do-yourself",
-      "date": "2026-07-26"
+      "title": "想法在夜间扑腾",
+      "url": "https://www.wsh233.cn/post/想法在夜间扑腾",
+      "date": "2026-07-27"
     },
     {
-      "name": "记录生活",
+      "name": "DevNow",
       "year": "21",
-      "title": "抗大路，骑到腿软的一天",
-      "url": "https://9sb.net/archives/fight-against-the-main-road-ride-until-your-legs-are-weak-one-day.html",
-      "date": "2026-07-26"
+      "title": "Product Hunt 每日热榜 | 2026-07-27",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-07-27",
+      "date": "2026-07-27"
     }
   ],
-  "2024": [
+  "2023": [
     {
-      "name": "Chongxi",
-      "year": "24",
-      "title": "游蒋介石故居：奉化溪口",
-      "url": "https://xice.cx/posts/ChiangKaishekHome/",
+      "name": "鹿泽",
+      "year": "23",
+      "title": "Reddit SEO：主导搜索与大型语言模型结果的完整策略",
+      "url": "https://www.bailuze.com/24271.html",
       "date": "2026-07-27"
     }
   ],
@@ -156,18 +169,9 @@ const latestArticlesByYear = {
     {
       "name": "Marcus",
       "year": "25",
-      "title": "2026.07.26 博客阅读周记",
-      "url": "https://www.immarcus.com/blog/weekly-20260726",
-      "date": "2026-07-26"
-    }
-  ],
-  "2026": [
-    {
-      "name": "一个博客",
-      "year": "26",
-      "title": "说说：昨天去看了扬州主场VS徐州的比赛，但是由于天气太热，身体不舒服，上半场…",
-      "url": "https://yigeboke.com/shuoshuo.php#shuo_37",
-      "date": "2026-07-26"
+      "title": "人生的配速",
+      "url": "https://www.immarcus.com/blog/pacing-for-life",
+      "date": "2026-07-27"
     }
   ]
 };
