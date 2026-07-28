@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 7/27/2026, 8:33:02 PM
+// 抓取日期: 7/28/2026, 8:29:13 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -8,170 +8,170 @@ const latestArticlesByYear = {
     {
       "name": "seth",
       "year": "02",
-      "title": "Optimizing yourself into a corner",
-      "url": "https://seths.blog/2026/07/optimizing-yourself-into-a-corner/",
-      "date": "2026-07-27"
-    }
-  ],
-  "2003": [
-    {
-      "name": "王通",
-      "year": "03",
-      "title": "王通：顾问式成交迅速提升转化率",
-      "url": "https://www.ufoer.com/post/14160.html",
-      "date": "2026-07-27"
+      "title": "The smush",
+      "url": "https://seths.blog/2026/07/the-smush/",
+      "date": "2026-07-28"
     }
   ],
   "2004": [
     {
-      "name": "我的天",
+      "name": "TonyBai",
       "year": "04",
-      "title": "我的桌底抽屉理论",
-      "url": "http://www.xlanda.net/posts/22359",
+      "title": "上次说“没有靠谱的尺子”，这次 Dex Horthy 找到了一把——Opus 5 实测通过率只有 24%",
+      "url": "https://tonybai.com/2026/07/28/why-software-factories-fail-part-3-slopcodebench-opus-5-benchmark/",
       "date": "2026-07-27"
     },
     {
-      "name": "kaix.in",
+      "name": "我的天",
       "year": "04",
-      "title": "生前事，身后事",
-      "url": "https://kaix.in/2026/0727/",
-      "date": "2026-07-27"
+      "title": "装上桌底抽屉",
+      "url": "http://www.xlanda.net/posts/22361",
+      "date": "2026-07-28"
     },
     {
       "name": "小猪的窝",
       "year": "04",
-      "title": "难题",
-      "url": "https://ezo.biz/Diary/1514.html",
-      "date": "2026-07-27"
+      "title": "理发",
+      "url": "https://ezo.biz/Diary/1516.html",
+      "date": "2026-07-28"
     }
   ],
   "2005": [
     {
-      "name": "王志勇",
-      "year": "05",
-      "title": "人生讨论(26)：为什么很多人成功后很少发声？",
-      "url": "http://www.auiou.com/relevant/00002174.jsp",
-      "date": "2026-07-27"
-    },
-    {
       "name": "ACEVS",
       "year": "05",
-      "title": "洗衣机进水管龙头坏了",
-      "url": "https://acevs.com/5130/",
-      "date": "2026-07-27"
+      "title": "热的开空调了",
+      "url": "https://acevs.com/5132/",
+      "date": "2026-07-28"
     }
   ],
-  "2006": [
+  "2008": [
     {
-      "name": "随风沐虐",
-      "year": "06",
-      "title": "Google 推出全新安全验证方式：自拍视频登录账户",
-      "url": "https://www.munue.com/809.html",
-      "date": "2026-07-27"
+      "name": "生活的左上角",
+      "year": "08",
+      "title": "音乐保护：WordPress 音频文件保护插件",
+      "url": "https://bwskyer.com/music-protector-wordpress-plugin.html",
+      "date": "2026-07-28"
+    },
+    {
+      "name": "杜郎俊赏",
+      "year": "08",
+      "title": "第 34 届全国图书交易博览会小记",
+      "url": "https://dujun.io/photos-from-the-34th-national-book-expo.html",
+      "date": "2026-07-28"
     }
   ],
-  "2007": [
+  "2009": [
     {
-      "name": "树下语",
-      "year": "07",
-      "title": "二师兄的爱情·曲度紫鸳",
-      "url": "https://yishu-life.com/index.php/archives/524.html",
-      "date": "2026-07-27"
+      "name": "异数",
+      "year": "09",
+      "title": "软件 || 图集规范管理软件-2.0正式上线了",
+      "url": "https://www.yishu.pro/232.html",
+      "date": "2026-07-28"
     }
   ],
   "2011": [
     {
-      "name": "唐巧",
+      "name": "小癞子",
       "year": "11",
-      "title": "从 Bartender 迁移到 Thaw",
-      "url": "https://blog.devtang.com/2026/07/27/from-bartender-to-thaw/",
-      "date": "2026-07-27"
+      "title": "Jersey机场应该是我去过最小的机场",
+      "url": "https://justyy.com/archives/72264",
+      "date": "2026-07-28"
+    }
+  ],
+  "2012": [
+    {
+      "name": "把酒诗代码",
+      "year": "12",
+      "title": "家电维修🔧",
+      "url": "https://102no.com/2026/07/28/jia-dian-wei-xiu/",
+      "date": "2026-07-28"
     }
   ],
   "2013": [
     {
-      "name": "林羽凡",
+      "name": "小z",
       "year": "13",
-      "title": "今天没有减肥餐，买了一套武林秘籍",
-      "url": "https://www.linyufan.com/post/5922",
-      "date": "2026-07-27"
+      "title": "还在用老式 SSH 工具？Termark 新一代跨平台智能SSH客户端了解一下",
+      "url": "https://blog.xiaoz.org/archives/23266",
+      "date": "2026-07-28"
+    }
+  ],
+  "2014": [
+    {
+      "name": "运营不加班",
+      "year": "14",
+      "title": "agent可观测--Langfuse阿里云自托管",
+      "url": "https://nops.icu/archives/245/",
+      "date": "2026-07-28"
     }
   ],
   "2015": [
     {
-      "name": "WordPress 知识宝库",
+      "name": "满心",
       "year": "15",
-      "title": "워드프레스 관리자 사용자 이름 변경하여 보안 강화하기",
-      "url": "https://www.thewordcracker.com/basic/%ec%9b%8c%eb%93%9c%ed%94%84%eb%a0%88%ec%8a%a4%ec%97%90%ec%84%9c-%ea%b4%80%eb%a6%ac%ec%9e%90%ec%9d%98-%ec%82%ac%ec%9a%a9%ec%9e%90-%ec%9d%b4%eb%a6%84-%eb%b3%80%ea%b2%bd/",
-      "date": "2026-07-26"
+      "title": "聊聊Riven主题后续",
+      "url": "https://zhoutian.com/391.html",
+      "date": "2026-07-28"
     }
   ],
   "2017": [
     {
       "name": "串串狗小刊",
       "year": "17",
-      "title": "当你赚到第一个9块9的时候...",
-      "url": "https://www.ccgxk.com/codeother/823.html",
-      "date": "2026-07-27"
+      "title": "程序员未来会不会大量失业？",
+      "url": "https://www.ccgxk.com/codeother/824.html",
+      "date": "2026-07-28"
+    },
+    {
+      "name": "碎言",
+      "year": "17",
+      "title": "Token 焦虑",
+      "url": "https://www.suiyan.cc/blog/20260728222050",
+      "date": "2026-07-28"
     }
   ],
   "2019": [
     {
-      "name": "流情",
+      "name": "吴诗涛",
       "year": "19",
-      "title": "周末的清水煮锅",
-      "url": "https://liuqingwushui.top/archives/177/",
-      "date": "2026-07-27"
-    },
-    {
-      "name": "So!azy",
-      "year": "19",
-      "title": "Why me？",
-      "url": "https://blog.solazy.me/20260727/",
-      "date": "2026-07-27"
+      "title": "关于说话",
+      "url": "https://shitao5.org/posts/on-speaking/",
+      "date": "2026-07-28"
     }
   ],
   "2020": [
     {
-      "name": "初然忆",
+      "name": "資工小廢物 - JN",
       "year": "20",
-      "title": "用EO-Pages实现域名@记录跳转",
-      "url": "https://www.imcry.vip/post/2026-7-27-2138/",
-      "date": "2026-07-27"
+      "title": "一個小時",
+      "url": "https://blog.giveanornot.com/an-hour/",
+      "date": "2026-07-28"
     }
   ],
   "2021": [
     {
       "name": "WSH",
       "year": "21",
-      "title": "想法在夜间扑腾",
-      "url": "https://www.wsh233.cn/post/想法在夜间扑腾",
+      "title": "黄山掠影",
+      "url": "https://www.wsh233.cn/post/黄山掠影",
       "date": "2026-07-27"
     },
     {
       "name": "DevNow",
       "year": "21",
-      "title": "Product Hunt 每日热榜 | 2026-07-27",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-07-27",
-      "date": "2026-07-27"
-    }
-  ],
-  "2023": [
-    {
-      "name": "鹿泽",
-      "year": "23",
-      "title": "Reddit SEO：主导搜索与大型语言模型结果的完整策略",
-      "url": "https://www.bailuze.com/24271.html",
-      "date": "2026-07-27"
+      "title": "Product Hunt 每日热榜 | 2026-07-28",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-07-28",
+      "date": "2026-07-28"
     }
   ],
   "2025": [
     {
       "name": "Marcus",
       "year": "25",
-      "title": "人生的配速",
-      "url": "https://www.immarcus.com/blog/pacing-for-life",
-      "date": "2026-07-27"
+      "title": "xkcd",
+      "url": "https://www.immarcus.com/blog/xkcd",
+      "date": "2026-07-28"
     }
   ]
 };
