@@ -1,175 +1,177 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 7/17/2026, 8:14:27 PM
+// 抓取日期: 8/1/2026, 8:18:20 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
-  "2000": [
-    {
-      "name": "Luca",
-      "year": "00",
-      "title": "友谈AI泡沫翌日文章印证",
-      "url": "https://wlj.me/notes/sp-note-20260717-112120/",
-      "date": "2026-07-17"
-    }
-  ],
   "2002": [
     {
-      "name": "seth",
+      "name": "不吐不快",
       "year": "02",
-      "title": "Resources and focus",
-      "url": "https://seths.blog/2026/07/resources-and-focus/",
-      "date": "2026-07-17"
+      "title": "升级糖豆广场舞视频下载软件",
+      "url": "https://mianao.info/tangdou-dance-video-free-download-update/",
+      "date": "2026-08-01"
     }
   ],
   "2004": [
     {
-      "name": "Jake",
-      "year": "04",
-      "title": "加入 Syrovex 中国团队｜助力企业 AI 落地",
-      "url": "https://jaketao.com/syrovex-hiring-in-china",
-      "date": "2026-07-16"
-    },
-    {
       "name": "TonyBai",
       "year": "04",
-      "title": "为了一个函数名，Go官方吵了两个月：maps.Same提案近日正式通过",
-      "url": "https://tonybai.com/2026/07/17/go-maps-same-proposal-accepted/",
-      "date": "2026-07-16"
+      "title": "YC亲自下场开源内部Harness：QM，一个“多人在线”的公司级Agent操作系统",
+      "url": "https://tonybai.com/2026/08/01/yc-open-source-qm-multiplayer-agent-harness/",
+      "date": "2026-08-01"
+    },
+    {
+      "name": "小猪的窝",
+      "year": "04",
+      "title": "服务的价值",
+      "url": "https://ezo.biz/Diary/1532.html",
+      "date": "2026-08-01"
+    },
+    {
+      "name": "我的天",
+      "year": "04",
+      "title": "中奖赛博朋克盲盒鼠标",
+      "url": "http://www.xlanda.net/posts/22370",
+      "date": "2026-08-01"
+    },
+    {
+      "name": "delphij",
+      "year": "04",
+      "title": "从 FreeBSD Ports 代码仓库冻结事件谈起：Git 历史重写，以及如何从此类状况中恢复",
+      "url": "https://blog.delphij.net/posts/2026/07/git-history-write/",
+      "date": "2026-08-01"
     }
   ],
   "2005": [
     {
-      "name": "Gea-Suan Lin",
-      "year": "05",
-      "title": "Inkling 開源模型",
-      "url": "https://blog.gslin.org/archives/2026/07/17/13117/inkling-%e9%96%8b%e6%ba%90%e6%a8%a1%e5%9e%8b/",
-      "date": "2026-07-17"
-    },
-    {
       "name": "ACEVS",
       "year": "05",
-      "title": "杂记2026年7月17日",
-      "url": "https://acevs.com/5108/",
-      "date": "2026-07-17"
-    },
-    {
-      "name": "王志勇",
-      "year": "05",
-      "title": "数码评测(71)：超低价享受i7-7700的体验",
-      "url": "http://www.auiou.com/relevant/00002169.jsp",
-      "date": "2026-07-16"
+      "title": "碎片2026年8月1日",
+      "url": "https://acevs.com/5140/",
+      "date": "2026-08-01"
     }
   ],
-  "2009": [
+  "2007": [
     {
-      "name": "张鑫旭",
-      "year": "09",
-      "title": "CSS新单位dvh、lvmin、vi、cqb等初解",
-      "url": "https://www.zhangxinxu.com/wordpress/2026/07/css-dvh-vi-cqi/",
-      "date": "2026-07-17"
+      "name": "朱小呆",
+      "year": "07",
+      "title": "🌾 重磅消息！我的「呆呆农场」终于上线测试啦！",
+      "url": "https://zhujay.com/talk/talk_detail.html?id=1268",
+      "date": "2026-08-01"
+    },
+    {
+      "name": "不靠谱颜论",
+      "year": "07",
+      "title": "奇货可居：数据共享的困局",
+      "url": "https://yanlinlin.cn/2026/08/01/data-sharing-dilemma/",
+      "date": "2026-08-01"
+    }
+  ],
+  "2008": [
+    {
+      "name": "军",
+      "year": "08",
+      "title": "山姆超市：是店大欺客还是水土不服",
+      "url": "https://me.xu19.com/two-food-safety-incidents-at-sams-club/",
+      "date": "2026-08-01"
+    }
+  ],
+  "2010": [
+    {
+      "name": "limboy",
+      "year": "10",
+      "title": "Google’s AI Problem Is Bigger Than You Think",
+      "url": "https://limboy.me/posts/google-ai-problem-is-bigger-than-you-think",
+      "date": "2026-08-01"
+    }
+  ],
+  "2013": [
+    {
+      "name": "小z",
+      "year": "13",
+      "title": "七牛云已经能用上Deepseek-V4-Flash正式版了，点此领取300万Token",
+      "url": "https://blog.xiaoz.org/archives/23311",
+      "date": "2026-08-01"
     }
   ],
   "2016": [
     {
-      "name": "故事里",
+      "name": "阿珏酱",
       "year": "16",
-      "title": "这真是个孤独的世界",
-      "url": "https://www.gushi.li/what-a-lonely-world.html",
-      "date": "2026-07-17"
+      "title": "MoeKoe Music Mobile酷狗音乐第三方移动端播放器",
+      "url": "https://moejue.cn/archives/342",
+      "date": "2026-08-01"
     }
   ],
   "2017": [
     {
-      "name": "碎言",
-      "year": "17",
-      "title": "为开发中的游戏注册域名",
-      "url": "https://www.suiyan.cc/blog/20260717113532",
-      "date": "2026-07-17"
-    },
-    {
       "name": "串串狗小刊",
       "year": "17",
-      "title": "为什么 GO 语言地位很尴尬？",
-      "url": "https://www.ccgxk.com/emlog_dev/811.html",
-      "date": "2026-07-17"
-    }
-  ],
-  "2018": [
-    {
-      "name": "黑桃三",
-      "year": "18",
-      "title": "为什么加一箱油四五百块不心疼，充个电贵十块却难受半天？",
-      "url": "https://heitaosan.com/article/235",
-      "date": "2026-07-17"
-    }
-  ],
-  "2019": [
-    {
-      "name": "吴诗涛",
-      "year": "19",
-      "title": "寻找问题",
-      "url": "https://shitao5.org/posts/finding-questions/",
-      "date": "2026-07-17"
+      "title": "程序化广告的魅力！",
+      "url": "https://www.ccgxk.com/codeother/829.html",
+      "date": "2026-08-01"
     }
   ],
   "2020": [
     {
       "name": "不凡",
       "year": "20",
-      "title": "猫咪们虽然平时有捣乱，但是抓蟑螂和虫子绝不含糊",
-      "url": "https://www.bufanz.com/20260717749.html",
-      "date": "2026-07-17"
+      "title": "四川度过了红色高温，现在轮到华北、华东、华中、东北地区体验红色高温了",
+      "url": "https://www.bufanz.com/20260801773.html",
+      "date": "2026-08-01"
     }
   ],
   "2021": [
     {
-      "name": "喵喵小站・博客志",
+      "name": "WSH",
       "year": "21",
-      "title": "分享我做的烤鸡架！",
-      "url": "https://www.mmbkz.cn/fd1a73c0.html",
-      "date": "2026-07-17"
+      "title": "人生的意义",
+      "url": "https://www.wsh233.cn/post/人生的意义",
+      "date": "2026-08-01"
     },
     {
       "name": "DevNow",
       "year": "21",
-      "title": "Product Hunt 每日热榜 | 2026-07-17",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-07-17",
-      "date": "2026-07-17"
+      "title": "Product Hunt 每日热榜 | 2026-08-01",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-08-01",
+      "date": "2026-08-01"
     }
   ],
   "2023": [
     {
-      "name": "无敌",
+      "name": "湘铭",
       "year": "23",
-      "title": "Web的形态演化（二）：页面生成的迁移与分配",
-      "url": "http://blog.tangwudi.com/technology/cognition14585/",
-      "date": "2026-07-17"
-    },
-    {
-      "name": "按钮与磁带",
-      "year": "23",
-      "title": "鋼琴連載3，",
-      "url": "https://jefftay.com/blog-posts/piano-3",
+      "title": "送外卖的有趣事！",
+      "url": "https://xiangming.site/1142.html",
       "date": "2026-08-01"
     }
   ],
   "2024": [
     {
-      "name": "姓王者",
+      "name": "刘郎阁",
       "year": "24",
-      "title": "人工智能实训结题报告：B4 Agent LLM决策模块 —— 从架构设计到五维进阶",
-      "url": "https://xingwangzhe.fun/posts/ai-training-b4-final-report/",
-      "date": "2026-07-17"
+      "title": "零基础做AI歌曲，解锁副业收益",
+      "url": "https://vjo.cc/1991",
+      "date": "2026-08-01"
     }
   ],
   "2025": [
     {
       "name": "Marcus",
       "year": "25",
-      "title": "末日大霾",
-      "url": "https://www.immarcus.com/blog/apocalyptic-haze",
-      "date": "2026-07-17"
+      "title": "单点紧化",
+      "url": "https://www.immarcus.com/blog/one-point-compactification",
+      "date": "2026-08-01"
+    }
+  ],
+  "2026": [
+    {
+      "name": "华立",
+      "year": "26",
+      "title": "有一个AI大厂可以薅羊毛了！完成注册即可获得68元免费token额度",
+      "url": "https://www.renhuali.cn/journal/cms9qji8j013kchujq0wtydlf",
+      "date": "2026-08-01"
     }
   ]
 };
