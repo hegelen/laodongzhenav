@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 8/2/2026, 8:22:29 PM
+// 抓取日期: 8/3/2026, 8:37:04 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -8,40 +8,40 @@ const latestArticlesByYear = {
     {
       "name": "Luca",
       "year": "00",
-      "title": "第一次听说“胁迫密码”和“Graphen",
-      "url": "https://wlj.me/notes/sp-note-20260802-230820/",
-      "date": "2026-08-02"
+      "title": "最近我看同事的提案，好像问不出太多问题了",
+      "url": "https://wlj.me/notes/sp-note-20260803-091648/",
+      "date": "2026-08-03"
     }
   ],
   "2002": [
     {
       "name": "seth",
       "year": "02",
-      "title": "The Rowboat",
-      "url": "https://seths.blog/2026/08/the-rowboat/",
-      "date": "2026-08-02"
+      "title": "Celebrity art",
+      "url": "https://seths.blog/2026/08/celebrity-art-2/",
+      "date": "2026-08-03"
     }
   ],
   "2004": [
     {
+      "name": "小猪的窝",
+      "year": "04",
+      "title": "旅行",
+      "url": "https://ezo.biz/Diary/1537.html",
+      "date": "2026-08-03"
+    },
+    {
       "name": "我的天",
       "year": "04",
-      "title": "作死的月末设定",
-      "url": "http://www.xlanda.net/posts/22372",
-      "date": "2026-08-02"
+      "title": "学酥？",
+      "url": "http://www.xlanda.net/posts/22374",
+      "date": "2026-08-03"
     },
     {
       "name": "TonyBai",
       "year": "04",
-      "title": "ccsa：给 Claude Code 的 session 起个人类可记的名字，一键 resume",
-      "url": "https://tonybai.com/2026/08/02/ccsa-claude-code-session-alias-tool/",
-      "date": "2026-08-01"
-    },
-    {
-      "name": "小猪的窝",
-      "year": "04",
-      "title": "人生需要做一些减法",
-      "url": "https://ezo.biz/Diary/1534.html",
+      "title": "Go 正在背离初心？一条 Reddit 热帖，暴露了 Go 社区最深的分歧：简单，到底能坚持多久？",
+      "url": "https://tonybai.com/2026/08/03/go-simplicity-philosophy-debate-reddit/",
       "date": "2026-08-02"
     }
   ],
@@ -49,93 +49,106 @@ const latestArticlesByYear = {
     {
       "name": "ACEVS",
       "year": "05",
-      "title": "自助火锅尝试",
-      "url": "https://acevs.com/5142/",
+      "title": "魔兽争霸思路",
+      "url": "https://acevs.com/5144/",
+      "date": "2026-08-03"
+    }
+  ],
+  "2006": [
+    {
+      "name": "joojen Zhou",
+      "year": "06",
+      "title": "未来五年的关键词“收敛”",
+      "url": "https://joojen.com/archives/9064.html",
+      "date": "2026-08-03"
+    }
+  ],
+  "2009": [
+    {
+      "name": "老张",
+      "year": "09",
+      "title": "寻求家庭最佳无线网络方案",
+      "url": "https://laozhang.org/archives/4262.html",
       "date": "2026-08-02"
     }
   ],
-  "2008": [
+  "2011": [
     {
-      "name": "有氧呼吸",
-      "year": "08",
-      "title": "用AI Agent低成本构建ETF策略推送",
-      "url": "https://www.oxy.one/2026/08/ai-agentetf.html",
-      "date": "2026-08-02"
-    },
-    {
-      "name": "Kwx",
-      "year": "08",
-      "title": "Docker Cacti 数据采集速度备忘",
-      "url": "https://kwx.cc/post/3959",
-      "date": "2026-08-02"
-    }
-  ],
-  "2010": [
-    {
-      "name": "limboy",
-      "year": "10",
-      "title": "社交媒体与香烟",
-      "url": "https://limboy.me/posts/social-media-and-cigarettes",
-      "date": "2026-08-02"
+      "name": "小癞子",
+      "year": "11",
+      "title": "一转眼, 孩子们都长大了",
+      "url": "https://justyy.com/archives/72368",
+      "date": "2026-08-03"
     }
   ],
   "2013": [
     {
-      "name": "林羽凡",
+      "name": "蛋蛋",
       "year": "13",
-      "title": "今日减肥餐记录",
-      "url": "https://www.linyufan.com/post/5931",
-      "date": "2026-08-02"
+      "title": "搞定 0x80073CFF：Windows 商店级 MSIX 应用包解包硬核安装指南",
+      "url": "https://wuqishi.com/archives/fix-msix-0x80073cff-error",
+      "date": "2026-08-03"
+    }
+  ],
+  "2014": [
+    {
+      "name": "xulihang",
+      "year": "14",
+      "title": "学习Power BI",
+      "url": {
+        "$": {
+          "href": "https://blog.xulihang.me/learn-about-power-bi/"
+        }
+      },
+      "date": "2026-08-03"
     }
   ],
   "2015": [
     {
       "name": "WordPress 知识宝库",
       "year": "15",
-      "title": "워드프레스 GeneratePress 테마 블로그 카테고리 및 태그 숨기기",
-      "url": "https://www.thewordcracker.com/intermediate/%ec%9b%8c%eb%93%9c%ed%94%84%eb%a0%88%ec%8a%a4-generatepress-%ec%b9%b4%ed%85%8c%ea%b3%a0%eb%a6%ac-%eb%b0%8f-%ed%83%9c%ea%b7%b8-%ec%88%a8%ea%b8%b0%ea%b8%b0/",
-      "date": "2026-08-01"
+      "title": "워드프레스 500 내부 서버 오류 (Internal Server Error) 해결 방법",
+      "url": "https://www.thewordcracker.com/intermediate/500-internal-server-error-in-wordpress/",
+      "date": "2026-08-03"
     }
   ],
   "2017": [
     {
+      "name": "碎言",
+      "year": "17",
+      "title": "聊聊我的游戏进度",
+      "url": "https://www.suiyan.cc/blog/20260803123110",
+      "date": "2026-08-03"
+    },
+    {
       "name": "串串狗小刊",
       "year": "17",
-      "title": "知识产物究竟该长什么样？今天聊聊 OKF！",
-      "url": "https://www.ccgxk.com/emlog_dev/830.html",
-      "date": "2026-08-02"
+      "title": "Web 出海常见的几个误解",
+      "url": "https://www.ccgxk.com/codeother/832.html",
+      "date": "2026-08-03"
     }
   ],
   "2019": [
     {
-      "name": "瓜老汉",
+      "name": "吴诗涛",
       "year": "19",
-      "title": "即将回家，还有些激动，真激动",
-      "url": "http://www.gualaohan.com/post/823",
-      "date": "2026-08-01"
+      "title": "给博客标题加上拼音锚点",
+      "url": "https://shitao5.org/posts/pinyin-anchors-for-blog-headings/",
+      "date": "2026-08-03"
+    },
+    {
+      "name": "Zeruns",
+      "year": "19",
+      "title": "Minecraft 26.2 开服联机教程，我的世界Java版服务器搭建教程，零基础开MC服！",
+      "url": "https://blog.zeruns.com/archives/952.html",
+      "date": "2026-08-03"
     },
     {
       "name": "So!azy",
       "year": "19",
-      "title": "周末流水账 0802",
-      "url": "https://blog.solazy.me/20260802/",
-      "date": "2026-08-02"
-    }
-  ],
-  "2020": [
-    {
-      "name": "初然忆",
-      "year": "20",
-      "title": "大叔的讨年庚和表妹的升学宴",
-      "url": "https://www.imcry.vip/post/2026-8-2-1452/",
-      "date": "2026-08-02"
-    },
-    {
-      "name": "呆哥",
-      "year": "20",
-      "title": "前两天做的评论与消息通知优化",
-      "url": "https://www.dalao.net/thread-61936.htm",
-      "date": "2026-08-02"
+      "title": "别急着说自己做不了",
+      "url": "https://blog.solazy.me/20260803/",
+      "date": "2026-08-03"
     }
   ],
   "2021": [
@@ -149,27 +162,18 @@ const latestArticlesByYear = {
     {
       "name": "DevNow",
       "year": "21",
-      "title": "Product Hunt 每日热榜 | 2026-08-02",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-08-02",
-      "date": "2026-08-02"
+      "title": "Product Hunt 每日热榜 | 2026-08-03",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-08-03",
+      "date": "2026-08-03"
     }
   ],
   "2023": [
     {
-      "name": "小归客",
+      "name": "鹿泽",
       "year": "23",
-      "title": "MD，花了400购买了个qq飞车雷诺",
-      "url": "https://xgk.pw/archives/317/",
-      "date": "2026-08-02"
-    }
-  ],
-  "2025": [
-    {
-      "name": "Marcus",
-      "year": "25",
-      "title": "草稿有点越积越多了",
-      "url": "https://www.immarcus.com/blog/drafts-backlogged",
-      "date": "2026-08-02"
+      "title": "常见的技术SEO问题，影响排名却不自觉",
+      "url": "https://www.bailuze.com/24295.html",
+      "date": "2026-08-03"
     }
   ]
 };
