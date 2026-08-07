@@ -1,175 +1,173 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 8/5/2026, 8:43:47 PM
+// 抓取日期: 8/7/2026, 12:50:01 AM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
+  "2002": [
+    {
+      "name": "seth",
+      "year": "02",
+      "title": "The modern library",
+      "url": "https://seths.blog/2026/08/the-modern-library/",
+      "date": "2026-08-06"
+    }
+  ],
+  "2003": [
+    {
+      "name": "阮一峰",
+      "year": "03",
+      "title": "科技爱好者周刊（第 407 期）：国家为什么需要开源软件？",
+      "url": "http://www.ruanyifeng.com/blog/2026/08/weekly-issue-407.html",
+      "date": "2026-08-07"
+    }
+  ],
   "2004": [
     {
       "name": "小猪的窝",
       "year": "04",
-      "title": "学习能力在降低",
-      "url": "https://ezo.biz/Diary/1541.html",
-      "date": "2026-08-05"
-    },
-    {
-      "name": "TonyBai",
-      "year": "04",
-      "title": "AI智能体的记忆，终于有人认真研究“文件系统”这条路了——新论文给出五个反直觉答案",
-      "url": "https://tonybai.com/2026/08/05/filesystem-based-memory-for-llm-agents/",
-      "date": "2026-08-04"
+      "title": "输入法",
+      "url": "https://ezo.biz/Diary/1545.html",
+      "date": "2026-08-06"
     },
     {
       "name": "我的天",
       "year": "04",
-      "title": "连续踩坑",
-      "url": "http://www.xlanda.net/posts/22378",
-      "date": "2026-08-05"
+      "title": "宿舍水龙头罢工",
+      "url": "http://www.xlanda.net/posts/22381",
+      "date": "2026-08-06"
+    },
+    {
+      "name": "扫地老僧",
+      "year": "04",
+      "title": "防御性驾驶经验谈",
+      "url": "https://doyj.com/2026/08/06/%e9%98%b2%e5%be%a1%e6%80%a7%e9%a9%be%e9%a9%b6%e7%bb%8f%e9%aa%8c%e8%b0%88/",
+      "date": "2026-08-06"
     }
   ],
   "2005": [
     {
+      "name": "王志勇",
+      "year": "05",
+      "title": "又丢失了一次域名起名",
+      "url": "http://www.auiou.com/relevant/00002177.jsp",
+      "date": "2026-08-06"
+    },
+    {
       "name": "ACEVS",
       "year": "05",
-      "title": "几个软件测试",
-      "url": "https://acevs.com/5149/",
-      "date": "2026-08-05"
-    }
-  ],
-  "2007": [
-    {
-      "name": "朱小呆",
-      "year": "07",
-      "title": "积分调整 & 农场优化说明",
-      "url": "https://zhujay.com/talk/talk_detail.html?id=1269",
-      "date": "2026-08-05"
+      "title": "五种会计计量属性对比",
+      "url": "https://acevs.com/5151/",
+      "date": "2026-08-06"
     }
   ],
   "2008": [
     {
-      "name": "军",
+      "name": "四火的唠叨",
       "year": "08",
-      "title": "机票燃油附加费涨跌有如过山车",
-      "url": "https://me.xu19.com/chinas-domestic-airline-fuel-surcharge-in-2026-a-roller-coaster-of-price-fluctuations/",
-      "date": "2026-08-05"
+      "title": "Run:ai 学习记录",
+      "url": "https://www.raychase.net/8295",
+      "date": "2026-08-06"
     }
   ],
-  "2010": [
+  "2009": [
     {
-      "name": "Jeray",
-      "year": "10",
-      "title": "PC工作环境修复记",
-      "url": "https://hi.jeray.wang/K/222.html",
-      "date": "2026-08-05"
-    }
-  ],
-  "2014": [
-    {
-      "name": "缙哥哥",
-      "year": "14",
-      "title": "书生大模型每月赠送9000万Tokens算力，适用于长文本和信息整合",
-      "url": "https://www.dujin.org/23813.html",
-      "date": "2026-08-05"
-    }
-  ],
-  "2015": [
-    {
-      "name": "网工格物",
-      "year": "15",
-      "title": "Docker Compose 部署 Dify 教程",
-      "url": "https://songxwn.com/Dify-Docker-Compose/",
-      "date": "2026-08-05"
+      "name": "且听书吟",
+      "year": "09",
+      "title": "爱上倒影的人",
+      "url": "https://yufan.me/posts/narcissus-in-the-screen",
+      "date": "2026-08-06"
     },
     {
-      "name": "WordPress 知识宝库",
-      "year": "15",
-      "title": "구글 블로거(블로그스팟) 대규모 차단 사태: 멀웨어 오인 오류 및 대처 방법",
-      "url": "https://www.thewordcracker.com/blog/%ea%b5%ac%ea%b8%80-%eb%b8%94%eb%a1%9c%ea%b1%b0-%eb%8c%80%ea%b7%9c%eb%aa%a8-%ec%b0%a8%eb%8b%a8-%ec%82%ac%ed%83%9c/",
-      "date": "2026-08-05"
+      "name": "标点符",
+      "year": "09",
+      "title": "Google NotebookLM简明教程",
+      "url": "https://www.biaodianfu.com/google-notebooklm/",
+      "date": "2026-08-06"
     }
   ],
-  "2017": [
+  "2011": [
     {
-      "name": "串串狗小刊",
-      "year": "17",
-      "title": "37岁失业程序员1年未找到工作，出路在哪里？",
-      "url": "https://www.ccgxk.com/codeother/834.html",
-      "date": "2026-08-05"
+      "name": "小癞子",
+      "year": "11",
+      "title": "车保险货比三家一定会更便宜: 每年续保险总是要花些时间",
+      "url": "https://justyy.com/archives/72508",
+      "date": "2026-08-06"
     }
   ],
-  "2018": [
+  "2016": [
     {
-      "name": "吖远zzy",
-      "year": "18",
-      "title": "利用 Cloudflare Workers 免费搭建自己的短链服务",
-      "url": "https://www.hzv5.cn/2026/08/05/Cloudflare_Workers/",
-      "date": "2026-08-05"
+      "name": "太隐",
+      "year": "16",
+      "title": "中国官僚政治研究",
+      "url": "https://wangyurui.com/posts/zhong-guo-guan-liao-zheng-zhi-yan-jiu-5ac5c05e",
+      "date": "2026-08-06"
     }
   ],
   "2019": [
     {
-      "name": "herman",
+      "name": "沧海月明",
       "year": "19",
-      "title": "Committing to creativity",
-      "url": "https://herman.bearblog.dev/creativity/",
-      "date": "2026-08-05"
+      "title": "Apache Parquet FILE Logical Type 如何为 AI 数据湖统一多模态对象",
+      "url": "https://www.inlighting.org/archives/apache-parquet-file-logical-type",
+      "date": "2026-08-06"
     }
   ],
   "2020": [
     {
+      "name": "資工小廢物 - JN",
+      "year": "20",
+      "title": "JN 最近在幹嘛 202608（20260806 更新）",
+      "url": "https://blog.giveanornot.com/now/20260806/",
+      "date": "2026-08-06"
+    },
+    {
       "name": "初然忆",
       "year": "20",
-      "title": "与认识六年的黄哥聚餐",
-      "url": "https://www.imcry.vip/post/2026-8-5-1333/",
-      "date": "2026-08-05"
-    },
-    {
-      "name": "我不是咕咕鸽",
-      "year": "20",
-      "title": "iON 一代神鸡陨落：年付 20.19 美元变月付 40 美元，顺便盘点我手上的服务器",
-      "url": "https://blog.laoda.de/archives/ion-20-19-yearly-to-40-monthly-vps-review-2026",
-      "date": "2026-08-05"
-    },
-    {
-      "name": "不凡",
-      "year": "20",
-      "title": "法医刘良新书《真相不会沉默》：看逝者证言，见生死人心",
-      "url": "https://www.bufanz.com/20260805781.html",
-      "date": "2026-08-05"
-    }
-  ],
-  "2021": [
-    {
-      "name": "WSH",
-      "year": "21",
-      "title": "感谢之人",
-      "url": "https://www.wsh233.cn/post/感谢之人",
-      "date": "2026-08-05"
-    },
-    {
-      "name": "DevNow",
-      "year": "21",
-      "title": "Product Hunt 每日热榜 | 2026-08-05",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-08-05",
-      "date": "2026-08-05"
+      "title": "回忆：天河机场坐10块的黑车",
+      "url": "https://www.imcry.vip/post/2026-8-6-1155/",
+      "date": "2026-08-06"
     }
   ],
   "2023": [
     {
-      "name": "湘铭",
+      "name": "鹿泽",
       "year": "23",
-      "title": "深夜折腾日记：把不稳定的旧东西全部安顿好",
-      "url": "https://xiangming.site/1143.html",
-      "date": "2026-08-05"
+      "title": "完整的SEO计划包含哪些内容？",
+      "url": "https://www.bailuze.com/24310.html",
+      "date": "2026-08-06"
+    },
+    {
+      "name": "枫林灯语",
+      "year": "23",
+      "title": "我为小说忙：（五）插件的上线工作",
+      "url": "https://blog.mfwt.top/index.php/archives/1476/",
+      "date": "2026-08-06"
+    },
+    {
+      "name": "Siwei Li",
+      "year": "23",
+      "title": "个人开发程序分享",
+      "url": "https://siwei.li/ge-ren-kai-fa-cheng-xu-fen-xiang/",
+      "date": "2026-08-06"
     }
   ],
   "2024": [
     {
-      "name": "Chongxi",
+      "name": "姓王者",
       "year": "24",
-      "title": "舞萌机台开机初始化进程详解",
-      "url": "https://xice.cx/posts/maimaiPowerOn/",
-      "date": "2026-08-05"
+      "title": "Astro 7.2.0 实验性增量构建：从 0 命中到 1254 个 restored 的踩坑实录",
+      "url": "https://xingwangzhe.fun/posts/astro-7.2-incremental-build/",
+      "date": "2026-08-06"
+    }
+  ],
+  "2025": [
+    {
+      "name": "落花雨记",
+      "year": "25",
+      "title": "更换域名啦",
+      "url": "https://www.biubiubiu.me/73.html",
+      "date": "2026-08-06"
     }
   ]
 };
