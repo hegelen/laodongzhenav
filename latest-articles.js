@@ -1,175 +1,175 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 8/10/2026, 8:02:39 PM
+// 抓取日期: 8/11/2026, 8:09:26 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
-  "2000": [
+  "2002": [
     {
-      "name": "Luca",
-      "year": "00",
-      "title": "Tw93 在 Twitter 上的一篇文",
-      "url": "https://wlj.me/notes/sp-note-20260810-143913/",
-      "date": "2026-08-10"
+      "name": "seth",
+      "year": "02",
+      "title": "Attention up for auction",
+      "url": "https://seths.blog/2026/08/attention-up-for-auction/",
+      "date": "2026-08-11"
+    }
+  ],
+  "2003": [
+    {
+      "name": "愆伏",
+      "year": "03",
+      "title": "互联网来到我身边以前",
+      "url": "https://www.tortorse.com/archives/internet-before-it-came-to-me/",
+      "date": "2026-08-11"
     }
   ],
   "2004": [
     {
-      "name": "kaix.in",
-      "year": "04",
-      "title": "咖啡经不起过萃",
-      "url": "https://kaix.in/2026/0810/",
-      "date": "2026-08-10"
-    },
-    {
-      "name": "小猪的窝",
-      "year": "04",
-      "title": "戒咖啡2周",
-      "url": "https://ezo.biz/Diary/2.html",
-      "date": "2026-08-10"
-    },
-    {
       "name": "我的天",
       "year": "04",
-      "title": "性价比与全力以赴",
-      "url": "http://www.xlanda.net/posts/22390",
-      "date": "2026-08-10"
+      "title": "核心业务——画饼",
+      "url": "http://www.xlanda.net/posts/22392",
+      "date": "2026-08-11"
     }
   ],
   "2005": [
     {
       "name": "ACEVS",
       "year": "05",
-      "title": "轮滑九次",
-      "url": "https://acevs.com/5159/",
-      "date": "2026-08-10"
+      "title": "轮滑十次",
+      "url": "https://acevs.com/5161/",
+      "date": "2026-08-11"
     },
     {
       "name": "Gea-Suan Lin",
       "year": "05",
-      "title": "Django 將每年出一版 LTS",
-      "url": "https://blog.gslin.org/archives/2026/08/11/13140/django-%e5%b0%87%e6%af%8f%e5%b9%b4%e5%87%ba%e4%b8%80%e7%89%88-lts/",
-      "date": "2026-08-10"
-    }
-  ],
-  "2007": [
-    {
-      "name": "朱小呆",
-      "year": "07",
-      "title": "呆呆农场 · 赛博朋克改版上线",
-      "url": "https://zhujay.com/talk/talk_detail.html?id=1270",
-      "date": "2026-08-10"
-    }
-  ],
-  "2008": [
-    {
-      "name": "生活的左上角",
-      "year": "08",
-      "title": "告别了，四哥；告别了，东野圭吾",
-      "url": "https://bwskyer.com/farewell-four-god-and-higashino.html",
-      "date": "2026-08-10"
-    },
-    {
-      "name": "军",
-      "year": "08",
-      "title": "台风白海豚正面登录：暴雨百年遇，全城成汪洋",
-      "url": "https://me.xu19.com/typhon-white-dolphin-slams-taizhou-historic-flooding-paralyzes-city/",
-      "date": "2026-08-10"
+      "title": "法國禁了電話行銷 (從 opt-out 變成 opt-in)",
+      "url": "https://blog.gslin.org/archives/2026/08/12/13143/%e6%b3%95%e5%9c%8b%e7%a6%81%e4%ba%86%e9%9b%bb%e8%a9%b1%e8%a1%8c%e9%8a%b7-%e5%be%9e-opt-out-%e8%ae%8a%e6%88%90-opt-in/",
+      "date": "2026-08-11"
     }
   ],
   "2009": [
     {
-      "name": "且听书吟",
+      "name": "老卫",
       "year": "09",
-      "title": "永恒的凝视",
-      "url": "https://yufan.me/posts/eternal-gaze",
-      "date": "2026-08-10"
+      "title": "无标题",
+      "url": "https://waylau.com/2026-08-11-sonar-open-community-sonar-cxx/",
+      "date": "2026-08-11"
+    },
+    {
+      "name": "老卫（柳伟卫）的技术站",
+      "year": "09",
+      "title": "无标题",
+      "url": "https://waylau.com/2026-08-11-sonar-open-community-sonar-cxx/",
+      "date": "2026-08-11"
+    }
+  ],
+  "2012": [
+    {
+      "name": "郭晓力",
+      "year": "12",
+      "title": "今天把博客的评论打开了-20260811",
+      "url": "https://guoxiaoli.com/post/671.html",
+      "date": "2026-08-11"
+    }
+  ],
+  "2013": [
+    {
+      "name": "林羽凡",
+      "year": "13",
+      "title": "今日减肥餐记录-2026.8.11",
+      "url": "https://www.linyufan.com/post/5947",
+      "date": "2026-08-11"
     }
   ],
   "2017": [
     {
-      "name": "秋风于渭水",
+      "name": "碎言",
       "year": "17",
-      "title": "“窗帘为什么是蓝色的？”：文学作品的最终解释权，到底归谁？",
-      "url": "https://www.tjsky.net/natter/1751",
-      "date": "2026-08-10"
-    }
-  ],
-  "2018": [
+      "title": "谁不焦虑？",
+      "url": "https://www.suiyan.cc/blog/20260811132937",
+      "date": "2026-08-11"
+    },
     {
-      "name": "运维咖啡吧",
-      "year": "18",
-      "title": "向云端｜西南自驾09 - 施秉",
-      "url": "https://blog.ops-coffee.com/r/2026-southwest-road-trip-09-shibing.html",
-      "date": "2026-08-10"
+      "name": "串串狗小刊",
+      "year": "17",
+      "title": "Web 出海的生态越来越完善了！",
+      "url": "https://www.ccgxk.com/codeother/840.html",
+      "date": "2026-08-11"
     }
   ],
   "2019": [
     {
       "name": "流情",
       "year": "19",
-      "title": "忽有故人心上过 回首山河已是秋",
-      "url": "https://liuqingwushui.top/archives/183/",
-      "date": "2026-08-10"
-    },
+      "title": "Cursor、claude code、codex使用",
+      "url": "https://liuqingwushui.top/archives/184/",
+      "date": "2026-08-11"
+    }
+  ],
+  "2020": [
     {
-      "name": "Allen Hua",
-      "year": "19",
-      "title": "绝壁与深谷：2026盛夏的南太行自驾游",
-      "url": "https://hellodk.cn/post/1229",
-      "date": "2026-08-10"
+      "name": "老卢",
+      "year": "20",
+      "title": "说说：#2026-08-11 10:12",
+      "url": "https://blog.el9.cn/memos/3048c69e.html",
+      "date": "2026-08-11"
     }
   ],
   "2021": [
     {
-      "name": "Robes",
-      "year": "21",
-      "title": "亲爱的，我爱你",
-      "url": "https://robes.xin/1219.html",
-      "date": "2026-08-10"
-    },
-    {
       "name": "WSH",
       "year": "21",
-      "title": "周末爬山记",
-      "url": "https://www.wsh233.cn/post/周末爬山记",
-      "date": "2026-08-10"
-    }
-  ],
-  "2022": [
+      "title": "分享的外衣",
+      "url": "https://www.wsh233.cn/post/分享的外衣",
+      "date": "2026-08-11"
+    },
     {
-      "name": "晴雀堂",
-      "year": "22",
-      "title": "长酉",
-      "url": "https://blog.verynb.net/posts/62029.html",
-      "date": "2026-08-10"
+      "name": "记录生活",
+      "year": "21",
+      "title": "Zdir 网盘 图床 Typecho 专用上传插件 NetDiskImg 分享",
+      "url": "https://9sb.net/archives/zdir-netdisk-image-bed-typecho-dedicated-upload-plugin-netdiskimg-share.html",
+      "date": "2026-08-11"
+    },
+    {
+      "name": "DevNow",
+      "year": "21",
+      "title": "Product Hunt 每日热榜 | 2026-08-11",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-08-11",
+      "date": "2026-08-11"
     }
   ],
   "2023": [
     {
-      "name": "枫林灯语",
+      "name": "鹿泽",
       "year": "23",
-      "title": "MURS：少见的 VHF 对讲机",
-      "url": "https://blog.mfwt.top/index.php/archives/1519/",
-      "date": "2026-08-10"
+      "title": "支持SEO和用户体验的网站结构应该是什么样子？",
+      "url": "https://www.bailuze.com/24327.html",
+      "date": "2026-08-11"
+    },
+    {
+      "name": "小归客",
+      "year": "23",
+      "title": "迷你世界地图地形码大全2024",
+      "url": "https://xgk.pw/archives/318/",
+      "date": "2026-08-11"
     }
   ],
   "2024": [
     {
       "name": "Chongxi",
       "year": "24",
-      "title": "舞萌DX错误码0010深度解析及处理方法",
-      "url": "https://xice.cx/posts/maiErr0010/",
-      "date": "2026-08-10"
+      "title": "现代人的刻舟求剑",
+      "url": "https://xice.cx/posts/thinking260811/",
+      "date": "2026-08-11"
     }
   ],
   "2025": [
     {
       "name": "Marcus",
       "year": "25",
-      "title": "MiniMax H3 开箱体验",
-      "url": "https://www.immarcus.com/blog/minimax-h3-first-impression",
-      "date": "2026-08-10"
+      "title": "反客为主",
+      "url": "https://www.immarcus.com/blog/guest-becomes-host",
+      "date": "2026-08-11"
     }
   ]
 };
