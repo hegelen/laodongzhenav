@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 8/14/2026, 7:56:54 PM
+// 抓取日期: 8/15/2026, 7:30:27 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -8,138 +8,149 @@ const latestArticlesByYear = {
     {
       "name": "seth",
       "year": "02",
-      "title": "Emotional hygiene",
-      "url": "https://seths.blog/2026/08/emotional-hygiene/",
-      "date": "2026-08-14"
+      "title": "Short term dumb, long term smart",
+      "url": "https://seths.blog/2026/08/short-term-dumb-long-term-smart/",
+      "date": "2026-08-15"
     }
   ],
   "2003": [
     {
-      "name": "王通",
-      "year": "03",
-      "title": "王通：AI时代打开个人IP升级的秘诀",
-      "url": "https://www.ufoer.com/post/14429.html",
-      "date": "2026-08-14"
-    },
-    {
       "name": "愆伏",
       "year": "03",
-      "title": "第一次走进互联网",
-      "url": "https://www.tortorse.com/archives/first-step-into-the-internet/",
-      "date": "2026-08-14"
-    },
-    {
-      "name": "阮一峰",
-      "year": "03",
-      "title": "科技爱好者周刊（第 408 期）：你需要知道的 AI 缓存知识",
-      "url": "http://www.ruanyifeng.com/blog/2026/08/weekly-issue-408.html",
-      "date": "2026-08-13"
+      "title": "1998，游戏厅外的世界",
+      "url": "https://www.tortorse.com/archives/the-world-outside-the-arcade-1998/",
+      "date": "2026-08-15"
     }
   ],
   "2004": [
     {
-      "name": "小猪的窝",
+      "name": "我的天",
       "year": "04",
-      "title": "牛磺酸戒断反应",
-      "url": "https://ezo.biz/Diary/1577.html",
-      "date": "2026-08-14"
-    },
-    {
-      "name": "kaix.in",
-      "year": "04",
-      "title": "灵魂插件 MCP",
-      "url": "https://kaix.in/2026/0814/",
-      "date": "2026-08-14"
+      "title": "奥数，好玩",
+      "url": "http://www.xlanda.net/posts/22400",
+      "date": "2026-08-15"
     },
     {
       "name": "TonyBai",
       "year": "04",
-      "title": "刚刚，DeepSeek开源Harness：把Agent拆成插件，一切皆可换",
-      "url": "https://tonybai.com/2026/08/14/deepseek-harness-everything-is-a-plugin/",
+      "title": "Rust重写运动，到底是真香还是被吹爆？",
+      "url": "https://tonybai.com/2026/08/15/rust-rewrite-blazingly-fast-or-hyped-rustikon-2026/",
       "date": "2026-08-14"
+    }
+  ],
+  "2005": [
+    {
+      "name": "ACEVS",
+      "year": "05",
+      "title": "朋友来赶海",
+      "url": "https://acevs.com/5169/",
+      "date": "2026-08-15"
+    }
+  ],
+  "2008": [
+    {
+      "name": "生活的左上角",
+      "year": "08",
+      "title": "我的混账人生（九）：吐口水",
+      "url": "https://bwskyer.com/my-messed-up-life-9.html",
+      "date": "2026-08-15"
     },
     {
-      "name": "我的天",
-      "year": "04",
-      "title": "拉马努金法",
-      "url": "http://www.xlanda.net/posts/22398",
-      "date": "2026-08-14"
+      "name": "军",
+      "year": "08",
+      "title": "女儿的暑假作业多到离谱",
+      "url": "https://me.xu19.com/excessive-summer-homework-for-chinese-fourth-grade-students/",
+      "date": "2026-08-15"
     }
   ],
   "2009": [
     {
       "name": "标点符",
       "year": "09",
-      "title": "本地化部署大模型工具 llama.cpp",
-      "url": "https://www.biaodianfu.com/llama-cpp/",
-      "date": "2026-08-14"
+      "title": "为什么 AI 时代提问的杠杆被放大？",
+      "url": "https://www.biaodianfu.com/ai-data-analysis/",
+      "date": "2026-08-15"
     },
     {
-      "name": "张鑫旭",
+      "name": "老刘",
       "year": "09",
-      "title": "还在reduce求和吗？该使用Math.sumPrecise()方法啦",
-      "url": "https://www.zhangxinxu.com/wordpress/2026/08/js-math-sumprecise/",
-      "date": "2026-08-14"
+      "title": "运动",
+      "url": "https://www.iliu.org/yundong/",
+      "date": "2026-08-15"
     }
   ],
-  "2012": [
+  "2010": [
     {
-      "name": "郭晓力",
-      "year": "12",
-      "title": "今天最火的是 dsh （DeepSeek Harness）-20260814",
-      "url": "https://guoxiaoli.com/post/674.html",
-      "date": "2026-08-14"
+      "name": "宇间草",
+      "year": "10",
+      "title": "八十一年的回声：那一声“投降”之后，我们走了多远",
+      "url": "https://2days.org/92.html",
+      "date": "2026-08-15"
+    },
+    {
+      "name": "雅余",
+      "year": "10",
+      "title": "忙碌夏日",
+      "url": "https://yayu.net/6237.html",
+      "date": "2026-08-15"
     }
   ],
   "2013": [
     {
       "name": "林羽凡",
       "year": "13",
-      "title": "林羽凡笔记的mcp api_key增加了复制全部，优化小程序目录结构显示样式",
-      "url": "https://www.linyufan.com/post/5952",
-      "date": "2026-08-14"
-    }
-  ],
-  "2014": [
-    {
-      "name": "缙哥哥",
-      "year": "14",
-      "title": "【8月更新】每月送258天网易云音乐黑胶VIP会员，先到先得！",
-      "url": "https://www.dujin.org/17813.html",
-      "date": "2026-08-14"
-    }
-  ],
-  "2015": [
-    {
-      "name": "WordPress 知识宝库",
-      "year": "15",
-      "title": "워드프레스 엘리멘터 프로 구독 갱신 취소 방법",
-      "url": "https://www.thewordcracker.com/basic/%ec%97%98%eb%a6%ac%eb%a9%98%ed%84%b0-%ed%94%84%eb%a1%9c-%ea%b5%ac%eb%8f%85-%ea%b0%b1%ec%8b%a0-%ec%b7%a8%ec%86%8c-%eb%b0%a9%eb%b2%95/",
-      "date": "2026-08-14"
+      "title": "今日减肥餐记录-2026.8.15-我终于突破94kg了",
+      "url": "https://www.linyufan.com/post/5953",
+      "date": "2026-08-15"
     }
   ],
   "2017": [
     {
+      "name": "arun",
+      "year": "17",
+      "title": "Do you want to go for a ride?",
+      "url": "https://arun.is/blog/do-you-want-to-go-for-a-ride/",
+      "date": "2026-08-15"
+    },
+    {
       "name": "串串狗小刊",
       "year": "17",
-      "title": "自动化脚本不光 bash，还有 make、just、mise...",
-      "url": "https://www.ccgxk.com/emlog_dev/844.html",
-      "date": "2026-08-14"
+      "title": "最适合大学生的副业，Web 出海，没有之一！！！",
+      "url": "https://www.ccgxk.com/codeother/845.html",
+      "date": "2026-08-15"
+    }
+  ],
+  "2018": [
+    {
+      "name": "游钓四方",
+      "year": "18",
+      "title": "聊聊郭刚",
+      "url": "https://blog.lhasa.icu/posts/life/2026-08-15-cultural-revolution-2/",
+      "date": "2026-08-15"
     }
   ],
   "2019": [
     {
-      "name": "So!azy",
+      "name": "新世界的大门",
       "year": "19",
-      "title": "逻辑自洽不等于事实完整",
-      "url": "https://blog.solazy.me/20260814/",
-      "date": "2026-08-14"
+      "title": "2026-06-29 / 中猫危机",
+      "url": "https://blog.xinshijiededa.men/daily/64/",
+      "date": "2026-08-15"
+    }
+  ],
+  "2020": [
+    {
+      "name": "不凡",
+      "year": "20",
+      "title": "15元买的爱国者有线耳机居然有HiFi，音质比296元的vivo蓝牙耳机好太多了",
+      "url": "https://www.bufanz.com/20260815805.html",
+      "date": "2026-08-15"
     },
     {
-      "name": "紫塞",
-      "year": "19",
-      "title": "从1996年的“9600bps猫”说起：顶级的企业管理，本质上是一场开源",
-      "url": "https://zisai.com/posts/management-as-open-source/",
+      "name": "呆哥",
+      "year": "20",
+      "title": "对用户“花百万”封禁说明以及论坛 私信功能 新增限制",
+      "url": "https://www.dalao.net/thread-62510.htm",
       "date": "2026-08-14"
     }
   ],
@@ -147,27 +158,18 @@ const latestArticlesByYear = {
     {
       "name": "DevNow",
       "year": "21",
-      "title": "Product Hunt 每日热榜 | 2026-08-14",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-08-14",
-      "date": "2026-08-14"
-    }
-  ],
-  "2023": [
-    {
-      "name": "鹿泽",
-      "year": "23",
-      "title": "如何在零点击时代提升语义搜索：2026年专家SEO技巧",
-      "url": "https://www.bailuze.com/24333.html",
-      "date": "2026-08-14"
+      "title": "Product Hunt 每日热榜 | 2026-08-15",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-08-15",
+      "date": "2026-08-15"
     }
   ],
   "2025": [
     {
       "name": "Marcus",
       "year": "25",
-      "title": "制造消费",
-      "url": "https://www.immarcus.com/blog/manufactured-spending",
-      "date": "2026-08-14"
+      "title": "Hyper-tapping",
+      "url": "https://www.immarcus.com/blog/hyper-tapping",
+      "date": "2026-08-15"
     }
   ]
 };
