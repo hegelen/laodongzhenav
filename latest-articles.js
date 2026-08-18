@@ -1,175 +1,181 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 8/17/2026, 7:38:49 PM
+// 抓取日期: 8/18/2026, 7:38:46 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
-  "2002": [
+  "2000": [
     {
-      "name": "seth",
-      "year": "02",
-      "title": "Consider the AI tear down",
-      "url": "https://seths.blog/2026/08/consider-the-ai-tear-down/",
-      "date": "2026-08-17"
+      "name": "Luca",
+      "year": "00",
+      "title": "新加坡的 OneService 是什么？",
+      "url": "https://wlj.me/posts/singapore-oneservice/",
+      "date": "2026-08-18"
+    }
+  ],
+  "2001": [
+    {
+      "name": "nc-show",
+      "year": "01",
+      "title": "言泉输入法：原创一键补全",
+      "url": "https://nicrosoft.net/blog/2343/",
+      "date": "2026-08-18"
+    }
+  ],
+  "2003": [
+    {
+      "name": "爱情在线",
+      "year": "03",
+      "title": "折腾AI写代码一个月",
+      "url": "https://aqzx.com/blog_view.asp?id=67",
+      "date": "2026-08-18"
     }
   ],
   "2004": [
     {
-      "name": "TonyBai",
+      "name": "我的天",
       "year": "04",
-      "title": "Go 语言史上“钉子户”提案重启：一场关于 string(int) 的 14 年拉锯战",
-      "url": "https://tonybai.com/2026/08/17/go-issue-3939-string-int-proposal-revival/",
-      "date": "2026-08-16"
+      "title": "确诊一条内存坏了",
+      "url": "http://www.xlanda.net/posts/22407",
+      "date": "2026-08-18"
     },
     {
       "name": "小猪的窝",
       "year": "04",
-      "title": "尝试用手机写作",
-      "url": "https://ezo.biz/Diary/1584.html",
-      "date": "2026-08-17"
+      "title": "主题",
+      "url": "https://ezo.biz/Diary/1585.html",
+      "date": "2026-08-18"
     }
   ],
   "2005": [
     {
       "name": "ACEVS",
       "year": "05",
-      "title": "乐趣",
-      "url": "https://acevs.com/5173/",
-      "date": "2026-08-17"
+      "title": "魔兽争霸白玩这么多年？这些很多都不知道。",
+      "url": "https://acevs.com/5175/",
+      "date": "2026-08-18"
     }
   ],
-  "2006": [
+  "2007": [
     {
-      "name": "joojen Zhou",
-      "year": "06",
-      "title": "2026年7月房地产数据",
-      "url": "https://joojen.com/archives/9088.html",
-      "date": "2026-08-17"
+      "name": "朱小呆",
+      "year": "07",
+      "title": "从七千到两千万：《牛来》爆火，不是电影好看，只是全网玩梗的闹剧",
+      "url": "https://zhujay.com/blog/blog_detail.html?id=1272",
+      "date": "2026-08-18"
     }
   ],
   "2009": [
     {
-      "name": "标点符",
+      "name": "异数",
       "year": "09",
-      "title": "Claude Design 系统提示词学习",
-      "url": "https://www.biaodianfu.com/claude-design-sys-prompt/",
-      "date": "2026-08-17"
+      "title": "真题 || 2019年真题【多厅电影院设计】",
+      "url": "https://www.yishu.pro/237.html",
+      "date": "2026-08-18"
+    }
+  ],
+  "2012": [
+    {
+      "name": "王鑫",
+      "year": "12",
+      "title": "AI做网站之升级优化博客",
+      "url": "https://wonse.info/update-typecho1-30.html",
+      "date": "2026-08-18"
     }
   ],
   "2013": [
     {
       "name": "林羽凡",
       "year": "13",
-      "title": "这几年最可惜的两个产品（我接触的）",
-      "url": "https://www.linyufan.com/post/5957",
-      "date": "2026-08-17"
-    },
-    {
-      "name": "小z",
-      "year": "13",
-      "title": "关于AI智能体开发的一些思路和经验分享",
-      "url": "https://blog.xiaoz.org/archives/23349",
-      "date": "2026-08-17"
-    }
-  ],
-  "2015": [
-    {
-      "name": "WordPress 知识宝库",
-      "year": "15",
-      "title": "워드프레스 글쓴이 이름 변경 방법",
-      "url": "https://www.thewordcracker.com/basic/%ec%9b%8c%eb%93%9c%ed%94%84%eb%a0%88%ec%8a%a4-%ea%b8%80%ec%93%b4%ec%9d%b4-%ec%9d%b4%eb%a6%84-%eb%b3%80%ea%b2%bd-%eb%b0%a9%eb%b2%95/",
-      "date": "2026-08-17"
+      "title": "今日减肥餐记录-2026.8.18",
+      "url": "https://www.linyufan.com/post/5959",
+      "date": "2026-08-18"
     }
   ],
   "2017": [
     {
-      "name": "科学空间",
-      "year": "17",
-      "title": "流形上的最速下降：7. Stiefel的解析解",
-      "url": "https://kexue.fm/archives/11864",
-      "date": "2026-08-17"
-    },
-    {
       "name": "碎言",
       "year": "17",
-      "title": "博客阅读随感20260817",
-      "url": "https://www.suiyan.cc/blog/20260817124015",
-      "date": "2026-08-17"
-    }
-  ],
-  "2018": [
-    {
-      "name": "运维咖啡吧",
-      "year": "18",
-      "title": "哇咔财务管家，正式上架 Apple Store 啦",
-      "url": "https://blog.ops-coffee.com/fire/wakaka-finance-app-listed-app-store.html",
-      "date": "2026-08-17"
+      "title": "我的帽子哪去了？",
+      "url": "https://www.suiyan.cc/blog/20260818181408",
+      "date": "2026-08-18"
     },
     {
-      "name": "秋葵",
-      "year": "18",
-      "title": "无标题",
-      "url": "https://qiukui-note.happy365.day/20260817/undefined/",
-      "date": "2026-08-17"
+      "name": "串串狗小刊",
+      "year": "17",
+      "title": "计算机系出路就是尽早使用 AI 去积累！",
+      "url": "https://www.ccgxk.com/codeother/850.html",
+      "date": "2026-08-18"
+    },
+    {
+      "name": "秋风于渭水",
+      "year": "17",
+      "title": "宝塔面板升级 13.0.0 后 Nginx 免费防火墙全是 undefined？替换两个文件就好",
+      "url": "https://www.tjsky.net/tutorial/1792",
+      "date": "2026-08-18"
     }
   ],
   "2019": [
     {
-      "name": "流情",
+      "name": "So!azy",
       "year": "19",
-      "title": "一个人的烤肉",
-      "url": "https://liuqingwushui.top/archives/186/",
-      "date": "2026-08-17"
+      "title": "不该露怯的人",
+      "url": "https://blog.solazy.me/20260818/",
+      "date": "2026-08-18"
     }
   ],
   "2020": [
     {
-      "name": "資工小廢物 - JN",
+      "name": "yihong0618",
       "year": "20",
-      "title": "人生的意義（2026）",
-      "url": "https://blog.giveanornot.com/the-meaning-of-life-2026/",
-      "date": "2026-08-17"
-    },
-    {
-      "name": "不凡",
-      "year": "20",
-      "title": "WordPress网站出现大量非正常访问记录、访问后台登录地址",
-      "url": "https://www.bufanz.com/20260817814.html",
-      "date": "2026-08-17"
-    },
-    {
-      "name": "呆哥",
-      "year": "20",
-      "title": "友链新增个人链接归属，广告归属、UID自助定制",
-      "url": "https://www.dalao.net/thread-62635.htm",
-      "date": "2026-08-17"
+      "title": "来，喝一杯",
+      "url": "https://blog.yihong0618.me/posts/issue-346/",
+      "date": "2026-08-18"
     }
   ],
   "2021": [
     {
-      "name": "记录生活",
+      "name": "DevNow",
       "year": "21",
-      "title": "DeepSeek 涨价之后，普通个人开发者有点难受",
-      "url": "https://9sb.net/archives/after-deepseeks-price-increase-ordinary-individual-developers-feel-a-bit-uncomfortable.html",
-      "date": "2026-08-17"
+      "title": "Product Hunt 每日热榜 | 2026-08-18",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-08-18",
+      "date": "2026-08-18"
+    }
+  ],
+  "2022": [
+    {
+      "name": "晴雀堂",
+      "year": "22",
+      "title": "日中见斗",
+      "url": "https://blog.verynb.net/posts/41617.html",
+      "date": "2026-08-18"
     }
   ],
   "2023": [
     {
       "name": "鹿泽",
       "year": "23",
-      "title": "SaaS SEO：AI算法时代的有效方法",
-      "url": "https://www.bailuze.com/24348.html",
-      "date": "2026-08-17"
+      "title": "如何选择排名的关键词汇，以便在本地市场获得可见度？",
+      "url": "https://www.bailuze.com/24350.html",
+      "date": "2026-08-18"
+    }
+  ],
+  "2024": [
+    {
+      "name": "姓王者",
+      "year": "24",
+      "title": "EdgeOne 与 Cloudflare 海内外分流 CDN",
+      "url": "https://xingwangzhe.fun/posts/edgeone-cloudflare-split-cdn/",
+      "date": "2026-08-18"
     }
   ],
   "2025": [
     {
       "name": "Marcus",
       "year": "25",
-      "title": "写博客与祷告",
-      "url": "https://www.immarcus.com/blog/blog-and-prayer",
-      "date": "2026-08-17"
+      "title": "数学的精髓不是对错",
+      "url": "https://www.immarcus.com/blog/correctness-is-not-the-essence-of-math",
+      "date": "2026-08-18"
     }
   ]
 };
