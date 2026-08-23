@@ -1,175 +1,175 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 8/22/2026, 7:34:21 PM
+// 抓取日期: 8/23/2026, 7:30:48 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
-  "2000": [
-    {
-      "name": "Luca",
-      "year": "00",
-      "title": "试画人物两天自嘲翻车",
-      "url": "https://wlj.me/notes/sp-note-20260822-180224/",
-      "date": "2026-08-22"
-    }
-  ],
   "2004": [
-    {
-      "name": "我的天",
-      "year": "04",
-      "title": "屡屡快递撞板",
-      "url": "http://www.xlanda.net/posts/22415",
-      "date": "2026-08-22"
-    },
     {
       "name": "小猪的窝",
       "year": "04",
-      "title": "微醺",
-      "url": "https://ezo.biz/Diary/1600.html",
-      "date": "2026-08-22"
+      "title": "痛风",
+      "url": "https://ezo.biz/Diary/1606.html",
+      "date": "2026-08-23"
     },
     {
       "name": "TonyBai",
       "year": "04",
-      "title": "Rust官方砸半年时间访谈70+人：学Rust到底卡在哪，AI又帮上了多少忙？",
-      "url": "https://tonybai.com/2026/08/22/rust-official-learning-rust-journey/",
-      "date": "2026-08-21"
+      "title": "ACM专访Russ Cox：管理者若不谨慎，AI agent会变成“终极战术龙卷风”",
+      "url": "https://tonybai.com/2026/08/23/russ-cox-acm-interview-tactical-tornado-ai-agent-warning/",
+      "date": "2026-08-22"
+    },
+    {
+      "name": "我的天",
+      "year": "04",
+      "title": "两条胜创内存合体",
+      "url": "http://www.xlanda.net/posts/22417",
+      "date": "2026-08-23"
     }
   ],
   "2005": [
     {
-      "name": "ACEVS",
+      "name": "王志勇",
       "year": "05",
-      "title": "碎片2026年8月22日",
-      "url": "https://acevs.com/5183/",
-      "date": "2026-08-22"
+      "title": "https利弊(3)：https延迟和生态",
+      "url": "http://www.auiou.com/relevant/00002184.jsp",
+      "date": "2026-08-23"
     }
   ],
   "2007": [
     {
-      "name": "树下语",
+      "name": "不靠谱颜论",
       "year": "07",
-      "title": "最近干了点啥？",
-      "url": "https://yishu-life.com/index.php/archives/552.html",
-      "date": "2026-08-22"
-    }
-  ],
-  "2008": [
-    {
-      "name": "军",
-      "year": "08",
-      "title": "抓娃娃就是快乐啊",
-      "url": "https://me.xu19.com/summer-vacation-taking-my-daughter-to-wanda-department-store-claw-machine-is-just-happiness/",
-      "date": "2026-08-22"
-    }
-  ],
-  "2009": [
-    {
-      "name": "标点符",
-      "year": "09",
-      "title": "更好的 Node.js 包管理工具PNPM",
-      "url": "https://www.biaodianfu.com/pnpm/",
-      "date": "2026-08-22"
-    },
-    {
-      "name": "老张",
-      "year": "09",
-      "title": "Obsidian 笔记同步插件-Fast Note Sync For Obsidian",
-      "url": "https://laozhang.org/archives/4317.html",
-      "date": "2026-08-22"
+      "title": "智商有上限吗？",
+      "url": "https://yanlinlin.cn/2026/08/23/iq-ceiling-and-normal-distribution/",
+      "date": "2026-08-23"
     }
   ],
   "2012": [
     {
-      "name": "水拍石",
+      "name": "Tokin",
       "year": "12",
-      "title": "博客与生活",
-      "url": "https://www.leitao.cn/10693.html",
-      "date": "2026-08-22"
+      "title": "10ms 魔咒 —— PBKDF2 降档与 HMAC Pepper 安全加固",
+      "url": "https://biji.io/2026/5664.html",
+      "date": "2026-08-23"
+    }
+  ],
+  "2013": [
+    {
+      "name": "林羽凡",
+      "year": "13",
+      "title": "今日减肥餐记录-2026.8.23",
+      "url": "https://www.linyufan.com/post/5968",
+      "date": "2026-08-23"
+    }
+  ],
+  "2015": [
+    {
+      "name": "WordPress 知识宝库",
+      "year": "15",
+      "title": "워드프레스 7.1 탭(Tabs) 블록 사용법",
+      "url": "https://www.thewordcracker.com/basic/%ec%9b%8c%eb%93%9c%ed%94%84%eb%a0%88%ec%8a%a4-7-1-%ed%83%adtabs-%eb%b8%94%eb%a1%9d-%ec%82%ac%ec%9a%a9%eb%b2%95/",
+      "date": "2026-08-23"
+    }
+  ],
+  "2016": [
+    {
+      "name": "太隐",
+      "year": "16",
+      "title": "马克思的镜子",
+      "url": "https://wangyurui.com/posts/ma-ke-si-de-jing-zi-fa8ff36d",
+      "date": "2026-08-23"
     }
   ],
   "2017": [
     {
       "name": "串串狗小刊",
       "year": "17",
-      "title": "未来，AI 代码审查 会相当相当重要！",
-      "url": "https://www.ccgxk.com/emlog_dev/855.html",
-      "date": "2026-08-22"
+      "title": "盘点下常用的几个 AI 本地部署工具",
+      "url": "https://www.ccgxk.com/emlog_dev/856.html",
+      "date": "2026-08-23"
+    },
+    {
+      "name": "碎言",
+      "year": "17",
+      "title": "骨科病房『趣事』",
+      "url": "https://www.suiyan.cc/blog/20260823081327",
+      "date": "2026-08-23"
+    }
+  ],
+  "2019": [
+    {
+      "name": "吴诗涛",
+      "year": "19",
+      "title": "万物皆计算",
+      "url": "https://shitao5.org/excerpt/wwjjs/",
+      "date": "2026-08-23"
     }
   ],
   "2020": [
     {
       "name": "不凡",
       "year": "20",
-      "title": "京东快递一周给我打两次电话，推荐我寄快递选京东，最后我还是选经常用的申通快递",
-      "url": "https://www.bufanz.com/20260822832.html",
-      "date": "2026-08-22"
+      "title": "原商铺空置超过三年没租出去，房东太轴了，附近商铺都降了他还不降",
+      "url": "https://www.bufanz.com/20260823837.html",
+      "date": "2026-08-23"
+    },
+    {
+      "name": "呆哥",
+      "year": "20",
+      "title": "与 DeepSeek 玩修仙游戏",
+      "url": "https://www.dalao.net/thread-62908.htm",
+      "date": "2026-08-23"
     }
   ],
   "2021": [
     {
-      "name": "DevNow",
+      "name": "喵喵小站・博客志",
       "year": "21",
-      "title": "Product Hunt 每日热榜 | 2026-08-22",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-08-22",
-      "date": "2026-08-22"
-    },
-    {
-      "name": "记录生活",
-      "year": "21",
-      "title": "核心影视优化记录：视频源从时好时坏到稳定能看",
-      "url": "https://9sb.net/archives/core-film-and-television-optimization-record-video-sources-from-good-to-bad-to-stable-for-viewing.html",
-      "date": "2026-08-22"
+      "title": "说说：#2026-08-23 18:41",
+      "url": "https://www.mmbkz.cn/8925d44.html",
+      "date": "2026-08-23"
     }
   ],
   "2023": [
     {
-      "name": "按钮与磁带",
+      "name": "小野",
       "year": "23",
-      "title": "空枪",
-      "url": "https://jefftay.com/movies/v-2026",
+      "title": "nProtect BlackCipher 反作弊分析",
+      "url": "https://lb5.net/268.html",
       "date": "2026-08-23"
     },
     {
-      "name": "Siwei Li",
+      "name": "按钮与磁带",
       "year": "23",
-      "title": "机场推荐",
-      "url": "https://siwei.li/wgetcloud-yizhihongxing-review/",
-      "date": "2026-08-22"
+      "title": "从 WordPress 到 Quartz",
+      "url": "https://jefftay.com/blog-posts/from-wordpress-to-quartz",
+      "date": "2026-08-24"
+    },
+    {
+      "name": "枫林灯语",
+      "year": "23",
+      "title": "业余频段的对讲机，不能再商业应用了",
+      "url": "https://blog.mfwt.top/index.php/archives/1550/",
+      "date": "2026-08-23"
     }
   ],
   "2024": [
     {
       "name": "三叔",
       "year": "24",
-      "title": "codex官方下载地址",
-      "url": "https://www.sanshu.cn/arc/278.html",
-      "date": "2026-08-22"
-    },
-    {
-      "name": "姓王者",
-      "year": "24",
-      "title": "我用 Is Agentic 给博客做了一次体检",
-      "url": "https://xingwangzhe.fun/posts/is-agentic-blog-check/",
-      "date": "2026-08-22"
+      "title": "台风到底往哪走？我做了一个能“看懂”的台风追踪网站",
+      "url": "https://www.sanshu.cn/arc/280.html",
+      "date": "2026-08-23"
     }
   ],
   "2025": [
     {
       "name": "Marcus",
       "year": "25",
-      "title": "Final Fantasy XII",
-      "url": "https://www.immarcus.com/blog/final-fantasy-xii",
-      "date": "2026-08-22"
-    }
-  ],
-  "2026": [
-    {
-      "name": "一个博客",
-      "year": "26",
-      "title": "说说：FC27 邝兆镭（Kuang Zhaolei）球员卡，最大亮点就是速度…",
-      "url": "https://yigeboke.com/shuoshuo.php#shuo_38",
-      "date": "2026-08-22"
+      "title": "2026.08.23 博客阅读周记",
+      "url": "https://www.immarcus.com/blog/weekly-20260823",
+      "date": "2026-08-23"
     }
   ]
 };
