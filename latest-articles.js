@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 8/24/2026, 7:40:57 PM
+// 抓取日期: 8/25/2026, 7:44:19 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -8,172 +8,168 @@ const latestArticlesByYear = {
     {
       "name": "Luca",
       "year": "00",
-      "title": "日拱一卒的菜鸟",
-      "url": "https://wlj.me/notes/sp-note-20260824-224652/",
-      "date": "2026-08-24"
+      "title": "随机涂鸦丑化陌生姑娘",
+      "url": "https://wlj.me/notes/sp-note-20260825-232900/",
+      "date": "2026-08-25"
     }
   ],
   "2002": [
     {
-      "name": "不吐不快",
+      "name": "seth",
       "year": "02",
-      "title": "为雾凇拼音添加中英互译释义",
-      "url": "https://mianao.info/add-chinese-english-translation-to-rime-ice/",
-      "date": "2026-08-24"
-    }
-  ],
-  "2003": [
-    {
-      "name": "愆伏",
-      "year": "03",
-      "title": "在浙大的走廊里，我看见了1947年的爷爷",
-      "url": "https://www.tortorse.com/archives/zhejiang-university-1947-grandfather/",
-      "date": "2026-08-24"
-    },
-    {
-      "name": "王通",
-      "year": "03",
-      "title": "王通：个人使用AI的五个境界：多数人还停留在第一层",
-      "url": "https://www.ufoer.com/post/14469.html",
-      "date": "2026-08-24"
+      "title": "On the verge of done",
+      "url": "https://seths.blog/2026/08/on-the-verge-of-done/",
+      "date": "2026-08-25"
     }
   ],
   "2004": [
     {
-      "name": "我的天",
+      "name": "Jake",
       "year": "04",
-      "title": "被垃圾轰炸",
-      "url": "http://www.xlanda.net/posts/22419",
+      "title": "从一次模型调用到生产治理：OwlVigil Go SDK 实战",
+      "url": "https://jaketao.com/owlvigil-sdk-practices",
+      "date": "2026-08-25"
+    },
+    {
+      "name": "TonyBai",
+      "year": "04",
+      "title": "刚被 SpaceX 收购，Cursor 就推出自研 Git 托管硬刚 GitHub，Shopify CEO 一周末就把它复刻了",
+      "url": "https://tonybai.com/2026/08/25/cursor-continuity-git-walgit-spacex/",
       "date": "2026-08-24"
     },
     {
-      "name": "小猪的窝",
+      "name": "我的天",
       "year": "04",
-      "title": "眼神",
-      "url": "https://ezo.biz/Diary/1608.html",
-      "date": "2026-08-24"
+      "title": "二手佳明绿豆芽到手",
+      "url": "http://www.xlanda.net/posts/22422",
+      "date": "2026-08-25"
     }
   ],
   "2005": [
     {
       "name": "ACEVS",
       "year": "05",
-      "title": "试玩三国志5",
-      "url": "https://acevs.com/5187/",
-      "date": "2026-08-24"
+      "title": "碎片2026年8月25日",
+      "url": "https://acevs.com/5189/",
+      "date": "2026-08-25"
     }
   ],
   "2006": [
     {
-      "name": "忘记了回忆",
+      "name": "傻猫",
       "year": "06",
-      "title": "涂油漆",
-      "url": "https://ltmltm.cn/bk/1491.html",
-      "date": "2026-08-24"
+      "title": "Apache Maka：一个面向真实工作的、本地优先的 AI Agent 工作空间 ",
+      "url": "https://www.samool.com/52703.html",
+      "date": "2026-08-25"
+    }
+  ],
+  "2007": [
+    {
+      "name": "无标题文档",
+      "year": "07",
+      "title": "解决 macOS 下 iPhone 镜像反复连接失败的问题",
+      "url": "https://www.gracecode.com/posts/3209.html",
+      "date": "2026-08-25"
+    }
+  ],
+  "2013": [
+    {
+      "name": "林羽凡",
+      "year": "13",
+      "title": "在家自制能辣哭小朋友的麻辣片",
+      "url": "https://www.linyufan.com/post/5971",
+      "date": "2026-08-25"
     },
     {
-      "name": "随风沐虐",
-      "year": "06",
-      "title": "阿里云免费 DNS 解析量超限怎么办？",
-      "url": "https://www.munue.com/813.html",
-      "date": "2026-08-24"
+      "name": "卡瓦邦噶",
+      "year": "13",
+      "title": "Ingress 流量整形",
+      "url": "https://www.kawabangga.com/posts/7376",
+      "date": "2026-08-25"
     }
   ],
-  "2008": [
+  "2014": [
     {
-      "name": "有氧呼吸",
-      "year": "08",
-      "title": "一个极简的家庭微博客系统",
-      "url": "https://www.oxy.one/2026/08/blog-post.html",
-      "date": "2026-08-24"
-    }
-  ],
-  "2009": [
+      "name": "缙哥哥",
+      "year": "14",
+      "title": "WorkBuddy混元Hy3月底限免结束，用GLM送的2亿Token平替",
+      "url": "https://www.dujin.org/23823.html",
+      "date": "2026-08-25"
+    },
     {
-      "name": "标点符",
-      "year": "09",
-      "title": "深度学习激活函数：从 Sigmoid 到 SwiGLU",
-      "url": "https://www.biaodianfu.com/deep-learning-activation-functions/",
-      "date": "2026-08-24"
+      "name": "很少明白",
+      "year": "14",
+      "title": "2026-08-25",
+      "url": "https://p0werdown.com/posts/some-recent-musings-2026-08-25",
+      "date": "2026-08-25"
     }
   ],
   "2015": [
     {
-      "name": "网工格物",
+      "name": "WordPress 知识宝库",
       "year": "15",
-      "title": "PVE 超融合基础设施 - 3.PVE 配置分布式共享存储Ceph",
-      "url": "https://songxwn.com/PVE-HCI-3/",
-      "date": "2026-08-24"
-    }
-  ],
-  "2017": [
-    {
-      "name": "串串狗小刊",
-      "year": "17",
-      "title": "开发 AI 应用，需要注意的 6 件事",
-      "url": "https://www.ccgxk.com/emlog_dev/857.html",
-      "date": "2026-08-24"
+      "title": "순수익 100억을 달성한 알파남 신간: 『온라인 건물주의 정석 기본편』 소개",
+      "url": "https://www.thewordcracker.com/blog/%ec%8b%a0%ea%b0%84-%ec%98%a8%eb%9d%bc%ec%9d%b8-%ea%b1%b4%eb%ac%bc%ec%a3%bc%ec%9d%98-%ec%a0%95%ec%84%9d-%ea%b8%b0%eb%b3%b8%ed%8e%b8-%ec%86%8c%ea%b0%9c/",
+      "date": "2026-08-25"
     }
   ],
   "2019": [
     {
-      "name": "流情",
+      "name": "herman",
       "year": "19",
-      "title": "观《去你的岛》",
-      "url": "https://liuqingwushui.top/archives/188/",
-      "date": "2026-08-24"
+      "title": "Extending life perception",
+      "url": "https://herman.bearblog.dev/extending-life-perception/",
+      "date": "2026-08-25"
+    },
+    {
+      "name": "吴诗涛",
+      "year": "19",
+      "title": "小区里的流浪猫",
+      "url": "https://shitao5.org/posts/stray-cats-in-the-neighborhood/",
+      "date": "2026-08-25"
     }
   ],
   "2020": [
     {
-      "name": "Battle Le",
+      "name": "不凡",
       "year": "20",
-      "title": "香港汇丰 Pulse 银联双币钻石信用卡",
-      "url": "https://battlele.com/hsbc-pulse/",
-      "date": "2026-08-24"
-    },
-    {
-      "name": "初然忆",
-      "year": "20",
-      "title": "BSide:Olivia Lin把资源释放到了C盘",
-      "url": "https://www.imcry.vip/post/2026-8-24-1046/",
-      "date": "2026-08-24"
+      "title": "菜鸟裹裹“特惠寄”便宜3块多，从四川到浙江运输了五天才送到",
+      "url": "https://www.bufanz.com/20260825842.html",
+      "date": "2026-08-25"
     }
   ],
   "2021": [
     {
       "name": "DevNow",
       "year": "21",
-      "title": "Product Hunt 每日热榜 | 2026-08-24",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-08-24",
-      "date": "2026-08-24"
+      "title": "Product Hunt 每日热榜 | 2026-08-25",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-08-25",
+      "date": "2026-08-25"
+    },
+    {
+      "name": "WSH",
+      "year": "21",
+      "title": "一次循环呼吸实验",
+      "url": "https://www.wsh233.cn/post/一次循环呼吸实验",
+      "date": "2026-08-25"
     }
   ],
   "2023": [
     {
-      "name": "按钮与磁带",
+      "name": "鹿泽",
       "year": "23",
-      "title": "从 WordPress 到 Quartz",
-      "url": "https://jefftay.com/blog-posts/from-wordpress-to-quartz",
-      "date": "2026-08-24"
+      "title": "什么是转化率？",
+      "url": "https://www.bailuze.com/24374.html",
+      "date": "2026-08-25"
     }
   ],
   "2025": [
     {
       "name": "Marcus",
       "year": "25",
-      "title": "诈骗网站 YouTube.com",
-      "url": "https://www.immarcus.com/blog/youtube-com-a-scam-website",
-      "date": "2026-08-24"
-    }
-  ],
-  "2026": [
-    {
-      "name": "周阿源",
-      "year": "26",
-      "title": "踩坑记录｜产品视频背景音乐侵权，收到线上调解通知",
-      "url": "https://zhouayuan.com/post/58.html",
-      "date": "2026-08-24"
+      "title": "GPU 租赁指数期货",
+      "url": "https://www.immarcus.com/blog/gpu-rental-index-futures",
+      "date": "2026-08-25"
     }
   ]
 };
