@@ -1,169 +1,150 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 8/28/2026, 2:34:46 AM
-// 只抓取最近14天内的文章，共 20 篇
-// 目标 20 篇，实际 20 篇
+// 抓取日期: 8/29/2026, 2:12:42 AM
+// 只抓取最近14天内的文章，共 17 篇
+// 目标 20 篇，实际 17 篇
 
 const latestArticlesByYear = {
   "2000": [
     {
       "name": "Luca",
       "year": "00",
-      "title": "画画需要动脑思考",
-      "url": "https://wlj.me/notes/sp-note-20260827-234938/",
-      "date": "2026-08-27"
+      "title": "旧日新装再探omarchy",
+      "url": "https://wlj.me/notes/sp-note-20260828-230026/",
+      "date": "2026-08-28"
     }
   ],
   "2002": [
     {
       "name": "seth",
       "year": "02",
-      "title": "Fertilizing the weeds",
-      "url": "https://seths.blog/2026/08/we-say-we-want-a-revolution-2/",
-      "date": "2026-08-27"
+      "title": "What’s next?",
+      "url": "https://seths.blog/2026/08/whats-next-3/",
+      "date": "2026-08-28"
     }
   ],
   "2004": [
     {
-      "name": "小猪的窝",
+      "name": "TonyBai",
       "year": "04",
-      "title": "斗气车",
-      "url": "https://ezo.biz/Diary/1622.html",
-      "date": "2026-08-27"
+      "title": "你真的需要一座软件工厂吗？",
+      "url": "https://tonybai.com/2026/08/29/do-your-need-a-software-factory/",
+      "date": "2026-08-28"
     },
     {
       "name": "我的天",
       "year": "04",
-      "title": "四六级往事",
-      "url": "http://www.xlanda.net/posts/22428",
-      "date": "2026-08-28"
+      "title": "瞎扯淡",
+      "url": "http://www.xlanda.net/posts/22430",
+      "date": "2026-08-29"
     },
     {
-      "name": "Jake",
+      "name": "小猪的窝",
       "year": "04",
-      "title": "Syrovex的这两个月 – OwlVigil上线 & 融资正式启动",
-      "url": "https://jaketao.com/syrovex-two-months",
-      "date": "2026-08-27"
+      "title": "老花",
+      "url": "https://ezo.biz/Diary/1624.html",
+      "date": "2026-08-28"
     }
   ],
   "2005": [
     {
-      "name": "Gea-Suan Lin",
-      "year": "05",
-      "title": "YouTube 的 Format ID",
-      "url": "https://blog.gslin.org/archives/2026/08/28/13166/youtube-%e7%9a%84-format-id/",
-      "date": "2026-08-27"
-    },
-    {
       "name": "ACEVS",
       "year": "05",
-      "title": "碎片2026年8月27日",
-      "url": "https://acevs.com/5193/",
-      "date": "2026-08-27"
+      "title": "定时重启路由发现断连",
+      "url": "https://acevs.com/5195/",
+      "date": "2026-08-28"
+    },
+    {
+      "name": "Gea-Suan Lin",
+      "year": "05",
+      "title": "Python 的 httpx 的狀況",
+      "url": "https://blog.gslin.org/archives/2026/08/29/13167/python-%e7%9a%84-httpx-%e7%9a%84%e7%8b%80%e6%b3%81/",
+      "date": "2026-08-29"
     }
   ],
-  "2012": [
+  "2009": [
     {
-      "name": "Tokin",
-      "year": "12",
-      "title": "从多级缓存到 Workers Caching，资源开销骤降 98.7% 性能优化实践",
-      "url": "https://biji.io/2026/6091.html",
-      "date": "2026-08-27"
+      "name": "张鑫旭",
+      "year": "09",
+      "title": "超级Web特性HTML-in-Canvas初体验",
+      "url": "https://www.zhangxinxu.com/wordpress/2026/08/html-in-canvas/",
+      "date": "2026-08-28"
     }
   ],
   "2013": [
     {
-      "name": "小z",
+      "name": "林羽凡",
       "year": "13",
-      "title": "成都普通家用轿车：车检流程分享",
-      "url": "https://blog.xiaoz.org/archives/23464",
-      "date": "2026-08-27"
+      "title": "林羽凡笔记系统增加了手机号验证相关功能，增加了邮箱注册账号功能",
+      "url": "https://www.linyufan.com/post/5975",
+      "date": "2026-08-28"
     }
   ],
-  "2014": [
+  "2015": [
     {
-      "name": "缙哥哥",
-      "year": "14",
-      "title": "「秘塔回响」纯粹的 Windows 语音 AI 输入法，仅7M大小",
-      "url": "https://www.dujin.org/23830.html",
-      "date": "2026-08-27"
+      "name": "满心",
+      "year": "15",
+      "title": "Deepseek Harness有点儿东西",
+      "url": "https://zhoutian.com/394.html",
+      "date": "2026-08-28"
+    },
+    {
+      "name": "WordPress 知识宝库",
+      "year": "15",
+      "title": "Vultr HestiaCP 워드프레스 SSL 보안 인증서 오류 해결 방법",
+      "url": "https://www.thewordcracker.com/intermediate/vultr-hestiacp-ssl-%ec%9d%b8%ec%a6%9d%ec%84%9c-%ec%98%a4%eb%a5%98-%ed%95%b4%ea%b2%b0/",
+      "date": "2026-08-28"
     }
   ],
   "2017": [
     {
+      "name": "碎言",
+      "year": "17",
+      "title": "博客阅读随感 关于宠物",
+      "url": "https://www.suiyan.cc/blog/20260828160554",
+      "date": "2026-08-28"
+    },
+    {
       "name": "串串狗小刊",
       "year": "17",
-      "title": "Web 出海之 8 个帮你找到赚钱机会的神器！",
-      "url": "https://www.ccgxk.com/codeother/861.html",
-      "date": "2026-08-27"
+      "title": "牛来大模型 Ox Alpha 此前是怎么被发现是 GLM 的？",
+      "url": "https://www.ccgxk.com/emlog_dev/862.html",
+      "date": "2026-08-28"
+    }
+  ],
+  "2019": [
+    {
+      "name": "新世界的大门",
+      "year": "19",
+      "title": "2026-07-06 / 移动路由器",
+      "url": "https://blog.xinshijiededa.men/daily/69/",
+      "date": "2026-08-28"
     }
   ],
   "2020": [
     {
-      "name": "初然忆",
-      "year": "20",
-      "title": "我差点被留在了那一天",
-      "url": "https://www.imcry.vip/post/2026-8-27-2005/",
-      "date": "2026-08-27"
-    },
-    {
       "name": "不凡",
       "year": "20",
-      "title": "四川近几天再次重现橙色高温，一天比一天热",
-      "url": "https://www.bufanz.com/20260827846.html",
-      "date": "2026-08-27"
-    },
+      "title": "【不凡摄影作品 | 2026.8.29】",
+      "url": "https://www.bufanz.com/20260829851.html",
+      "date": "2026-08-29"
+    }
+  ],
+  "2021": [
     {
-      "name": "yihong0618",
-      "year": "20",
-      "title": "新生代 VS 老欧洲",
-      "url": "https://blog.yihong0618.me/posts/issue-347/",
-      "date": "2026-08-27"
-    },
-    {
-      "name": "我不是咕咕鸽",
-      "year": "20",
-      "title": "【好玩儿的 Docker 项目】10 分钟搭建一个火狐加密文件外链自托管版本——Send，对方打开浏览器就能下，不用装 App",
-      "url": "https://blog.laoda.de/archives/docker-compose-install-send",
-      "date": "2026-08-27"
+      "name": "DevNow",
+      "year": "21",
+      "title": "Product Hunt 每日热榜 | 2026-08-28",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-08-28",
+      "date": "2026-08-28"
     }
   ],
   "2023": [
     {
-      "name": "小野",
-      "year": "23",
-      "title": "Bandizip 签名程序 RegDll 实现 DLL 白加黑加载",
-      "url": "https://lb5.net/271.html",
-      "date": "2026-08-27"
-    },
-    {
-      "name": "按钮与磁带",
-      "year": "23",
-      "title": "刷新",
-      "url": "https://jefftay.com/blog-posts/refresh",
-      "date": "2026-08-28"
-    },
-    {
-      "name": "无敌",
-      "year": "23",
-      "title": "个人知识工程（二）：从认知结构到知识工程——为什么知识需要被结构化？",
-      "url": "https://blog.tangwudi.com/technology/homedatacenter14664/",
-      "date": "2026-08-28"
-    },
-    {
       "name": "鹿泽",
       "year": "23",
-      "title": "为什么仅靠有帮助的内容已不足以实现SEO成功？",
-      "url": "https://www.bailuze.com/24381.html",
-      "date": "2026-08-28"
-    }
-  ],
-  "2025": [
-    {
-      "name": "Marcus",
-      "year": "25",
-      "title": "飞机上当了电灯泡",
-      "url": "https://www.immarcus.com/blog/third-wheel-on-the-plane",
-      "date": "2026-08-28"
+      "title": "必须优化的12个关键页面SEO元素",
+      "url": "https://www.bailuze.com/24382.html",
+      "date": "2026-08-29"
     }
   ]
 };
