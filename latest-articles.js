@@ -1,175 +1,175 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 8/30/2026, 10:01:00 PM
+// 抓取日期: 8/31/2026, 11:16:56 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
+  "2000": [
+    {
+      "name": "Luca",
+      "year": "00",
+      "title": "羡慕他人创意反观自身",
+      "url": "https://wlj.me/notes/sp-note-20260831-220624/",
+      "date": "2026-08-31"
+    }
+  ],
   "2002": [
     {
       "name": "seth",
       "year": "02",
-      "title": "Taking a shot/wasting a slot",
-      "url": "https://seths.blog/2026/08/taking-a-shot-wasting-a-slot/",
-      "date": "2026-08-30"
+      "title": "Ten steps on the road to efficient",
+      "url": "https://seths.blog/2026/08/ten-steps-on-the-road-to-efficient/",
+      "date": "2026-08-31"
     }
   ],
   "2004": [
     {
-      "name": "TonyBai",
-      "year": "04",
-      "title": "别再死磕 K8s 文档了：一个“亚马逊仓库”的比喻，把 Kubernetes 全部讲透",
-      "url": "https://tonybai.com/2026/08/30/kubernetes-warehouse-analogy-explained/",
-      "date": "2026-08-29"
-    },
-    {
       "name": "我的天",
       "year": "04",
-      "title": "我就是个修理工",
-      "url": "http://www.xlanda.net/posts/22432",
-      "date": "2026-08-30"
+      "title": "又走了一个",
+      "url": "http://www.xlanda.net/posts/22434",
+      "date": "2026-08-31"
+    },
+    {
+      "name": "小猪的窝",
+      "year": "04",
+      "title": "月志202608",
+      "url": "https://ezo.biz/Diary/202608.html",
+      "date": "2026-08-31"
+    },
+    {
+      "name": "TonyBai",
+      "year": "04",
+      "title": "一只机器鸭子，用 Rust 写了个“大脑”：拆解 Hugging Face 爆款机器人 Microduck",
+      "url": "https://tonybai.com/2026/09/01/microduck-rust-robot-brain-deep-dive/",
+      "date": "2026-08-31"
     }
   ],
   "2005": [
     {
-      "name": "Lenciel",
+      "name": "王志勇",
       "year": "05",
-      "title": "徒然歌",
-      "url": "https://lenciel.com/2026/08/useless-songs/",
-      "date": "2026-08-30"
-    },
-    {
-      "name": "ACEVS",
-      "year": "05",
-      "title": "碎片2026年8月30日",
-      "url": "https://acevs.com/5199/",
-      "date": "2026-08-30"
-    },
-    {
-      "name": "Gea-Suan Lin",
-      "year": "05",
-      "title": "用 LLM 寫了 Caddy 的 DNSBL 套件",
-      "url": "https://blog.gslin.org/archives/2026/08/30/13169/%e7%94%a8-llm-%e5%af%ab%e4%ba%86-caddy-%e7%9a%84-dnsbl-%e5%a5%97%e4%bb%b6/",
-      "date": "2026-08-29"
+      "title": "https利弊(4)：商业(大型)逻辑",
+      "url": "http://www.auiou.com/relevant/00002186.jsp",
+      "date": "2026-08-31"
     }
   ],
-  "2007": [
+  "2009": [
     {
-      "name": "树下语",
-      "year": "07",
-      "title": "烦恼的根源是自己还不够强大",
-      "url": "https://yishu-life.com/index.php/archives/553.html",
-      "date": "2026-08-30"
-    }
-  ],
-  "2011": [
-    {
-      "name": "唐巧",
-      "year": "11",
-      "title": "《估值原理》读书笔记：价格背后的游戏、责任与社会秩序",
-      "url": "https://blog.devtang.com/2026/08/30/valuation-principles-note/",
-      "date": "2026-08-30"
+      "name": "标点符",
+      "year": "09",
+      "title": "基于LLM的开源时序预测模型Lag-Llama",
+      "url": "https://www.biaodianfu.com/lag-llama/",
+      "date": "2026-08-31"
     }
   ],
   "2012": [
     {
-      "name": "水拍石",
+      "name": "Tokin",
       "year": "12",
-      "title": "休谟《人性论》导读手册",
-      "url": "https://www.leitao.cn/10774.html",
-      "date": "2026-08-30"
+      "title": "前台体验重塑 —— 从笔记动态到评论动静分离",
+      "url": "https://biji.io/2026/6092.html",
+      "date": "2026-08-31"
     }
   ],
-  "2016": [
+  "2013": [
     {
-      "name": "太隐",
-      "year": "16",
-      "title": "人生的紧要处，常常只有几步",
-      "url": "https://wangyurui.com/posts/chao-xiao-gao-jia-lin-li-jie-gao-jia-lin-cheng-w-7dae4e6f",
-      "date": "2026-08-30"
+      "name": "林羽凡",
+      "year": "13",
+      "title": "今日减肥餐记录-2026.8.30",
+      "url": "https://www.linyufan.com/post/5979",
+      "date": "2026-08-31"
     }
   ],
   "2017": [
     {
+      "name": "碎言",
+      "year": "17",
+      "title": "博客文章回应的双向选择",
+      "url": "https://www.suiyan.cc/blog/20260831211506",
+      "date": "2026-08-31"
+    },
+    {
+      "name": "科学空间",
+      "year": "17",
+      "title": "让炼丹更科学一些（八）：多阶段训练的学习率",
+      "url": "https://kexue.fm/archives/11879",
+      "date": "2026-08-31"
+    },
+    {
       "name": "串串狗小刊",
       "year": "17",
-      "title": "大白话讲讲 git 里常用的几个高级操作是怎么回事",
-      "url": "https://www.ccgxk.com/emlog_dev/865.html",
-      "date": "2026-08-30"
+      "title": "Web 出海之推荐两个外链神器！",
+      "url": "https://www.ccgxk.com/codeother/866.html",
+      "date": "2026-08-31"
     }
   ],
   "2018": [
     {
-      "name": "吖远zzy",
+      "name": "秋葵",
       "year": "18",
-      "title": "一个简单的脚本，治好了我的下载文件夹焦虑症",
-      "url": "https://www.hzv5.cn/2026/08/30/my-download-dir/",
-      "date": "2026-08-30"
+      "title": "GitHub一周热点",
+      "url": "https://qiukui-note.happy365.day/20260831/github-trends-weekly/",
+      "date": "2026-08-31"
+    },
+    {
+      "name": "运维咖啡吧",
+      "year": "18",
+      "title": "哇咔财务管家｜理财模块上线，现在记账、基金、股票、理财四合一",
+      "url": "https://blog.ops-coffee.com/fire/wakaka-bookkeeping-fund-stock-wealth.html",
+      "date": "2026-08-31"
     }
   ],
   "2019": [
     {
-      "name": "新世界的大门",
-      "year": "19",
-      "title": "2026-07-09 / ARM，隐忍",
-      "url": "https://blog.xinshijiededa.men/daily/72/",
-      "date": "2026-08-30"
-    },
-    {
       "name": "So!azy",
       "year": "19",
-      "title": "隔壁桌的暧昧学",
-      "url": "https://blog.solazy.me/20260830/",
-      "date": "2026-08-30"
+      "title": "搬工位时的三波人",
+      "url": "https://blog.solazy.me/20260831/",
+      "date": "2026-08-31"
+    }
+  ],
+  "2020": [
+    {
+      "name": "資工小廢物 - JN",
+      "year": "20",
+      "title": "LED 耳環誕生（一）：不就幾顆 LED，應該不難…吧？",
+      "url": "https://blog.giveanornot.com/led-earring-1/",
+      "date": "2026-08-31"
     }
   ],
   "2021": [
     {
       "name": "DevNow",
       "year": "21",
-      "title": "Product Hunt 每日热榜 | 2026-08-30",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-08-30",
-      "date": "2026-08-30"
+      "title": "Product Hunt 每日热榜 | 2026-08-31",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-08-31",
+      "date": "2026-08-31"
     }
   ],
   "2023": [
     {
-      "name": "枫林灯语",
+      "name": "鹿泽",
       "year": "23",
-      "title": "生活碎碎念：升学首日有感",
-      "url": "https://blog.mfwt.top/index.php/archives/1562/",
-      "date": "2026-08-30"
+      "title": "百度搜索结果页面展示新模式：提示广告搜索结果以及隐藏广告搜索结果按钮",
+      "url": "https://www.bailuze.com/25969.html",
+      "date": "2026-08-31"
     },
     {
-      "name": "按钮与磁带",
+      "name": "宗宗酱",
       "year": "23",
-      "title": "超级礼物",
-      "url": "https://jefftay.com/movies/the-ultimate-gift",
-      "date": "2026-08-30"
+      "title": "徒步重庆铁山坪环线完成",
+      "url": "https://ygz.ink/archives/5711.html",
+      "date": "2026-08-31"
     }
   ],
   "2025": [
     {
-      "name": "Marcus",
+      "name": "桃子味",
       "year": "25",
-      "title": "座次考试",
-      "url": "https://www.immarcus.com/blog/seating-audition",
-      "date": "2026-08-30"
-    }
-  ],
-  "2026": [
-    {
-      "name": "妄司逸",
-      "year": "26",
-      "title": "博客近期将迁移至WordPress动态博客！！！",
-      "url": "https://blog.flechazo.icu/2026/08/30/%E8%BF%81%E7%A7%BB%20/",
-      "date": "2026-08-30"
-    },
-    {
-      "name": "安迪",
-      "year": "26",
-      "title": "可恶的资本家",
-      "url": "https://i55.top/archives/546/",
-      "date": "2026-08-30"
+      "title": "软件工具—告别青春遗忘症：QzoneArchive v1.0.3 全平台下载与使用指南",
+      "url": "https://www.taoziwei.com/374/",
+      "date": "2026-08-31"
     }
   ]
 };
