@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 9/2/2026, 9:47:19 PM
+// 抓取日期: 9/3/2026, 9:42:49 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -8,164 +8,164 @@ const latestArticlesByYear = {
     {
       "name": "Luca",
       "year": "00",
-      "title": "每天五分钟 😄",
-      "url": "https://wlj.me/notes/sp-note-20260902-232519/",
-      "date": "2026-09-02"
+      "title": "画男性速写免吐槽",
+      "url": "https://wlj.me/notes/sp-note-20260903-105831/",
+      "date": "2026-09-03"
+    }
+  ],
+  "2002": [
+    {
+      "name": "seth",
+      "year": "02",
+      "title": "What it is like to be a dog?",
+      "url": "https://seths.blog/2026/09/what-it-is-like-to-be-a-dog/",
+      "date": "2026-09-03"
     }
   ],
   "2004": [
     {
-      "name": "Jake",
-      "year": "04",
-      "title": "OwlVigil 开源SDK：一套SDK轻松接入完整的 AI 管控能力",
-      "url": "https://jaketao.com/owlvigil-go-sdk-open-source",
-      "date": "2026-09-02"
-    },
-    {
-      "name": "小猪的窝",
-      "year": "04",
-      "title": "吵吵嚷嚷",
-      "url": "https://ezo.biz/Diary/1638.html",
-      "date": "2026-09-02"
-    },
-    {
       "name": "我的天",
       "year": "04",
-      "title": "做事",
-      "url": "http://www.xlanda.net/posts/22439",
+      "title": "请人搞卫生什么鬼",
+      "url": "http://www.xlanda.net/posts/22441",
+      "date": "2026-09-03"
+    },
+    {
+      "name": "龙哥",
+      "year": "04",
+      "title": "博客联盟导航",
+      "url": "https://long.ge/18100.html",
+      "date": "2026-09-03"
+    },
+    {
+      "name": "TonyBai",
+      "year": "04",
+      "title": "起底Uber AI软件工厂：智能体用量暴涨9.4倍，账单却纹丝不动",
+      "url": "https://tonybai.com/2026/09/03/uber-ai-software-factory-cost-optimization/",
       "date": "2026-09-02"
     }
   ],
   "2005": [
     {
-      "name": "Gea-Suan Lin",
+      "name": "王志勇",
       "year": "05",
-      "title": "經濟部的商工登記公示資料查詢系統有 permalink 了",
-      "url": "https://blog.gslin.org/archives/2026/09/02/13178/%e7%b6%93%e6%bf%9f%e9%83%a8%e7%9a%84%e5%95%86%e5%b7%a5%e7%99%bb%e8%a8%98%e5%85%ac%e7%a4%ba%e8%b3%87%e6%96%99%e6%9f%a5%e8%a9%a2%e7%b3%bb%e7%b5%b1%e6%9c%89-permalink-%e4%ba%86/",
-      "date": "2026-09-02"
+      "title": "DIY(35)：6路×2 USB全自动电脑切换器",
+      "url": "http://www.auiou.com/relevant/00002189.jsp",
+      "date": "2026-09-03"
     },
     {
       "name": "ACEVS",
       "year": "05",
-      "title": "碎片2026年9月2日",
-      "url": "https://acevs.com/5206/",
-      "date": "2026-09-02"
+      "title": "碎片2026年9月3日",
+      "url": "https://acevs.com/5208/",
+      "date": "2026-09-03"
+    },
+    {
+      "name": "Lenciel",
+      "year": "05",
+      "title": "fragments 0x0002",
+      "url": "https://lenciel.com/2026/09/fragments-0x0002/",
+      "date": "2026-09-03"
     }
   ],
   "2008": [
     {
       "name": "河马",
       "year": "08",
-      "title": "Acme.sh 手动添加SSL",
-      "url": "https://www.iamhippo.com/2026-09/2005.html",
-      "date": "2026-09-02"
+      "title": "腾讯云首尔测试",
+      "url": "https://www.iamhippo.com/2026-09/2010.html",
+      "date": "2026-09-03"
     }
   ],
-  "2015": [
+  "2009": [
     {
-      "name": "青山",
-      "year": "15",
-      "title": "那年盛夏，河水托住我的勇敢",
-      "url": "https://blog.yanqingshan.com/245.html",
-      "date": "2026-09-02"
+      "name": "异数",
+      "year": "09",
+      "title": "亲子 || 育儿杂记18",
+      "url": "https://www.yishu.pro/239.html",
+      "date": "2026-09-03"
     },
     {
-      "name": "WordPress 知识宝库",
-      "year": "15",
-      "title": "All-in-One WP Migration 보안 취약점 발견, 즉시 업데이트하세요",
-      "url": "https://www.thewordcracker.com/basic/all-in-one-wp-migration-%eb%b3%b4%ec%95%88-%ec%b7%a8%ec%95%bd%ec%a0%90/",
-      "date": "2026-09-02"
+      "name": "张鑫旭",
+      "year": "09",
+      "title": "别再使用IndexedDB，大文件读写就用OPFS",
+      "url": "https://www.zhangxinxu.com/wordpress/2026/09/indexdb-navigator-storage-getdirectory/",
+      "date": "2026-09-03"
     }
   ],
-  "2016": [
+  "2012": [
     {
-      "name": "幻影",
-      "year": "16",
-      "title": "我为什么写博客？",
-      "url": "https://blog.52hyjs.com/post-1288.html",
-      "date": "2026-09-02"
+      "name": "水拍石",
+      "year": "12",
+      "title": "股市横盘",
+      "url": "https://www.leitao.cn/10793.html",
+      "date": "2026-09-03"
+    }
+  ],
+  "2013": [
+    {
+      "name": "林羽凡",
+      "year": "13",
+      "title": "今天完成了微信小程序“林羽凡待办”个人资质的“虚拟支付”的功能",
+      "url": "https://www.linyufan.com/post/5987",
+      "date": "2026-09-03"
+    },
+    {
+      "name": "小z",
+      "year": "13",
+      "title": "我做了个全球 AI 简报：不刷 X，也能跟上最新 AI 动态",
+      "url": "https://blog.xiaoz.org/archives/23473",
+      "date": "2026-09-03"
     }
   ],
   "2017": [
     {
       "name": "串串狗小刊",
       "year": "17",
-      "title": "放心，蠢人是用不了 AI 的！",
-      "url": "https://www.ccgxk.com/codeother/870.html",
-      "date": "2026-09-02"
+      "title": "Web 出海胆子要大，不要焦虑",
+      "url": "https://www.ccgxk.com/codeother/871.html",
+      "date": "2026-09-03"
+    },
+    {
+      "name": "秋风于渭水",
+      "year": "17",
+      "title": "腾讯云轻量应用服务器续费1折：老用户难得比新用户便宜的活动",
+      "url": "https://www.tjsky.net/news/1895",
+      "date": "2026-09-03"
     }
   ],
   "2019": [
     {
-      "name": "流情",
+      "name": "吴诗涛",
       "year": "19",
-      "title": "相册模块优化",
-      "url": "https://liuqingwushui.top/archives/192/",
-      "date": "2026-09-02"
+      "title": "我的 token 消耗量下降了",
+      "url": "https://shitao5.org/posts/token-usage-declined/",
+      "date": "2026-09-03"
     },
     {
-      "name": "passo",
+      "name": "风记星辰",
       "year": "19",
-      "title": "Episode X of Phase One: Agent traffic, llms.txt, and the solitude problem",
-      "url": "https://passo.uno/episode-x-phase-one-agent-traffic-llms-txt-solitude/",
-      "date": "2026-09-02"
-    },
-    {
-      "name": "So!azy",
-      "year": "19",
-      "title": "谁在替你的生疏买单",
-      "url": "https://blog.solazy.me/20260902/",
-      "date": "2026-09-02"
+      "title": "风记得的音乐：以三首钢琴曲告别这个夏天吧",
+      "url": "https://www.thyuu.com/82051/",
+      "date": "2026-09-03"
     }
   ],
   "2020": [
     {
       "name": "不凡",
       "year": "20",
-      "title": "尝鲜腾讯的操作系统级AI助手Marvis(马维斯)，制作实时监控磁盘文件变化的小工具",
-      "url": "https://www.bufanz.com/20260902864.html",
-      "date": "2026-09-02"
-    },
-    {
-      "name": "Battle Le",
-      "year": "20",
-      "title": "折腾半天终于办下来了：0 元与免实体地址申请个体工商户营业执照",
-      "url": "https://battlele.com/individual-business-guide/",
-      "date": "2026-09-02"
-    },
-    {
-      "name": "HEMING",
-      "year": "20",
-      "title": "PQS Taiwan Changhua #1 | CHG-50M-VDS-Mini Dynamic Residential IP",
-      "url": "https://heming.org/2797.html",
-      "date": "2026-09-02"
-    }
-  ],
-  "2022": [
-    {
-      "name": "VeryJack",
-      "year": "22",
-      "title": "人人都能玩的 AI 玩具 —— AI Passport",
-      "url": "https://veryjack.com/technique/ai_passport/",
-      "date": "2026-09-02"
-    }
-  ],
-  "2023": [
-    {
-      "name": "鹿泽",
-      "year": "23",
-      "title": "小企业如何通过本地SEO超越大品牌？",
-      "url": "https://www.bailuze.com/24391.html",
-      "date": "2026-09-02"
+      "title": "腾讯云会员小程序月月领红包活动领到30元，腾讯云EdgeOne个人版续费1年实付22.25元",
+      "url": "https://www.bufanz.com/20260903871.html",
+      "date": "2026-09-03"
     }
   ],
   "2025": [
     {
       "name": "Marcus",
       "year": "25",
-      "title": "甩门",
-      "url": "https://www.immarcus.com/blog/door-slam",
-      "date": "2026-09-02"
+      "title": "多灾多难的 2026",
+      "url": "https://www.immarcus.com/blog/calamitous-2026",
+      "date": "2026-09-03"
     }
   ]
 };
