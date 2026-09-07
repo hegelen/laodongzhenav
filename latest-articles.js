@@ -1,179 +1,175 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 9/6/2026, 9:18:15 PM
+// 抓取日期: 9/7/2026, 10:03:47 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
-  "2002": [
+  "2003": [
     {
-      "name": "seth",
-      "year": "02",
-      "title": "The lab, the factory and the dentist",
-      "url": "https://seths.blog/2026/09/the-lab-the-factory-and-the-dentist/",
-      "date": "2026-09-06"
+      "name": "王通",
+      "year": "03",
+      "title": "王通：怎么用最土的AI工具，一个月收了几十万？",
+      "url": "https://www.ufoer.com/post/14536.html",
+      "date": "2026-09-07"
     }
   ],
   "2004": [
     {
-      "name": "我的天",
+      "name": "小猪的窝",
       "year": "04",
-      "title": "投奔豆包输入法",
-      "url": "http://www.xlanda.net/posts/22447",
-      "date": "2026-09-06"
+      "title": "破案",
+      "url": "https://ezo.biz/Diary/1652.html",
+      "date": "2026-09-07"
     },
     {
       "name": "TonyBai",
       "year": "04",
-      "title": "Go 1.27 Release Party 实录：泛型方法为什么「憋」了五年？Go核心团队罕见自曝内幕",
-      "url": "https://tonybai.com/2026/09/06/go-1-27-release-party-insider-story/",
-      "date": "2026-09-05"
-    },
-    {
-      "name": "delphij",
-      "year": "04",
-      "title": "作弊条：在 Nginx 中正确配置自定义 404 页面",
-      "url": "https://blog.delphij.net/posts/2026/09/custom-404/",
-      "date": "2026-09-06"
-    },
-    {
-      "name": "小猪的窝",
-      "year": "04",
-      "title": "Ghost in the Shell",
-      "url": "https://ezo.biz/movies/1649.html",
+      "title": "物理 AI 淘金热：为何机器人是下一个数万亿美元级的超级风口",
+      "url": "https://tonybai.com/2026/09/07/the-physical-ai-gold-rush/",
       "date": "2026-09-06"
     }
   ],
   "2005": [
     {
-      "name": "Gea-Suan Lin",
-      "year": "05",
-      "title": "Google 的 AI 模式會抓到比較貴的商品價格",
-      "url": "https://blog.gslin.org/archives/2026/09/07/13186/google-%e7%9a%84-ai-%e6%a8%a1%e5%bc%8f%e6%9c%83%e6%8a%93%e5%88%b0%e6%af%94%e8%bc%83%e8%b2%b4%e7%9a%84%e5%95%86%e5%93%81%e5%83%b9%e6%a0%bc/",
-      "date": "2026-09-06"
-    },
-    {
       "name": "ACEVS",
       "year": "05",
-      "title": "碎片2026-09-06",
-      "url": "https://acevs.com/5215/",
-      "date": "2026-09-06"
+      "title": "碎片2026-09-07",
+      "url": "https://acevs.com/5217/",
+      "date": "2026-09-07"
+    },
+    {
+      "name": "王志勇",
+      "year": "05",
+      "title": "今天起名未成功",
+      "url": "http://www.auiou.com/relevant/00002192.jsp",
+      "date": "2026-09-07"
+    },
+    {
+      "name": "Gea-Suan Lin",
+      "year": "05",
+      "title": "AI 公司狂掃各種可能可以當作訓練資料的材料 (這次是破產的航空公司？)",
+      "url": "https://blog.gslin.org/archives/2026/09/07/13188/ai-%e5%85%ac%e5%8f%b8%e7%8b%82%e6%8e%83%e5%90%84%e7%a8%ae%e5%8f%af%e8%83%bd%e5%8f%af%e4%bb%a5%e7%95%b6%e4%bd%9c%e8%a8%93%e7%b7%b4%e8%b3%87%e6%96%99%e7%9a%84%e6%9d%90%e6%96%99-%e9%80%99%e6%ac%a1/",
+      "date": "2026-09-07"
     }
   ],
-  "2007": [
+  "2006": [
     {
-      "name": "苏洋",
-      "year": "07",
-      "title": "Phorge 现代化改造实战（四）：拆分模块到 Gorge，无侵入改造不等于不碰文件",
-      "url": "https://soulteary.com/2026/09/06/phorge-modernization-part-4-split-modules-to-gorge.html",
-      "date": "2026-09-06"
+      "name": "随风沐虐",
+      "year": "06",
+      "title": "超过 2 年未使用，Google 帐户将被删除",
+      "url": "https://www.munue.com/815.html",
+      "date": "2026-09-07"
     }
   ],
-  "2010": [
+  "2009": [
     {
-      "name": "麦麦同学",
-      "year": "10",
-      "title": "1.2W上座率，泰山队，我拿什么拯救你",
-      "url": "https://www.mmtx.net/1181.html",
-      "date": "2026-09-06"
+      "name": "异数",
+      "year": "09",
+      "title": "真题 || 2022年真题【考试测评综合楼】 ",
+      "url": "https://www.yishu.pro/241.html",
+      "date": "2026-09-07"
+    }
+  ],
+  "2012": [
+    {
+      "name": "水拍石",
+      "year": "12",
+      "title": "wordpress评论增加邮箱验证与中文检测",
+      "url": "https://www.leitao.cn/10830.html",
+      "date": "2026-09-07"
     }
   ],
   "2013": [
     {
-      "name": "卡瓦邦噶",
+      "name": "蛋蛋",
       "year": "13",
-      "title": "BPG 连接建立失败问题",
-      "url": "https://www.kawabangga.com/posts/7397",
-      "date": "2026-09-06"
+      "title": "《无题·夜半偶得》——求个更好的诗名",
+      "url": "https://wuqishi.com/archives/midnight-poem-seeking-poem-title",
+      "date": "2026-09-07"
     },
     {
       "name": "林羽凡",
       "year": "13",
       "title": "林羽凡笔记 · 积分体系升级 & AI 对话计费正式上线",
       "url": "https://www.linyufan.com/post/5995",
-      "date": "2026-09-06"
-    }
-  ],
-  "2014": [
-    {
-      "name": "xulihang",
-      "year": "14",
-      "title": "穿透屋顶的High Kick",
-      "url": {
-        "$": {
-          "href": "https://blog.xulihang.me/high-kick-through-the-roof/"
-        }
-      },
-      "date": "2026-09-06"
-    }
-  ],
-  "2015": [
-    {
-      "name": "WordPress 知识宝库",
-      "year": "15",
-      "title": "워드프레스 페이지 로딩 시 화면이 미세하게 흔들리는 문제 해결 방법",
-      "url": "https://www.thewordcracker.com/intermediate/%ec%9b%8c%eb%93%9c%ed%94%84%eb%a0%88%ec%8a%a4-%eb%a1%9c%eb%94%a9-%ec%8b%9c-%ed%99%94%eb%a9%b4-%ed%9d%94%eb%93%a4%eb%a6%bc-%eb%ac%b8%ec%a0%9c-%ed%95%b4%ea%b2%b0/",
-      "date": "2026-09-06"
-    }
-  ],
-  "2016": [
-    {
-      "name": "弹霄博科",
-      "year": "16",
-      "title": "给静态博客增加一个AI Native的后台",
-      "url": "https://www.txisfine.cn/archives/4ecfa762.html",
-      "date": "2026-09-06"
+      "date": "2026-09-07"
     }
   ],
   "2017": [
     {
+      "name": "碎言",
+      "year": "17",
+      "title": "一些随感和碎言",
+      "url": "https://www.suiyan.cc/blog/20260907125645",
+      "date": "2026-09-07"
+    },
+    {
       "name": "串串狗小刊",
       "year": "17",
-      "title": "Web 出海个人挣美元，船小好掉头",
-      "url": "https://www.ccgxk.com/874.html",
-      "date": "2026-09-06"
+      "title": "Stripe 收款，Wise 港卡国内直接开通攻略！不用去夯港了！",
+      "url": "https://www.ccgxk.com/codeother/875.html",
+      "date": "2026-09-07"
     }
   ],
   "2018": [
     {
       "name": "秋葵",
       "year": "18",
-      "title": "macOS 图片处理神器 sips",
-      "url": "https://qiukui-note.happy365.day/20260906/macos-sips-usage/",
-      "date": "2026-09-06"
+      "title": "GitHub一周热点",
+      "url": "https://qiukui-note.happy365.day/20260907/github-trends-weekly/",
+      "date": "2026-09-07"
+    },
+    {
+      "name": "吖远zzy",
+      "year": "18",
+      "title": "把吃灰五年的旧笔记本改成了NAS，翻车了但没完全翻",
+      "url": "https://www.hzv5.cn/2026/09/07/Old-computer-NAS/",
+      "date": "2026-09-07"
+    }
+  ],
+  "2019": [
+    {
+      "name": "新世界的大门",
+      "year": "19",
+      "title": "2026-07-18 / 皮炎猫",
+      "url": "https://blog.xinshijiededa.men/daily/81/",
+      "date": "2026-09-07"
+    }
+  ],
+  "2020": [
+    {
+      "name": "老卢",
+      "year": "20",
+      "title": "说说：#2026-09-07 20:15",
+      "url": "https://cis.el9.cn/memos/a9347777.html",
+      "date": "2026-09-07"
     }
   ],
   "2021": [
     {
-      "name": "DevNow",
+      "name": "DAIDAIFU",
       "year": "21",
-      "title": "Product Hunt 每日热榜 | 2026-09-06",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-09-06",
-      "date": "2026-09-06"
-    },
-    {
-      "name": "记录生活",
-      "year": "21",
-      "title": "拿到检查报告，压在心头的石头终于落地",
-      "url": "https://9sb.net/archives/upon-receiving-the-inspection-report-the-stone-weighing-heavily-on-my-heart-finally-fell-to-the-ground.html",
-      "date": "2026-09-06"
+      "title": "送给孩子的一首歌",
+      "url": "https://www.ddf.im/index.php/2026/09/07/1265.html",
+      "date": "2026-09-07"
     }
   ],
-  "2024": [
+  "2023": [
     {
-      "name": "ImQi1",
-      "year": "24",
-      "title": "抖音刷到了一个模拟高中的游戏",
-      "url": "https://imqi1.com/content/note/1022",
-      "date": "2026-09-06"
+      "name": "枫林灯语",
+      "year": "23",
+      "title": "小论博客的更新速度",
+      "url": "https://blog.mfwt.top/index.php/archives/1582/",
+      "date": "2026-09-07"
     }
   ],
   "2025": [
     {
       "name": "Marcus",
       "year": "25",
-      "title": "2026.09.06 博客阅读周荐 - Wiwi",
-      "url": "https://www.immarcus.com/blog/weekly-20260906",
-      "date": "2026-09-06"
+      "title": "Geometry Dash",
+      "url": "https://www.immarcus.com/blog/geometry-dash",
+      "date": "2026-09-07"
     }
   ]
 };
