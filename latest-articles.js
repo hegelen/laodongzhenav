@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 9/8/2026, 9:51:53 PM
+// 抓取日期: 9/9/2026, 9:41:36 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -8,170 +8,166 @@ const latestArticlesByYear = {
     {
       "name": "Luca",
       "year": "00",
-      "title": "蘑菇AI助手正式开放",
-      "url": "https://wlj.me/notes/sp-note-20260908-154421/",
-      "date": "2026-09-08"
-    }
-  ],
-  "2002": [
-    {
-      "name": "seth",
-      "year": "02",
-      "title": "“I don’t know”",
-      "url": "https://seths.blog/2026/09/i-dont-know-2/",
-      "date": "2026-09-08"
-    }
-  ],
-  "2003": [
-    {
-      "name": "王通",
-      "year": "03",
-      "title": "王通：专业能力 ＋ AI助理 ＝ 赚大钱的机会",
-      "url": "https://www.ufoer.com/post/14539.html",
-      "date": "2026-09-08"
-    }
-  ],
-  "2004": [
-    {
-      "name": "小猪的窝",
-      "year": "04",
-      "title": "电击上瘾",
-      "url": "https://ezo.biz/Diary/1655.html",
-      "date": "2026-09-08"
-    },
-    {
-      "name": "TonyBai",
-      "year": "04",
-      "title": "两年攻坚、11 个子任务闭环，Go 终于把 HTTP/2 这个“寄养”十年的孩子接回了标准库",
-      "url": "https://tonybai.com/2026/09/08/go-127-http2-move-into-std/",
-      "date": "2026-09-07"
+      "title": "VPS 从 NixOS 迁出后，我会选 Debian",
+      "url": "https://wlj.me/posts/20260909-nixos-server-debian/",
+      "date": "2026-09-09"
     }
   ],
   "2005": [
     {
       "name": "ACEVS",
       "year": "05",
-      "title": "tplink44an双摄同时加入sa6400",
-      "url": "https://acevs.com/5219/",
-      "date": "2026-09-08"
+      "title": "流放之路2体验 dnf体验 云游戏平台豆包推荐",
+      "url": "https://acevs.com/5221/",
+      "date": "2026-09-09"
+    },
+    {
+      "name": "王志勇",
+      "year": "05",
+      "title": "DIY(35-2)：6路×2 USB全自动电脑切换器",
+      "url": "http://www.auiou.com/relevant/00002193.jsp",
+      "date": "2026-09-09"
     }
   ],
   "2007": [
     {
       "name": "苏洋",
       "year": "07",
-      "title": "Phorge 现代化改造实战（十五）：用 Go 接管 Phorge 工作队列，如何避免新旧消费者互相抢任务",
-      "url": "https://soulteary.com/2026/09/08/phorge-modernization-part-15-take-over-work-queue-with-go.html",
-      "date": "2026-09-08"
+      "title": "Phorge 现代化改造实战（十七）：恢复简体中文支持，用工具持续维护 2.7 万行翻译文件",
+      "url": "https://soulteary.com/2026/09/09/phorge-modernization-part-17-restore-simplified-chinese.html",
+      "date": "2026-09-09"
+    },
+    {
+      "name": "悠见",
+      "year": "07",
+      "title": "三个月没动毛笔了，临写颜真卿《颜勤礼碑》几个字",
+      "url": "https://yufm.com/662356.html",
+      "date": "2026-09-09"
+    }
+  ],
+  "2008": [
+    {
+      "name": "军",
+      "year": "08",
+      "title": "半价域名活动",
+      "url": "https://me.xu19.com/half-price-domain-names-promotion/",
+      "date": "2026-09-09"
     }
   ],
   "2009": [
     {
-      "name": "老刘",
+      "name": "异数",
       "year": "09",
-      "title": "骑行两百公里",
-      "url": "https://www.iliu.org/posts/two-hundred-kilometers-ledger/",
-      "date": "2026-09-08"
-    }
-  ],
-  "2011": [
-    {
-      "name": "第七星尘",
-      "year": "11",
-      "title": "我的又一个C端工具，幕映电视投屏工具",
-      "url": "https://blog.star7th.com/2026/09/2635.html",
-      "date": "2026-09-08"
+      "title": " 真题 || 2022年真题【数据应用科普中心】",
+      "url": "https://www.yishu.pro/242.html",
+      "date": "2026-09-09"
     },
     {
-      "name": "君子不器",
-      "year": "11",
-      "title": "2026年8月：芭蕾考级、近郊寻迹以及暑假的尾声",
-      "url": "https://www.colinjiang.com/archives/2026-08-ballet-exam-summer-trips.html",
-      "date": "2026-09-08"
+      "name": "老张",
+      "year": "09",
+      "title": "曾经用过的那些“灯”！",
+      "url": "https://laozhang.org/archives/4337.html",
+      "date": "2026-09-09"
+    }
+  ],
+  "2012": [
+    {
+      "name": "水拍石",
+      "year": "12",
+      "title": "为你的发言付费",
+      "url": "https://www.leitao.cn/10861.html",
+      "date": "2026-09-09"
     }
   ],
   "2013": [
     {
-      "name": "林羽凡",
+      "name": "卡瓦邦噶",
       "year": "13",
-      "title": "今日减肥餐记录-2026.9.8",
-      "url": "https://www.linyufan.com/post/5997",
-      "date": "2026-09-08"
+      "title": "BPG 连接建立失败问题的答案和解析",
+      "url": "https://www.kawabangga.com/posts/7413",
+      "date": "2026-09-09"
     }
   ],
-  "2017": [
+  "2015": [
     {
-      "name": "串串狗小刊",
-      "year": "17",
-      "title": "Web 出海是一道光，只是还没照来！",
-      "url": "https://www.ccgxk.com/codeother/877.html",
-      "date": "2026-09-08"
+      "name": "WordPress 知识宝库",
+      "year": "15",
+      "title": "워드프레스 Divi 5.12 릴리스: 베타 종료와 혁신적인 'AI 에이전트' 도입",
+      "url": "https://www.thewordcracker.com/basic/%ec%9b%8c%eb%93%9c%ed%94%84%eb%a0%88%ec%8a%a4-divi-5-12-%eb%a6%b4%eb%a6%ac%ec%8a%a4/",
+      "date": "2026-09-09"
+    },
+    {
+      "name": "Luminous",
+      "year": "15",
+      "title": "【Vibe Coding】几个AI生成提高效率小工具的思路",
+      "url": "https://luotianyi.vc/9489.html",
+      "date": "2026-09-09"
     }
   ],
   "2019": [
     {
-      "name": "流情",
+      "name": "So!azy",
       "year": "19",
-      "title": "一次更新惹的祸",
-      "url": "https://liuqingwushui.top/archives/193/",
-      "date": "2026-09-08"
+      "title": "放下助人情结，我又辞职了",
+      "url": "https://blog.solazy.me/20260909/",
+      "date": "2026-09-09"
     }
   ],
   "2020": [
     {
-      "name": "資工小廢物 - JN",
+      "name": "yihong0618",
       "year": "20",
-      "title": "JN 最近在幹嘛（20260908 更新）",
-      "url": "https://blog.giveanornot.com/now/20260908/",
-      "date": "2026-09-08"
-    }
-  ],
-  "2021": [
-    {
-      "name": "WSH",
-      "year": "21",
-      "title": "好耶，又吃上了野生菌",
-      "url": "https://www.wsh233.cn/post/好耶又吃上了野生菌",
-      "date": "2026-09-08"
-    },
-    {
-      "name": "DevNow",
-      "year": "21",
-      "title": "Product Hunt 每日热榜 | 2026-09-08",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-09-08",
-      "date": "2026-09-08"
+      "title": "来，喝一杯",
+      "url": "https://blog.yihong0618.me/posts/issue-346/",
+      "date": "2026-09-09"
     }
   ],
   "2023": [
     {
       "name": "鹿泽",
       "year": "23",
-      "title": "SEO的13条链接建设策略",
-      "url": "https://www.bailuze.com/24405.html",
-      "date": "2026-09-08"
+      "title": "为什么SEO至今仍然重要？",
+      "url": "https://www.bailuze.com/24408.html",
+      "date": "2026-09-09"
+    },
+    {
+      "name": "Siwei Li",
+      "year": "23",
+      "title": "分享一个摄影平台：Unsplash",
+      "url": "https://siwei.li/sharing-photos-on-unsplash/",
+      "date": "2026-09-09"
+    }
+  ],
+  "2024": [
+    {
+      "name": "团团生活志",
+      "year": "24",
+      "title": "Hello Halo",
+      "url": "http://t-t.live/archives/hello-halo",
+      "date": "2026-09-09"
+    },
+    {
+      "name": "姓王者",
+      "year": "24",
+      "title": "【AI流水账】我先修好 Thunderbird 的 SSL，再用 Codex 读取东北大学邮箱",
+      "url": "https://xingwangzhe.fun/posts/neu-mail-codex-20260909/",
+      "date": "2026-09-09"
     }
   ],
   "2025": [
     {
-      "name": "心记",
+      "name": "桃子味",
       "year": "25",
-      "title": "欢迎使用 Typecho",
-      "url": "https://blog.moodlog.cn/archives/1/",
-      "date": "2026-09-08"
+      "title": "海外教程—无需国外手机号！一键导出 ChatGPT 凭据登录 Codex 终极教程",
+      "url": "https://www.taoziwei.com/431/",
+      "date": "2026-09-09"
     },
     {
       "name": "Marcus",
       "year": "25",
-      "title": "现代奴隶制度",
-      "url": "https://www.immarcus.com/blog/modern-slavery",
-      "date": "2026-09-08"
-    },
-    {
-      "name": "桃子味",
-      "year": "25",
-      "title": "经验福利—2026 最强 Cloudflare 免费节点！永久可用+免费域名｜10分钟搭建｜解锁 ChatGPT / Gemini ！",
-      "url": "https://www.taoziwei.com/408/",
-      "date": "2026-09-08"
+      "title": "天经地义",
+      "url": "https://www.immarcus.com/blog/taken-for-granted",
+      "date": "2026-09-09"
     }
   ]
 };
