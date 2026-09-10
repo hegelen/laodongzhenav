@@ -1,173 +1,167 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 9/9/2026, 9:41:36 PM
+// 抓取日期: 9/10/2026, 9:35:19 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
-  "2000": [
+  "2002": [
     {
-      "name": "Luca",
-      "year": "00",
-      "title": "VPS 从 NixOS 迁出后，我会选 Debian",
-      "url": "https://wlj.me/posts/20260909-nixos-server-debian/",
+      "name": "seth",
+      "year": "02",
+      "title": "Things are humming",
+      "url": "https://seths.blog/2026/09/things-are-humming/",
+      "date": "2026-09-10"
+    }
+  ],
+  "2004": [
+    {
+      "name": "TonyBai",
+      "year": "04",
+      "title": "Mermaid最强挑战者“断奶”上位：D2官宣转型非营利，压箱底三年的TALA布局算法也开源了",
+      "url": "https://tonybai.com/2026/09/10/d2-goes-nonprofit-tala-open-sourced/",
       "date": "2026-09-09"
+    },
+    {
+      "name": "扫地老僧",
+      "year": "04",
+      "title": "读书，其实就是一场“脑蒸馏”",
+      "url": "https://doyj.com/2026/09/10/%e8%af%bb%e4%b9%a6%ef%bc%8c%e5%85%b6%e5%ae%9e%e5%b0%b1%e6%98%af%e4%b8%80%e5%9c%ba%e8%84%91%e8%92%b8%e9%a6%8f/",
+      "date": "2026-09-10"
+    },
+    {
+      "name": "小猪的窝",
+      "year": "04",
+      "title": "诚实",
+      "url": "https://ezo.biz/Cracker/1659.html",
+      "date": "2026-09-10"
     }
   ],
   "2005": [
     {
-      "name": "ACEVS",
-      "year": "05",
-      "title": "流放之路2体验 dnf体验 云游戏平台豆包推荐",
-      "url": "https://acevs.com/5221/",
-      "date": "2026-09-09"
-    },
-    {
       "name": "王志勇",
       "year": "05",
-      "title": "DIY(35-2)：6路×2 USB全自动电脑切换器",
-      "url": "http://www.auiou.com/relevant/00002193.jsp",
-      "date": "2026-09-09"
+      "title": "支架设计(1)：船型开关固定",
+      "url": "http://www.auiou.com/relevant/00002194.jsp",
+      "date": "2026-09-10"
+    },
+    {
+      "name": "ACEVS",
+      "year": "05",
+      "title": "伞绳绳结学习记录",
+      "url": "https://acevs.com/5223/",
+      "date": "2026-09-10"
+    },
+    {
+      "name": "Gea-Suan Lin",
+      "year": "05",
+      "title": "Shopify 買 Tailwind Labs",
+      "url": "https://blog.gslin.org/archives/2026/09/10/13195/shopify-%e8%b2%b7-tailwind-labs/",
+      "date": "2026-09-10"
     }
   ],
   "2007": [
     {
-      "name": "苏洋",
+      "name": "Yihui",
       "year": "07",
-      "title": "Phorge 现代化改造实战（十七）：恢复简体中文支持，用工具持续维护 2.7 万行翻译文件",
-      "url": "https://soulteary.com/2026/09/09/phorge-modernization-part-17-restore-simplified-chinese.html",
-      "date": "2026-09-09"
+      "title": "Should I Ask for Sponsorship?",
+      "url": "https://yihui.org/en/2026/09/sponsorship/",
+      "date": "2026-09-10"
     },
     {
-      "name": "悠见",
+      "name": "朱小呆",
       "year": "07",
-      "title": "三个月没动毛笔了，临写颜真卿《颜勤礼碑》几个字",
-      "url": "https://yufm.com/662356.html",
-      "date": "2026-09-09"
-    }
-  ],
-  "2008": [
-    {
-      "name": "军",
-      "year": "08",
-      "title": "半价域名活动",
-      "url": "https://me.xu19.com/half-price-domain-names-promotion/",
-      "date": "2026-09-09"
-    }
-  ],
-  "2009": [
-    {
-      "name": "异数",
-      "year": "09",
-      "title": " 真题 || 2022年真题【数据应用科普中心】",
-      "url": "https://www.yishu.pro/242.html",
-      "date": "2026-09-09"
+      "title": "方寸纸笔，藏着年少最温柔的书信时光",
+      "url": "https://zhujay.com/blog/blog_detail.html?id=1278",
+      "date": "2026-09-10"
     },
     {
-      "name": "老张",
-      "year": "09",
-      "title": "曾经用过的那些“灯”！",
-      "url": "https://laozhang.org/archives/4337.html",
-      "date": "2026-09-09"
+      "name": "不靠谱颜论",
+      "year": "07",
+      "title": "署名就够了",
+      "url": "https://yanlinlin.cn/2026/09/10/attribution-is-enough/",
+      "date": "2026-09-10"
     }
   ],
-  "2012": [
+  "2017": [
     {
-      "name": "水拍石",
-      "year": "12",
-      "title": "为你的发言付费",
-      "url": "https://www.leitao.cn/10861.html",
-      "date": "2026-09-09"
-    }
-  ],
-  "2013": [
-    {
-      "name": "卡瓦邦噶",
-      "year": "13",
-      "title": "BPG 连接建立失败问题的答案和解析",
-      "url": "https://www.kawabangga.com/posts/7413",
-      "date": "2026-09-09"
-    }
-  ],
-  "2015": [
-    {
-      "name": "WordPress 知识宝库",
-      "year": "15",
-      "title": "워드프레스 Divi 5.12 릴리스: 베타 종료와 혁신적인 'AI 에이전트' 도입",
-      "url": "https://www.thewordcracker.com/basic/%ec%9b%8c%eb%93%9c%ed%94%84%eb%a0%88%ec%8a%a4-divi-5-12-%eb%a6%b4%eb%a6%ac%ec%8a%a4/",
-      "date": "2026-09-09"
+      "name": "秋风于渭水",
+      "year": "17",
+      "title": "碎碎谈 · 9月10日 09:55",
+      "url": "https://www.tjsky.net/shuoshuo/nfwfprmsgcg6raymin6ref",
+      "date": "2026-09-10"
     },
     {
-      "name": "Luminous",
-      "year": "15",
-      "title": "【Vibe Coding】几个AI生成提高效率小工具的思路",
-      "url": "https://luotianyi.vc/9489.html",
-      "date": "2026-09-09"
+      "name": "串串狗小刊",
+      "year": "17",
+      "title": "AI 时代，只有足够短视的人，才有未来",
+      "url": "https://www.ccgxk.com/codeother/879.html",
+      "date": "2026-09-10"
     }
   ],
   "2019": [
     {
-      "name": "So!azy",
+      "name": "Allen Hua",
       "year": "19",
-      "title": "放下助人情结，我又辞职了",
-      "url": "https://blog.solazy.me/20260909/",
-      "date": "2026-09-09"
+      "title": "为我的比亚迪车机开发了一款音乐暂停器",
+      "url": "https://hellodk.cn/post/1230",
+      "date": "2026-09-10"
+    },
+    {
+      "name": "流情",
+      "year": "19",
+      "title": "待到秋来九月八，穿个短袖冻成虾",
+      "url": "https://liuqingwushui.top/archives/194/",
+      "date": "2026-09-10"
     }
   ],
   "2020": [
     {
-      "name": "yihong0618",
+      "name": "初然忆",
       "year": "20",
-      "title": "来，喝一杯",
-      "url": "https://blog.yihong0618.me/posts/issue-346/",
-      "date": "2026-09-09"
+      "title": "用闲鱼续费了我的域名",
+      "url": "https://www.imcry.vip/post/2026-9-10-2338/",
+      "date": "2026-09-10"
+    }
+  ],
+  "2021": [
+    {
+      "name": "WSH",
+      "year": "21",
+      "title": "另一个地方",
+      "url": "https://www.wsh233.cn/post/另一个地方",
+      "date": "2026-09-10"
+    },
+    {
+      "name": "DevNow",
+      "year": "21",
+      "title": "Product Hunt 每日热榜 | 2026-09-10",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-09-10",
+      "date": "2026-09-10"
     }
   ],
   "2023": [
     {
-      "name": "鹿泽",
+      "name": "宗宗酱",
       "year": "23",
-      "title": "为什么SEO至今仍然重要？",
-      "url": "https://www.bailuze.com/24408.html",
-      "date": "2026-09-09"
-    },
-    {
-      "name": "Siwei Li",
-      "year": "23",
-      "title": "分享一个摄影平台：Unsplash",
-      "url": "https://siwei.li/sharing-photos-on-unsplash/",
-      "date": "2026-09-09"
+      "title": "徒步重庆南山十二峰",
+      "url": "https://ygz.ink/archives/5743.html",
+      "date": "2026-09-10"
     }
   ],
   "2024": [
     {
-      "name": "团团生活志",
+      "name": "刘郎阁",
       "year": "24",
-      "title": "Hello Halo",
-      "url": "http://t-t.live/archives/hello-halo",
-      "date": "2026-09-09"
+      "title": "微信小程序开发日常：记账工具",
+      "url": "https://vjo.cc/2017",
+      "date": "2026-09-10"
     },
     {
-      "name": "姓王者",
+      "name": "无名",
       "year": "24",
-      "title": "【AI流水账】我先修好 Thunderbird 的 SSL，再用 Codex 读取东北大学邮箱",
-      "url": "https://xingwangzhe.fun/posts/neu-mail-codex-20260909/",
-      "date": "2026-09-09"
-    }
-  ],
-  "2025": [
-    {
-      "name": "桃子味",
-      "year": "25",
-      "title": "海外教程—无需国外手机号！一键导出 ChatGPT 凭据登录 Codex 终极教程",
-      "url": "https://www.taoziwei.com/431/",
-      "date": "2026-09-09"
-    },
-    {
-      "name": "Marcus",
-      "year": "25",
-      "title": "天经地义",
-      "url": "https://www.immarcus.com/blog/taken-for-granted",
-      "date": "2026-09-09"
+      "title": "远程监控防潮柜湿度：购入 ZUZW 米家温湿度计",
+      "url": "https://wuminboke.site/uncategorized/remote-monitor-dry-cabinet-humidity-zuzw-mijia/",
+      "date": "2026-09-10"
     }
   ]
 };
