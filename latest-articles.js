@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 9/11/2026, 9:45:23 PM
+// 抓取日期: 9/12/2026, 9:26:30 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -8,170 +8,164 @@ const latestArticlesByYear = {
     {
       "name": "Luca",
       "year": "00",
-      "title": "每天十分钟，今天的练习",
-      "url": "https://wlj.me/notes/sp-note-20260911-170250/",
-      "date": "2026-09-11"
-    }
-  ],
-  "2002": [
-    {
-      "name": "seth",
-      "year": "02",
-      "title": "Solace",
-      "url": "https://seths.blog/2026/09/solace/",
-      "date": "2026-09-11"
-    },
-    {
-      "name": "不吐不快",
-      "year": "02",
-      "title": "开源一个AI开发的自用评论系统:Qingniao",
-      "url": "https://mianao.info/open-source-comment-system-qingniao/",
-      "date": "2026-09-11"
-    }
-  ],
-  "2003": [
-    {
-      "name": "阮一峰",
-      "year": "03",
-      "title": "科技爱好者周刊（第 412 期）：禁止 issue，只用 PR",
-      "url": "http://www.ruanyifeng.com/blog/2026/09/weekly-issue-412.html",
-      "date": "2026-09-11"
-    },
-    {
-      "name": "愆伏",
-      "year": "03",
-      "title": "2002，宿舍里的网线",
-      "url": "https://www.tortorse.com/archives/dorm-room-ethernet-2002/",
-      "date": "2026-09-11"
+      "title": "菜鸟学画二十天仍不稳定",
+      "url": "https://wlj.me/notes/sp-note-20260912-232330/",
+      "date": "2026-09-12"
     }
   ],
   "2004": [
     {
+      "name": "小猪的窝",
+      "year": "04",
+      "title": "确认损失",
+      "url": "https://ezo.biz/Diary/1664.html",
+      "date": "2026-09-12"
+    },
+    {
       "name": "TonyBai",
       "year": "04",
-      "title": "Go SIMD杀疯了：开发者删光最后一行cgo代码，性能反超C语言库",
-      "url": "https://tonybai.com/2026/09/11/go-simd-kills-cgo-turbopfor-avx512/",
-      "date": "2026-09-10"
+      "title": "Rust 要变成下一个C++？",
+      "url": "https://tonybai.com/2026/09/12/rust-complexity-debate-2026/",
+      "date": "2026-09-11"
     }
   ],
   "2005": [
     {
-      "name": "ACEVS",
-      "year": "05",
-      "title": "老电子信息城三期",
-      "url": "https://acevs.com/5225/",
-      "date": "2026-09-11"
-    },
-    {
       "name": "Gea-Suan Lin",
       "year": "05",
-      "title": "OpenRouter 的用法",
-      "url": "https://blog.gslin.org/archives/2026/09/12/13197/openrouter-%e7%9a%84%e7%94%a8%e6%b3%95/",
-      "date": "2026-09-11"
+      "title": "re.match() 變成 re.prefixmatch()",
+      "url": "https://blog.gslin.org/archives/2026/09/13/13200/re-match-%e8%ae%8a%e6%88%90-re-prefixmatch/",
+      "date": "2026-09-12"
+    },
+    {
+      "name": "ACEVS",
+      "year": "05",
+      "title": "碎片2026年9月12日",
+      "url": "https://acevs.com/5227/",
+      "date": "2026-09-12"
+    },
+    {
+      "name": "Lenciel",
+      "year": "05",
+      "title": "Fragments 0x0005",
+      "url": "https://lenciel.com/2026/09/fragments-0x0005/",
+      "date": "2026-09-12"
     }
   ],
-  "2012": [
+  "2006": [
     {
-      "name": "水拍石",
-      "year": "12",
-      "title": "未来与命运",
-      "url": "https://www.leitao.cn/10866.html",
-      "date": "2026-09-11"
+      "name": "随风沐虐",
+      "year": "06",
+      "title": "Google Chrome 查看标签页的新方式：垂直显示标签页",
+      "url": "https://www.munue.com/816.html",
+      "date": "2026-09-12"
     }
   ],
-  "2013": [
+  "2007": [
     {
-      "name": "林羽凡",
-      "year": "13",
-      "title": "鸿蒙版“林羽凡笔记”增加分享二维码功能和扫分享码进入分享页",
-      "url": "https://www.linyufan.com/post/6009",
-      "date": "2026-09-11"
+      "name": "悠见",
+      "year": "07",
+      "title": "写字的快乐与写得好坏无关",
+      "url": "https://yufm.com/662367.html",
+      "date": "2026-09-12"
+    },
+    {
+      "name": "树下语",
+      "year": "07",
+      "title": "相忘于江湖",
+      "url": "https://yishu-life.com/index.php/archives/555.html",
+      "date": "2026-09-12"
     }
   ],
-  "2014": [
+  "2008": [
     {
-      "name": "运营不加班",
-      "year": "14",
-      "title": "260911大模型 AIOps 诊断能力排行榜",
-      "url": "https://nops.icu/archives/254/",
-      "date": "2026-09-11"
+      "name": "生活的左上角",
+      "year": "08",
+      "title": "51LA统计跳转色情网站问题",
+      "url": "https://bwskyer.com/51la-statistics-redirect-issue.html",
+      "date": "2026-09-12"
+    }
+  ],
+  "2011": [
+    {
+      "name": "Be For Web",
+      "year": "11",
+      "title": "针对 iPhone Duo 纵向灵动岛的设计调整",
+      "url": "http://beforweb.com/node/1154",
+      "date": "2026-09-12"
     }
   ],
   "2015": [
     {
-      "name": "WordPress 知识宝库",
+      "name": "elmagnifico",
       "year": "15",
-      "title": "구글 Docs 문서 이미지 추출, 다운로드하기",
-      "url": "https://www.thewordcracker.com/blog/%ea%b5%ac%ea%b8%80-docs-%eb%ac%b8%ec%84%9c-%ec%9d%b4%eb%af%b8%ec%a7%80-%ec%b6%94%ec%b6%9c-%eb%8b%a4%ec%9a%b4%eb%a1%9c%eb%93%9c/",
-      "date": "2026-09-11"
+      "title": "有点无语",
+      "url": "https://elmagnifico.tech/2026/09/13/DreamComeTrue/",
+      "date": "2026-09-12"
     }
   ],
   "2017": [
     {
       "name": "串串狗小刊",
       "year": "17",
-      "title": "2026 年世界开源 AI 大模型，各种统计报告！",
-      "url": "https://www.ccgxk.com/emlog_dev/880.html",
-      "date": "2026-09-11"
+      "title": "搞 SEO 的，不要与程序员抢赛道！",
+      "url": "https://www.ccgxk.com/codeother/881.html",
+      "date": "2026-09-12"
+    },
+    {
+      "name": "浴沂咏归",
+      "year": "17",
+      "title": "基于「道德本位，权责统一」原理的社会成员二元划分新论",
+      "url": "https://zexwoo.blog/posts/gossip/binary-classification/",
+      "date": "2026-09-12"
+    },
+    {
+      "name": "碎言",
+      "year": "17",
+      "title": "博客阅读随感：也谈记忆",
+      "url": "https://www.suiyan.cc/blog/20260912201512",
+      "date": "2026-09-12"
     }
   ],
   "2019": [
     {
-      "name": "Zeruns",
+      "name": "紫塞",
       "year": "19",
-      "title": "雨云 韩国首尔一区VPS，2核4G 40兆 仅需32.5元/月，三网直连，原生/住宅IP，EPYC-7A23",
-      "url": "https://blog.zeruns.com/archives/955.html",
-      "date": "2026-09-11"
-    }
-  ],
-  "2020": [
-    {
-      "name": "不凡",
-      "year": "20",
-      "title": "腾讯云通知我的域名存在违规疑似钓鱼网站，却没有详细违规URL",
-      "url": "https://www.bufanz.com/20260911898.html",
-      "date": "2026-09-11"
-    }
-  ],
-  "2021": [
-    {
-      "name": "记录生活",
-      "year": "21",
-      "title": "服务器 SSH 老提示 connection is closed by foreign host，原来是这帮 IP 在爆破",
-      "url": "https://9sb.net/archives/server-ssh-old-prompt-connection-is-closed-by-foreign-host-it-turns-out-that-these-ips-are-exploding.html",
-      "date": "2026-09-11"
-    },
-    {
-      "name": "DevNow",
-      "year": "21",
-      "title": "Product Hunt 每日热榜 | 2026-09-11",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-09-11",
-      "date": "2026-09-11"
+      "title": "48岁，戒酒、限食、训练34天：两次验血给了我答案",
+      "url": "https://zisai.com/posts/34-days-without-alcohol-what-my-blood-tests-revealed/",
+      "date": "2026-09-12"
     }
   ],
   "2023": [
     {
-      "name": "鹿泽",
+      "name": "枫林灯语",
       "year": "23",
-      "title": "如何为SEO寻找并选择合适的关键词（完整GEO与SEO指南）？",
-      "url": "https://www.bailuze.com/26000.html",
-      "date": "2026-09-11"
+      "title": "无用命途：自制三天王",
+      "url": "https://blog.mfwt.top/index.php/archives/1546/",
+      "date": "2026-09-12"
     },
     {
-      "name": "无敌",
+      "name": "鹿泽",
       "year": "23",
-      "title": "AI与认知（二）：AI语言能力——从表象到机制",
-      "url": "https://blog.tangwudi.com/technology/cognition14702/",
-      "date": "2026-09-10"
+      "title": "SEO基础：初学者指南",
+      "url": "https://www.bailuze.com/24414.html",
+      "date": "2026-09-12"
     }
   ],
-  "2025": [
+  "2024": [
     {
-      "name": "Marcus",
-      "year": "25",
-      "title": "MVP",
-      "url": "https://www.immarcus.com/blog/minimum-viable-product",
-      "date": "2026-09-11"
+      "name": "xgclevo",
+      "year": "24",
+      "title": "低功耗蓝牙通信安全",
+      "url": "https://blog.xgclevo.top/posts/6cd8efe4/",
+      "date": "2026-09-12"
+    },
+    {
+      "name": "姓王者",
+      "year": "24",
+      "title": "辽宁省往年高考成绩查询方法",
+      "url": "https://xingwangzhe.fun/posts/liaoning-gaokao-score-history/",
+      "date": "2026-09-12"
     }
   ]
 };
