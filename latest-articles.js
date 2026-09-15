@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 9/14/2026, 10:28:44 PM
+// 抓取日期: 9/15/2026, 10:07:38 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -8,168 +8,168 @@ const latestArticlesByYear = {
     {
       "name": "Luca",
       "year": "00",
-      "title": "Artifactory 是什么",
-      "url": "https://wlj.me/posts/20260914-artifactory/",
-      "date": "2026-09-14"
-    }
-  ],
-  "2002": [
-    {
-      "name": "seth",
-      "year": "02",
-      "title": "Canceling one flight",
-      "url": "https://seths.blog/2026/09/canceling-one-flight/",
-      "date": "2026-09-14"
+      "title": "日常星标链接阅读清单",
+      "url": "https://wlj.me/notes/sp-note-20260915-230458/",
+      "date": "2026-09-15"
     }
   ],
   "2004": [
     {
-      "name": "TonyBai",
+      "name": "小猪的窝",
       "year": "04",
-      "title": "刚刚，Go 社区冒出一个“AI 工厂”：SuperPlane 开源，专治 AI Agent 乱来",
-      "url": "https://tonybai.com/2026/09/15/superplane-ai-factory-go-open-source/",
-      "date": "2026-09-14"
+      "title": "逛论坛",
+      "url": "https://ezo.biz/Diary/1673.html",
+      "date": "2026-09-15"
+    },
+    {
+      "name": "kaix.in",
+      "year": "04",
+      "title": "骆驼、狮子、孩子、路飞、大笑",
+      "url": "https://kaix.in/2026/0915/",
+      "date": "2026-09-15"
     }
   ],
   "2005": [
     {
       "name": "王志勇",
       "year": "05",
-      "title": "DIY(35-3)：6路×2 USB全自动电脑切换器",
-      "url": "http://www.auiou.com/relevant/00002196.jsp",
-      "date": "2026-09-14"
+      "title": "更新提示：《关于作者》页更新",
+      "url": "http://www.auiou.com/relevant/00010006.jsp",
+      "date": "2026-09-15"
     },
     {
       "name": "ACEVS",
       "year": "05",
-      "title": "你可以从大学带走什么（转载）",
-      "url": "https://acevs.com/5231/",
-      "date": "2026-09-14"
+      "title": "魔兽争霸 更新dlc 增加中立新英雄 死亡骑士他爸",
+      "url": "https://acevs.com/5233/",
+      "date": "2026-09-15"
+    },
+    {
+      "name": "Lenciel",
+      "year": "05",
+      "title": "Fragments 0x0006",
+      "url": "https://lenciel.com/2026/09/fragments-0x0006/",
+      "date": "2026-09-15"
     }
   ],
-  "2006": [
+  "2007": [
     {
-      "name": "随风沐虐",
-      "year": "06",
-      "title": "联合国敦促使用“平等地球投影”新世界地图",
-      "url": "https://www.munue.com/817.html",
-      "date": "2026-09-14"
-    }
-  ],
-  "2008": [
-    {
-      "name": "四火的唠叨",
-      "year": "08",
-      "title": "为什么我不买大盘，只坚持投资个股",
-      "url": "https://www.raychase.net/8305",
-      "date": "2026-09-14"
+      "name": "树下语",
+      "year": "07",
+      "title": "给自己留点时间",
+      "url": "https://yishu-life.com/index.php/archives/556.html",
+      "date": "2026-09-15"
     }
   ],
   "2009": [
     {
-      "name": "异数",
+      "name": "老张",
       "year": "09",
-      "title": "杂谈|| 2027年一级注册建筑师各大培训机构介绍（合集）【带避雷机构】",
-      "url": "https://www.yishu.pro/245.html",
-      "date": "2026-09-14"
-    }
-  ],
-  "2012": [
+      "title": "我用的Obsidian插件",
+      "url": "https://laozhang.org/archives/4356.html",
+      "date": "2026-09-15"
+    },
     {
-      "name": "水拍石",
-      "year": "12",
-      "title": "《当代政治哲学》简单梳理",
-      "url": "https://www.leitao.cn/10885.html",
-      "date": "2026-09-14"
+      "name": "张鑫旭",
+      "year": "09",
+      "title": "新时代下的tooltip提示效果的最佳实现",
+      "url": "https://www.zhangxinxu.com/wordpress/2026/09/best-tooltip-effect/",
+      "date": "2026-09-15"
     }
   ],
   "2013": [
     {
       "name": "林羽凡",
       "year": "13",
-      "title": "今日减肥餐记录-2026.9.14",
-      "url": "https://www.linyufan.com/post/6015",
-      "date": "2026-09-14"
-    },
+      "title": "今日减肥餐记录-2026.9.15",
+      "url": "https://www.linyufan.com/post/6018",
+      "date": "2026-09-15"
+    }
+  ],
+  "2015": [
     {
-      "name": "jet",
-      "year": "13",
-      "title": "Intel i225 / i226-V 固件升级指南",
-      "url": "https://jetyu.me/post/intel-i225-i226-firmware-update-guide.html",
-      "date": "2026-09-14"
+      "name": "WordPress 知识宝库",
+      "year": "15",
+      "title": "워드프레스 GP Premium 애드센스/네이버 및 구글 사이트 소유 확인 코드 추가 방법",
+      "url": "https://www.thewordcracker.com/basic/themes/gp-premium-%ec%95%a0%eb%93%9c%ec%84%bc%ec%8a%a4-%eb%84%a4%ec%9d%b4%eb%b2%84-%ea%b5%ac%ea%b8%80-%ec%bd%94%eb%93%9c-%ec%b6%94%ea%b0%80-%eb%b0%a9%eb%b2%95/",
+      "date": "2026-09-15"
+    }
+  ],
+  "2016": [
+    {
+      "name": "故事里",
+      "year": "16",
+      "title": "学会告别",
+      "url": "https://www.gushi.li/learning-to-say-goodbye.html",
+      "date": "2026-09-15"
     }
   ],
   "2017": [
     {
-      "name": "秋风于渭水",
-      "year": "17",
-      "title": "升级 VMware Workstation 的九九八十一难：幽灵虚拟机、1603 报错和手工装 Tools",
-      "url": "https://www.tjsky.net/tutorial/1938",
-      "date": "2026-09-14"
-    },
-    {
       "name": "串串狗小刊",
       "year": "17",
-      "title": "Web 出海没有跨境电商韭菜好割",
-      "url": "https://www.ccgxk.com/codeother/883.html",
-      "date": "2026-09-14"
-    },
-    {
-      "name": "科学空间",
-      "year": "17",
-      "title": "让炼丹更科学一些（十）：单调性假设的拆与补",
-      "url": "https://kexue.fm/archives/11885",
-      "date": "2026-09-14"
+      "title": "为什么 OPC 里 30 个能有 28 个都失败？",
+      "url": "https://www.ccgxk.com/codeother/885.html",
+      "date": "2026-09-15"
     }
   ],
   "2019": [
     {
-      "name": "吴诗涛",
+      "name": "新世界的大门",
       "year": "19",
-      "title": "6 比 5.6 强多少",
-      "url": "https://shitao5.org/posts/gpt-6-vs-5-6/",
-      "date": "2026-09-14"
+      "title": "2026-07-21 / 魔爪拌饭",
+      "url": "https://blog.xinshijiededa.men/daily/82/",
+      "date": "2026-09-15"
+    },
+    {
+      "name": "流情",
+      "year": "19",
+      "title": "工作结束，路在何方",
+      "url": "https://liuqingwushui.top/archives/196/",
+      "date": "2026-09-15"
+    }
+  ],
+  "2020": [
+    {
+      "name": "資工小廢物 - JN",
+      "year": "20",
+      "title": "RE：部落格閱讀周薦 - JN",
+      "url": "https://blog.giveanornot.com/re-immarcus-weekly/",
+      "date": "2026-09-15"
+    },
+    {
+      "name": "不凡",
+      "year": "20",
+      "title": "ServerMonitor插件更新：新增「水墨宣纸」样式、新增「面板默认形态」",
+      "url": "https://www.bufanz.com/20260915920.html",
+      "date": "2026-09-15"
     }
   ],
   "2021": [
     {
-      "name": "DevNow",
-      "year": "21",
-      "title": "Product Hunt 每日热榜 | 2026-09-14",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-09-14",
-      "date": "2026-09-14"
-    },
-    {
       "name": "WSH",
       "year": "21",
-      "title": "世界上再多一个 DeepSeek Harness 通知插件",
-      "url": "https://www.wsh233.cn/post/世界上再多一个-deepseek-harness-通知插件",
-      "date": "2026-09-14"
-    },
-    {
-      "name": "Dayu",
-      "year": "21",
-      "title": "Fitbit Air: 近期最喜欢的数码产品",
-      "url": "https://anotherdayu.com/fitbit-air/",
-      "date": "2026-09-14"
-    }
-  ],
-  "2023": [
-    {
-      "name": "鹿泽",
-      "year": "23",
-      "title": "链接诱导是什么意思？如何运用这种策略？",
-      "url": "https://www.bailuze.com/24417.html",
-      "date": "2026-09-14"
+      "title": "软件个性化时代",
+      "url": "https://www.wsh233.cn/post/软件个性化时代",
+      "date": "2026-09-15"
     }
   ],
   "2025": [
     {
       "name": "Marcus",
       "year": "25",
-      "title": "客观的艺术品味",
-      "url": "https://www.immarcus.com/blog/objective-artistic-taste",
-      "date": "2026-09-14"
+      "title": "人生的意义（微积分版）",
+      "url": "https://www.immarcus.com/blog/meaning-of-life-from-a-calculus-perspective",
+      "date": "2026-09-15"
+    }
+  ],
+  "2026": [
+    {
+      "name": "华立",
+      "year": "26",
+      "title": "陪娃写作业，一个小学题 脑壳疼，用AI搞了一个 正方体展开图",
+      "url": "https://www.renhuali.cn/journal/cmu2sn44l01ldchnmtvbse04l",
+      "date": "2026-09-15"
     }
   ]
 };
