@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 9/15/2026, 10:07:38 PM
+// 抓取日期: 9/16/2026, 10:05:22 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -8,168 +8,172 @@ const latestArticlesByYear = {
     {
       "name": "Luca",
       "year": "00",
-      "title": "日常星标链接阅读清单",
-      "url": "https://wlj.me/notes/sp-note-20260915-230458/",
-      "date": "2026-09-15"
+      "title": "搞不懂Grok用量规则换自建",
+      "url": "https://wlj.me/notes/sp-note-20260916-163310/",
+      "date": "2026-09-16"
+    }
+  ],
+  "2002": [
+    {
+      "name": "seth",
+      "year": "02",
+      "title": "Work isn’t optional…",
+      "url": "https://seths.blog/2026/09/work-isnt-optional/",
+      "date": "2026-09-16"
+    }
+  ],
+  "2003": [
+    {
+      "name": "王通",
+      "year": "03",
+      "title": "AI智能体怎么赚钱？6种模式，我按”值不值钱”排了个序",
+      "url": "https://www.ufoer.com/post/14563.html",
+      "date": "2026-09-16"
     }
   ],
   "2004": [
     {
-      "name": "小猪的窝",
+      "name": "TonyBai",
       "year": "04",
-      "title": "逛论坛",
-      "url": "https://ezo.biz/Diary/1673.html",
+      "title": "十四年磨一剑：Go 标准库encoding/json/v2 演进全史",
+      "url": "https://tonybai.com/2026/09/16/go-json-v2-history/",
       "date": "2026-09-15"
     },
     {
-      "name": "kaix.in",
+      "name": "我的天",
       "year": "04",
-      "title": "骆驼、狮子、孩子、路飞、大笑",
-      "url": "https://kaix.in/2026/0915/",
-      "date": "2026-09-15"
+      "title": "blog打不开&#038;谈谈豆包输入法",
+      "url": "http://www.xlanda.net/posts/22472",
+      "date": "2026-09-16"
     }
   ],
   "2005": [
     {
-      "name": "王志勇",
+      "name": "Gea-Suan Lin",
       "year": "05",
-      "title": "更新提示：《关于作者》页更新",
-      "url": "http://www.auiou.com/relevant/00010006.jsp",
-      "date": "2026-09-15"
-    },
-    {
-      "name": "ACEVS",
-      "year": "05",
-      "title": "魔兽争霸 更新dlc 增加中立新英雄 死亡骑士他爸",
-      "url": "https://acevs.com/5233/",
-      "date": "2026-09-15"
-    },
-    {
-      "name": "Lenciel",
-      "year": "05",
-      "title": "Fragments 0x0006",
-      "url": "https://lenciel.com/2026/09/fragments-0x0006/",
-      "date": "2026-09-15"
+      "title": "Claude Code 的 promotion 降為 25% boost",
+      "url": "https://blog.gslin.org/archives/2026/09/16/13205/claude-code-%e7%9a%84-promotion-%e9%99%8d%e7%82%ba-25-boost/",
+      "date": "2026-09-16"
     }
   ],
-  "2007": [
+  "2008": [
     {
-      "name": "树下语",
-      "year": "07",
-      "title": "给自己留点时间",
-      "url": "https://yishu-life.com/index.php/archives/556.html",
-      "date": "2026-09-15"
+      "name": "军",
+      "year": "08",
+      "title": "当地学区房政策又变了",
+      "url": "https://me.xu19.com/local-school-district-housing-policy-changes-again/",
+      "date": "2026-09-16"
     }
   ],
   "2009": [
     {
-      "name": "老张",
+      "name": "老刘",
       "year": "09",
-      "title": "我用的Obsidian插件",
-      "url": "https://laozhang.org/archives/4356.html",
-      "date": "2026-09-15"
-    },
+      "title": "把跟了我四十多年的痣给切了",
+      "url": "https://www.iliu.org/posts/mole-removal/",
+      "date": "2026-09-16"
+    }
+  ],
+  "2012": [
     {
-      "name": "张鑫旭",
-      "year": "09",
-      "title": "新时代下的tooltip提示效果的最佳实现",
-      "url": "https://www.zhangxinxu.com/wordpress/2026/09/best-tooltip-effect/",
-      "date": "2026-09-15"
+      "name": "水拍石",
+      "year": "12",
+      "title": "赛力斯和华为分手了",
+      "url": "https://www.leitao.cn/10915.html",
+      "date": "2026-09-16"
     }
   ],
   "2013": [
     {
+      "name": "小z",
+      "year": "13",
+      "title": "我做了一个免费SVG工具箱：一句话就能生成SVG图标",
+      "url": "https://blog.xiaoz.org/archives/23482",
+      "date": "2026-09-16"
+    },
+    {
       "name": "林羽凡",
       "year": "13",
-      "title": "今日减肥餐记录-2026.9.15",
-      "url": "https://www.linyufan.com/post/6018",
-      "date": "2026-09-15"
+      "title": "鸿蒙应用”竹子记账“开发笔记（增加端侧大模型语音识别，Ai页面优化）",
+      "url": "https://www.linyufan.com/post/6021",
+      "date": "2026-09-16"
     }
   ],
   "2015": [
     {
       "name": "WordPress 知识宝库",
       "year": "15",
-      "title": "워드프레스 GP Premium 애드센스/네이버 및 구글 사이트 소유 확인 코드 추가 방법",
-      "url": "https://www.thewordcracker.com/basic/themes/gp-premium-%ec%95%a0%eb%93%9c%ec%84%bc%ec%8a%a4-%eb%84%a4%ec%9d%b4%eb%b2%84-%ea%b5%ac%ea%b8%80-%ec%bd%94%eb%93%9c-%ec%b6%94%ea%b0%80-%eb%b0%a9%eb%b2%95/",
-      "date": "2026-09-15"
-    }
-  ],
-  "2016": [
-    {
-      "name": "故事里",
-      "year": "16",
-      "title": "学会告别",
-      "url": "https://www.gushi.li/learning-to-say-goodbye.html",
-      "date": "2026-09-15"
+      "title": "워드프레스 관리자 계정 변경 방법 (사용자명 및 이메일 주소)",
+      "url": "https://www.thewordcracker.com/basic/%ec%9b%8c%eb%93%9c%ed%94%84%eb%a0%88%ec%8a%a4-%ea%b4%80%eb%a6%ac%ec%9e%90-%ea%b3%84%ec%a0%95-%eb%b3%80%ea%b2%bd-%eb%b0%a9%eb%b2%95/",
+      "date": "2026-09-16"
     }
   ],
   "2017": [
     {
-      "name": "串串狗小刊",
+      "name": "2broear",
       "year": "17",
-      "title": "为什么 OPC 里 30 个能有 28 个都失败？",
-      "url": "https://www.ccgxk.com/codeother/885.html",
-      "date": "2026-09-15"
+      "title": "AI真的会杀死人类吗？",
+      "url": "https://blog.2broear.com/notes/16-09-2026_will-ai-kill-us-all",
+      "date": "2026-09-16"
     }
   ],
   "2019": [
     {
-      "name": "新世界的大门",
+      "name": "Zeruns",
       "year": "19",
-      "title": "2026-07-21 / 魔爪拌饭",
-      "url": "https://blog.xinshijiededa.men/daily/82/",
-      "date": "2026-09-15"
-    },
-    {
-      "name": "流情",
-      "year": "19",
-      "title": "工作结束，路在何方",
-      "url": "https://liuqingwushui.top/archives/196/",
-      "date": "2026-09-15"
+      "title": "【开源】Discourse 回帖可见/登录可见插件（discourse-reply-to-view），回复解锁隐藏内容",
+      "url": "https://blog.zeruns.com/archives/957.html",
+      "date": "2026-09-16"
     }
   ],
   "2020": [
     {
-      "name": "資工小廢物 - JN",
-      "year": "20",
-      "title": "RE：部落格閱讀周薦 - JN",
-      "url": "https://blog.giveanornot.com/re-immarcus-weekly/",
-      "date": "2026-09-15"
-    },
-    {
       "name": "不凡",
       "year": "20",
-      "title": "ServerMonitor插件更新：新增「水墨宣纸」样式、新增「面板默认形态」",
-      "url": "https://www.bufanz.com/20260915920.html",
-      "date": "2026-09-15"
+      "title": "WordPress站点的服务器，重装系统、换运维面板、升级Web运行环境",
+      "url": "https://www.bufanz.com/20260916922.html",
+      "date": "2026-09-16"
     }
   ],
   "2021": [
     {
       "name": "WSH",
       "year": "21",
-      "title": "软件个性化时代",
-      "url": "https://www.wsh233.cn/post/软件个性化时代",
-      "date": "2026-09-15"
+      "title": "初遇肾绞痛",
+      "url": "https://www.wsh233.cn/post/初遇肾绞痛",
+      "date": "2026-09-16"
+    },
+    {
+      "name": "辣条",
+      "year": "21",
+      "title": "关于失业，我与生活的一场和解与迷茫",
+      "url": "https://www.latiao.org/2299.html",
+      "date": "2026-09-16"
+    },
+    {
+      "name": "喵喵小站・博客志",
+      "year": "21",
+      "title": "说说：#2026-09-16 20:01",
+      "url": "https://www.mmbkz.cn/dd9f8905.html",
+      "date": "2026-09-16"
+    }
+  ],
+  "2023": [
+    {
+      "name": "鹿泽",
+      "year": "23",
+      "title": "7个扼杀SEO的错误链接建设",
+      "url": "https://www.bailuze.com/24425.html",
+      "date": "2026-09-16"
     }
   ],
   "2025": [
     {
       "name": "Marcus",
       "year": "25",
-      "title": "人生的意义（微积分版）",
-      "url": "https://www.immarcus.com/blog/meaning-of-life-from-a-calculus-perspective",
-      "date": "2026-09-15"
-    }
-  ],
-  "2026": [
-    {
-      "name": "华立",
-      "year": "26",
-      "title": "陪娃写作业，一个小学题 脑壳疼，用AI搞了一个 正方体展开图",
-      "url": "https://www.renhuali.cn/journal/cmu2sn44l01ldchnmtvbse04l",
-      "date": "2026-09-15"
+      "title": "剧本也是一个游戏——不剧透的《万箭穿心》迷你解读",
+      "url": "https://www.immarcus.com/blog/feng-shui-movie-review-no-spoiler",
+      "date": "2026-09-16"
     }
   ]
 };
