@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 9/19/2026, 9:28:44 PM
+// 抓取日期: 9/20/2026, 9:25:10 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -8,158 +8,160 @@ const latestArticlesByYear = {
     {
       "name": "Luca",
       "year": "00",
-      "title": "睡前练两张渐有手感",
-      "url": "https://wlj.me/notes/sp-note-20260919-225308/",
-      "date": "2026-09-19"
+      "title": "今天有点困，非常草率的十分钟",
+      "url": "https://wlj.me/notes/sp-note-20260920-232941/",
+      "date": "2026-09-20"
     }
   ],
   "2002": [
     {
       "name": "seth",
       "year": "02",
-      "title": "Disconcerting genre shift",
-      "url": "https://seths.blog/2026/09/disconcerting-genre-shift/",
-      "date": "2026-09-19"
-    }
-  ],
-  "2003": [
-    {
-      "name": "愆伏",
-      "year": "03",
-      "title": "2004，一切都像是安排好了",
-      "url": "https://www.tortorse.com/archives/everything-seemed-arranged-2004/",
-      "date": "2026-09-19"
+      "title": "Upside/downside",
+      "url": "https://seths.blog/2026/09/think-big-think-small/",
+      "date": "2026-09-20"
     }
   ],
   "2004": [
     {
-      "name": "小猪的窝",
+      "name": "TonyBai",
       "year": "04",
-      "title": "准备连踩到国庆",
-      "url": "https://ezo.biz/Diary/1683.html",
-      "date": "2026-09-19"
+      "title": "Jev刚发布就封神？一位独立研究员在HN开怼：这套「非自回归决策模型」，我一年前就做出来了",
+      "url": "https://tonybai.com/2026/09/20/jev-laya-non-autoregressive-decision-model-priority-dispute/",
+      "date": "2026-09-20"
     },
     {
       "name": "我的天",
       "year": "04",
-      "title": "再见，盒马奥莱",
-      "url": "http://www.xlanda.net/posts/22479",
-      "date": "2026-09-19"
+      "title": "广州超市的潮起潮落",
+      "url": "http://www.xlanda.net/posts/22482",
+      "date": "2026-09-20"
     },
     {
-      "name": "扫地老僧",
+      "name": "小猪的窝",
       "year": "04",
-      "title": "汽车是否正在悄悄重塑中国？",
-      "url": "https://doyj.com/2026/09/19/%e6%b1%bd%e8%bd%a6%e6%98%af%e5%90%a6%e6%ad%a3%e5%9c%a8%e6%82%84%e6%82%84%e9%87%8d%e5%a1%91%e4%b8%ad%e5%9b%bd%ef%bc%9f/",
-      "date": "2026-09-19"
+      "title": "升级OC1.0.7失败",
+      "url": "https://ezo.biz/Play_More/OC1-0-7.html",
+      "date": "2026-09-20"
     }
   ],
   "2005": [
     {
       "name": "王志勇",
       "year": "05",
-      "title": "https利弊(5)：技术上的定向安全与垄断本质",
-      "url": "http://www.auiou.com/relevant/00002199.jsp",
-      "date": "2026-09-19"
+      "title": "健康维护(1)：为什么晚上睡觉时会肚子疼？",
+      "url": "http://www.auiou.com/relevant/00002200.jsp",
+      "date": "2026-09-20"
+    },
+    {
+      "name": "ACEVS",
+      "year": "05",
+      "title": "手机可以模拟不少电脑上的游戏了",
+      "url": "https://acevs.com/5244/",
+      "date": "2026-09-20"
     },
     {
       "name": "Gea-Suan Lin",
       "year": "05",
-      "title": "EC2 的 T 系列推出了新型號",
-      "url": "https://blog.gslin.org/archives/2026/09/19/13209/ec2-%e7%9a%84-t-%e7%b3%bb%e5%88%97%e6%8e%a8%e5%87%ba%e4%ba%86%e6%96%b0%e5%9e%8b%e8%99%9f/",
-      "date": "2026-09-18"
+      "title": "HEIF 的 RCE",
+      "url": "https://blog.gslin.org/archives/2026/09/20/13215/heif-%e7%9a%84-rce/",
+      "date": "2026-09-20"
     }
   ],
-  "2006": [
+  "2012": [
     {
-      "name": "忘记了回忆",
-      "year": "06",
-      "title": "手机",
-      "url": "https://ltmltm.cn/bk/1494.html",
-      "date": "2026-09-19"
-    }
-  ],
-  "2009": [
-    {
-      "name": "老卫",
-      "year": "09",
-      "title": "在Ubuntu中安装Kubernetes并使用GitLab CI进行部署",
-      "url": "https://waylau.com/install-kubernetes-on-ubuntu/",
-      "date": "2026-09-19"
-    },
-    {
-      "name": "老卫（柳伟卫）的技术站",
-      "year": "09",
-      "title": "在Ubuntu中安装Kubernetes并使用GitLab CI进行部署",
-      "url": "https://waylau.com/install-kubernetes-on-ubuntu/",
-      "date": "2026-09-19"
-    }
-  ],
-  "2010": [
-    {
-      "name": "忆往事",
-      "year": "10",
-      "title": "能修则修",
-      "url": "https://zhou.ge/2026-09-19.html",
-      "date": "2026-09-19"
+      "name": "把酒诗代码",
+      "year": "12",
+      "title": "五仁月饼🥮",
+      "url": "https://102no.com/2026/09/20/wu-ren-yue-bing/",
+      "date": "2026-09-20"
     }
   ],
   "2013": [
     {
-      "name": "林羽凡",
+      "name": "小z",
       "year": "13",
-      "title": "今日减肥餐记录-2026.9.19",
-      "url": "https://www.linyufan.com/post/6032",
-      "date": "2026-09-19"
+      "title": "全球 AI 简报启用新域名RSS.bz，同时新增AI日报和Codex重置信号",
+      "url": "https://blog.xiaoz.org/archives/23498",
+      "date": "2026-09-20"
+    }
+  ],
+  "2015": [
+    {
+      "name": "WordPress 知识宝库",
+      "year": "15",
+      "title": "워드프레스 애드센스 승인 상태 '검토 필요' 해결 방법",
+      "url": "https://www.thewordcracker.com/basic/%ec%9b%8c%eb%93%9c%ed%94%84%eb%a0%88%ec%8a%a4-%ec%95%a0%eb%93%9c%ec%84%bc%ec%8a%a4-%ea%b2%80%ed%86%a0-%ed%95%84%ec%9a%94-%ed%95%b4%ea%b2%b0-%eb%b0%a9%eb%b2%95/",
+      "date": "2026-09-20"
+    }
+  ],
+  "2016": [
+    {
+      "name": "woodu",
+      "year": "16",
+      "title": "我和 AI 一起迁移一个十九年前的论坛：半年时间，从\"生成代码\"到\"验证行为\"",
+      "url": "https://woodu.me/wohe-ai-yiqiqianai/",
+      "date": "2026-09-20"
     }
   ],
   "2017": [
     {
-      "name": "秋风于渭水",
+      "name": "碎言",
       "year": "17",
-      "title": "服务器 CPU 占用异常排查实录：从误杀 Wordfence 到抓出 FreshRSS 死循环",
-      "url": "https://www.tjsky.net/tutorial/1971",
-      "date": "2026-09-19"
+      "title": "虚无",
+      "url": "https://www.suiyan.cc/blog/20260920210343",
+      "date": "2026-09-20"
+    }
+  ],
+  "2019": [
+    {
+      "name": "流情",
+      "year": "19",
+      "title": "番茄短故事的签约",
+      "url": "https://liuqingwushui.top/archives/197/",
+      "date": "2026-09-20"
+    },
+    {
+      "name": "Zeruns",
+      "year": "19",
+      "title": "莱卡云 新加坡VPS 测评，2核4G 1000兆 仅需100元/月",
+      "url": "https://blog.zeruns.com/archives/959.html",
+      "date": "2026-09-20"
     }
   ],
   "2020": [
     {
-      "name": "不凡",
-      "year": "20",
-      "title": "近两日在开发Typecho文章打赏插件，提前预告文章打赏插件特点功能演示",
-      "url": "https://www.bufanz.com/20260919939.html",
-      "date": "2026-09-19"
-    },
-    {
       "name": "HEMING",
       "year": "20",
-      "title": "Neburst S3N-1C2G TPE VPS",
-      "url": "https://heming.org/2833.html",
-      "date": "2026-09-19"
+      "title": "Domain Backorder & Drop Catching Platforms: TLD Support List",
+      "url": "https://heming.org/2843.html",
+      "date": "2026-09-20"
     }
   ],
   "2021": [
     {
       "name": "DevNow",
       "year": "21",
-      "title": "近来的一些碎碎念",
-      "url": "https://www.laughingzhu.cn/posts/daily-2026-09-19",
-      "date": "2026-09-19"
+      "title": "Product Hunt 每日热榜 | 2026-09-20",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-09-20",
+      "date": "2026-09-20"
     }
   ],
   "2023": [
     {
-      "name": "小野",
+      "name": "枫林灯语",
       "year": "23",
-      "title": "跑跑卡丁车国服：从多开到劫持登录的逆向笔记",
-      "url": "https://lb5.net/274.html",
-      "date": "2026-09-19"
-    },
+      "title": "博客接入 Google AdSense：初体验并不好",
+      "url": "https://blog.mfwt.top/index.php/archives/1617/",
+      "date": "2026-09-20"
+    }
+  ],
+  "2024": [
     {
-      "name": "按钮与磁带",
-      "year": "23",
-      "title": "侠探杰克第四季",
-      "url": "https://jefftay.com/movies/reacher-season-4",
+      "name": "团团生活志",
+      "year": "24",
+      "title": "麦当劳兼职两个月，离职后我去江苏逛吃了几天",
+      "url": "https://t-t.live/archives/JsWmqT4R",
       "date": "2026-09-19"
     }
   ],
@@ -167,9 +169,9 @@ const latestArticlesByYear = {
     {
       "name": "Marcus",
       "year": "25",
-      "title": "审美的思考",
-      "url": "https://www.immarcus.com/blog/thoughts-on-aesthetics",
-      "date": "2026-09-19"
+      "title": "2026.09.20 博客阅读周荐 - 崔话记",
+      "url": "https://www.immarcus.com/blog/weekly-20260920",
+      "date": "2026-09-20"
     }
   ]
 };
