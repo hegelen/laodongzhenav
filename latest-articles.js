@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 9/24/2026, 10:18:29 PM
+// 抓取日期: 9/25/2026, 10:17:20 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -8,164 +8,168 @@ const latestArticlesByYear = {
     {
       "name": "Luca",
       "year": "00",
-      "title": "短时练习也能收获愉悦",
-      "url": "https://wlj.me/notes/sp-note-20260924-114718/",
+      "title": "纸笔亦可画画快乐很简单",
+      "url": "https://wlj.me/notes/sp-note-20260925-073458/",
       "date": "2026-09-24"
+    }
+  ],
+  "2002": [
+    {
+      "name": "seth",
+      "year": "02",
+      "title": "KnotChat: Jennifer Myers Chua",
+      "url": "https://seths.blog/2026/09/knotchat-jennifer-myers-chua/",
+      "date": "2026-09-25"
     }
   ],
   "2004": [
     {
-      "name": "我的天",
+      "name": "小猪的窝",
       "year": "04",
-      "title": "厚底鞋",
-      "url": "http://www.xlanda.net/posts/22491",
+      "title": "中秋",
+      "url": "https://ezo.biz/movies/1701.html",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "TonyBai",
+      "year": "04",
+      "title": "一个人、3个月、83万行代码：GitHub用Copilot把自己的运行时重写成了Rust",
+      "url": "https://tonybai.com/2026/09/25/github-copilot-runtime-rust-rewrite-agent-coding/",
       "date": "2026-09-24"
     },
     {
-      "name": "小猪的窝",
+      "name": "我的天",
       "year": "04",
-      "title": "峰回路转",
-      "url": "https://ezo.biz/Diary/1698.html",
-      "date": "2026-09-24"
+      "title": "又到中秋节",
+      "url": "http://www.xlanda.net/posts/22493",
+      "date": "2026-09-25"
     }
   ],
   "2005": [
     {
       "name": "ACEVS",
       "year": "05",
-      "title": "碎片2026-09-24",
-      "url": "https://acevs.com/5252/",
-      "date": "2026-09-24"
-    },
-    {
-      "name": "Gea-Suan Lin",
-      "year": "05",
-      "title": "Cloudflare 的 1.1.1.1 支援 Post-Quantum 演算法的 DNSSEC",
-      "url": "https://blog.gslin.org/archives/2026/09/24/13225/cloudflare-%e7%9a%84-1-1-1-1-%e6%94%af%e6%8f%b4-post-quantum-%e6%bc%94%e7%ae%97%e6%b3%95%e7%9a%84-dnssec/",
-      "date": "2026-09-23"
+      "title": "深渊号角海盗第一关通关",
+      "url": "https://acevs.com/5254/",
+      "date": "2026-09-25"
     }
   ],
-  "2007": [
+  "2011": [
     {
-      "name": "悠见",
-      "year": "07",
-      "title": "换支毛笔写字，感觉又不一样，但享受的感觉是一样的",
-      "url": "https://yufm.com/662405.html",
-      "date": "2026-09-24"
-    }
-  ],
-  "2008": [
-    {
-      "name": "杜郎俊赏",
-      "year": "08",
-      "title": "伤心的云美国服务器得分 106.00",
-      "url": "https://dujun.io/sadidc-us-zero-lv1-scored-one-hundred-and-six.html",
-      "date": "2026-09-24"
+      "name": "唐巧",
+      "year": "11",
+      "title": "什么是潮玩 - 读《因为独特:泡泡玛特创始人王宁访谈录》",
+      "url": "https://blog.devtang.com/2026/09/25/what-is-pop-mart/",
+      "date": "2026-09-25"
     }
   ],
   "2013": [
     {
-      "name": "卡瓦邦噶",
+      "name": "蛋蛋",
       "year": "13",
-      "title": "一次内存引起的网络丢包问题排查",
-      "url": "https://www.kawabangga.com/posts/7422",
-      "date": "2026-09-24"
+      "title": "正式更名《雾起时》暨中秋快乐~",
+      "url": "https://wuqishi.com/archives/Officially-renamed-and-Happy-Mid-Autumn-Festival",
+      "date": "2026-09-25"
+    },
+    {
+      "name": "Jonty",
+      "year": "13",
+      "title": "小米BE7000路由器dns重写",
+      "url": "https://nobb.cc/archives/3759.html",
+      "date": "2026-09-25"
     },
     {
       "name": "林羽凡",
       "year": "13",
-      "title": "今日减肥餐记录-2026.9.24",
-      "url": "https://www.linyufan.com/post/6048",
-      "date": "2026-09-24"
-    },
+      "title": "凌晨6点的审核记录，过节加班的打工牛马",
+      "url": "https://www.linyufan.com/post/6049",
+      "date": "2026-09-25"
+    }
+  ],
+  "2015": [
     {
-      "name": "小z",
-      "year": "13",
-      "title": "Meta旗下的Muse AI注册送10亿tokens，附注册教程和注意事项",
-      "url": "https://blog.xiaoz.org/archives/23521",
-      "date": "2026-09-24"
+      "name": "WordPress 知识宝库",
+      "year": "15",
+      "title": "클라우드웨이즈 IP 모니터링으로 의심 IP 식별하여 차단하는 방법",
+      "url": "https://www.thewordcracker.com/blog/%ed%81%b4%eb%9d%bc%ec%9a%b0%eb%93%9c%ec%9b%a8%ec%9d%b4%ec%a6%88-ip-%eb%aa%a8%eb%8b%88%ed%84%b0%eb%a7%81-%ec%9d%98%ec%8b%ac-ip-%ec%8b%9d%eb%b3%84/",
+      "date": "2026-09-25"
     }
   ],
   "2017": [
     {
       "name": "串串狗小刊",
       "year": "17",
-      "title": "Jev 对比它的三个平替 Laya 、 djev 、 anyjev 决策模型方案",
-      "url": "https://www.ccgxk.com/emlog_dev/894.html",
-      "date": "2026-09-24"
+      "title": "使用 opus 5.5 AI 开发的画质巨高的唯美划船游戏！",
+      "url": "https://www.ccgxk.com/895.html",
+      "date": "2026-09-25"
     }
   ],
   "2019": [
     {
-      "name": "呢喃",
+      "name": "So!azy",
       "year": "19",
-      "title": "狙击蝴蝶",
-      "url": "https://ninan.me/movie/Sniper-Butterfly.html",
-      "date": "2026-09-24"
+      "title": "中秋快乐",
+      "url": "https://blog.solazy.me/20260925/",
+      "date": "2026-09-25"
     }
   ],
   "2020": [
     {
-      "name": "不凡",
+      "name": "初然忆",
       "year": "20",
-      "title": "三花猫的第二胎宝宝，生了六只小奶猫",
-      "url": "https://www.bufanz.com/20260924966.html",
-      "date": "2026-09-24"
+      "title": "赶在月轮升起前",
+      "url": "https://www.imcry.vip/post/2026-9-25-2210/",
+      "date": "2026-09-25"
     }
   ],
   "2021": [
     {
       "name": "DevNow",
       "year": "21",
-      "title": "Product Hunt 每日热榜 | 2026-09-24",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-09-24",
-      "date": "2026-09-24"
+      "title": "Product Hunt 每日热榜 | 2026-09-25",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-09-25",
+      "date": "2026-09-25"
     },
     {
-      "name": "WSH",
+      "name": "记录生活",
       "year": "21",
-      "title": "单车",
-      "url": "https://www.wsh233.cn/post/单车",
-      "date": "2026-09-24"
-    },
-    {
-      "name": "Dayu",
-      "year": "21",
-      "title": "天展钓Tenkara和在Folkestone挖化石",
-      "url": "https://anotherdayu.com/tenkara-folkestone/",
-      "date": "2026-09-24"
+      "title": "中秋值班到中午溜号，还是没赶上家里那顿热饭",
+      "url": "https://9sb.net/archives/i-was-on-duty-until-noon-during-the-mid-autumn-festival-and-missed-the-hot-meal-at-home.html",
+      "date": "2026-09-25"
     }
   ],
   "2023": [
     {
-      "name": "鹿泽",
+      "name": "无敌",
       "year": "23",
-      "title": "WordPress 7.1.2版本最新更新包含哪些内容？",
-      "url": "https://www.bailuze.com/26142.html",
-      "date": "2026-09-24"
+      "title": "AI时代观察（一）：通才，不再只是天才的特权",
+      "url": "https://blog.tangwudi.com/technology/cognition14722/",
+      "date": "2026-09-25"
     },
     {
-      "name": "枫林灯语",
+      "name": "Siwei Li",
       "year": "23",
-      "title": "博客三周年，依旧是一些记录",
-      "url": "https://blog.mfwt.top/index.php/archives/1633/",
-      "date": "2026-09-24"
+      "title": "日见",
+      "url": "https://siwei.li/why-build-dayveil/",
+      "date": "2026-09-25"
+    }
+  ],
+  "2024": [
+    {
+      "name": "姓王者",
+      "year": "24",
+      "title": "明月几时有：月相的知识",
+      "url": "https://xingwangzhe.fun/posts/moon-phase-mid-autumn/",
+      "date": "2026-09-25"
     }
   ],
   "2025": [
     {
       "name": "Marcus",
       "year": "25",
-      "title": "我家是鬼屋",
-      "url": "https://www.immarcus.com/blog/my-haunted-home",
-      "date": "2026-09-24"
-    },
-    {
-      "name": "桃子味",
-      "year": "25",
-      "title": "鞋儿破，帽儿破，世间再无“济公”——送别游本昌老先生",
-      "url": "https://www.taoziwei.com/444/",
-      "date": "2026-09-24"
+      "title": "非弹性沟通",
+      "url": "https://www.immarcus.com/blog/non-elastic-communication",
+      "date": "2026-09-25"
     }
   ]
 };
