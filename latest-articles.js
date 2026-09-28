@@ -1,173 +1,175 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 9/27/2026, 10:03:34 PM
+// 抓取日期: 9/28/2026, 11:53:44 PM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
+  "2002": [
+    {
+      "name": "seth",
+      "year": "02",
+      "title": "Two ways to use lock-in/loyalty",
+      "url": "https://seths.blog/2026/09/two-ways-to-use-lock-in-loyalty/",
+      "date": "2026-09-28"
+    }
+  ],
   "2004": [
     {
       "name": "小猪的窝",
       "year": "04",
-      "title": "挑情",
-      "url": "https://ezo.biz/movies/1705.html",
-      "date": "2026-09-27"
+      "title": "京喜自营套路",
+      "url": "https://ezo.biz/Diary/1707.html",
+      "date": "2026-09-28"
     },
     {
-      "name": "我的天",
+      "name": "TonyBai",
       "year": "04",
-      "title": "月饼还没开动",
-      "url": "http://www.xlanda.net/posts/22498",
-      "date": "2026-09-27"
+      "title": "HN 热帖引爆讨论：Go 的 import 路径，为什么不该耦合 github.com？",
+      "url": "https://tonybai.com/2026/09/29/go-import-path-decouple-github-hn-debate/",
+      "date": "2026-09-28"
     }
   ],
   "2005": [
     {
-      "name": "当下",
+      "name": "Gea-Suan Lin",
       "year": "05",
-      "title": "1-9月空瓶",
-      "url": "https://blog.fueis.com/26-empty",
-      "date": "2026-09-27"
+      "title": "Anthropic 突然冒出 Sonnet 5.5",
+      "url": "https://blog.gslin.org/archives/2026/09/29/13231/anthropic-%e7%aa%81%e7%84%b6%e5%86%92%e5%87%ba-sonnet-5-5/",
+      "date": "2026-09-28"
     },
     {
       "name": "ACEVS",
       "year": "05",
-      "title": "中秋节琐碎",
-      "url": "https://acevs.com/5258/",
-      "date": "2026-09-27"
+      "title": "反自学机制",
+      "url": "https://acevs.com/5260/",
+      "date": "2026-09-28"
     },
     {
-      "name": "王志勇",
+      "name": "Lenciel",
       "year": "05",
-      "title": "本机安装PHP 8",
-      "url": "http://www.auiou.com/relevant/00002203.jsp",
-      "date": "2026-09-27"
+      "title": "Fragments 0x000D",
+      "url": "https://lenciel.com/2026/09/fragments-0x000d/",
+      "date": "2026-09-28"
     }
   ],
-  "2007": [
+  "2008": [
     {
-      "name": "朱小呆",
-      "year": "07",
-      "title": "九月小记：在嘈杂与如常之间",
-      "url": "https://zhujay.com/blog/blog_detail.html?id=1280",
-      "date": "2026-09-27"
-    },
-    {
-      "name": "无标题文档",
-      "year": "07",
-      "title": "Wayland 在 4K 显示器下 鼠标卡顿的问题",
-      "url": "https://www.gracecode.com/posts/3210.html",
-      "date": "2026-09-27"
+      "name": "四火的唠叨",
+      "year": "08",
+      "title": "软件工程，还有未来吗？",
+      "url": "https://www.raychase.net/8347",
+      "date": "2026-09-28"
     }
   ],
   "2009": [
     {
-      "name": "多多",
+      "name": "老张",
       "year": "09",
-      "title": "EdgeOne Pages 改名 EdgeOne Makers",
-      "url": "https://ddlog.cn/?p=568",
-      "date": "2026-09-27"
+      "title": "这些天，我又折腾了些啥！？",
+      "url": "https://laozhang.org/archives/4391.html",
+      "date": "2026-09-28"
+    }
+  ],
+  "2010": [
+    {
+      "name": "宇间草",
+      "year": "10",
+      "title": "想来也是搞笑：我的人生大事，居然要跟领导请假",
+      "url": "https://2days.org/1373.html",
+      "date": "2026-09-28"
+    },
+    {
+      "name": "麦麦同学",
+      "year": "10",
+      "title": "当你在看甄嬛传时，你会想起曲中人吗？",
+      "url": "https://www.mmtx.net/1188.html",
+      "date": "2026-09-28"
+    }
+  ],
+  "2011": [
+    {
+      "name": "Verne",
+      "year": "11",
+      "title": "Meta Muse 使用教程：上手设置、提示词技巧与实用案例",
+      "url": "https://blog.einverne.info/post/2026/09/meta-muse-use-cases-tutorial.html",
+      "date": "2026-09-28"
     }
   ],
   "2013": [
     {
       "name": "林羽凡",
       "year": "13",
-      "title": "今日减肥餐记录-2026.9.27",
-      "url": "https://www.linyufan.com/post/6054",
-      "date": "2026-09-27"
-    }
-  ],
-  "2014": [
-    {
-      "name": "ying",
-      "year": "14",
-      "title": "Fast &amp; Efficient LLM Inference with vLLM-II",
-      "url": "https://izualzhy.cn/fast-and-efficient-llm-inference-with-vllm-part-II",
-      "date": "2026-09-27"
-    }
-  ],
-  "2016": [
-    {
-      "name": "太隐",
-      "year": "16",
-      "title": "律师为什么替坏人说话",
-      "url": "https://wangyurui.com/posts/lu-shi-wei-shi-yao-ti-pi-ren-shuo-hua-f80c7126",
-      "date": "2026-09-27"
+      "title": "即日起博客全站关闭Ai自动回复功能",
+      "url": "https://www.linyufan.com/post/6056",
+      "date": "2026-09-28"
     }
   ],
   "2017": [
     {
-      "name": "秋风于渭水",
+      "name": "串串狗小刊",
       "year": "17",
-      "title": "碎碎谈 · 9月27日 17:55",
-      "url": "https://www.tjsky.net/shuoshuo/j9jldpwbbdrhgqvhsb3yv5",
-      "date": "2026-09-27"
+      "title": "今天聊聊，程序员如何延长寿命？",
+      "url": "https://www.ccgxk.com/front-end/899.html",
+      "date": "2026-09-28"
     }
   ],
   "2019": [
     {
-      "name": "飞蚊话",
+      "name": "流情",
       "year": "19",
-      "title": "该说不说，AI确实好用",
-      "url": "https://www.bwsl.wang/talk/184.html",
-      "date": "2026-09-27"
-    },
+      "title": "中秋三日",
+      "url": "https://liuqingwushui.top/archives/198/",
+      "date": "2026-09-28"
+    }
+  ],
+  "2020": [
     {
-      "name": "浪浪山下那个村",
-      "year": "19",
-      "title": "OmniRoute 本地模型代理快速入门指南",
-      "url": "https://www.zeekling.cn/articles/2026/09/27/1790495011424.html",
-      "date": "2026-09-27"
-    },
-    {
-      "name": "So!azy",
-      "year": "19",
-      "title": "前挡玻璃上的划痕",
-      "url": "https://blog.solazy.me/20260927/",
-      "date": "2026-09-27"
+      "name": "孙振超",
+      "year": "20",
+      "title": "C盘清理.bat",
+      "url": "https://www.aqzx.com/blog/post/49.html",
+      "date": "2026-09-28"
     }
   ],
   "2021": [
     {
-      "name": "WSH",
-      "year": "21",
-      "title": "自私",
-      "url": "https://www.wsh233.cn/post/自私",
-      "date": "2026-09-27"
-    },
-    {
       "name": "DevNow",
       "year": "21",
-      "title": "Product Hunt 每日热榜 | 2026-09-27",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-09-27",
-      "date": "2026-09-27"
+      "title": "Product Hunt 每日热榜 | 2026-09-28",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-09-28",
+      "date": "2026-09-28"
     }
   ],
   "2023": [
     {
-      "name": "枫林灯语",
+      "name": "湘铭",
       "year": "23",
-      "title": "如何寻找与选购免执照的 409MHz 公众对讲机",
-      "url": "https://blog.mfwt.top/index.php/archives/1640/",
-      "date": "2026-09-27"
-    }
-  ],
-  "2024": [
+      "title": "2026中秋",
+      "url": "https://xiangming.site/1152.html",
+      "date": "2026-09-28"
+    },
     {
-      "name": "Chongxi",
-      "year": "24",
-      "title": "华为小米粉丝互联网骂架的深入分析",
-      "url": "https://xice.cx/posts/huaweiVsXiaomi/",
-      "date": "2026-09-27"
+      "name": "鹿泽",
+      "year": "23",
+      "title": "亚马逊店铺商品标题seo优化教程",
+      "url": "https://www.bailuze.com/24448.html",
+      "date": "2026-09-28"
     }
   ],
   "2025": [
     {
+      "name": "礼印外盒",
+      "year": "25",
+      "title": "Python 可变默认参数陷阱，一个 dict 被整个函数共用",
+      "url": "https://liyinwaihe.com/431.html",
+      "date": "2026-09-28"
+    },
+    {
       "name": "Marcus",
       "year": "25",
-      "title": "2026.09.27 博客阅读周荐 - Jaron Writes",
-      "url": "https://www.immarcus.com/blog/weekly-20260927",
-      "date": "2026-09-27"
+      "title": "正宗美式英语",
+      "url": "https://www.immarcus.com/blog/native-american-english",
+      "date": "2026-09-28"
     }
   ]
 };
