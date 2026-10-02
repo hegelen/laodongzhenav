@@ -1,6 +1,6 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 10/2/2026, 12:56:48 AM
-// 只抓取最近14天内的文章，共 20 篇
+// 抓取日期:  2026-10-02 01:34:39
+// 只抓取最近14天内的文章，共 20 篇 
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
@@ -47,6 +47,13 @@ const latestArticlesByYear = {
       "date": "2026-10-01"
     },
     {
+      "name": "王志勇",
+      "year": "05",
+      "title": "这一次的程序设计速度和防攻思路",
+      "url": "http://www.auiou.com/relevant/00002210.jsp",
+      "date": "2026-10-02"
+    },
+    {
       "name": "Gea-Suan Lin",
       "year": "05",
       "title": "玩一下 Firecracker",
@@ -56,17 +63,17 @@ const latestArticlesByYear = {
   ],
   "2006": [
     {
-      "name": "平顶山",
-      "year": "06",
-      "title": "阿联酋二",
-      "url": "https://pingdingshan.me/363.html",
-      "date": "2026-10-01"
-    },
-    {
       "name": "SEISAMUSE",
       "year": "06",
       "title": "国庆节旅行第一天",
       "url": "https://www.seis-jun.xyz/blog/2026-10-01-first-day-of-national-day-holiday.html",
+      "date": "2026-10-01"
+    },
+    {
+      "name": "平顶山",
+      "year": "06",
+      "title": "阿联酋二",
+      "url": "https://pingdingshan.me/363.html",
       "date": "2026-10-01"
     }
   ],
@@ -107,15 +114,6 @@ const latestArticlesByYear = {
           "href": "https://blog.xulihang.me/hoarding-LCD-phones/"
         }
       },
-      "date": "2026-10-01"
-    }
-  ],
-  "2015": [
-    {
-      "name": "WordPress 知识宝库",
-      "year": "15",
-      "title": "클라우드웨이즈 팀 멤버 추가 및 삭제 방법 (최신 인터페이스 기준)",
-      "url": "https://www.thewordcracker.com/miscellaneous/%ed%81%b4%eb%9d%bc%ec%9a%b0%eb%93%9c%ec%9b%a8%ec%9d%b4%ec%a6%88-%ed%8c%80-%eb%a9%a4%eb%b2%84-%ec%b6%94%ea%b0%80-%eb%b0%8f-%ec%82%ad%ec%a0%9c/",
       "date": "2026-10-01"
     }
   ],
