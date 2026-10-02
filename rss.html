@@ -251,8 +251,20 @@
 
 <!-- 引入数据 -->
 <script>
-    const timestamp = new Date().getTime();
-    document.write('<script src="latest-articles.js?v=' + timestamp + '"><\/script>');
+    (function() {
+        var script = document.createElement('script');
+        script.src = 'latest-articles.js?v=' + new Date().getTime();
+        script.onload = function() {
+            // 加载成功后立即渲染
+            if (typeof renderArticles === 'function') renderArticles();
+        };
+        script.onerror = function() {
+            document.getElementById('articlesContainer').innerHTML =
+                '<div class="empty-state">❌ 数据文件加载失败，请检查 latest-articles.js 是否存在或编码是否正确</div>';
+            document.getElementById('statsInfo').innerText = '加载失败';
+        };
+        document.head.appendChild(script);
+    })();
 </script>
 
 <script>
