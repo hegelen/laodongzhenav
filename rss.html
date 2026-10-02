@@ -88,7 +88,7 @@
             color: #666;
         }
         
-        /* 最新文章列表样式 - 简洁，只显示标题和链接 */
+        /* 最新文章列表样式 */
         .articles-list {
             background: white;
             border-radius: 12px;
@@ -249,14 +249,15 @@
 
 <div class="back-to-top" id="backToTop">↑</div>
 
-<!-- 引入数据 -->
+<!-- 动态加载 latest-articles.js，加载完成后调用 renderArticles -->
 <script>
     (function() {
         var script = document.createElement('script');
         script.src = 'latest-articles.js?v=' + new Date().getTime();
         script.onload = function() {
-            // 加载成功后立即渲染
-            if (typeof renderArticles === 'function') renderArticles();
+            if (typeof renderArticles === 'function') {
+                renderArticles();
+            }
         };
         script.onerror = function() {
             document.getElementById('articlesContainer').innerHTML =
@@ -278,7 +279,7 @@
             return;
         }
         
-        // 修改这里：年份从小到大排序（从老到新，如 1994, 1995, 1996 ... 2025）
+        // 年份从小到大排序（从老到新）
         const years = Object.keys(latestArticlesByYear).sort((a, b) => parseInt(a) - parseInt(b));
         
         if (years.length === 0) {
@@ -318,26 +319,15 @@
         statsSpan.innerText = `共 ${totalCount} 篇最新文章 | 来自 ${years.length} 个年份 | 按年份从早到晚排序`;
     }
     
+    // 修复：强制转换为字符串再替换，避免数字等类型调用 replace 报错
     function escapeHtml(str) {
-        if (!str) return '';
-        return str.replace(/[&<>]/g, function(m) {
+        if (str === null || str === undefined) return '';
+        return String(str).replace(/[&<>]/g, function(m) {
             if (m === '&') return '&amp;';
             if (m === '<') return '&lt;';
             if (m === '>') return '&gt;';
             return m;
         });
-    }
-    
-    // 渲染
-    if (typeof latestArticlesByYear !== 'undefined') {
-        renderArticles();
-    } else {
-        const checkInterval = setInterval(function() {
-            if (typeof latestArticlesByYear !== 'undefined') {
-                clearInterval(checkInterval);
-                renderArticles();
-            }
-        }, 500);
     }
     
     // 回到顶部
