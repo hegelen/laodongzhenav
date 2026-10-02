@@ -65,7 +65,7 @@ async function fetchWithTimeout(blog, parser, timeoutMs = 5000) {
         }
         return null;
     });
-    
+     
     try {
         return await Promise.race([fetchPromise, timeoutPromise]);
     } catch (error) {
@@ -142,7 +142,7 @@ async function main() {
     
     // 生成输出文件
     const output = `// ==================== latest-articles.js ====================
-// 抓取日期: ${new Date().toLocaleString()}
+// 抓取日期:  ${new Date().toISOString().replace('T', ' ').slice(0, 19)}
 // 只抓取最近14天内的文章，共 ${results.length} 篇
 // 目标 ${TARGET_TOTAL} 篇，实际 ${results.length} 篇
 
