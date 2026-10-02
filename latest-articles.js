@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期: 10/1/2026, 11:10:55 PM
+// 抓取日期: 10/2/2026, 12:56:48 AM
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -24,6 +24,13 @@ const latestArticlesByYear = {
   ],
   "2004": [
     {
+      "name": "TonyBai",
+      "year": "04",
+      "title": "AI时代，如何保持住那份编写代码的乐趣",
+      "url": "https://tonybai.com/2026/10/02/how-to-keep-enjoying-programming-in-the-llm-era/",
+      "date": "2026-10-01"
+    },
+    {
       "name": "小猪的窝",
       "year": "04",
       "title": "国庆",
@@ -40,13 +47,6 @@ const latestArticlesByYear = {
       "date": "2026-10-01"
     },
     {
-      "name": "王志勇",
-      "year": "05",
-      "title": "关于是否撤文章的问题",
-      "url": "http://www.auiou.com/relevant/00002209.jsp",
-      "date": "2026-10-01"
-    },
-    {
       "name": "Gea-Suan Lin",
       "year": "05",
       "title": "玩一下 Firecracker",
@@ -56,17 +56,17 @@ const latestArticlesByYear = {
   ],
   "2006": [
     {
-      "name": "SEISAMUSE",
-      "year": "06",
-      "title": "国庆节旅行第一天",
-      "url": "https://www.seis-jun.xyz/blog/2026-10-01-first-day-of-national-day-holiday.html",
-      "date": "2026-10-01"
-    },
-    {
       "name": "平顶山",
       "year": "06",
       "title": "阿联酋二",
       "url": "https://pingdingshan.me/363.html",
+      "date": "2026-10-01"
+    },
+    {
+      "name": "SEISAMUSE",
+      "year": "06",
+      "title": "国庆节旅行第一天",
+      "url": "https://www.seis-jun.xyz/blog/2026-10-01-first-day-of-national-day-holiday.html",
       "date": "2026-10-01"
     }
   ],
@@ -85,6 +85,15 @@ const latestArticlesByYear = {
       "year": "08",
       "title": "2026 国庆快乐",
       "url": "https://dujun.io/happy-national-day-2026.html",
+      "date": "2026-10-01"
+    }
+  ],
+  "2013": [
+    {
+      "name": "林羽凡",
+      "year": "13",
+      "title": "凌晨一点了，牙疼得睡不着了",
+      "url": "https://www.linyufan.com/post/6068",
       "date": "2026-10-01"
     }
   ],
@@ -110,6 +119,15 @@ const latestArticlesByYear = {
       "date": "2026-10-01"
     }
   ],
+  "2017": [
+    {
+      "name": "串串狗小刊",
+      "year": "17",
+      "title": "扎克伯格的励志故事，把我感动哭了",
+      "url": "https://www.ccgxk.com/903.html",
+      "date": "2026-10-01"
+    }
+  ],
   "2019": [
     {
       "name": "新世界的大门",
@@ -121,10 +139,10 @@ const latestArticlesByYear = {
   ],
   "2020": [
     {
-      "name": "优世界",
+      "name": "不凡",
       "year": "20",
-      "title": "测试部署",
-      "url": "https://usj.cc/202610012049.html",
+      "title": "WordPress插件WebpConverter：上传图片转换WebP图片格式，支持等比缩放/文件大小比较/原图备份/添加文字水印图片水印",
+      "url": "https://www.bufanz.com/20261001967.html",
       "date": "2026-10-01"
     },
     {
@@ -132,13 +150,6 @@ const latestArticlesByYear = {
       "year": "20",
       "title": "過程",
       "url": "https://blog.giveanornot.com/%E9%81%8E%E7%A8%8B/",
-      "date": "2026-10-01"
-    },
-    {
-      "name": "不凡",
-      "year": "20",
-      "title": "WordPress插件WebpConverter：上传图片转换WebP图片格式，支持等比缩放/文件大小比较/原图备份/添加文字水印图片水印",
-      "url": "https://www.bufanz.com/20261001967.html",
       "date": "2026-10-01"
     }
   ],
@@ -164,18 +175,9 @@ const latestArticlesByYear = {
     {
       "name": "Marcus",
       "year": "25",
-      "title": "晚上不睡觉好处多",
-      "url": "https://www.immarcus.com/blog/benefits-of-staying-up",
-      "date": "2026-10-01"
-    }
-  ],
-  "2026": [
-    {
-      "name": "鹅嫂",
-      "year": "26",
-      "title": "thincoder 的初生",
-      "url": "https://www.esao.life/blog/posts/2026-10-01-thincoder初生.html",
-      "date": "2026-10-01"
+      "title": "不放辣椒酱",
+      "url": "https://www.immarcus.com/blog/without-chili-sauce",
+      "date": "2026-10-02"
     }
   ]
 };
