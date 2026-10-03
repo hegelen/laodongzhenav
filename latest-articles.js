@@ -1,171 +1,166 @@
 // ==================== latest-articles.js ====================
-// 抓取日期:  2026-10-02 23:02:52
-// 只抓取最近14天内的文章，共 20 篇
-// 目标 20 篇，实际 20 篇
+// 抓取日期:  2026-10-03 22:13:50
+// 只抓取最近14天内的文章，共 19 篇
+// 目标 20 篇，实际 19 篇
 
 const latestArticlesByYear = {
   "2002": [
     {
       "name": "seth",
       "year": "02",
-      "title": "Modern vanity",
-      "url": "https://seths.blog/2026/10/modern-vanity/",
-      "date": "2026-10-02"
+      "title": "Uniformity",
+      "url": "https://seths.blog/2026/10/uniformity/",
+      "date": "2026-10-03"
+    }
+  ],
+  "2003": [
+    {
+      "name": "王通",
+      "year": "03",
+      "title": "王通：丧心病狂的分享干货，发掘市场需求的3个秘法",
+      "url": "https://www.ufoer.com/post/14579.html",
+      "date": "2026-10-03"
     }
   ],
   "2004": [
     {
       "name": "小猪的窝",
       "year": "04",
-      "title": "入手国产耳机",
-      "url": "https://ezo.biz/Play_More/1715.html",
-      "date": "2026-10-02"
+      "title": "精神内耗",
+      "url": "https://ezo.biz/Diary/1720.html",
+      "date": "2026-10-03"
     },
     {
-      "name": "TonyBai",
+      "name": "delphij",
       "year": "04",
-      "title": "Pi 1.0 炸场！OpenClaw 背后的 Agent 引擎，进化成了“杀不死”的 Harness",
-      "url": "https://tonybai.com/2026/10/03/pi-1-0-durable-agent-harness-release/",
-      "date": "2026-10-02"
+      "title": "给博客做个站内全文搜索：纯前端离线倒排索引的设计与取舍",
+      "url": "https://blog.delphij.net/posts/2026/10/sitesearch/",
+      "date": "2026-10-03"
     }
   ],
   "2005": [
     {
-      "name": "王志勇",
-      "year": "05",
-      "title": "这一次的程序设计速度和防攻思路",
-      "url": "http://www.auiou.com/relevant/00002210.jsp",
-      "date": "2026-10-02"
-    },
-    {
-      "name": "Gea-Suan Lin",
-      "year": "05",
-      "title": "example.com 的改版",
-      "url": "https://blog.gslin.org/archives/2026/10/02/13243/example-com-%e7%9a%84%e6%94%b9%e7%89%88/",
-      "date": "2026-10-02"
-    },
-    {
       "name": "ACEVS",
       "year": "05",
-      "title": "脸上的黄褐斑",
-      "url": "https://acevs.com/5268/",
-      "date": "2026-10-02"
+      "title": "轮滑十二次",
+      "url": "https://acevs.com/5270/",
+      "date": "2026-10-03"
     },
     {
-      "name": "Lenciel",
+      "name": "王志勇",
       "year": "05",
-      "title": "Fragments 0x000F",
-      "url": "https://lenciel.com/2026/10/fragments-0x000f/",
-      "date": "2026-10-02"
+      "title": "歌名含义最好的一首中文歌",
+      "url": "http://www.auiou.com/relevant/00002212.jsp",
+      "date": "2026-10-03"
     }
   ],
   "2006": [
     {
       "name": "SEISAMUSE",
       "year": "06",
-      "title": "黄山之行",
-      "url": "https://www.seis-jun.xyz/blog/2026-10-02-yellow-mountain.html",
+      "title": "关于想象医学和现代医学",
+      "url": "https://www.seis-jun.xyz/blog/2026-10-03-about-traditional-and-modern-medic.html",
       "date": "2026-10-02"
     }
   ],
-  "2010": [
+  "2007": [
     {
-      "name": "麦麦同学",
-      "year": "10",
-      "title": "猪协解散吧",
-      "url": "https://www.mmtx.net/1189.html",
-      "date": "2026-10-02"
+      "name": "朱小呆",
+      "year": "07",
+      "title": "赴一场云海",
+      "url": "https://zhujay.com/talk/talk_detail.html?id=1282",
+      "date": "2026-10-03"
+    },
+    {
+      "name": "悠见",
+      "year": "07",
+      "title": "趁十一假期收拾新房，每天练字的计划也中断了",
+      "url": "https://yufm.com/662431.html",
+      "date": "2026-10-03"
+    }
+  ],
+  "2008": [
+    {
+      "name": "军",
+      "year": "08",
+      "title": "博物馆见闻：中国美术馆",
+      "url": "https://me.xu19.com/museum-notes-national-art-museum-of-china/",
+      "date": "2026-10-03"
     }
   ],
   "2013": [
     {
+      "name": "Jonty",
+      "year": "13",
+      "title": "【istoreos】上海电信IPTV桥接组播转单播-保姆级教程rtp2httpd",
+      "url": "https://nobb.cc/archives/3770.html",
+      "date": "2026-10-03"
+    },
+    {
       "name": "林羽凡",
       "year": "13",
-      "title": "今日减肥餐记录-2026.10.2",
-      "url": "https://www.linyufan.com/post/6070",
-      "date": "2026-10-02"
-    }
-  ],
-  "2015": [
-    {
-      "name": "WordPress 知识宝库",
-      "year": "15",
-      "title": "두 번째 크롬북... 살 만 할까?",
-      "url": "https://www.thewordcracker.com/blog/%eb%91%90-%eb%b2%88%ec%a7%b8-%ed%81%ac%eb%a1%ac%eb%b6%81-%ec%82%b4-%eb%a7%8c-%ed%95%a0%ea%b9%8c/",
-      "date": "2026-10-02"
+      "title": "今日减肥餐记录-2026.10.3",
+      "url": "https://www.linyufan.com/post/6071",
+      "date": "2026-10-03"
     }
   ],
   "2017": [
     {
-      "name": "串串狗小刊",
+      "name": "科学空间",
       "year": "17",
-      "title": "Web 出海做 SaaS 不能光支持 Google 登录",
-      "url": "https://www.ccgxk.com/codeother/904.html",
-      "date": "2026-10-02"
-    },
-    {
-      "name": "atpx",
-      "year": "17",
-      "title": "西北三日游",
-      "url": "https://atpx.com/blog/northwest-china-tour/",
-      "date": "2026-10-02"
+      "title": "通过微扰分析求解等式约束优化问题",
+      "url": "https://kexue.fm/archives/11928",
+      "date": "2026-10-03"
     }
   ],
-  "2020": [
+  "2019": [
     {
-      "name": "HEMING",
-      "year": "20",
-      "title": "Riven Cloud Japan Tokyo Premium VPS Gen2 AMD Ryzen 9 9950X",
-      "url": "https://heming.org/2864.html",
-      "date": "2026-10-02"
+      "name": "Zeruns",
+      "year": "19",
+      "title": "喜提新车！ 小鹏L03",
+      "url": "https://blog.zeruns.com/archives/961.html",
+      "date": "2026-10-03"
     },
     {
-      "name": "不凡",
-      "year": "20",
-      "title": "近日正在开发Typecho的WAF插件，自建恶意IP共享库，目前正在完善阶段",
-      "url": "https://www.bufanz.com/20261002971.html",
-      "date": "2026-10-02"
-    },
-    {
-      "name": "优世界",
-      "year": "20",
-      "title": "评论组件被人恶意sql注入，25端口被封，邮件无法发信",
-      "url": "https://usj.cc/202610021614.html",
-      "date": "2026-10-02"
+      "name": "LJF.COM",
+      "year": "19",
+      "title": "《因为独特》---相信时间 相信经营 Celebrate Everyday",
+      "url": "https://ljf.com/2026/10/03/1560/",
+      "date": "2026-10-03"
     }
   ],
   "2021": [
     {
       "name": "DevNow",
       "year": "21",
-      "title": "Product Hunt 每日热榜 | 2026-10-02",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-10-02",
-      "date": "2026-10-02"
+      "title": "Product Hunt 每日热榜 | 2026-10-03",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-10-03",
+      "date": "2026-10-03"
     },
     {
-      "name": "WSH",
+      "name": "记录生活",
       "year": "21",
-      "title": "自私",
-      "url": "https://www.wsh233.cn/post/自私",
-      "date": "2026-10-02"
+      "title": "导航栏做成悬浮还是直接压背景，大家给个意见",
+      "url": "https://9sb.net/archives/should-the-navigation-bar-be-made-floating-or-directly-pressed-against-the-background-please-give-your-opinion.html",
+      "date": "2026-10-03"
     }
   ],
-  "2023": [
+  "2024": [
     {
-      "name": "无敌",
-      "year": "23",
-      "title": "从知识获取到能力调用：MCP 如何改变 AI 应用架构",
-      "url": "https://blog.tangwudi.com/technology/homedatacenter14729/",
-      "date": "2026-10-02"
+      "name": "姓王者",
+      "year": "24",
+      "title": "[短讯]:查询whois for edu.cn",
+      "url": "https://xingwangzhe.fun/posts/whois-for-edu-cn/",
+      "date": "2026-10-03"
     }
   ],
   "2025": [
     {
       "name": "Marcus",
       "year": "25",
-      "title": "不放辣椒酱",
-      "url": "https://www.immarcus.com/blog/without-chili-sauce",
-      "date": "2026-10-02"
+      "title": "最重要的一篇作文",
+      "url": "https://www.immarcus.com/blog/one-most-important-composition",
+      "date": "2026-10-03"
     }
   ]
 };
