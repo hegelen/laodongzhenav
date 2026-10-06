@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期:  2026-10-06 00:50:42
+// 抓取日期:  2026-10-06 23:03:43
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -8,168 +8,166 @@ const latestArticlesByYear = {
     {
       "name": "seth",
       "year": "02",
-      "title": "Create a handoff doc",
-      "url": "https://seths.blog/2026/10/create-a-handoff-doc/",
-      "date": "2026-10-05"
-    }
-  ],
-  "2004": [
-    {
-      "name": "TonyBai",
-      "year": "04",
-      "title": "AI 开始研究 AI：剑桥重磅报告警告，一场「智能爆炸」可能正在逼近！",
-      "url": "https://tonybai.com/2026/10/06/intelligence-explosion-ai-rd-automation/",
-      "date": "2026-10-05"
+      "title": "Building a second-wave AI business",
+      "url": "https://seths.blog/2026/10/but-is-it-a-business/",
+      "date": "2026-10-06"
     }
   ],
   "2005": [
     {
-      "name": "Gea-Suan Lin",
+      "name": "ACEVS",
       "year": "05",
-      "title": "Cloudflare 拋出來的 Web Search API 以及 Ceramic.ai",
-      "url": "https://blog.gslin.org/archives/2026/10/05/13245/cloudflare-%e6%8b%8b%e5%87%ba%e4%be%86%e7%9a%84-web-search-api-%e4%bb%a5%e5%8f%8a-ceramic-ai/",
-      "date": "2026-10-05"
+      "title": "碎片2026年10月6日",
+      "url": "https://acevs.com/5276/",
+      "date": "2026-10-06"
     },
     {
       "name": "王志勇",
       "year": "05",
-      "title": "更新提示：《为什么不要定义Web 3.0？》新增",
-      "url": "http://www.auiou.com/relevant/00010009.jsp",
+      "title": "“更新提示”的好处",
+      "url": "http://www.auiou.com/relevant/00002216.jsp",
       "date": "2026-10-06"
-    },
-    {
-      "name": "ACEVS",
-      "year": "05",
-      "title": "继续运动",
-      "url": "https://acevs.com/5274/",
-      "date": "2026-10-05"
     }
   ],
   "2006": [
     {
-      "name": "SEISAMUSE",
-      "year": "06",
-      "title": "入蜀记day3 departure",
-      "url": "https://www.seis-jun.xyz/blog/2026-10-05-day3-departure.html",
-      "date": "2026-10-05"
-    },
-    {
       "name": "忘记了回忆",
       "year": "06",
-      "title": "换锁",
-      "url": "https://ltmltm.cn/bk/1497.html",
+      "title": "太阳能",
+      "url": "https://ltmltm.cn/bk/1499.html",
+      "date": "2026-10-06"
+    },
+    {
+      "name": "SEISAMUSE",
+      "year": "06",
+      "title": "为什么觉得父母故去后的老家像坟墓",
+      "url": "https://www.seis-jun.xyz/blog/2026-10-06-home-is-like-a-tomb-after-parents-die.html",
       "date": "2026-10-05"
     }
   ],
   "2007": [
     {
-      "name": "苏洋",
+      "name": "朱小呆",
       "year": "07",
-      "title": "Ubuntu 26.04 安装 Docker：阿里云、腾讯云镜像源与基础安全配置",
-      "url": "https://soulteary.com/2026/10/06/install-docker-on-ubuntu-26-04-with-aliyun-and-tencent-cloud-mirrors-and-basic-security.html",
-      "date": "2026-10-05"
+      "title": "家门口的音乐派对",
+      "url": "https://zhujay.com/talk/talk_detail.html?id=1283",
+      "date": "2026-10-06"
+    },
+    {
+      "name": "悠见",
+      "year": "07",
+      "title": "开始准备注册安全工程师考试（注安）",
+      "url": "https://yufm.com/662438.html",
+      "date": "2026-10-06"
     }
   ],
   "2009": [
     {
       "name": "异数",
       "year": "09",
-      "title": "随笔 || 对博客主题进行了二次优化",
-      "url": "https://www.yishu.pro/248.html",
-      "date": "2026-10-05"
+      "title": "亲子 || 育儿杂记19",
+      "url": "https://www.yishu.pro/250.html",
+      "date": "2026-10-06"
     },
     {
       "name": "老刘",
       "year": "09",
-      "title": "国庆杂记1",
-      "url": "https://www.iliu.org/posts/guoqing-zaji-1/",
-      "date": "2026-10-05"
+      "title": "国庆杂记2",
+      "url": "https://www.iliu.org/posts/guoqing-zaji-2/",
+      "date": "2026-10-06"
     }
   ],
   "2010": [
     {
-      "name": "麦麦同学",
+      "name": "磊磊落落",
       "year": "10",
-      "title": "typecho：抵御垃圾评论的偏方",
-      "url": "https://www.mmtx.net/1190.html",
-      "date": "2026-10-05"
+      "title": "2026 国庆假期大连游",
+      "url": "https://leileiluoluo.com/posts/national-day-holiday-2026.html",
+      "date": "2026-10-06"
+    }
+  ],
+  "2013": [
+    {
+      "name": "林羽凡",
+      "year": "13",
+      "title": "我在开发“竹子记账”时犯了一个愚蠢的错误",
+      "url": "https://www.linyufan.com/post/6075",
+      "date": "2026-10-06"
     }
   ],
   "2015": [
     {
-      "name": "WordPress 知识宝库",
+      "name": "青山",
       "year": "15",
-      "title": "워드프레스 오퍼코드 캐시 메모리 부족 문제? OPcache 적정 설정값 추천",
-      "url": "https://www.thewordcracker.com/intermediate/%ec%9b%8c%eb%93%9c%ed%94%84%eb%a0%88%ec%8a%a4-%ec%98%a4%ed%8d%bc%ec%bd%94%eb%93%9c-%ec%ba%90%ec%8b%9c-%eb%a9%94%eb%aa%a8%eb%a6%ac-%eb%b6%80%ec%a1%b1/",
-      "date": "2026-10-05"
+      "title": "丙午年中秋北京野生动物园半日速通记",
+      "url": "https://blog.yanqingshan.com/246.html",
+      "date": "2026-10-06"
     }
   ],
   "2017": [
     {
       "name": "串串狗小刊",
       "year": "17",
-      "title": "为了睡好觉，只能做独立开发者",
-      "url": "https://www.ccgxk.com/codeother/906.html",
-      "date": "2026-10-05"
-    }
-  ],
-  "2018": [
-    {
-      "name": "云奚小屋",
-      "year": "18",
-      "title": "十年之约来信",
-      "url": "https://yxgoa.cn/index.php/archives/1030/",
-      "date": "2026-10-05"
+      "title": "其实最顶级的人，每天研究的都是【无中生有】！",
+      "url": "https://www.ccgxk.com/codeother/907.html",
+      "date": "2026-10-06"
     }
   ],
   "2019": [
     {
       "name": "流情",
       "year": "19",
-      "title": "工作的最后一天9.30",
-      "url": "https://liuqingwushui.top/archives/200/",
-      "date": "2026-10-05"
+      "title": "【景点篇】兴隆湖湿地公园",
+      "url": "https://liuqingwushui.top/archives/201/",
+      "date": "2026-10-06"
+    },
+    {
+      "name": "奶爸建站笔记",
+      "year": "19",
+      "title": "WordPress 网站中毒怎么排查？一次同服务器跨站感染的完整查杀记录",
+      "url": "https://blog.naibabiji.com/skill/wordpress-cross-site-malware-cleanup.html",
+      "date": "2026-10-06"
     }
   ],
   "2020": [
     {
       "name": "不凡",
       "year": "20",
-      "title": "在WAF Guard插件中发现又一个博客聚合平台——FindBlog",
-      "url": "https://www.bufanz.com/20261005997.html",
-      "date": "2026-10-05"
+      "title": "博客网站平时日均IP不到20，部署WAF Guard插件后统计到日IP数超一千个",
+      "url": "https://www.bufanz.com/202610061002.html",
+      "date": "2026-10-06"
     },
     {
-      "name": "初然忆",
+      "name": "优世界",
       "year": "20",
-      "title": "欢迎，老Z！再见，老Z！",
-      "url": "https://www.imcry.vip/post/2026-10-5-1432/",
-      "date": "2026-10-05"
+      "title": "毕业两年，我最怕接家里的电话",
+      "url": "https://usj.cc/20261006215220.html",
+      "date": "2026-10-06"
+    },
+    {
+      "name": "呆哥",
+      "year": "20",
+      "title": "鼠标坏了，罗技狗屁王",
+      "url": "https://www.dalao.net/thread-64727.htm",
+      "date": "2026-10-06"
     }
   ],
   "2021": [
     {
       "name": "DevNow",
       "year": "21",
-      "title": "Product Hunt 每日热榜 | 2026-10-05",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-10-05",
-      "date": "2026-10-05"
-    },
-    {
-      "name": "Dayu",
-      "year": "21",
-      "title": "形式熟悉，内容陌生，味道惊喜",
-      "url": "https://anotherdayu.com/9891/",
-      "date": "2026-10-05"
+      "title": "Product Hunt 每日热榜 | 2026-10-06",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-10-06",
+      "date": "2026-10-06"
     }
   ],
-  "2026": [
+  "2025": [
     {
-      "name": "安迪",
-      "year": "26",
-      "title": "想试水油管自媒体",
-      "url": "https://i55.top/archives/547/",
-      "date": "2026-10-05"
+      "name": "Marcus",
+      "year": "25",
+      "title": "淘旧货",
+      "url": "https://www.immarcus.com/blog/thrifting",
+      "date": "2026-10-06"
     }
   ]
 };
