@@ -1,132 +1,123 @@
 // ==================== latest-articles.js ====================
-// 抓取日期:  2026-10-08 23:46:20
+// 抓取日期:  2026-10-09 23:15:17
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
-  "2003": [
+  "2002": [
     {
-      "name": "阮一峰",
-      "year": "03",
-      "title": "科技爱好者周刊（第 414 期）：Jev 决策模型有什么用",
-      "url": "http://www.ruanyifeng.com/blog/2026/10/weekly-issue-414.html",
-      "date": "2026-10-08"
-    },
-    {
-      "name": "王通",
-      "year": "03",
-      "title": "王通：美国MBA＋企业家圈子＋两年IP陪跑，胡伟的出海商学院",
-      "url": "https://www.ufoer.com/post/14599.html",
-      "date": "2026-10-08"
+      "name": "seth",
+      "year": "02",
+      "title": "Thin friction and thicker walls",
+      "url": "https://seths.blog/2026/10/thin-friction-and-thicker-walls/",
+      "date": "2026-10-09"
     }
   ],
   "2004": [
     {
       "name": "小猪的窝",
       "year": "04",
-      "title": "我以为",
-      "url": "https://ezo.biz/Diary/1730.html",
-      "date": "2026-10-08"
+      "title": "吊梢眼",
+      "url": "https://ezo.biz/Diary/1732.html",
+      "date": "2026-10-09"
     }
   ],
   "2005": [
     {
-      "name": "Gea-Suan Lin",
+      "name": "王志勇",
       "year": "05",
-      "title": "Haiku 居然更新 5.5 了...",
-      "url": "https://blog.gslin.org/archives/2026/10/08/13257/haiku-%e5%b1%85%e7%84%b6%e6%9b%b4%e6%96%b0-5-5-%e4%ba%86/",
-      "date": "2026-10-08"
+      "title": "DIY(35-4)：6路×2 USB全自动电脑切换器",
+      "url": "http://www.auiou.com/relevant/00002218.jsp",
+      "date": "2026-10-09"
     },
     {
       "name": "ACEVS",
       "year": "05",
-      "title": "永恒之塔2体验",
-      "url": "https://acevs.com/5280/",
-      "date": "2026-10-08"
+      "title": "永恒之塔2继续体验",
+      "url": "https://acevs.com/5282/",
+      "date": "2026-10-09"
+    },
+    {
+      "name": "Gea-Suan Lin",
+      "year": "05",
+      "title": "JPEG XL 在瀏覽器的回歸",
+      "url": "https://blog.gslin.org/archives/2026/10/09/13258/jpeg-xl-%e5%9c%a8%e7%80%8f%e8%a6%bd%e5%99%a8%e7%9a%84%e5%9b%9e%e6%ad%b8/",
+      "date": "2026-10-09"
     }
   ],
   "2006": [
     {
-      "name": "忘记了回忆",
+      "name": "SEISAMUSE",
       "year": "06",
-      "title": "回写盘",
-      "url": "https://ltmltm.cn/bk/1502.html",
-      "date": "2026-10-08"
+      "title": "到现在还活着真是不容易啊",
+      "url": "https://www.seis-jun.xyz/blog/2026-10-09-lucky-to-be-alive.html",
+      "date": "2026-10-09"
     }
   ],
-  "2009": [
+  "2008": [
     {
-      "name": "老张",
-      "year": "09",
-      "title": "国庆，回老家住两天！",
-      "url": "https://laozhang.org/archives/4406.html",
-      "date": "2026-10-08"
-    },
+      "name": "杜郎俊赏",
+      "year": "08",
+      "title": "js13kGames 2026 年度冠军作品出炉",
+      "url": "https://dujun.io/js13kgames-2026-winner-spectral-horn.html",
+      "date": "2026-10-09"
+    }
+  ],
+  "2012": [
     {
-      "name": "1900的灯泡店",
-      "year": "09",
-      "title": "292、寒露",
-      "url": "https://1900.live/292-han-lu/",
-      "date": "2026-10-08"
+      "name": "贱志",
+      "year": "12",
+      "title": "GR IV Monochrome 简单上手体验",
+      "url": "https://fatesinger.com/106453",
+      "date": "2026-10-09"
     }
   ],
   "2013": [
     {
       "name": "林羽凡",
       "year": "13",
-      "title": "今日减肥餐记录-2026.10.8",
-      "url": "https://www.linyufan.com/post/6078",
-      "date": "2026-10-08"
-    },
-    {
-      "name": "小z",
-      "year": "13",
-      "title": "我做了一个免费在线文本工具箱：不用注册，20 余款工具打开即用",
-      "url": "https://blog.xiaoz.org/archives/23538",
-      "date": "2026-10-08"
-    }
-  ],
-  "2015": [
-    {
-      "name": "WordPress 知识宝库",
-      "year": "15",
-      "title": "네임칩(Namecheap)으로 닷컴 도메인 기관 이전",
-      "url": "https://www.thewordcracker.com/blog/%eb%84%a4%ec%9e%84%ec%b9%a9namecheap%ec%9c%bc%eb%a1%9c-%eb%8b%b7%ec%bb%b4-%eb%8f%84%eb%a9%94%ec%9d%b8-%ea%b8%b0%ea%b4%80-%ec%9d%b4%ec%a0%84/",
-      "date": "2026-10-08"
-    }
-  ],
-  "2016": [
-    {
-      "name": "幻影",
-      "year": "16",
-      "title": "想装电脑，但手不敢动",
-      "url": "https://blog.52hyjs.com/post-1289.html",
-      "date": "2026-10-08"
+      "title": "今日减肥餐记录-2026.10.9",
+      "url": "https://www.linyufan.com/post/6081",
+      "date": "2026-10-09"
     }
   ],
   "2017": [
     {
-      "name": "秋风于渭水",
-      "year": "17",
-      "title": "碎碎谈 · 10月8日 11:50",
-      "url": "https://www.tjsky.net/shuoshuo/bkx6a5guj3pu3gm4ggnbi7",
-      "date": "2026-10-08"
-    },
-    {
       "name": "串串狗小刊",
       "year": "17",
-      "title": "搞 IT 的也不要觉得搞实体的赛道差",
-      "url": "https://www.ccgxk.com/codeother/911.html",
-      "date": "2026-10-08"
+      "title": "哼！Anthropic 自己都在偷偷抄Deepseek，反过头来还谴责国产AI？",
+      "url": "https://www.ccgxk.com/emlog_dev/912.html",
+      "date": "2026-10-09"
+    },
+    {
+      "name": "科学空间",
+      "year": "17",
+      "title": "如何让GDN2更稳定一些？",
+      "url": "https://kexue.fm/archives/11945",
+      "date": "2026-10-09"
+    },
+    {
+      "name": "碎言",
+      "year": "17",
+      "title": "丙午之多事之秋",
+      "url": "https://www.suiyan.cc/blog/20261009211338",
+      "date": "2026-10-09"
+    },
+    {
+      "name": "秋风于渭水",
+      "year": "17",
+      "title": "微软大刀部又来啦：Microsoft 365 家庭版”反向升级”变 6 人共享 2TB，合租车队连夜散伙咯",
+      "url": "https://www.tjsky.net/news/2071",
+      "date": "2026-10-09"
     }
   ],
   "2019": [
     {
-      "name": "呢喃",
+      "name": "新世界的大门",
       "year": "19",
-      "title": "十年之约新版上线啦",
-      "url": "https://ninan.me/gear/shinianzhiyue-gaiban-gonggao.html",
-      "date": "2026-10-08"
+      "title": "2026-07-27 / 一天",
+      "url": "https://blog.xinshijiededa.men/daily/86/",
+      "date": "2026-10-09"
     }
   ],
   "2020": [
@@ -135,41 +126,48 @@ const latestArticlesByYear = {
       "year": "20",
       "title": "来 DOTA",
       "url": "https://blog.yihong0618.me/posts/issue-348/",
-      "date": "2026-10-08"
+      "date": "2026-10-09"
     }
   ],
   "2021": [
     {
       "name": "DevNow",
       "year": "21",
-      "title": "Product Hunt 每日热榜 | 2026-10-08",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-10-08",
-      "date": "2026-10-08"
-    },
-    {
-      "name": "WSH",
-      "year": "21",
-      "title": "将Kindle电子书摘录同步到Memos",
-      "url": "https://www.wsh233.cn/post/将kindle电子书摘录同步到memos",
-      "date": "2026-10-08"
+      "title": "Product Hunt 热榜 2026-10-09：OpenSwarm、OpenSEO、Claude Haiku 5.5",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-10-09",
+      "date": "2026-10-09"
     }
   ],
   "2023": [
     {
-      "name": "按钮与磁带",
+      "name": "鹿泽",
       "year": "23",
-      "title": "侠女内莉第一季",
-      "url": "https://jefftay.com/movies/neagley-season-1",
-      "date": "2026-10-08"
+      "title": "12种提升自然搜索可见性的页面内SEO技巧",
+      "url": "https://www.bailuze.com/26145.html",
+      "date": "2026-10-09"
+    },
+    {
+      "name": "无敌",
+      "year": "23",
+      "title": "人类如何理解他人：从行为信号到人性模型",
+      "url": "https://blog.tangwudi.com/technology/cognition14747/",
+      "date": "2026-10-09"
+    },
+    {
+      "name": "枫林灯语",
+      "year": "23",
+      "title": "请不要将标签页的标题改为无意义字符",
+      "url": "https://blog.mfwt.top/index.php/archives/1659/",
+      "date": "2026-10-09"
     }
   ],
-  "2026": [
+  "2024": [
     {
-      "name": "Sheep5",
-      "year": "26",
-      "title": "我的广告拦截折腾记录：AdGuard 订阅与自建 DNS",
-      "url": "https://sheep5.net/archives/814/",
-      "date": "2026-10-08"
+      "name": "姓王者",
+      "year": "24",
+      "title": "Ubuntu Intel 性能模式问题排查：我修复 i7-1260P 的 PPD Governor 切换",
+      "url": "https://xingwangzhe.fun/posts/ubuntu-intel-pstate-performance-governor/",
+      "date": "2026-10-09"
     }
   ]
 };
