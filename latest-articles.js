@@ -1,171 +1,173 @@
 // ==================== latest-articles.js ====================
-// 抓取日期:  2026-10-10 22:30:27
+// 抓取日期:  2026-10-11 22:50:42
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
-  "2000": [
+  "2002": [
     {
-      "name": "Luca",
-      "year": "00",
-      "title": "踩断脚踏板为何不能明说",
-      "url": "https://wlj.me/notes/sp-note-20261010-210032/",
-      "date": "2026-10-10"
+      "name": "seth",
+      "year": "02",
+      "title": "Talent becomes media",
+      "url": "https://seths.blog/2026/10/talent-becomes-media/",
+      "date": "2026-10-11"
     }
   ],
   "2005": [
     {
       "name": "Gea-Suan Lin",
       "year": "05",
-      "title": "mise 裝 youplot...",
-      "url": "https://blog.gslin.org/archives/2026/10/11/13263/mise-%e8%a3%9d-youplot/",
-      "date": "2026-10-10"
+      "title": "OpenAI 的 API 分級制度改版",
+      "url": "https://blog.gslin.org/archives/2026/10/12/13267/openai-%e7%9a%84-api-%e5%88%86%e7%b4%9a%e5%88%b6%e5%ba%a6%e6%94%b9%e7%89%88/",
+      "date": "2026-10-11"
+    },
+    {
+      "name": "云风",
+      "year": "05",
+      "title": "点老救世记的深度体验",
+      "url": "https://blog.codingnow.com/2026/10/dotage.html",
+      "date": "2026-10-11"
     },
     {
       "name": "ACEVS",
       "year": "05",
-      "title": "永恒之塔2再次记录",
-      "url": "https://acevs.com/5284/",
-      "date": "2026-10-10"
+      "title": "人渣scum游戏测试",
+      "url": "https://acevs.com/5286/",
+      "date": "2026-10-11"
     },
     {
-      "name": "王志勇",
+      "name": "Lenciel",
       "year": "05",
-      "title": "真玄学心得(26)：最新消息",
-      "url": "http://www.auiou.com/relevant/00002219.jsp",
-      "date": "2026-10-10"
+      "title": "Fragments 0x0011",
+      "url": "https://lenciel.com/2026/10/fragments-0x0011/",
+      "date": "2026-10-11"
+    },
+    {
+      "name": "当下",
+      "year": "05",
+      "title": "人一旦倒霉起来就没轻没重的",
+      "url": "https://blog.fueis.com/26-1011",
+      "date": "2026-10-11"
     }
   ],
-  "2006": [
+  "2007": [
     {
-      "name": "SEISAMUSE",
-      "year": "06",
-      "title": "似乎所有人造物都有广告属性",
-      "url": "https://www.seis-jun.xyz/blog/2026-10-10-every-manmade-stuff-has-the-characteristic-of-advertisement.html",
-      "date": "2026-10-10"
+      "name": "悠见",
+      "year": "07",
+      "title": "坚持悬肘书写毛笔字，闲时多记草书写法",
+      "url": "https://yufm.com/662468.html",
+      "date": "2026-10-11"
     }
   ],
-  "2008": [
+  "2011": [
     {
-      "name": "Wandai",
-      "year": "08",
-      "title": "准备前往北京",
-      "url": "https://twd2.me/archives/21193",
-      "date": "2026-10-10"
+      "name": "君子不器",
+      "year": "11",
+      "title": "2026年9月：四年级开学、旧友重逢，与地铁开通",
+      "url": "https://www.colinjiang.com/archives/2026-09-back-to-school-reunion-and-metro-opening.html",
+      "date": "2026-10-11"
     }
   ],
   "2013": [
     {
-      "name": "小z",
-      "year": "13",
-      "title": "我重构了我的烂大街网络工具箱 TCPLab，能做你的备胎吗？",
-      "url": "https://blog.xiaoz.org/archives/23554",
-      "date": "2026-10-10"
-    },
-    {
       "name": "林羽凡",
       "year": "13",
-      "title": "今日减肥餐记录-2026.10.10-煎了个韭菜鸡蛋包",
-      "url": "https://www.linyufan.com/post/6082",
-      "date": "2026-10-10"
+      "title": "wsbk这次的SSP组别比赛把我看激动了",
+      "url": "https://www.linyufan.com/post/6084",
+      "date": "2026-10-11"
     }
   ],
-  "2014": [
+  "2015": [
     {
-      "name": "缙哥哥",
-      "year": "14",
-      "title": "必应中国也学百度：搜索结果广告置顶，以假乱真",
-      "url": "https://www.dujin.org/23853.html",
-      "date": "2026-10-10"
+      "name": "WordPress 知识宝库",
+      "year": "15",
+      "title": "워드프레스 이메일 발송 오류 해결: Resend 무료 SMTP 설정 방법",
+      "url": "https://www.thewordcracker.com/intermediate/%ec%9b%8c%eb%93%9c%ed%94%84%eb%a0%88%ec%8a%a4-resend-%eb%ac%b4%eb%a3%8c-smtp-%ec%84%a4%ec%a0%95-%eb%b0%a9%eb%b2%95/",
+      "date": "2026-10-11"
     }
   ],
   "2017": [
     {
       "name": "串串狗小刊",
       "year": "17",
-      "title": "前端娱乐圈重磅新闻！Deno团队加入Cloudflare且不再维护 Deno",
-      "url": "https://www.ccgxk.com/emlog_dev/913.html",
-      "date": "2026-10-10"
+      "title": "论 Web 出海抱团互助的重要性！",
+      "url": "https://www.ccgxk.com/codeother/914.html",
+      "date": "2026-10-11"
+    }
+  ],
+  "2018": [
+    {
+      "name": "云奚小屋",
+      "year": "18",
+      "title": "欢迎回到云奚小屋",
+      "url": "https://yxgoa.cn/index.php/archives/1/",
+      "date": "2026-10-11"
+    }
+  ],
+  "2019": [
+    {
+      "name": "So!azy",
+      "year": "19",
+      "title": "周末流水账 1011",
+      "url": "https://blog.solazy.me/20261011/",
+      "date": "2026-10-11"
     }
   ],
   "2020": [
     {
-      "name": "資工小廢物 - JN",
-      "year": "20",
-      "title": "JN 最近在幹嘛（20261010 更新）",
-      "url": "https://blog.giveanornot.com/now/20261002/",
-      "date": "2026-10-10"
-    },
-    {
       "name": "不凡",
       "year": "20",
-      "title": "Typecho插件WebpConverter更新：新增编辑器侧栏显示添加水印开关和水印添加位置",
-      "url": "https://www.bufanz.com/202610101021.html",
-      "date": "2026-10-10"
-    },
-    {
-      "name": "初然忆",
-      "year": "20",
-      "title": "EVE:欧贝的超旗战",
-      "url": "https://www.imcry.vip/post/2026-10-10-2106/",
-      "date": "2026-10-10"
-    },
-    {
-      "name": "瓦解",
-      "year": "20",
-      "title": "十月近况",
-      "url": "https://hin.cool/posts/busyoct.html",
-      "date": "2026-10-10"
+      "title": "Typecho插件Mailer更新：修复后台打开个人资料页出现server 500错误的问题",
+      "url": "https://www.bufanz.com/202610111052.html",
+      "date": "2026-10-11"
     }
   ],
   "2021": [
     {
+      "name": "WSH",
+      "year": "21",
+      "title": "虎跳峡和雨崩",
+      "url": "https://www.wsh233.cn/post/虎跳峡和雨崩",
+      "date": "2026-10-11"
+    },
+    {
       "name": "记录生活",
       "year": "21",
-      "title": "送娃上学冻了一路，让我领教了早晚温差",
-      "url": "https://9sb.net/archives/sending-my-child-to-school-was-frozen-all-the-way-which-taught-me-about-the-temperature-difference-between-morning-and-evening.html",
-      "date": "2026-10-10"
+      "title": "临时约的一场骑行，终点是邢台本地最大的朱庄水库",
+      "url": "https://9sb.net/archives/a-temporary-bike-ride-with-the-destination-being-the-largest-local-zhuzhuang-reservoir-in-xingtai.html",
+      "date": "2026-10-11"
     },
     {
       "name": "DevNow",
       "year": "21",
-      "title": "Product Hunt 热榜 2026-10-10：Busabase、Zernio、Playground by Google Labs",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-10-10",
-      "date": "2026-10-10"
+      "title": "Product Hunt 热榜 2026-10-11：ReSO AI、Onepin、Claude Dashboards & Motion",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-10-11",
+      "date": "2026-10-11"
     }
   ],
   "2023": [
     {
-      "name": "湘铭",
+      "name": "枫林灯语",
       "year": "23",
-      "title": "博客留言自动填充更新了",
-      "url": "https://xiangming.site/1165.html",
-      "date": "2026-10-10"
+      "title": "和校园网斗智斗勇的日子（第十辑）",
+      "url": "https://blog.mfwt.top/index.php/archives/1685/",
+      "date": "2026-10-11"
     },
     {
-      "name": "鹿泽",
+      "name": "Siwei Li",
       "year": "23",
-      "title": "新的SEO方式：2026年现代SEO的实际运作方式",
-      "url": "https://www.bailuze.com/24482.html",
-      "date": "2026-10-10"
+      "title": "蛋白粉也涨价了",
+      "url": "https://siwei.li/protein-powder-price-increase/",
+      "date": "2026-10-11"
     }
   ],
-  "2025": [
+  "2024": [
     {
-      "name": "Marcus",
-      "year": "25",
-      "title": "果然不应该裸游",
-      "url": "https://www.immarcus.com/blog/better-be-prepared",
-      "date": "2026-10-10"
-    }
-  ],
-  "2026": [
-    {
-      "name": "华立",
-      "year": "26",
-      "title": "DeepSeek Harness 会话删除插件",
-      "url": "https://www.renhuali.cn/journal/cmv1rj2y803pwchnm9pfgg99d",
-      "date": "2026-10-10"
+      "name": "姓王者",
+      "year": "24",
+      "title": "HUAWEI MateBook D15 2022 Ubuntu 指纹识别修复：Goodix GDIX51C0 采图超时",
+      "url": "https://xingwangzhe.fun/posts/matebook-d15-goodix-gdix51c0-fingerprint/",
+      "date": "2026-10-11"
     }
   ]
 };
