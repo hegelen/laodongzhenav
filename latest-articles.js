@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期:  2026-10-13 23:22:54
+// 抓取日期:  2026-10-14 22:15:29
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -8,172 +8,166 @@ const latestArticlesByYear = {
     {
       "name": "Luca",
       "year": "00",
-      "title": "两周出行上课工作玩耍配置",
-      "url": "https://wlj.me/notes/sp-note-20261013-220958/",
-      "date": "2026-10-13"
+      "title": "OpenAI办公室惊现窃听设备",
+      "url": "https://wlj.me/notes/sp-note-20261014-123110/",
+      "date": "2026-10-14"
+    }
+  ],
+  "2002": [
+    {
+      "name": "seth",
+      "year": "02",
+      "title": "Things people don’t say",
+      "url": "https://seths.blog/2026/10/things-people-dont-say/",
+      "date": "2026-10-14"
     }
   ],
   "2003": [
     {
-      "name": "王通",
+      "name": "愆伏",
       "year": "03",
-      "title": "为什么价格战都是第二名发起的?",
-      "url": "https://www.ufoer.com/post/14635.html",
-      "date": "2026-10-13"
+      "title": "2006，带着手册去装服务器",
+      "url": "https://www.tortorse.com/archives/installing-servers-with-a-manual-2006/",
+      "date": "2026-10-14"
     }
   ],
   "2004": [
     {
+      "name": "扫地老僧",
+      "year": "04",
+      "title": "盛世不靠明君",
+      "url": "https://doyj.com/2026/10/14/%e7%9b%9b%e4%b8%96%e4%b8%8d%e9%9d%a0%e6%98%8e%e5%90%9b/",
+      "date": "2026-10-14"
+    },
+    {
+      "name": "小猪的窝",
+      "year": "04",
+      "title": "年假搁浅",
+      "url": "https://ezo.biz/Diary/1744.html",
+      "date": "2026-10-14"
+    },
+    {
       "name": "TonyBai",
       "year": "04",
-      "title": "2029 年大限将至！Go 前密码学掌门人更新“密码学正确答案”：所有非对称算法都得换",
-      "url": "https://tonybai.com/2026/10/14/post-quantum-cryptographic-right-answers-2026/",
-      "date": "2026-10-13"
+      "title": "Anthropic 把 Git 扔了！7 人 5 个月自研 Scion，日合并代码从 2500 暴涨到 3 万次",
+      "url": "https://tonybai.com/2026/10/14/anthropic-scion-replaces-git-agent-scale-source-control/",
+      "date": "2026-10-14"
     }
   ],
   "2005": [
     {
       "name": "ACEVS",
       "year": "05",
-      "title": "出乎意料之中",
-      "url": "https://acevs.com/5290/",
-      "date": "2026-10-13"
+      "title": "战争召唤地狱之门",
+      "url": "https://acevs.com/5292/",
+      "date": "2026-10-14"
+    },
+    {
+      "name": "春田",
+      "year": "05",
+      "title": "１０９６．「働く」について考える(１４) では具体的にどう働くのか",
+      "url": "http://kaikeimura.way-nifty.com/blog/2026/10/post-900f14.html",
+      "date": "2026-10-14"
     },
     {
       "name": "Gea-Suan Lin",
       "year": "05",
-      "title": "Meta 也放出第一梯隊模型的消息",
-      "url": "https://blog.gslin.org/archives/2026/10/13/13269/meta-%e4%b9%9f%e6%94%be%e5%87%ba%e7%ac%ac%e4%b8%80%e6%a2%af%e9%9a%8a%e6%a8%a1%e5%9e%8b%e7%9a%84%e6%b6%88%e6%81%af/",
-      "date": "2026-10-13"
+      "title": "用 fnt 來管理字型",
+      "url": "https://blog.gslin.org/archives/2026/10/14/13272/%e7%94%a8-fnt-%e4%be%86%e7%ae%a1%e7%90%86%e5%ad%97%e5%9e%8b/",
+      "date": "2026-10-14"
     }
   ],
   "2006": [
     {
       "name": "SEISAMUSE",
       "year": "06",
-      "title": "文字为什么需要化妆？",
-      "url": "https://www.seis-jun.xyz/blog/2026-10-13-why-do-we-have-to-make-up-our-words.html",
-      "date": "2026-10-13"
+      "title": "小镇",
+      "url": "https://www.seis-jun.xyz/blog/2026-10-14-small-town-without-yesterday.html",
+      "date": "2026-10-14"
     }
   ],
-  "2010": [
+  "2008": [
     {
-      "name": "麦麦同学",
-      "year": "10",
-      "title": "秋染林间，拾一抹金黄",
-      "url": "https://www.mmtx.net/1191.html",
-      "date": "2026-10-13"
+      "name": "军",
+      "year": "08",
+      "title": "女儿学画画2｜素描水彩-保护生命",
+      "url": "https://me.xu19.com/daughter-learning-to-draw-part-2-it-s-everyone-s-responsibility-to-protect-life-on-earth/",
+      "date": "2026-10-14"
+    }
+  ],
+  "2009": [
+    {
+      "name": "张鑫旭",
+      "year": "09",
+      "title": "Nice！继text-wrap之后，Flex布局也支持balance排版了",
+      "url": "https://www.zhangxinxu.com/wordpress/2026/10/flex-wrap-balance/",
+      "date": "2026-10-14"
     }
   ],
   "2011": [
     {
-      "name": "老孙",
+      "name": "Verne",
       "year": "11",
-      "title": "Typecho评论抽奖插件",
-      "url": "https://www.imsun.org/archives/1800.html",
-      "date": "2026-10-13"
+      "title": "RAGFlow：以深度文档理解为核心的开源 RAG 引擎介绍与部署使用教程",
+      "url": "https://blog.einverne.info/post/2026/10/ragflow-open-source-rag-engine.html",
+      "date": "2026-10-14"
     }
   ],
-  "2012": [
+  "2013": [
     {
-      "name": "水拍石",
-      "year": "12",
-      "title": "wordpress评论表单中旧链接安全检查插件",
-      "url": "https://www.leitao.cn/11498.html",
-      "date": "2026-10-13"
-    }
-  ],
-  "2014": [
-    {
-      "name": "孤斗",
-      "year": "14",
-      "title": "我已经很久没有见过他了",
-      "url": "https://d-d.design/single/20506",
-      "date": "2026-10-13"
-    }
-  ],
-  "2015": [
-    {
-      "name": "网工格物",
-      "year": "15",
-      "title": "PVE9 超融合基础设施 - 4.PVE 虚拟化网络 - VLAN",
-      "url": "https://songxwn.com/PVE-HCI-4/",
-      "date": "2026-10-13"
-    },
-    {
-      "name": "WordPress 知识宝库",
-      "year": "15",
-      "title": "워드프레스 500 내부 서버 오류 (Internal Server Error) 해결 방법",
-      "url": "https://www.thewordcracker.com/intermediate/500-internal-server-error-in-wordpress/",
-      "date": "2026-10-13"
-    }
-  ],
-  "2016": [
-    {
-      "name": "故事里",
-      "year": "16",
-      "title": "会变得永远只是人心而已",
-      "url": "https://www.gushi.li/what-changes-in-the-end-is-only-the-human-heart.html",
-      "date": "2026-10-13"
-    }
-  ],
-  "2018": [
-    {
-      "name": "云奚小屋",
-      "year": "18",
-      "title": "拒绝花哨，手搓 Typecho 工作台",
-      "url": "https://yxgoa.cn/index.php/archives/3/",
-      "date": "2026-10-13"
+      "name": "林羽凡",
+      "year": "13",
+      "title": "今日减肥餐记录-2026.10.14 - 自制卷饼",
+      "url": "https://www.linyufan.com/post/6089",
+      "date": "2026-10-14"
     }
   ],
   "2019": [
     {
       "name": "流情",
       "year": "19",
-      "title": "【景点篇】都江堰",
-      "url": "https://liuqingwushui.top/archives/202/",
-      "date": "2026-10-13"
+      "title": "灰色博物馆",
+      "url": "https://liuqingwushui.top/archives/203/",
+      "date": "2026-10-14"
+    },
+    {
+      "name": "So!azy",
+      "year": "19",
+      "title": "出站口外趴活的司机",
+      "url": "https://blog.solazy.me/20261014/",
+      "date": "2026-10-14"
     }
   ],
   "2021": [
     {
+      "name": "DAIDAIFU",
+      "year": "21",
+      "title": "今天早上我儿子给我气炸毛了",
+      "url": "https://www.ddf.im/index.php/2026/10/14/1275.html",
+      "date": "2026-10-14"
+    },
+    {
       "name": "DevNow",
       "year": "21",
-      "title": "Product Hunt 热榜 2026-10-13：Google EmbeddingGemma 2、ngram 2.0、Base Code",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-10-13",
-      "date": "2026-10-13"
+      "title": "Product Hunt 热榜 2026-10-14：Articos MCP、OpenCode 2.0、Fina Business",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-10-14",
+      "date": "2026-10-14"
+    },
+    {
+      "name": "WSH",
+      "year": "21",
+      "title": "南太行",
+      "url": "https://www.wsh233.cn/post/南太行",
+      "date": "2026-10-14"
     }
   ],
   "2023": [
     {
-      "name": "湘铭",
+      "name": "宗宗酱",
       "year": "23",
-      "title": "检车",
-      "url": "https://xiangming.site/1166.html",
-      "date": "2026-10-13"
-    },
-    {
-      "name": "小野",
-      "year": "23",
-      "title": "战争走向由我说了算",
-      "url": "https://lb5.net/276.html",
-      "date": "2026-10-13"
-    },
-    {
-      "name": "鹿泽",
-      "year": "23",
-      "title": "搜狗问问停止服务公告：将于 2026年11月7日23时59分 正式停止服务",
-      "url": "https://www.bailuze.com/26197.html",
-      "date": "2026-10-13"
-    }
-  ],
-  "2025": [
-    {
-      "name": "Marcus",
-      "year": "25",
-      "title": "西雅图随感",
-      "url": "https://www.immarcus.com/blog/seattle-random-thoughts",
-      "date": "2026-10-13"
+      "title": "电瓶车充不起电了",
+      "url": "https://ygz.ink/archives/5898.html",
+      "date": "2026-10-14"
     }
   ]
 };
