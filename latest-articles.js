@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期:  2026-10-14 22:15:29
+// 抓取日期:  2026-10-15 22:08:04
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -8,166 +8,170 @@ const latestArticlesByYear = {
     {
       "name": "Luca",
       "year": "00",
-      "title": "OpenAI办公室惊现窃听设备",
-      "url": "https://wlj.me/notes/sp-note-20261014-123110/",
-      "date": "2026-10-14"
+      "title": "然后开始工作了 😱",
+      "url": "https://wlj.me/notes/sp-note-20261015-105434/",
+      "date": "2026-10-15"
     }
   ],
   "2002": [
     {
       "name": "seth",
       "year": "02",
-      "title": "Things people don’t say",
-      "url": "https://seths.blog/2026/10/things-people-dont-say/",
-      "date": "2026-10-14"
-    }
-  ],
-  "2003": [
-    {
-      "name": "愆伏",
-      "year": "03",
-      "title": "2006，带着手册去装服务器",
-      "url": "https://www.tortorse.com/archives/installing-servers-with-a-manual-2006/",
-      "date": "2026-10-14"
+      "title": "Purple Space problem solving",
+      "url": "https://seths.blog/2026/10/purple-space-problem-solving/",
+      "date": "2026-10-15"
     }
   ],
   "2004": [
     {
-      "name": "扫地老僧",
+      "name": "delphij",
       "year": "04",
-      "title": "盛世不靠明君",
-      "url": "https://doyj.com/2026/10/14/%e7%9b%9b%e4%b8%96%e4%b8%8d%e9%9d%a0%e6%98%8e%e5%90%9b/",
-      "date": "2026-10-14"
-    },
-    {
-      "name": "小猪的窝",
-      "year": "04",
-      "title": "年假搁浅",
-      "url": "https://ezo.biz/Diary/1744.html",
-      "date": "2026-10-14"
-    },
-    {
-      "name": "TonyBai",
-      "year": "04",
-      "title": "Anthropic 把 Git 扔了！7 人 5 个月自研 Scion，日合并代码从 2500 暴涨到 3 万次",
-      "url": "https://tonybai.com/2026/10/14/anthropic-scion-replaces-git-agent-scale-source-control/",
-      "date": "2026-10-14"
+      "title": "别了，SMTP mTLS",
+      "url": "https://blog.delphij.net/posts/2026/10/byebye-smtp-mtls/",
+      "date": "2026-10-15"
     }
   ],
   "2005": [
     {
-      "name": "ACEVS",
+      "name": "Lenciel",
       "year": "05",
-      "title": "战争召唤地狱之门",
-      "url": "https://acevs.com/5292/",
-      "date": "2026-10-14"
-    },
-    {
-      "name": "春田",
-      "year": "05",
-      "title": "１０９６．「働く」について考える(１４) では具体的にどう働くのか",
-      "url": "http://kaikeimura.way-nifty.com/blog/2026/10/post-900f14.html",
-      "date": "2026-10-14"
+      "title": "Fragments 0x0013",
+      "url": "https://lenciel.com/2026/10/fragments-0x0013/",
+      "date": "2026-10-15"
     },
     {
       "name": "Gea-Suan Lin",
       "year": "05",
-      "title": "用 fnt 來管理字型",
-      "url": "https://blog.gslin.org/archives/2026/10/14/13272/%e7%94%a8-fnt-%e4%be%86%e7%ae%a1%e7%90%86%e5%ad%97%e5%9e%8b/",
-      "date": "2026-10-14"
+      "title": "清大 nthu.tw 的 WHOIS 資訊...",
+      "url": "https://blog.gslin.org/archives/2026/10/15/13273/%e6%b8%85%e5%a4%a7-nthu-tw-%e7%9a%84-whois-%e8%b3%87%e8%a8%8a/",
+      "date": "2026-10-15"
     }
   ],
   "2006": [
     {
-      "name": "SEISAMUSE",
+      "name": "eallion",
       "year": "06",
-      "title": "小镇",
-      "url": "https://www.seis-jun.xyz/blog/2026-10-14-small-town-without-yesterday.html",
-      "date": "2026-10-14"
+      "title": "Ubuntu 配置多宽带",
+      "url": "https://www.eallion.com/ubuntu-dual-wan/",
+      "date": "2026-10-15"
     }
   ],
   "2008": [
     {
-      "name": "军",
+      "name": "杜郎俊赏",
       "year": "08",
-      "title": "女儿学画画2｜素描水彩-保护生命",
-      "url": "https://me.xu19.com/daughter-learning-to-draw-part-2-it-s-everyone-s-responsibility-to-protect-life-on-earth/",
-      "date": "2026-10-14"
+      "title": "yes 工程师",
+      "url": "https://dujun.io/yes-engineer.html",
+      "date": "2026-10-15"
     }
   ],
   "2009": [
     {
-      "name": "张鑫旭",
+      "name": "老刘",
       "year": "09",
-      "title": "Nice！继text-wrap之后，Flex布局也支持balance排版了",
-      "url": "https://www.zhangxinxu.com/wordpress/2026/10/flex-wrap-balance/",
-      "date": "2026-10-14"
-    }
-  ],
-  "2011": [
+      "title": "1.9元汽水，和零成本的投诉",
+      "url": "https://www.iliu.org/posts/zero-cost-complaint/",
+      "date": "2026-10-15"
+    },
     {
-      "name": "Verne",
-      "year": "11",
-      "title": "RAGFlow：以深度文档理解为核心的开源 RAG 引擎介绍与部署使用教程",
-      "url": "https://blog.einverne.info/post/2026/10/ragflow-open-source-rag-engine.html",
-      "date": "2026-10-14"
+      "name": "孙琪峥",
+      "year": "09",
+      "title": "iold9s1jmlp17y7n",
+      "url": "https://www.sunqizheng.com/blog/2691.html",
+      "date": "2026-10-15"
+    },
+    {
+      "name": "老张",
+      "year": "09",
+      "title": "从零搭建Obsidian每日日记工作流保姆教程",
+      "url": "https://laozhang.org/archives/4423.html",
+      "date": "2026-10-15"
     }
   ],
   "2013": [
     {
       "name": "林羽凡",
       "year": "13",
-      "title": "今日减肥餐记录-2026.10.14 - 自制卷饼",
-      "url": "https://www.linyufan.com/post/6089",
-      "date": "2026-10-14"
+      "title": "今日减肥餐记录-2026.10.15 - 自制煎饼",
+      "url": "https://www.linyufan.com/post/6090",
+      "date": "2026-10-15"
+    }
+  ],
+  "2015": [
+    {
+      "name": "WordPress 知识宝库",
+      "year": "15",
+      "title": "아바다 테마 판매량 급감, AI 때문일까?",
+      "url": "https://www.thewordcracker.com/basic/%ec%95%84%eb%b0%94%eb%8b%a4-%ed%85%8c%eb%a7%88-%ed%8c%90%eb%a7%a4%eb%9f%89-%ea%b8%89%ea%b0%90-ai-%eb%95%8c%eb%ac%b8%ec%9d%bc%ea%b9%8c/",
+      "date": "2026-10-15"
+    }
+  ],
+  "2017": [
+    {
+      "name": "串串狗小刊",
+      "year": "17",
+      "title": "为什么！拼多多！不搞 AI ！",
+      "url": "https://www.ccgxk.com/emlog_dev/919.html",
+      "date": "2026-10-15"
+    },
+    {
+      "name": "科学空间",
+      "year": "17",
+      "title": "慢即是快：2. Adam的尽头还是Muon？",
+      "url": "https://kexue.fm/archives/11964",
+      "date": "2026-10-15"
     }
   ],
   "2019": [
     {
-      "name": "流情",
+      "name": "吴诗涛",
       "year": "19",
-      "title": "灰色博物馆",
-      "url": "https://liuqingwushui.top/archives/203/",
-      "date": "2026-10-14"
-    },
+      "title": "把车开上月球去",
+      "url": "https://shitao5.org/posts/drive-to-the-moon/",
+      "date": "2026-10-15"
+    }
+  ],
+  "2020": [
     {
-      "name": "So!azy",
-      "year": "19",
-      "title": "出站口外趴活的司机",
-      "url": "https://blog.solazy.me/20261014/",
-      "date": "2026-10-14"
+      "name": "我不是咕咕鸽",
+      "year": "20",
+      "title": "Muse AI 最新保姆级注册教程！无需指纹浏览器，无需住宅IP！",
+      "url": "https://blog.laoda.de/archives/muse",
+      "date": "2026-10-15"
     }
   ],
   "2021": [
     {
-      "name": "DAIDAIFU",
-      "year": "21",
-      "title": "今天早上我儿子给我气炸毛了",
-      "url": "https://www.ddf.im/index.php/2026/10/14/1275.html",
-      "date": "2026-10-14"
-    },
-    {
       "name": "DevNow",
       "year": "21",
-      "title": "Product Hunt 热榜 2026-10-14：Articos MCP、OpenCode 2.0、Fina Business",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-10-14",
-      "date": "2026-10-14"
-    },
-    {
-      "name": "WSH",
-      "year": "21",
-      "title": "南太行",
-      "url": "https://www.wsh233.cn/post/南太行",
-      "date": "2026-10-14"
+      "title": "Product Hunt 热榜 2026-10-15：Pancake、Inferock、Retriever AI",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-10-15",
+      "date": "2026-10-15"
     }
   ],
   "2023": [
     {
+      "name": "鹿泽",
+      "year": "23",
+      "title": "网站排名下降后的对策，适用于主流搜索引擎算法（本文以百度为例）",
+      "url": "https://www.bailuze.com/24506.html",
+      "date": "2026-10-15"
+    },
+    {
       "name": "宗宗酱",
       "year": "23",
-      "title": "电瓶车充不起电了",
-      "url": "https://ygz.ink/archives/5898.html",
-      "date": "2026-10-14"
+      "title": "昨天的文章给我带来了40元的收益",
+      "url": "https://ygz.ink/archives/5905.html",
+      "date": "2026-10-15"
+    }
+  ],
+  "2025": [
+    {
+      "name": "Marcus",
+      "year": "25",
+      "title": "我不同意陶哲轩",
+      "url": "https://www.immarcus.com/blog/i-disagree-with-terence-tao",
+      "date": "2026-10-15"
     }
   ]
 };
