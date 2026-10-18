@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期:  2026-10-17 21:26:57
+// 抓取日期:  2026-10-18 21:33:25
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -8,176 +8,170 @@ const latestArticlesByYear = {
     {
       "name": "seth",
       "year": "02",
-      "title": "The race to the bottom feels inevitable…",
-      "url": "https://seths.blog/2026/10/the-race-to-the-bottom-feels-inevitable/",
-      "date": "2026-10-17"
-    }
-  ],
-  "2003": [
-    {
-      "name": "王通",
-      "year": "03",
-      "title": "王通：把传统文化融入到产品中，泰哥玩着年赚几千万",
-      "url": "https://www.ufoer.com/post/14645.html",
-      "date": "2026-10-17"
+      "title": "Anticipating confusion",
+      "url": "https://seths.blog/2026/10/anticipating-confusion/",
+      "date": "2026-10-18"
     }
   ],
   "2004": [
     {
       "name": "小猪的窝",
       "year": "04",
-      "title": "初试手动补漆",
-      "url": "https://ezo.biz/Play_More/1754.html",
-      "date": "2026-10-17"
+      "title": "简单调整主机风道",
+      "url": "https://ezo.biz/Play_More/1758.html",
+      "date": "2026-10-18"
     },
     {
-      "name": "kaix.in",
+      "name": "TonyBai",
       "year": "04",
-      "title": "AI 为什么总是惹人议论",
-      "url": "https://kaix.in/2026/1017/",
+      "title": "给Rust代码办一张“数学身份证”：亚马逊揭秘Nitro背后的形式化验证武器Verus",
+      "url": "https://tonybai.com/2026/10/18/verus-rust-formal-verification-amazon-nitro/",
       "date": "2026-10-17"
     }
   ],
   "2005": [
     {
+      "name": "Gea-Suan Lin",
+      "year": "05",
+      "title": "整數乘法的進展",
+      "url": "https://blog.gslin.org/archives/2026/10/18/13280/%e6%95%b4%e6%95%b8%e4%b9%98%e6%b3%95%e7%9a%84%e9%80%b2%e5%b1%95/",
+      "date": "2026-10-18"
+    },
+    {
       "name": "王志勇",
       "year": "05",
-      "title": "世界上最好的二级域名",
-      "url": "http://www.auiou.com/relevant/00002223.jsp",
-      "date": "2026-10-17"
-    },
+      "title": "AI编程和人工编程的差别",
+      "url": "http://www.auiou.com/relevant/00002224.jsp",
+      "date": "2026-10-18"
+    }
+  ],
+  "2006": [
     {
-      "name": "ACEVS",
-      "year": "05",
-      "title": "山",
-      "url": "https://acevs.com/5298/",
-      "date": "2026-10-17"
-    },
-    {
-      "name": "Lenciel",
-      "year": "05",
-      "title": "Fragments 0x0014",
-      "url": "https://lenciel.com/2026/10/fragments-0x0014/",
-      "date": "2026-10-17"
+      "name": "SEISAMUSE",
+      "year": "06",
+      "title": "会飞的汽车",
+      "url": "https://www.seis-jun.xyz/blog/2026-10-18-roadster.html",
+      "date": "2026-10-18"
     }
   ],
   "2008": [
     {
-      "name": "河马",
+      "name": "杜郎俊赏",
       "year": "08",
-      "title": "Debian最新版本和老版本的apt sources.list",
-      "url": "https://www.iamhippo.com/2026-10/1950.html",
-      "date": "2026-10-17"
-    }
-  ],
-  "2011": [
-    {
-      "name": "Verne",
-      "year": "11",
-      "title": "呆呆面板 daidai-panel：轻量级青龙面板替代品介绍与 Docker 部署教程",
-      "url": "https://blog.einverne.info/post/2026/10/daidai-panel.html",
-      "date": "2026-10-17"
-    }
-  ],
-  "2013": [
-    {
-      "name": "林羽凡",
-      "year": "13",
-      "title": "现在总算是知道WorkBuddy的市场份额为啥一路上涨了",
-      "url": "https://www.linyufan.com/post/6093",
-      "date": "2026-10-17"
-    },
-    {
-      "name": "卡瓦邦噶",
-      "year": "13",
-      "title": "网络问题排查的思路和技巧",
-      "url": "https://www.kawabangga.com/posts/7431",
-      "date": "2026-10-17"
+      "title": "确诊 2 型糖尿病",
+      "url": "https://dujun.io/e5ebffc0-8960-5860-9cbf-e70f53106d6a.html",
+      "date": "2026-10-18"
     }
   ],
   "2014": [
     {
+      "name": "孤斗",
+      "year": "14",
+      "title": "听我说，虽然不是我说",
+      "url": "https://d-d.design/single/20579",
+      "date": "2026-10-18"
+    },
+    {
       "name": "xulihang",
       "year": "14",
-      "title": "番号的背后",
+      "title": "日常生活中遇到的虫子",
       "url": {
         "$": {
-          "href": "https://blog.xulihang.me/japanese-av-industry/"
+          "href": "https://blog.xulihang.me/bugs-you-may-meet-in-daily-life/"
         }
       },
-      "date": "2026-10-17"
-    }
-  ],
-  "2016": [
-    {
-      "name": "幻影",
-      "year": "16",
-      "title": "万界书简：把散落各处的信，收进同一份目录",
-      "url": "https://blog.52hyjs.com/post-1290.html",
-      "date": "2026-10-17"
+      "date": "2026-10-18"
     }
   ],
   "2017": [
     {
-      "name": "碎言",
+      "name": "串串狗小刊",
       "year": "17",
-      "title": "Ubuntu 下 WanGP 部署 MiniMax H3",
-      "url": "https://www.suiyan.cc/blog/20261017152537",
-      "date": "2026-10-17"
+      "title": "成本十几块，就能屏蔽全家的广告！",
+      "url": "https://www.ccgxk.com/922.html",
+      "date": "2026-10-18"
+    },
+    {
+      "name": "秋风于渭水",
+      "year": "17",
+      "title": "Nginx 防恶意解析失效了？2000 条拦截日志揪出 HTTPS 时代的默认站点陷阱",
+      "url": "https://www.tjsky.net/tutorial/2139",
+      "date": "2026-10-18"
     }
   ],
-  "2018": [
+  "2019": [
     {
-      "name": "云奚小屋",
-      "year": "18",
-      "title": "明明很高冷，猫咪为什么可以征服我",
-      "url": "https://yxgoa.cn/index.php/archives/12/",
+      "name": "瓜老汉",
+      "year": "19",
+      "title": "江城大学，江城是一个神奇的地方",
+      "url": "http://www.gualaohan.com/post/828",
+      "date": "2026-10-18"
+    },
+    {
+      "name": "So!azy",
+      "year": "19",
+      "title": "周末流水账 1018",
+      "url": "https://blog.solazy.me/20261018/",
+      "date": "2026-10-18"
+    }
+  ],
+  "2020": [
+    {
+      "name": "初然忆",
+      "year": "20",
+      "title": "报名三轮车的驾驶培训",
+      "url": "https://www.imcry.vip/post/2026-10-18-631/",
       "date": "2026-10-17"
+    },
+    {
+      "name": "不凡",
+      "year": "20",
+      "title": "WordPress插件评论邮件通知：异步发送邮件/聊天对话式邮件模板/底部自定义HTML可用于博客签名或广告位",
+      "url": "https://www.bufanz.com/202610181163.html",
+      "date": "2026-10-18"
     }
   ],
   "2021": [
     {
-      "name": "DevNow",
+      "name": "喵喵小站・博客志",
       "year": "21",
-      "title": "Product Hunt 热榜 2026-10-17：Jockey by TwelveLabs、Harness by Autonomous、Tesla Roadster",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-10-17",
-      "date": "2026-10-17"
-    }
-  ],
-  "2022": [
+      "title": "鞍山、沈阳短途游（2026）",
+      "url": "https://www.mmbkz.cn/fa3df801.html",
+      "date": "2026-10-18"
+    },
     {
-      "name": "晴雀堂",
-      "year": "22",
-      "title": "电梯卡",
-      "url": "https://blog.verynb.net/posts/29816.html",
-      "date": "2026-10-17"
+      "name": "WSH",
+      "year": "21",
+      "title": "一只没有尾巴的猪",
+      "url": "https://www.wsh233.cn/post/一只没有尾巴的猪",
+      "date": "2026-10-18"
     }
   ],
   "2023": [
     {
-      "name": "鹿泽",
+      "name": "宗宗酱",
       "year": "23",
-      "title": "360 SEO和百度SEO有什么不同？",
-      "url": "https://www.bailuze.com/24511.html",
-      "date": "2026-10-17"
+      "title": "网络转载的一篇短文",
+      "url": "https://ygz.ink/archives/5909.html",
+      "date": "2026-10-18"
     }
   ],
   "2024": [
     {
       "name": "姓王者",
       "year": "24",
-      "title": "校园秋色",
-      "url": "https://xingwangzhe.fun/posts/campus-autumn-20261017/",
-      "date": "2026-10-17"
+      "title": "3D 关系图的极致优化：GPT-6.1 sol Ultra 的神力",
+      "url": "https://xingwangzhe.fun/posts/3d-graph-extreme-optimization-gpt-6-1-sol-ultra/",
+      "date": "2026-10-18"
     }
   ],
   "2025": [
     {
       "name": "Marcus",
       "year": "25",
-      "title": "Mario Kart",
-      "url": "https://www.immarcus.com/blog/mario-kart",
-      "date": "2026-10-17"
+      "title": "2026.10.18 博客阅读周荐 - 映屿",
+      "url": "https://www.immarcus.com/blog/weekly-20261018",
+      "date": "2026-10-18"
     }
   ]
 };
