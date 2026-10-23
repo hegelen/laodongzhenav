@@ -1,58 +1,63 @@
 // ==================== latest-articles.js ====================
-// 抓取日期:  2026-10-22 22:18:30
+// 抓取日期:  2026-10-23 22:03:45
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
-  "2000": [
+  "2003": [
     {
-      "name": "Luca",
-      "year": "00",
-      "title": "午休逛伯克利两家书店",
-      "url": "https://wlj.me/notes/sp-note-20261023-050211/",
-      "date": "2026-10-22"
-    }
-  ],
-  "2002": [
+      "name": "王通",
+      "year": "03",
+      "title": "王通：卖工具不赚钱，卖结果才赚钱：我为传统企业做了一套AI矩阵营销系统",
+      "url": "https://www.ufoer.com/post/14677.html",
+      "date": "2026-10-23"
+    },
     {
-      "name": "seth",
-      "year": "02",
-      "title": "The hotlist",
-      "url": "https://seths.blog/2026/10/the-hotlist/",
-      "date": "2026-10-22"
+      "name": "阮一峰",
+      "year": "03",
+      "title": "科技爱好者周刊（第 416 期）：编程已经面目全非",
+      "url": "http://www.ruanyifeng.com/blog/2026/10/weekly-issue-416.html",
+      "date": "2026-10-23"
     }
   ],
   "2004": [
     {
-      "name": "小猪的窝",
+      "name": "TonyBai",
       "year": "04",
-      "title": "应激训练",
-      "url": "https://ezo.biz/Diary/1768.html",
-      "date": "2026-10-22"
+      "title": "Go 紧急发布两个安全版本！一次 CA 证书信任危机，暴露 HTTPS 安全体系的薄弱环节",
+      "url": "https://tonybai.com/2026/10/23/go-urgent-security-release-ca-certificate-trust-crisis/",
+      "date": "2026-10-23"
+    },
+    {
+      "name": "kaix.in",
+      "year": "04",
+      "title": "移除了 webmention 功能",
+      "url": "https://kaix.in/2026/1023/",
+      "date": "2026-10-23"
     }
   ],
   "2005": [
     {
-      "name": "ACEVS",
-      "year": "05",
-      "title": "二手键盘退货记录",
-      "url": "https://acevs.com/5314/",
-      "date": "2026-10-22"
-    },
-    {
       "name": "Gea-Suan Lin",
       "year": "05",
-      "title": "日本的 PHP 文藝文庫...",
-      "url": "https://blog.gslin.org/archives/2026/10/23/13299/%e6%97%a5%e6%9c%ac%e7%9a%84-php-%e6%96%87%e8%97%9d%e6%96%87%e5%ba%ab/",
-      "date": "2026-10-22"
+      "title": "Amazon 的人說他們在 10/17 就有看到這次 PHP 的攻擊了",
+      "url": "https://blog.gslin.org/archives/2026/10/23/13301/amazon-%e7%9a%84%e4%ba%ba%e8%aa%aa%e4%bb%96%e5%80%91%e5%9c%a8-10-17-%e5%b0%b1%e6%9c%89%e7%9c%8b%e5%88%b0%e9%80%99%e6%ac%a1-php-%e7%9a%84%e6%94%bb%e6%93%8a%e4%ba%86/",
+      "date": "2026-10-23"
+    },
+    {
+      "name": "ACEVS",
+      "year": "05",
+      "title": "热拔插二手键盘对比",
+      "url": "https://acevs.com/5316/",
+      "date": "2026-10-23"
     }
   ],
-  "2007": [
+  "2006": [
     {
-      "name": "悠见",
-      "year": "07",
-      "title": "写得快一些，字的气势会更强一些",
-      "url": "https://yufm.com/662493.html",
+      "name": "SEISAMUSE",
+      "year": "06",
+      "title": "而立不惑",
+      "url": "https://www.seis-jun.xyz/blog/2026-10-23-confucious-words.html",
       "date": "2026-10-22"
     }
   ],
@@ -60,116 +65,111 @@ const latestArticlesByYear = {
     {
       "name": "河马",
       "year": "08",
-      "title": "Debian 使用ufw管理防火墙",
-      "url": "https://www.iamhippo.com/2026-10/1956.html",
-      "date": "2026-10-22"
+      "title": "阿里云 东京 轻量评测",
+      "url": "https://www.iamhippo.com/2026-10/1961.html",
+      "date": "2026-10-23"
     }
   ],
-  "2011": [
+  "2009": [
     {
-      "name": "灵尘居",
-      "year": "11",
-      "title": "个人任务与项目管理软件 OmniFocus 4 介绍",
-      "url": "https://lingchenzi.com/2026/10/9451.html",
-      "date": "2026-10-22"
+      "name": "1900的灯泡店",
+      "year": "09",
+      "title": "走大朝台我在想啥？二",
+      "url": "https://1900.live/zou-da-zhao-tai-wo-zai-xiang-sha-er/",
+      "date": "2026-10-23"
+    }
+  ],
+  "2010": [
+    {
+      "name": "Jeray",
+      "year": "10",
+      "title": "小小暴龙线 - 轻松拿捏",
+      "url": "https://hi.jeray.wang/L/228.html",
+      "date": "2026-10-23"
+    }
+  ],
+  "2013": [
+    {
+      "name": "蛋蛋",
+      "year": "13",
+      "title": "DeepSeek V4.1-Flash-1017 实测：甜点不在「斩杀一切」，在 5 元搜索接口",
+      "url": "https://wuqishi.com/archives/deepseek-v4-1-flash-1017",
+      "date": "2026-10-23"
     },
     {
-      "name": "第七星尘",
-      "year": "11",
-      "title": "记一次PHP安全漏洞的马拉松式修复",
-      "url": "https://blog.star7th.com/2026/10/2643.html",
-      "date": "2026-10-22"
-    },
+      "name": "林羽凡",
+      "year": "13",
+      "title": "鸿蒙版“林羽凡笔记”终于改得差不多了，这次完整适配平板和鸿蒙pc，以及三折叠，内测结束后发布上线。",
+      "url": "https://www.linyufan.com/post/6104",
+      "date": "2026-10-23"
+    }
+  ],
+  "2015": [
     {
-      "name": "Be For Web",
-      "year": "11",
-      "title": "About a Designer (7) 关于创业公司的故事",
-      "url": "http://beforweb.com/node/1166",
-      "date": "2026-10-22"
+      "name": "网工格物",
+      "year": "15",
+      "title": "部署Akvorado - 网络流日志收集分析系统",
+      "url": "https://songxwn.com/akvorado-docker/",
+      "date": "2026-10-23"
     }
   ],
   "2017": [
     {
       "name": "串串狗小刊",
       "year": "17",
-      "title": "Web出海难赚大钱，是因为你不爱钱！",
-      "url": "https://www.ccgxk.com/codeother/926.html",
-      "date": "2026-10-22"
-    },
-    {
-      "name": "秋风于渭水",
-      "year": "17",
-      "title": "碎碎谈 · 10月22日 18:38",
-      "url": "https://www.tjsky.net/shuoshuo/n5czqgsdm6vciag9kfmeqd",
-      "date": "2026-10-22"
-    }
-  ],
-  "2018": [
-    {
-      "name": "黑桃三",
-      "year": "18",
-      "title": "昨天整个互联网安全圈都炸了",
-      "url": "https://heitaosan.com/article/237",
-      "date": "2026-10-22"
+      "title": "心动了，二次元们会很喜欢的AI虚拟女友！",
+      "url": "https://www.ccgxk.com/emlog_dev/929.html",
+      "date": "2026-10-23"
     }
   ],
   "2019": [
     {
-      "name": "奶爸建站笔记",
+      "name": "So!azy",
       "year": "19",
-      "title": "紧急预警！PHP 爆出 RCE 高危漏洞（CVSS 9.2）：手把手教你安全升级 PHP 8.2/8.3/8.4 环境",
-      "url": "https://blog.naibabiji.com/skill/upgrade-php-environment.html",
-      "date": "2026-10-22"
+      "title": "为什么有人不怕把事做砸",
+      "url": "https://blog.solazy.me/20261023/",
+      "date": "2026-10-23"
     },
     {
-      "name": "流情",
+      "name": "新世界的大门",
       "year": "19",
-      "title": "多城之旅",
-      "url": "https://liuqingwushui.top/archives/204/",
-      "date": "2026-10-22"
+      "title": "2026-08-15 / 雅快逸当",
+      "url": "https://blog.xinshijiededa.men/daily/105/",
+      "date": "2026-10-23"
     }
   ],
   "2020": [
     {
-      "name": "优世界",
+      "name": "不凡",
       "year": "20",
-      "title": "减肥flag立了很多次，这次成了",
-      "url": "https://usj.cc/20261021233503.html",
-      "date": "2026-10-22"
+      "title": "Typecho插件AI网站助手前瞻体验，定制自己的AI分身",
+      "url": "https://www.bufanz.com/202610231170.html",
+      "date": "2026-10-23"
+    },
+    {
+      "name": "yihong0618",
+      "year": "20",
+      "title": "xintao",
+      "url": "https://blog.yihong0618.me/posts/issue-349/",
+      "date": "2026-10-23"
     }
   ],
   "2021": [
     {
-      "name": "WSH",
+      "name": "DevNow",
       "year": "21",
-      "title": "虎跳峡和雨崩",
-      "url": "https://www.wsh233.cn/post/虎跳峡和雨崩",
-      "date": "2026-10-22"
-    },
-    {
-      "name": "Dayu",
-      "year": "21",
-      "title": "QuietSearch:支持 Kagi 和 DeepSeek API 的轻量搜索界面",
-      "url": "https://anotherdayu.com/quietsearch-kagi-deepseek-api/",
-      "date": "2026-10-22"
+      "title": "Product Hunt 热榜 2026-10-23：DeepCell、Claude Duet、Doneas",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-10-23",
+      "date": "2026-10-23"
     }
   ],
   "2023": [
     {
-      "name": "鹿泽",
+      "name": "按钮与磁带",
       "year": "23",
-      "title": "网站优化中更新文章的窍门",
-      "url": "https://www.bailuze.com/24522.html",
-      "date": "2026-10-22"
-    }
-  ],
-  "2025": [
-    {
-      "name": "Marcus",
-      "year": "25",
-      "title": "拒绝",
-      "url": "https://www.immarcus.com/blog/rejection",
-      "date": "2026-10-22"
+      "title": "时间是贼",
+      "url": "https://jefftay.com/blog-posts/time-is-a-thief",
+      "date": "2026-10-23"
     }
   ]
 };
