@@ -1,173 +1,171 @@
 // ==================== latest-articles.js ====================
-// 抓取日期:  2026-10-24 21:32:43
+// 抓取日期:  2026-10-25 21:37:57
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
-  "2000": [
-    {
-      "name": "Luca",
-      "year": "00",
-      "title": "细思恐极的田氏案例",
-      "url": "https://wlj.me/notes/sp-note-20261024-060734/",
-      "date": "2026-10-23"
-    }
-  ],
-  "2002": [
-    {
-      "name": "seth",
-      "year": "02",
-      "title": "Caveman leadership and the CDO*",
-      "url": "https://seths.blog/2026/10/caveman-leadership-and-the-cdo/",
-      "date": "2026-10-24"
-    }
-  ],
   "2004": [
     {
       "name": "小猪的窝",
       "year": "04",
-      "title": "有颜色的节日",
-      "url": "https://ezo.biz/Cracker/1771.html",
-      "date": "2026-10-24"
-    },
-    {
-      "name": "竹炉山房",
-      "year": "04",
-      "title": "无锡vs泰州",
-      "url": "https://synyan.cn/t/64156",
-      "date": "2026-10-24"
+      "title": "日子难过天天过",
+      "url": "https://ezo.biz/Diary/1773.html",
+      "date": "2026-10-25"
     },
     {
       "name": "TonyBai",
       "year": "04",
-      "title": "大厨、厨房与餐馆：一文彻底搞懂 AI Agent 背后的“Harness”到底是什么",
-      "url": "https://tonybai.com/2026/10/24/what-is-a-harness/",
-      "date": "2026-10-23"
+      "title": "Go 代码也能像数学定理一样被证明？AI 编程时代，形式化验证正在补上最后一块拼图",
+      "url": "https://tonybai.com/2026/10/25/go-formal-verification-gobra-viper-ai/",
+      "date": "2026-10-24"
+    },
+    {
+      "name": "我的天",
+      "year": "04",
+      "title": "五花大绑",
+      "url": "https://www.xlanda.net/posts/22572",
+      "date": "2026-10-25"
     }
   ],
   "2005": [
     {
-      "name": "王志勇",
+      "name": "当下",
       "year": "05",
-      "title": "这次的PHP大漏洞/淡定的PHPer们",
-      "url": "http://www.auiou.com/relevant/00002228.jsp",
-      "date": "2026-10-24"
+      "title": "1-10月购物日志",
+      "url": "https://blog.fueis.com/26-beauty",
+      "date": "2026-10-25"
     }
   ],
   "2007": [
     {
-      "name": "不靠谱颜论",
+      "name": "朱小呆",
       "year": "07",
-      "title": "编程并没有面目全非",
-      "url": "https://yanlinlin.cn/2026/10/24/programming-is-not-unrecognizable/",
-      "date": "2026-10-23"
+      "title": "一日峡江出逃｜坐上巫山到巴东的小红船，赴一场巫峡之约",
+      "url": "https://zhujay.com/blog/blog_detail.html?id=1287",
+      "date": "2026-10-25"
     }
   ],
   "2008": [
     {
-      "name": "军",
-      "year": "08",
-      "title": "千万不要多吃",
-      "url": "https://me.xu19.com/be-careful-eating-hawthorn-it-may-cause-stomach-discomfort/",
-      "date": "2026-10-24"
-    },
-    {
-      "name": "龙Ge笔迹",
-      "year": "08",
-      "title": "本来这是一篇文章，现在只有图片了",
-      "url": "https://www.izhailong.com/1161.html",
-      "date": "2026-10-24"
-    },
-    {
       "name": "河马",
       "year": "08",
-      "title": "AWS EC2 东京",
-      "url": "https://www.iamhippo.com/2026-10/1968.html",
-      "date": "2026-10-24"
-    },
-    {
-      "name": "杜郎俊赏",
-      "year": "08",
-      "title": "甬江为证，四十正青春",
-      "url": "https://dujun.io/nbu-40th-anniversary.html",
-      "date": "2026-10-24"
+      "title": "阿里云老的香港ecs， 47.244开头的IP测试",
+      "url": "https://www.iamhippo.com/2026-10/1970.html",
+      "date": "2026-10-25"
     }
   ],
   "2009": [
     {
       "name": "孙琪峥",
       "year": "09",
-      "title": "z88oy57h43m080mc3v",
-      "url": "https://www.sunqizheng.com/blog/2704.html",
-      "date": "2026-10-24"
+      "title": "n9vihetnjs2ov9k",
+      "url": "https://www.sunqizheng.com/blog/2706.html",
+      "date": "2026-10-25"
     }
   ],
-  "2014": [
+  "2010": [
     {
-      "name": "缙哥哥",
-      "year": "14",
-      "title": "1024福利，免费领取GLM5.3大模型5亿Tokens，3天有效",
-      "url": "https://www.dujin.org/23866.html",
-      "date": "2026-10-24"
+      "name": "麦麦同学",
+      "year": "10",
+      "title": "强强对话再度折戟，遇强则弱，泰山目送蓉城加冕",
+      "url": "https://www.mmtx.net/1195.html",
+      "date": "2026-10-25"
     },
     {
-      "name": "孤斗",
-      "year": "14",
-      "title": "受控的世界，失控的秩序",
-      "url": "https://d-d.design/single/20607",
-      "date": "2026-10-24"
+      "name": "雅余",
+      "year": "10",
+      "title": "日常漫步 Vol.26 之永丰古树公园",
+      "url": "https://yayu.net/6266.html",
+      "date": "2026-10-25"
     }
   ],
   "2017": [
     {
+      "name": "arun",
+      "year": "17",
+      "title": "Marathoning on a Budget",
+      "url": "https://arun.is/blog/marathoning-on-a-budget/",
+      "date": "2026-10-25"
+    },
+    {
       "name": "串串狗小刊",
       "year": "17",
-      "title": "爆火项目，PS5游戏竟可以直接在PC原生运行了",
-      "url": "https://www.ccgxk.com/front-end/930.html",
-      "date": "2026-10-24"
+      "title": "实用！做AI短剧必备的3D影城搭建工具！",
+      "url": "https://www.ccgxk.com/emlog_dev/932.html",
+      "date": "2026-10-25"
+    }
+  ],
+  "2018": [
+    {
+      "name": "云奚小屋",
+      "year": "18",
+      "title": "人生路漫漫，云奚常相伴",
+      "url": "https://yxgoa.cn/index.php/archives/26/",
+      "date": "2026-10-25"
     }
   ],
   "2019": [
     {
-      "name": "jdeal",
+      "name": "So!azy",
       "year": "19",
-      "title": "片刻・Jdeal 发布了一条新动态~",
-      "url": "https://www.jdeal.cn/cross.html#5324",
-      "date": "2026-10-24"
+      "title": "「做个人」",
+      "url": "https://blog.solazy.me/20261025/",
+      "date": "2026-10-25"
+    },
+    {
+      "name": "流情",
+      "year": "19",
+      "title": "归途",
+      "url": "https://liuqingwushui.top/archives/205/",
+      "date": "2026-10-25"
     }
   ],
   "2020": [
     {
+      "name": "呆哥",
+      "year": "20",
+      "title": "【宝塔】PHP国内独家兼补丁包上线，PHP 严重安全漏洞修复及防护方案",
+      "url": "https://www.dalao.net/thread-65435.htm",
+      "date": "2026-10-25"
+    },
+    {
+      "name": "初然忆",
+      "year": "20",
+      "title": "蜻蜓A9-Plus鼠标的使用体验",
+      "url": "https://www.imcry.vip/post/2026-10-25-1713/",
+      "date": "2026-10-25"
+    },
+    {
       "name": "yihong0618",
       "year": "20",
-      "title": "About Me",
-      "url": "https://blog.yihong0618.me/posts/issue-282/",
-      "date": "2026-10-24"
+      "title": "xintao",
+      "url": "https://blog.yihong0618.me/posts/issue-349/",
+      "date": "2026-10-25"
+    },
+    {
+      "name": "优世界",
+      "year": "20",
+      "title": "郁闷的时候买了点酒",
+      "url": "https://usj.cc/20261025172451.html",
+      "date": "2026-10-25"
     }
   ],
   "2021": [
     {
-      "name": "DevNow",
+      "name": "WSH",
       "year": "21",
-      "title": "Product Hunt 热榜 2026-10-24：Product Hunt Visual Launch Editor、MOVO AI、Agent Hunt",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-10-24",
-      "date": "2026-10-24"
+      "title": "岗位保护",
+      "url": "https://www.wsh233.cn/post/岗位保护",
+      "date": "2026-10-25"
     }
   ],
-  "2024": [
+  "2025": [
     {
-      "name": "姓王者",
-      "year": "24",
-      "title": "1024程序员节-最后一次节日吗",
-      "url": "https://xingwangzhe.fun/posts/1024-last-programmers-day/",
-      "date": "2026-10-24"
-    },
-    {
-      "name": "Chongxi",
-      "year": "24",
-      "title": "我的blog设计理念",
-      "url": "https://xice.cx/posts/myBlogDesign/",
-      "date": "2026-10-24"
+      "name": "Marcus",
+      "year": "25",
+      "title": "2026.10.25 博客阅读周荐 - Hi 我劉昕",
+      "url": "https://www.immarcus.com/blog/weekly-20261025",
+      "date": "2026-10-25"
     }
   ]
 };
