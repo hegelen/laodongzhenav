@@ -1,171 +1,177 @@
 // ==================== latest-articles.js ====================
-// 抓取日期:  2026-10-25 21:37:57
+// 抓取日期:  2026-10-26 23:09:29
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
   "2004": [
     {
-      "name": "小猪的窝",
-      "year": "04",
-      "title": "日子难过天天过",
-      "url": "https://ezo.biz/Diary/1773.html",
-      "date": "2026-10-25"
-    },
-    {
-      "name": "TonyBai",
-      "year": "04",
-      "title": "Go 代码也能像数学定理一样被证明？AI 编程时代，形式化验证正在补上最后一块拼图",
-      "url": "https://tonybai.com/2026/10/25/go-formal-verification-gobra-viper-ai/",
-      "date": "2026-10-24"
-    },
-    {
       "name": "我的天",
       "year": "04",
-      "title": "五花大绑",
-      "url": "https://www.xlanda.net/posts/22572",
-      "date": "2026-10-25"
+      "title": "架子上路",
+      "url": "https://www.xlanda.net/posts/22574",
+      "date": "2026-10-26"
+    },
+    {
+      "name": "delphij",
+      "year": "04",
+      "title": "整理BIND 9配置：把琐碎的子域合并为一个zone",
+      "url": "https://blog.delphij.net/posts/2026/10/merge-dns-zones/",
+      "date": "2026-10-26"
     }
   ],
   "2005": [
     {
-      "name": "当下",
+      "name": "Gea-Suan Lin",
       "year": "05",
-      "title": "1-10月购物日志",
-      "url": "https://blog.fueis.com/26-beauty",
-      "date": "2026-10-25"
+      "title": "OpenAI 放出 GPT-6.1 Terra",
+      "url": "https://blog.gslin.org/archives/2026/10/27/13303/openai-%e6%94%be%e5%87%ba-gpt-6-1-terra/",
+      "date": "2026-10-26"
+    },
+    {
+      "name": "王志勇",
+      "year": "05",
+      "title": "数码评测(79)：最好用的平价鼠标和维修/改装",
+      "url": "http://www.auiou.com/relevant/00002229.jsp",
+      "date": "2026-10-26"
+    }
+  ],
+  "2006": [
+    {
+      "name": "SEISAMUSE",
+      "year": "06",
+      "title": "一立方的下午",
+      "url": "https://www.seis-jun.xyz/blog/2026-10-26-a-square-meter-of-afternoon.html",
+      "date": "2026-10-26"
     }
   ],
   "2007": [
     {
-      "name": "朱小呆",
+      "name": "悠见",
       "year": "07",
-      "title": "一日峡江出逃｜坐上巫山到巴东的小红船，赴一场巫峡之约",
-      "url": "https://zhujay.com/blog/blog_detail.html?id=1287",
-      "date": "2026-10-25"
-    }
-  ],
-  "2008": [
-    {
-      "name": "河马",
-      "year": "08",
-      "title": "阿里云老的香港ecs， 47.244开头的IP测试",
-      "url": "https://www.iamhippo.com/2026-10/1970.html",
-      "date": "2026-10-25"
+      "title": "读帖比练字本身更重要",
+      "url": "https://yufm.com/662499.html",
+      "date": "2026-10-26"
     }
   ],
   "2009": [
     {
-      "name": "孙琪峥",
+      "name": "张鑫旭",
       "year": "09",
-      "title": "n9vihetnjs2ov9k",
-      "url": "https://www.sunqizheng.com/blog/2706.html",
-      "date": "2026-10-25"
+      "title": "算了，还是讲下named-feature() @supports规则检测吧",
+      "url": "https://www.zhangxinxu.com/wordpress/2026/10/css-supports-named-feature/",
+      "date": "2026-10-26"
     }
   ],
   "2010": [
     {
       "name": "麦麦同学",
       "year": "10",
-      "title": "强强对话再度折戟，遇强则弱，泰山目送蓉城加冕",
-      "url": "https://www.mmtx.net/1195.html",
-      "date": "2026-10-25"
+      "title": "少年砺剑，橙战必胜！泰山 B 队拿下胜利！青训兴，泰山兴！",
+      "url": "https://www.mmtx.net/1198.html",
+      "date": "2026-10-26"
+    }
+  ],
+  "2011": [
+    {
+      "name": "forecho",
+      "year": "11",
+      "title": "17 分钟搞懂 ICT 核心概念：流动性、FVG、Power of 3 与订单块（视频笔记与中文图解）",
+      "url": "https://blog.forecho.com/learn-every-ict-concept.html",
+      "date": "2026-10-26"
     },
     {
-      "name": "雅余",
-      "year": "10",
-      "title": "日常漫步 Vol.26 之永丰古树公园",
-      "url": "https://yayu.net/6266.html",
-      "date": "2026-10-25"
+      "name": "Verne",
+      "year": "11",
+      "title": "入手 GL.iNet Comet Pro（RM10）：支持 Wi-Fi 6 的远程 IP KVM",
+      "url": "https://blog.einverne.info/post/2026/10/gl-inet-comet-pro-rm10-ip-kvm.html",
+      "date": "2026-10-26"
+    },
+    {
+      "name": "Be For Web",
+      "year": "11",
+      "title": "About a Designer (8) 别太艺术家了，前端工程师",
+      "url": "http://beforweb.com/node/1167",
+      "date": "2026-10-26"
+    }
+  ],
+  "2012": [
+    {
+      "name": "水拍石",
+      "year": "12",
+      "title": "未来三四年内黄金价格可能平稳走高",
+      "url": "https://www.leitao.cn/11529.html",
+      "date": "2026-10-26"
+    }
+  ],
+  "2013": [
+    {
+      "name": "卡瓦邦噶",
+      "year": "13",
+      "title": "演讲视频：Do you want to be a SRE?",
+      "url": "https://www.kawabangga.com/posts/7443",
+      "date": "2026-10-26"
     }
   ],
   "2017": [
     {
-      "name": "arun",
+      "name": "秋风于渭水",
       "year": "17",
-      "title": "Marathoning on a Budget",
-      "url": "https://arun.is/blog/marathoning-on-a-budget/",
-      "date": "2026-10-25"
-    },
-    {
-      "name": "串串狗小刊",
-      "year": "17",
-      "title": "实用！做AI短剧必备的3D影城搭建工具！",
-      "url": "https://www.ccgxk.com/emlog_dev/932.html",
-      "date": "2026-10-25"
-    }
-  ],
-  "2018": [
-    {
-      "name": "云奚小屋",
-      "year": "18",
-      "title": "人生路漫漫，云奚常相伴",
-      "url": "https://yxgoa.cn/index.php/archives/26/",
-      "date": "2026-10-25"
+      "title": "宝塔 Nginx 免费防火墙 8.4 赶紧卸载吧：偷偷上传文件，凭据明文裸奔",
+      "url": "https://www.tjsky.net/tutorial/2167",
+      "date": "2026-10-26"
     }
   ],
   "2019": [
     {
-      "name": "So!azy",
+      "name": "紫塞",
       "year": "19",
-      "title": "「做个人」",
-      "url": "https://blog.solazy.me/20261025/",
-      "date": "2026-10-25"
-    },
-    {
-      "name": "流情",
-      "year": "19",
-      "title": "归途",
-      "url": "https://liuqingwushui.top/archives/205/",
-      "date": "2026-10-25"
+      "title": "开门的一瞬间，世界完成了渲染",
+      "url": "https://zisai.com/posts/the-world-rendered-when-i-opened-the-door/",
+      "date": "2026-10-26"
     }
   ],
   "2020": [
     {
-      "name": "呆哥",
-      "year": "20",
-      "title": "【宝塔】PHP国内独家兼补丁包上线，PHP 严重安全漏洞修复及防护方案",
-      "url": "https://www.dalao.net/thread-65435.htm",
-      "date": "2026-10-25"
-    },
-    {
       "name": "初然忆",
       "year": "20",
-      "title": "蜻蜓A9-Plus鼠标的使用体验",
-      "url": "https://www.imcry.vip/post/2026-10-25-1713/",
-      "date": "2026-10-25"
-    },
-    {
-      "name": "yihong0618",
-      "year": "20",
-      "title": "xintao",
-      "url": "https://blog.yihong0618.me/posts/issue-349/",
-      "date": "2026-10-25"
-    },
-    {
-      "name": "优世界",
-      "year": "20",
-      "title": "郁闷的时候买了点酒",
-      "url": "https://usj.cc/20261025172451.html",
-      "date": "2026-10-25"
+      "title": "驾考趣事：服从安排！",
+      "url": "https://www.imcry.vip/post/2026-10-26-2344/",
+      "date": "2026-10-26"
     }
   ],
   "2021": [
     {
-      "name": "WSH",
+      "name": "DevNow",
       "year": "21",
-      "title": "岗位保护",
-      "url": "https://www.wsh233.cn/post/岗位保护",
-      "date": "2026-10-25"
+      "title": "Product Hunt 热榜 2026-10-26：Moli by Lexmount、Badgey、AgentGrid.io",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-10-26",
+      "date": "2026-10-26"
     }
   ],
-  "2025": [
+  "2023": [
     {
-      "name": "Marcus",
-      "year": "25",
-      "title": "2026.10.25 博客阅读周荐 - Hi 我劉昕",
-      "url": "https://www.immarcus.com/blog/weekly-20261025",
-      "date": "2026-10-25"
+      "name": "枫林灯语",
+      "year": "23",
+      "title": "漫谈心底那份夜雨与深秋",
+      "url": "https://blog.mfwt.top/index.php/archives/1679/",
+      "date": "2026-10-26"
+    }
+  ],
+  "2024": [
+    {
+      "name": "三叔",
+      "year": "24",
+      "title": "DSH EVA Theme：为 DeepSeek Harness 打造的 EVA 双角色主题插件",
+      "url": "https://www.sanshu.cn/atc/6.html",
+      "date": "2026-10-26"
+    },
+    {
+      "name": "刘郎阁",
+      "year": "24",
+      "title": "高性价比人生指南",
+      "url": "https://vjo.cc/2020",
+      "date": "2026-10-26"
     }
   ]
 };
