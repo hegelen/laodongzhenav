@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期:  2026-10-27 23:00:17
+// 抓取日期:  2026-10-28 23:09:01
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -8,168 +8,166 @@ const latestArticlesByYear = {
     {
       "name": "Luca",
       "year": "00",
-      "title": "磁盘加密密码需单独修改",
-      "url": "https://wlj.me/notes/sp-note-20261027-121223/",
-      "date": "2026-10-27"
+      "title": "订阅我的精选阅读清单",
+      "url": "https://wlj.me/notes/sp-note-20261028-112538/",
+      "date": "2026-10-28"
     }
   ],
-  "2002": [
+  "2003": [
     {
-      "name": "seth",
-      "year": "02",
-      "title": "The half-life of disappointment",
-      "url": "https://seths.blog/2026/10/the-half-life-of-disappointment/",
-      "date": "2026-10-27"
+      "name": "王通",
+      "year": "03",
+      "title": "王通：打造个人IP，不能把魂交给AI",
+      "url": "https://www.ufoer.com/post/14708.html",
+      "date": "2026-10-28"
     }
   ],
   "2004": [
     {
-      "name": "扫地老僧",
+      "name": "我的天",
       "year": "04",
-      "title": "现在还需要读毛选吗",
-      "url": "https://doyj.com/2026/10/28/%e7%8e%b0%e5%9c%a8%e8%bf%98%e9%9c%80%e8%a6%81%e8%af%bb%e6%af%9b%e9%80%89%e5%90%97/",
-      "date": "2026-10-27"
+      "title": "上车下车",
+      "url": "https://www.xlanda.net/posts/22578",
+      "date": "2026-10-28"
     },
     {
       "name": "小猪的窝",
       "year": "04",
-      "title": "双十一前哨站",
-      "url": "https://ezo.biz/Diary/1776.html",
-      "date": "2026-10-27"
-    },
-    {
-      "name": "我的天",
-      "year": "04",
-      "title": "肥牛拉车",
-      "url": "https://www.xlanda.net/posts/22576",
-      "date": "2026-10-27"
+      "title": "鼻毛",
+      "url": "https://ezo.biz/Diary/b.html",
+      "date": "2026-10-28"
     }
   ],
   "2005": [
     {
-      "name": "Lenciel",
-      "year": "05",
-      "title": "Fragments 0x0019",
-      "url": "https://lenciel.com/2026/10/fragments-0x0019/",
-      "date": "2026-10-27"
-    },
-    {
       "name": "Gea-Suan Lin",
       "year": "05",
-      "title": "OpenAI 放出 GPT-6.1 Terra",
-      "url": "https://blog.gslin.org/archives/2026/10/27/13303/openai-%e6%94%be%e5%87%ba-gpt-6-1-terra/",
-      "date": "2026-10-26"
+      "title": "Google 放出 Gemini 4 Carbon",
+      "url": "https://blog.gslin.org/archives/2026/10/29/13304/google-%e6%94%be%e5%87%ba-gemini-4-carbon/",
+      "date": "2026-10-28"
+    },
+    {
+      "name": "春田",
+      "year": "05",
+      "title": "１０９８．「働く」について考える(１５)　信頼関係をつくる  ①仲良くすることは仕事である",
+      "url": "http://kaikeimura.way-nifty.com/blog/2026/10/post-ef0149.html",
+      "date": "2026-10-28"
+    },
+    {
+      "name": "ACEVS",
+      "year": "05",
+      "title": "轴体评测汇总",
+      "url": "https://acevs.com/5326/",
+      "date": "2026-10-28"
     }
   ],
   "2006": [
     {
       "name": "SEISAMUSE",
       "year": "06",
-      "title": "麻绳",
-      "url": "https://www.seis-jun.xyz/blog/2026-10-27-rope-with-knots.html",
-      "date": "2026-10-27"
+      "title": "告别不蒜子，自己给博客记个数",
+      "url": "https://www.seis-jun.xyz/blog/2026-10-28-independent-blog-counter.html",
+      "date": "2026-10-28"
     }
   ],
   "2007": [
     {
       "name": "老杨",
       "year": "07",
-      "title": "痛苦根源",
-      "url": "https://yangyq.net/2026/10/pain-root.html",
-      "date": "2026-10-27"
+      "title": "开源密码生成工具SimplePassword",
+      "url": "https://yangyq.net/2026/10/open-source-password-generator-simplepassword.html",
+      "date": "2026-10-28"
+    },
+    {
+      "name": "悠见",
+      "year": "07",
+      "title": "写字打卡",
+      "url": "https://yufm.com/662505.html",
+      "date": "2026-10-28"
     }
   ],
   "2008": [
     {
-      "name": "Wandai",
+      "name": "杜郎俊赏",
       "year": "08",
-      "title": "收拾行李",
-      "url": "https://twd2.me/archives/21235",
-      "date": "2026-10-27"
+      "title": "慈云数据香港CN2云服务器得分 106.84",
+      "url": "https://dujun.io/ciyundata-hk-cn2-scored-one-hundred-and-six-point-eight-four.html",
+      "date": "2026-10-28"
+    },
+    {
+      "name": "军",
+      "year": "08",
+      "title": "矛盾北京故居",
+      "url": "https://me.xu19.com/visiting-beijing-former-residence-of-maodun/",
+      "date": "2026-10-28"
     }
   ],
-  "2009": [
+  "2017": [
     {
-      "name": "标点符",
-      "year": "09",
-      "title": "屏幕上满眼宋体和黑体，楷体去哪了",
-      "url": "https://www.biaodianfu.com/song-hei-kai/",
-      "date": "2026-10-27"
-    }
-  ],
-  "2014": [
+      "name": "秋风于渭水",
+      "year": "17",
+      "title": "碎碎谈 · 10月28日 18:09",
+      "url": "https://www.tjsky.net/shuoshuo/mcxesubu7e2gfpobpmyqhk",
+      "date": "2026-10-28"
+    },
     {
-      "name": "孤斗",
-      "year": "14",
-      "title": "我被重新理解了一次",
-      "url": "https://d-d.design/single/20614",
-      "date": "2026-10-27"
+      "name": "碎言",
+      "year": "17",
+      "title": "BabyLog记录了我14年对孩子所有的回忆也见证了我自学编程的学习路线",
+      "url": "https://www.suiyan.cc/blog/20261028080326",
+      "date": "2026-10-28"
     }
   ],
   "2020": [
     {
-      "name": "資工小廢物 - JN",
+      "name": "不凡",
       "year": "20",
-      "title": "2026 去金門、廈門玩（重點版）",
-      "url": "https://blog.giveanornot.com/kinmen-xiamen-2026/",
-      "date": "2026-10-27"
+      "title": "Typecho插件WAF Guard开发进展：接入AI模型全由AI助手操作，附对话AI助手的演示视频",
+      "url": "https://www.bufanz.com/202610281184.html",
+      "date": "2026-10-28"
     },
     {
-      "name": "优世界",
+      "name": "我不是咕咕鸽",
       "year": "20",
-      "title": "GitHub 把我雪藏了六个月，却没告诉我为什么",
-      "url": "https://usj.cc/20261027150228.html",
-      "date": "2026-10-27"
+      "title": "美区 Apple ID 注册教程 2026：国内手机号免费注册，不用买号，其他区同理",
+      "url": "https://blog.laoda.de/archives/us-apple-id-register-china-phone-2026",
+      "date": "2026-10-28"
     }
   ],
   "2021": [
     {
-      "name": "记录生活",
-      "year": "21",
-      "title": "公益图床不是色情图床",
-      "url": "https://9sb.net/archives/public-welfare-beds-are-not-pornographic-beds.html",
-      "date": "2026-10-27"
-    },
-    {
       "name": "DevNow",
       "year": "21",
-      "title": "Product Hunt 热榜 2026-10-27：Strawberry 1.0、SurgePix、MiniMax M3.1 Flash",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-10-27",
-      "date": "2026-10-27"
+      "title": "Product Hunt 热榜 2026-10-28：TheySaid 4.0、Overmind、Spacesheep",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-10-28",
+      "date": "2026-10-28"
     }
   ],
   "2023": [
     {
-      "name": "按钮与磁带",
+      "name": "鹿泽",
       "year": "23",
-      "title": "Being Proactive",
-      "url": "https://jefftay.com/quotes/being-proactive",
-      "date": "2026-10-27"
+      "title": "网站标题title中用什么标点符号对SEO友好？",
+      "url": "https://www.bailuze.com/24532.html",
+      "date": "2026-10-28"
     }
   ],
   "2024": [
     {
-      "name": "姓王者",
-      "year": "24",
-      "title": "推荐我开发的 Linux AppImage 管理器：AppimageMannger",
-      "url": "https://xingwangzhe.fun/posts/appimage-mannger-native-linux/",
-      "date": "2026-10-27"
-    },
-    {
       "name": "三叔",
       "year": "24",
-      "title": "Geass 亮起，六秒后落子：鲁鲁修 DSH 主题",
-      "url": "https://www.sanshu.cn/atc/44.html",
-      "date": "2026-10-27"
+      "title": "绯弹的亚里亚 DSH 主题 0.1.0：绯红双奏，搭档跟上",
+      "url": "https://www.sanshu.cn/atc/88.html",
+      "date": "2026-10-28"
     }
   ],
   "2025": [
     {
-      "name": "Marcus",
+      "name": "礼印外盒",
       "year": "25",
-      "title": "量子人生",
-      "url": "https://www.immarcus.com/blog/quantum-life",
-      "date": "2026-10-27"
+      "title": "第二篇印记 | 关于爱情，我终于想明白了几件事",
+      "url": "https://liyinwaihe.com/18.html",
+      "date": "2026-10-28"
     }
   ]
 };
