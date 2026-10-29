@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期:  2026-10-28 23:09:01
+// 抓取日期:  2026-10-29 23:13:58
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -8,166 +8,172 @@ const latestArticlesByYear = {
     {
       "name": "Luca",
       "year": "00",
-      "title": "订阅我的精选阅读清单",
-      "url": "https://wlj.me/notes/sp-note-20261028-112538/",
-      "date": "2026-10-28"
+      "title": "小公司做小产品生存记",
+      "url": "https://wlj.me/notes/sp-note-20261029-223204/",
+      "date": "2026-10-29"
     }
   ],
-  "2003": [
+  "2002": [
     {
-      "name": "王通",
-      "year": "03",
-      "title": "王通：打造个人IP，不能把魂交给AI",
-      "url": "https://www.ufoer.com/post/14708.html",
-      "date": "2026-10-28"
+      "name": "seth",
+      "year": "02",
+      "title": "Explaining funny",
+      "url": "https://seths.blog/2026/10/explaining-funny/",
+      "date": "2026-10-29"
     }
   ],
   "2004": [
     {
       "name": "我的天",
       "year": "04",
-      "title": "上车下车",
-      "url": "https://www.xlanda.net/posts/22578",
-      "date": "2026-10-28"
+      "title": "狼狈上下车",
+      "url": "https://www.xlanda.net/posts/22580",
+      "date": "2026-10-29"
     },
     {
       "name": "小猪的窝",
       "year": "04",
-      "title": "鼻毛",
-      "url": "https://ezo.biz/Diary/b.html",
-      "date": "2026-10-28"
+      "title": "平常是道",
+      "url": "https://ezo.biz/Diary/1779.html",
+      "date": "2026-10-29"
     }
   ],
   "2005": [
     {
-      "name": "Gea-Suan Lin",
-      "year": "05",
-      "title": "Google 放出 Gemini 4 Carbon",
-      "url": "https://blog.gslin.org/archives/2026/10/29/13304/google-%e6%94%be%e5%87%ba-gemini-4-carbon/",
-      "date": "2026-10-28"
-    },
-    {
-      "name": "春田",
-      "year": "05",
-      "title": "１０９８．「働く」について考える(１５)　信頼関係をつくる  ①仲良くすることは仕事である",
-      "url": "http://kaikeimura.way-nifty.com/blog/2026/10/post-ef0149.html",
-      "date": "2026-10-28"
-    },
-    {
       "name": "ACEVS",
       "year": "05",
-      "title": "轴体评测汇总",
-      "url": "https://acevs.com/5326/",
-      "date": "2026-10-28"
+      "title": "最近科技大起大落",
+      "url": "https://acevs.com/5328/",
+      "date": "2026-10-29"
     }
   ],
   "2006": [
     {
       "name": "SEISAMUSE",
       "year": "06",
-      "title": "告别不蒜子，自己给博客记个数",
-      "url": "https://www.seis-jun.xyz/blog/2026-10-28-independent-blog-counter.html",
-      "date": "2026-10-28"
-    }
-  ],
-  "2007": [
-    {
-      "name": "老杨",
-      "year": "07",
-      "title": "开源密码生成工具SimplePassword",
-      "url": "https://yangyq.net/2026/10/open-source-password-generator-simplepassword.html",
-      "date": "2026-10-28"
+      "title": "关于登味",
+      "url": "https://www.seis-jun.xyz/blog/2026-10-29-boomer-vibe.html",
+      "date": "2026-10-29"
     },
     {
-      "name": "悠见",
-      "year": "07",
-      "title": "写字打卡",
-      "url": "https://yufm.com/662505.html",
-      "date": "2026-10-28"
+      "name": "忘记了回忆",
+      "year": "06",
+      "title": "九寨沟",
+      "url": "https://ltmltm.cn/bk/1504.html",
+      "date": "2026-10-29"
     }
   ],
-  "2008": [
+  "2010": [
     {
-      "name": "杜郎俊赏",
-      "year": "08",
-      "title": "慈云数据香港CN2云服务器得分 106.84",
-      "url": "https://dujun.io/ciyundata-hk-cn2-scored-one-hundred-and-six-point-eight-four.html",
-      "date": "2026-10-28"
-    },
-    {
-      "name": "军",
-      "year": "08",
-      "title": "矛盾北京故居",
-      "url": "https://me.xu19.com/visiting-beijing-former-residence-of-maodun/",
-      "date": "2026-10-28"
+      "name": "lilydjwg",
+      "year": "10",
+      "title": "\n        加固我的virtiofs\n      ",
+      "url": "https://blog.lilydjwg.me/posts/217055.html",
+      "date": "2026-10-29"
     }
   ],
-  "2017": [
+  "2011": [
     {
-      "name": "秋风于渭水",
-      "year": "17",
-      "title": "碎碎谈 · 10月28日 18:09",
-      "url": "https://www.tjsky.net/shuoshuo/mcxesubu7e2gfpobpmyqhk",
-      "date": "2026-10-28"
+      "name": "老孙",
+      "year": "11",
+      "title": "CommentNotify 一款 Typecho 评论  QQ / 微信通知插件",
+      "url": "https://www.imsun.org/archives/1803.html",
+      "date": "2026-10-29"
     },
     {
-      "name": "碎言",
-      "year": "17",
-      "title": "BabyLog记录了我14年对孩子所有的回忆也见证了我自学编程的学习路线",
-      "url": "https://www.suiyan.cc/blog/20261028080326",
-      "date": "2026-10-28"
+      "name": "Verne",
+      "year": "11",
+      "title": "Aside AI 浏览器介绍：既能自己干活，也能接入 Agent",
+      "url": "https://blog.einverne.info/post/2026/10/aside-ai-browser.html",
+      "date": "2026-10-29"
+    }
+  ],
+  "2012": [
+    {
+      "name": "郭晓力",
+      "year": "12",
+      "title": "聊聊最近关于 AI 硬件的思考 -20261029",
+      "url": "https://guoxiaoli.com/post/680.html",
+      "date": "2026-10-29"
+    }
+  ],
+  "2013": [
+    {
+      "name": "卡瓦邦噶",
+      "year": "13",
+      "title": "游戏",
+      "url": "https://www.kawabangga.com/posts/7446",
+      "date": "2026-10-29"
+    }
+  ],
+  "2014": [
+    {
+      "name": "运营不加班",
+      "year": "14",
+      "title": "一台机器，两家公司。绕过模型安全层渗透测试",
+      "url": "https://nops.icu/archives/258/",
+      "date": "2026-10-29"
+    }
+  ],
+  "2015": [
+    {
+      "name": "WordPress 知识宝库",
+      "year": "15",
+      "title": "워드프레스닷컴, 모든 유료 플랜에서 플러그인 및 테마 설치 가능",
+      "url": "https://www.thewordcracker.com/basic/wordpress-com-plugins-themes-paid-plans/",
+      "date": "2026-10-29"
+    }
+  ],
+  "2019": [
+    {
+      "name": "新世界的大门",
+      "year": "19",
+      "title": "2026-08-18 / 雷霆音效",
+      "url": "https://blog.xinshijiededa.men/daily/108/",
+      "date": "2026-10-29"
     }
   ],
   "2020": [
     {
-      "name": "不凡",
+      "name": "資工小廢物 - JN",
       "year": "20",
-      "title": "Typecho插件WAF Guard开发进展：接入AI模型全由AI助手操作，附对话AI助手的演示视频",
-      "url": "https://www.bufanz.com/202610281184.html",
-      "date": "2026-10-28"
-    },
-    {
-      "name": "我不是咕咕鸽",
-      "year": "20",
-      "title": "美区 Apple ID 注册教程 2026：国内手机号免费注册，不用买号，其他区同理",
-      "url": "https://blog.laoda.de/archives/us-apple-id-register-china-phone-2026",
-      "date": "2026-10-28"
+      "title": "「Z 世代」很鳥",
+      "url": "https://blog.giveanornot.com/gen-z-sucks/",
+      "date": "2026-10-29"
     }
   ],
   "2021": [
     {
       "name": "DevNow",
       "year": "21",
-      "title": "Product Hunt 热榜 2026-10-28：TheySaid 4.0、Overmind、Spacesheep",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-10-28",
-      "date": "2026-10-28"
-    }
-  ],
-  "2023": [
-    {
-      "name": "鹿泽",
-      "year": "23",
-      "title": "网站标题title中用什么标点符号对SEO友好？",
-      "url": "https://www.bailuze.com/24532.html",
-      "date": "2026-10-28"
+      "title": "Product Hunt 热榜 2026-10-29：Dedica、bytemail、BotGauge",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-10-29",
+      "date": "2026-10-29"
     }
   ],
   "2024": [
     {
       "name": "三叔",
       "year": "24",
-      "title": "绯弹的亚里亚 DSH 主题 0.1.0：绯红双奏，搭档跟上",
-      "url": "https://www.sanshu.cn/atc/88.html",
-      "date": "2026-10-28"
+      "title": "三叔 DeepSeek 插件市场：三步安装",
+      "url": "https://www.sanshu.cn/atc/101.html",
+      "date": "2026-10-29"
     }
   ],
   "2025": [
     {
+      "name": "Marcus",
+      "year": "25",
+      "title": "我想要独处时间",
+      "url": "https://www.immarcus.com/blog/i-want-solitude",
+      "date": "2026-10-29"
+    },
+    {
       "name": "礼印外盒",
       "year": "25",
-      "title": "第二篇印记 | 关于爱情，我终于想明白了几件事",
-      "url": "https://liyinwaihe.com/18.html",
-      "date": "2026-10-28"
+      "title": "根域名与子域名做网站的区别",
+      "url": "https://liyinwaihe.com/19.html",
+      "date": "2026-10-29"
     }
   ]
 };
