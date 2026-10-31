@@ -1,175 +1,175 @@
 // ==================== latest-articles.js ====================
-// 抓取日期:  2026-10-30 22:57:52
+// 抓取日期:  2026-10-31 22:27:13
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
-  "2000": [
-    {
-      "name": "Luca",
-      "year": "00",
-      "title": "Foursquare悄然落幕引人叹",
-      "url": "https://wlj.me/notes/sp-note-20261030-181448/",
-      "date": "2026-10-30"
-    }
-  ],
   "2002": [
     {
       "name": "seth",
       "year": "02",
-      "title": "Cooperation (the fall book list)",
-      "url": "https://seths.blog/2026/10/cooperation-the-fall-book-list/",
-      "date": "2026-10-30"
+      "title": "The Hallmark dilemma",
+      "url": "https://seths.blog/2026/10/the-hallmark-dilemma/",
+      "date": "2026-10-31"
     }
   ],
   "2003": [
     {
-      "name": "王通",
+      "name": "愆伏",
       "year": "03",
-      "title": "王通：不要闭门造车，让市场逼着你优化改进",
-      "url": "https://www.ufoer.com/post/14721.html",
-      "date": "2026-10-30"
+      "title": "2008，没什么搞不定的",
+      "url": "https://www.tortorse.com/archives/nothing-we-couldnt-handle-2008/",
+      "date": "2026-10-31"
     }
   ],
   "2004": [
     {
-      "name": "TonyBai",
+      "name": "我的天",
       "year": "04",
-      "title": "Dagger 1.0 Beta 实战：用 Go 项目看懂第三代 CI 的真正优势",
-      "url": "https://tonybai.com/2026/10/30/dagger-1-0-beta-go-ci-practice/",
-      "date": "2026-10-29"
+      "title": "不想被哈了",
+      "url": "https://www.xlanda.net/posts/22585",
+      "date": "2026-10-31"
     }
   ],
   "2005": [
     {
-      "name": "王志勇",
+      "name": "Lenciel",
       "year": "05",
-      "title": "更新提示：《人生讨论(28)：滑翔伞运动》新增",
-      "url": "http://www.auiou.com/relevant/00010023.jsp",
-      "date": "2026-10-30"
+      "title": "Fragments 0x001B",
+      "url": "https://lenciel.com/2026/10/fragments-0x001b/",
+      "date": "2026-10-31"
     },
     {
       "name": "Gea-Suan Lin",
       "year": "05",
-      "title": "MSI MP273U 偶而進入螢幕保護模式後就回不來的問題",
-      "url": "https://blog.gslin.org/archives/2026/10/31/13311/msi-mp273u-%e5%81%b6%e8%80%8c%e9%80%b2%e5%85%a5%e8%9e%a2%e5%b9%95%e4%bf%9d%e8%ad%b7%e6%a8%a1%e5%bc%8f%e5%be%8c%e5%b0%b1%e5%9b%9e%e4%b8%8d%e4%be%86%e7%9a%84%e5%95%8f%e9%a1%8c/",
-      "date": "2026-10-30"
-    }
-  ],
-  "2006": [
-    {
-      "name": "忘记了回忆",
-      "year": "06",
-      "title": "调度",
-      "url": "https://ltmltm.cn/bk/1505.html",
-      "date": "2026-10-30"
-    },
-    {
-      "name": "SEISAMUSE",
-      "year": "06",
-      "title": "为什么写博客？",
-      "url": "https://www.seis-jun.xyz/blog/2026-10-30-moments-feels-more-tiring-than-blogging.html",
-      "date": "2026-10-30"
+      "title": "Claude 拿掉 US$200/mo 的 5-hour limit 了",
+      "url": "https://blog.gslin.org/archives/2026/10/31/13312/claude-%e6%8b%bf%e6%8e%89-us200-mo-%e7%9a%84-5-hour-limit-%e4%ba%86/",
+      "date": "2026-10-31"
     }
   ],
   "2007": [
     {
-      "name": "悠见",
+      "name": "老杨",
       "year": "07",
-      "title": "毛笔有点秃",
-      "url": "https://yufm.com/662509.html",
-      "date": "2026-10-30"
+      "title": "遥遥领先",
+      "url": "https://yangyq.net/2026/10/ahead-of-the-curve.html",
+      "date": "2026-10-31"
+    }
+  ],
+  "2008": [
+    {
+      "name": "军",
+      "year": "08",
+      "title": "湖上泛舟的悠闲",
+      "url": "https://me.xu19.com/leisurely-boat-ride-on-kunming-lake-old-summer-palace/",
+      "date": "2026-10-31"
     }
   ],
   "2009": [
     {
-      "name": "张鑫旭",
+      "name": "老卫",
       "year": "09",
-      "title": "懒加载图片新支持了sizes=”auto”属性，其作用是？",
-      "url": "https://www.zhangxinxu.com/wordpress/2026/10/loading-lazy-img-sizes-auto/",
-      "date": "2026-10-30"
+      "title": "《Spring AI开发从入门到实践》简介",
+      "url": "https://waylau.com/about-spring-ai-tutorial-book/",
+      "date": "2026-10-31"
+    },
+    {
+      "name": "老卫（柳伟卫）的技术站",
+      "year": "09",
+      "title": "《Spring AI开发从入门到实践》简介",
+      "url": "https://waylau.com/about-spring-ai-tutorial-book/",
+      "date": "2026-10-31"
     },
     {
       "name": "标点符",
       "year": "09",
-      "title": "UnoCSS：把原子化 CSS变成可编程引擎",
-      "url": "https://www.biaodianfu.com/unocss/",
-      "date": "2026-10-30"
+      "title": "AI 编程时代Python Web 框架该怎么选？",
+      "url": "https://www.biaodianfu.com/python-web-framework-in-the-era-of-ai-programming/",
+      "date": "2026-10-31"
     }
   ],
-  "2017": [
+  "2013": [
     {
-      "name": "atpx",
-      "year": "17",
-      "title": "新玩具 Apple Watch Series 12",
-      "url": "https://atpx.com/blog/apple-watch-series-12/",
-      "date": "2026-10-30"
+      "name": "林羽凡",
+      "year": "13",
+      "title": "今日减肥餐记录-2026.10.31",
+      "url": "https://www.linyufan.com/post/6120",
+      "date": "2026-10-31"
     }
   ],
   "2018": [
     {
-      "name": "运维咖啡吧",
+      "name": "黑桃三",
       "year": "18",
-      "title": "向云端｜西南自驾11 - 布依",
-      "url": "https://blog.ops-coffee.com/r/2026-southwest-road-trip-11-longjing.html",
-      "date": "2026-10-30"
+      "title": "把用了近8年的handsome主题换掉了",
+      "url": "https://heitaosan.com/article/240",
+      "date": "2026-10-31"
+    },
+    {
+      "name": "云奚小屋",
+      "year": "18",
+      "title": "重新开始写博客",
+      "url": "https://yxgoa.cn/archives/12/",
+      "date": "2026-10-31"
+    }
+  ],
+  "2019": [
+    {
+      "name": "流情",
+      "year": "19",
+      "title": "【景点篇】阿尔沟",
+      "url": "https://liuqingwushui.top/archives/206/",
+      "date": "2026-10-31"
+    },
+    {
+      "name": "飞蚊话",
+      "year": "19",
+      "title": "2026 年的下半年，我终于找回了南航领取大兴机场线车票的入口",
+      "url": "https://www.bwsl.wang/talk/188.html",
+      "date": "2026-10-31"
+    },
+    {
+      "name": "紫塞",
+      "year": "19",
+      "title": "又成功绕太阳一圈",
+      "url": "https://zisai.com/posts/another-trip-around-the-sun/",
+      "date": "2026-10-31"
     }
   ],
   "2020": [
     {
-      "name": "呆哥",
-      "year": "20",
-      "title": "X教授饰演者离世，享年86岁",
-      "url": "https://www.dalao.net/thread-65597.htm",
-      "date": "2026-10-30"
-    },
-    {
       "name": "初然忆",
       "year": "20",
-      "title": "办，改，销",
-      "url": "https://www.imcry.vip/post/2026-10-30-1335/",
-      "date": "2026-10-30"
-    },
-    {
-      "name": "yihong0618",
-      "year": "20",
-      "title": "xintao",
-      "url": "https://blog.yihong0618.me/posts/issue-349/",
-      "date": "2026-10-30"
+      "title": "还是得从右边下车",
+      "url": "https://www.imcry.vip/post/2026-10-31-2254/",
+      "date": "2026-10-31"
     }
   ],
   "2021": [
     {
       "name": "DevNow",
       "year": "21",
-      "title": "Product Hunt 热榜 2026-10-30：Empacer、Scape、Floot in ChatGPT",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-10-30",
-      "date": "2026-10-30"
+      "title": "Product Hunt 热榜 2026-10-31：Vaani Developer Platform、Knocket AI、SpeakON Agent",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-10-31",
+      "date": "2026-10-31"
     }
   ],
   "2023": [
     {
       "name": "鹿泽",
       "year": "23",
-      "title": "适合SEO的十大WordPress搜索引擎优化插件",
-      "url": "https://www.bailuze.com/24545.html",
-      "date": "2026-10-30"
-    },
-    {
-      "name": "小野",
-      "year": "23",
-      "title": "Typecho  蜘蛛日志插件 SpiderLog",
-      "url": "https://lb5.net/278.html",
-      "date": "2026-10-29"
+      "title": "SEO不再是关键词排名了，时代变了，我们也要转变思维了",
+      "url": "https://www.bailuze.com/24553.html",
+      "date": "2026-10-31"
     }
   ],
   "2025": [
     {
       "name": "礼印外盒",
       "year": "25",
-      "title": "素笺主题发布：设计方向说明",
-      "url": "https://liyinwaihe.com/24.html",
-      "date": "2026-10-30"
+      "title": "今天没写文章",
+      "url": "https://liyinwaihe.com/25.html",
+      "date": "2026-10-31"
     }
   ]
 };
