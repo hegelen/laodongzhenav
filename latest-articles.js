@@ -1,170 +1,171 @@
 // ==================== latest-articles.js ====================
-// 抓取日期:  2026-11-01 22:49:28
-// 只抓取最近14天内的文章，共 19 篇
-// 目标 20 篇，实际 19 篇
+// 抓取日期:  2026-11-03 01:36:40
+// 只抓取最近14天内的文章，共 20 篇
+// 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
-  "2002": [
-    {
-      "name": "seth",
-      "year": "02",
-      "title": "“Not yet”",
-      "url": "https://seths.blog/2026/11/not-yet/",
-      "date": "2026-11-01"
-    }
-  ],
   "2004": [
-    {
-      "name": "我的天",
-      "year": "04",
-      "title": "三只小猫",
-      "url": "https://www.xlanda.net/posts/22588",
-      "date": "2026-11-01"
-    },
     {
       "name": "小猪的窝",
       "year": "04",
-      "title": "月志202610",
-      "url": "https://ezo.biz/Diary/1788.html",
-      "date": "2026-11-01"
+      "title": "洗衣卡",
+      "url": "https://ezo.biz/Diary/1790.html",
+      "date": "2026-11-02"
+    },
+    {
+      "name": "竹炉山房",
+      "year": "04",
+      "title": "升级到PHP 8.4.27",
+      "url": "https://synyan.cn/t/64238",
+      "date": "2026-11-02"
+    },
+    {
+      "name": "我的天",
+      "year": "04",
+      "title": "我和猫的交集",
+      "url": "https://www.xlanda.net/posts/22592",
+      "date": "2026-11-03"
     }
   ],
   "2005": [
     {
-      "name": "Gea-Suan Lin",
+      "name": "王志勇",
       "year": "05",
-      "title": "TWCA 憑證序號的 entropy 不足 64 bits",
-      "url": "https://blog.gslin.org/archives/2026/11/02/13314/twca-%e6%86%91%e8%ad%89%e5%ba%8f%e8%99%9f%e7%9a%84-entropy-%e4%b8%8d%e8%b6%b3-64-bits/",
-      "date": "2026-11-01"
+      "title": "博客又有活儿得干了",
+      "url": "http://www.auiou.com/relevant/00002233.jsp",
+      "date": "2026-11-02"
+    },
+    {
+      "name": "Lenciel",
+      "year": "05",
+      "title": "Fragments 0x001C",
+      "url": "https://lenciel.com/2026/11/fragments-0x001c/",
+      "date": "2026-11-02"
     },
     {
       "name": "ACEVS",
       "year": "05",
-      "title": "二手键盘第三回合",
-      "url": "https://acevs.com/5337/",
-      "date": "2026-11-01"
-    },
-    {
-      "name": "王志勇",
-      "year": "05",
-      "title": "服务器检修提示",
-      "url": "http://www.auiou.com/relevant/00010003.jsp",
-      "date": "2026-11-01"
-    }
-  ],
-  "2006": [
-    {
-      "name": "SEISAMUSE",
-      "year": "06",
-      "title": "Chuck为什么这个样子？",
-      "url": "https://www.seis-jun.xyz/blog/2026-11-01-why-chuck-is-like-this.html",
-      "date": "2026-11-01"
+      "title": "碎片2026年11月2日",
+      "url": "https://acevs.com/5339/",
+      "date": "2026-11-02"
     }
   ],
   "2007": [
     {
-      "name": "不靠谱颜论",
+      "name": "老杨",
       "year": "07",
-      "title": "《重新理解创业》书评",
-      "url": "https://yanlinlin.cn/2026/11/01/reunderstanding-entrepreneurship-review/",
-      "date": "2026-11-01"
-    },
-    {
-      "name": "悠见",
-      "year": "07",
-      "title": "把行草书当楷书写，好像对笔划提按有了一丁点的感觉",
-      "url": "https://yufm.com/662517.html",
-      "date": "2026-11-01"
+      "title": "关于机器人的发展",
+      "url": "https://yangyq.net/2026/11/about-the-development-of-robots.html",
+      "date": "2026-11-02"
     }
   ],
-  "2010": [
+  "2009": [
     {
-      "name": "Jeray",
-      "year": "10",
-      "title": "AI患者又多一名",
-      "url": "https://hi.jeray.wang/L/229.html",
-      "date": "2026-11-01"
+      "name": "多多",
+      "year": "09",
+      "title": "桌面换到d盘教程",
+      "url": "https://ddlog.cn/?p=573",
+      "date": "2026-11-02"
     }
   ],
   "2011": [
     {
-      "name": "唐巧",
+      "name": "Verne",
       "year": "11",
-      "title": "读《信号与噪声》",
-      "url": "https://blog.devtang.com/2026/11/01/signal-and-noice-book-summary/",
-      "date": "2026-11-01"
+      "title": "Nowledge Mem 使用半年体验：让所有 AI Agent 共享同一份记忆",
+      "url": "https://blog.einverne.info/post/2026/11/nowledge-mem-review-after-half-year.html",
+      "date": "2026-11-02"
     }
   ],
   "2012": [
     {
-      "name": "MacTalk-池建强的随想录",
+      "name": "水拍石",
       "year": "12",
-      "title": "今天去把我的牙装上了",
-      "url": "https://macshuo.com/?p=2087",
-      "date": "2026-11-01"
-    }
-  ],
-  "2013": [
-    {
-      "name": "林羽凡",
-      "year": "13",
-      "title": "周末两把鸿蒙应用“竹子记账”做了pc和平板的完整适配",
-      "url": "https://www.linyufan.com/post/6123",
-      "date": "2026-11-01"
+      "title": "时光",
+      "url": "https://www.leitao.cn/11555.html",
+      "date": "2026-11-02"
     }
   ],
   "2015": [
     {
       "name": "WordPress 知识宝库",
       "year": "15",
-      "title": "시놀로지 랜섬웨어 C3RB3R 피해 확산, DSM 업데이트와 백업부터 점검하세요",
-      "url": "https://www.thewordcracker.com/blog/synology-c3rb3r-ransomware/",
-      "date": "2026-11-01"
+      "title": "클라우드웨이즈 2026년 블랙 프라이데이 프로모션",
+      "url": "https://www.thewordcracker.com/basic/%ed%81%b4%eb%9d%bc%ec%9a%b0%eb%93%9c%ec%9b%a8%ec%9d%b4%ec%a6%88-2023%eb%85%84-%eb%b8%94%eb%9e%99-%ed%94%84%eb%9d%bc%ec%9d%b4%eb%8d%b0%ec%9d%b4-%ed%94%84%eb%a1%9c%eb%aa%a8%ec%85%98/",
+      "date": "2026-11-03"
     }
   ],
   "2017": [
     {
-      "name": "科学空间",
+      "name": "碎言",
       "year": "17",
-      "title": "平均之路：从Attention到TTT",
-      "url": "https://kexue.fm/archives/11993",
-      "date": "2026-11-01"
-    }
-  ],
-  "2019": [
+      "title": "是我们在使用AI，还是AI驯化了我们？",
+      "url": "https://www.suiyan.cc/blog/20261103090800",
+      "date": "2026-11-03"
+    },
     {
-      "name": "紫塞",
-      "year": "19",
-      "title": "名字后面的“天堂”",
-      "url": "https://zisai.com/posts/names-with-heaven/",
-      "date": "2026-11-01"
+      "name": "2broear",
+      "year": "17",
+      "title": "来了一只自来熟小橘猫– 日常记事（二百二十二）",
+      "url": "https://blog.2broear.com/weblog/02-11-2026_%e7%aa%97%e6%88%b7%e6%9d%a5%e4%b8%80%e5%8f%aa%e6%a9%98%e7%8c%ab-%e6%97%a5%e5%b8%b8%e8%ae%b0%e4%ba%8b%ef%bc%88%e4%ba%8c%e7%99%be%e4%ba%8c%e5%8d%81%e4%ba%8c%ef%bc%89",
+      "date": "2026-11-02"
     }
   ],
   "2021": [
     {
-      "name": "DevNow",
+      "name": "Robes",
       "year": "21",
-      "title": "Product Hunt 热榜 2026-11-01：Specsight、SKI、telemetry.dev",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-11-01",
-      "date": "2026-11-01"
+      "title": "热闹难接，迟祝自己生日快乐",
+      "url": "https://robes.xin/1249.html",
+      "date": "2026-11-02"
+    },
+    {
+      "name": "WSH",
+      "year": "21",
+      "title": "随想录",
+      "url": "https://www.wsh233.cn/post/随想录",
+      "date": "2026-11-02"
+    }
+  ],
+  "2023": [
+    {
+      "name": "Siwei Li",
+      "year": "23",
+      "title": "随手拍",
+      "url": "https://siwei.li/everyday-snapshots-2026-10/",
+      "date": "2026-11-02"
+    },
+    {
+      "name": "鹿泽",
+      "year": "23",
+      "title": "网站的链接是如何影响网站权重的？",
+      "url": "https://www.bailuze.com/24556.html",
+      "date": "2026-11-03"
+    },
+    {
+      "name": "小野",
+      "year": "23",
+      "title": "你的婚姻是「余生」还是「搭伙」？",
+      "url": "https://lb5.net/280.html",
+      "date": "2026-11-03"
+    }
+  ],
+  "2024": [
+    {
+      "name": "姓王者",
+      "year": "24",
+      "title": "用 REA 逆开华为 BoF-XX 的性能模式：MateBook D15 2022 在 Linux 下的真 Turbo 解锁",
+      "url": "https://xingwangzhe.fun/posts/huawei-bofxx-rea-turbo-unlock/",
+      "date": "2026-11-02"
     }
   ],
   "2025": [
     {
       "name": "Marcus",
       "year": "25",
-      "title": "2026.11.01 博客阅读周荐 - fengc",
-      "url": "https://www.immarcus.com/blog/weekly-20261101",
-      "date": "2026-11-01"
-    }
-  ],
-  "2026": [
-    {
-      "name": "Sheep5",
-      "year": "26",
-      "title": "读完一本书｜《毕业》",
-      "url": "https://sheep5.net/archives/538.html",
-      "date": "2026-11-01"
+      "title": "大的要来了",
+      "url": "https://www.immarcus.com/blog/something-big-is-coming",
+      "date": "2026-11-03"
     }
   ]
 };
