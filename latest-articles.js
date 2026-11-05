@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期:  2026-11-03 23:59:21
+// 抓取日期:  2026-11-05 00:18:21
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -8,166 +8,164 @@ const latestArticlesByYear = {
     {
       "name": "Luca",
       "year": "00",
-      "title": "群晖 NAS：6.5 TB 空间被占用，所有界面都找不到",
-      "url": "https://wlj.me/posts/synology-nas-hidden-6tb-btrfs-subvolume/",
-      "date": "2026-11-03"
-    }
-  ],
-  "2002": [
-    {
-      "name": "seth",
-      "year": "02",
-      "title": "The emotions of voting",
-      "url": "https://seths.blog/2026/11/the-emotions-of-voting/",
-      "date": "2026-11-03"
+      "title": "新书夹缝生长自嘲半成品",
+      "url": "https://wlj.me/notes/sp-note-20261104-083501/",
+      "date": "2026-11-04"
     }
   ],
   "2004": [
     {
-      "name": "TonyBai",
+      "name": "小陈故事",
       "year": "04",
-      "title": "Go 也要实现零堆分配？noalloc：让每一次内存分配都无处遁形",
-      "url": "https://tonybai.com/2026/11/04/go-zero-heap-allocation-noalloc/",
-      "date": "2026-11-03"
+      "title": "字节时间与黑咖啡",
+      "url": "https://www.chener.net/archives/bdtimes/",
+      "date": "2026-11-04"
     },
     {
-      "name": "扫地老僧",
+      "name": "竹炉山房",
       "year": "04",
-      "title": "是思想升华了，还是激素下降了？",
-      "url": "https://doyj.com/2026/11/03/%e6%98%af%e6%80%9d%e6%83%b3%e5%8d%87%e5%8d%8e%e4%ba%86%ef%bc%8c%e8%bf%98%e6%98%af%e6%bf%80%e7%b4%a0%e4%b8%8b%e9%99%8d%e4%ba%86%ef%bc%9f/",
-      "date": "2026-11-03"
+      "title": "特朗普药丸",
+      "url": "https://synyan.cn/t/64272",
+      "date": "2026-11-04"
+    },
+    {
+      "name": "我的天",
+      "year": "04",
+      "title": "组装引体向上架",
+      "url": "https://www.xlanda.net/posts/22596",
+      "date": "2026-11-05"
+    },
+    {
+      "name": "TonyBai",
+      "year": "04",
+      "title": "从 Agent Swarm 到 Single Agent：AI Agent 的高效架构，正在走向两条路",
+      "url": "https://tonybai.com/2026/11/05/agent-swarm-vs-single-agent-architecture/",
+      "date": "2026-11-04"
     },
     {
       "name": "小猪的窝",
       "year": "04",
-      "title": "整理杂物",
-      "url": "https://ezo.biz/Diary/1792.html",
-      "date": "2026-11-03"
+      "title": "感染短视频病毒",
+      "url": "https://ezo.biz/Diary/1794.html",
+      "date": "2026-11-04"
+    }
+  ],
+  "2005": [
+    {
+      "name": "Gea-Suan Lin",
+      "year": "05",
+      "title": "西洋棋演算法這三十年的改進",
+      "url": "https://blog.gslin.org/archives/2026/11/05/13327/%e8%a5%bf%e6%b4%8b%e6%a3%8b%e6%bc%94%e7%ae%97%e6%b3%95%e9%80%99%e4%b8%89%e5%8d%81%e5%b9%b4%e7%9a%84%e6%94%b9%e9%80%b2/",
+      "date": "2026-11-04"
+    },
+    {
+      "name": "王志勇",
+      "year": "05",
+      "title": "https利弊(7)：建站税",
+      "url": "http://www.auiou.com/relevant/00002234.jsp",
+      "date": "2026-11-04"
     }
   ],
   "2006": [
     {
-      "name": "SEISAMUSE",
+      "name": "随风沐虐",
       "year": "06",
-      "title": "袜子失踪的秘密",
-      "url": "https://www.seis-jun.xyz/blog/2026-11-03-The-Mystery-of-the-Missing-Socks.html",
-      "date": "2026-11-03"
-    },
-    {
-      "name": "忘记了回忆",
-      "year": "06",
-      "title": "修路",
-      "url": "https://ltmltm.cn/bk/1508.html",
-      "date": "2026-11-03"
+      "title": "红果短剧，根本停不下来！",
+      "url": "https://www.munue.com/822.html",
+      "date": "2026-11-04"
     }
   ],
-  "2009": [
+  "2008": [
     {
-      "name": "标点符",
-      "year": "09",
-      "title": "WSL 3.0 系统化介绍",
-      "url": "https://www.biaodianfu.com/wsl-3/",
-      "date": "2026-11-03"
-    }
-  ],
-  "2010": [
-    {
-      "name": "Jeray",
-      "year": "10",
-      "title": "魔改的朋友圈主题 - 待发布",
-      "url": "https://hi.jeray.wang/K/230.html",
-      "date": "2026-11-03"
+      "name": "河马",
+      "year": "08",
+      "title": "Akkocloud 圣何塞KVM-CN2-A2 mini评测",
+      "url": "https://www.iamhippo.com/2026-11/1978.html",
+      "date": "2026-11-04"
     }
   ],
   "2012": [
     {
-      "name": "王鑫",
+      "name": "水拍石",
       "year": "12",
-      "title": "AI做网站之JMbiji：加密笔记本",
-      "url": "https://wonse.info/jmbiji.html",
-      "date": "2026-11-03"
+      "title": "大A又是冲动的一天",
+      "url": "https://www.leitao.cn/11563.html",
+      "date": "2026-11-04"
     }
   ],
-  "2013": [
+  "2015": [
     {
-      "name": "Jonty",
-      "year": "13",
-      "title": "从零到一：Linux 服务器安全加固 + 日报监控完整部署指南",
-      "url": "https://nobb.cc/archives/3784.html",
-      "date": "2026-11-03"
-    },
+      "name": "WordPress 知识宝库",
+      "year": "15",
+      "title": "HTTP2Shell: PHP2Shell에 이어 등장한 Brotli 취약점과 워드프레스",
+      "url": "https://www.thewordcracker.com/intermediate/http2shell-brotli-vulnerability-wordpress/",
+      "date": "2026-11-04"
+    }
+  ],
+  "2019": [
     {
-      "name": "林羽凡",
-      "year": "13",
-      "title": "今日减肥餐记录-2026.11.3-搞了死面饼",
-      "url": "https://www.linyufan.com/post/6127",
-      "date": "2026-11-03"
+      "name": "新世界的大门",
+      "year": "19",
+      "title": "2026-08-25 / 紫檀和紫谱",
+      "url": "https://blog.xinshijiededa.men/daily/114/",
+      "date": "2026-11-04"
     }
   ],
   "2020": [
     {
-      "name": "資工小廢物 - JN",
+      "name": "不凡",
       "year": "20",
-      "title": "JN 最近在幹嘛（20261103 更新）",
-      "url": "https://blog.giveanornot.com/now/20261102/",
-      "date": "2026-11-03"
+      "title": "Typecho插件ServerProbe：Typecho轻量级服务器监控探针插件",
+      "url": "https://www.bufanz.com/202611041241.html",
+      "date": "2026-11-04"
+    },
+    {
+      "name": "瓦解",
+      "year": "20",
+      "title": "又被迫折腾了一次黑群晖引导",
+      "url": "https://hin.cool/posts/nasrrupdate.html",
+      "date": "2026-11-04"
+    },
+    {
+      "name": "初然忆",
+      "year": "20",
+      "title": "腾讯云EdgeOne-Makers计费调整",
+      "url": "https://www.imcry.vip/post/2026-11-5-057/",
+      "date": "2026-11-04"
     }
   ],
   "2021": [
     {
-      "name": "Robes",
-      "year": "21",
-      "title": "同一段时光，不同的人生答卷",
-      "url": "https://robes.xin/1251.html",
-      "date": "2026-11-03"
-    },
-    {
-      "name": "yveji",
-      "year": "21",
-      "title": "绿心公园不用专程去",
-      "url": "https://www.yveji.com/Prose/luxe.html",
-      "date": "2026-11-03"
-    },
-    {
       "name": "DevNow",
       "year": "21",
-      "title": "Product Hunt 热榜 2026-11-03：beacon.sh、UnleashX、Xmind 2027",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-11-03",
-      "date": "2026-11-03"
-    },
-    {
-      "name": "DAIDAIFU",
-      "year": "21",
-      "title": "人真的是会变的。",
-      "url": "https://www.ddf.im/index.php/2026/11/03/1277.html",
-      "date": "2026-11-03"
+      "title": "Product Hunt 热榜 2026-11-04：AgentKit by Scalekit、Teamily AI、Testifly",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-11-04",
+      "date": "2026-11-04"
     }
   ],
   "2023": [
     {
+      "name": "Siwei Li",
+      "year": "23",
+      "title": "国行终于等来了Apple智能",
+      "url": "https://siwei.li/apple-intelligence-on-china-iphones/",
+      "date": "2026-11-04"
+    },
+    {
       "name": "鹿泽",
       "year": "23",
-      "title": "扁平式网站结构关键词布局分析",
-      "url": "https://www.bailuze.com/24558.html",
-      "date": "2026-11-03"
-    }
-  ],
-  "2024": [
-    {
-      "name": "团团生活志",
-      "year": "24",
-      "title": "入手iWatch S11及最近生活",
-      "url": "https://t-t.live/archives/XoO1NsB4",
-      "date": "2026-11-03"
+      "title": "影响网站内页收录的八大因素",
+      "url": "https://www.bailuze.com/24560.html",
+      "date": "2026-11-04"
     }
   ],
   "2026": [
     {
       "name": "Sheep5",
       "year": "26",
-      "title": "“公园小拿铁”",
-      "url": "https://sheep5.net/archives/567.html",
-      "date": "2026-11-03"
+      "title": "让 Via 浏览器评论更省事：我的自动填充脚本分享",
+      "url": "https://sheep5.net/archives/619.html",
+      "date": "2026-11-04"
     }
   ]
 };
