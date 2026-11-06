@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期:  2026-11-05 00:18:21
+// 抓取日期:  2026-11-06 00:04:15
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -8,25 +8,36 @@ const latestArticlesByYear = {
     {
       "name": "Luca",
       "year": "00",
-      "title": "新书夹缝生长自嘲半成品",
-      "url": "https://wlj.me/notes/sp-note-20261104-083501/",
-      "date": "2026-11-04"
+      "title": "飞机读书难共鸣",
+      "url": "https://wlj.me/notes/sp-note-20261105-230112/",
+      "date": "2026-11-05"
+    }
+  ],
+  "2002": [
+    {
+      "name": "seth",
+      "year": "02",
+      "title": "Inconvenient brands",
+      "url": "https://seths.blog/2026/11/inconvenient-brands/",
+      "date": "2026-11-05"
+    }
+  ],
+  "2003": [
+    {
+      "name": "王通",
+      "year": "03",
+      "title": "王通：成交的5个境界，你达到了哪一层？",
+      "url": "https://www.ufoer.com/post/14733.html",
+      "date": "2026-11-05"
     }
   ],
   "2004": [
     {
-      "name": "小陈故事",
+      "name": "kaix.in",
       "year": "04",
-      "title": "字节时间与黑咖啡",
-      "url": "https://www.chener.net/archives/bdtimes/",
-      "date": "2026-11-04"
-    },
-    {
-      "name": "竹炉山房",
-      "year": "04",
-      "title": "特朗普药丸",
-      "url": "https://synyan.cn/t/64272",
-      "date": "2026-11-04"
+      "title": "听到别人的声音",
+      "url": "https://kaix.in/2026/1105/",
+      "date": "2026-11-05"
     },
     {
       "name": "我的天",
@@ -36,136 +47,127 @@ const latestArticlesByYear = {
       "date": "2026-11-05"
     },
     {
-      "name": "TonyBai",
-      "year": "04",
-      "title": "从 Agent Swarm 到 Single Agent：AI Agent 的高效架构，正在走向两条路",
-      "url": "https://tonybai.com/2026/11/05/agent-swarm-vs-single-agent-architecture/",
-      "date": "2026-11-04"
-    },
-    {
       "name": "小猪的窝",
       "year": "04",
-      "title": "感染短视频病毒",
-      "url": "https://ezo.biz/Diary/1794.html",
-      "date": "2026-11-04"
+      "title": "清水洗头",
+      "url": "https://ezo.biz/Cracker/1797.html",
+      "date": "2026-11-05"
     }
   ],
   "2005": [
     {
-      "name": "Gea-Suan Lin",
+      "name": "ACEVS",
       "year": "05",
-      "title": "西洋棋演算法這三十年的改進",
-      "url": "https://blog.gslin.org/archives/2026/11/05/13327/%e8%a5%bf%e6%b4%8b%e6%a3%8b%e6%bc%94%e7%ae%97%e6%b3%95%e9%80%99%e4%b8%89%e5%8d%81%e5%b9%b4%e7%9a%84%e6%94%b9%e9%80%b2/",
-      "date": "2026-11-04"
+      "title": "铝坨坨键盘放弃",
+      "url": "https://acevs.com/5345/",
+      "date": "2026-11-05"
     },
     {
       "name": "王志勇",
       "year": "05",
-      "title": "https利弊(7)：建站税",
-      "url": "http://www.auiou.com/relevant/00002234.jsp",
-      "date": "2026-11-04"
+      "title": "更新提示：《https利弊(7)：建站税》新增2",
+      "url": "http://www.auiou.com/relevant/00010026.jsp",
+      "date": "2026-11-05"
+    },
+    {
+      "name": "Gea-Suan Lin",
+      "year": "05",
+      "title": "sshhole (musl 環境)",
+      "url": "https://blog.gslin.org/archives/2026/11/05/13329/sshhole-musl-%e7%92%b0%e5%a2%83/",
+      "date": "2026-11-05"
     }
   ],
-  "2006": [
+  "2013": [
     {
-      "name": "随风沐虐",
-      "year": "06",
-      "title": "红果短剧，根本停不下来！",
-      "url": "https://www.munue.com/822.html",
-      "date": "2026-11-04"
-    }
-  ],
-  "2008": [
+      "name": "小z",
+      "year": "13",
+      "title": "Gate U卡与美元银行账户申请教程：支持 OpenAI/ChatGPT 充值",
+      "url": "https://blog.xiaoz.org/archives/23698",
+      "date": "2026-11-05"
+    },
     {
-      "name": "河马",
-      "year": "08",
-      "title": "Akkocloud 圣何塞KVM-CN2-A2 mini评测",
-      "url": "https://www.iamhippo.com/2026-11/1978.html",
-      "date": "2026-11-04"
-    }
-  ],
-  "2012": [
-    {
-      "name": "水拍石",
-      "year": "12",
-      "title": "大A又是冲动的一天",
-      "url": "https://www.leitao.cn/11563.html",
-      "date": "2026-11-04"
+      "name": "林羽凡",
+      "year": "13",
+      "title": "鸿蒙应用“竹子记账”增加积分不足提醒",
+      "url": "https://www.linyufan.com/post/6130",
+      "date": "2026-11-05"
     }
   ],
   "2015": [
     {
       "name": "WordPress 知识宝库",
       "year": "15",
-      "title": "HTTP2Shell: PHP2Shell에 이어 등장한 Brotli 취약점과 워드프레스",
-      "url": "https://www.thewordcracker.com/intermediate/http2shell-brotli-vulnerability-wordpress/",
-      "date": "2026-11-04"
+      "title": "\"그 사이트 이름이 뭐였더라?\" 주소픽으로 필요한 사이트 찾아보기",
+      "url": "https://www.thewordcracker.com/blog/find-websites/",
+      "date": "2026-11-05"
+    }
+  ],
+  "2017": [
+    {
+      "name": "arun",
+      "year": "17",
+      "title": "Osaka II ∙ cultural institutions",
+      "url": "https://arun.is/blog/osaka-2/",
+      "date": "2026-11-05"
     }
   ],
   "2019": [
     {
-      "name": "新世界的大门",
+      "name": "紫塞",
       "year": "19",
-      "title": "2026-08-25 / 紫檀和紫谱",
-      "url": "https://blog.xinshijiededa.men/daily/114/",
-      "date": "2026-11-04"
+      "title": "重新走进技术新世界",
+      "url": "https://zisai.com/posts/rediscovering-the-joy-of-technology/",
+      "date": "2026-11-05"
     }
   ],
   "2020": [
     {
-      "name": "不凡",
+      "name": "yihong0618",
       "year": "20",
-      "title": "Typecho插件ServerProbe：Typecho轻量级服务器监控探针插件",
-      "url": "https://www.bufanz.com/202611041241.html",
-      "date": "2026-11-04"
-    },
-    {
-      "name": "瓦解",
-      "year": "20",
-      "title": "又被迫折腾了一次黑群晖引导",
-      "url": "https://hin.cool/posts/nasrrupdate.html",
-      "date": "2026-11-04"
-    },
-    {
-      "name": "初然忆",
-      "year": "20",
-      "title": "腾讯云EdgeOne-Makers计费调整",
-      "url": "https://www.imcry.vip/post/2026-11-5-057/",
-      "date": "2026-11-04"
+      "title": "可怜",
+      "url": "https://blog.yihong0618.me/posts/issue-350/",
+      "date": "2026-11-05"
     }
   ],
   "2021": [
     {
       "name": "DevNow",
       "year": "21",
-      "title": "Product Hunt 热榜 2026-11-04：AgentKit by Scalekit、Teamily AI、Testifly",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-11-04",
-      "date": "2026-11-04"
+      "title": "Product Hunt 热榜 2026-11-05：Wanaka Studio、Floot Payments、Prelulu",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-11-05",
+      "date": "2026-11-05"
     }
   ],
   "2023": [
     {
-      "name": "Siwei Li",
-      "year": "23",
-      "title": "国行终于等来了Apple智能",
-      "url": "https://siwei.li/apple-intelligence-on-china-iphones/",
-      "date": "2026-11-04"
-    },
-    {
       "name": "鹿泽",
       "year": "23",
-      "title": "影响网站内页收录的八大因素",
-      "url": "https://www.bailuze.com/24560.html",
-      "date": "2026-11-04"
+      "title": "做外链的6个基础要点",
+      "url": "https://www.bailuze.com/24563.html",
+      "date": "2026-11-05"
+    },
+    {
+      "name": "宗宗酱",
+      "year": "23",
+      "title": "痔疮犯了，烦死了！",
+      "url": "https://ygz.ink/archives/5920.html",
+      "date": "2026-11-05"
     }
   ],
-  "2026": [
+  "2024": [
     {
-      "name": "Sheep5",
-      "year": "26",
-      "title": "让 Via 浏览器评论更省事：我的自动填充脚本分享",
-      "url": "https://sheep5.net/archives/619.html",
-      "date": "2026-11-04"
+      "name": "姓王者",
+      "year": "24",
+      "title": "一封退货邮件的陷阱：“开箱视频”背后的 WPS、隐藏 DLL 与恶意加载链",
+      "url": "https://xingwangzhe.fun/posts/outlook-return-malware/",
+      "date": "2026-11-05"
+    },
+    {
+      "name": "三叔",
+      "year": "24",
+      "title": "一枚代理证，两种日常：死神 · 双生之门 DSH 主题",
+      "url": "https://www.sanshu.cn/atc/107.html",
+      "date": "2026-11-05"
     }
   ]
 };
