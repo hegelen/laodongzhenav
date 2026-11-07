@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期:  2026-11-06 23:47:28
+// 抓取日期:  2026-11-07 22:38:40
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -8,170 +8,172 @@ const latestArticlesByYear = {
     {
       "name": "Luca",
       "year": "00",
-      "title": "视频链接一键转精华文档",
-      "url": "https://wlj.me/notes/sp-note-20261106-193933/",
-      "date": "2026-11-06"
+      "title": "明知不怕仍不敢看扎针",
+      "url": "https://wlj.me/notes/sp-note-20261107-095153/",
+      "date": "2026-11-07"
     }
   ],
   "2002": [
     {
       "name": "seth",
       "year": "02",
-      "title": "Reviewing the game tapes",
-      "url": "https://seths.blog/2026/11/reviewing-the-game-tapes/",
-      "date": "2026-11-06"
-    }
-  ],
-  "2003": [
-    {
-      "name": "阮一峰",
-      "year": "03",
-      "title": "科技爱好者周刊（第 418 期）：如果科技停止在21世纪初",
-      "url": "http://www.ruanyifeng.com/blog/2026/11/weekly-issue-418.html",
-      "date": "2026-11-05"
+      "title": "Start",
+      "url": "https://seths.blog/2026/11/start/",
+      "date": "2026-11-07"
     }
   ],
   "2004": [
+    {
+      "name": "我的天",
+      "year": "04",
+      "title": "冷柜沦陷",
+      "url": "https://www.xlanda.net/posts/22600",
+      "date": "2026-11-07"
+    },
     {
       "name": "TonyBai",
       "year": "04",
       "title": "Lean 创始人：当 AI 开始写代码，谁来证明它是正确的？",
       "url": "https://tonybai.com/2026/11/07/when-ai-writes-code-who-proves-it-works/",
-      "date": "2026-11-06"
+      "date": "2026-11-07"
     }
   ],
   "2005": [
     {
-      "name": "ACEVS",
+      "name": "Gea-Suan Lin",
       "year": "05",
-      "title": "二宝的问题和历史上灭佛记录",
-      "url": "https://acevs.com/5347/",
-      "date": "2026-11-06"
-    },
-    {
-      "name": "破袜子",
-      "year": "05",
-      "title": "每夫吐槽（121）",
-      "url": "https://pewae.com/2026/11/random_kuso_121.html",
-      "date": "2026-11-06"
-    },
-    {
-      "name": "王志勇",
-      "year": "05",
-      "title": "DIY(35-5)：干扰源终于找到",
-      "url": "http://www.auiou.com/relevant/00002235.jsp",
+      "title": "IFTTT 說要漲價？",
+      "url": "https://blog.gslin.org/archives/2026/11/07/13339/ifttt-%e8%aa%aa%e8%a6%81%e6%bc%b2%e5%83%b9%ef%bc%9f/",
       "date": "2026-11-07"
     }
   ],
   "2006": [
     {
-      "name": "忘记了回忆",
-      "year": "06",
-      "title": "入心",
-      "url": "https://ltmltm.cn/bk/1513.html",
-      "date": "2026-11-06"
-    },
-    {
       "name": "SEISAMUSE",
       "year": "06",
-      "title": "我们真的认识这个世界吗？",
-      "url": "https://www.seis-jun.xyz/blog/2026-11-06-do-we-know-this-world.html",
-      "date": "2026-11-06"
+      "title": "风骚律师第二季第一集",
+      "url": "https://www.seis-jun.xyz/blog/2026-11-07-better-call-saul-s2e1.html",
+      "date": "2026-11-07"
     }
   ],
   "2009": [
     {
-      "name": "异数",
+      "name": "lms",
       "year": "09",
-      "title": "随笔 || 深圳六日游",
-      "url": "https://www.yishu.pro/296.html",
-      "date": "2026-11-06"
+      "title": "Workbuddy 帮我申请取消了甲骨文云的两步验证",
+      "url": "https://lms.im/workbuddy-helped-me-apply-to-cancel-2-step-verification-on-oracle-cloud/",
+      "date": "2026-11-07"
+    }
+  ],
+  "2010": [
+    {
+      "name": "麦麦同学",
+      "year": "10",
+      "title": "浏览别人博客后，感觉不错，记录下",
+      "url": "https://www.mmtx.net/1199.html",
+      "date": "2026-11-07"
     }
   ],
   "2011": [
     {
-      "name": "forecho",
+      "name": "君子不器",
       "year": "11",
-      "title": "我做了个只收录精品软件的网站 SoftBests",
-      "url": "https://blog.forecho.com/introducing-softbests.html",
-      "date": "2026-11-06"
+      "title": "2026年10月：辽宁五日自驾、地铁漫游，与落空的年终奖",
+      "url": "https://www.colinjiang.com/archives/2026-10-liaoning-trip-and-lost-bonus.html",
+      "date": "2026-11-07"
     }
   ],
   "2012": [
     {
-      "name": "贱志",
-      "year": "12",
-      "title": "正定访古",
-      "url": "https://fatesinger.com/106533",
-      "date": "2026-11-06"
-    },
-    {
       "name": "方糖",
       "year": "12",
-      "title": "无山可靠，我自当山",
-      "url": "/post/wu-shan-ke-kao-wo-zi-dang-shan",
-      "date": "2026-11-06"
-    },
-    {
-      "name": "水拍石",
-      "year": "12",
-      "title": "股市菜鸡",
-      "url": "https://www.leitao.cn/11567.html",
-      "date": "2026-11-06"
+      "title": "立冬",
+      "url": "/post/li-dong",
+      "date": "2026-11-07"
     }
   ],
-  "2013": [
+  "2016": [
     {
-      "name": "Jonty",
-      "year": "13",
-      "title": "【PVE】PVE9.2安装UPS+前端面板显示UPS信息（apcupsd瓦力方程）",
-      "url": "https://nobb.cc/archives/3758.html",
-      "date": "2026-11-06"
-    }
-  ],
-  "2015": [
-    {
-      "name": "WordPress 知识宝库",
-      "year": "15",
-      "title": "클라우드웨이즈 디도스 (DDoS) 공격 대응 방법 4가지",
-      "url": "https://www.thewordcracker.com/miscellaneous/webhosting/%ed%81%b4%eb%9d%bc%ec%9a%b0%eb%93%9c%ec%9b%a8%ec%9d%b4%ec%a6%88-%eb%94%94%eb%8f%84%ec%8a%a4-ddos-%ea%b3%b5%ea%b2%a9-%eb%8c%80%ec%9d%91-%eb%b0%a9%eb%b2%95-4%ea%b0%80%ec%a7%80/",
-      "date": "2026-11-06"
+      "name": "幻影",
+      "year": "16",
+      "title": "QQ空间推了十年前的说说，我愣住了",
+      "url": "https://blog.52hyjs.com/post-1292.html",
+      "date": "2026-11-07"
     }
   ],
   "2017": [
     {
-      "name": "串串狗小刊",
+      "name": "碎言",
       "year": "17",
-      "title": "ChatGPT当遇到【无法加载付款表单。请重试。  】怎么办？",
-      "url": "https://www.ccgxk.com/935.html",
-      "date": "2026-11-06"
+      "title": "Vercel deployments-storage 空间告急！",
+      "url": "https://www.suiyan.cc/blog/20261107092952",
+      "date": "2026-11-07"
     }
   ],
   "2019": [
     {
-      "name": "紫塞",
+      "name": "新世界的大门",
       "year": "19",
-      "title": "我修好了非洲的电脑，女儿喝上了奶茶",
-      "url": "https://zisai.com/posts/remote-help-and-milk-tea/",
-      "date": "2026-11-06"
+      "title": "制导与控制基础（下）之一：导弹控制原理",
+      "url": "https://blog.xinshijiededa.men/missile/control/",
+      "date": "2026-11-07"
+    }
+  ],
+  "2020": [
+    {
+      "name": "初然忆",
+      "year": "20",
+      "title": "从阿里云企业邮转移到网易企业邮",
+      "url": "https://www.imcry.vip/post/2026-11-7-2152/",
+      "date": "2026-11-07"
+    },
+    {
+      "name": "呆哥",
+      "year": "20",
+      "title": "@所有人，请使用验证器保护账号",
+      "url": "https://www.dalao.net/thread-65852.htm",
+      "date": "2026-11-07"
     }
   ],
   "2021": [
     {
+      "name": "Dayu",
+      "year": "21",
+      "title": "ChatGPT Dot 日常使用记录",
+      "url": "https://anotherdayu.com/how-i-use-dots/",
+      "date": "2026-11-07"
+    },
+    {
+      "name": "WSH",
+      "year": "21",
+      "title": "单车",
+      "url": "https://www.wsh233.cn/post/单车",
+      "date": "2026-11-07"
+    },
+    {
       "name": "DevNow",
       "year": "21",
-      "title": "Product Hunt 热榜 2026-11-06：Glasshand、Rerun、Living Brain",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-11-06",
-      "date": "2026-11-06"
+      "title": "Product Hunt 热榜 2026-11-07：Tobira Site Agent、Turnstone、Rankfender v3.0",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-11-07",
+      "date": "2026-11-07"
     }
   ],
   "2023": [
     {
-      "name": "无敌",
+      "name": "鹿泽",
       "year": "23",
-      "title": "AI时代观察（二）：从算命到人工智能，人类如何从已知推断未知？",
-      "url": "https://blog.tangwudi.com/technology/cognition14816/",
-      "date": "2026-11-06"
+      "title": "SEO到底要怎么学？学什么内容？",
+      "url": "https://www.bailuze.com/24567.html",
+      "date": "2026-11-07"
+    }
+  ],
+  "2026": [
+    {
+      "name": "Sheep5",
+      "year": "26",
+      "title": "“胖友之家”",
+      "url": "https://sheep5.net/archives/637.html",
+      "date": "2026-11-07"
     }
   ]
 };
