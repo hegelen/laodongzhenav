@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期:  2026-11-08 22:49:05
+// 抓取日期:  2026-11-10 02:03:41
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -8,168 +8,172 @@ const latestArticlesByYear = {
     {
       "name": "Luca",
       "year": "00",
-      "title": "指甲剪没带坐立难安",
-      "url": "https://wlj.me/notes/sp-note-20261108-205354/",
-      "date": "2026-11-08"
+      "title": "产品精神铸就AI精品",
+      "url": "https://wlj.me/notes/sp-note-20261109-181408/",
+      "date": "2026-11-09"
+    }
+  ],
+  "2002": [
+    {
+      "name": "seth",
+      "year": "02",
+      "title": "Restrictive design",
+      "url": "https://seths.blog/2026/11/restrictive-design/",
+      "date": "2026-11-09"
     }
   ],
   "2004": [
     {
-      "name": "TonyBai",
+      "name": "小猪的窝",
       "year": "04",
-      "title": "不是所有服务都值得“双活”：Uber容灾架构的降本哲学",
-      "url": "https://tonybai.com/2026/11/08/uber-failover-architecture-ufa-nsdi26/",
-      "date": "2026-11-07"
+      "title": "从老黄出轨说起",
+      "url": "https://ezo.biz/Net/1809.html",
+      "date": "2026-11-09"
     },
     {
-      "name": "我的天",
+      "name": "TonyBai",
       "year": "04",
-      "title": "太难了",
-      "url": "https://www.xlanda.net/posts/22603",
-      "date": "2026-11-08"
+      "title": "Go cgo 去 C 工具链提案最新进展：Cherry Mui 给出更具体的落地方案",
+      "url": "https://tonybai.com/2026/11/10/go-cgo-without-c-toolchain-proposal-update/",
+      "date": "2026-11-09"
+    },
+    {
+      "name": "delphij",
+      "year": "04",
+      "title": "作弊条：生成SSHFP和TLSA记录",
+      "url": "https://blog.delphij.net/posts/2026/11/tlsa-sshfp/",
+      "date": "2026-11-09"
     }
   ],
   "2005": [
     {
-      "name": "Gea-Suan Lin",
+      "name": "云风",
       "year": "05",
-      "title": "連不到 Cloudflare 的 DNS 的奇怪現象 (包括 1.1.1.1 以及其他掛在 Cloudflare 上的網域)",
-      "url": "https://blog.gslin.org/archives/2026/11/09/13345/%e9%80%a3%e4%b8%8d%e5%88%b0-cloudflare-%e7%9a%84-dns-%e7%9a%84%e5%a5%87%e6%80%aa%e7%8f%be%e8%b1%a1-%e5%8c%85%e6%8b%ac-1-1-1-1-%e4%bb%a5%e5%8f%8a%e5%85%b6%e4%bb%96%e6%8e%9b%e5%9c%a8-cloudflare/",
-      "date": "2026-11-08"
-    }
-  ],
-  "2006": [
-    {
-      "name": "SEISAMUSE",
-      "year": "06",
-      "title": "风骚律师S02E03",
-      "url": "https://www.seis-jun.xyz/blog/2026-11-08-better-call-saul-s02e03.html",
-      "date": "2026-11-08"
-    }
-  ],
-  "2007": [
-    {
-      "name": "不靠谱颜论",
-      "year": "07",
-      "title": "修复 conda 不能升级的问题",
-      "url": "https://yanlinlin.cn/2026/11/09/why-conda-update-does-nothing/",
-      "date": "2026-11-08"
+      "title": "复活 ABC 输入法",
+      "url": "https://blog.codingnow.com/2026/11/abc_mod.html",
+      "date": "2026-11-09"
     },
     {
-      "name": "树下语",
-      "year": "07",
-      "title": "随便写点-AI浪潮",
-      "url": "https://yishu-life.com/index.php/archives/562.html",
-      "date": "2026-11-08"
+      "name": "ACEVS",
+      "year": "05",
+      "title": "板簧到fr4",
+      "url": "https://acevs.com/5353/",
+      "date": "2026-11-09"
+    }
+  ],
+  "2008": [
+    {
+      "name": "四火的唠叨",
+      "year": "08",
+      "title": "开了一个聊投资的音频播客",
+      "url": "https://www.raychase.net/8369",
+      "date": "2026-11-09"
     }
   ],
   "2009": [
     {
       "name": "异数",
       "year": "09",
-      "title": "合集 || 大设计真题、模拟题练习合集",
-      "url": "https://www.yishu.pro/317.html",
-      "date": "2026-11-08"
-    }
-  ],
-  "2011": [
-    {
-      "name": "Be For Web",
-      "year": "11",
-      "title": "About a Designer (9) 进入前线阵地",
-      "url": "http://beforweb.com/node/1170",
-      "date": "2026-11-08"
-    },
-    {
-      "name": "老孙",
-      "year": "11",
-      "title": "Fediverse -  一款让Typecho博客与联邦宇宙互通的插件",
-      "url": "https://www.imsun.org/archives/1804.html",
-      "date": "2026-11-08"
+      "title": "复盘 || 2024年一注大设计真题【社区综合服务中心】",
+      "url": "https://www.yishu.pro/370.html",
+      "date": "2026-11-09"
     }
   ],
   "2012": [
     {
-      "name": "看川",
+      "name": "水拍石",
       "year": "12",
-      "title": "iOS 隐蔽注入两路线：TrollFools 和 Roothide",
-      "url": "https://kanchuan.com/blog/245-trollfools-roothide",
-      "date": "2026-11-08"
+      "title": "我本没有意义",
+      "url": "https://www.leitao.cn/11570.html",
+      "date": "2026-11-09"
+    }
+  ],
+  "2014": [
+    {
+      "name": "孤斗",
+      "year": "14",
+      "title": "在你的故事里，我是谁",
+      "url": "https://d-d.design/single/20629",
+      "date": "2026-11-09"
+    }
+  ],
+  "2015": [
+    {
+      "name": "WordPress 知识宝库",
+      "year": "15",
+      "title": "ChatGPT로 작성한 글을 자연스럽게 수정하는 7가지 방법",
+      "url": "https://www.thewordcracker.com/blog/make-chatgpt-writing-sound-natural/",
+      "date": "2026-11-09"
     }
   ],
   "2017": [
     {
-      "name": "碎言",
+      "name": "科学空间",
       "year": "17",
-      "title": "20261108 一些随感",
-      "url": "https://www.suiyan.cc/blog/20261108084632",
-      "date": "2026-11-08"
+      "title": "让炼丹更科学一些（十一）：无调度学习率新思路",
+      "url": "https://kexue.fm/archives/12003",
+      "date": "2026-11-09"
     }
   ],
   "2019": [
     {
-      "name": "So!azy",
+      "name": "LJF.COM",
       "year": "19",
-      "title": "认得出熟客的老板",
-      "url": "https://blog.solazy.me/20261108/",
-      "date": "2026-11-08"
-    },
-    {
-      "name": "紫塞",
-      "year": "19",
-      "title": "一斤啤酒少了一两五：父亲四十六年前写给〈人民日报〉的信",
-      "url": "https://zisai.com/a-bowl-of-beer-and-my-father-1980/",
-      "date": "2026-11-08"
+      "title": "《企业迷思》---北大管理公开课",
+      "url": "https://ljf.com/2026/11/09/1564/",
+      "date": "2026-11-09"
     }
   ],
   "2020": [
     {
-      "name": "初然忆",
+      "name": "呆哥",
       "year": "20",
-      "title": "2026年的邻居",
-      "url": "https://www.imcry.vip/post/2026-11-8-1006/",
-      "date": "2026-11-08"
-    },
-    {
-      "name": "无妄当自持",
-      "year": "20",
-      "title": "家用 NAS 四件套部署手册：qBittorrent + Jellyfin + Cloudreve + MoviePilot（arm64 / Debian）",
-      "url": "https://www.insidentally.com/articles/000052/",
-      "date": "2026-11-08"
+      "title": "目前华 阿 腾 啥的大厂有较便宜的国内机吗",
+      "url": "https://www.dalao.net/thread-65912.htm",
+      "date": "2026-11-09"
     }
   ],
   "2021": [
     {
       "name": "DevNow",
       "year": "21",
-      "title": "Product Hunt 热榜 2026-11-08：ChatGPT Images 2.6、LiveReview、Quest",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-11-08",
-      "date": "2026-11-08"
+      "title": "Product Hunt 热榜 2026-11-09：AXL、Sage2 by Levanto Labs、Inkling 2 Small",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-11-09",
+      "date": "2026-11-09"
     }
   ],
-  "2025": [
+  "2022": [
     {
-      "name": "礼印外盒",
-      "year": "25",
-      "title": "第四篇印记 | 疲惫的一天",
-      "url": "https://liyinwaihe.com/26.html",
-      "date": "2026-11-08"
+      "name": "皓月星际",
+      "year": "22",
+      "title": "写博客的意义是什么？当下，我们还有必要坚持写博客吗？",
+      "url": "https://www.shimail.cn/archives/11/",
+      "date": "2026-11-09"
+    }
+  ],
+  "2023": [
+    {
+      "name": "枫林灯语",
+      "year": "23",
+      "title": "和校园网斗智斗勇的日子（第11辑）",
+      "url": "https://blog.mfwt.top/index.php/archives/1717/",
+      "date": "2026-11-09"
     },
     {
-      "name": "Marcus",
-      "year": "25",
-      "title": "累趴的一天",
-      "url": "https://www.immarcus.com/blog/i-am-beat",
-      "date": "2026-11-08"
+      "name": "鹿泽",
+      "year": "23",
+      "title": "SEO作弊常用手段之内容作弊",
+      "url": "https://www.bailuze.com/24571.html",
+      "date": "2026-11-10"
     }
   ],
   "2026": [
     {
       "name": "Sheep5",
       "year": "26",
-      "title": "博客开启Akismet垃圾评论保护",
-      "url": "https://sheep5.net/archives/Akismet.html",
-      "date": "2026-11-08"
+      "title": "给博客评论区增加了自动审核动画",
+      "url": "https://sheep5.net/archives/670.html",
+      "date": "2026-11-10"
     }
   ]
 };
