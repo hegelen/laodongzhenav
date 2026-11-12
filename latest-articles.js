@@ -1,177 +1,169 @@
 // ==================== latest-articles.js ====================
-// 抓取日期:  2026-11-11 00:05:38
+// 抓取日期:  2026-11-12 01:28:39
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
-  "2000": [
-    {
-      "name": "Luca",
-      "year": "00",
-      "title": "九月十月吃喝日历视图",
-      "url": "https://wlj.me/notes/sp-note-20261110-184250/",
-      "date": "2026-11-10"
-    }
-  ],
-  "2002": [
-    {
-      "name": "seth",
-      "year": "02",
-      "title": "In search of a bargain",
-      "url": "https://seths.blog/2026/11/in-search-of-a-bargain/",
-      "date": "2026-11-10"
-    }
-  ],
-  "2004": [
-    {
-      "name": "我的天",
-      "year": "04",
-      "title": "为了4块钱的法棍",
-      "url": "https://www.xlanda.net/posts/22607",
-      "date": "2026-11-10"
-    },
-    {
-      "name": "TonyBai",
-      "year": "04",
-      "title": "切片与数组：[i32; 3]、[i32]、&[i32; 3]、&[i32] 到底有什么区别？",
-      "url": "https://tonybai.com/2026/11/10/rust-reference-array-slice-fn-params/",
-      "date": "2026-11-10"
-    }
-  ],
   "2005": [
-    {
-      "name": "Lenciel",
-      "year": "05",
-      "title": "Fragments 0x0020",
-      "url": "https://lenciel.com/2026/11/fragments-0x0020/",
-      "date": "2026-11-10"
-    },
-    {
-      "name": "ACEVS",
-      "year": "05",
-      "title": "uvr5人声去除小记",
-      "url": "https://acevs.com/5356/",
-      "date": "2026-11-10"
-    },
     {
       "name": "Gea-Suan Lin",
       "year": "05",
-      "title": "所以是 Claude Fable 5.2 出了...",
-      "url": "https://blog.gslin.org/archives/2026/11/10/13348/%e6%89%80%e4%bb%a5%e6%98%af-claude-fable-5-2-%e5%87%ba%e4%ba%86/",
-      "date": "2026-11-10"
+      "title": "GitHub Actions 的 workflow lockfiles",
+      "url": "https://blog.gslin.org/archives/2026/11/12/13353/github-actions-%e7%9a%84-workflow-lockfiles/",
+      "date": "2026-11-12"
     }
   ],
   "2007": [
     {
       "name": "朱小呆",
       "year": "07",
-      "title": "捕捉晴天的温柔",
-      "url": "https://zhujay.com/talk/talk_detail.html?id=1291",
-      "date": "2026-11-10"
-    }
-  ],
-  "2009": [
+      "title": "羊年明信片上线预告",
+      "url": "https://zhujay.com/talk/talk_detail.html?id=1292",
+      "date": "2026-11-11"
+    },
     {
-      "name": "异数",
-      "year": "09",
-      "title": "复盘 || 2023年一注大设计真题【安全教育中心】",
-      "url": "https://www.yishu.pro/395.html",
-      "date": "2026-11-10"
+      "name": "悠见",
+      "year": "07",
+      "title": "站着写字还是容易紧张手抖",
+      "url": "https://yufm.com/662541.html",
+      "date": "2026-11-11"
+    },
+    {
+      "name": "树下语",
+      "year": "07",
+      "title": "冷冷清清的双十一",
+      "url": "https://yishu-life.com/index.php/archives/563.html",
+      "date": "2026-11-11"
     }
   ],
   "2012": [
     {
-      "name": "水拍石",
+      "name": "郭晓力",
       "year": "12",
-      "title": "《日元贬值的背后》读后小记",
-      "url": "https://www.leitao.cn/11574.html",
-      "date": "2026-11-10"
+      "title": "这几天见了一些朋友-20261111",
+      "url": "https://guoxiaoli.com/post/681.html",
+      "date": "2026-11-11"
     }
   ],
   "2013": [
     {
-      "name": "林羽凡",
+      "name": "小z",
       "year": "13",
-      "title": "这几天我在干嘛（1）——回家看爷爷",
-      "url": "https://www.linyufan.com/post/6136",
-      "date": "2026-11-10"
+      "title": "2026 年 ChatGPT 会员充值指南：支付宝/微信就能搞定 GPT 代充",
+      "url": "https://blog.xiaoz.org/archives/23721",
+      "date": "2026-11-11"
+    },
+    {
+      "name": "卡瓦邦噶",
+      "year": "13",
+      "title": "消费理念",
+      "url": "https://www.kawabangga.com/posts/7449",
+      "date": "2026-11-11"
     }
   ],
   "2015": [
     {
       "name": "WordPress 知识宝库",
       "year": "15",
-      "title": "코딩을 몰라도 챗GPT로 홈페이지를 만드는 방법",
-      "url": "https://www.thewordcracker.com/blog/build-website-with-chatgpt-no-coding/",
-      "date": "2026-11-10"
+      "title": "워드프레스 7.1.4 긴급 업데이트, 원격 코드 실행 취약점 공격 확산 (PHP 패치도 필수)",
+      "url": "https://www.thewordcracker.com/basic/wordpress-7-1-4-rce-security-update/",
+      "date": "2026-11-11"
     }
   ],
-  "2018": [
+  "2017": [
     {
-      "name": "吖远zzy",
-      "year": "18",
-      "title": "用 AI Agent 把桌面宠物搬进 Android，dsh-pet-android 顺手记了点踩坑笔记",
-      "url": "https://www.hzv5.cn/2026/11/10/dsh-pet-android/",
-      "date": "2026-11-10"
+      "name": "碎言",
+      "year": "17",
+      "title": "博客阅读随感与推荐 20261111",
+      "url": "https://www.suiyan.cc/blog/20261111165725",
+      "date": "2026-11-11"
+    },
+    {
+      "name": "串串狗小刊",
+      "year": "17",
+      "title": "Web 出海之只有弱者才会坐等分配！",
+      "url": "https://www.ccgxk.com/codeother/936.html",
+      "date": "2026-11-11"
     }
   ],
   "2019": [
     {
+      "name": "Zeruns",
+      "year": "19",
+      "title": "【开源】XT60功率计：90V/75A，24bit，触控彩屏，WiFi",
+      "url": "https://blog.zeruns.com/archives/967.html",
+      "date": "2026-11-11"
+    },
+    {
       "name": "So!azy",
       "year": "19",
-      "title": "职场上的前任",
-      "url": "https://blog.solazy.me/20261110/",
-      "date": "2026-11-10"
+      "title": "并不好笑的玩笑",
+      "url": "https://blog.solazy.me/20261111/",
+      "date": "2026-11-11"
+    },
+    {
+      "name": "奶爸建站笔记",
+      "year": "19",
+      "title": "WP Panel助手发布：让VPS建站更简单",
+      "url": "https://blog.naibabiji.com/vps-server/wp-panel-assistant.html",
+      "date": "2026-11-11"
+    }
+  ],
+  "2020": [
+    {
+      "name": "yihong0618",
+      "year": "20",
+      "title": "AI 时代我的生产力下降了 500%",
+      "url": "https://blog.yihong0618.me/posts/issue-351/",
+      "date": "2026-11-11"
+    },
+    {
+      "name": "初然忆",
+      "year": "20",
+      "title": "加速通过科一和科四，成功预约科二和科三",
+      "url": "https://www.imcry.vip/post/2026-11-12-639/",
+      "date": "2026-11-11"
     }
   ],
   "2021": [
     {
-      "name": "Dayu",
-      "year": "21",
-      "title": "杯子",
-      "url": "https://anotherdayu.com/7200/",
-      "date": "2026-11-10"
-    },
-    {
       "name": "DevNow",
       "year": "21",
-      "title": "Product Hunt 热榜 2026-11-10：Product Hunt MCP、Dageno AI 2.0、Databox CLI",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-11-10",
-      "date": "2026-11-10"
+      "title": "Product Hunt 热榜 2026-11-11：Alsona、Maxma、TK by Medium",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-11-11",
+      "date": "2026-11-11"
+    },
+    {
+      "name": "Dayu",
+      "year": "21",
+      "title": "空白处有我",
+      "url": "https://anotherdayu.com/1384/",
+      "date": "2026-11-11"
     }
   ],
   "2023": [
     {
-      "name": "鹿泽",
+      "name": "小野",
       "year": "23",
-      "title": "SEO作弊常用手段之链接作弊",
-      "url": "https://www.bailuze.com/24572.html",
-      "date": "2026-11-10"
+      "title": "跑跑卡丁车 / 国服 - 无缝放油加速器 v2.0",
+      "url": "https://lb5.net/283.html",
+      "date": "2026-11-11"
     },
     {
-      "name": "湘铭",
+      "name": "枫林灯语",
       "year": "23",
-      "title": "无尽等待",
-      "url": "https://xiangming.site/1182.html",
-      "date": "2026-11-10"
-    }
-  ],
-  "2024": [
-    {
-      "name": "刘郎阁",
-      "year": "24",
-      "title": "域名变更公告",
-      "url": "https://liuz.cn/2027",
-      "date": "2026-11-10"
+      "title": "406MHz 车载电台在何方：共用对讲机现状与选购建议",
+      "url": "https://blog.mfwt.top/index.php/archives/1732/",
+      "date": "2026-11-11"
     }
   ],
   "2026": [
     {
       "name": "Sheep5",
       "year": "26",
-      "title": "胶州新城区美景",
-      "url": "https://sheep5.net/archives/674.html",
-      "date": "2026-11-10"
+      "title": "胶州新城区｜香港路",
+      "url": "https://sheep5.net/archives/26111112.html",
+      "date": "2026-11-11"
     }
   ]
 };
