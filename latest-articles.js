@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期:  2026-11-15 23:27:40
+// 抓取日期:  2026-11-17 02:28:10
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -8,164 +8,166 @@ const latestArticlesByYear = {
     {
       "name": "seth",
       "year": "02",
-      "title": "Confusion about causation",
-      "url": "https://seths.blog/2026/11/confusion-about-causation/",
-      "date": "2026-11-15"
+      "title": "Practical empathy",
+      "url": "https://seths.blog/2026/11/practical-empathy/",
+      "date": "2026-11-16"
+    }
+  ],
+  "2003": [
+    {
+      "name": "王通",
+      "year": "03",
+      "title": "王通：丹道修行快速入门的一招，对养生也有奇效",
+      "url": "https://www.ufoer.com/post/14770.html",
+      "date": "2026-11-16"
     }
   ],
   "2004": [
     {
-      "name": "小猪的窝",
-      "year": "04",
-      "title": "注射流感疫苗",
-      "url": "https://ezo.biz/Diary/1826.html",
-      "date": "2026-11-15"
-    },
-    {
-      "name": "我的天",
-      "year": "04",
-      "title": "双11不受邀",
-      "url": "https://www.xlanda.net/posts/22618",
-      "date": "2026-11-15"
-    },
-    {
       "name": "TonyBai",
       "year": "04",
-      "title": "Go SIMD 要转正了：一份 API 规范背后的设计野心",
-      "url": "https://tonybai.com/2026/11/16/go-simd-api-graduation-proposal-83009/",
-      "date": "2026-11-15"
+      "title": "Rust 本想消灭 40 年技术债，AI 却造出了新债",
+      "url": "https://tonybai.com/2026/11/17/rust-ai-borrow-checker-appeasement-debt/",
+      "date": "2026-11-16"
+    },
+    {
+      "name": "delphij",
+      "year": "04",
+      "title": "茶馆/第三幕",
+      "url": "https://blog.delphij.net/posts/2026/11/chaguan-03/",
+      "date": "2026-11-16"
     }
   ],
   "2005": [
     {
-      "name": "Lenciel",
-      "year": "05",
-      "title": "Fragments 0x0022",
-      "url": "https://lenciel.com/2026/11/fragments-0x0022/",
-      "date": "2026-11-15"
-    },
-    {
       "name": "ACEVS",
       "year": "05",
-      "title": "火星陨石",
-      "url": "https://acevs.com/5367/",
-      "date": "2026-11-15"
+      "title": "碎片2026年11月16日",
+      "url": "https://acevs.com/5369/",
+      "date": "2026-11-16"
+    },
+    {
+      "name": "Gea-Suan Lin",
+      "year": "05",
+      "title": "大約兩個禮拜 MyRocks 的過程",
+      "url": "https://blog.gslin.org/archives/2026/11/17/13372/%e5%a4%a7%e7%b4%84%e5%85%a9%e5%80%8b%e7%a6%ae%e6%8b%9c-myrocks-%e7%9a%84%e9%81%8e%e7%a8%8b/",
+      "date": "2026-11-17"
     }
   ],
   "2006": [
     {
+      "name": "忘记了回忆",
+      "year": "06",
+      "title": "断网",
+      "url": "https://ltmltm.cn/bk/1516.html",
+      "date": "2026-11-16"
+    },
+    {
       "name": "SEISAMUSE",
       "year": "06",
-      "title": "茶花女",
-      "url": "https://www.seis-jun.xyz/blog/2026-11-15-The-Lady-of-the-Camellias.html",
-      "date": "2026-11-15"
+      "title": "今天不想讲道理",
+      "url": "https://www.seis-jun.xyz/blog/2026-11-16-donot-want-to-be-reasonable-today.html",
+      "date": "2026-11-16"
+    }
+  ],
+  "2007": [
+    {
+      "name": "老杨",
+      "year": "07",
+      "title": "再见了，双十一",
+      "url": "https://yangyq.net/2026/11/goodbye-singles-day.html",
+      "date": "2026-11-16"
+    }
+  ],
+  "2012": [
+    {
+      "name": "水拍石",
+      "year": "12",
+      "title": "将暖气改造成恒温",
+      "url": "https://www.leitao.cn/11602.html",
+      "date": "2026-11-16"
     }
   ],
   "2013": [
     {
       "name": "林羽凡",
       "year": "13",
-      "title": "爷爷去世第三天，守灵日记",
-      "url": "https://www.linyufan.com/post/6143",
-      "date": "2026-11-15"
-    }
-  ],
-  "2014": [
-    {
-      "name": "缙哥哥",
-      "year": "14",
-      "title": "哔哩哔哩 bilibili 官网搜索“大会员”送 7 天会员",
-      "url": "https://www.dujin.org/23874.html",
-      "date": "2026-11-15"
+      "title": "爷爷去世第四天，唢呐真不是随便听的",
+      "url": "https://www.linyufan.com/post/6144",
+      "date": "2026-11-16"
     }
   ],
   "2015": [
     {
-      "name": "WordPress 知识宝库",
+      "name": "满心",
       "year": "15",
-      "title": "한글 URL 보기: 클릭 한 번으로 인코딩된 주소를 쉽게 읽는 방법",
-      "url": "https://www.thewordcracker.com/blog/korean-url-decoder-chrome-extension/",
-      "date": "2026-11-15"
+      "title": "种植牙太恐怖，一定要爱惜自己的牙齿",
+      "url": "https://zhoutian.com/400.html",
+      "date": "2026-11-16"
     }
   ],
-  "2017": [
+  "2016": [
     {
-      "name": "雨中野游",
-      "year": "17",
-      "title": "宇宙是一个鱼缸",
-      "url": "https://hqidi.com/226.html",
-      "date": "2026-11-15"
-    },
-    {
-      "name": "串串狗小刊",
-      "year": "17",
-      "title": "为什么 AI 编程让人很累？新思路告诉你原因和解法",
-      "url": "https://www.ccgxk.com/emlog_dev/943.html",
-      "date": "2026-11-15"
-    },
-    {
-      "name": "碎言",
-      "year": "17",
-      "title": "这又是哪个毒株在作怪？",
-      "url": "https://www.suiyan.cc/blog/20261115164617",
-      "date": "2026-11-15"
+      "name": "ximi",
+      "year": "16",
+      "title": "极简纯前端图片压缩工具",
+      "url": "https://www.ximi.me/post-6048.html",
+      "date": "2026-11-16"
     }
   ],
-  "2018": [
+  "2019": [
     {
-      "name": "吖远zzy",
-      "year": "18",
-      "title": "调用第三方大模型api接口被一个406报错卡了半天，最后发现是Accept头的顺序问题",
-      "url": "https://www.hzv5.cn/2026/11/15/Agent-error-406/",
-      "date": "2026-11-15"
-    }
-  ],
-  "2020": [
-    {
-      "name": "Battle Le",
-      "year": "20",
-      "title": "2026 关西八日游下篇",
-      "url": "https://battlele.com/2026-kansai-tour-2/",
+      "name": "流情",
+      "year": "19",
+      "title": "AI漫剧初试手",
+      "url": "https://liuqingwushui.top/archives/208/",
       "date": "2026-11-16"
     },
     {
-      "name": "資工小廢物 - JN",
-      "year": "20",
-      "title": "LED 耳環誕生（四）：果然是有坑要踩的 ：/",
-      "url": "https://blog.giveanornot.com/led-earring-4/",
-      "date": "2026-11-15"
+      "name": "So!azy",
+      "year": "19",
+      "title": "Bear Blog 的新 API  / A new Bear Blog API",
+      "url": "https://blog.solazy.me/bearblog-api-open-source-skill/",
+      "date": "2026-11-16"
     }
   ],
   "2021": [
     {
-      "name": "WSH",
-      "year": "21",
-      "title": "随想录III",
-      "url": "https://www.wsh233.cn/post/随想录iii",
-      "date": "2026-11-15"
-    },
-    {
       "name": "DevNow",
       "year": "21",
-      "title": "Product Hunt 热榜 2026-11-15：HiringNow、Businesses in ChatGPT、Dex Semantics",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-11-15",
-      "date": "2026-11-15"
-    },
-    {
-      "name": "记录生活",
-      "year": "21",
-      "title": "周末去丈母娘家“进货”，后备箱塞满了大白菜",
-      "url": "https://9sb.net/archives/weekend-vegetable-run-at-grandma-house.html",
-      "date": "2026-11-15"
+      "title": "Product Hunt 热榜 2026-11-16：Rakazo、Frevana Multiplayer、Tulvo",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-11-16",
+      "date": "2026-11-16"
     }
   ],
-  "2026": [
+  "2023": [
     {
-      "name": "Sheep5",
-      "year": "26",
-      "title": "那些慢慢过期的域名",
-      "url": "https://sheep5.net/archives/26111510.html",
-      "date": "2026-11-15"
+      "name": "湘铭",
+      "year": "23",
+      "title": "又拍云暴雷了！",
+      "url": "https://xiangming.site/1183.html",
+      "date": "2026-11-16"
+    },
+    {
+      "name": "鹿泽",
+      "year": "23",
+      "title": "网站如何快速提升流量？",
+      "url": "https://www.bailuze.com/24602.html",
+      "date": "2026-11-17"
+    },
+    {
+      "name": "枫林灯语",
+      "year": "23",
+      "title": "无用命途：我的小说卡文了",
+      "url": "https://blog.mfwt.top/index.php/archives/1748/",
+      "date": "2026-11-16"
+    },
+    {
+      "name": "兔哥",
+      "year": "23",
+      "title": "新 Apple TV 内存翻了一倍，应用和游戏却用不上",
+      "url": "https://uuzi.net/new-apple-tv-ram-limit/",
+      "date": "2026-11-16"
     }
   ]
 };
