@@ -1,5 +1,5 @@
 // ==================== latest-articles.js ====================
-// 抓取日期:  2026-11-18 01:37:29
+// 抓取日期:  2026-11-19 01:07:10
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
@@ -8,68 +8,75 @@ const latestArticlesByYear = {
     {
       "name": "Luca",
       "year": "00",
-      "title": "Codex协作效率低体验差",
-      "url": "https://wlj.me/notes/sp-note-20261117-094223/",
-      "date": "2026-11-17"
+      "title": "朋友鼓励我坚持学画画",
+      "url": "https://wlj.me/notes/sp-note-20261119-080519/",
+      "date": "2026-11-19"
     }
   ],
   "2002": [
     {
       "name": "seth",
       "year": "02",
-      "title": "Selling to friends",
-      "url": "https://seths.blog/2026/11/selling-to-friends/",
-      "date": "2026-11-17"
-    }
-  ],
-  "2003": [
-    {
-      "name": "王通",
-      "year": "03",
-      "title": "王通：如何把不确定变成确定的结果？",
-      "url": "https://www.ufoer.com/post/14774.html",
-      "date": "2026-11-17"
+      "title": "One swell foop",
+      "url": "https://seths.blog/2026/11/one-swell-foop-2/",
+      "date": "2026-11-18"
     }
   ],
   "2004": [
     {
-      "name": "我的天",
+      "name": "TonyBai",
       "year": "04",
-      "title": "钢笔圆珠笔中性笔",
-      "url": "https://www.xlanda.net/posts/22626",
+      "title": "Alan Donovan 提出新 Proposal：要让 go test 运行自定义静态分析器！",
+      "url": "https://tonybai.com/2026/11/19/go-test-user-defined-analyzers-proposal/",
       "date": "2026-11-18"
     },
     {
-      "name": "TonyBai",
+      "name": "我的天",
       "year": "04",
-      "title": "AI 已经会写代码了，为什么还用不好你的业务系统？",
-      "url": "https://tonybai.com/2026/11/18/build-mcp-in-golang/",
-      "date": "2026-11-17"
+      "title": "一次性钢笔墨囊加墨",
+      "url": "https://www.xlanda.net/posts/22628",
+      "date": "2026-11-19"
     }
   ],
   "2005": [
     {
-      "name": "Gea-Suan Lin",
+      "name": "春田",
       "year": "05",
-      "title": "MySQL 在高維度向量的搜尋演算法的導入",
-      "url": "https://blog.gslin.org/archives/2026/11/18/13375/mysql-%e5%9c%a8%e9%ab%98%e7%b6%ad%e5%ba%a6%e5%90%91%e9%87%8f%e7%9a%84%e6%90%9c%e5%b0%8b%e6%bc%94%e7%ae%97%e6%b3%95%e7%9a%84%e5%b0%8e%e5%85%a5/",
-      "date": "2026-11-17"
+      "title": "１１０１．災難に感謝する",
+      "url": "http://kaikeimura.way-nifty.com/blog/2026/11/post-4afe81.html",
+      "date": "2026-11-18"
     },
     {
       "name": "ACEVS",
       "year": "05",
-      "title": "碎片2026年11月17日",
-      "url": "https://acevs.com/5371/",
-      "date": "2026-11-17"
+      "title": "替天行道",
+      "url": "https://acevs.com/5373/",
+      "date": "2026-11-18"
+    },
+    {
+      "name": "Gea-Suan Lin",
+      "year": "05",
+      "title": "Ruby 的 RegEx 也有 RCE 問題",
+      "url": "https://blog.gslin.org/archives/2026/11/19/13382/ruby-%e7%9a%84-regex-%e4%b9%9f%e6%9c%89-rce-%e5%95%8f%e9%a1%8c/",
+      "date": "2026-11-19"
     }
   ],
   "2006": [
     {
       "name": "SEISAMUSE",
       "year": "06",
-      "title": "购物清单",
-      "url": "https://www.seis-jun.xyz/blog/2026-11-17-shopping-list.html",
-      "date": "2026-11-17"
+      "title": "关于AI写作",
+      "url": "https://www.seis-jun.xyz/blog/2026-11-18-about-AI-composition.html",
+      "date": "2026-11-18"
+    }
+  ],
+  "2007": [
+    {
+      "name": "朱小呆",
+      "year": "07",
+      "title": "雨后半山崖线漫步",
+      "url": "https://zhujay.com/talk/talk_detail.html?id=1294",
+      "date": "2026-11-18"
     }
   ],
   "2013": [
@@ -78,100 +85,89 @@ const latestArticlesByYear = {
       "year": "13",
       "title": "爷爷去世第五天，乡俗乡风可能要湮灭",
       "url": "https://www.linyufan.com/post/6145",
-      "date": "2026-11-17"
-    },
-    {
-      "name": "蛋蛋",
-      "year": "13",
-      "title": "我把 CDN 规则返工了三次，最后一次才发现问题在 nginx",
-      "url": "https://wuqishi.com/archives/edgeone-cdn-rule-rework-nginx-gzip",
-      "date": "2026-11-17"
-    }
-  ],
-  "2015": [
-    {
-      "name": "WordPress 知识宝库",
-      "year": "15",
-      "title": "워드프레스 GeneratePress 테마 2026 블랙 프라이데이 세일",
-      "url": "https://www.thewordcracker.com/basic/themes/generatepress-black-friday/",
-      "date": "2026-11-17"
-    }
-  ],
-  "2016": [
-    {
-      "name": "幻影",
-      "year": "16",
-      "title": "我把比亚迪“装进”了小米手环 9 Pro",
-      "url": "https://blog.52hyjs.com/post-1293.html",
-      "date": "2026-11-17"
+      "date": "2026-11-18"
     }
   ],
   "2017": [
     {
-      "name": "秋风于渭水",
+      "name": "雨中野游",
       "year": "17",
-      "title": "抢救停更的老牌插件：我把 WP Editor.md 彻底修好了",
-      "url": "https://www.tjsky.net/best-software/2288",
-      "date": "2026-11-17"
-    },
-    {
-      "name": "zj",
-      "year": "17",
-      "title": "小米粒，你好呀，我是爸爸！(2)",
-      "url": "http://www.zjhuiwan.cn/info/20261117/5222342518829175.html",
-      "date": "2026-11-17"
-    },
-    {
-      "name": "科学空间",
-      "year": "17",
-      "title": "最佳学习率调度的变分估计",
-      "url": "https://kexue.fm/archives/12010",
-      "date": "2026-11-17"
+      "title": "岛国充电宝的小巧思",
+      "url": "https://hqidi.com/227.html",
+      "date": "2026-11-18"
     }
   ],
   "2019": [
     {
+      "name": "LJF.COM",
+      "year": "19",
+      "title": "Competition is for Losers",
+      "url": "https://ljf.com/2026/11/18/1566/",
+      "date": "2026-11-18"
+    },
+    {
       "name": "So!azy",
       "year": "19",
-      "title": "学会像呼吸一样拒绝别人",
-      "url": "https://blog.solazy.me/20261117/",
-      "date": "2026-11-17"
+      "title": "多就是好吗？",
+      "url": "https://blog.solazy.me/20261118/",
+      "date": "2026-11-18"
     }
   ],
   "2020": [
     {
-      "name": "資工小廢物 - JN",
+      "name": "呆哥",
       "year": "20",
-      "title": "@everyone",
-      "url": "https://blog.giveanornot.com/tag-everyone/",
-      "date": "2026-11-17"
+      "title": "凌晨机房网络交换机损坏造成无法访问，现已恢复",
+      "url": "https://www.dalao.net/thread-66240.htm",
+      "date": "2026-11-19"
+    },
+    {
+      "name": "不凡",
+      "year": "20",
+      "title": "Typecho插件多设备登录与验证：多台设备同时保持登录状态、登录后台二次邮箱验证",
+      "url": "https://www.bufanz.com/202611181275.html",
+      "date": "2026-11-18"
     }
   ],
   "2021": [
     {
-      "name": "DAIDAIFU",
+      "name": "DevNow",
       "year": "21",
-      "title": "用魔法，打败魔法。",
-      "url": "https://www.ddf.im/index.php/2026/11/17/1288.html",
-      "date": "2026-11-17"
+      "title": "Product Hunt 热榜 2026-11-18：Creatify Max、RankSpot、TheBold",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-11-18",
+      "date": "2026-11-18"
+    },
+    {
+      "name": "yveji",
+      "year": "21",
+      "title": "影之刃零：国产3A RPG",
+      "url": "https://www.yveji.com/Cultural/phantom-blade-zero.html",
+      "date": "2026-11-18"
     }
   ],
   "2023": [
     {
       "name": "鹿泽",
       "year": "23",
-      "title": "最新发布SEO代表什么？《新手到职业指南》（2026）",
-      "url": "https://www.bailuze.com/24605.html",
+      "title": "最新发布SEO的5个技巧让网站排名飙升的入门指南",
+      "url": "https://www.bailuze.com/24613.html",
+      "date": "2026-11-19"
+    },
+    {
+      "name": "核桃",
+      "year": "23",
+      "title": "2026年11月3日，贵州三都之旅的第一天",
+      "url": "https://www.htaoo.com/record/939.html",
       "date": "2026-11-18"
     }
   ],
   "2024": [
     {
-      "name": "老吕",
+      "name": "姓王者",
       "year": "24",
-      "title": "LightVela · 云端 AI 智能体：腾讯bot，免费一个月，可以试试",
-      "url": "https://laolv.org/lightvela.html",
-      "date": "2026-11-17"
+      "title": "EdgeOne 尾斜杠路由的分层配置方法",
+      "url": "https://xingwangzhe.fun/posts/edgeone-trailing-slash-routing",
+      "date": "2026-11-18"
     }
   ]
 };
