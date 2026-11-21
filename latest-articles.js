@@ -1,42 +1,67 @@
 // ==================== latest-articles.js ====================
-// 抓取日期:  2026-11-20 01:12:51
+// 抓取日期:  2026-11-21 00:48:08
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
+  "2000": [
+    {
+      "name": "Luca",
+      "year": "00",
+      "title": "明天见",
+      "url": "https://wlj.me/notes/sp-note-20261120-231508/",
+      "date": "2026-11-20"
+    }
+  ],
+  "2002": [
+    {
+      "name": "seth",
+      "year": "02",
+      "title": "Messing with the thermostat",
+      "url": "https://seths.blog/2026/11/messing-with-the-thermostat/",
+      "date": "2026-11-20"
+    }
+  ],
   "2003": [
     {
-      "name": "愆伏",
+      "name": "王通",
       "year": "03",
-      "title": "2009，九宫格里的宝箱",
-      "url": "https://www.tortorse.com/archives/treasure-chest-in-the-nine-square-grid-2009/",
-      "date": "2026-11-19"
-    },
-    {
-      "name": "阮一峰",
-      "year": "03",
-      "title": "科技爱好者周刊（第 420 期）：最分心的一年",
-      "url": "http://www.ruanyifeng.com/blog/2026/11/weekly-issue-420.html",
+      "title": "王通：享受时间的复利，好项目的3个标准",
+      "url": "https://www.ufoer.com/post/14784.html",
       "date": "2026-11-20"
     }
   ],
   "2004": [
     {
-      "name": "扫地老僧",
-      "year": "04",
-      "title": "透明与扁平",
-      "url": "https://doyj.com/2026/11/19/%e9%80%8f%e6%98%8e%e4%b8%8e%e6%89%81%e5%b9%b3/",
-      "date": "2026-11-19"
-    },
-    {
       "name": "TonyBai",
       "year": "04",
-      "title": "重读 How Complex Systems Fail 后，我发现：AI 正在制造我们无法驾驭的复杂系统",
-      "url": "https://tonybai.com/2026/11/20/ai-is-creating-complex-systems-we-cannot-control/",
-      "date": "2026-11-19"
+      "title": "GPU 也需要操作系统？AI 算力竟然有 90% 在摸鱼！",
+      "url": "https://tonybai.com/2026/11/21/gpu-needs-an-operating-system/",
+      "date": "2026-11-20"
+    },
+    {
+      "name": "我的天",
+      "year": "04",
+      "title": "钟爱蓝黑色墨水",
+      "url": "https://www.xlanda.net/posts/22632",
+      "date": "2026-11-20"
+    },
+    {
+      "name": "竹炉山房",
+      "year": "04",
+      "title": "上证逼近3500",
+      "url": "https://synyan.cn/t/64363",
+      "date": "2026-11-20"
     }
   ],
   "2005": [
+    {
+      "name": "ACEVS",
+      "year": "05",
+      "title": "二手键盘第六回合",
+      "url": "https://acevs.com/5377/",
+      "date": "2026-11-20"
+    },
     {
       "name": "王志勇",
       "year": "05",
@@ -45,129 +70,102 @@ const latestArticlesByYear = {
       "date": "2026-11-20"
     },
     {
-      "name": "ACEVS",
+      "name": "Lenciel",
       "year": "05",
-      "title": "大宝视力下降咋办",
-      "url": "https://acevs.com/5375/",
-      "date": "2026-11-19"
+      "title": "Fragments 0x0024",
+      "url": "https://lenciel.com/2026/11/fragments-0x0024/",
+      "date": "2026-11-20"
+    },
+    {
+      "name": "云风",
+      "year": "05",
+      "title": "碎碎念",
+      "url": "https://blog.codingnow.com/2026/11/random_notes.html",
+      "date": "2026-11-20"
     }
   ],
-  "2006": [
+  "2009": [
     {
-      "name": "SEISAMUSE",
-      "year": "06",
-      "title": "感冒了啊",
-      "url": "https://www.seis-jun.xyz/blog/2026-11-19-got-cold.html",
-      "date": "2026-11-19"
-    }
-  ],
-  "2011": [
+      "name": "张鑫旭",
+      "year": "09",
+      "title": "继textarea之后，iframe也自适应大小啦！",
+      "url": "https://www.zhangxinxu.com/wordpress/2026/11/ifmame-sizing-content/",
+      "date": "2026-11-20"
+    },
     {
-      "name": "forecho",
-      "year": "11",
-      "title": "Price Action 进阶：如何用 H1/H2 与 L1/L2 的「失败」，提前看穿趋势与震荡切换",
-      "url": "https://blog.forecho.com/price-action-h1-h2-l1-l2-failure.html",
-      "date": "2026-11-19"
+      "name": "异数",
+      "year": "09",
+      "title": "网站 || 博客聚合平台知多少？",
+      "url": "https://www.yishu.pro/407.html",
+      "date": "2026-11-20"
     }
   ],
   "2012": [
     {
-      "name": "水拍石",
+      "name": "王鑫",
       "year": "12",
-      "title": "我正沉迷于AI",
-      "url": "https://www.leitao.cn/11617.html",
-      "date": "2026-11-19"
+      "title": "2026年双11记录",
+      "url": "https://wonse.info/2026-11-11.html",
+      "date": "2026-11-20"
     }
   ],
   "2013": [
     {
-      "name": "Jonty",
+      "name": "卡瓦邦噶",
       "year": "13",
-      "title": "服务器被植入流量劫持后门(跳转世界杯赌球网站)的排查与解决方案",
-      "url": "https://nobb.cc/archives/3786.html",
-      "date": "2026-11-19"
-    },
-    {
-      "name": "林羽凡",
-      "year": "13",
-      "title": "人的这一生，有多少东西是值得留下来的",
-      "url": "https://www.linyufan.com/post/6148",
-      "date": "2026-11-19"
+      "title": "戒烟",
+      "url": "https://www.kawabangga.com/posts/7464",
+      "date": "2026-11-20"
     }
   ],
-  "2015": [
+  "2014": [
     {
-      "name": "elmagnifico",
-      "year": "15",
-      "title": "Hack AC以后，AI终于跑赢了真人记录",
-      "url": "https://elmagnifico.tech/2026/11/20/AC-AI-Drive-Hack/",
-      "date": "2026-11-19"
+      "name": "缙哥哥",
+      "year": "14",
+      "title": "限时免费：领取GLM-5.3-Flash大模型5亿Tokens，3天有效",
+      "url": "https://www.dujin.org/23866.html",
+      "date": "2026-11-20"
     }
   ],
-  "2020": [
+  "2019": [
     {
-      "name": "Battle Le",
-      "year": "20",
-      "title": "2026 HK 说走就走下篇",
-      "url": "https://battlele.com/2026-hongkong-tour-2/",
-      "date": "2026-11-19"
+      "name": "So!azy",
+      "year": "19",
+      "title": "今天你骂 AI 味博客了吗？",
+      "url": "https://blog.solazy.me/20261120/",
+      "date": "2026-11-20"
     }
   ],
   "2021": [
     {
-      "name": "DevNow",
-      "year": "21",
-      "title": "Product Hunt 热榜 2026-11-19：S.Space、Bluedot Phone Calls、Toone",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-11-19",
-      "date": "2026-11-19"
-    },
-    {
       "name": "记录生活",
       "year": "21",
-      "title": "把电视桌面换成开源的 Aerial，开机就清净了",
-      "url": "https://9sb.net/archives/replace-the-tv-desktop-with-opensource-aerial-and-it-will-be-clean-when-turned-on.html",
-      "date": "2026-11-19"
-    }
-  ],
-  "2022": [
+      "title": "CleanYourTV：把电视里的预装和推荐停掉，不用 root",
+      "url": "https://9sb.net/archives/cleanyourtv-stop-pre-installed-and-recommended-content-on-the-tv-without-rooting.html",
+      "date": "2026-11-21"
+    },
     {
-      "name": "VeryJack",
-      "year": "22",
-      "title": "Hi，咪咪，三年了",
-      "url": "https://veryjack.com/life/mimi-three-years/",
-      "date": "2026-11-19"
+      "name": "DevNow",
+      "year": "21",
+      "title": "Product Hunt 热榜 2026-11-20：TestSprite 4.0、Verse Engine by Ctruh、Netlify Server",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-11-20",
+      "date": "2026-11-20"
     }
   ],
   "2023": [
     {
       "name": "兔哥",
       "year": "23",
-      "title": "Muse AI 再曝隐私泄露：Signal 加密消息被读，还发来别人的银行余额",
-      "url": "https://uuzi.net/muse-ai-privacy-breach-signal-bank-balance/",
-      "date": "2026-11-19"
+      "title": "2026 年 RackNerd 黑五优惠活动汇总",
+      "url": "https://uuzi.net/racknerd-black-friday-2026/",
+      "date": "2026-11-20"
     },
     {
       "name": "鹿泽",
       "year": "23",
-      "title": "最新发布如何做SEO：企业主的通俗指南",
-      "url": "https://www.bailuze.com/24619.html",
-      "date": "2026-11-20"
-    },
-    {
-      "name": "湘铭",
-      "year": "23",
-      "title": "秋假挣银票！",
-      "url": "https://xiangming.site/1193.html",
-      "date": "2026-11-19"
-    }
-  ],
-  "2025": [
-    {
-      "name": "心记",
-      "year": "25",
-      "title": "新主题已达成",
-      "url": "https://blog.moodlog.cn/archives/19/",
-      "date": "2026-11-19"
+      "title": "电商网站导航中“Collections”的意义、设计与优化",
+      "url": "https://www.bailuze.com/24665.html",
+      "date": "2026-11-21"
     }
   ]
 };
