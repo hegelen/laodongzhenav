@@ -1,170 +1,174 @@
 // ==================== latest-articles.js ====================
-// 抓取日期:  2026-11-24 04:20:19
+// 抓取日期:  2026-11-25 03:04:45
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
+  "2000": [
+    {
+      "name": "Luca",
+      "year": "00",
+      "title": "今天的三分钟练习",
+      "url": "https://wulujia.com/notes/sp-note-20261124-215727/",
+      "date": "2026-11-24"
+    }
+  ],
   "2002": [
     {
       "name": "seth",
       "year": "02",
-      "title": "The two-sided power of subscription",
-      "url": "https://seths.blog/2026/11/the-two-sided-power-of-subscription/",
-      "date": "2026-11-23"
+      "title": "Different rules for the boss",
+      "url": "https://seths.blog/2026/11/different-rules-for-the-boss/",
+      "date": "2026-11-24"
+    }
+  ],
+  "2003": [
+    {
+      "name": "爱情在线",
+      "year": "03",
+      "title": "杂物",
+      "url": "https://aqzx.com/blog_view.asp?id=69",
+      "date": "2026-11-24"
     }
   ],
   "2004": [
     {
+      "name": "我的天",
+      "year": "04",
+      "title": "繁字一直没写对",
+      "url": "https://www.xlanda.net/posts/22644",
+      "date": "2026-11-25"
+    },
+    {
       "name": "TonyBai",
       "year": "04",
-      "title": "AI 时代，你可能再也学不会一门编程语言了",
-      "url": "https://tonybai.com/2026/11/24/ai-era-learning-programming-languages/",
-      "date": "2026-11-23"
-    },
-    {
-      "name": "小猪的窝",
-      "year": "04",
-      "title": "交通事故",
-      "url": "https://ezo.biz/Diary/1850.html",
-      "date": "2026-11-23"
-    },
-    {
-      "name": "Jake",
-      "year": "04",
-      "title": "为什么要学会“回头看” ? – AI 注意力机制的由来",
-      "url": "https://jaketao.com/why-ai-look-back",
-      "date": "2026-11-23"
-    },
-    {
-      "name": "扫地老僧",
-      "year": "04",
-      "title": "怎么提不同意见",
-      "url": "https://doyj.com/2026/11/23/%e6%80%8e%e4%b9%88%e6%8f%90%e4%b8%8d%e5%90%8c%e6%84%8f%e8%a7%81/",
-      "date": "2026-11-23"
+      "title": "Go 工具链全景：2026 版——从 go install 到 gopls 与 MCP 的高效开发指南",
+      "url": "https://tonybai.com/2026/11/25/an-overview-of-go-tooling-v2/",
+      "date": "2026-11-25"
     }
   ],
   "2005": [
     {
-      "name": "ACEVS",
+      "name": "王志勇",
       "year": "05",
-      "title": "手机锁机软件体验",
-      "url": "https://acevs.com/5385/",
-      "date": "2026-11-23"
+      "title": "努力筹备的独立微博项目",
+      "url": "https://www.auiou.com/pub/2246",
+      "date": "2026-11-25"
     },
     {
-      "name": "破袜子",
+      "name": "ACEVS",
       "year": "05",
-      "title": "每夫吐槽（122）",
-      "url": "https://pewae.com/2026/11/random_kuso_122.html",
-      "date": "2026-11-23"
+      "title": "碎片2026年11月24日",
+      "url": "https://acevs.com/5387/",
+      "date": "2026-11-24"
     }
   ],
-  "2006": [
+  "2009": [
     {
-      "name": "SEISAMUSE",
-      "year": "06",
-      "title": "慌啥子嘛",
-      "url": "https://www.seis-jun.xyz/blog/2026-11-23-take-it-easy.html",
-      "date": "2026-11-23"
+      "name": "标点符",
+      "year": "09",
+      "title": "从Google Tag Manager 详解数据埋点治理",
+      "url": "https://www.biaodianfu.com/google-tag-manager/",
+      "date": "2026-11-24"
+    }
+  ],
+  "2010": [
+    {
+      "name": "雅余",
+      "year": "10",
+      "title": "日常漫步 Vol.27 之漫步日常",
+      "url": "https://yayu.net/6283.html",
+      "date": "2026-11-24"
     }
   ],
   "2011": [
     {
       "name": "forecho",
       "year": "11",
-      "title": "Al Brooks 问答笔记：练出稳定盈利到底要多久？",
-      "url": "https://blog.forecho.com/al-brooks-how-long-to-become-profitable.html",
-      "date": "2026-11-23"
-    }
-  ],
-  "2012": [
-    {
-      "name": "水拍石",
-      "year": "12",
-      "title": "豆包就像一位容易憧憬的少女",
-      "url": "https://www.leitao.cn/11631.html",
-      "date": "2026-11-23"
+      "title": "连赢 12 天后一把亏光：Al Brooks 交易室社区的一场真实复盘",
+      "url": "https://blog.forecho.com/why-winning-streaks-lead-to-blowups.html",
+      "date": "2026-11-24"
     }
   ],
   "2013": [
     {
       "name": "林羽凡",
       "year": "13",
-      "title": "注册了一个给智能体使用的邮箱",
-      "url": "https://www.linyufan.com/post/6152",
-      "date": "2026-11-23"
+      "title": "\"林羽凡笔记“系统开发接入”微信小程序Ai”模式",
+      "url": "https://www.linyufan.com/post/6155",
+      "date": "2026-11-25"
+    },
+    {
+      "name": "小z",
+      "year": "13",
+      "title": "我做了个原生轻量文本编辑器 ZPad：没有 WebView，跨平台原生渲染",
+      "url": "https://blog.xiaoz.org/archives/23780",
+      "date": "2026-11-24"
     }
   ],
   "2017": [
     {
-      "name": "2broear",
+      "name": "串串狗小刊",
       "year": "17",
-      "title": "6000+评论用户画像，看看GPT怎么说？",
-      "url": "https://blog.2broear.com/notes/23-11-2026_comment-user-profile",
-      "date": "2026-11-23"
+      "title": "开源模型没优势了，因为闭源模型高端低端都性价比很高！",
+      "url": "https://www.ccgxk.com/emlog_dev/947.html",
+      "date": "2026-11-24"
+    }
+  ],
+  "2019": [
+    {
+      "name": "herman",
+      "year": "19",
+      "title": "Comments and emails",
+      "url": "https://herman.bearblog.dev/comments-and-emails/",
+      "date": "2026-11-24"
     }
   ],
   "2020": [
     {
-      "name": "HEMING",
+      "name": "資工小廢物 - JN",
       "year": "20",
-      "title": "🇺🇸AT&T Residential VPS Benchmark – Tennessee, USA",
-      "url": "https://heming.org/3229.html",
-      "date": "2026-11-24"
-    },
-    {
-      "name": "无梦梦游记",
-      "year": "20",
-      "title": "昼梦·海梦沉冰（毕设动画）",
-      "url": "https://bkryofu.cn/p/5586341d.html",
-      "date": "2026-11-23"
-    },
-    {
-      "name": "yihong0618",
-      "year": "20",
-      "title": "不要自动化你的情感链接",
-      "url": "https://blog.yihong0618.me/posts/issue-343/",
-      "date": "2026-11-23"
+      "title": "寫作的目的就是寫作",
+      "url": "https://blog.giveanornot.com/to-write-is-to-write/",
+      "date": "2026-11-25"
     }
   ],
   "2021": [
     {
       "name": "DevNow",
       "year": "21",
-      "title": "Product Hunt 热榜 2026-11-23：Yoroll、Rankhog、Resurf",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-11-23",
-      "date": "2026-11-23"
+      "title": "Product Hunt 热榜 2026-11-24：Letter Visitors、Motionflare、Gauth Personal Study Agent",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-11-24",
+      "date": "2026-11-24"
     },
     {
       "name": "WSH",
       "year": "21",
       "title": "随想录IV",
       "url": "https://www.wsh233.cn/post/随想录iv",
-      "date": "2026-11-23"
+      "date": "2026-11-25"
     }
   ],
   "2023": [
+    {
+      "name": "鹿泽",
+      "year": "23",
+      "title": "如何自己做网站SEO检查？（新手完整指南）",
+      "url": "https://www.bailuze.com/24717.html",
+      "date": "2026-11-25"
+    },
+    {
+      "name": "兔哥",
+      "year": "23",
+      "title": "Google AI Pro 每月送 200 计算单元：不用就浪费，Colab GPU 使用全攻略（2026）",
+      "url": "https://uuzi.net/google-ai-pro-colab/",
+      "date": "2026-11-24"
+    },
     {
       "name": "湘铭",
       "year": "23",
       "title": "继续跑",
       "url": "https://xiangming.site/1206.html",
-      "date": "2026-11-24"
-    },
-    {
-      "name": "鹿泽",
-      "year": "23",
-      "title": "如何进行关键词分析？注意关键词搜索意图",
-      "url": "https://www.bailuze.com/24704.html",
-      "date": "2026-11-24"
-    }
-  ],
-  "2026": [
-    {
-      "name": "Sheep5",
-      "year": "26",
-      "title": "终于开通流量主了",
-      "url": "https://sheep5.net/archives/26112409.html",
       "date": "2026-11-24"
     }
   ]
