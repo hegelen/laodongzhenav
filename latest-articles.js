@@ -1,125 +1,109 @@
 // ==================== latest-articles.js ====================
-// 抓取日期:  2026-11-27 02:10:08
+// 抓取日期:  2026-11-28 01:55:03
 // 只抓取最近14天内的文章，共 20 篇
 // 目标 20 篇，实际 20 篇
 
 const latestArticlesByYear = {
-  "2003": [
+  "2002": [
     {
-      "name": "阮一峰",
-      "year": "03",
-      "title": "科技爱好者周刊（第 421 期）：AI 的疯狂造富",
-      "url": "http://www.ruanyifeng.com/blog/2026/11/weekly-issue-421.html",
+      "name": "seth",
+      "year": "02",
+      "title": "Draft your own team",
+      "url": "https://seths.blog/2026/11/draft-your-own-team/",
       "date": "2026-11-27"
     }
   ],
   "2004": [
     {
-      "name": "小猪的窝",
-      "year": "04",
-      "title": "头痛医头，脚痛医脚",
-      "url": "https://ezo.biz/Diary/1859.html",
-      "date": "2026-11-26"
-    },
-    {
       "name": "我的天",
       "year": "04",
-      "title": "又是一个笑话",
-      "url": "https://www.xlanda.net/posts/22648",
-      "date": "2026-11-27"
+      "title": "开会时练字",
+      "url": "https://www.xlanda.net/posts/22650",
+      "date": "2026-11-28"
     },
     {
-      "name": "delphij",
+      "name": "竹炉山房",
       "year": "04",
-      "title": "重读《岳阳楼记》：滕子京为什么被贬巴陵",
-      "url": "https://blog.delphij.net/posts/2026/11/memorial-to-yueyang-pavilion/",
-      "date": "2026-11-26"
+      "title": "又是个不眠夜",
+      "url": "https://synyan.cn/t/64421",
+      "date": "2026-11-27"
     }
   ],
   "2005": [
     {
+      "name": "Lenciel",
+      "year": "05",
+      "title": "Fragments 0x0027",
+      "url": "https://lenciel.com/2026/11/fragments-0x0027/",
+      "date": "2026-11-27"
+    },
+    {
+      "name": "王志勇",
+      "year": "05",
+      "title": "什么样的博文URL美化是最好的？",
+      "url": "https://www.auiou.com/pub/2248",
+      "date": "2026-11-28"
+    },
+    {
       "name": "ACEVS",
       "year": "05",
-      "title": "二手键盘第八回合",
-      "url": "https://acevs.com/5391/",
-      "date": "2026-11-26"
-    }
-  ],
-  "2006": [
-    {
-      "name": "SEISAMUSE",
-      "year": "06",
-      "title": "我楼上的邻居",
-      "url": "https://www.seis-jun.xyz/blog/2026-11-27-my-neighbour-upstairs.html",
-      "date": "2026-11-26"
-    }
-  ],
-  "2007": [
-    {
-      "name": "朱小呆",
-      "year": "07",
-      "title": "今日有氧拉满",
-      "url": "https://zhujay.com/talk/talk_detail.html?id=1298",
-      "date": "2026-11-26"
+      "title": "皇权本位下的宋江和关羽",
+      "url": "https://acevs.com/5393/",
+      "date": "2026-11-27"
     }
   ],
   "2009": [
     {
-      "name": "异数",
+      "name": "张鑫旭",
       "year": "09",
-      "title": "软件 || 二开了一款工作管理软件【叮咪】",
-      "url": "https://www.yishu.pro/418.html",
-      "date": "2026-11-26"
-    },
-    {
-      "name": "老刘",
-      "year": "09",
-      "title": "我文章里的 AI 味",
-      "url": "https://www.iliu.org/posts/the-ai-flavor-in-my-posts/",
+      "title": "第一次使用AI + Figma MCP开发网页小结",
+      "url": "https://www.zhangxinxu.com/wordpress/2026/11/ai-figma-mcp/",
       "date": "2026-11-27"
-    },
+    }
+  ],
+  "2012": [
     {
-      "name": "欧雷流",
-      "year": "09",
-      "title": "是时候升级了：从「Coding as Hobby」到「欧雷智造」",
-      "url": "https://ourai.ws/posts/rebranding-my-professional-stuff/",
-      "date": "2026-11-26"
+      "name": "水拍石",
+      "year": "12",
+      "title": "用ImDisk Toolkit开启内存盘",
+      "url": "https://www.leitao.cn/11646.html",
+      "date": "2026-11-27"
     }
   ],
   "2013": [
     {
-      "name": "小z",
+      "name": "蛋蛋",
       "year": "13",
-      "title": "ZPad 文本编辑器与 CotEditor、Notepad– 编辑器内存占用对比",
-      "url": "https://blog.xiaoz.org/archives/23793",
-      "date": "2026-11-26"
-    }
-  ],
-  "2014": [
-    {
-      "name": "运营不加班",
-      "year": "14",
-      "title": "50块的ESP32-S3，人走自动锁屏、靠近无感解锁、重启免敲密码",
-      "url": "https://nops.icu/archives/285/",
-      "date": "2026-11-26"
+      "title": "暖心日历",
+      "url": "https://wuqishi.com/archives/heartwarming-calendar",
+      "date": "2026-11-27"
     }
   ],
   "2018": [
     {
       "name": "云奚小屋",
       "year": "18",
-      "title": "慢慢走，也是在向前",
-      "url": "https://yxgoa.cn/index.php/archives/1032/",
-      "date": "2026-11-26"
+      "title": "枝叶之间听风的名字",
+      "url": "https://yxgoa.cn/index.php/archives/1035/",
+      "date": "2026-11-27"
+    }
+  ],
+  "2019": [
+    {
+      "name": "So!azy",
+      "year": "19",
+      "title": "生活中那些 backup 给我的安全感",
+      "url": "https://blog.solazy.me/20261127/",
+      "date": "2026-11-27"
     }
   ],
   "2020": [
     {
-      "name": "初然忆",
+      "name": "郝鸿涛",
       "year": "20",
-      "title": "回到QQ邮箱",
-      "url": "https://www.imcry.vip/post/2026-11-26-1609/",
-      "date": "2026-11-26"
+      "title": "我能想到的未来",
+      "url": "https://hongtaoh.com/cn/2026/11/27/future/",
+      "date": "2026-11-27"
     }
   ],
   "2021": [
@@ -133,42 +117,58 @@ const latestArticlesByYear = {
     {
       "name": "DevNow",
       "year": "21",
-      "title": "Product Hunt 热榜 2026-11-26：MyClaw 3.0、Airbot、Hiring Right Now",
-      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-11-26",
-      "date": "2026-11-26"
+      "title": "Product Hunt 热榜 2026-11-27：Hub、QA.tech MCP、ExtraOrbital",
+      "url": "https://www.laughingzhu.cn/posts/ph-daily-2026-11-27",
+      "date": "2026-11-27"
     }
   ],
   "2023": [
     {
-      "name": "枫林灯语",
+      "name": "湘铭",
       "year": "23",
-      "title": "你知道的，雨风酒馆明天仍会开门",
-      "url": "https://blog.mfwt.top/index.php/archives/1716/",
-      "date": "2026-11-26"
+      "title": "本来想突破 2 公里，结果被一个包子和 AI 坑在了周末",
+      "url": "https://xiangming.site/1208.html",
+      "date": "2026-11-27"
     },
     {
-      "name": "Siwei Li",
+      "name": "鹿泽",
       "year": "23",
-      "title": "月访问量突破2000！",
-      "url": "https://siwei.li/over-2000-monthly-visits/",
-      "date": "2026-11-26"
+      "title": "公司网站如何全面做SEO分析？",
+      "url": "https://www.bailuze.com/24718.html",
+      "date": "2026-11-27"
+    },
+    {
+      "name": "核桃",
+      "year": "23",
+      "title": "2026年11月21日，顺德机车文化月",
+      "url": "https://www.htaoo.com/record/945.html",
+      "date": "2026-11-27"
     }
   ],
   "2024": [
     {
       "name": "姓王者",
       "year": "24",
-      "title": "《山梨糖醇的通透》",
-      "url": "https://xingwangzhe.fun/posts/sorbitol-clearout/",
-      "date": "2026-11-26"
+      "title": "2026 OSGJ 日志二：把战斗调试拆成看得见的场景",
+      "url": "https://xingwangzhe.fun/posts/osgj-devlog-2-debuggable-battle/",
+      "date": "2026-11-27"
+    }
+  ],
+  "2025": [
+    {
+      "name": "Marcus",
+      "year": "25",
+      "title": "成功的博客",
+      "url": "https://www.immarcus.com/blog/successful-blog",
+      "date": "2026-11-28"
     }
   ],
   "2026": [
     {
-      "name": "Sheep5",
+      "name": "华立",
       "year": "26",
-      "title": "博客重启半年",
-      "url": "https://sheep5.net/archives/26112709.html",
+      "title": "Altare 容器 透传 做宝塔Web服务记录",
+      "url": "https://www.renhuali.cn/journal/cmwyezjpg07kqchnmama76nbw",
       "date": "2026-11-27"
     }
   ]
